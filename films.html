@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- FrameWorkers demo site — PORTFOLIO (film gallery: pick → fake-generate → play) -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FrameWorkers — Portfolio</title>
+<link rel="stylesheet" href="assets/styles.css?v=2" />
+<script src="assets/app.js?v=2" defer></script>
+</head>
+<body data-page="films">
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img src="assets/logo_wordmark_t.png" alt="FrameWorkers" class="brand-logo" /></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="films.html" class="active">Films</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head" id="portfolio-head">
+        <h2 class="section-title">The film <span class="gtext">gallery</span></h2>
+        <p class="section-sub">Pick a prompt and watch the pipeline assemble it — five finished shorts across five mediums.</p>
+      </div>
+
+      <div class="filters" id="filters"></div>
+      <div class="work-grid cols-3" id="grid"></div>
+
+      <!-- inline player (revealed after the fake "generation") -->
+      <section class="player" id="player">
+        <button class="back" id="back">‹ Back to all films</button>
+        <div class="stage-frame">
+          <video id="video" controls playsinline preload="metadata"></video>
+        </div>
+        <div class="pmeta">
+          <div class="col">
+            <div class="genre2" id="pgenre"></div>
+            <h2 id="ptitle"></h2>
+            <div class="pr"><span class="qlabel">Your prompt</span><span id="pprompt"></span></div>
+          </div>
+          <div class="col" style="flex:0 0 auto">
+            <button class="btn btn-grad" id="replay">↻ Replay</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img src="assets/logo_wordmark_dark.png" alt="FrameWorkers" class="brand-logo" /></a>
+        <p>Prompt to film, end to end. An AI film director that plans a custom production and orchestrates
+          a crew of specialist agents — turning any input into a finished short with cinematic shots,
+          voice, score, and native sound.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 4.9c-.8.4-1.7.6-2.6.8a4.5 4.5 0 0 0 2-2.5c-.9.5-1.9.9-2.9 1.1a4.5 4.5 0 0 0-7.7 4.1A12.8 12.8 0 0 1 2.5 3.9a4.5 4.5 0 0 0 1.4 6 4.4 4.4 0 0 1-2-.6v.1a4.5 4.5 0 0 0 3.6 4.4 4.5 4.5 0 0 1-2 .1 4.5 4.5 0 0 0 4.2 3.1A9 9 0 0 1 1 18.6a12.7 12.7 0 0 0 6.9 2c8.3 0 12.8-6.9 12.8-12.8v-.6c.9-.6 1.6-1.4 2.3-2.3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 5.9V21H21v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H13z"/></svg></a>
+          <a href="#" aria-label="Dribbble"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 8c4 2 9 3 14 1.5M8.5 4.5C12 8 14 13 14.5 19.5M3.5 13.5c5-1.5 9 .5 12 5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="lbl">Quick links</div>
+        <a href="index.html">Home</a>
+        <a href="films.html">Films</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FrameWorkers. All rights reserved.</span>
+      <span class="legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>
