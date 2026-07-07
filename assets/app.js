@@ -20,21 +20,33 @@ const DEMOS = [
   },
   {
     key:"last_train", title:"Paper Boat in the Black Window",
-    genre:"2D Anime · Occult", cat:"Anime",
+    genre:"2D Anime · Occult", cat:"2D",
     prompt:"On the last midnight train rattling toward the city, a lone teenage exorcist moves down the swaying carriage to bind the vengeful spirit coiled around a sleeping passenger before the terminus — but in the black window-glass she sees the truth, that it is only a drowned child clinging to the one stranger who resembles its mother, and in the seconds before the doors open she must choose whether to seal it away forever or let it ride one more stop. Stylized 2D hand-drawn anime (modern dark-fantasy anime look — clearly hand-drawn, non-photoreal), with Japanese narration and Japanese dialogue, English subtitles, and rattling rails, the hum of failing fluorescents, snapping paper talismans, and foley.",
     src:"videos/last_train.mp4", poster:"posters/last_train.jpg",
   },
   {
+    key:"luchen", title:"The Crimson Palm",
+    genre:"Donghua · Xianxia", cat:"2D",
+    prompt:"In a ruined mountain-sect outpost under a late-Tang moon, Lu Chen — the last name left on the sect's rolls — can barely coax a wick-thin thread of spirit energy from his palm. On the night of the triennial spirit-test, a green-aura enforcer smashes the jade disc before him; it flickers and dies, and the blow that shatters his core also slays a hidden demon-beast, whose cracked demon-core answers his blood and lights his 'crippled' palm with a crimson glow that belongs to no orthodox path. Stylized 2D hand-drawn Chinese animation (donghua — clean ink lines, thick painterly color, dark cinematic illustration, non-photoreal, non-3D), Chinese narration and dialogue, English subtitles, and foley.",
+    src:"videos/luchen.mp4", poster:"posters/luchen.jpg",
+  },
+  {
     key:"saiweng", title:"Blessing in Disguise",
-    genre:"Ink-wash · Fable", cat:"Ink-wash",
+    genre:"Ink-wash · Fable", cat:"Ink & Comic",
     prompt:"On the northern frontier below the Great Wall, an old man's prized horse vanishes one night; the neighbors come to console him, and he only says lightly, 'How do you know this isn't a blessing?' Months later the horse returns leading a herd of wild steppe horses — they congratulate him, and he says it may yet be a misfortune; his son, riding the new horse, is thrown and breaks his leg — they console him, and he still says it may yet be a blessing; soon the nomads invade, nine of every ten village youths die in battle, but his lame son is spared conscription, and father and son remain together: four turns of fortune and misfortune intertwined, all passing across the old man's ever-calm face. Traditional Chinese xieyi ink-wash painting (vast negative space, graded ink washes, the breath of a handscroll — hand-painted ink, non-photoreal), a storyteller's Chinese narration over minimal dialogue, English subtitles, with frontier wind, hoofbeats, distant war drums, a lone reed-pipe cry, and foley.",
     src:"videos/saiweng.mp4", poster:"posters/saiweng.jpg",
   },
   {
     key:"sherlock", title:"The Blue Wax at the Keyhole",
-    genre:"Graphic-novel · Mystery", cat:"Illustration",
+    genre:"Graphic-novel · Mystery", cat:"Ink & Comic",
     prompt:"In a gas-lit Victorian study bolted from the inside, a gentleman is found dead and Scotland Yard calls it suicide — but Holmes reads the clues, proves it was murder, and names the killer: the victim's private secretary, who faked the locked room. Richly colored graphic-novel illustration, English dialogue (no narration), English subtitles, and foley.",
     src:"videos/sherlock.mp4", poster:"posters/sherlock.jpg",
+  },
+  {
+    key:"psa", title:"Don't Gamble on a Bite",
+    genre:"Explainer · Public Health", cat:"2D",
+    prompt:"A calm, trustworthy public-health short: after a cat or dog bite or scratch, don't gamble and don't delay. Rinse the wound thoroughly right away, get to a doctor quickly, and let them decide on rabies post-exposure shots. Clean, gentle, professional 2D medical-explainer animation (flat, clear shapes, soft blue-green palette), Chinese narration, English subtitles, and foley.",
+    src:"videos/psa.mp4", poster:"posters/psa.jpg",
   },
 ];
 
