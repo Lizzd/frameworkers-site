@@ -25,9 +25,9 @@ const DEMOS = [
     src:"videos/last_train.mp4", poster:"posters/last_train.jpg",
   },
   {
-    key:"luchen", title:"The Crimson Palm",
+    key:"luchen", title:"Shatter",
     genre:"Donghua · Xianxia", cat:"2D",
-    prompt:"In a ruined mountain-sect outpost under a late-Tang moon, Lu Chen — the last name left on the sect's rolls — can barely coax a wick-thin thread of spirit energy from his palm. On the night of the triennial spirit-test, a green-aura enforcer smashes the jade disc before him; it flickers and dies, and the blow that shatters his core also slays a hidden demon-beast, whose cracked demon-core answers his blood and lights his 'crippled' palm with a crimson glow that belongs to no orthodox path. Stylized 2D hand-drawn Chinese animation (donghua — clean ink lines, thick painterly color, dark cinematic illustration, non-photoreal, non-3D), Chinese narration and dialogue, English subtitles, and foley.",
+    prompt:"《Shatter · Episode 1》— a xianxia cultivation short. On a late-Tang night at a ruined mountain-sect outpost, white-haired Lu Chen — the last name left on his clan's sect rolls — can raise only a wick-thin thread of white spirit-energy. On the triennial spirit-test, a green-aura enforcer forces his palm onto the lone jade testing-disc; it flickers and dies. The enforcer brands his spirit-root 'dead ash,' seizes his wrist, and a clash of energies blasts him through the wall — his glass-like spirit-core, webbed with cracks, shatters. But the blow's residual force also slays a bone-jackal demon lurking in the yard, and its cracked, crimson demon-core answers his blood, filling the 'cripple's' palm with a red light that belongs to no orthodox path. Stylized 2D hand-drawn Chinese animation (donghua — clean ink lines, thick painterly color, dark cinematic illustration, non-photoreal, non-3D), Lu Chen's first-person inner monologue and the enforcer's dialogue in Mandarin, Chinese subtitles, and foley.",
     src:"videos/luchen.mp4", poster:"posters/luchen.jpg",
   },
   {
@@ -44,14 +44,14 @@ const DEMOS = [
   },
   {
     key:"psa", title:"Don't Gamble on a Bite",
-    genre:"Explainer · Public Health", cat:"2D",
-    prompt:"A calm, trustworthy public-health short: after a cat or dog bite or scratch, don't gamble and don't delay. Rinse the wound thoroughly right away, get to a doctor quickly, and let them decide on rabies post-exposure shots. Clean, gentle, professional 2D medical-explainer animation (flat, clear shapes, soft blue-green palette), Chinese narration, English subtitles, and foley.",
+    genre:"Explainer · Public Health", cat:"Explainer",
+    prompt:"A health-education PSA. After a cat or dog bite or scratch, don't count on luck and don't delay: (1) immediately rinse the wound thoroughly under running water with soap, (2) get to a clinic as soon as possible, (3) let a doctor assess the exposure risk, and (4) complete rabies post-exposure prophylaxis as directed — the vaccine, plus immunoglobulin if needed. Clean, gentle, professional 2D medical-explainer animation (flat, clear shapes, soft blue-green palette, symbolic — no gore, no on-screen text), Chinese narration, Chinese subtitles, and foley.",
     src:"videos/psa.mp4", poster:"posters/psa.jpg",
   },
 ];
 
 // which films appear in the Home "Featured films" row (keys, visually diverse)
-const FEATURED = ["sorting_hat","sherlock","last_train"];
+const FEATURED = ["sorting_hat","luchen","sherlock"];
 
 // fake "generation" overlay length, ms (0 = jump straight to playback)
 const FAKE_GENERATE_MS = 2600;
