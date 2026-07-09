@@ -62,17 +62,41 @@ const FEATURED = ["sorting_hat","luchen","sherlock"];
 // fake "generation" overlay length, ms (0 = jump straight to playback)
 const FAKE_GENERATE_MS = 2600;
 
-// pipeline stages shown during fake generation (mirror the real sub_agents pipeline)
-// Illustrative steps of the plan the Director composes for THIS prompt (a dramatic
-// short → the cinematic crew). Different inputs/goals → a different plan & crew.
-const STAGES = [
-  "Director · reading your intent & planning this pipeline",
-  "Narrative brain · story, characters & world",
-  "Keyframe Sheet · identity anchors & storyboards",
-  "Shot Prompt · cinematic per-shot direction",
-  "Clip · rendering shots with Seedance 2.0 · native foley",
-  "Audio + Compositor · score, mix & final cut",
-];
+// The plan the Director composes depends on the input/goal — different film TYPES
+// run different agent chains (grounded in the real runs):
+//   cinematic = Story → Keyframe Sheet → Shot Prompt → Clip(Seedance) → Audio+Compositor
+//   explainer = Explainer → Keyframe Sheet → Shot Prompt → Clip → Narration+Compositor
+//   storybook = Storybook → Illustration → Narrator → Compositor  (no Seedance clips)
+const STAGE_SETS = {
+  cinematic: [
+    "Director · planning this pipeline",
+    "Story · characters, world & beats",
+    "Keyframe Sheet · identity anchors & storyboards",
+    "Shot Prompt · cinematic per-shot direction",
+    "Clip · rendering shots (Seedance 2.0, native foley)",
+    "Audio + Compositor · voice, score, mix & final cut",
+  ],
+  explainer: [
+    "Director · planning this pipeline",
+    "Explainer · grounded script & shot plan",
+    "Keyframe Sheet · style anchors & storyboards",
+    "Shot Prompt · per-shot direction",
+    "Clip · rendering shots (Seedance 2.0)",
+    "Narration + Compositor · scripted voice-over, subtitles & cut",
+  ],
+  storybook: [
+    "Director · planning this pipeline",
+    "Storybook · page-by-page read-aloud script",
+    "Illustration · watercolor picture-book pages",
+    "Narrator · read-aloud voice-over",
+    "Compositor · slideshow, read-along captions & mix",
+  ],
+};
+function stagesFor(d){
+  if (d && d.cat === "Storybook") return STAGE_SETS.storybook;
+  if (d && d.cat === "Explainer") return STAGE_SETS.explainer;
+  return STAGE_SETS.cinematic;
+}
 /* ============================================================================= */
 
 const PLAY_SVG  = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
@@ -101,27 +125,23 @@ function ensureGenOverlay(){
       <div class="gen-note">This is the plan the Director composed for this prompt — different inputs get a different plan and crew.</div>
     </div>`;
   document.body.appendChild(el);
-  const stagesEl = $("stages");
-  STAGES.forEach(s=>{
-    const li = document.createElement("li");
-    li.innerHTML = `<span class="tick">${CHECK_SVG}</span><span>${s}</span>`;
-    stagesEl.appendChild(li);
-  });
 }
 
-function runGeneration(done){
+function runGeneration(stages, done){
   ensureGenOverlay();
   if (FAKE_GENERATE_MS <= 0){ done(); return; }
-  const gen = $("gen"), barFill = $("barFill"), genSub = $("genSub");
-  const stageItems = [...$("stages").children];
+  const gen = $("gen"), barFill = $("barFill"), genSub = $("genSub"), stagesEl = $("stages");
+  // rebuild the stage list for THIS film's plan (varies by film type)
+  stagesEl.innerHTML = stages.map(s=>`<li><span class="tick">${CHECK_SVG}</span><span>${s}</span></li>`).join("");
+  const stageItems = [...stagesEl.children];
   gen.classList.add("on"); gen.setAttribute("aria-hidden","false");
-  stageItems.forEach(li=>li.className=""); barFill.style.width = "0%";
+  barFill.style.width = "0%";
   genSub.textContent = "Reading your intent…";
   const n = stageItems.length, step = FAKE_GENERATE_MS / n;
   for (let k=0;k<n;k++){
     genTimers.push(setTimeout(()=>{
       stageItems.forEach((li,idx)=>{ li.classList.toggle("done", idx<k); li.classList.toggle("active", idx===k); });
-      genSub.textContent = STAGES[k];
+      genSub.textContent = stages[k];
       barFill.style.width = Math.round(((k+1)/n)*100) + "%";
     }, Math.round(step*k)));
   }
@@ -185,7 +205,7 @@ function initPortfolio(){
   }
   function play(key){
     const d = byKey(key); if(!d) return;
-    runGeneration(()=>{
+    runGeneration(stagesFor(d), ()=>{
       $("pgenre").textContent = d.genre;
       $("ptitle").textContent = d.title;
       $("pprompt").textContent = d.prompt;
