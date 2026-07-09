@@ -48,6 +48,12 @@ const DEMOS = [
     prompt:"A health-education PSA. After a cat or dog bite or scratch, don't count on luck and don't delay: (1) immediately rinse the wound thoroughly under running water with soap, (2) get to a clinic as soon as possible, (3) let a doctor assess the exposure risk, and (4) complete rabies post-exposure prophylaxis as directed — the vaccine, plus immunoglobulin if needed. Clean, gentle, professional 2D medical-explainer animation (flat, clear shapes, soft blue-green palette, symbolic — no gore, no on-screen text), Chinese narration, Chinese subtitles, and foley.",
     src:"videos/psa.mp4", poster:"posters/psa.jpg",
   },
+  {
+    key:"tortoise", title:"The Tortoise and the Hare",
+    genre:"Storybook · Fable", cat:"Storybook",
+    prompt:"Make a gentle illustrated children's bedtime picture book of the classic fable 'The Tortoise and the Hare'. Tell it page by page — one warm, simple read-aloud line per page — in a soft watercolor storybook style, narrated aloud for a young child, with the read-along words shown on screen.",
+    src:"videos/tortoise.mp4", poster:"posters/tortoise.jpg",
+  },
 ];
 
 // which films appear in the Home "Featured films" row (keys, visually diverse)
