@@ -54,6 +54,12 @@ const DEMOS = [
     prompt:"Make a gentle illustrated children's bedtime picture book of the classic fable 'The Tortoise and the Hare'. Tell it page by page — one warm, simple read-aloud line per page — in a soft watercolor storybook style, narrated aloud for a young child, with the read-along words shown on screen.",
     src:"videos/tortoise.mp4", poster:"posters/tortoise.jpg",
   },
+  {
+    key:"orpheus", title:"Orpheus and Eurydice",
+    genre:"Illustrated Audiobook · Myth", cat:"Storybook",
+    prompt:"An illustrated audiobook of the myth of Orpheus and Eurydice: a narrator tells the whole story over a slideshow of painted illustrations, with Orpheus, Eurydice, and Hades each speaking their own lines of dialogue woven into the narration — a richer, multi-voice dramatic telling (not a one-line-per-page children's book). Gentle read-aloud English narration, English subtitles, and foley.",
+    src:"videos/orpheus.mp4", poster:"posters/orpheus.jpg",
+  },
 ];
 
 // which films appear in the Home "Featured films" row (keys, visually diverse)
