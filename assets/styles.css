@@ -322,3 +322,8 @@ img{display:block;max-width:100%}
   .hero{padding:70px 0 76px}
   .footer-bottom{flex-direction:column;align-items:flex-start}
 }
+
+/* Home "See it in action" full-demo video */
+.full-demo{display:block;width:100%;max-width:960px;margin:0 auto;
+  border-radius:var(--radius-lg);border:1px solid var(--line);
+  box-shadow:var(--shadow);background:#0b0c11}
