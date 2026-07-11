@@ -73,6 +73,12 @@ img{display:block;max-width:100%}
 .brand-dots .d2{background:var(--purple)}
 .brand-logo{height:30px;width:auto;display:block}
 .footer-brand .brand-logo{height:30px}
+.brand-group{display:inline-flex;align-items:center}
+.brand-byline{display:inline-flex;align-items:center;gap:7px;margin-left:12px;padding-left:12px;border-left:1px solid var(--line)}
+.brand-byline .by-text{font-size:11px;font-weight:500;color:var(--faint);text-transform:uppercase;letter-spacing:.09em}
+.brand-byline .insait-link{display:block;opacity:.82;transition:opacity .15s}
+.brand-byline .insait-link:hover{opacity:1}
+.brand-byline .insait-logo{height:15px;width:auto;display:block}
 .nav-links{display:flex;align-items:center;gap:30px}
 .nav-links a{position:relative;color:var(--ink);font-size:14.5px;font-weight:500;padding:4px 0;transition:color .15s}
 .nav-links a:hover{color:var(--blue)}
@@ -319,6 +325,7 @@ img{display:block;max-width:100%}
   .section{padding:60px 0}
   .nav-links{gap:18px}
   .nav-links a{font-size:13.5px}
+  .brand-byline{display:none}
   .hero{padding:70px 0 76px}
   .footer-bottom{flex-direction:column;align-items:flex-start}
 }
