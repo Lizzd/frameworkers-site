@@ -60,6 +60,12 @@ const DEMOS = [
     prompt:"An illustrated audiobook of the myth of Orpheus and Eurydice: a narrator tells the whole story over a slideshow of painted illustrations, with Orpheus, Eurydice, and Hades each speaking their own lines of dialogue woven into the narration — a richer, multi-voice dramatic telling (not a one-line-per-page children's book). Gentle read-aloud English narration, English subtitles, and foley.",
     src:"videos/orpheus.mp4", poster:"posters/orpheus.jpg",
   },
+  {
+    key:"poem_recital", title:"Hope Is the Thing with Feathers",
+    genre:"Audio-driven · Illustrated Poem", cat:"Storybook",
+    prompt:"An audio-driven illustrated poem: the user supplies their OWN spoken-word recitation, and the visuals — a slideshow of painted illustrations — are timed to that real recording, advancing with the poem's mood, with English subtitles and light foley. The user's own voice is the narration (no re-synthesis). Here: Emily Dickinson's 'Hope is the thing with feathers'.",
+    src:"videos/poem_recital.mp4", poster:"posters/poem_recital.jpg",
+  },
 ];
 
 // which films appear in the Home "Featured films" row (keys, visually diverse)
