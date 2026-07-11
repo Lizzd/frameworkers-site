@@ -225,9 +225,12 @@ img{display:block;max-width:100%}
 .footer{background:linear-gradient(180deg,#101119,var(--footer-bg));color:var(--footer-ink);margin-top:40px}
 .footer-grid{max-width:var(--maxw);margin:0 auto;padding:64px 28px 30px;display:grid;
   grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px}
-.footer-brand .brand{margin-bottom:14px}
+.footer-brand .brand-group{margin-bottom:14px}
 .footer-brand .brand-mark{width:34px;height:34px}
 .footer-brand .brand-word{font-size:24px}
+.footer-brand .brand-byline .by-text{color:var(--footer-muted)}
+.footer-brand .brand-byline .insait-link{opacity:.75}
+.footer-brand .brand-byline .insait-link:hover{opacity:1}
 .footer-brand p{color:var(--footer-muted);font-size:14px;line-height:1.7;max-width:380px;margin:0 0 20px}
 .footer-social{display:flex;gap:16px}
 .footer-social a{color:var(--footer-muted);transition:color .15s}
