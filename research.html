@@ -5,8 +5,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>FrameWorkers — Research</title>
-<link rel="stylesheet" href="assets/styles.css?v=19" />
-<script src="assets/app.js?v=19" defer></script>
+<link rel="stylesheet" href="assets/styles.css?v=20" />
+<script src="assets/app.js?v=20" defer></script>
 </head>
 <body data-page="research">
 
@@ -238,15 +238,18 @@
     <div class="container">
       <div class="section-head">
         <h2 class="section-title">Additional <span class="gtext">validation</span></h2>
-        <p class="section-sub">Further experiments added in response to reviewer feedback: an expanded 40-case
-          evaluation against published multi-agent baselines, a capability-coverage analysis, a runtime-recovery
-          stress test, and an extensibility check.</p>
+        <p class="section-sub">Further experiments added in response to reviewer feedback: a second end-to-end
+          evaluation on a new 20-case benchmark, a capability-coverage analysis, a runtime-recovery stress test, and
+          an extensibility check. Together with the 20-case study above, this brings real-generation evaluation to
+          40 cases total — the original 20 against S-Agent &amp; UniVA, this additional 20 (five cases each adapted
+          from MovieAgent's and Anim-Director's own papers, plus ten new scenarios) against those two baselines
+          directly.</p>
       </div>
 
       <div class="chart-row">
         <div class="chart-card">
-          <h3 class="chart-title">Expanded 40-case evaluation</h3>
-          <p class="chart-sub">Automatic MLLM-judge overall score (1–5), vs. published multi-agent baselines</p>
+          <h3 class="chart-title">Additional 20-case evaluation</h3>
+          <p class="chart-sub">Automatic MLLM-judge overall score (1–5), vs. Anim-Director &amp; MovieAgent on their own benchmark cases</p>
           <div class="hbar-group">
             <div class="hbar-row ours">
               <span class="hbar-label">FrameWorkers (ours)</span>
@@ -266,8 +269,8 @@
           </div>
         </div>
         <div class="chart-card">
-          <h3 class="chart-title">Expanded 40-case: human evaluation</h3>
-          <p class="chart-sub">Blind human rating, overall (1–5), 20 independent evaluators</p>
+          <h3 class="chart-title">Additional 20-case: human evaluation</h3>
+          <p class="chart-sub">Blind human rating, overall (1–5), 20 independent evaluators, same benchmark as above</p>
           <div class="hbar-group">
             <div class="hbar-row ours">
               <span class="hbar-label">FrameWorkers (ours)</span>
