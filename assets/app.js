@@ -66,6 +66,12 @@ const DEMOS = [
     prompt:"An audio-driven illustrated poem: the user supplies their OWN spoken-word recitation, and the visuals — a slideshow of painted illustrations — are timed to that real recording, advancing with the poem's mood, with English subtitles and light foley. The user's own voice is the narration (no re-synthesis). Here: Emily Dickinson's 'Hope is the thing with feathers'.",
     src:"videos/poem_recital.mp4", poster:"posters/poem_recital.jpg",
   },
+  {
+    key:"video_extend", title:"Extended Ending",
+    genre:"Refine existing footage · Video extension", cat:"Refine",
+    prompt:"Take an existing short clip whose ending stops too abruptly and extend it — continuing naturally from its final frame in the same style and scene for a few more seconds of atmospheric outro (slow push-in, gentle fade), without touching or re-cutting the original footage. Here: the closing shot of a 2D-anime late-night subway scene, extended into the now-empty carriage.",
+    src:"videos/video_extend.mp4", poster:"posters/video_extend.jpg",
+  },
 ];
 
 // which films appear in the Home "Featured films" row (keys, visually diverse)
