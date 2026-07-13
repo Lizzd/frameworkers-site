@@ -125,14 +125,17 @@ img{display:block;max-width:100%}
 .paper-venue{margin:0;font-size:13px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.07em}
 @media (max-width:640px){.paper-title{font-size:21px}.paper-authors{font-size:14px}}
 
-/* ---------- hero (home) ---------- */
-.hero{position:relative;overflow:hidden;text-align:center;padding:96px 0 104px;
+/* ---------- top gradient zone: paper byline + demo video + hero (home) ---------- */
+.top-gradient{position:relative;overflow:hidden;
   background:
-    radial-gradient(50% 52% at 10% 2%, rgba(79,110,247,.18), transparent 60%),
-    radial-gradient(48% 50% at 90% 0%, rgba(139,92,246,.15), transparent 60%),
-    radial-gradient(52% 54% at 20% 86%, rgba(74,196,144,.16), transparent 62%),
-    radial-gradient(46% 50% at 86% 80%, rgba(139,92,246,.10), transparent 62%),
+    radial-gradient(50% 40% at 10% 0%, rgba(79,110,247,.18), transparent 60%),
+    radial-gradient(46% 38% at 90% 4%, rgba(139,92,246,.15), transparent 60%),
+    radial-gradient(52% 40% at 20% 100%, rgba(74,196,144,.16), transparent 62%),
+    radial-gradient(46% 38% at 86% 96%, rgba(139,92,246,.10), transparent 62%),
     #ffffff}
+
+/* ---------- hero (home) ---------- */
+.hero{position:relative;text-align:center;padding:64px 0 104px}
 .hero .badge{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;color:var(--blue-600);
   background:rgba(79,110,247,.12);border:1px solid rgba(79,110,247,.24);
   padding:8px 16px;border-radius:var(--radius-pill);margin-bottom:26px}
