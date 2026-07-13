@@ -5,8 +5,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>FrameWorkers — Research</title>
-<link rel="stylesheet" href="assets/styles.css?v=18" />
-<script src="assets/app.js?v=18" defer></script>
+<link rel="stylesheet" href="assets/styles.css?v=19" />
+<script src="assets/app.js?v=19" defer></script>
 </head>
 <body data-page="research">
 
@@ -231,6 +231,119 @@
           dimensions — <b>instruction following</b>, <b>temporal consistency</b>, and <b>realism</b> — FrameWorkers
           scored highest on every dimension and on 8 of 9 sub-questions, ahead of both S-Agent and UniVA.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Additional <span class="gtext">validation</span></h2>
+        <p class="section-sub">Further experiments added in response to reviewer feedback: an expanded 40-case
+          evaluation against published multi-agent baselines, a capability-coverage analysis, a runtime-recovery
+          stress test, and an extensibility check.</p>
+      </div>
+
+      <div class="chart-row">
+        <div class="chart-card">
+          <h3 class="chart-title">Expanded 40-case evaluation</h3>
+          <p class="chart-sub">Automatic MLLM-judge overall score (1–5), vs. published multi-agent baselines</p>
+          <div class="hbar-group">
+            <div class="hbar-row ours">
+              <span class="hbar-label">FrameWorkers (ours)</span>
+              <div class="hbar-track"><div class="hbar-fill ours" style="width:80.8%"></div></div>
+              <span class="hbar-value">4.04</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">Anim-Director</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:57.6%"></div></div>
+              <span class="hbar-value">2.88</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">MovieAgent</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:36.0%"></div></div>
+              <span class="hbar-value">1.80</span>
+            </div>
+          </div>
+        </div>
+        <div class="chart-card">
+          <h3 class="chart-title">Expanded 40-case: human evaluation</h3>
+          <p class="chart-sub">Blind human rating, overall (1–5), 20 independent evaluators</p>
+          <div class="hbar-group">
+            <div class="hbar-row ours">
+              <span class="hbar-label">FrameWorkers (ours)</span>
+              <div class="hbar-track"><div class="hbar-fill ours" style="width:64.2%"></div></div>
+              <span class="hbar-value">3.21</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">Anim-Director</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:53.0%"></div></div>
+              <span class="hbar-value">2.65</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">MovieAgent</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:47.6%"></div></div>
+              <span class="hbar-value">2.38</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-card" style="max-width:1080px;margin:18px auto 0">
+        <h3 class="chart-title">Capability coverage</h3>
+        <p class="chart-sub">Supported input/output combinations, out of 17 tracked (10 input types × 7 output types) — a
+          gap means not explicitly demonstrated in that system's paper, not necessarily an inherent inability</p>
+        <div class="hbar-group">
+          <div class="hbar-row ours">
+            <span class="hbar-label">FrameWorkers (ours)</span>
+            <div class="hbar-track"><div class="hbar-fill ours" style="width:100%"></div></div>
+            <span class="hbar-value">17/17</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">UniVA</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:70.6%"></div></div>
+            <span class="hbar-value">12/17</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">MovieAgent</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:58.8%"></div></div>
+            <span class="hbar-value">10/17</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">Co-Director</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:35.3%"></div></div>
+            <span class="hbar-value">6/17</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">AniMaker</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:29.4%"></div></div>
+            <span class="hbar-value">5/17</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">MM-StoryAgent</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:29.4%"></div></div>
+            <span class="hbar-value">5/17</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">Anim-Director</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:23.5%"></div></div>
+            <span class="hbar-value">4/17</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="kpi-row" style="grid-template-columns:repeat(2,1fr);max-width:1080px;margin-top:18px">
+        <div class="kpi-tile">
+          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.6-6.4"/><path d="M3 4v5h5"/></svg></div>
+          <div class="kpi-value">96.7<span class="kpi-unit">%</span></div>
+          <div class="kpi-label">runtime-recovery success across 991 perturbed execution cases — with no explicit recovery training</div>
+        </div>
+        <div class="kpi-tile">
+          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.6"/><rect x="13" y="4" width="7" height="7" rx="1.6"/><rect x="4" y="13" width="7" height="7" rx="1.6"/><path d="M16.5 14v6M13.5 17h6"/></svg></div>
+          <div class="kpi-value">O(1)</div>
+          <div class="kpi-label">integration cost for new sub-agents — added post-hoc at 93–99% routing accuracy, no Director retraining</div>
+        </div>
+      </div>
+
       <p class="cta-note">From our paper, <i>FrameWorkers: A Dynamic Multi-Agent Framework for Automated AIGC Video Production</i> — currently under review.</p>
     </div>
   </section>
