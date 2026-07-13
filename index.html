@@ -11,8 +11,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>FrameWorkers — Prompt to Film</title>
-<link rel="stylesheet" href="assets/styles.css?v=35" />
-<script src="assets/app.js?v=35" defer></script>
+<link rel="stylesheet" href="assets/styles.css?v=36" />
+<script src="assets/app.js?v=36" defer></script>
 </head>
 <body data-page="home">
 
@@ -155,57 +155,48 @@
         </div>
       </div>
 
-      <div class="chart-card" style="max-width:1080px;margin:18px auto 0">
-        <h3 class="chart-title">Video quality — human evaluation</h3>
-        <p class="chart-sub">Blind human rating (1–5), across our two evaluation studies</p>
-
-        <p class="mini-label">vs. S-Agent &amp; UniVA</p>
-        <div class="dim-grid-3">
-          <div>
-            <p style="margin:0 0 8px;font-size:11px;font-weight:700;color:var(--faint);text-transform:uppercase;letter-spacing:.05em">Instruction following</p>
-            <div class="hbar-group">
-              <div class="hbar-row ours"><span class="hbar-label">Ours</span><div class="hbar-track"><div class="hbar-fill ours" style="width:60.2%"></div></div><span class="hbar-value">3.01</span></div>
-              <div class="hbar-row"><span class="hbar-label">UniVA</span><div class="hbar-track"><div class="hbar-fill base" style="width:56.4%"></div></div><span class="hbar-value">2.82</span></div>
-              <div class="hbar-row"><span class="hbar-label">S-Agent</span><div class="hbar-track"><div class="hbar-fill base" style="width:52.6%"></div></div><span class="hbar-value">2.63</span></div>
-            </div>
+      <div class="chart-row" style="margin-top:18px">
+        <div class="chart-card">
+          <h3 class="chart-title">Human evaluation — vs. S-Agent &amp; UniVA</h3>
+          <p class="chart-sub">Blind human rating (1–5), three dimensions</p>
+          <div class="hbar-group" style="margin-bottom:16px">
+            <div class="hbar-row ours"><span class="hbar-label">Ours (instruction)</span><div class="hbar-track"><div class="hbar-fill ours" style="width:60.2%"></div></div><span class="hbar-value">3.01</span></div>
+            <div class="hbar-row"><span class="hbar-label">UniVA</span><div class="hbar-track"><div class="hbar-fill base" style="width:56.4%"></div></div><span class="hbar-value">2.82</span></div>
+            <div class="hbar-row"><span class="hbar-label">S-Agent</span><div class="hbar-track"><div class="hbar-fill base" style="width:52.6%"></div></div><span class="hbar-value">2.63</span></div>
           </div>
-          <div>
-            <p style="margin:0 0 8px;font-size:11px;font-weight:700;color:var(--faint);text-transform:uppercase;letter-spacing:.05em">Temporal consistency</p>
-            <div class="hbar-group">
-              <div class="hbar-row ours"><span class="hbar-label">Ours</span><div class="hbar-track"><div class="hbar-fill ours" style="width:63.8%"></div></div><span class="hbar-value">3.19</span></div>
-              <div class="hbar-row"><span class="hbar-label">UniVA</span><div class="hbar-track"><div class="hbar-fill base" style="width:58.0%"></div></div><span class="hbar-value">2.90</span></div>
-              <div class="hbar-row"><span class="hbar-label">S-Agent</span><div class="hbar-track"><div class="hbar-fill base" style="width:53.4%"></div></div><span class="hbar-value">2.67</span></div>
-            </div>
+          <div class="hbar-group" style="margin-bottom:16px">
+            <div class="hbar-row ours"><span class="hbar-label">Ours (temporal)</span><div class="hbar-track"><div class="hbar-fill ours" style="width:63.8%"></div></div><span class="hbar-value">3.19</span></div>
+            <div class="hbar-row"><span class="hbar-label">UniVA</span><div class="hbar-track"><div class="hbar-fill base" style="width:58.0%"></div></div><span class="hbar-value">2.90</span></div>
+            <div class="hbar-row"><span class="hbar-label">S-Agent</span><div class="hbar-track"><div class="hbar-fill base" style="width:53.4%"></div></div><span class="hbar-value">2.67</span></div>
           </div>
-          <div>
-            <p style="margin:0 0 8px;font-size:11px;font-weight:700;color:var(--faint);text-transform:uppercase;letter-spacing:.05em">Realism</p>
-            <div class="hbar-group">
-              <div class="hbar-row ours"><span class="hbar-label">Ours</span><div class="hbar-track"><div class="hbar-fill ours" style="width:60.0%"></div></div><span class="hbar-value">3.00</span></div>
-              <div class="hbar-row"><span class="hbar-label">UniVA</span><div class="hbar-track"><div class="hbar-fill base" style="width:57.2%"></div></div><span class="hbar-value">2.86</span></div>
-              <div class="hbar-row"><span class="hbar-label">S-Agent</span><div class="hbar-track"><div class="hbar-fill base" style="width:53.6%"></div></div><span class="hbar-value">2.68</span></div>
+          <div class="hbar-group">
+            <div class="hbar-row ours"><span class="hbar-label">Ours (realism)</span><div class="hbar-track"><div class="hbar-fill ours" style="width:60.0%"></div></div><span class="hbar-value">3.00</span></div>
+            <div class="hbar-row"><span class="hbar-label">UniVA</span><div class="hbar-track"><div class="hbar-fill base" style="width:57.2%"></div></div><span class="hbar-value">2.86</span></div>
+            <div class="hbar-row"><span class="hbar-label">S-Agent</span><div class="hbar-track"><div class="hbar-fill base" style="width:53.6%"></div></div><span class="hbar-value">2.68</span></div>
+          </div>
+          <p class="chart-sub" style="margin-top:16px">Highest on every dimension, and 8 of 9 sub-questions.</p>
+        </div>
+        <div class="chart-card">
+          <h3 class="chart-title">Human evaluation — vs. Anim-Director &amp; MovieAgent</h3>
+          <p class="chart-sub">Blind human rating, overall (1–5)</p>
+          <div class="hbar-group">
+            <div class="hbar-row ours">
+              <span class="hbar-label">FrameWorkers (ours)</span>
+              <div class="hbar-track"><div class="hbar-fill ours" style="width:64.2%"></div></div>
+              <span class="hbar-value">3.21</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">Anim-Director</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:53.0%"></div></div>
+              <span class="hbar-value">2.65</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">MovieAgent</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:47.6%"></div></div>
+              <span class="hbar-value">2.38</span>
             </div>
           </div>
         </div>
-
-        <p class="mini-label" style="padding-top:20px;border-top:1px solid var(--line)">vs. Anim-Director &amp; MovieAgent — overall</p>
-        <div class="hbar-group">
-          <div class="hbar-row ours">
-            <span class="hbar-label">FrameWorkers (ours)</span>
-            <div class="hbar-track"><div class="hbar-fill ours" style="width:64.2%"></div></div>
-            <span class="hbar-value">3.21</span>
-          </div>
-          <div class="hbar-row">
-            <span class="hbar-label">Anim-Director</span>
-            <div class="hbar-track"><div class="hbar-fill base" style="width:53.0%"></div></div>
-            <span class="hbar-value">2.65</span>
-          </div>
-          <div class="hbar-row">
-            <span class="hbar-label">MovieAgent</span>
-            <div class="hbar-track"><div class="hbar-fill base" style="width:47.6%"></div></div>
-            <span class="hbar-value">2.38</span>
-          </div>
-        </div>
-        <p class="chart-sub" style="margin-top:16px">Highest on every dimension tested, and 8 of 9 individual sub-questions in the original study.</p>
       </div>
       <div style="text-align:center;margin-top:36px">
         <a class="btn btn-outline" href="research.html">See the full results
@@ -238,8 +229,8 @@
         <p class="section-sub">A full walkthrough — from a single prompt to a finished film, end to end.</p>
       </div>
       <video class="full-demo" controls playsinline preload="none"
-             poster="posters/frameworkers_full_demo.jpg?v=35">
-        <source src="videos/frameworkers_full_demo.mp4?v=35" type="video/mp4" />
+             poster="posters/frameworkers_full_demo.jpg?v=36">
+        <source src="videos/frameworkers_full_demo.mp4?v=36" type="video/mp4" />
       </video>
     </div>
   </section>
