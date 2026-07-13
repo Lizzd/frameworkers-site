@@ -5,8 +5,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>FrameWorkers — Research</title>
-<link rel="stylesheet" href="assets/styles.css?v=27" />
-<script src="assets/app.js?v=27" defer></script>
+<link rel="stylesheet" href="assets/styles.css?v=28" />
+<script src="assets/app.js?v=28" defer></script>
 </head>
 <body data-page="research">
 
@@ -124,7 +124,9 @@
       <div class="section-head">
         <h2 class="section-title">Results</h2>
         <p class="section-sub">We evaluate the Director's routing accuracy, the framework's execution robustness across
-          backends, and end-to-end video quality against a single-agent baseline (S-Agent) and UniVA.</p>
+          backends, end-to-end video quality across two studies against four external baselines (S-Agent, UniVA,
+          Anim-Director, MovieAgent), capability coverage, runtime recovery, and extensibility — including the
+          additional experiments added in response to reviewer feedback.</p>
       </div>
 
       <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
@@ -203,9 +205,11 @@
           <p class="chart-sub" style="margin-top:16px">Gemini 2.5 Flash — the backend FrameWorkers ships with — completes every case with zero orchestration, routing, or workspace-level failures.</p>
         </div>
         <div class="chart-card">
-          <h3 class="chart-title">End-to-end video quality</h3>
-          <p class="chart-sub">Blind MLLM-judge overall score (1–5 scale), 20 matched prompts / 60 videos</p>
-          <div class="hbar-group">
+          <h3 class="chart-title">End-to-end video quality — automatic</h3>
+          <p class="chart-sub">Blind MLLM-judge overall score (1–5), across our two evaluation studies</p>
+
+          <p class="mini-label">Study 1 — vs. S-Agent &amp; UniVA (original 20-case benchmark)</p>
+          <div class="hbar-group" style="margin-bottom:22px">
             <div class="hbar-row ours">
               <span class="hbar-label">FrameWorkers (ours)</span>
               <div class="hbar-track"><div class="hbar-fill ours" style="width:86.4%"></div></div>
@@ -222,13 +226,35 @@
               <span class="hbar-value">4.08</span>
             </div>
           </div>
-          <p class="chart-sub" style="margin-top:16px">Also highest on frame-level CLIP video-text alignment: 25.15 (ours) vs. 24.94 (S-Agent) and 24.66 (UniVA).</p>
+
+          <p class="mini-label">Study 2 — vs. Anim-Director &amp; MovieAgent (additional 20-case benchmark)</p>
+          <div class="hbar-group">
+            <div class="hbar-row ours">
+              <span class="hbar-label">FrameWorkers (ours)</span>
+              <div class="hbar-track"><div class="hbar-fill ours" style="width:80.8%"></div></div>
+              <span class="hbar-value">4.04</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">Anim-Director</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:57.6%"></div></div>
+              <span class="hbar-value">2.88</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">MovieAgent</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:36.0%"></div></div>
+              <span class="hbar-value">1.80</span>
+            </div>
+          </div>
+
+          <p class="chart-sub" style="margin-top:16px">Study 1 also highest on frame-level CLIP video-text alignment: 25.15 (ours) vs. 24.94 (S-Agent) and 24.66 (UniVA).</p>
         </div>
       </div>
 
       <div class="chart-card" style="max-width:1080px;margin:18px auto 0">
-        <h3 class="chart-title">Human evaluation</h3>
-        <p class="chart-sub">Blind human rating (1–5 scale), same 20-case benchmark, across three dimensions</p>
+        <h3 class="chart-title">End-to-end video quality — human evaluation</h3>
+        <p class="chart-sub">Blind human rating (1–5), across our two evaluation studies</p>
+
+        <p class="mini-label">Study 1 — vs. S-Agent &amp; UniVA</p>
 
         <p style="margin:0 0 10px;font-size:11.5px;font-weight:700;color:var(--faint);text-transform:uppercase;letter-spacing:.06em">Instruction following</p>
         <div class="hbar-group" style="margin-bottom:22px">
@@ -288,47 +314,8 @@
         </div>
 
         <p class="chart-sub" style="margin-top:16px">Highest on every dimension and on 8 of 9 individual sub-questions — UniVA edges ahead only on two instruction-following sub-questions.</p>
-      </div>
-    </div>
-  </section>
 
-  <section class="section" style="padding-top:0">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Additional <span class="gtext">validation</span></h2>
-        <p class="section-sub">Further experiments added in response to reviewer feedback: a second end-to-end
-          evaluation on a new 20-case benchmark, a capability-coverage analysis, a runtime-recovery stress test, and
-          an extensibility check. Together with the 20-case study above, this brings real-generation evaluation to
-          40 cases total — the original 20 against S-Agent &amp; UniVA, this additional 20 (five cases each adapted
-          from MovieAgent's and Anim-Director's own papers, plus ten new scenarios) against those two baselines
-          directly.</p>
-      </div>
-
-      <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
-        <h3 class="chart-title">Additional 20-case evaluation</h3>
-        <p class="chart-sub">Automatic MLLM-judge overall score (1–5), vs. Anim-Director &amp; MovieAgent on their own benchmark cases</p>
-        <div class="hbar-group">
-          <div class="hbar-row ours">
-            <span class="hbar-label">FrameWorkers (ours)</span>
-            <div class="hbar-track"><div class="hbar-fill ours" style="width:80.8%"></div></div>
-            <span class="hbar-value">4.04</span>
-          </div>
-          <div class="hbar-row">
-            <span class="hbar-label">Anim-Director</span>
-            <div class="hbar-track"><div class="hbar-fill base" style="width:57.6%"></div></div>
-            <span class="hbar-value">2.88</span>
-          </div>
-          <div class="hbar-row">
-            <span class="hbar-label">MovieAgent</span>
-            <div class="hbar-track"><div class="hbar-fill base" style="width:36.0%"></div></div>
-            <span class="hbar-value">1.80</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="chart-card" style="max-width:1080px;margin:18px auto 0">
-        <h3 class="chart-title">Additional 20-case: human evaluation</h3>
-        <p class="chart-sub">Blind human rating (1–5), 20 independent evaluators, across three dimensions plus overall</p>
+        <p class="mini-label" style="margin-top:26px;padding-top:20px;border-top:1px solid var(--line)">Study 2 — vs. Anim-Director &amp; MovieAgent</p>
 
         <p style="margin:0 0 10px;font-size:11.5px;font-weight:700;color:var(--faint);text-transform:uppercase;letter-spacing:.06em">Instruction following</p>
         <div class="hbar-group" style="margin-bottom:22px">
