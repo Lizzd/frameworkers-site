@@ -5,8 +5,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>FrameWorkers — Research</title>
-<link rel="stylesheet" href="assets/styles.css?v=26" />
-<script src="assets/app.js?v=26" defer></script>
+<link rel="stylesheet" href="assets/styles.css?v=27" />
+<script src="assets/app.js?v=27" defer></script>
 </head>
 <body data-page="research">
 
@@ -304,47 +304,105 @@
           directly.</p>
       </div>
 
-      <div class="chart-row">
-        <div class="chart-card">
-          <h3 class="chart-title">Additional 20-case evaluation</h3>
-          <p class="chart-sub">Automatic MLLM-judge overall score (1–5), vs. Anim-Director &amp; MovieAgent on their own benchmark cases</p>
-          <div class="hbar-group">
-            <div class="hbar-row ours">
-              <span class="hbar-label">FrameWorkers (ours)</span>
-              <div class="hbar-track"><div class="hbar-fill ours" style="width:80.8%"></div></div>
-              <span class="hbar-value">4.04</span>
-            </div>
-            <div class="hbar-row">
-              <span class="hbar-label">Anim-Director</span>
-              <div class="hbar-track"><div class="hbar-fill base" style="width:57.6%"></div></div>
-              <span class="hbar-value">2.88</span>
-            </div>
-            <div class="hbar-row">
-              <span class="hbar-label">MovieAgent</span>
-              <div class="hbar-track"><div class="hbar-fill base" style="width:36.0%"></div></div>
-              <span class="hbar-value">1.80</span>
-            </div>
+      <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
+        <h3 class="chart-title">Additional 20-case evaluation</h3>
+        <p class="chart-sub">Automatic MLLM-judge overall score (1–5), vs. Anim-Director &amp; MovieAgent on their own benchmark cases</p>
+        <div class="hbar-group">
+          <div class="hbar-row ours">
+            <span class="hbar-label">FrameWorkers (ours)</span>
+            <div class="hbar-track"><div class="hbar-fill ours" style="width:80.8%"></div></div>
+            <span class="hbar-value">4.04</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">Anim-Director</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:57.6%"></div></div>
+            <span class="hbar-value">2.88</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">MovieAgent</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:36.0%"></div></div>
+            <span class="hbar-value">1.80</span>
           </div>
         </div>
-        <div class="chart-card">
-          <h3 class="chart-title">Additional 20-case: human evaluation</h3>
-          <p class="chart-sub">Blind human rating, overall (1–5), 20 independent evaluators, same benchmark as above</p>
-          <div class="hbar-group">
-            <div class="hbar-row ours">
-              <span class="hbar-label">FrameWorkers (ours)</span>
-              <div class="hbar-track"><div class="hbar-fill ours" style="width:64.2%"></div></div>
-              <span class="hbar-value">3.21</span>
-            </div>
-            <div class="hbar-row">
-              <span class="hbar-label">Anim-Director</span>
-              <div class="hbar-track"><div class="hbar-fill base" style="width:53.0%"></div></div>
-              <span class="hbar-value">2.65</span>
-            </div>
-            <div class="hbar-row">
-              <span class="hbar-label">MovieAgent</span>
-              <div class="hbar-track"><div class="hbar-fill base" style="width:47.6%"></div></div>
-              <span class="hbar-value">2.38</span>
-            </div>
+      </div>
+
+      <div class="chart-card" style="max-width:1080px;margin:18px auto 0">
+        <h3 class="chart-title">Additional 20-case: human evaluation</h3>
+        <p class="chart-sub">Blind human rating (1–5), 20 independent evaluators, across three dimensions plus overall</p>
+
+        <p style="margin:0 0 10px;font-size:11.5px;font-weight:700;color:var(--faint);text-transform:uppercase;letter-spacing:.06em">Instruction following</p>
+        <div class="hbar-group" style="margin-bottom:22px">
+          <div class="hbar-row ours">
+            <span class="hbar-label">FrameWorkers (ours)</span>
+            <div class="hbar-track"><div class="hbar-fill ours" style="width:70.0%"></div></div>
+            <span class="hbar-value">3.50</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">Anim-Director</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:55.8%"></div></div>
+            <span class="hbar-value">2.79</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">MovieAgent</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:40.4%"></div></div>
+            <span class="hbar-value">2.02</span>
+          </div>
+        </div>
+
+        <p style="margin:0 0 10px;font-size:11.5px;font-weight:700;color:var(--faint);text-transform:uppercase;letter-spacing:.06em">Temporal consistency</p>
+        <div class="hbar-group" style="margin-bottom:22px">
+          <div class="hbar-row ours">
+            <span class="hbar-label">FrameWorkers (ours)</span>
+            <div class="hbar-track"><div class="hbar-fill ours" style="width:61.8%"></div></div>
+            <span class="hbar-value">3.09</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">Anim-Director</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:49.8%"></div></div>
+            <span class="hbar-value">2.49</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">MovieAgent</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:45.6%"></div></div>
+            <span class="hbar-value">2.28</span>
+          </div>
+        </div>
+
+        <p style="margin:0 0 10px;font-size:11.5px;font-weight:700;color:var(--faint);text-transform:uppercase;letter-spacing:.06em">Realism</p>
+        <div class="hbar-group" style="margin-bottom:22px">
+          <div class="hbar-row ours">
+            <span class="hbar-label">FrameWorkers (ours)</span>
+            <div class="hbar-track"><div class="hbar-fill ours" style="width:62.6%"></div></div>
+            <span class="hbar-value">3.13</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">Anim-Director</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:54.6%"></div></div>
+            <span class="hbar-value">2.73</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">MovieAgent</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:54.4%"></div></div>
+            <span class="hbar-value">2.72</span>
+          </div>
+        </div>
+
+        <p style="margin:0 0 10px;font-size:11.5px;font-weight:700;color:var(--faint);text-transform:uppercase;letter-spacing:.06em">Overall</p>
+        <div class="hbar-group">
+          <div class="hbar-row ours">
+            <span class="hbar-label">FrameWorkers (ours)</span>
+            <div class="hbar-track"><div class="hbar-fill ours" style="width:64.2%"></div></div>
+            <span class="hbar-value">3.21</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">Anim-Director</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:53.0%"></div></div>
+            <span class="hbar-value">2.65</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">MovieAgent</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:47.6%"></div></div>
+            <span class="hbar-value">2.38</span>
           </div>
         </div>
       </div>
