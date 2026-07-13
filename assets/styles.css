@@ -121,9 +121,12 @@ img{display:block;max-width:100%}
 .paper-block{text-align:center;padding:44px 0 0}
 .paper-block .container{max-width:920px}
 .paper-title{margin:0 0 18px;font-size:27px;font-weight:800;color:var(--ink);line-height:1.4;letter-spacing:-.01em}
-.paper-authors{margin:0 0 14px;font-size:16px;color:var(--muted);line-height:1.7}
+.paper-authors{margin:0 0 10px;font-size:16px;color:var(--muted);line-height:1.7}
 .paper-authors a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line);transition:color .15s,border-color .15s}
 .paper-authors a:hover{color:var(--blue);border-color:var(--blue)}
+.paper-authors sup{font-size:11px;color:var(--blue);font-weight:700;margin-left:1px}
+.paper-affil{margin:0 0 14px;font-size:13px;color:var(--faint)}
+.paper-affil sup{font-size:10px;margin-right:2px}
 .paper-venue{margin:0;font-size:13px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.07em}
 @media (max-width:640px){.paper-title{font-size:21px}.paper-authors{font-size:14px}}
 
