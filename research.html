@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<!-- FrameWorkers demo site — RESEARCH (method / architecture, qualitative; no hard numbers, paper under review). -->
+<!-- FrameWorkers demo site — RESEARCH (method / architecture + quantitative results from the SIGGRAPH Asia submission). -->
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>FrameWorkers — Research</title>
-<link rel="stylesheet" href="assets/styles.css?v=17" />
-<script src="assets/app.js?v=17" defer></script>
+<link rel="stylesheet" href="assets/styles.css?v=18" />
+<script src="assets/app.js?v=18" defer></script>
 </head>
 <body data-page="research">
 
@@ -115,6 +115,121 @@
         <span class="tag">Extensible agent catalog</span>
         <span class="tag">Multimodal inputs</span>
         <span class="tag">Workspace-grounded memory</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Results</h2>
+        <p class="section-sub">We evaluate the Director's routing accuracy, the framework's execution robustness across
+          backends, and end-to-end video quality against a single-agent baseline (S-Agent) and UniVA.</p>
+      </div>
+
+      <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
+        <h3 class="chart-title">Director routing accuracy</h3>
+        <p class="chart-sub">Exact-match chain accuracy, overall (DCE + DCH held-out test sets) — Ours is Qwen3-8B fine-tuned with SFT + GRPO</p>
+        <div class="hbar-group">
+          <div class="hbar-row ours">
+            <span class="hbar-label">FrameWorkers (ours)</span>
+            <div class="hbar-track"><div class="hbar-fill ours" style="width:88.4%"></div></div>
+            <span class="hbar-value">88.4%</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">Gemini 3 Pro Preview</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:71.2%"></div></div>
+            <span class="hbar-value">71.2%</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">Gemini 2.5 Pro</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:66.3%"></div></div>
+            <span class="hbar-value">66.3%</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">Qwen3.6 Plus</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:55.9%"></div></div>
+            <span class="hbar-value">55.9%</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">GPT-4o</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:50.5%"></div></div>
+            <span class="hbar-value">50.5%</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">DeepSeek-V3</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:39.4%"></div></div>
+            <span class="hbar-value">39.4%</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">Qwen3-8B (base)</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:24.5%"></div></div>
+            <span class="hbar-value">24.5%</span>
+          </div>
+          <div class="hbar-row">
+            <span class="hbar-label">Qwen3-4B (base)</span>
+            <div class="hbar-track"><div class="hbar-fill base" style="width:12.5%"></div></div>
+            <span class="hbar-value">12.5%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-row">
+        <div class="chart-card">
+          <h3 class="chart-title">Execution robustness</h3>
+          <p class="chart-sub">Case-level pass rate on a 204-case stratified suite, by execution backend</p>
+          <div class="hbar-group">
+            <div class="hbar-row ours">
+              <span class="hbar-label">Gemini 2.5 Flash</span>
+              <div class="hbar-track"><div class="hbar-fill ours" style="width:100%"></div></div>
+              <span class="hbar-value">100%</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">Gemini 2.0 Flash</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:91.67%"></div></div>
+              <span class="hbar-value">91.7%</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">GPT-4o-mini</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:81.37%"></div></div>
+              <span class="hbar-value">81.4%</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">GPT-4o</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:61.76%"></div></div>
+              <span class="hbar-value">61.8%</span>
+            </div>
+          </div>
+          <p class="chart-sub" style="margin-top:16px">Gemini 2.5 Flash — the backend FrameWorkers ships with — completes every case with zero orchestration, routing, or workspace-level failures.</p>
+        </div>
+        <div class="chart-card">
+          <h3 class="chart-title">End-to-end video quality</h3>
+          <p class="chart-sub">Blind MLLM-judge overall score (1–5 scale), 20 matched prompts / 60 videos</p>
+          <div class="hbar-group">
+            <div class="hbar-row ours">
+              <span class="hbar-label">FrameWorkers (ours)</span>
+              <div class="hbar-track"><div class="hbar-fill ours" style="width:86.4%"></div></div>
+              <span class="hbar-value">4.32</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">UniVA</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:85.4%"></div></div>
+              <span class="hbar-value">4.27</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">S-Agent (single-agent)</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:81.6%"></div></div>
+              <span class="hbar-value">4.08</span>
+            </div>
+          </div>
+          <p class="chart-sub" style="margin-top:16px">Also highest on frame-level CLIP video-text alignment: 25.15 (ours) vs. 24.94 (S-Agent) and 24.66 (UniVA).</p>
+        </div>
+      </div>
+
+      <div class="io-card" style="max-width:1080px;margin:18px auto 0;text-align:center">
+        <p style="margin:0;color:var(--muted);font-size:14.5px;line-height:1.7">In a blind human study across three
+          dimensions — <b>instruction following</b>, <b>temporal consistency</b>, and <b>realism</b> — FrameWorkers
+          scored highest on every dimension and on 8 of 9 sub-questions, ahead of both S-Agent and UniVA.</p>
       </div>
       <p class="cta-note">From our paper, <i>FrameWorkers: A Dynamic Multi-Agent Framework for Automated AIGC Video Production</i> — currently under review.</p>
     </div>
