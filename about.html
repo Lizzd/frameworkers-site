@@ -5,8 +5,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>FrameWorkers — Research</title>
-<link rel="stylesheet" href="assets/styles.css?v=44" />
-<script src="assets/app.js?v=44" defer></script>
+<link rel="stylesheet" href="assets/styles.css?v=45" />
+<script src="assets/app.js?v=45" defer></script>
 </head>
 <body data-page="about">
 
@@ -125,6 +125,50 @@
           backends, end-to-end video quality across two studies against four external baselines (S-Agent, UniVA,
           Anim-Director, MovieAgent), capability coverage, and runtime recovery — including the additional
           experiments added in response to reviewer feedback.</p>
+      </div>
+
+      <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
+        <h3 class="chart-title">Capability coverage</h3>
+        <p class="chart-sub">Supported input/output combinations vs. six published multi-agent systems — a cross means
+          not explicitly demonstrated in that system's paper, not necessarily an inherent inability</p>
+        <div class="cov-table-wrap">
+          <table class="cov-table">
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th class="ours-col">FrameWorkers<br />(ours)</th>
+                <th>UniVA</th>
+                <th>Co-Director</th>
+                <th>MovieAgent</th>
+                <th>Anim-<br />Director</th>
+                <th>AniMaker</th>
+                <th>MM-Story<br />Agent</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="group-row"><td colspan="8">Supported inputs (each row is in addition to a base instruction)</td></tr>
+              <tr><td>Instruction only</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td>+ raw source text</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ script</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ reference image(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ video asset(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ audio asset(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ script + reference image(s)</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ script + audio asset(s)</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ reference image(s) + video asset(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ script + reference image(s) + audio asset(s)</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr class="group-row"><td colspan="8">Output properties</td></tr>
+              <tr><td>Multi-shot dynamic video</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
+              <tr><td>Image-sequence / storybook video</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td></tr>
+              <tr><td>Refined existing video</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>Speech / voice-over audio</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td>Music / Foley / sound effects</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td></tr>
+              <tr><td>Subtitles</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td></tr>
+              <tr><td>Final audiovisual composition</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr class="total-row"><td>Total</td><td class="ours-col">17/17</td><td>12/17</td><td>6/17</td><td>10/17</td><td>4/17</td><td>5/17</td><td>5/17</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
@@ -389,50 +433,6 @@
             <div class="hbar-track"><div class="hbar-fill base" style="width:47.6%"></div></div>
             <span class="hbar-value">2.38</span>
           </div>
-        </div>
-      </div>
-
-      <div class="chart-card" style="max-width:1080px;margin:18px auto 0">
-        <h3 class="chart-title">Capability coverage</h3>
-        <p class="chart-sub">Supported input/output combinations vs. six published multi-agent systems — a cross means
-          not explicitly demonstrated in that system's paper, not necessarily an inherent inability</p>
-        <div class="cov-table-wrap">
-          <table class="cov-table">
-            <thead>
-              <tr>
-                <th>Property</th>
-                <th class="ours-col">FrameWorkers<br />(ours)</th>
-                <th>UniVA</th>
-                <th>Co-Director</th>
-                <th>MovieAgent</th>
-                <th>Anim-<br />Director</th>
-                <th>AniMaker</th>
-                <th>MM-Story<br />Agent</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="group-row"><td colspan="8">Supported inputs (each row is in addition to a base instruction)</td></tr>
-              <tr><td>Instruction only</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-              <tr><td>+ raw source text</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ script</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ reference image(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ video asset(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ audio asset(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ script + reference image(s)</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ script + audio asset(s)</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ reference image(s) + video asset(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ script + reference image(s) + audio asset(s)</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr class="group-row"><td colspan="8">Output properties</td></tr>
-              <tr><td>Multi-shot dynamic video</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
-              <tr><td>Image-sequence / storybook video</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td></tr>
-              <tr><td>Refined existing video</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>Speech / voice-over audio</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-              <tr><td>Music / Foley / sound effects</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td></tr>
-              <tr><td>Subtitles</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td></tr>
-              <tr><td>Final audiovisual composition</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-              <tr class="total-row"><td>Total</td><td class="ours-col">17/17</td><td>12/17</td><td>6/17</td><td>10/17</td><td>4/17</td><td>5/17</td><td>5/17</td></tr>
-            </tbody>
-          </table>
         </div>
       </div>
 
