@@ -11,8 +11,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>FrameWorkers — Prompt to Film</title>
-<link rel="stylesheet" href="assets/styles.css?v=38" />
-<script src="assets/app.js?v=38" defer></script>
+<link rel="stylesheet" href="assets/styles.css?v=39" />
+<script src="assets/app.js?v=39" defer></script>
 </head>
 <body data-page="home">
 
@@ -36,6 +36,14 @@
     </div>
   </nav>
 
+  <section class="paper-block">
+    <div class="container">
+      <p class="paper-title">FrameWorkers: A Dynamic Multi-Agent Framework for Automated AIGC Video Production</p>
+      <p class="paper-authors">Zhendong Li, Lei Sun, Letian Shi, Deheng Zhang, Ruibo Ming, Mengshun Hu, Dannong Xu, Jian Wang, Danda Pani Paudel, Luc Van Gool, Jinjin Gu</p>
+      <p class="paper-venue">Under review at SIGGRAPH Asia</p>
+    </div>
+  </section>
+
   <header class="hero">
     <div class="container">
       <span class="badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg> AI Film Director</span>
@@ -52,186 +60,12 @@
   <section class="section" style="padding-top:0">
     <div class="container">
       <div class="section-head">
-        <h2 class="section-title">Backed by <span class="gtext">research</span></h2>
-        <p class="section-sub">From our SIGGRAPH Asia submission: a Director fine-tuned with SFT + GRPO, evaluated end-to-end across two studies against four external baselines.</p>
-      </div>
-
-      <div class="kpi-row">
-        <div class="kpi-tile">
-          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/></svg></div>
-          <div class="kpi-value">88.4<span class="kpi-unit">%</span></div>
-          <div class="kpi-label">Director chain accuracy across easy &amp; hard productions</div>
-        </div>
-        <div class="kpi-tile">
-          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15l6-6 4 4 6-8"/><path d="M14 5h6v6"/></svg></div>
-          <div class="kpi-value">+34<span class="kpi-unit">pts</span></div>
-          <div class="kpi-label">ahead of the best reasoning-model baseline on our hardest chains</div>
-        </div>
-        <div class="kpi-tile">
-          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="7" height="7" rx="1.6"/><rect x="13" y="4" width="7" height="7" rx="1.6"/><rect x="4" y="13" width="7" height="7" rx="1.6"/><rect x="13" y="13" width="7" height="7" rx="1.6"/></svg></div>
-          <div class="kpi-value">17<span class="kpi-unit">/17</span></div>
-          <div class="kpi-label">capability coverage — broadest of 6 published multi-agent systems compared</div>
-        </div>
-        <div class="kpi-tile">
-          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.8 1.4 6.8L12 17.3l-6.1 3.4 1.4-6.8-5.1-4.8 6.9-.8z"/></svg></div>
-          <div class="kpi-value">#1</div>
-          <div class="kpi-label">in both automatic and human evaluation, vs. all 4 baselines tested (S-Agent, UniVA, Anim-Director, MovieAgent)</div>
-        </div>
-      </div>
-
-      <div class="stat-banner">
-        <h3 class="chart-title">Runtime recovery</h3>
-        <div class="stat-row">
-          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.6-6.4"/><path d="M3 4v5h5"/></svg></div>
-          <div class="stat-value">96.7<span class="kpi-unit">%</span></div>
-          <div class="stat-label">replan success rate across 991 perturbed execution cases — the Director reconstructs a valid plan after failure, with no explicit recovery training</div>
-        </div>
-      </div>
-
-      <div class="chart-row" style="margin-top:18px">
-        <div class="chart-card">
-          <h3 class="chart-title">Director routing accuracy</h3>
-          <p class="chart-sub">Exact-match chain accuracy, overall (easy + hard test sets)</p>
-          <div class="hbar-group">
-            <div class="hbar-row ours">
-              <span class="hbar-label">FrameWorkers (ours)</span>
-              <div class="hbar-track"><div class="hbar-fill ours" style="width:88.4%"></div></div>
-              <span class="hbar-value">88.4%</span>
-            </div>
-            <div class="hbar-row">
-              <span class="hbar-label">Gemini 3 Pro Preview</span>
-              <div class="hbar-track"><div class="hbar-fill base" style="width:71.2%"></div></div>
-              <span class="hbar-value">71.2%</span>
-            </div>
-            <div class="hbar-row">
-              <span class="hbar-label">Qwen3-8B (base)</span>
-              <div class="hbar-track"><div class="hbar-fill base" style="width:24.5%"></div></div>
-              <span class="hbar-value">24.5%</span>
-            </div>
-          </div>
-        </div>
-        <div class="chart-card">
-          <h3 class="chart-title">Video quality — automatic</h3>
-          <p class="chart-sub">Blind MLLM-judge overall score (1–5), across our two evaluation studies</p>
-
-          <p class="mini-label">vs. S-Agent &amp; UniVA</p>
-          <div class="hbar-group" style="margin-bottom:22px">
-            <div class="hbar-row ours">
-              <span class="hbar-label">FrameWorkers (ours)</span>
-              <div class="hbar-track"><div class="hbar-fill ours" style="width:86.4%"></div></div>
-              <span class="hbar-value">4.32</span>
-            </div>
-            <div class="hbar-row">
-              <span class="hbar-label">UniVA</span>
-              <div class="hbar-track"><div class="hbar-fill base" style="width:85.4%"></div></div>
-              <span class="hbar-value">4.27</span>
-            </div>
-            <div class="hbar-row">
-              <span class="hbar-label">S-Agent (single-agent)</span>
-              <div class="hbar-track"><div class="hbar-fill base" style="width:81.6%"></div></div>
-              <span class="hbar-value">4.08</span>
-            </div>
-          </div>
-
-          <p class="mini-label">vs. Anim-Director &amp; MovieAgent</p>
-          <div class="hbar-group">
-            <div class="hbar-row ours">
-              <span class="hbar-label">FrameWorkers (ours)</span>
-              <div class="hbar-track"><div class="hbar-fill ours" style="width:80.8%"></div></div>
-              <span class="hbar-value">4.04</span>
-            </div>
-            <div class="hbar-row">
-              <span class="hbar-label">Anim-Director</span>
-              <div class="hbar-track"><div class="hbar-fill base" style="width:57.6%"></div></div>
-              <span class="hbar-value">2.88</span>
-            </div>
-            <div class="hbar-row">
-              <span class="hbar-label">MovieAgent</span>
-              <div class="hbar-track"><div class="hbar-fill base" style="width:36.0%"></div></div>
-              <span class="hbar-value">1.80</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="chart-row" style="margin-top:18px">
-        <div class="chart-card">
-          <h3 class="chart-title">Human evaluation — vs. S-Agent &amp; UniVA</h3>
-          <p class="chart-sub">Blind human rating, overall (1–5)</p>
-          <div class="hbar-group">
-            <div class="hbar-row ours">
-              <span class="hbar-label">FrameWorkers (ours)</span>
-              <div class="hbar-track"><div class="hbar-fill ours" style="width:61.4%"></div></div>
-              <span class="hbar-value">3.07</span>
-            </div>
-            <div class="hbar-row">
-              <span class="hbar-label">UniVA</span>
-              <div class="hbar-track"><div class="hbar-fill base" style="width:57.2%"></div></div>
-              <span class="hbar-value">2.86</span>
-            </div>
-            <div class="hbar-row">
-              <span class="hbar-label">S-Agent (single-agent)</span>
-              <div class="hbar-track"><div class="hbar-fill base" style="width:53.2%"></div></div>
-              <span class="hbar-value">2.66</span>
-            </div>
-          </div>
-          <p class="chart-sub" style="margin-top:16px">Highest on every dimension, and 8 of 9 sub-questions.</p>
-        </div>
-        <div class="chart-card">
-          <h3 class="chart-title">Human evaluation — vs. Anim-Director &amp; MovieAgent</h3>
-          <p class="chart-sub">Blind human rating, overall (1–5)</p>
-          <div class="hbar-group">
-            <div class="hbar-row ours">
-              <span class="hbar-label">FrameWorkers (ours)</span>
-              <div class="hbar-track"><div class="hbar-fill ours" style="width:64.2%"></div></div>
-              <span class="hbar-value">3.21</span>
-            </div>
-            <div class="hbar-row">
-              <span class="hbar-label">Anim-Director</span>
-              <div class="hbar-track"><div class="hbar-fill base" style="width:53.0%"></div></div>
-              <span class="hbar-value">2.65</span>
-            </div>
-            <div class="hbar-row">
-              <span class="hbar-label">MovieAgent</span>
-              <div class="hbar-track"><div class="hbar-fill base" style="width:47.6%"></div></div>
-              <span class="hbar-value">2.38</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div style="text-align:center;margin-top:36px">
-        <a class="btn btn-outline" href="research.html">See the full results
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="padding-bottom:28px">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Bring <span class="gtext">any input</span></h2>
-        <p class="section-sub">Start from whatever you have — FrameWorkers takes it from there. More input types land continuously.</p>
-      </div>
-      <div class="inputs-row">
-        <span class="in-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 20l1-4.7A8 8 0 1 1 21 12z"/></svg>Instruction</span>
-        <span class="in-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>Source text</span>
-        <span class="in-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18M7 6l-1.2 4M12 6l-1.2 4M17 6l-1.2 4"/></svg>Script</span>
-        <span class="in-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5L5 20"/></svg>Reference images</span>
-        <span class="in-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 9l5-2.5v11L16 15z"/></svg>Video assets</span>
-        <span class="in-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h2M8 8v8M12 4v16M16 9v6M20 11v2"/></svg>Audio assets</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:8px">
-    <div class="container">
-      <div class="section-head">
         <h2 class="section-title">See it <span class="gtext">in action</span></h2>
         <p class="section-sub">A full walkthrough — from a single prompt to a finished film, end to end.</p>
       </div>
       <video class="full-demo" controls playsinline preload="none"
-             poster="posters/frameworkers_full_demo.jpg?v=38">
-        <source src="videos/frameworkers_full_demo.mp4?v=38" type="video/mp4" />
+             poster="posters/frameworkers_full_demo.jpg?v=39">
+        <source src="videos/frameworkers_full_demo.mp4?v=39" type="video/mp4" />
       </video>
     </div>
   </section>
@@ -246,6 +80,23 @@
       <div style="text-align:center;margin-top:46px">
         <a class="btn btn-outline" href="films.html">See all films
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Bring <span class="gtext">any input</span></h2>
+        <p class="section-sub">Start from whatever you have — FrameWorkers takes it from there. More input types land continuously.</p>
+      </div>
+      <div class="inputs-row">
+        <span class="in-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 20l1-4.7A8 8 0 1 1 21 12z"/></svg>Instruction</span>
+        <span class="in-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>Source text</span>
+        <span class="in-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18M7 6l-1.2 4M12 6l-1.2 4M17 6l-1.2 4"/></svg>Script</span>
+        <span class="in-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5L5 20"/></svg>Reference images</span>
+        <span class="in-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 9l5-2.5v11L16 15z"/></svg>Video assets</span>
+        <span class="in-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h2M8 8v8M12 4v16M16 9v6M20 11v2"/></svg>Audio assets</span>
       </div>
     </div>
   </section>
