@@ -11,8 +11,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>FrameWorkers — Prompt to Film</title>
-<link rel="stylesheet" href="assets/styles.css?v=36" />
-<script src="assets/app.js?v=36" defer></script>
+<link rel="stylesheet" href="assets/styles.css?v=37" />
+<script src="assets/app.js?v=37" defer></script>
 </head>
 <body data-page="home">
 
@@ -158,21 +158,23 @@
       <div class="chart-row" style="margin-top:18px">
         <div class="chart-card">
           <h3 class="chart-title">Human evaluation — vs. S-Agent &amp; UniVA</h3>
-          <p class="chart-sub">Blind human rating (1–5), three dimensions</p>
-          <div class="hbar-group" style="margin-bottom:16px">
-            <div class="hbar-row ours"><span class="hbar-label">Ours (instruction)</span><div class="hbar-track"><div class="hbar-fill ours" style="width:60.2%"></div></div><span class="hbar-value">3.01</span></div>
-            <div class="hbar-row"><span class="hbar-label">UniVA</span><div class="hbar-track"><div class="hbar-fill base" style="width:56.4%"></div></div><span class="hbar-value">2.82</span></div>
-            <div class="hbar-row"><span class="hbar-label">S-Agent</span><div class="hbar-track"><div class="hbar-fill base" style="width:52.6%"></div></div><span class="hbar-value">2.63</span></div>
-          </div>
-          <div class="hbar-group" style="margin-bottom:16px">
-            <div class="hbar-row ours"><span class="hbar-label">Ours (temporal)</span><div class="hbar-track"><div class="hbar-fill ours" style="width:63.8%"></div></div><span class="hbar-value">3.19</span></div>
-            <div class="hbar-row"><span class="hbar-label">UniVA</span><div class="hbar-track"><div class="hbar-fill base" style="width:58.0%"></div></div><span class="hbar-value">2.90</span></div>
-            <div class="hbar-row"><span class="hbar-label">S-Agent</span><div class="hbar-track"><div class="hbar-fill base" style="width:53.4%"></div></div><span class="hbar-value">2.67</span></div>
-          </div>
+          <p class="chart-sub">Blind human rating, overall (1–5)</p>
           <div class="hbar-group">
-            <div class="hbar-row ours"><span class="hbar-label">Ours (realism)</span><div class="hbar-track"><div class="hbar-fill ours" style="width:60.0%"></div></div><span class="hbar-value">3.00</span></div>
-            <div class="hbar-row"><span class="hbar-label">UniVA</span><div class="hbar-track"><div class="hbar-fill base" style="width:57.2%"></div></div><span class="hbar-value">2.86</span></div>
-            <div class="hbar-row"><span class="hbar-label">S-Agent</span><div class="hbar-track"><div class="hbar-fill base" style="width:53.6%"></div></div><span class="hbar-value">2.68</span></div>
+            <div class="hbar-row ours">
+              <span class="hbar-label">FrameWorkers (ours)</span>
+              <div class="hbar-track"><div class="hbar-fill ours" style="width:61.4%"></div></div>
+              <span class="hbar-value">3.07</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">UniVA</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:57.2%"></div></div>
+              <span class="hbar-value">2.86</span>
+            </div>
+            <div class="hbar-row">
+              <span class="hbar-label">S-Agent (single-agent)</span>
+              <div class="hbar-track"><div class="hbar-fill base" style="width:53.2%"></div></div>
+              <span class="hbar-value">2.66</span>
+            </div>
           </div>
           <p class="chart-sub" style="margin-top:16px">Highest on every dimension, and 8 of 9 sub-questions.</p>
         </div>
@@ -229,8 +231,8 @@
         <p class="section-sub">A full walkthrough — from a single prompt to a finished film, end to end.</p>
       </div>
       <video class="full-demo" controls playsinline preload="none"
-             poster="posters/frameworkers_full_demo.jpg?v=36">
-        <source src="videos/frameworkers_full_demo.mp4?v=36" type="video/mp4" />
+             poster="posters/frameworkers_full_demo.jpg?v=37">
+        <source src="videos/frameworkers_full_demo.mp4?v=37" type="video/mp4" />
       </video>
     </div>
   </section>
