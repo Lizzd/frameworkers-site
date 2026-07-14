@@ -129,8 +129,10 @@
 
       <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
         <h3 class="chart-title">Capability coverage</h3>
-        <p class="chart-sub">Supported input/output combinations vs. six published multi-agent systems — a cross means
-          not explicitly demonstrated in that system's paper, not necessarily an inherent inability</p>
+        <p class="chart-sub">Can the system take this kind of input, and can it produce this kind of output? This
+          checklist compares what each system explicitly supports — not how well it does it — against six published
+          multi-agent systems. A cross means not explicitly demonstrated in that system's paper, not necessarily an
+          inherent inability.</p>
         <div class="cov-table-wrap">
           <table class="cov-table">
             <thead>
@@ -173,7 +175,10 @@
 
       <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
         <h3 class="chart-title">Director routing accuracy</h3>
-        <p class="chart-sub">Exact-match chain accuracy, overall (DCE + DCH held-out test sets) — Ours is Qwen3-8B fine-tuned with SFT + GRPO</p>
+        <p class="chart-sub">Given a request, does the Director pick the right specialist agents and put them in the
+          right order? We compare its plan against a known-correct agent chain on held-out test cases and count only
+          an exact match. Ours is a Qwen3-8B model fine-tuned with SFT + GRPO; every other bar is the same task given
+          directly to a general-purpose LLM (DCE + DCH held-out test sets).</p>
         <div class="hbar-group">
           <div class="hbar-row ours">
             <span class="hbar-label">FrameWorkers (ours)</span>
@@ -221,7 +226,9 @@
       <div class="chart-row">
         <div class="chart-card">
           <h3 class="chart-title">Execution robustness</h3>
-          <p class="chart-sub">Case-level pass rate on a 204-case stratified suite, by execution backend</p>
+          <p class="chart-sub">Once the Director has a plan, can the Assistant actually carry it out end to end —
+            every agent call completing, every output validating, nothing lost to a workspace error? Case-level pass
+            rate on a 204-case stratified suite, by the LLM backend powering execution.</p>
           <div class="hbar-group">
             <div class="hbar-row ours">
               <span class="hbar-label">Gemini 2.5 Flash</span>
@@ -248,7 +255,8 @@
         </div>
         <div class="chart-card">
           <h3 class="chart-title">End-to-end video quality — automatic</h3>
-          <p class="chart-sub">Blind MLLM-judge overall score (1–5), across our two evaluation studies</p>
+          <p class="chart-sub">Not a pipeline metric — this scores the finished film itself. A multimodal LLM judge,
+            blind to which system made which film, rates it 1–5, across our two evaluation studies.</p>
 
           <p class="mini-label">Study 1 — vs. S-Agent &amp; UniVA (original 20-case benchmark)</p>
           <div class="hbar-group" style="margin-bottom:22px">
@@ -294,7 +302,8 @@
 
       <div class="chart-card" style="max-width:1080px;margin:18px auto 0">
         <h3 class="chart-title">End-to-end video quality — human evaluation</h3>
-        <p class="chart-sub">Blind human rating (1–5), across our two evaluation studies</p>
+        <p class="chart-sub">The same finished films, this time rated blind by human evaluators (1–5) on three axes —
+          catching what an automatic judge can miss, across our two evaluation studies.</p>
 
         <p class="mini-label">Study 1 — vs. S-Agent &amp; UniVA</p>
 
@@ -438,6 +447,8 @@
 
       <div class="stat-banner" style="margin:18px auto 0">
         <h3 class="chart-title">Runtime recovery</h3>
+        <p class="chart-sub">If a step fails partway through a production, can the Director recover — build a new
+          valid plan from where things broke — instead of the whole run failing?</p>
         <div class="stat-row">
           <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.6-6.4"/><path d="M3 4v5h5"/></svg></div>
           <div class="stat-value">96.7<span class="kpi-unit">%</span></div>
