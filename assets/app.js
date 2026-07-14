@@ -85,6 +85,8 @@ const FAKE_GENERATE_MS = 2600;
 //   cinematic = Story → Keyframe Sheet → Shot Prompt → Clip(Seedance) → Audio+Compositor
 //   explainer = Explainer → Keyframe Sheet → Shot Prompt → Clip → Narration+Compositor
 //   storybook = Storybook → Illustration → Narrator → Compositor  (no Seedance clips)
+//   refine    = Video Intake → Video Extend (no Story/Keyframe/Clip — grounded in an existing
+//               clip's last frame, per evals/director_routing/eval_cases.json's "extend_*" cases)
 const STAGE_SETS = {
   cinematic: [
     "Director · planning this pipeline",
@@ -109,6 +111,11 @@ const STAGE_SETS = {
     "Narrator · read-aloud voice-over",
     "Compositor · slideshow, read-along captions & mix",
   ],
+  refine: [
+    "Director · planning this pipeline",
+    "Video Intake · reading the source clip",
+    "Video Extend · extracting the last frame & generating a continuation (Seedance 2.0, native foley)",
+  ],
 };
 function stagesFor(d){
   // pipeline (how it's actually produced) is independent of cat (which topic cluster it's filed
@@ -117,6 +124,7 @@ function stagesFor(d){
   const kind = d && (d.pipeline || d.cat);
   if (kind === "storybook" || kind === "Storybook") return STAGE_SETS.storybook;
   if (kind === "explainer" || kind === "Explainer") return STAGE_SETS.explainer;
+  if (kind === "refine" || kind === "Refine") return STAGE_SETS.refine;
   return STAGE_SETS.cinematic;
 }
 /* ============================================================================= */
