@@ -33,21 +33,9 @@
     <div class="container">
       <div class="section-head">
         <h2 class="section-title">The research behind<br /><span class="gtext">FrameWorkers</span></h2>
-        <p class="section-sub">FrameWorkers is a dynamic, workspace-grounded multi-agent framework for open-ended AIGC
-          video production. Instead of a fixed pipeline, a <b>trained Director</b> orchestrates a catalog of specialist
-          agents over a shared workspace — planning, executing, checking, and re-planning until a film is done.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:0">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Why not a <span class="gtext">fixed pipeline</span></h2>
-        <p class="section-sub">Real video-making is a multi-step workflow — scripting, asset management, cross-shot
-          consistency — and different inputs call for different workflows. A hand-wired pipeline is brittle, and a
-          zero-shot LLM struggles with long-horizon planning and multimodal asset routing. FrameWorkers instead treats
-          video creation as <b>dynamic task management</b>.</p>
+        <p class="section-sub">FrameWorkers is built around two core modules. A trained <b>Director</b> plans the
+          production and re-plans it on failure. An <b>Assistant</b> executes each step and grounds the result in a
+          shared workspace. Together they replace a fixed pipeline with a closed, recoverable loop.</p>
       </div>
     </div>
   </section>
@@ -55,7 +43,7 @@
   <section class="section" style="padding-top:0">
     <div class="container">
       <div class="section-head"><h2 class="section-title">Architecture</h2>
-        <p class="section-sub">Strategic orchestration and concrete execution are split into complementary modules.</p></div>
+        <p class="section-sub">Two complementary modules do the work — one plans, one executes.</p></div>
       <div class="io-grid">
         <div class="io-card">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.4"/><circle cx="6" cy="18" r="2.4"/><circle cx="18" cy="9" r="2.4"/><path d="M6 8.4v7.2M8.4 6H14a2.5 2.5 0 0 1 2.5 2.5M8.4 18H14a2.5 2.5 0 0 0 2.5-2.5"/></svg></div>
@@ -78,6 +66,18 @@
             outputs, and trigger conditions. Routing is semantic, so new capabilities are added by registering a
             descriptor — no workflow redesign.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Why not a <span class="gtext">fixed pipeline</span></h2>
+        <p class="section-sub">Real video-making is a multi-step workflow — scripting, asset management, cross-shot
+          consistency — and different inputs call for different workflows. A hand-wired pipeline is brittle, and a
+          zero-shot LLM struggles with long-horizon planning and multimodal asset routing. FrameWorkers instead treats
+          video creation as <b>dynamic task management</b>.</p>
       </div>
     </div>
   </section>
@@ -121,10 +121,11 @@
     <div class="container">
       <div class="section-head">
         <h2 class="section-title">Results</h2>
-        <p class="section-sub">We evaluate the Director's routing accuracy, the framework's execution robustness across
-          backends, end-to-end video quality across two studies against four external baselines (S-Agent, UniVA,
-          Anim-Director, MovieAgent), capability coverage, and runtime recovery — including the additional
-          experiments added in response to reviewer feedback.</p>
+        <p class="section-sub">Each number below measures one of the two modules above: how well the <b>Director</b>
+          plans (routing accuracy, runtime recovery) and how reliably the <b>Assistant</b> executes (robustness across
+          backends, capability coverage) — plus how the finished films compare end-to-end, across two studies against
+          four external baselines (S-Agent, UniVA, Anim-Director, MovieAgent), including the additional experiments
+          added in response to reviewer feedback.</p>
       </div>
 
       <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
