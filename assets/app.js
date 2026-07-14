@@ -11,66 +11,77 @@ const DEMOS = [
     genre:"3D · Dark Fantasy", cat:"Narrative",
     prompt:"On the night the castle finally falls, the thousand-year-old Sorting Hat is lowered onto the last trembling first-year — but for the first time in a thousand years it refuses to name a house, sensing the darkness this child will one day become, and the old headmaster quietly lifts it away, leaving the child alone in the emptied hall: the very abandonment that will forge the monster. Stylized 3D cartoon animation (Pixar / DreamWorks look — clearly animated, non-photoreal), with English narration and English dialogue, English subtitles, and distant siege blasts, cracking stone, and foley.",
     src:"videos/sorting_hat.mp4", poster:"posters/sorting_hat.jpg",
+    io:{in:"Instruction only", out:["Multi-shot dynamic video","Speech / voice-over audio","Music / Foley / sound effects","Subtitles","Final audiovisual composition"]},
   },
   {
     key:"peking", title:"The Empty Stage",
     genre:"3D · 1937 Wartime", cat:"Narrative",
     prompt:"On the eve of Wuhan's fall in 1937, after his final curtain call of 'Farewell My Concubine,' an old Peking opera master tells his apprentice one last thing. Stylized 3D animation, with Chinese narration and Chinese dialogue, English subtitles, and foley.",
     src:"videos/peking.mp4", poster:"posters/peking.jpg",
+    io:{in:"Instruction only", out:["Multi-shot dynamic video","Speech / voice-over audio","Music / Foley / sound effects","Subtitles","Final audiovisual composition"]},
   },
   {
     key:"last_train", title:"Paper Boat in the Black Window",
     genre:"2D Anime · Occult", cat:"Narrative",
     prompt:"On the last midnight train rattling toward the city, a lone teenage exorcist moves down the swaying carriage to bind the vengeful spirit coiled around a sleeping passenger before the terminus — but in the black window-glass she sees the truth, that it is only a drowned child clinging to the one stranger who resembles its mother, and in the seconds before the doors open she must choose whether to seal it away forever or let it ride one more stop. Stylized 2D hand-drawn anime (modern dark-fantasy anime look — clearly hand-drawn, non-photoreal), with Japanese narration and Japanese dialogue, English subtitles, and rattling rails, the hum of failing fluorescents, snapping paper talismans, and foley.",
     src:"videos/last_train.mp4", poster:"posters/last_train.jpg",
+    io:{in:"Instruction only", out:["Multi-shot dynamic video","Speech / voice-over audio","Music / Foley / sound effects","Subtitles","Final audiovisual composition"]},
   },
   {
     key:"luchen", title:"Shatter",
     genre:"Donghua · Xianxia", cat:"Narrative",
     prompt:"《Shatter · Episode 1》— a xianxia cultivation short. On a late-Tang night at a ruined mountain-sect outpost, white-haired Lu Chen — the last name left on his clan's sect rolls — can raise only a wick-thin thread of white spirit-energy. On the triennial spirit-test, a green-aura enforcer forces his palm onto the lone jade testing-disc; it flickers and dies. The enforcer brands his spirit-root 'dead ash,' seizes his wrist, and a clash of energies blasts him through the wall — his glass-like spirit-core, webbed with cracks, shatters. But the blow's residual force also slays a bone-jackal demon lurking in the yard, and its cracked, crimson demon-core answers his blood, filling the 'cripple's' palm with a red light that belongs to no orthodox path. Stylized 2D hand-drawn Chinese animation (donghua — clean ink lines, thick painterly color, dark cinematic illustration, non-photoreal, non-3D), Lu Chen's first-person inner monologue and the enforcer's dialogue in Mandarin, Chinese subtitles, and foley.",
     src:"videos/luchen.mp4", poster:"posters/luchen.jpg",
+    io:{in:"Instruction only", out:["Multi-shot dynamic video","Speech / voice-over audio","Music / Foley / sound effects","Subtitles","Final audiovisual composition"]},
   },
   {
     key:"saiweng", title:"Blessing in Disguise",
     genre:"Ink-wash · Fable", cat:"Adaptation",
     prompt:"On the northern frontier below the Great Wall, an old man's prized horse vanishes one night; the neighbors come to console him, and he only says lightly, 'How do you know this isn't a blessing?' Months later the horse returns leading a herd of wild steppe horses — they congratulate him, and he says it may yet be a misfortune; his son, riding the new horse, is thrown and breaks his leg — they console him, and he still says it may yet be a blessing; soon the nomads invade, nine of every ten village youths die in battle, but his lame son is spared conscription, and father and son remain together: four turns of fortune and misfortune intertwined, all passing across the old man's ever-calm face. Traditional Chinese xieyi ink-wash painting (vast negative space, graded ink washes, the breath of a handscroll — hand-painted ink, non-photoreal), a storyteller's Chinese narration over minimal dialogue, English subtitles, with frontier wind, hoofbeats, distant war drums, a lone reed-pipe cry, and foley.",
     src:"videos/saiweng.mp4", poster:"posters/saiweng.jpg",
+    io:{in:"Instruction only", out:["Multi-shot dynamic video","Speech / voice-over audio","Music / Foley / sound effects","Subtitles","Final audiovisual composition"]},
   },
   {
     key:"sherlock", title:"The Blue Wax at the Keyhole",
     genre:"Graphic-novel · Mystery", cat:"Adaptation",
     prompt:"In a gas-lit Victorian study bolted from the inside, a gentleman is found dead and Scotland Yard calls it suicide — but Holmes reads the clues, proves it was murder, and names the killer: the victim's private secretary, who faked the locked room. Richly colored graphic-novel illustration, English dialogue (no narration), English subtitles, and foley.",
     src:"videos/sherlock.mp4", poster:"posters/sherlock.jpg",
+    io:{in:"Instruction only", out:["Multi-shot dynamic video","Speech / voice-over audio","Music / Foley / sound effects","Subtitles","Final audiovisual composition"]},
   },
   {
     key:"psa", title:"Don't Gamble on a Bite",
     genre:"Explainer · Public Health", cat:"Explainer",
     prompt:"A health-education PSA. After a cat or dog bite or scratch, don't count on luck and don't delay: (1) immediately rinse the wound thoroughly under running water with soap, (2) get to a clinic as soon as possible, (3) let a doctor assess the exposure risk, and (4) complete rabies post-exposure prophylaxis as directed — the vaccine, plus immunoglobulin if needed. Clean, gentle, professional 2D medical-explainer animation (flat, clear shapes, soft blue-green palette, symbolic — no gore, no on-screen text), Chinese narration, Chinese subtitles, and foley.",
     src:"videos/psa.mp4", poster:"posters/psa.jpg",
+    io:{in:"Instruction + source text", out:["Multi-shot dynamic video","Speech / voice-over audio","Music / Foley / sound effects","Subtitles","Final audiovisual composition"]},
   },
   {
     key:"tortoise", title:"The Tortoise and the Hare",
     genre:"Storybook · Fable", cat:"Storybook",
     prompt:"Make a gentle illustrated children's bedtime picture book of the classic fable 'The Tortoise and the Hare'. Tell it page by page — one warm, simple read-aloud line per page — in a soft watercolor storybook style, narrated aloud for a young child, with the read-along words shown on screen.",
     src:"videos/tortoise.mp4", poster:"posters/tortoise.jpg",
+    io:{in:"Instruction only", out:["Image-sequence / storybook video","Speech / voice-over audio","Subtitles","Final audiovisual composition"]},
   },
   {
     key:"orpheus", title:"Orpheus and Eurydice",
     genre:"Illustrated Audiobook · Myth", cat:"Storybook",
     prompt:"An illustrated audiobook of the myth of Orpheus and Eurydice: a narrator tells the whole story over a slideshow of painted illustrations, with Orpheus, Eurydice, and Hades each speaking their own lines of dialogue woven into the narration — a richer, multi-voice dramatic telling (not a one-line-per-page children's book). Gentle read-aloud English narration, English subtitles, and foley.",
     src:"videos/orpheus.mp4", poster:"posters/orpheus.jpg",
+    io:{in:"Instruction only", out:["Image-sequence / storybook video","Speech / voice-over audio","Music / Foley / sound effects","Subtitles","Final audiovisual composition"]},
   },
   {
     key:"poem_recital", title:"Hope Is the Thing with Feathers",
     genre:"Audio-driven · Illustrated Poem", cat:"Narrative", pipeline:"storybook",
     prompt:"An audio-driven illustrated poem: the user supplies their OWN spoken-word recitation, and the visuals — a slideshow of painted illustrations — are timed to that real recording, advancing with the poem's mood, with English subtitles and light foley. The user's own voice is the narration (no re-synthesis). Here: Emily Dickinson's 'Hope is the thing with feathers'.",
     src:"videos/poem_recital.mp4", poster:"posters/poem_recital.jpg",
+    io:{in:"Instruction + audio asset", out:["Image-sequence / storybook video","Speech / voice-over audio","Music / Foley / sound effects","Subtitles","Final audiovisual composition"]},
   },
   {
     key:"video_extend", title:"Extended Ending",
     genre:"Refine existing footage · Video extension", cat:"Refine",
     prompt:"Take an existing short clip whose ending stops too abruptly and extend it — continuing naturally from its final frame in the same style and scene for a few more seconds of atmospheric outro (slow push-in, gentle fade), without touching or re-cutting the original footage. Here: the closing shot of a 2D-anime late-night subway scene, extended into the now-empty carriage.",
     src:"videos/video_extend.mp4", poster:"posters/video_extend.jpg",
+    io:{in:"Instruction + video asset", out:["Refined existing video","Music / Foley / sound effects","Final audiovisual composition"]},
   },
 ];
 
@@ -199,6 +210,15 @@ function runGeneration(stages, done){
 }
 
 /* ------------------------------------------------------------------- portfolio */
+function ioRow(d){
+  if (!d.io) return "";
+  const outChips = d.io.out.map(o=>`<span class="io-chip io-out">${esc(o)}</span>`).join("");
+  return `
+    <div class="io-row">
+      <span class="io-chip io-in">${esc(d.io.in)}</span>${outChips}
+    </div>`;
+}
+
 function filmCard(d){
   return `
     <button class="film-card" data-key="${d.key}" aria-label="Generate: ${esc(d.title)}">
@@ -209,6 +229,7 @@ function filmCard(d){
       <div class="body">
         <div class="ttl">${esc(d.title)}</div>
         <div class="desc">${esc(d.prompt)}</div>
+        ${ioRow(d)}
         <div class="go">Generate this film ${ARROW_SVG}</div>
       </div>
     </button>`;
