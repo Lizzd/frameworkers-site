@@ -81,16 +81,29 @@ const FEATURED = ["sorting_hat","luchen","sherlock"];
 const FAKE_GENERATE_MS = 2600;
 
 // The plan the Director composes depends on the input/goal — different film TYPES
-// run different agent chains (grounded in the real runs):
-//   cinematic = Story → Keyframe Sheet → Shot Prompt → Clip(Seedance) → Audio+Compositor
-//   explainer = Explainer → Keyframe Sheet → Shot Prompt → Clip → Narration+Compositor
-//   storybook = Storybook → Illustration → Narrator → Compositor  (no Seedance clips)
-//   refine    = Video Intake → Video Extend (no Story/Keyframe/Clip — grounded in an existing
+// run different agent chains (grounded in the real agent registry, agents/__init__.py):
+//   cinematic  = Story → Keyframe Sheet → Shot Prompt → Clip(Seedance) → Audio+Compositor
+//   adaptation = Adaptation → Keyframe Sheet → Shot Prompt → Clip → Audio+Compositor
+//               (same downstream as cinematic — AdaptationAgent is its own registered brain,
+//               grounding shots in an EXISTING story rather than authoring one from scratch)
+//   explainer  = Explainer → Keyframe Sheet → Shot Prompt → Clip → Narration+Compositor
+//   storybook  = Narration → Illustration → Narrator → Compositor  (no Seedance clips; the old
+//               "Storybook" agent was retired and merged into IllustratedStoryAgent, agent_id
+//               NarrationAgent — see agents/illustrated_story/descriptor.py)
+//   refine     = Video Intake → Video Extend (no Story/Keyframe/Clip — grounded in an existing
 //               clip's last frame, per evals/director_routing/eval_cases.json's "extend_*" cases)
 const STAGE_SETS = {
   cinematic: [
     "Director · planning this pipeline",
     "Story · characters, world & beats",
+    "Keyframe Sheet · identity anchors & storyboards",
+    "Shot Prompt · cinematic per-shot direction",
+    "Clip · rendering shots (Seedance 2.0, native foley)",
+    "Audio + Compositor · voice, score, mix & final cut",
+  ],
+  adaptation: [
+    "Director · planning this pipeline",
+    "Adaptation · grounding the source story in shot-ready beats",
     "Keyframe Sheet · identity anchors & storyboards",
     "Shot Prompt · cinematic per-shot direction",
     "Clip · rendering shots (Seedance 2.0, native foley)",
@@ -106,7 +119,7 @@ const STAGE_SETS = {
   ],
   storybook: [
     "Director · planning this pipeline",
-    "Storybook · page-by-page read-aloud script",
+    "Narration · illustrated story script",
     "Illustration · watercolor picture-book pages",
     "Narrator · read-aloud voice-over",
     "Compositor · slideshow, read-along captions & mix",
@@ -125,6 +138,7 @@ function stagesFor(d){
   if (kind === "storybook" || kind === "Storybook") return STAGE_SETS.storybook;
   if (kind === "explainer" || kind === "Explainer") return STAGE_SETS.explainer;
   if (kind === "refine" || kind === "Refine") return STAGE_SETS.refine;
+  if (kind === "adaptation" || kind === "Adaptation") return STAGE_SETS.adaptation;
   return STAGE_SETS.cinematic;
 }
 /* ============================================================================= */
