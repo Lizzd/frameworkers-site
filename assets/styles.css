@@ -425,3 +425,7 @@ img{display:block;max-width:100%}
 .full-demo{display:block;width:100%;max-width:960px;margin:0 auto;
   border-radius:var(--radius-lg);border:1px solid var(--line);
   box-shadow:var(--shadow);background:#0b0c11}
+
+/* verbatim prompt display: keep the real input's line breaks; EN translation subdued */
+#pprompt{white-space:pre-wrap}
+.pr-en{display:block;margin-top:8px;font-size:12.5px;color:var(--muted,#8a93a6);white-space:pre-wrap;border-top:1px dashed rgba(128,140,160,.35);padding-top:8px}
