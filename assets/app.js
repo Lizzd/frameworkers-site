@@ -105,6 +105,14 @@ const DEMOS = [
     src:"videos/space_blockade.mp4", poster:"posters/space_blockade.jpg",
     io:{in:"Instruction only", out:["Multi-shot dynamic video","Music / Foley / sound effects","Final audiovisual composition"]},
   },
+  {
+    key:"ember_oak", title:"The Morning Ritual",
+    genre:"Brand Ad \u00b7 Specialty Coffee", cat:"Advertisement",
+    prompt:"做一条 30 秒左右的精品手冲咖啡品牌广告。诉求是卖\"清晨的仪式感\"和那份从容,不讲参数功能,让人看完想给自己慢慢冲一杯。温暖、慢节奏的质感生活方式调性。我会提供产品包装图和 logo,保持品牌一致。英文,不要旁白,可有一句简短 slogan 字幕。",
+    prompt_en:"A ~30s specialty pour-over coffee brand ad. It sells the morning ritual and that sense of unhurried calm \u2014 no specs, no features \u2014 so that after watching you want to slowly brew yourself a cup. Warm, slow-paced, quality-lifestyle tone. The user supplies the product packaging image and logo; brand identity must stay consistent. English, no voice-over; a single short slogan subtitle is allowed.",
+    src:"videos/ember_oak.mp4", poster:"posters/ember_oak.jpg",
+    io:{in:"Instruction + reference images", out:["Multi-shot dynamic video","Music / Foley / sound effects","Final audiovisual composition"]},
+  },
 ];
 
 // which films appear in the Home "Featured films" row (keys, visually diverse)
@@ -166,6 +174,15 @@ const STAGE_SETS = {
     "Video Intake · reading the source clip",
     "Video Extend · extracting the last frame & generating a continuation (Seedance 2.0, native foley)",
   ],
+  advertisement: [
+    "Director \u00b7 planning this pipeline",
+    "Image Intake \u00b7 reading the supplied brand materials (packaging, logo)",
+    "Brief Enricher \u00b7 classifying materials into typed references",
+    "Advertisement \u00b7 pitch beats & product-centric shot plan",
+    "Keyframe Sheet \u00b7 brand-locked anchors & storyboards",
+    "Shot Prompt \u00b7 per-shot direction",
+    "Clip \u00b7 rendering shots (Seedance 2.0, native foley) & final assembly",
+  ],
   spectacle: [
     "Director · planning this pipeline",
     "Travelogue · visual journey — beats where the camera is the protagonist",
@@ -184,6 +201,7 @@ function stagesFor(d){
   if (kind === "refine" || kind === "Refine") return STAGE_SETS.refine;
   if (kind === "adaptation" || kind === "Adaptation") return STAGE_SETS.adaptation;
   if (kind === "spectacle" || kind === "Spectacle") return STAGE_SETS.spectacle;
+  if (kind === "advertisement" || kind === "Advertisement") return STAGE_SETS.advertisement;
   return STAGE_SETS.cinematic;
 }
 /* ============================================================================= */
