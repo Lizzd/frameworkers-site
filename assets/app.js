@@ -63,6 +63,13 @@ const DEMOS = [
     io:{in:"Instruction only", out:["Image-sequence / storybook video","Speech / voice-over audio","Subtitles","Final audiovisual composition"]},
   },
   {
+    key:"ugly_duckling", title:"The Ugly Duckling",
+    genre:"Storybook · Classic Fairy Tale", cat:"Storybook",
+    prompt:"A classic fairy-tale picture-book video (read-aloud, follow-along) adapting Andersen's 'The Ugly Duckling', faithful to the story: a big gray duckling is mocked and shunned by the farmyard, endures a lonely winter, and in spring shyly approaches the beautiful swans by the lake — only to see in his reflection that he has grown into a swan himself. Gentle storybook illustration style, a warm female narrator, read-along words on screen. English.",
+    src:"videos/ugly_duckling.mp4", poster:"posters/ugly_duckling.jpg",
+    io:{in:"Instruction only", out:["Image-sequence / storybook video","Speech / voice-over audio","Subtitles","Final audiovisual composition"]},
+  },
+  {
     key:"orpheus", title:"Orpheus and Eurydice",
     genre:"Illustrated Audiobook · Myth", cat:"Storybook",
     prompt:"An illustrated audiobook of the myth of Orpheus and Eurydice: a narrator tells the whole story over a slideshow of painted illustrations, with Orpheus, Eurydice, and Hades each speaking their own lines of dialogue woven into the narration — a richer, multi-voice dramatic telling (not a one-line-per-page children's book). Gentle read-aloud English narration, English subtitles, and foley.",
