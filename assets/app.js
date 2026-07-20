@@ -83,6 +83,13 @@ const DEMOS = [
     src:"videos/video_extend.mp4", poster:"posters/video_extend.jpg",
     io:{in:"Instruction + video asset", out:["Refined existing video","Music / Foley / sound effects","Final audiovisual composition"]},
   },
+  {
+    key:"space_blockade", title:"Running the Blockade",
+    genre:"Spectacle · Space Fleet Chase", cat:"Spectacle",
+    prompt:"A one-minute space-battle spectacle: a lone starfighter threads at full burn between the capital ships of an enemy blockade, running for its life. Every shot stays out in open space — no cockpit interiors, no pilot close-ups; the tiny fighter is only a scale reference against the hulking warships, which are the real protagonists along with the battle itself. The camera chases tight on the fighter's tail, dives and weaves between the giant hulls, then pulls far back to reveal the sheer scale of the fleet. Bright, high-key sci-fi look. No dialogue — engine roar and battle sound effects only, no subtitles.",
+    src:"videos/space_blockade.mp4", poster:"posters/space_blockade.jpg",
+    io:{in:"Instruction only", out:["Multi-shot dynamic video","Music / Foley / sound effects","Final audiovisual composition"]},
+  },
 ];
 
 // which films appear in the Home "Featured films" row (keys, visually diverse)
@@ -103,6 +110,10 @@ const FAKE_GENERATE_MS = 2600;
 //               NarrationAgent — see agents/illustrated_story/descriptor.py)
 //   refine     = Video Intake → Video Extend (no Story/Keyframe/Clip — grounded in an existing
 //               clip's last frame, per evals/director_routing/eval_cases.json's "extend_*" cases)
+//   spectacle  = Travelogue → Keyframe Sheet → Shot Prompt → Clip (the camera IS the protagonist;
+//               no dialogue / subtitles / VO, so the plan ends at Clip — Seedance native foley +
+//               ClipAgent's own ffmpeg assembly. Chain is the ACTUAL route the Director planned
+//               for space_blockade: TravelogueAgent → KeyframeSheetAgent → ShotPromptAgent → ClipAgent)
 const STAGE_SETS = {
   cinematic: [
     "Director · planning this pipeline",
@@ -140,6 +151,13 @@ const STAGE_SETS = {
     "Video Intake · reading the source clip",
     "Video Extend · extracting the last frame & generating a continuation (Seedance 2.0, native foley)",
   ],
+  spectacle: [
+    "Director · planning this pipeline",
+    "Travelogue · visual journey — beats where the camera is the protagonist",
+    "Keyframe Sheet · craft & fleet identity anchors, storyboards",
+    "Shot Prompt · per-shot camera moves & choreography",
+    "Clip · rendering shots (Seedance 2.0, native foley) & final assembly",
+  ],
 };
 function stagesFor(d){
   // pipeline (how it's actually produced) is independent of cat (which topic cluster it's filed
@@ -150,6 +168,7 @@ function stagesFor(d){
   if (kind === "explainer" || kind === "Explainer") return STAGE_SETS.explainer;
   if (kind === "refine" || kind === "Refine") return STAGE_SETS.refine;
   if (kind === "adaptation" || kind === "Adaptation") return STAGE_SETS.adaptation;
+  if (kind === "spectacle" || kind === "Spectacle") return STAGE_SETS.spectacle;
   return STAGE_SETS.cinematic;
 }
 /* ============================================================================= */
