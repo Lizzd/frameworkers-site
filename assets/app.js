@@ -85,8 +85,9 @@ const DEMOS = [
     key:"poem_recital", title:"Hope Is the Thing with Feathers",
     genre:"Audio-driven · Illustrated Poem", cat:"Narrative", pipeline:"storybook",
     prompt:"我会上传我自己录好的约 60 秒英文诗朗诵音频(只有人声)。帮我按诗的意境生成一条同步的画面短片,用我的原声做旁白、画面随情绪推进,可叠加轻量环境声。横屏,配英文字幕。",
-    prompt_en:"An audio-driven illustrated poem: the user supplies their OWN spoken-word recitation, and the visuals — a slideshow of painted illustrations — are timed to that real recording, advancing with the poem's mood, with English subtitles and light foley. The user's own voice is the narration (no re-synthesis). Here: Emily Dickinson's 'Hope is the thing with feathers'.",
+    prompt_en:"An audio-driven illustrated poem: the user supplies their OWN spoken-word recitation, and the visuals — a slideshow of painted illustrations — are timed to that real recording, advancing with the poem's mood, with English subtitles and light foley. The user's own voice is the narration (no re-synthesis). Here: Emily Dickinson's 'Hope is the thing with feathers'. (Note: the goal text estimated ~60s, but the recording actually supplied — archived below — runs ~35s; the film follows the real audio.)",
     src:"videos/poem_recital.mp4", poster:"posters/poem_recital.jpg",
+    inputs:["user_recitation.wav"],
     io:{in:"Instruction + audio asset", out:["Image-sequence / storybook video","Speech / voice-over audio","Music / Foley / sound effects","Subtitles","Final audiovisual composition"]},
   },
   {
@@ -95,6 +96,7 @@ const DEMOS = [
     prompt:"我有一段 2D 动画短片的结尾(雨夜地铁车厢内的画面),结尾断得有点突然。帮我顺着它的最后一帧、在完全一致的动画画风和这节地铁车厢场景里自然续接大约 5 秒的氛围收尾——镜头极缓慢推进、车窗上的雨痕和车厢灯光轻轻晃动、光线渐暗并轻微渐隐,保持和前面一模一样的画风与这处车厢场景,不要出现任何新的地点、人物或题材。",
     prompt_en:"Take an existing short clip whose ending stops too abruptly and extend it — continuing naturally from its final frame in the same style and scene for a few more seconds of atmospheric outro (slow push-in, gentle fade), without touching or re-cutting the original footage. Here: the closing shot of a 2D-anime late-night subway scene, extended into the now-empty carriage.",
     src:"videos/video_extend.mp4", poster:"posters/video_extend.jpg",
+    inputs:["last_train_tail15.mp4"],
     io:{in:"Instruction + video asset", out:["Refined existing video","Music / Foley / sound effects","Final audiovisual composition"]},
   },
   {
