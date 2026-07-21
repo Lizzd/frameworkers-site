@@ -125,6 +125,15 @@ const DEMOS = [
     inputs:["kurve_front.png","kurve_side.png","kurve_pour_closeup.png","kurve_logo.png"],
     io:{in:"Instruction + script + reference images", out:["Multi-shot dynamic video","Scripted English voice-over","Foley / sound effects & audio mix","Final audiovisual composition"]},
   },
+  {
+    key:"octopus", title:"Strange Nature: The Octopus",
+    genre:"Visualized Podcast \u00b7 Audio-driven", cat:"Explainer", pipeline:"podcast_audio",
+    prompt:"我会提供一期播客的音频 + 对应文字稿。帮我做成一条可视化播客短片(主持人形象保持一致 + 要点字幕卡),用我的原音频不要重配,英文字幕。\n\n文字稿如下(逐字):\nWelcome back to Strange Nature — I'm your host, and today: the octopus.\n\nAn octopus has three hearts. Two pump blood through the gills, and one drives it around the body. That blood runs blue, because it carries oxygen with copper instead of iron.\n\nOf its roughly five hundred million neurons, nearly two thirds live not in its head, but in its arms — each arm tastes, touches, and partly decides on its own.\n\nAnd here's the strangest part: an octopus is functionally colorblind. Yet it can match the color and texture of coral, sand, or stone in under a second, using thousands of pigment cells in its skin called chromatophores.\n\nSome scientists call it the closest thing we have to alien intelligence. Maybe intelligence doesn't need a spine at all.",
+    prompt_en:"A visualized podcast: the user supplies one episode's audio plus its transcript; the system builds an illustrated short with a consistent host figure and key-point visuals, keeps the ORIGINAL audio untouched (no re-dub), and burns English subtitles. Episode: 'Strange Nature \u2014 The Octopus' (three hearts, copper-based blue blood, arm-distributed neurons, colorblind camouflage). (The 'user recording' is a synthesized 59s host read standing in for a real one \u2014 archived below, so the exact same input reproduces the experiment.)",
+    src:"videos/octopus.mp4", poster:"posters/octopus.jpg",
+    inputs:["podcast_audio.wav"],
+    io:{in:"Instruction + script + audio asset", out:["Image-sequence / storybook video","Original user audio (passed through)","Subtitles","Final audiovisual composition"]},
+  },
 ];
 
 // which films appear in the Home "Featured films" row (keys, visually diverse)
@@ -195,6 +204,15 @@ const STAGE_SETS = {
     "Shot Prompt \u00b7 per-shot direction",
     "Clip \u00b7 rendering shots (Seedance 2.0, native foley) & final assembly",
   ],
+  podcast_audio: [
+    "Director \u00b7 planning this pipeline",
+    "Audio Intake \u00b7 reading the supplied recording (speech, English)",
+    "Transcription \u00b7 verbatim transcript with timings",
+    "Illustrated Story \u00b7 host & key-point pages from the transcript",
+    "Illustration \u00b7 character-anchored pages (consistent host)",
+    "Voice \u00b7 the user's own recording, passed through untouched",
+    "Audio Mix + Compositor \u00b7 slideshow timed to the real audio, English subtitles",
+  ],
   advertisement_vo: [
     "Director \u00b7 planning this pipeline",
     "Image Intake \u00b7 reading the supplied product photos & logo",
@@ -224,6 +242,7 @@ function stagesFor(d){
   if (kind === "refine" || kind === "Refine") return STAGE_SETS.refine;
   if (kind === "adaptation" || kind === "Adaptation") return STAGE_SETS.adaptation;
   if (kind === "spectacle" || kind === "Spectacle") return STAGE_SETS.spectacle;
+  if (kind === "podcast_audio") return STAGE_SETS.podcast_audio;
   if (kind === "advertisement_vo") return STAGE_SETS.advertisement_vo;
   if (kind === "advertisement" || kind === "Advertisement") return STAGE_SETS.advertisement;
   return STAGE_SETS.cinematic;
