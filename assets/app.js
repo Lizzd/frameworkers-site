@@ -113,6 +113,14 @@ const DEMOS = [
     src:"videos/ember_oak.mp4", poster:"posters/ember_oak.jpg",
     io:{in:"Instruction + reference images", out:["Multi-shot dynamic video","Music / Foley / sound effects","Final audiovisual composition"]},
   },
+  {
+    key:"kurve", title:"The Champion's Curve",
+    genre:"Product Launch Ad \u00b7 Coffee Machine", cat:"Advertisement", pipeline:"advertisement_vo",
+    prompt:"做一条 20 秒左右的家用手冲咖啡机新品广告,核心诉求是把'一键复刻冠军手冲曲线'这个卖点讲清楚。我会提供这台机器的三张产品图(正面、侧面、出水特写)和我们的品牌 logo,机器外观、配色和 logo 必须严格保持一致,不能让模型自由发挥改造型。文案我也写好了一段,广告里的卖点措辞和结尾那句 slogan 都按我给的来、别改词。质感要温暖、精致、有生活气息的产品广告调性,慢镜头注水、热气升腾那种。结尾落在产品 + logo + slogan 字幕。音频要注水声、咖啡滴落的 foley 加一点轻柔背景乐,再配温暖沉稳的英文旁白把我的文案念出来;旁白不要烧字幕,屏幕文字只留结尾那句 slogan。\n\n文案如下(逐字):\nEvery champion pour has a signature — temperature, flow, rhythm. KURVE remembers it. One touch, and the championship curve pours again.\n结尾 slogan:KURVE. One touch. Champion's pour.",
+    prompt_en:"A ~20s launch ad for a home pour-over coffee machine; the one claim to land: 'one touch replays the championship pour curve'. The user supplies three product photos (front / side / pour close-up) and the brand logo \u2014 the machine's design, colors and logo must stay strictly consistent, no redesigning. The user also wrote the copy: selling-point wording and the closing slogan must be used verbatim. Warm, refined, lived-in product-ad texture \u2014 slow-motion pours, rising steam. End on product + logo + slogan card. Audio: pouring-water and coffee-drip foley plus soft background music, with a warm, steady English voice-over reading the copy; the VO gets no subtitles \u2014 the only on-screen text is the closing slogan. Copy (verbatim): 'Every champion pour has a signature \u2014 temperature, flow, rhythm. KURVE remembers it. One touch, and the championship curve pours again.' Slogan: 'KURVE. One touch. Champion's pour.'",
+    src:"videos/kurve.mp4", poster:"posters/kurve.jpg",
+    io:{in:"Instruction + script + reference images", out:["Multi-shot dynamic video","Scripted English voice-over","Foley / sound effects & audio mix","Final audiovisual composition"]},
+  },
 ];
 
 // which films appear in the Home "Featured films" row (keys, visually diverse)
@@ -183,6 +191,17 @@ const STAGE_SETS = {
     "Shot Prompt \u00b7 per-shot direction",
     "Clip \u00b7 rendering shots (Seedance 2.0, native foley) & final assembly",
   ],
+  advertisement_vo: [
+    "Director \u00b7 planning this pipeline",
+    "Image Intake \u00b7 reading the supplied product photos & logo",
+    "Brief Enricher \u00b7 classifying materials into typed references",
+    "Advertisement \u00b7 pitch beats, VO script & product-centric shot plan",
+    "Keyframe Sheet \u00b7 brand-locked anchors & storyboards",
+    "Shot Prompt \u00b7 per-shot direction",
+    "Clip \u00b7 rendering shots (Seedance 2.0, native foley)",
+    "Voiceover + Audio Mix \u00b7 scripted English VO over foley",
+    "Compositor \u00b7 slogan end-card & final cut",
+  ],
   spectacle: [
     "Director · planning this pipeline",
     "Travelogue · visual journey — beats where the camera is the protagonist",
@@ -201,6 +220,7 @@ function stagesFor(d){
   if (kind === "refine" || kind === "Refine") return STAGE_SETS.refine;
   if (kind === "adaptation" || kind === "Adaptation") return STAGE_SETS.adaptation;
   if (kind === "spectacle" || kind === "Spectacle") return STAGE_SETS.spectacle;
+  if (kind === "advertisement_vo") return STAGE_SETS.advertisement_vo;
   if (kind === "advertisement" || kind === "Advertisement") return STAGE_SETS.advertisement;
   return STAGE_SETS.cinematic;
 }
