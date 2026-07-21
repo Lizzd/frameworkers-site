@@ -111,6 +111,7 @@ const DEMOS = [
     prompt:"做一条 30 秒左右的精品手冲咖啡品牌广告。诉求是卖\"清晨的仪式感\"和那份从容,不讲参数功能,让人看完想给自己慢慢冲一杯。温暖、慢节奏的质感生活方式调性。我会提供产品包装图和 logo,保持品牌一致。英文,不要旁白,可有一句简短 slogan 字幕。",
     prompt_en:"A ~30s specialty pour-over coffee brand ad. It sells the morning ritual and that sense of unhurried calm \u2014 no specs, no features \u2014 so that after watching you want to slowly brew yourself a cup. Warm, slow-paced, quality-lifestyle tone. The user supplies the product packaging image and logo; brand identity must stay consistent. English, no voice-over; a single short slogan subtitle is allowed.",
     src:"videos/ember_oak.mp4", poster:"posters/ember_oak.jpg",
+    inputs:["ember_oak_packaging.png","ember_oak_logo.png"],
     io:{in:"Instruction + reference images", out:["Multi-shot dynamic video","Music / Foley / sound effects","Final audiovisual composition"]},
   },
   {
@@ -119,6 +120,7 @@ const DEMOS = [
     prompt:"做一条 20 秒左右的家用手冲咖啡机新品广告,核心诉求是把'一键复刻冠军手冲曲线'这个卖点讲清楚。我会提供这台机器的三张产品图(正面、侧面、出水特写)和我们的品牌 logo,机器外观、配色和 logo 必须严格保持一致,不能让模型自由发挥改造型。文案我也写好了一段,广告里的卖点措辞和结尾那句 slogan 都按我给的来、别改词。质感要温暖、精致、有生活气息的产品广告调性,慢镜头注水、热气升腾那种。结尾落在产品 + logo + slogan 字幕。音频要注水声、咖啡滴落的 foley 加一点轻柔背景乐,再配温暖沉稳的英文旁白把我的文案念出来;旁白不要烧字幕,屏幕文字只留结尾那句 slogan。\n\n文案如下(逐字):\nEvery champion pour has a signature — temperature, flow, rhythm. KURVE remembers it. One touch, and the championship curve pours again.\n结尾 slogan:KURVE. One touch. Champion's pour.",
     prompt_en:"A ~20s launch ad for a home pour-over coffee machine; the one claim to land: 'one touch replays the championship pour curve'. The user supplies three product photos (front / side / pour close-up) and the brand logo \u2014 the machine's design, colors and logo must stay strictly consistent, no redesigning. The user also wrote the copy: selling-point wording and the closing slogan must be used verbatim. Warm, refined, lived-in product-ad texture \u2014 slow-motion pours, rising steam. End on product + logo + slogan card. Audio: pouring-water and coffee-drip foley plus soft background music, with a warm, steady English voice-over reading the copy; the VO gets no subtitles \u2014 the only on-screen text is the closing slogan. Copy (verbatim): 'Every champion pour has a signature \u2014 temperature, flow, rhythm. KURVE remembers it. One touch, and the championship curve pours again.' Slogan: 'KURVE. One touch. Champion's pour.'",
     src:"videos/kurve.mp4", poster:"posters/kurve.jpg",
+    inputs:["kurve_front.png","kurve_side.png","kurve_pour_closeup.png","kurve_logo.png"],
     io:{in:"Instruction + script + reference images", out:["Multi-shot dynamic video","Scripted English voice-over","Foley / sound effects & audio mix","Final audiovisual composition"]},
   },
 ];
@@ -349,6 +351,27 @@ function initPortfolio(){
       // to the pipeline (Chinese where the real input was Chinese); d.prompt_en
       // is a reference translation only.
       $("pprompt").textContent = d.prompt;
+      // Input materials strip — the EXACT files fed to the pipeline, served
+      // from inputs/<key>/ (reproducibility archive; goal.txt = the prompt above).
+      const _pin = $("pinputs"), _pinList = $("pinputs-list");
+      if (_pin && _pinList) {
+        const files = d.inputs || [];
+        _pin.style.display = files.length ? "" : "none";
+        _pinList.innerHTML = files.map(f => {
+          const url = "inputs/" + d.key + "/" + f;
+          const ext = f.split(".").pop().toLowerCase();
+          let media;
+          if (["png","jpg","jpeg","webp","gif"].includes(ext))
+            media = `<a href="${url}" target="_blank" rel="noopener"><img src="${url}" alt="${esc(f)}" loading="lazy"></a>`;
+          else if (["wav","mp3","m4a","ogg"].includes(ext))
+            media = `<audio controls preload="none" src="${url}"></audio>`;
+          else if (["mp4","mov","webm"].includes(ext))
+            media = `<video controls preload="metadata" src="${url}"></video>`;
+          else
+            media = `<a class="pin-txt" href="${url}" target="_blank" rel="noopener">view file</a>`;
+          return `<div class="pin-item">${media}<span class="pin-name">${esc(f)}</span></div>`;
+        }).join("");
+      }
       const _pen = $("pprompt-en");
       if (_pen) {
         _pen.style.display = d.prompt_en ? "" : "none";
