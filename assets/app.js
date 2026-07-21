@@ -174,9 +174,9 @@ const STAGE_SETS = {
   ],
   storybook: [
     "Director · planning this pipeline",
-    "Narration · illustrated story script",
+    "Illustrated Story · pages, panels & read-aloud script",
     "Illustration · watercolor picture-book pages",
-    "Narrator · read-aloud voice-over",
+    "Voice · read-aloud narration (TTS)",
     "Compositor · slideshow, read-along captions & mix",
   ],
   refine: [
