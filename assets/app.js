@@ -152,6 +152,24 @@ const DEMOS = [
     inputs:["gift_of_the_magi.txt"],
     io:{in:"Instruction + full source text", out:["Image-sequence / storybook video","Speech / voice-over audio","Subtitles","Final audiovisual composition"]},
   },
+  {
+    key:"restored_newsreel", title:"Alaska, Restored",
+    genre:"Restoration \u00b7 Archival Newsreel", cat:"Refine", pipeline:"restore",
+    prompt:"I've got a video that's pretty old and soft-looking. Clean it up for me: bring up the sharpness with upscaling, grade it so the image looks clearer, patch up the sound where it needs it, and burn in English subtitles. Don't touch the content or the edit structure — just improve the picture quality and the presentation.",
+    prompt_en:"Restoration of an existing clip: the user hands in soft, low-resolution footage and asks for sharpness, grade, sound and burned English subtitles \u2014 with the content and edit structure untouched. Here: a public-domain 1959 Universal newsreel on Alaska statehood, 320\u00d7240 \u2192 1440\u00d71080 via self-hosted SeedVR2 super-resolution, transcript burned as captions, original narration track and every cut preserved.",
+    src:"videos/restored_newsreel.mp4", poster:"posters/restored_newsreel.jpg",
+    inputs:["newsreel_full.mp4"],
+    io:{in:"Instruction + video asset", out:["Refined existing video","Subtitles","Final audiovisual composition"]},
+  },
+  {
+    key:"reel_1960s", title:"The Cut That Survived",
+    genre:"Highlight Reel \u00b7 Footage Pack", cat:"Refine", pipeline:"footage_pack",
+    prompt:"I'm going to dump a pile of loose travel and event clips on you — all different lengths, and there are plenty of throwaway shots in there. Find the highlights for me and cut them into a highlight reel of about 60 seconds: throw out anything blurry, repetitive or boring, keep the best and most emotional moments, cut it to the beat of the music, and put short subtitles on it. Energetic, upbeat vlog highlight vibe. English subtitles.",
+    prompt_en:"A footage-pack edit: the user drops a pile of loose clips of assorted lengths \u2014 including throwaway takes \u2014 and asks for the highlights cut into a reel, with the blurry, repetitive and boring parts thrown out. Here: 14 clips carved from public-domain 1930s\u20131960s newsreels, deliberately salted with one out-of-focus take, two near-duplicates and one long static stretch. The system described all 14, flagged the blurred one as unusable, and cut six moments from six different sources.",
+    src:"videos/reel_1960s.mp4", poster:"posters/reel_1960s.jpg",
+    inputs:["clip_01_parade_crowd.mp4", "clip_02_parade_band.mp4", "clip_03_games_track.mp4", "clip_04_games_swim.mp4", "clip_05_tour_motorcade.mp4", "clip_06_tour_speech.mp4", "clip_07_rush_street.mp4", "clip_08_parade_flags.mp4", "clip_09_games_medal.mp4", "clip_10_tour_arrival.mp4", "clip_11_blurry_take.mp4", "clip_12_dup_band.mp4", "clip_13_dup_motorcade.mp4", "clip_14_static_boring.mp4"],
+    io:{in:"Instruction + video assets", out:["Refined existing video","Subtitles","Final audiovisual composition"]},
+  },
 ];
 
 // which films appear in the Home "Featured films" row (keys, visually diverse)
@@ -222,6 +240,21 @@ const STAGE_SETS = {
     "Shot Prompt \u00b7 per-shot direction",
     "Clip \u00b7 rendering shots (Seedance 2.0, native foley) & final assembly",
   ],
+  restore: [
+    "Director \u00b7 planning this pipeline",
+    "Video Intake \u00b7 reading the supplied footage",
+    "Transcription \u00b7 verbatim transcript with timings",
+    "Upscale \u00b7 SeedVR2 super-resolution (self-hosted, 240p \u2192 1080p)",
+    "Compositor \u00b7 grade, burn English subtitles, final encode",
+  ],
+  footage_pack: [
+    "Director \u00b7 planning this pipeline",
+    "Video Intake \u00b7 describing every uploaded clip in parallel",
+    "Video Analysis \u00b7 per-clip scenes; unusable takes flagged",
+    "Highlight \u00b7 selecting across sources, dropping blurry / duplicate / static",
+    "Transcription \u00b7 transcript of the surviving audio",
+    "Compositor \u00b7 grade, burn English subtitles, final cut",
+  ],
   podcast_audio: [
     "Director \u00b7 planning this pipeline",
     "Audio Intake \u00b7 reading the supplied recording (speech, English)",
@@ -260,6 +293,8 @@ function stagesFor(d){
   if (kind === "refine" || kind === "Refine") return STAGE_SETS.refine;
   if (kind === "adaptation" || kind === "Adaptation") return STAGE_SETS.adaptation;
   if (kind === "spectacle" || kind === "Spectacle") return STAGE_SETS.spectacle;
+  if (kind === "restore") return STAGE_SETS.restore;
+  if (kind === "footage_pack") return STAGE_SETS.footage_pack;
   if (kind === "podcast_audio") return STAGE_SETS.podcast_audio;
   if (kind === "advertisement_vo") return STAGE_SETS.advertisement_vo;
   if (kind === "advertisement" || kind === "Advertisement") return STAGE_SETS.advertisement;
