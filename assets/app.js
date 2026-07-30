@@ -170,6 +170,22 @@ const DEMOS = [
     inputs:["clip_01_parade_crowd.mp4", "clip_02_parade_band.mp4", "clip_03_games_track.mp4", "clip_04_games_swim.mp4", "clip_05_tour_motorcade.mp4", "clip_06_tour_speech.mp4", "clip_07_rush_street.mp4", "clip_08_parade_flags.mp4", "clip_09_games_medal.mp4", "clip_10_tour_arrival.mp4", "clip_11_blurry_take.mp4", "clip_12_dup_band.mp4", "clip_13_dup_motorcade.mp4", "clip_14_static_boring.mp4"],
     io:{in:"Instruction + video assets", out:["Refined existing video","Subtitles","Final audiovisual composition"]},
   },
+  {
+    key:"tech_anchor", title:"Tech Update",
+    genre:"News Broadcast \u00b7 Virtual Anchor", cat:"Explainer", pipeline:"news_broadcast",
+    prompt:"Make a tech news broadcast around 60 seconds, with a virtual anchor in a clean studio reading the day's three big tech stories. Which three and the exact wording of each I'll provide — read them as given, don't go making up news yourself. The anchor should look the same the whole way through, and put up title bars and key points on screen. Delivered in English, with English subtitles.\n\nHere are the three stories, word for word — read them as written:\n\nStory 1 — DeepSeek releases R1 with open weights. In January 2025 the Chinese AI lab DeepSeek released R1, an open-weights reasoning model trained for a fraction of the cost of Western frontier models. The release triggered a global selloff in AI-related stocks, including the largest single-day market-value loss in U.S. history at the time — roughly 590 billion dollars wiped from Nvidia in one session.\n\nStory 2 — Quantum error correction crosses the threshold. In late 2024 Google unveiled its Willow quantum chip, demonstrating for the first time that adding more physical qubits to a logical qubit REDUCED the error rate — crossing the long-sought \"below threshold\" milestone for quantum error correction.\n\nStory 3 — The EU AI Act enters into force. On August 1st, 2024, the European Union's AI Act — the world's first comprehensive AI law — entered into force, phasing in obligations by risk tier: bans on unacceptable-risk practices from February 2025, and duties for general-purpose AI models from August 2025.",
+    prompt_en:"A 60-second tech news bulletin: the user supplies the three stories word for word and the system must read them as given, inventing nothing. A stylized 3D anchor holds one identity across the whole bulletin (a photoreal anchor would be rejected by the video backend's real-person filter), delivered in English with English subtitles.",
+    src:"videos/tech_anchor.mp4", poster:"posters/tech_anchor.jpg",
+    io:{in:"Instruction + script", out:["Multi-shot dynamic video","Scripted English voice-over","Subtitles","Final audiovisual composition"]},
+  },
+  {
+    key:"iceland_aerial", title:"Iceland From Above",
+    genre:"Spectacle \u00b7 Aerial Nature", cat:"Spectacle", pipeline:"spectacle_aerial",
+    prompt:"I want about a 60-second aerial nature spectacle. Aerials over Iceland: black sand beaches with big waves breaking on the shore, cliffside waterfalls, a steaming active volcano with lava running down it, deep fjords. Mostly steady, sweeping, cinematic drone work — low passes following the terrain, slow climbs that reveal the whole panorama, an orbit around a waterfall; the camera is the subject, no people in it. Photoreal documentary look. No dialogue, just natural ambient sound, and no subtitles.",
+    prompt_en:"A 60-second aerial nature spectacle over Iceland \u2014 black sand beaches, cliffside waterfalls, steaming volcanic fissures, glacier tongues \u2014 no characters, no plot, the camera itself is the protagonist. Realistic cinematic aerial look, no dialogue and no subtitles by design; engine-free natural ambience only.",
+    src:"videos/iceland_aerial.mp4", poster:"posters/iceland_aerial.jpg",
+    io:{in:"Instruction only", out:["Multi-shot dynamic video","Music / Foley / sound effects","Final audiovisual composition"]},
+  },
 ];
 
 // which films appear in the Home "Featured films" row (keys, visually diverse)
@@ -255,6 +271,23 @@ const STAGE_SETS = {
     "Transcription \u00b7 transcript of the surviving audio",
     "Compositor \u00b7 grade, burn English subtitles, final cut",
   ],
+  news_broadcast: [
+    "Director \u00b7 planning this pipeline",
+    "News Broadcast \u00b7 bulletin structure from the supplied stories",
+    "Keyframe Sheet \u00b7 anchor identity & studio storyboards",
+    "Shot Prompt \u00b7 per-shot direction",
+    "Clip \u00b7 rendering shots (Seedance 2.0)",
+    "Voiceover + Audio Mix \u00b7 scripted English anchor read",
+    "Compositor \u00b7 English subtitles & final cut",
+  ],
+  spectacle_aerial: [
+    "Director \u00b7 planning this pipeline",
+    "Travelogue \u00b7 beats where the camera is the protagonist",
+    "Keyframe Sheet \u00b7 location anchors & storyboards",
+    "Shot Prompt \u00b7 per-shot camera moves",
+    "Clip \u00b7 rendering shots (Seedance 2.0, native foley)",
+    "Compositor \u00b7 grade & final cut",
+  ],
   podcast_audio: [
     "Director \u00b7 planning this pipeline",
     "Audio Intake \u00b7 reading the supplied recording (speech, English)",
@@ -293,6 +326,8 @@ function stagesFor(d){
   if (kind === "refine" || kind === "Refine") return STAGE_SETS.refine;
   if (kind === "adaptation" || kind === "Adaptation") return STAGE_SETS.adaptation;
   if (kind === "spectacle" || kind === "Spectacle") return STAGE_SETS.spectacle;
+  if (kind === "news_broadcast") return STAGE_SETS.news_broadcast;
+  if (kind === "spectacle_aerial") return STAGE_SETS.spectacle_aerial;
   if (kind === "restore") return STAGE_SETS.restore;
   if (kind === "footage_pack") return STAGE_SETS.footage_pack;
   if (kind === "podcast_audio") return STAGE_SETS.podcast_audio;

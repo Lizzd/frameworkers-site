@@ -1,0 +1,9 @@
+Make a tech news broadcast around 60 seconds, with a virtual anchor in a clean studio reading the day's three big tech stories. Which three and the exact wording of each I'll provide — read them as given, don't go making up news yourself. The anchor should look the same the whole way through, and put up title bars and key points on screen. Delivered in English, with English subtitles.
+
+Here are the three stories, word for word — read them as written:
+
+Story 1 — DeepSeek releases R1 with open weights. In January 2025 the Chinese AI lab DeepSeek released R1, an open-weights reasoning model trained for a fraction of the cost of Western frontier models. The release triggered a global selloff in AI-related stocks, including the largest single-day market-value loss in U.S. history at the time — roughly 590 billion dollars wiped from Nvidia in one session.
+
+Story 2 — Quantum error correction crosses the threshold. In late 2024 Google unveiled its Willow quantum chip, demonstrating for the first time that adding more physical qubits to a logical qubit REDUCED the error rate — crossing the long-sought "below threshold" milestone for quantum error correction.
+
+Story 3 — The EU AI Act enters into force. On August 1st, 2024, the European Union's AI Act — the world's first comprehensive AI law — entered into force, phasing in obligations by risk tier: bans on unacceptable-risk practices from February 2025, and duties for general-purpose AI models from August 2025.
