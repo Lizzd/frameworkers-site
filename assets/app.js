@@ -316,6 +316,13 @@ const STAGE_SETS = {
     "Clip · rendering shots (Seedance 2.0, native foley) & final assembly",
   ],
 };
+const _CJK = /[\u3000-\u303f\u3400-\u4dbf\u4e00-\u9fff\uff00-\uffef]/;
+function promptMain(d){
+  return (_CJK.test(d.prompt || "") && d.prompt_en) ? d.prompt_en : (d.prompt || "");
+}
+function promptVerbatim(d){
+  return (_CJK.test(d.prompt || "") && d.prompt_en) ? d.prompt : "";
+}
 function stagesFor(d){
   // pipeline (how it's actually produced) is independent of cat (which topic cluster it's filed
   // under) — most films' pipeline matches their cat, but a few don't (e.g. poem_recital is
@@ -411,7 +418,7 @@ function filmCard(d){
       </div>
       <div class="body">
         <div class="ttl">${esc(d.title)}</div>
-        <div class="desc">${esc(d.prompt)}</div>
+        <div class="desc">${esc(promptMain(d))}</div>
         ${ioRow(d)}
         <div class="go">Generate this film ${ARROW_SVG}</div>
       </div>
@@ -459,7 +466,7 @@ function initPortfolio(){
       // Verbatim reproducibility: d.prompt IS the exact user instruction fed
       // to the pipeline (Chinese where the real input was Chinese); d.prompt_en
       // is a reference translation only.
-      $("pprompt").textContent = d.prompt;
+      $("pprompt").textContent = promptMain(d);
       // Input materials strip — the EXACT files fed to the pipeline, served
       // from inputs/<key>/ (reproducibility archive; goal.txt = the prompt above).
       const _pin = $("pinputs"), _pinList = $("pinputs-list");
@@ -483,9 +490,9 @@ function initPortfolio(){
       }
       const _pen = $("pprompt-en");
       if (_pen) {
-        _pen.style.display = d.prompt_en ? "" : "none";
-        _pen.textContent = d.prompt_en
-          ? "English translation (reference only — the verbatim input above is what was fed): " + d.prompt_en
+        _pen.style.display = promptVerbatim(d) ? "" : "none";
+        _pen.textContent = promptVerbatim(d)
+          ? "Verbatim input as fed (originally written in Chinese; the English above is a translation): " + promptVerbatim(d)
           : "";
       }
       video.src = d.src; video.poster = d.poster; video.muted = false;
