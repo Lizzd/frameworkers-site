@@ -162,6 +162,15 @@ const DEMOS = [
     io:{in:"Instruction + video asset", out:["Refined existing video","Subtitles","Final audiovisual composition"]},
   },
   {
+    key:"kestrel", title:"One Day, One Booth",
+    genre:"Brand Recap \u00b7 Mixed Pack", cat:"Refine", pipeline:"footage_pack",
+    prompt:"I'll give you the footage from our event plus our brand logo and a few product shots. Cut it into a 45-second brand recap for me, work the logo and the products into the frame so they feel natural, cut it on the beat of the music, English subtitles.",
+    prompt_en:"The first brief that hands in three KINDS of file at once: a pack of event clips, a brand logo with three product stills, and a music bed. All sixteen are intaken in one plan; eleven clips are described and ten moments cut to 47 seconds against the asked-for 45, each with its own short on-screen line, and the logo is composited into the corner for the whole runtime. An edited film cannot draw a mark into its frames the way a generated one does \u2014 it is cut from footage that already exists \u2014 so the logo reaches the screen by being burned over the finished picture. The event footage and the product stills are synthesized stand-ins: no CC-licensed brand-event b-roll exists to shoot this brief with.",
+    src:"videos/kestrel.mp4", poster:"posters/kestrel.jpg",
+    inputs:["brand_logo.png","product_shoe.png","product_vest.png","product_lamp.png"],
+    io:{in:"Instruction + video pack + brand images + music", out:["Refined existing video","On-screen captions","Composited brand mark","Final audiovisual composition"]},
+  },
+  {
     key:"reel_travel", title:"Keep the Good Ones",
     genre:"Highlight Reel \u00b7 Footage Pack", cat:"Refine", pipeline:"footage_pack",
     prompt:"I'm going to dump a pile of loose travel and event clips on you — all different lengths, and there are plenty of throwaway shots in there. Find the highlights for me and cut them into a highlight reel of about 60 seconds: throw out anything blurry, repetitive or boring, keep the best and most emotional moments, cut it to the beat of the music, and put short subtitles on it. Energetic, upbeat vlog highlight vibe. English subtitles.",
