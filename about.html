@@ -37,13 +37,6 @@
           production and re-plans it on failure. An <b>Assistant</b> executes each step and grounds the result in a
           shared workspace. Together they replace a fixed pipeline with a closed, recoverable loop.</p>
       </div>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:0">
-    <div class="container">
-      <div class="section-head"><h2 class="section-title">Architecture</h2>
-        <p class="section-sub">Two complementary modules do the work — one plans, one executes.</p></div>
       <div class="io-grid">
         <div class="io-card">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.4"/><circle cx="6" cy="18" r="2.4"/><circle cx="18" cy="9" r="2.4"/><path d="M6 8.4v7.2M8.4 6H14a2.5 2.5 0 0 1 2.5 2.5M8.4 18H14a2.5 2.5 0 0 0 2.5-2.5"/></svg></div>
@@ -77,15 +70,8 @@
         <p class="section-sub">Real video-making is a multi-step workflow — scripting, asset management, cross-shot
           consistency — and different inputs call for different workflows. A hand-wired pipeline is brittle, and a
           zero-shot LLM struggles with long-horizon planning and multimodal asset routing. FrameWorkers instead treats
-          video creation as <b>dynamic task management</b>.</p>
+          video creation as <b>dynamic task management</b>: every task flows through the same closed loop.</p>
       </div>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:0">
-    <div class="container">
-      <div class="section-head"><h2 class="section-title">A closed production loop</h2>
-        <p class="section-sub">Every task flows through the same plan → execute → check → re-plan cycle.</p></div>
       <div class="steps" style="grid-template-columns:repeat(4,1fr)">
         <div class="step"><div class="n">1</div><h3>Plan</h3>
           <p>The Director edits the task stack from the intent, agent descriptors, and current state.</p></div>
