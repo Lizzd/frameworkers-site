@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- FrameWorkers demo site — RESEARCH (merged: intro + crew + team + method/architecture + results). -->
+<!-- FrameWorkers demo site — RESEARCH (intro + why-not-pipeline + three modules each with its results + end-to-end + team). -->
 <html lang="en">
 <head>
 <meta charset="utf-8" />
@@ -33,32 +33,10 @@
     <div class="container">
       <div class="section-head">
         <h2 class="section-title">The research behind<br /><span class="gtext">FrameWorkers</span></h2>
-        <p class="section-sub">FrameWorkers is built around two core modules. A trained <b>Director</b> plans the
+        <p class="section-sub">FrameWorkers is built around three modules. A trained <b>Director</b> plans the
           production and re-plans it on failure. An <b>Assistant</b> executes each step and grounds the result in a
-          shared workspace. Together they replace a fixed pipeline with a closed, recoverable loop.</p>
-      </div>
-      <div class="io-grid">
-        <div class="io-card">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.4"/><circle cx="6" cy="18" r="2.4"/><circle cx="18" cy="9" r="2.4"/><path d="M6 8.4v7.2M8.4 6H14a2.5 2.5 0 0 1 2.5 2.5M8.4 18H14a2.5 2.5 0 0 0 2.5-2.5"/></svg></div>
-          <h3>Director &amp; Dynamic Task Stack</h3>
-          <p>The orchestrator. It reads the brief, the agent descriptors, and the current state, then edits a dynamic
-            task stack — adding, reordering, and revising future tasks. It plans per request and re-plans on failure,
-            never a hard-coded graph; completed work stays as an immutable, auditable history.</p>
-        </div>
-        <div class="io-card">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 12.5l9 5 9-5M3 17l9 5 9-5"/></svg></div>
-          <h3>Assistant &amp; Workspace</h3>
-          <p>The execution runtime. It resolves each task's inputs, invokes the chosen agent, validates the output, and
-            persists everything to a shared workspace — files, generated assets, global memory, and logs. A
-            <b>“strict-out, loose-in”</b> contract keeps agents decoupled and recoverable.</p>
-        </div>
-        <div class="io-card">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.6"/><rect x="14" y="3" width="7" height="7" rx="1.6"/><rect x="3" y="14" width="7" height="7" rx="1.6"/><rect x="14" y="14" width="7" height="7" rx="1.6"/></svg></div>
-          <h3>Sub-agent catalog</h3>
-          <p>Capability as a catalog, not a graph. Each agent is a self-contained module described by its inputs,
-            outputs, and trigger conditions. Routing is semantic, so new capabilities are added by registering a
-            descriptor — no workflow redesign.</p>
-        </div>
+          shared workspace. A catalog of specialist <b>sub-agents</b> — the crew — does the creative work.
+          Together they replace a fixed pipeline with a closed, recoverable loop.</p>
       </div>
     </div>
   </section>
@@ -87,78 +65,17 @@
 
   <section class="section" style="padding-top:0">
     <div class="container">
-      <div class="section-head"><h2 class="section-title">A director that's <span class="gtext">trained</span>, not just prompted</h2>
-        <p class="section-sub">Zero-shot LLMs misjudge task order and skip necessary steps on long workflows. We fine-tune
-          the Director — with supervised and reinforcement learning over simulated and dynamically generated execution
-          data — so it selects the right agents, orders them by dependency, and builds robust execution chains that
-          recover from failures.</p></div>
-      <div class="tags">
-        <span class="tag">Dynamic task-stack orchestration</span>
-        <span class="tag">Failure recovery by re-planning</span>
-        <span class="tag">Descriptor-driven routing</span>
-        <span class="tag">Extensible agent catalog</span>
-        <span class="tag">Multimodal inputs</span>
-        <span class="tag">Workspace-grounded memory</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:0">
-    <div class="container">
       <div class="section-head">
-        <h2 class="section-title">Results</h2>
-        <p class="section-sub">Each number below measures one of the two modules above: how well the <b>Director</b>
-          plans (routing accuracy, runtime recovery) and how reliably the <b>Assistant</b> executes (robustness across
-          backends, capability coverage) — plus how the finished films compare end-to-end, across two studies against
-          four external baselines (S-Agent, UniVA, Anim-Director, MovieAgent).</p>
+        <div class="eyebrow" style="margin-bottom:12px">Module 1 · Planning</div>
+        <h2 class="section-title">The <span class="gtext">Director</span> &amp; the dynamic task stack</h2>
+        <p class="section-sub">The orchestrator. It reads the brief, the agent descriptors, and the current state, then
+          edits a dynamic task stack — adding, reordering, and revising future tasks. It plans per request and re-plans
+          on failure, never a hard-coded graph; completed work stays as an immutable, auditable history.</p>
+        <p class="section-sub" style="margin-top:12px">And it is <b>trained, not just prompted</b>: zero-shot LLMs misjudge
+          task order and skip necessary steps on long workflows, so we fine-tune the Director with supervised and
+          reinforcement learning over simulated and dynamically generated execution data — until it selects the right
+          agents, orders them by dependency, and recovers from failures.</p>
       </div>
-
-      <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
-        <h3 class="chart-title">Capability coverage</h3>
-        <p class="chart-sub">Can the system take this kind of input, and can it produce this kind of output? This
-          checklist compares what each system explicitly supports — not how well it does it — against six published
-          multi-agent systems. A cross means not explicitly demonstrated in that system's paper, not necessarily an
-          inherent inability.</p>
-        <div class="cov-table-wrap">
-          <table class="cov-table">
-            <thead>
-              <tr>
-                <th>Property</th>
-                <th class="ours-col">FrameWorkers<br />(ours)</th>
-                <th>UniVA</th>
-                <th>Co-Director</th>
-                <th>MovieAgent</th>
-                <th>Anim-<br />Director</th>
-                <th>AniMaker</th>
-                <th>MM-Story<br />Agent</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="group-row"><td colspan="8">Supported inputs (each row is in addition to a base instruction)</td></tr>
-              <tr><td>Instruction only</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-              <tr><td>+ raw source text</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ script</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ reference image(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ video asset(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ audio asset(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ script + reference image(s)</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ script + audio asset(s)</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ reference image(s) + video asset(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>+ script + reference image(s) + audio asset(s)</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr class="group-row"><td colspan="8">Output properties</td></tr>
-              <tr><td>Multi-shot dynamic video</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
-              <tr><td>Image-sequence / storybook video</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td></tr>
-              <tr><td>Refined existing video</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-              <tr><td>Speech / voice-over audio</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-              <tr><td>Music / Foley / sound effects</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td></tr>
-              <tr><td>Subtitles</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td></tr>
-              <tr><td>Final audiovisual composition</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-              <tr class="total-row"><td>Total</td><td class="ours-col">17/17</td><td>12/17</td><td>6/17</td><td>10/17</td><td>4/17</td><td>5/17</td><td>5/17</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
       <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
         <h3 class="chart-title">Director routing accuracy</h3>
         <p class="chart-sub">Given a request, does the Director pick the right specialist agents and put them in the
@@ -208,8 +125,30 @@
         </div>
       </div>
 
-      <div class="chart-row">
-        <div class="chart-card">
+      <div class="stat-banner" style="margin:18px auto 0">
+        <h3 class="chart-title">Runtime recovery</h3>
+        <p class="chart-sub">If a step fails partway through a production, can the Director recover — build a new
+          valid plan from where things broke — instead of the whole run failing?</p>
+        <div class="stat-row">
+          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.6-6.4"/><path d="M3 4v5h5"/></svg></div>
+          <div class="stat-value">96.7<span class="kpi-unit">%</span></div>
+          <div class="stat-label">replan success rate across 991 perturbed execution cases — the Director reconstructs a valid plan after failure, with no explicit recovery training</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow" style="margin-bottom:12px">Module 2 · Execution</div>
+        <h2 class="section-title">The <span class="gtext">Assistant</span> &amp; the workspace</h2>
+        <p class="section-sub">The execution runtime. It resolves each task's inputs, invokes the chosen agent, validates
+          the output, and persists everything to a shared workspace — files, generated assets, global memory, and logs. A
+          <b>“strict-out, loose-in”</b> contract keeps agents decoupled and recoverable.</p>
+      </div>
+      <div class="chart-card" style="max-width:1080px;margin:0 auto">
           <h3 class="chart-title">Execution robustness</h3>
           <p class="chart-sub">Once the Director has a plan, can the Assistant actually carry it out end to end —
             every agent call completing, every output validating, nothing lost to a workspace error? Case-level pass
@@ -238,7 +177,110 @@
           </div>
           <p class="chart-sub" style="margin-top:16px">Gemini 2.5 Flash — the backend FrameWorkers ships with — completes every case with zero orchestration, routing, or workspace-level failures.</p>
         </div>
-        <div class="chart-card">
+
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow" style="margin-bottom:12px">Module 3 · The crew</div>
+        <h2 class="section-title">A catalog of <span class="gtext">sub-agents</span></h2>
+        <p class="section-sub">Capability as a catalog, not a graph. Each sub-agent is a self-contained module owning one
+          capability, described by its inputs, outputs, and trigger conditions. Routing is semantic, so new capabilities
+          are added by registering a descriptor — no workflow redesign. The Director selects and orders a subset for each
+          production — these are the agents in active use today.</p>
+      </div>
+      <div class="tags" style="margin-bottom:44px">
+        <span class="tag">Narrative</span>
+        <span class="tag">Travelogue</span>
+        <span class="tag">Explainer</span>
+        <span class="tag">News Broadcast</span>
+        <span class="tag">Advertisement</span>
+        <span class="tag">Adaptation</span>
+        <span class="tag">Comedy</span>
+        <span class="tag">Keyframe Sheet</span>
+        <span class="tag">Shot Prompt</span>
+        <span class="tag">Clip</span>
+        <span class="tag">Narration</span>
+        <span class="tag">Storybook</span>
+        <span class="tag">Illustration</span>
+        <span class="tag">Narrator</span>
+        <span class="tag">Voiceover</span>
+        <span class="tag">Music</span>
+        <span class="tag">Ambience</span>
+        <span class="tag">Audio Mix</span>
+        <span class="tag">Video Analysis</span>
+        <span class="tag">Highlight</span>
+        <span class="tag">Style Transfer</span>
+        <span class="tag">Video Extend</span>
+        <span class="tag">Upscale</span>
+        <span class="tag">Brief Enricher</span>
+        <span class="tag">Image Intake</span>
+        <span class="tag">Video Intake</span>
+        <span class="tag">Transcription</span>
+        <span class="tag">Translation</span>
+        <span class="tag">Compositor</span>
+      </div>
+      <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
+        <h3 class="chart-title">Capability coverage</h3>
+        <p class="chart-sub">Can the system take this kind of input, and can it produce this kind of output? This
+          checklist compares what each system explicitly supports — not how well it does it — against six published
+          multi-agent systems. A cross means not explicitly demonstrated in that system's paper, not necessarily an
+          inherent inability.</p>
+        <div class="cov-table-wrap">
+          <table class="cov-table">
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th class="ours-col">FrameWorkers<br />(ours)</th>
+                <th>UniVA</th>
+                <th>Co-Director</th>
+                <th>MovieAgent</th>
+                <th>Anim-<br />Director</th>
+                <th>AniMaker</th>
+                <th>MM-Story<br />Agent</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="group-row"><td colspan="8">Supported inputs (each row is in addition to a base instruction)</td></tr>
+              <tr><td>Instruction only</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td>+ raw source text</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ script</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ reference image(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ video asset(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ audio asset(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ script + reference image(s)</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ script + audio asset(s)</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ reference image(s) + video asset(s)</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>+ script + reference image(s) + audio asset(s)</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr class="group-row"><td colspan="8">Output properties</td></tr>
+              <tr><td>Multi-shot dynamic video</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
+              <tr><td>Image-sequence / storybook video</td><td class="ours-col yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td></tr>
+              <tr><td>Refined existing video</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+              <tr><td>Speech / voice-over audio</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td>Music / Foley / sound effects</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td></tr>
+              <tr><td>Subtitles</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td></tr>
+              <tr><td>Final audiovisual composition</td><td class="ours-col yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr class="total-row"><td>Total</td><td class="ours-col">17/17</td><td>12/17</td><td>6/17</td><td>10/17</td><td>4/17</td><td>5/17</td><td>5/17</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow" style="margin-bottom:12px">Full system</div>
+        <h2 class="section-title">End-to-end <span class="gtext">results</span></h2>
+        <p class="section-sub">Do the three modules add up to better films? The finished videos themselves, scored blind
+          against four external baselines (S-Agent, UniVA, Anim-Director, MovieAgent) across two studies — by a
+          multimodal LLM judge and by human evaluators.</p>
+      </div>
+      <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
           <h3 class="chart-title">End-to-end video quality — automatic</h3>
           <p class="chart-sub">Not a pipeline metric — this scores the finished film itself. A multimodal LLM judge,
             blind to which system made which film, rates it 1–5, across our two evaluation studies.</p>
@@ -283,7 +325,6 @@
 
           <p class="chart-sub" style="margin-top:16px">Study 1 also highest on frame-level CLIP video-text alignment: 25.15 (ours) vs. 24.94 (S-Agent) and 24.66 (UniVA).</p>
         </div>
-      </div>
 
       <div class="chart-card" style="max-width:1080px;margin:18px auto 0">
         <h3 class="chart-title">End-to-end video quality — human evaluation</h3>
@@ -430,56 +471,7 @@
         </div>
       </div>
 
-      <div class="stat-banner" style="margin:18px auto 0">
-        <h3 class="chart-title">Runtime recovery</h3>
-        <p class="chart-sub">If a step fails partway through a production, can the Director recover — build a new
-          valid plan from where things broke — instead of the whole run failing?</p>
-        <div class="stat-row">
-          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.6-6.4"/><path d="M3 4v5h5"/></svg></div>
-          <div class="stat-value">96.7<span class="kpi-unit">%</span></div>
-          <div class="stat-label">replan success rate across 991 perturbed execution cases — the Director reconstructs a valid plan after failure, with no explicit recovery training</div>
-        </div>
-      </div>
-
       <p class="cta-note">From our paper, <i>FrameWorkers: A Dynamic Multi-Agent Framework for Automated AIGC Video Production</i> — currently under review.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head"><h2 class="section-title">The <span class="gtext">crew</span></h2>
-        <p class="section-sub">A catalog of self-contained sub-agents, each owning one capability. The Director selects and orders a subset for each production — these are the agents in active use today.</p></div>
-      <div class="tags">
-        <span class="tag">Narrative</span>
-        <span class="tag">Travelogue</span>
-        <span class="tag">Explainer</span>
-        <span class="tag">News Broadcast</span>
-        <span class="tag">Advertisement</span>
-        <span class="tag">Adaptation</span>
-        <span class="tag">Comedy</span>
-        <span class="tag">Keyframe Sheet</span>
-        <span class="tag">Shot Prompt</span>
-        <span class="tag">Clip</span>
-        <span class="tag">Narration</span>
-        <span class="tag">Storybook</span>
-        <span class="tag">Illustration</span>
-        <span class="tag">Narrator</span>
-        <span class="tag">Voiceover</span>
-        <span class="tag">Music</span>
-        <span class="tag">Ambience</span>
-        <span class="tag">Audio Mix</span>
-        <span class="tag">Video Analysis</span>
-        <span class="tag">Highlight</span>
-        <span class="tag">Style Transfer</span>
-        <span class="tag">Video Extend</span>
-        <span class="tag">Upscale</span>
-        <span class="tag">Brief Enricher</span>
-        <span class="tag">Image Intake</span>
-        <span class="tag">Video Intake</span>
-        <span class="tag">Transcription</span>
-        <span class="tag">Translation</span>
-        <span class="tag">Compositor</span>
-      </div>
     </div>
   </section>
 
