@@ -442,7 +442,8 @@ img{display:block;max-width:100%}
 /* ===== research modules: left schematic / right text ===== */
 .module-split{display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:52px;align-items:center;max-width:1080px;margin:0 auto 34px}
 .module-split .section-head{text-align:left;margin:0;max-width:none}
-.module-diagram{position:relative;border:1px solid var(--line);border-radius:18px;background:linear-gradient(160deg,var(--bg-soft),#fff);padding:22px;overflow:hidden}
+.module-diagram{position:relative;border:1px solid var(--line);border-radius:18px;background:var(--bg-soft);overflow:hidden}
+.module-diagram img{width:100%;height:auto;display:block}
 .module-diagram svg{width:100%;height:auto;display:block}
 @media (max-width:860px){.module-split{grid-template-columns:1fr;gap:28px}.module-diagram{order:-1}}
 
