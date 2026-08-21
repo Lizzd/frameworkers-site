@@ -438,3 +438,28 @@ img{display:block;max-width:100%}
 .pin-item video{height:84px;border-radius:8px;border:1px solid rgba(120,160,255,.25)}
 .pin-item .pin-name{font-size:11px;color:#8fa3c8;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .pin-item a.pin-txt{font-size:12px;color:#7fb0ff;text-decoration:underline}
+
+/* ===== research modules: left schematic / right text ===== */
+.module-split{display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:52px;align-items:center;max-width:1080px;margin:0 auto 34px}
+.module-split .section-head{text-align:left;margin:0;max-width:none}
+.module-diagram{position:relative;border:1px solid var(--line);border-radius:18px;background:linear-gradient(160deg,var(--bg-soft),#fff);padding:22px;overflow:hidden}
+.module-diagram svg{width:100%;height:auto;display:block}
+@media (max-width:860px){.module-split{grid-template-columns:1fr;gap:28px}.module-diagram{order:-1}}
+
+/* extensibility mini-cards */
+.ext-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:640px){.ext-grid{grid-template-columns:1fr}}
+.ext-card{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--bg-soft)}
+.ext-name{font-weight:800;font-size:15px;margin:0}
+.ext-tag{display:inline-block;font-size:11px;font-weight:700;color:var(--blue);background:var(--bg-tint);border-radius:999px;padding:2px 9px;margin:8px 0 14px}
+.ext-metrics{display:flex;gap:30px}
+.ext-metric .v{font-size:26px;font-weight:800;letter-spacing:-.01em;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1}
+.ext-metric .k{font-size:11.5px;color:var(--faint);font-weight:600;margin-top:2px}
+
+/* runtime recovery split (replan / replace) */
+.rec-split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:2px}
+@media (max-width:640px){.rec-split{grid-template-columns:1fr}}
+.rec-cell{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:var(--bg-soft)}
+.rec-cell .v{font-size:28px;font-weight:800;letter-spacing:-.01em;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1}
+.rec-cell .k{font-size:12.5px;font-weight:800;margin:4px 0 3px;color:var(--ink)}
+.rec-cell .d{font-size:12px;color:var(--faint);line-height:1.45}

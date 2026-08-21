@@ -5,8 +5,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>FrameWorkers — Research</title>
-<link rel="stylesheet" href="assets/styles.css?v=78" />
-<script src="assets/app.js?v=69" defer></script>
+<link rel="stylesheet" href="assets/styles.css?v=79" />
+<script src="assets/app.js?v=70" defer></script>
 </head>
 <body data-page="about">
 
@@ -67,6 +67,35 @@
 
   <section class="section" style="padding-top:0">
     <div class="container">
+      <div class="module-split">
+        <div class="module-diagram"><svg viewBox="0 0 420 300" role="img" aria-label="Director editing a dynamic task stack in a plan-execute-check-replan loop">
+  <defs><linearGradient id="dg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f6ef7"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
+  <text x="30" y="34" font-family="system-ui,Arial" font-size="13" font-weight="700" fill="#16161d">Director</text>
+  <circle cx="120" cy="29" r="5" fill="url(#dg1)"/>
+  <!-- task stack -->
+  <rect x="30" y="60" width="200" height="34" rx="9" fill="#eef1fb" stroke="#4f6ef7"/>
+  <rect x="30" y="104" width="200" height="34" rx="9" fill="#eef1fb" stroke="#4f6ef7"/>
+  <rect x="30" y="148" width="200" height="34" rx="9" fill="#fff" stroke="#c9cde6" stroke-dasharray="4 4"/>
+  <rect x="30" y="200" width="200" height="30" rx="9" fill="#f2f3f8" stroke="#e7e8f1"/>
+  <rect x="30" y="236" width="200" height="30" rx="9" fill="#f2f3f8" stroke="#e7e8f1"/>
+  <text x="42" y="82" font-family="system-ui,Arial" font-size="11" fill="#3f5ee8">task · pending</text>
+  <text x="42" y="126" font-family="system-ui,Arial" font-size="11" fill="#3f5ee8">task · running</text>
+  <text x="42" y="169" font-family="system-ui,Arial" font-size="11" fill="#8a8a99">re-planned tail</text>
+  <text x="42" y="220" font-family="system-ui,Arial" font-size="10.5" fill="#8a8a99">committed · frozen</text>
+  <text x="42" y="256" font-family="system-ui,Arial" font-size="10.5" fill="#8a8a99">committed · frozen</text>
+  <!-- loop -->
+  <g fill="none" stroke="url(#dg1)" stroke-width="2">
+    <path d="M300 70 a70 70 0 0 1 0 160" stroke-dasharray="0"/>
+    <path d="M300 230 a70 70 0 0 1 0 -160"/>
+  </g>
+  <polygon points="300,64 294,76 306,76" fill="#8b5cf6"/>
+  <g font-family="system-ui,Arial" font-size="11" font-weight="700" fill="#16161d">
+    <circle cx="300" cy="70" r="4" fill="#4f6ef7"/><text x="312" y="74">Plan</text>
+    <circle cx="370" cy="150" r="4" fill="#6a5ef0"/><text x="330" y="154">Execute</text>
+    <circle cx="300" cy="230" r="4" fill="#8b5cf6"/><text x="312" y="234">Check</text>
+    <circle cx="232" cy="150" r="4" fill="#4f6ef7"/><text x="250" y="140">Re-plan</text>
+  </g>
+</svg></div>
       <div class="section-head">
         <div class="eyebrow" style="margin-bottom:12px">Module 1 · Planning</div>
         <h2 class="section-title">The <span class="gtext">Director</span> &amp; the dynamic task stack</h2>
@@ -77,6 +106,7 @@
           task order and skip necessary steps on long workflows, so we fine-tune the Director with supervised and
           reinforcement learning over simulated and dynamically generated execution data — until it selects the right
           agents, orders them by dependency, and recovers from failures.</p>
+      </div>
       </div>
       <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
         <h3 class="chart-title">Director routing accuracy</h3>
@@ -131,11 +161,19 @@
         <h3 class="chart-title">Runtime recovery</h3>
         <p class="chart-sub">If a step fails partway through a production, can the Director recover — build a new
           valid plan from where things broke — instead of the whole run failing?</p>
-        <div class="stat-row">
-          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.6-6.4"/><path d="M3 4v5h5"/></svg></div>
-          <div class="stat-value">96.7<span class="kpi-unit">%</span></div>
-          <div class="stat-label">replan success rate across 991 perturbed execution cases — the Director reconstructs a valid plan after failure, with no explicit recovery training</div>
+        <div class="rec-split">
+          <div class="rec-cell">
+            <div class="v">99.8%</div>
+            <div class="k">Re-plan · missing step</div>
+            <div class="d">A required producer task is removed; the Director detects the broken dependency and inserts the missing step (plan-level, 495 cases).</div>
+          </div>
+          <div class="rec-cell">
+            <div class="v">93.5%</div>
+            <div class="k">Replace · rejected output</div>
+            <div class="d">A quality gate rejects an artifact; the Director selects a corrective step — regenerate or refine — before continuing (execution-level, 496 cases).</div>
+          </div>
         </div>
+        <p class="chart-sub" style="margin-top:14px">96.7% overall recovery across 991 perturbed executions — with no explicit recovery training.</p>
       </div>
 
     </div>
@@ -143,12 +181,40 @@
 
   <section class="section" style="padding-top:0">
     <div class="container">
+      <div class="module-split">
+        <div class="module-diagram"><svg viewBox="0 0 420 300" role="img" aria-label="Assistant resolving inputs from a shared workspace, invoking a sub-agent, and writing results back">
+  <defs><linearGradient id="dg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f6ef7"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
+  <!-- workspace -->
+  <rect x="120" y="105" width="180" height="90" rx="14" fill="#eef1fb" stroke="#4f6ef7"/>
+  <text x="210" y="140" text-anchor="middle" font-family="system-ui,Arial" font-size="13" font-weight="800" fill="#16161d">Workspace</text>
+  <text x="210" y="160" text-anchor="middle" font-family="system-ui,Arial" font-size="10.5" fill="#3f5ee8">assets · memory · logs</text>
+  <!-- assistant -->
+  <rect x="150" y="24" width="120" height="34" rx="10" fill="#fff" stroke="#8b5cf6"/>
+  <text x="210" y="46" text-anchor="middle" font-family="system-ui,Arial" font-size="12" font-weight="700" fill="#16161d">Assistant</text>
+  <!-- sub-agent -->
+  <rect x="150" y="242" width="120" height="34" rx="10" fill="#fff" stroke="#c9cde6"/>
+  <text x="210" y="264" text-anchor="middle" font-family="system-ui,Arial" font-size="12" font-weight="700" fill="#56566a">sub-agent</text>
+  <!-- flow arrows (clockwise) -->
+  <g fill="none" stroke="url(#dg2)" stroke-width="2">
+    <path d="M150 41 H70 V150" marker-end="url(#a2)"/>
+    <path d="M70 150 V259 H150"/>
+    <path d="M270 259 H350 V150"/>
+    <path d="M350 150 V41 H270"/>
+  </g>
+  <g font-family="system-ui,Arial" font-size="10" fill="#8a8a99">
+    <text x="40" y="100">resolve<tspan x="40" dy="12">inputs</tspan></text>
+    <text x="86" y="205">invoke</text>
+    <text x="300" y="205">validate</text>
+    <text x="300" y="100">write<tspan x="300" dy="12">back</tspan></text>
+  </g>
+</svg></div>
       <div class="section-head">
         <div class="eyebrow" style="margin-bottom:12px">Module 2 · Execution</div>
         <h2 class="section-title">The <span class="gtext">Assistant</span> &amp; the workspace</h2>
         <p class="section-sub">The execution runtime. It resolves each task's inputs, invokes the chosen agent, validates
           the output, and persists everything to a shared workspace — files, generated assets, global memory, and logs. A
           <b>“strict-out, loose-in”</b> contract keeps agents decoupled and recoverable.</p>
+      </div>
       </div>
       <div class="chart-card" style="max-width:1080px;margin:0 auto">
           <h3 class="chart-title">Execution robustness</h3>
@@ -185,6 +251,34 @@
 
   <section class="section" style="padding-top:0">
     <div class="container">
+      <div class="module-split">
+        <div class="module-diagram"><svg viewBox="0 0 420 300" role="img" aria-label="A catalog of pluggable descriptor-defined sub-agents; a new one registers without redesign; the Director selects a subset into a chain">
+  <defs><linearGradient id="dg3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f6ef7"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
+  <text x="30" y="30" font-family="system-ui,Arial" font-size="12" font-weight="700" fill="#16161d">Catalog</text>
+  <!-- catalog grid (rounded blocks) -->
+  <g>
+    <rect x="30" y="46" width="70" height="40" rx="10" fill="#eef1fb" stroke="#4f6ef7"/>
+    <rect x="112" y="46" width="70" height="40" rx="10" fill="#fff" stroke="#c9cde6"/>
+    <rect x="194" y="46" width="70" height="40" rx="10" fill="#eef1fb" stroke="#4f6ef7"/>
+    <rect x="30" y="98" width="70" height="40" rx="10" fill="#fff" stroke="#c9cde6"/>
+    <rect x="112" y="98" width="70" height="40" rx="10" fill="#eef1fb" stroke="#4f6ef7"/>
+    <rect x="194" y="98" width="70" height="40" rx="10" fill="#fff" stroke="#c9cde6"/>
+    <!-- new block plugging in (dashed, gradient) -->
+    <rect x="284" y="72" width="86" height="40" rx="10" fill="none" stroke="url(#dg3)" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="327" y="90" text-anchor="middle" font-family="system-ui,Arial" font-size="9.5" font-weight="700" fill="#6a5ef0">new agent</text>
+    <text x="327" y="103" text-anchor="middle" font-family="system-ui,Arial" font-size="8.5" fill="#8a8a99">+ descriptor</text>
+  </g>
+  <!-- Director selects a subset into a chain -->
+  <text x="30" y="188" font-family="system-ui,Arial" font-size="12" font-weight="700" fill="#16161d">Director selects a subset →</text>
+  <g>
+    <rect x="30" y="206" width="64" height="34" rx="9" fill="url(#dg3)"/>
+    <rect x="122" y="206" width="64" height="34" rx="9" fill="url(#dg3)"/>
+    <rect x="214" y="206" width="64" height="34" rx="9" fill="url(#dg3)"/>
+    <rect x="306" y="206" width="64" height="34" rx="9" fill="url(#dg3)"/>
+    <g stroke="#8b5cf6" stroke-width="2"><path d="M94 223 H122"/><path d="M186 223 H214"/><path d="M278 223 H306"/></g>
+  </g>
+  <text x="30" y="270" font-family="system-ui,Arial" font-size="10.5" fill="#8a8a99">semantic routing — no workflow redesign</text>
+</svg></div>
       <div class="section-head">
         <div class="eyebrow" style="margin-bottom:12px">Module 3 · The crew</div>
         <h2 class="section-title">A catalog of <span class="gtext">sub-agents</span></h2>
@@ -192,6 +286,7 @@
           capability, described by its inputs, outputs, and trigger conditions. Routing is semantic, so new capabilities
           are added by registering a descriptor — no workflow redesign. The Director selects and orders a subset for each
           production — these are the agents in active use today.</p>
+      </div>
       </div>
       <div class="tags" style="margin-bottom:44px">
         <span class="tag">Narrative</span>
@@ -269,6 +364,29 @@
           </table>
         </div>
       </div>
+      <div class="chart-card" style="max-width:1080px;margin:18px auto 0">
+        <h3 class="chart-title">Add a new specialist — no retraining</h3>
+        <p class="chart-sub">A fixed pipeline must be redesigned to gain a new capability. Here we register two specialists the Director never saw during training — by dropping in a descriptor only — and measure whether it selects them correctly and whether the resulting production runs.</p>
+        <div class="ext-grid">
+          <div class="ext-card">
+            <p class="ext-name">ComedyAgent</p>
+            <span class="ext-tag">unseen · added post-training</span>
+            <div class="ext-metrics">
+              <div class="ext-metric"><div class="v">93.0%</div><div class="k">correctly selected</div></div>
+              <div class="ext-metric"><div class="v">99.5%</div><div class="k">workflow passes</div></div>
+            </div>
+          </div>
+          <div class="ext-card">
+            <p class="ext-name">ScreenwriterAgent</p>
+            <span class="ext-tag">unseen · added post-training</span>
+            <div class="ext-metrics">
+              <div class="ext-metric"><div class="v">99.2%</div><div class="k">correctly selected</div></div>
+              <div class="ext-metric"><div class="v">88.8%</div><div class="k">workflow passes</div></div>
+            </div>
+          </div>
+        </div>
+        <p class="chart-sub" style="margin-top:16px">The Director generalizes to new sub-agents from their descriptor alone — capability grows by registration, not redesign.</p>
+      </div>
 
     </div>
   </section>
@@ -287,7 +405,7 @@
           <p class="chart-sub">Not a pipeline metric — this scores the finished film itself. A multimodal LLM judge,
             blind to which system made which film, rates it 1–5, across our two evaluation studies.</p>
 
-          <p class="mini-label">Study 1 — vs. S-Agent &amp; UniVA (original 20-case benchmark)</p>
+          <p class="mini-label">Study 1 — main benchmark, vs. S-Agent &amp; UniVA</p>
           <div class="hbar-group" style="margin-bottom:22px">
             <div class="hbar-row ours">
               <span class="hbar-label">FrameWorkers (ours)</span>
@@ -306,7 +424,7 @@
             </div>
           </div>
 
-          <p class="mini-label">Study 2 — vs. Anim-Director &amp; MovieAgent (additional 20-case benchmark)</p>
+          <p class="mini-label">Study 2 — additional story-level benchmark, vs. Anim-Director &amp; MovieAgent</p>
           <div class="hbar-group">
             <div class="hbar-row ours">
               <span class="hbar-label">FrameWorkers (ours)</span>
@@ -333,7 +451,7 @@
         <p class="chart-sub">The same finished films, this time rated blind by human evaluators (1–5) on three axes,
           across our two evaluation studies.</p>
 
-        <p class="mini-label">Study 1 — vs. S-Agent &amp; UniVA</p>
+        <p class="mini-label">Study 1 — main benchmark, vs. S-Agent &amp; UniVA</p>
 
         <p style="margin:0 0 10px;font-size:11.5px;font-weight:700;color:var(--faint);text-transform:uppercase;letter-spacing:.06em">Instruction following</p>
         <div class="hbar-group" style="margin-bottom:22px">
@@ -394,7 +512,7 @@
 
         <p class="chart-sub" style="margin-top:16px">Highest on every dimension and on 8 of 9 individual sub-questions — UniVA edges ahead only on two instruction-following sub-questions.</p>
 
-        <p class="mini-label" style="margin-top:26px;padding-top:20px;border-top:1px solid var(--line)">Study 2 — vs. Anim-Director &amp; MovieAgent</p>
+        <p class="mini-label" style="margin-top:26px;padding-top:20px;border-top:1px solid var(--line)">Study 2 — additional story-level benchmark, vs. Anim-Director &amp; MovieAgent</p>
 
         <p style="margin:0 0 10px;font-size:11.5px;font-weight:700;color:var(--faint);text-transform:uppercase;letter-spacing:.06em">Instruction following</p>
         <div class="hbar-group" style="margin-bottom:22px">
