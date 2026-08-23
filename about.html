@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>FrameWorkers — Research</title>
-<link rel="stylesheet" href="assets/styles.css?v=80" />
+<link rel="stylesheet" href="assets/styles.css?v=81" />
 <script src="assets/app.js?v=70" defer></script>
 </head>
 <body data-page="about">
@@ -33,11 +33,7 @@
     <div class="container">
       <div class="section-head">
         <h2 class="section-title">FrameWorkers is a <span class="gtext">multi-agent system</span></h2>
-        <p class="section-sub">Rather than asking one model to do everything, video production is divided among many
-          specialized AI agents — each owning a single job — coordinated toward one shared goal. A trained
-          <b>Director</b> plans the production and re-plans it on failure. An <b>Assistant</b> executes each step and
-          grounds the result in a shared workspace. And a crew of specialist <b>sub-agents</b> does the creative work.
-          Together they replace a fixed pipeline with a closed, recoverable loop.</p>
+        <p class="section-sub">Instead of one model doing everything, video production is split among specialized AI agents, each owning a single job. A trained <b>Director</b> plans the production and re-plans on failure, an <b>Assistant</b> executes every step in a shared workspace, and a crew of specialist <b>sub-agents</b> does the creative work — replacing a fixed pipeline with a closed, recoverable loop.</p>
       </div>
     </div>
   </section>
@@ -46,10 +42,7 @@
     <div class="container">
       <div class="section-head">
         <h2 class="section-title">Why not a <span class="gtext">fixed pipeline</span></h2>
-        <p class="section-sub">Real video-making is a multi-step workflow — scripting, asset management, cross-shot
-          consistency — and different inputs call for different workflows. A hand-wired pipeline is brittle, and a
-          zero-shot LLM struggles with long-horizon planning and multimodal asset routing. FrameWorkers instead treats
-          video creation as <b>dynamic task management</b>: every task flows through the same closed loop.</p>
+        <p class="section-sub">Real video-making spans scripting, asset management, and cross-shot consistency — and different inputs need different workflows. A hand-wired pipeline is brittle; a zero-shot LLM struggles with long-horizon planning and multimodal asset routing. FrameWorkers instead treats video creation as <b>dynamic task management</b>: every task flows through one closed loop.</p>
       </div>
       <div class="steps" style="grid-template-columns:repeat(4,1fr)">
         <div class="step"><div class="n">1</div><h3>Plan</h3>
@@ -71,13 +64,8 @@
       <div class="section-head">
         <div class="eyebrow" style="margin-bottom:12px">Module 1 · Planning</div>
         <h2 class="section-title">The <span class="gtext">Director</span> &amp; the dynamic task stack</h2>
-        <p class="section-sub">The orchestrator. It reads the brief, the agent descriptors, and the current state, then
-          edits a dynamic task stack — adding, reordering, and revising future tasks. It plans per request and re-plans
-          on failure, never a hard-coded graph; completed work stays as an immutable, auditable history.</p>
-        <p class="section-sub" style="margin-top:12px">And it is <b>trained, not just prompted</b>: zero-shot LLMs misjudge
-          task order and skip necessary steps on long workflows, so we fine-tune the Director with supervised and
-          reinforcement learning over simulated and dynamically generated execution data — until it selects the right
-          agents, orders them by dependency, and recovers from failures.</p>
+        <p class="section-sub">The orchestrator. It reads the brief, the agent descriptors, and the current state, then edits a dynamic task stack — adding, reordering, and re-planning tasks on failure, never a hard-coded graph. Completed work stays as immutable, auditable history.</p>
+        <p class="section-sub" style="margin-top:12px">And it is <b>trained, not just prompted</b>: we fine-tune it with supervised and reinforcement learning so it picks the right agents, orders them by dependency, and recovers from failures — where zero-shot LLMs misjudge order and skip steps.</p>
       </div>
       </div>
       <div class="chart-card" style="max-width:1080px;margin:0 auto 18px">
@@ -158,9 +146,7 @@
       <div class="section-head">
         <div class="eyebrow" style="margin-bottom:12px">Module 2 · Execution</div>
         <h2 class="section-title">The <span class="gtext">Assistant</span> &amp; the workspace</h2>
-        <p class="section-sub">The execution runtime. It resolves each task's inputs, invokes the chosen agent, validates
-          the output, and persists everything to a shared workspace — files, generated assets, global memory, and logs. A
-          <b>“strict-out, loose-in”</b> contract keeps agents decoupled and recoverable.</p>
+        <p class="section-sub">The execution runtime. It resolves each task’s inputs, invokes the chosen agent, validates the output, and persists everything to a shared workspace — assets, global memory, and logs. A <b>“strict-out, loose-in”</b> contract keeps agents decoupled and recoverable.</p>
       </div>
       </div>
       <div class="chart-card" style="max-width:1080px;margin:0 auto">
@@ -203,10 +189,7 @@
       <div class="section-head">
         <div class="eyebrow" style="margin-bottom:12px">Module 3 · The crew</div>
         <h2 class="section-title">A catalog of <span class="gtext">sub-agents</span></h2>
-        <p class="section-sub">Capability as a catalog, not a graph. Each sub-agent is a self-contained module owning one
-          capability, described by its inputs, outputs, and trigger conditions. Routing is semantic, so new capabilities
-          are added by registering a descriptor — no workflow redesign. The Director selects and orders a subset for each
-          production — these are the agents in active use today.</p>
+        <p class="section-sub">Capability as a catalog, not a graph. Each sub-agent is a self-contained module owning one capability, described by its inputs, outputs, and triggers. Routing is semantic, so new capabilities are added by registering a descriptor — no workflow redesign. The Director selects and orders a subset per production; the agents below are in active use today.</p>
       </div>
       </div>
       <div class="tags" style="margin-bottom:44px">
