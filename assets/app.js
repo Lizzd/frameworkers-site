@@ -448,17 +448,17 @@ function ioRow(d){
 
 function filmCard(d){
   return `
-    <article class="film-card" data-key="${d.key}" tabindex="0" role="button" aria-label="Generate: ${esc(d.title)}">
+    <article class="film-card" data-key="${d.key}" tabindex="0" role="button" aria-label="${esc(d.title)}">
       <div class="ph" style="background-image:url('${d.poster}')">
         <span class="cat">${esc(d.cat)}</span>
-        <span class="play-fab">${PLAY_SVG}</span>
+        <button class="play-fab" type="button" data-play="${d.key}" aria-label="Watch: ${esc(d.title)}" title="Watch the film">${PLAY_SVG}</button>
         <a class="proc-link" href="process.html?film=${d.key}" aria-label="View creation process: ${esc(d.title)}">${PROC_SVG} Creation process</a>
       </div>
       <div class="body">
         <div class="ttl">${esc(d.title)}</div>
         <div class="desc">${esc(promptMain(d))}</div>
         ${ioRow(d)}
-        <div class="go">Generate this film ${ARROW_SVG}</div>
+        <div class="go"><span class="go-desk">See how it was made</span><span class="go-mob">Watch the film</span> ${ARROW_SVG}</div>
       </div>
     </article>`;
 }
@@ -484,16 +484,19 @@ function initPortfolio(){
     grid.innerHTML = list.map(filmCard).join("");
   }
   renderGrid();
+  window.__fwPlay = play;   // lets openCard() reach the player from outside this closure
 
   grid.addEventListener("click", e=>{
     if (e.target.closest(".proc-link")) return;          // plain navigation to process.html
+    const fab = e.target.closest(".play-fab");
+    if (fab) { e.stopPropagation(); play(fab.dataset.play); return; }   // the play button always goes to the film
     const b = e.target.closest(".film-card"); if(!b) return;
-    play(b.dataset.key);
+    openCard(b.dataset.key);
   });
   grid.addEventListener("keydown", e=>{
     if (e.key!=="Enter" && e.key!==" ") return;
     const b = e.target.closest(".film-card"); if(!b || e.target!==b) return;
-    e.preventDefault(); play(b.dataset.key);
+    e.preventDefault(); openCard(b.dataset.key);
   });
 
   function showList(on){
@@ -563,10 +566,19 @@ function initPortfolio(){
 }
 
 /* -------------------------------------------------------------------- home */
+/* Card click: desktop opens the creation-process canvas, phones open the player
+   (the canvas is a pan/zoom board — on a phone the film itself is the better first view). */
+const isPhone = ()=> window.matchMedia("(max-width: 900px)").matches;
+const cardHref = (key)=> isPhone() ? `films.html?play=${key}` : `process.html?film=${key}`;
+function openCard(key){
+  if (isPhone()) { if (window.__fwPlay) window.__fwPlay(key); else location.href = cardHref(key); }
+  else location.href = cardHref(key);
+}
+
 function initHome(){
   const wrap = $("featured"); if (!wrap) return;
   wrap.innerHTML = FEATURED.map(k=>byKey(k)).filter(Boolean).map(d=>`
-    <a class="work-card" href="films.html?play=${d.key}" aria-label="${esc(d.title)}">
+    <a class="work-card" href="${cardHref(d.key)}" aria-label="${esc(d.title)}">
       <div class="ph" style="background-image:url('${d.poster}')">
         <span class="play-fab">${PLAY_SVG}</span>
         <div class="meta"><span class="cat">${esc(d.cat)}</span><div class="ttl">${esc(d.title)}</div></div>

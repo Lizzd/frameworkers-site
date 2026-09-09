@@ -474,6 +474,14 @@ img{display:block;max-width:100%}
 .film-card .proc-link svg{width:13px;height:13px}
 .film-card:hover .proc-link,.film-card:focus-within .proc-link{opacity:1;transform:none}
 .film-card .proc-link:hover{background:var(--blue)}
-@media (hover:none){.film-card .proc-link{opacity:1;transform:none}}
+/* desktop: the whole card opens the canvas, so the pill is redundant there; phones (card → player) keep it, always visible */
+@media (min-width:901px){.film-card .proc-link{display:none}}
+@media (max-width:900px){.film-card .proc-link{opacity:1;transform:none}}
+/* play button on the poster: a real <button>, always reachable on phones */
+.film-card .play-fab{border:0;padding:0;cursor:pointer;font:inherit}
+@media (max-width:900px){.film-card .play-fab{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+/* footer copy per device */
+.film-card .go-mob{display:none}
+@media (max-width:900px){.film-card .go-desk{display:none}.film-card .go-mob{display:inline}}
 .pmeta .pactions{display:flex;flex-direction:column;gap:10px;align-items:stretch}
 .pmeta .pactions .btn{justify-content:center}
