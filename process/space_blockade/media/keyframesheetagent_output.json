@@ -1,0 +1,167 @@
+{
+  "content": {
+    "language": "en",
+    "anchors": {
+      "character_anchors": [],
+      "location_anchors": [
+        {
+          "entity_id": "blockade_sector_alpha",
+          "prompt_summary": "The orbital blockade zone above a massive golden-hued gas giant. It is dominated by kilometers-long dreadnoughts with architectural tiered superstructures, heavy weapon batteries, and vast hangar chasms. Space is filled with defense beams, flak explosions, and glowing engine particles under high-contrast solar glares and sharp, dark shadows.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": ""
+        }
+      ],
+      "prop_anchors": [
+        {
+          "entity_id": "fighter_craft",
+          "prompt_summary": "A sleek, highly maneuverable interceptor with glowing cyan twin-engine trails. The hull is composed of matte carbon-fiber composites and reflective silver accents, acting as a microscopic speck of movement against giant structures.",
+          "views": [
+            "HERO",
+            "FRONT"
+          ],
+          "reference_image_uri": ""
+        }
+      ]
+    },
+    "shot_visuals": {
+      "sh_001": {
+        "shot_id": "sh_001",
+        "primary_location": "blockade_sector_alpha",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nRealistic high-key 3D rendered space sci-fi. Bright white and high-contrast silver-gray color palette. Exposed sun-glare casting sharp, high-exposure dark shadows across massive structures. Blinding cyan and orange engine plumes, clean specular highlights on pristine titanium-composite hull plates, and prismatic lens flares from raw sunlight refracting through orbital dust fields. Clean and crisp visual purity without cockpit scenes, interior shots, or HUD overlays.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 wide -> P3 medium -> P4 medium\n\n[PANEL 1]\nSHOT: high-angle wide-shot.\nPLACEMENT: The micro-scale fighter_craft (prop_anchor: fighter_craft) is in the upper-left, diving downwards. It is tiny compared to a massive, kilometers-long white titanium dreadnought floating horizontally across the lower frame.\nACTION: The fighter_craft glides silently down towards the giant ship's surface.\nENV: Outer space (location_anchor: blockade_sector_alpha). The horizon of a massive golden-hued gas giant fills the lower background. Sharp cosmic shadows sweep across the dreadnought's white hull.\n\n[PANEL 2]\nSHOT: wide-shot.\nPLACEMENT: The camera tracks behind the fighter_craft (prop_anchor: fighter_craft), positioned center-frame and angled slightly downward. Defensive laser beams cross the space around it.\nACTION: The fighter_craft streaks forward, its dual engines firing, emitting a blindingly bright cyan trail.\nENV: Outer space defense perimeter. Beams of intense white defensive lasers slice through the dark space, illuminating reflective metallic dust.\n\n[PANEL 3]\nSHOT: medium-shot.\nPLACEMENT: Low-angle close-range tracking shot behind the fighter_craft (prop_anchor: fighter_craft), positioned center-left. The dreadnought's complex mechanical trench walls rise towering on both sides.\nACTION: The fighter_craft flies at high speed through a deep, canyon-like trench of the giant warship.\nENV: Complex mechanical textures of modular white armor plates, glowing conduits, and massive gun turrets scroll past. Sharp structural shadows cross the frame.\n\n[PANEL 4]\nSHOT: medium-shot.\nPLACEMENT: The fighter_craft (prop_anchor: fighter_craft) is banked hard at a steep angle in the lower-right third of the frame, leaving a ribbon-like trail. Towering communication spires stand in the background.\nACTION: The fighter craft turns sharply, its thrusters firing bright cyan gas plumes.\nENV: The surface of the giant warship with a brilliant, blinding solar lens flare refracting across the lens, highlighting the polished white composite plates.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels."
+      },
+      "sh_002": {
+        "shot_id": "sh_002",
+        "primary_location": "blockade_sector_alpha",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nRealistic high-key 3D rendered space sci-fi. Bright white and high-contrast silver-gray color palette. Exposed sun-glare casting sharp, high-exposure dark shadows across massive structures. Blinding cyan and orange engine plumes, clean specular highlights on pristine titanium-composite hull plates, and prismatic lens flares from raw sunlight refracting through orbital dust fields. Clean and crisp visual purity without cockpit scenes, interior shots, or HUD overlays.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 medium -> P3 medium -> P4 wide\n\n[PANEL 1]\nSHOT: wide-shot.\nPLACEMENT: The fighter_craft (prop_anchor: fighter_craft) is centered, flying parallel to the trench floor. Plumes of orange and white smoke from flak bursts expand in the background.\nACTION: The fighter_craft moves steadily forward through a barrage of explosions.\nENV: Deep inside a giant structural trench of the blockade dreadnought (location_anchor: blockade_sector_alpha), illuminated by warm orange explosions against cold metallic surfaces.\n\n[PANEL 2]\nSHOT: medium-shot.\nPLACEMENT: The fighter_craft (prop_anchor: fighter_craft) is entering a matrix of massive mechanical launch tubes, positioned center-right. Coolant vapor clouds envelope the spacecraft.\nACTION: The fighter_craft weaves between venting tubes, bursting through a thick wall of white mist.\nENV: Dense, glowing white coolant steam illuminated by the bright cosmic sun against structural steel frames.\n\n[PANEL 3]\nSHOT: medium-shot.\nPLACEMENT: The fighter_craft (prop_anchor: fighter_craft) is captured mid-barrel-roll in the center. A colossal, rotating cooling fan with massive mechanical gears is positioned directly behind it.\nACTION: The fighter_craft rolls upside down, aligning its flight path with the rotation of the giant blades.\nENV: The dark inner depths of the warship's hull, showcasing massive spinning gears and cooling shafts.\n\n[PANEL 4]\nSHOT: wide-shot.\nPLACEMENT: The fighter_craft (prop_anchor: fighter_craft) is silhouetted as a small dark shape at the center, diving vertically down. A colossal, crackling blue plasma shield is stretched horizontally below it.\nACTION: The fighter_craft plunges straight down towards a dark hangar opening.\nENV: A massive, glowing blue plasma hangar barrier crackling with static electricity inside the cavernous hangar bay entrance.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels."
+      },
+      "sh_003": {
+        "shot_id": "sh_003",
+        "primary_location": "blockade_sector_alpha",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nRealistic high-key 3D rendered space sci-fi. Bright white and high-contrast silver-gray color palette. Exposed sun-glare casting sharp, high-exposure dark shadows across massive structures. Blinding cyan and orange engine plumes, clean specular highlights on pristine titanium-composite hull plates, and prismatic lens flares from raw sunlight refracting through orbital dust fields. Clean and crisp visual purity without cockpit scenes, interior shots, or HUD overlays.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 wide -> P3 close-up -> P4 overhead-wide\n\n[PANEL 1]\nSHOT: low-angle wide-shot.\nPLACEMENT: The massive underbelly of a giant dreadnought (location_anchor: blockade_sector_alpha) fills the upper two-thirds of the screen. The fighter_craft (prop_anchor: fighter_craft) is a tiny streak of blue light passing near a massive heat-sink grille.\nACTION: The fighter_craft speeds along the underside of the vessel.\nENV: Deep cosmic void with massive, glowing crimson heat-sink grilles radiating intense heat from the dark underbelly of the ship.\n\n[PANEL 2]\nSHOT: lateral wide-shot.\nPLACEMENT: A massive orbital battery turret dominates the right side of the frame. The tiny fighter_craft (prop_anchor: fighter_craft) is a small speck on the far left, racing parallel to the warship's flank.\nACTION: The turret fires a massive kinetic slug, creating a bright yellow ionized trail across the space.\nENV: Flank of a monumental white-plated warship under intense sun-glare.\n\n[PANEL 3]\nSHOT: close-up telephoto-shot.\nPLACEMENT: The fighter_craft (prop_anchor: fighter_craft) is framed dead-center, facing directly towards the camera. Giant structural white support beams crisscross in the background.\nACTION: The fighter_craft rockets straight at the camera lens at high speed.\nENV: Stark, geometric patterns of intersecting structural beams under harsh, clean shadows.\n\n[PANEL 4]\nSHOT: overhead wide-shot.\nPLACEMENT: Looking straight down from a bird's-eye perspective. The fighter_craft (prop_anchor: fighter_craft) is in the center-left. Its long, sharp shadow is cast across the pristine white hull plates far below.\nACTION: The fighter_craft exits the secondary warship's boundary, gliding smoothly.\nENV: Pristine white metal plating of the warship reflecting bright cosmic sunlight, creating a high-contrast shadow.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels."
+      },
+      "sh_004": {
+        "shot_id": "sh_004",
+        "primary_location": "blockade_sector_alpha",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "fighter_craft"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nRealistic high-key 3D rendered space sci-fi. Bright white and high-contrast silver-gray color palette. Exposed sun-glare casting sharp, high-exposure dark shadows across massive structures. Blinding cyan and orange engine plumes, clean specular highlights on pristine titanium-composite hull plates, and prismatic lens flares from raw sunlight refracting through orbital dust fields. Clean and crisp visual purity without cockpit scenes, interior shots, or HUD overlays.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 extreme-wide -> P3 extreme-wide -> P4 extreme-wide\n\n[PANEL 1]\nSHOT: wide-shot.\nPLACEMENT: The camera tracks under the fighter_craft (prop_anchor: fighter_craft) wing, which dominates the lower-left edge. The massive mechanical spires of the blockade fleet recede in the background.\nACTION: The fighter_craft breaks free from the fleet's defensive perimeter into open space.\nENV: The transition zone between the crowded mechanical warship structures (location_anchor: blockade_sector_alpha) and the open, quiet cosmic void.\n\n[PANEL 2]\nSHOT: extreme-wide shot.\nPLACEMENT: The fighter_craft (prop_anchor: fighter_craft) is a microscopic glowing dot near the center-left, with a tiny, faint cyan thread of engine light trailing behind it.\nACTION: The fighter_craft recedes rapidly into the distance, growing progressively smaller.\nENV: Vast, empty blackness of deep space, with massive dreadnought hulls beginning to frame the edges of the screen.\n\n[PANEL 3]\nSHOT: extreme-wide shot.\nPLACEMENT: A massive, flawless orbital wall of dozens of giant white dreadnoughts is arranged diagonally across the frame. The massive golden gas giant fills the entire background. The fighter_craft (prop_anchor: fighter_craft) is a microscopic speck, almost invisible in the vast scene.\nACTION: The camera pulls back continuously, revealing the sheer scale of the entire blockade fleet.\nENV: High-key, sun-drenched cosmos with a towering golden-hued gas giant looming behind a majestic fleet.\n\n[PANEL 4]\nSHOT: extreme-wide shot.\nPLACEMENT: The massive fleet of white dreadnoughts hangs perfectly still in a grand orbital line. No fighter craft is visible.\nACTION: A static, serene composition with no movement.\nENV: A majestic, silent blockade fleet parked against the brilliant cosmic horizon, with a faint blue dust streak fading into nothingness.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels."
+      }
+    },
+    "style_notes": [
+      "Realistic high-key 3D rendered space sci-fi aesthetic.",
+      "Bright white and high-contrast silver-gray color palette.",
+      "Exposed sun-glare casting sharp, high-exposure dark shadows.",
+      "Blinding cyan and orange engine plumes and clean specular highlights on titanium-composite hull plates.",
+      "Prismatic lens flares refracting through orbital dust fields."
+    ],
+    "must_avoid": [
+      "cockpit scenes",
+      "interior shots",
+      "HUD overlays"
+    ]
+  }
+}

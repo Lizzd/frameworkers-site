@@ -1,0 +1,652 @@
+{
+ "key": "space_blockade",
+ "title": "Running the Blockade",
+ "genre": "Spectacle · Space Fleet Chase",
+ "cat": "Spectacle",
+ "prompt": "A one-minute space-battle spectacle: a lone starfighter threads at full burn between the capital ships of an enemy blockade, running for its life. Every shot stays out in open space — no cockpit interiors, no pilot close-ups; the tiny fighter is only a scale reference against the hulking warships, which are the real protagonists along with the battle itself. The camera chases tight on the fighter's tail, dives and weaves between the giant hulls, then pulls far back to reveal the sheer scale of the fleet. Bright, high-key sci-fi look. No dialogue — engine roar and battle sound effects only, no subtitles.",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/kfsheet_topic17_outputs/workspace_global_20260715_025252"
+ },
+ "generated_at": "2026-09-09T15:56:38+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 1
+  },
+  {
+   "id": "TravelogueAgent__step_1_fdd76e03",
+   "agent": "TravelogueAgent",
+   "label": "Travelogue",
+   "step": "step_1_fdd76e03",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "KeyframeSheetAgent__step_1_fdd76e03",
+   "agent": "KeyframeSheetAgent",
+   "label": "KeyframeSheet",
+   "step": "step_1_fdd76e03",
+   "order": 2,
+   "n": 13
+  },
+  {
+   "id": "ShotPromptAgent__step_1_353a2486",
+   "agent": "ShotPromptAgent",
+   "label": "ShotPrompt",
+   "step": "step_1_353a2486",
+   "order": 3,
+   "n": 5
+  },
+  {
+   "id": "ClipAgent__step_1_353a2486",
+   "agent": "ClipAgent",
+   "label": "Clip",
+   "step": "step_1_353a2486",
+   "order": 4,
+   "n": 6
+  }
+ ],
+ "nodes": [
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260715_025252_502375.json",
+   "bytes": 661,
+   "caption": "Structured metadata document (JSON) for a user-submitted text brief. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/space_blockade/media/creative_brief.json",
+   "excerpt": "{\"text\": \"做一条 60 秒左右的太空大战 spectacle:一架小型战机在敌方巨舰封锁线之间高速穿梭求生。所有镜头都在飞船外的太空,不要机舱内戏、不要主角面部特写——战机只是衬托巨舰尺度的\\\"参照物\\\",真正的主角是壮观的巨舰和战斗场面。运镜紧贴战机高速跟拍、在巨舰之间俯冲穿梭、再大幅拉远展现尺度。明亮高调色的科幻质感。无对白,只要引擎/战斗音效,不要字幕。\"}"
+  },
+  {
+   "id": "travelogueagent_output",
+   "stage": "TravelogueAgent__step_1_fdd76e03",
+   "kind": "json",
+   "label": "TravelogueAgent output",
+   "src_name": "step_1_fdd76e03_travelogueagent_exec_1.json",
+   "bytes": 12467,
+   "caption": "Shot-rich story: 4 shot(s), 0 character(s) — drives keyframe/storyboard/audio.",
+   "scope": "global",
+   "file": "process/space_blockade/media/travelogueagent_output.json",
+   "excerpt": "{\"title\": \"Spectacle of the Colossus: A Kinetic Tour of the Blockade Zone\", \"logline\": \"A high-speed kinetic tour threading through a massive orbital blockade, using a tiny fighter craft as a scale marker to showcase the dizzying geometry, blinding white armor plates, and immense proportions of planetary siege warships…"
+  },
+  {
+   "id": "blockade_sector_alpha_anchor",
+   "stage": "KeyframeSheetAgent__step_1_fdd76e03",
+   "kind": "image",
+   "label": "blockade sector alpha anchor",
+   "src_name": "step_1_fdd76e03_img_blockade_sector_alpha_anchor.png",
+   "bytes": 1608844,
+   "caption": "GENERATED internal identity reference card for location blockade_sector_alpha — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/space_blockade/media/blockade_sector_alpha_anchor.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "fighter_craft_anchor",
+   "stage": "KeyframeSheetAgent__step_1_fdd76e03",
+   "kind": "image",
+   "label": "fighter craft anchor",
+   "src_name": "step_1_fdd76e03_img_fighter_craft_anchor.png",
+   "bytes": 1009076,
+   "caption": "GENERATED internal identity reference card for prop fighter_craft — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/space_blockade/media/fighter_craft_anchor.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "blockade_sector_alpha_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_fdd76e03",
+   "kind": "text",
+   "label": "blockade sector alpha anchor prompt",
+   "src_name": "step_1_fdd76e03_img_blockade_sector_alpha_anchor_prompt.txt",
+   "bytes": 2188,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location blockade_sector_alpha anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/space_blockade/media/blockade_sector_alpha_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): Realistic high-key 3D rendered space sci-fi aesthetic.; Bright white and high-contrast silver-gray color palette.; Exposed sun-glare casting sharp, high-exposure dark shadows.; Blinding cyan and orange engine plumes and clean specular highlights…"
+  },
+  {
+   "id": "fighter_craft_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_fdd76e03",
+   "kind": "text",
+   "label": "fighter craft anchor prompt",
+   "src_name": "step_1_fdd76e03_img_fighter_craft_anchor_prompt.txt",
+   "bytes": 1692,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the prop fighter_craft anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/space_blockade/media/fighter_craft_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): Realistic high-key 3D rendered space sci-fi aesthetic.; Bright white and high-contrast silver-gray color palette.; Exposed sun-glare casting sharp, high-exposure dark shadows.; Blinding cyan and orange engine plumes and clean specular highlights…"
+  },
+  {
+   "id": "keyframesheetagent_output",
+   "stage": "KeyframeSheetAgent__step_1_fdd76e03",
+   "kind": "json",
+   "label": "KeyframeSheetAgent output",
+   "src_name": "step_1_fdd76e03_keyframesheetagent_exec_2.json",
+   "bytes": 18004,
+   "caption": "Sheet-model keyframe package: 2 identity anchor card(s) + 4 per-shot storyboard sheet(s). Drives the downstream image-to-video stage.",
+   "scope": "global",
+   "file": "process/space_blockade/media/keyframesheetagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"anchors\": {\"character_anchors\": [], \"location_anchors\": [{\"entity_id\": \"blockade_sector_alpha\", \"prompt_summary\": \"The orbital blockade zone above a massive golden-hued gas giant. It is dominated by kilometers-long dreadnoughts with architectural tiered superstructures, heavy weapon batteries, and v…"
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_fdd76e03",
+   "kind": "image",
+   "label": "sh 001 storyboard",
+   "src_name": "step_1_fdd76e03_img_sh_001_storyboard.png",
+   "bytes": 1441768,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_001 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/space_blockade/media/sh_001_storyboard.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_fdd76e03",
+   "kind": "text",
+   "label": "sh 001 storyboard prompt",
+   "src_name": "step_1_fdd76e03_img_sh_001_storyboard_prompt.txt",
+   "bytes": 3689,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_001's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/space_blockade/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Realistic high-key 3D rendered space sci-fi. Bright white and h…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_fdd76e03",
+   "kind": "image",
+   "label": "sh 002 storyboard",
+   "src_name": "step_1_fdd76e03_img_sh_002_storyboard.png",
+   "bytes": 1515542,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_002 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/space_blockade/media/sh_002_storyboard.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_fdd76e03",
+   "kind": "text",
+   "label": "sh 002 storyboard prompt",
+   "src_name": "step_1_fdd76e03_img_sh_002_storyboard_prompt.txt",
+   "bytes": 4098,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_002's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/space_blockade/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Realistic high-key 3D rendered space sci-fi. Bright white and h…"
+  },
+  {
+   "id": "sh_003_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_fdd76e03",
+   "kind": "image",
+   "label": "sh 003 storyboard",
+   "src_name": "step_1_fdd76e03_img_sh_003_storyboard.png",
+   "bytes": 1384138,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_003 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/space_blockade/media/sh_003_storyboard.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "sh_003_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_fdd76e03",
+   "kind": "text",
+   "label": "sh 003 storyboard prompt",
+   "src_name": "step_1_fdd76e03_img_sh_003_storyboard_prompt.txt",
+   "bytes": 4084,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_003's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/space_blockade/media/sh_003_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Realistic high-key 3D rendered space sci-fi. Bright white and h…"
+  },
+  {
+   "id": "sh_004_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_fdd76e03",
+   "kind": "image",
+   "label": "sh 004 storyboard",
+   "src_name": "step_1_fdd76e03_img_sh_004_storyboard.png",
+   "bytes": 1413335,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_004 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/space_blockade/media/sh_004_storyboard.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "sh_004_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_fdd76e03",
+   "kind": "text",
+   "label": "sh 004 storyboard prompt",
+   "src_name": "step_1_fdd76e03_img_sh_004_storyboard_prompt.txt",
+   "bytes": 4108,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_004's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/space_blockade/media/sh_004_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Realistic high-key 3D rendered space sci-fi. Bright white and h…"
+  },
+  {
+   "id": "shotpromptagent_output",
+   "stage": "ShotPromptAgent__step_1_353a2486",
+   "kind": "json",
+   "label": "ShotPromptAgent output",
+   "src_name": "step_1_353a2486_shotpromptagent_exec_1.json",
+   "bytes": 17384,
+   "caption": "Per-shot video-generation prompt package: 4 Seedance prompt(s) (9-section), one per shot — pairs with the storyboard sheet to drive the image-to-video clip stage.",
+   "scope": "global",
+   "file": "process/space_blockade/media/shotpromptagent_output.json",
+   "excerpt": "[{\"shot_id\": \"sh_001\", \"text_prompt\": \"[设定]\\n未来太空时代，围绕金色气态巨行星轨道的巨型战舰封锁区，充斥着科技张力与冰冷寂静的宇宙战争氛围。\\n\\n[风格]\\n写实高亮 3D 渲染太空科幻。冷峻耀眼的强光反差与惊险高速的飞行穿梭相互交织。\\n\\n[参考图]\\n[Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角…"
+  },
+  {
+   "id": "shot_prompt_sh_001",
+   "stage": "ShotPromptAgent__step_1_353a2486",
+   "kind": "text",
+   "label": "shot prompt sh 001",
+   "src_name": "step_1_353a2486_shot_prompt_sh_001.txt",
+   "bytes": 3539,
+   "caption": "video-generation text prompt for shot sh_001 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/space_blockade/media/shot_prompt_sh_001.txt",
+   "excerpt": "[设定] 未来太空时代，围绕金色气态巨行星轨道的巨型战舰封锁区，充斥着科技张力与冰冷寂静的宇宙战争氛围。 [风格] 写实高亮 3D 渲染太空科幻。冷峻耀眼的强光反差与惊险高速的飞行穿梭相互交织。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得再现任何编号、文字或网格线。 角…"
+  },
+  {
+   "id": "shot_prompt_sh_002",
+   "stage": "ShotPromptAgent__step_1_353a2486",
+   "kind": "text",
+   "label": "shot prompt sh 002",
+   "src_name": "step_1_353a2486_shot_prompt_sh_002.txt",
+   "bytes": 4422,
+   "caption": "video-generation text prompt for shot sh_002 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/space_blockade/media/shot_prompt_sh_002.txt",
+   "excerpt": "[设定] 遥远的未来太空时代，处于太阳光强烈照射的巨型气态行星轨道附近。高度发达的星际科技文明战场，充满高能冲突与深空航行的冷冽科技氛围。 [风格] 写实高亮 3D 渲染太空科幻。展现高空高速穿梭的纯粹张力、工业机械运转的压迫感与战火硝烟的突发张力。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画…"
+  },
+  {
+   "id": "shot_prompt_sh_003",
+   "stage": "ShotPromptAgent__step_1_353a2486",
+   "kind": "text",
+   "label": "shot prompt sh 003",
+   "src_name": "step_1_353a2486_shot_prompt_sh_003.txt",
+   "bytes": 4107,
+   "caption": "video-generation text prompt for shot sh_003 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/space_blockade/media/shot_prompt_sh_003.txt",
+   "excerpt": "[设定] 处于高光亮度的宇宙深空，邻近一颗散发着金色光芒的气态巨行星。科技水平极高、充满未来工业感的太空战场。 [风格] 写实高亮 3D 渲染太空科幻 (Realistic high-key 3D rendered space sci-fi)。色调呈现明亮的白与高反差银灰，日光直射在庞大合金结构表面，投射出边缘锐利、高曝光的深黑阴影；散发着炫目的青色与橙色引擎喷流，钛复合装甲板反射出干净的镜面高光，阳光穿过轨道尘埃折射出棱镜透镜耀斑；画面无座舱内景、无界面叠加，纯净洗练。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 =…"
+  },
+  {
+   "id": "shot_prompt_sh_004",
+   "stage": "ShotPromptAgent__step_1_353a2486",
+   "kind": "text",
+   "label": "shot prompt sh 004",
+   "src_name": "step_1_353a2486_shot_prompt_sh_004.txt",
+   "bytes": 3992,
+   "caption": "video-generation text prompt for shot sh_004 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/space_blockade/media/shot_prompt_sh_004.txt",
+   "excerpt": "[设定] 未来太空时代，阳光普照的金色气态巨行星轨道边缘，呈现硬核高科技与军事防线封锁的冷峻氛围。 [风格] 写实高亮 3D 渲染太空科幻。画面呈现出一种在冰冷太空中绝对静谧与庞大质量对立的寂静基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得再现任何编号、文字或网格线…"
+  },
+  {
+   "id": "clip_final",
+   "stage": "ClipAgent__step_1_353a2486",
+   "kind": "video",
+   "label": "clip final",
+   "src_name": "step_1_353a2486_clip_final.mp4",
+   "bytes": 22391736,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_final] Complete assembled film bytes (4 shot(s) concatenated). The final visual deliverable — consumed by a downstream audio-mix / compositor step's materializer for muxing / subtitle burn-in.",
+   "scope": "global",
+   "file": "videos/space_blockade.mp4",
+   "poster": "posters/space_blockade.jpg",
+   "final": true,
+   "w": 864,
+   "h": 496,
+   "dur": 60.37
+  },
+  {
+   "id": "clipagent_output",
+   "stage": "ClipAgent__step_1_353a2486",
+   "kind": "json",
+   "label": "ClipAgent output",
+   "src_name": "step_1_353a2486_clipagent_exec_2.json",
+   "bytes": 1068,
+   "caption": "[JSON MANIFEST] Clip-assembly plan: 4 per-shot clip plan(s) with duration + transition + scene grouping. Read by a downstream audio-mix / compositor step's LLM.",
+   "scope": "global",
+   "file": "process/space_blockade/media/clipagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"clips\": [{\"shot_id\": \"sh_001\", \"duration_sec\": 10.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_002\", \"duration_sec\": 10.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_003\", \"duration_sec\": 10.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_004\", \"duration_sec\": 10.0, \"scene_id\": \"sc_001\"}], \"assembly\": {\"shot_ord…"
+  },
+  {
+   "id": "clip_sh_001",
+   "stage": "ClipAgent__step_1_353a2486",
+   "kind": "video",
+   "label": "clip sh 001",
+   "src_name": "step_1_353a2486_clip_sh_001.mp4",
+   "bytes": 6447329,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_001] Rendered video clip bytes for shot sh_001 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "w": 864,
+   "h": 496,
+   "dur": 15.07,
+   "poster": "process/space_blockade/media/clip_sh_001_poster.jpg",
+   "file": "process/space_blockade/media/clip_sh_001.mp4"
+  },
+  {
+   "id": "clip_sh_002",
+   "stage": "ClipAgent__step_1_353a2486",
+   "kind": "video",
+   "label": "clip sh 002",
+   "src_name": "step_1_353a2486_clip_sh_002.mp4",
+   "bytes": 6167479,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_002] Rendered video clip bytes for shot sh_002 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/space_blockade/media/clip_sh_002_poster.jpg",
+   "file": "process/space_blockade/media/clip_sh_002.mp4"
+  },
+  {
+   "id": "clip_sh_003",
+   "stage": "ClipAgent__step_1_353a2486",
+   "kind": "video",
+   "label": "clip sh 003",
+   "src_name": "step_1_353a2486_clip_sh_003.mp4",
+   "bytes": 5139186,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_003] Rendered video clip bytes for shot sh_003 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/space_blockade/media/clip_sh_003_poster.jpg",
+   "file": "process/space_blockade/media/clip_sh_003.mp4"
+  },
+  {
+   "id": "clip_sh_004",
+   "stage": "ClipAgent__step_1_353a2486",
+   "kind": "video",
+   "label": "clip sh 004",
+   "src_name": "step_1_353a2486_clip_sh_004.mp4",
+   "bytes": 4727990,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_004] Rendered video clip bytes for shot sh_004 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/space_blockade/media/clip_sh_004_poster.jpg",
+   "file": "process/space_blockade/media/clip_sh_004.mp4"
+  }
+ ],
+ "edges": [
+  {
+   "from": "travelogueagent_output",
+   "to": "KeyframeSheetAgent__step_1_fdd76e03",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "keyframesheetagent_output",
+   "to": "ShotPromptAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "blockade_sector_alpha_anchor",
+   "to": "ShotPromptAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "fighter_craft_anchor",
+   "to": "ShotPromptAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPromptAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPromptAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPromptAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ShotPromptAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "travelogueagent_output",
+   "to": "ShotPromptAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "ClipAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "ClipAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "ClipAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "ClipAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "blockade_sector_alpha_anchor",
+   "to": "ClipAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "fighter_craft_anchor",
+   "to": "ClipAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ClipAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ClipAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ClipAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ClipAgent__step_1_353a2486",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "TravelogueAgent__step_1_fdd76e03",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "clip_final",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

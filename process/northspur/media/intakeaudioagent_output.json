@@ -1,0 +1,23 @@
+{
+  "content": {
+    "language": "en",
+    "clips": [
+      {
+        "kind": "speech",
+        "audio_summary": "A female speaker narrates a reflective story in English with a soft, gentle tone about a person taking the long way and keeping a durable flask for 11 years.",
+        "duration_s": 34.08,
+        "audio_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic22_northspur/workspace_global_20260803_123754/inputs/20260803_123754_298727_narration.wav"
+        }
+      },
+      {
+        "kind": "music",
+        "audio_summary": "A calm, slow-tempo instrumental piece starting with soft acoustic guitar arpeggios that transitions into a delicate, music box-like glockenspiel melody.",
+        "duration_s": 34.5,
+        "audio_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic22_northspur/workspace_global_20260803_123754/inputs/20260803_123754_352503_music_bed.wav"
+        }
+      }
+    ]
+  }
+}

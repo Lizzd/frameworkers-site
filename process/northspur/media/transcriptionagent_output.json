@@ -1,0 +1,44 @@
+{
+  "content": {
+    "language": "en",
+    "segments": [
+      {
+        "segment_id": "seg_001",
+        "start_time": 0.0,
+        "end_time": 4.92,
+        "text": "Every morning she takes the long way round,"
+      },
+      {
+        "segment_id": "seg_002",
+        "start_time": 4.92,
+        "end_time": 12.16,
+        "text": "not because it is faster, because it is hers."
+      },
+      {
+        "segment_id": "seg_003",
+        "start_time": 12.16,
+        "end_time": 16.82,
+        "text": "11 years, one flask."
+      },
+      {
+        "segment_id": "seg_004",
+        "start_time": 16.82,
+        "end_time": 25.76,
+        "text": "It has been dropped down a scree slope, left on a night train, and never once given up on her."
+      },
+      {
+        "segment_id": "seg_005",
+        "start_time": 25.76,
+        "end_time": 30.08,
+        "text": "Some things you replace. Some things you keep."
+      },
+      {
+        "segment_id": "seg_006",
+        "start_time": 30.08,
+        "end_time": 34.08,
+        "text": "Northspur. Made to be kept."
+      }
+    ],
+    "full_text": "Every morning she takes the long way round, not because it is faster, because it is hers. 11 years, one flask. It has been dropped down a scree slope, left on a night train, and never once given up on her. Some things you replace. Some things you keep. Northspur. Made to be kept."
+  }
+}

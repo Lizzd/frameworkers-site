@@ -1,0 +1,32 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 5 panels arranged in a 3x2 grid (panel 1 = top-left, panel 5 = bottom-middle; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=5 → 3x2 with the sixth cell as solid neutral gray.
+
+[STYLE FOUNDATION]
+Stylized 3D cartoon animation (Pixar/Arcane aesthetic blend). High-contrast cinematic lighting: deep obsidian shadows pierced by aggressive, strobing siege-fire orange and sickly magical cyan. Textures are stylized but tactile—rough spun wool, cracked glowing marble, and soft expressive facial rigs with dramatic rim lighting.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the elara character anchor. Medium close-up. Elara's soot-smudged hand touches the brim of the dark-leather pointed hat. A sickly cyan magical shockwave bursts from her fingertips. The cracked marble floor from the FRONT section of the great_hall_ruins location anchor is visible below, where white masonry dust blasts away in a perfect expanding circle.
+
+[PANEL 2]
+Use the FACE section of the_relic anchor. Extreme close-up. The sentient hat violently recoils upward, its leather surface writhing and twisting. Three pulsing golden stitches along its jagged tear snap under pressure, spraying bright magical cyan sparks. Aggressive orange artillery light strobes from behind.
+
+[PANEL 3]
+Use the FACE section of the alaric character anchor. Low angle close-up on Alaric. Deep exhaustion bags under his eyes, his eyes widening in shock, pupils contracted. The crystal-tipped staff near his face loses its blue glow entirely, plunging his soot-covered face into deep obsidian shadow.
+
+[PANEL 4]
+Use the FACE section of the_relic anchor. Dutch angle close-up. The jagged tear of the hat stretches impossibly wide into a screaming maw facing the camera. The remaining golden stitches burn out into smoking, blackened threads. Harsh orange lighting from distant artillery illuminates the floating ash motes in the air.
+
+[PANEL 5]
+Use the FRONT section of the alaric character anchor and the FRONT section of the elara character anchor. Medium wide shot. Alaric physically recoils backward, stepping away, his heavy midnight-blue boot crushing a shard of colored stained glass on the floor. Elara stands to the left in her oversized frayed robe, arms still slightly raised, her expression deeply confused.
+
+[PANEL 6]
+Solid neutral gray cell. (none for this shot)
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", "4", "5" matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed—do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are PREVIOUS-SHOT storyboards (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to maintain CROSS-SHOT continuity in: color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality — so the final cut sequence flows smoothly. Identity (character / location / ship details) is still locked exclusively by the FIRST 4 refs (character anchors / location anchor / style anchor).

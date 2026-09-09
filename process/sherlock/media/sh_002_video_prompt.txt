@@ -1,0 +1,73 @@
+[设定]
+Victorian London, 1892 Bloomsbury, in the tradition of classic British locked-room detective fiction; cast is white British. The story stays around Sir Edmund Vale's townhouse study because the crime's central claim is physical confinement: a door bolted from within.
+
+[风格]
+2D 彩色漫画插画（graphic-novel：干净墨线叠加丰富上色，明显非写实、非真人），24mm建立空间、35mm揭示推理线、50mm至85mm压缩证据特写，光圈偏大形成浅景深，关键证据锐利、反应人物柔化。
+暖绿台灯约3200K与雨窗冷蓝约5600K对撞，烟雾中硬边高反差，高清、细节丰富、电影质感、色彩自然、光影柔和。
+
+[参考图]
+[Image 1]：本镜头的分镜网格图 —— 5 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 5 格 = 右下；每格左上角有一个大的白色编号 1..5）。它同时锁定三件事：① 每格中角色的身份（脸 / 发型 / 服装 / 体型，全片必须一致）；② 每格的画面构图 / 动作 / 镜头；③ 第 N 格 = [镜头]/[时间轴] 中按序的 镜头N。严格遵循。
+角色 `sherlock_holmes` 的固定外形（以分镜网格中该角色为准，全片一致）：Tall narrow man in his late 30s with a hawk nose, sharp grey eyes under heavy lids, black hair brushed back from a high forehead, nicotine-yellow fingertips, a dark Inverness coat over a black waistcoat, and a brass-rimmed magnifying lens tucked between two fingers.
+角色 `dr_watson` 的固定外形（以分镜网格中该角色为准，全片一致）：Sturdy military doctor in his early 40s with a thick sandy moustache, warm eyes, a faint limp in the left leg, brown tweed suit damp at the cuffs, leather medical bag in one hand, and a silver watch chain crossing his waistcoat.
+角色 `inspector_lestrade` 的固定外形（以分镜网格中该角色为准，全片一致）：Small wiry Scotland Yard inspector in his 40s with a pointed chin, narrow watchful eyes, rain-speckled bowler hat, dark overcoat with shiny elbows, and a black notebook held tight against his ribs.
+角色 `caleb_pike` 的固定外形（以分镜网格中该角色为准，全片一致）：Private secretary in his early 30s with a pale oval face, oiled black centre-parted hair, thin moustache waxed to needle points, starched white collar too tight at the throat, ink-darkened left thumb, and a right shirt cuff marked by a tiny crescent of dried blue sealing wax.
+角色 `sir_edmund_vale` 的固定外形（以分镜网格中该角色为准，全片一致）：Dead gentleman in his late 60s with silver mutton-chop whiskers, blue-veined left hand wearing a heavy signet ring, burgundy smoking jacket, loosened silk cravat, and a dark bullet wound at the right temple while seated at a massive writing desk.
+
+[镜头]
+镜头1
+24mm / 整个书房的全景群像 / 眼平正拍，门口轻微视差 / 书桌右侧暖绿台灯为主硬光，雨窗冷蓝补光，烟雾中高反差 / 门口全景起幅 → 缓慢横移小幅度 → 落幅锁住书桌、地毯血点与门闩几何 / 运镜平稳丝滑、无抖动
+
+镜头2
+85mm / 双手、手枪与手腕特写 / 桌面低位正拍，轻微俯角 / 画面右侧绿金色台灯硬侧光，雨窗冷蓝轮廓光，阴影贴近皮肤纹理 / 手腕特写起幅 → 缓慢推进小幅度 → 落幅手枪与无火药灼痕皮肤特写 / 运镜平稳丝滑、无抖动
+
+镜头3
+50mm / 桌沿、双手与派克局部反应的中近景 / 眼平正拍，锁定对白轴线 / 银行家台灯顶部侧向硬光，墨迹呈琥珀反光，袖口下方蓝色暗影 / 桌沿中近景起幅 → 固定保持 → 落幅墨迹沟槽与斜向笔压痕迹 / 运镜平稳丝滑、无抖动
+
+镜头4
+70mm / 莱斯特雷德、福尔摩斯放大镜与壁炉架的中景双人压缩构图 / 眼平正拍，不破轴 / 台灯暖色硬侧光，派克衣领边缘带雨窗冷蓝轮廓，室内深黑阴影块 / 双人中景起幅 → 固定保持 → 落幅壁炉架高处弹痕与放大镜指向 / 运镜平稳丝滑、无抖动
+
+镜头5
+35mm / 地毯、手杖、书桌、窗与围观者的中远景推理揭示 / 跪姿低机位，沿手杖轨迹轻微仰角 / 暖台灯与冷雨窗逆光混合，人物轮廓清晰如墨线 / 地毯中远景起幅 → 缓慢推进小幅度 → 落幅手杖尖端对准尸体太阳穴方向 / 运镜平稳丝滑、无抖动
+
+[物理]
+尸体始终保持无主动肌力的垂坠重量，手腕被抬起时手指、手枪和袖口受重力向下滞后，枪身只随手腕角度缓慢倾斜，不悬浮、不穿过皮肤或桌面。
+福尔摩斯绕行、下跪、伸杖都由脚掌重心转移带动，衣摆与裤料跟随惯性小幅摆动后回落；手杖有木质硬度和重量，停住时尖端稳稳受地毯摩擦限制。
+人物之间和分格之间位置连续，门闩、书桌、血点、壁炉架、秘书椅的空间关系不瞬移；证据接触只产生擦痕、偏转和压痕，不发生穿模。
+
+[时间轴]
+镜头1
+前景是橡木门闩和门框暗影，中景是土耳其地毯中央血点、巨大书桌和绿台灯，后景是雨痕窗、法书架与煤炉烟雾；冷蓝雨光包围暖绿灯岛，烟雾沿书桌边缘缓慢漂移。焦点钉在福尔摩斯的鞋尖和衣摆上：他绕着血点顺时针走半圈，鞋尖每步离血迹保持一掌宽，右手两指夹着放大镜不碰地毯；尸体坐在书桌旁，右手松垂握枪，文件压在灯下。莱斯特雷德站在门闩旁，黑笔记本压紧肋部，说话时嘴唇快速开合，尖下巴向门板抬起；华生停在桌侧，派克在福尔摩斯经过身前时眼皮向下压，视线落到自己鞋尖，喉部被硬领顶住。构图重心由门闩竖线、镶板竖线和书桌矩形围住暖色台灯，形成封闭房间的几何感。
+
+镜头2
+承接福尔摩斯绕行后的停步惯性，他的肩线先收住，右手再从画外伸入，用食指和中指夹住埃德蒙爵士软塌的右腕外侧，向上抬起几厘米；死者手背皮肤松弛，指节半弯，手枪随腕部倾斜，枪口斜向桌面，扳机护圈轻轻碰到指根。焦点锁在福尔摩斯发黄指尖、死者腕部蓝色静脉和太阳穴附近干净无焦痕的皮肤，华生的脸与医药包在后方虚化；华生身体前倾一小步，左腿略慢半拍，眉头压低，眼睛从枪口移到死者太阳穴，呼吸压短。医药包金属搭扣被他拇指拨开，出现小号拟声字幕「咔嗒」贴近包扣后淡出；构图由枪管和手腕形成斜线，把绿铜高光与棕色皮革暗部切开。
+
+镜头3
+福尔摩斯将死者左手翻成掌心向上，动作由上一镜抬腕后的细小手指控制承接，避免牵动整具尸体；沉重印戒先压住一滩墨水，再被拖出一道约指甲宽的弧形沟槽，墨水边缘隆起成黑亮脊线。焦点集中在印戒、墨痕和半写解雇信上的斜向笔压，纸面纤维在压痕边缘微微起毛；福尔摩斯开口时下颌轻收，眼皮半垂，视线不看派克而落在纸面。画面边缘的派克只露出下半张脸和袖口，他戴手套的手指短促夹住右袖口，拇指把布料压进一指宽凹陷后立刻放平，硬领顶住喉部；他的眼神从墨迹跳到福尔摩斯手指，又迅速落回桌沿。构图重心是黑墨弧线与从左向右倾斜的笔压痕迹，像证据箭头压过画面。
+
+镜头4
+承接派克手指收住后的静止，莱斯特雷德皱起眉心，两道眉向鼻梁挤近，翻开黑笔记本时拇指用力顶住纸页边角，纸页弹开后停在胸前；他说话时嘴角向一侧拉紧，眼睛先看尸体再扫向福尔摩斯。福尔摩斯不回头，手腕抬起放大镜柄，镜片方向越过尸体指向壁炉架高处木饰线；焦点落在木纹中一枚浅色弹痕，弹痕边缘有细碎木屑翻起。派克站在软焦反应层里，喉结沿硬领内侧上滑再落下，衣领布面被顶出一小次脉动，鼻翼收紧；尸体仍坐在书桌旁保持同一垂坠姿态。构图中放大镜柄与莱斯特雷德笔记本边线共同指向那枚小小弹痕，画面线条收束到壁炉架上方。
+
+镜头5
+福尔摩斯从站姿降到单膝跪地，先让左膝压入地毯绒面，再把手杖横向抬起，手腕顺着刚才指向壁炉架的方向调整角度；杖尾对准壁炉架弹痕方向，杖身穿过书桌上方的空气线，杖尖稳稳停在死者右太阳穴相对位置。焦点锐利锁在手杖尖端和太阳穴方向的空间交点，华生的眼睛沿杖身从后向前追踪，瞳孔小幅移动，胡须下的唇缝微张后闭合；莱斯特雷德的笔记本停在半开状态，派克肩背收窄，右袖口的蓝蜡小月牙压在阴影里。雨水在高窗上向下拉出竖直墨线，窗外冷光把人物边缘切亮；构图重心是手杖坚硬斜线穿过雨痕竖线与书桌矩形，直接把秘书椅方向、书桌和尸体太阳穴连成一条可见射线。
+
+[对白]
+inspector_lestrade（门口旁戴雨点圆顶礼帽、抱黑笔记本的瘦小中年男性）音色：四十多岁男性，鼻音偏重的中高音，语速短促偏快，音高略高，伦敦警务口音，语气防御而务实。
+dr_watson（桌侧提皮质医药包、留厚沙色胡须的壮实中年男性）音色：四十出头男性，温暖圆润的男高音，语速适中，中等音高，受教育英国口音带轻微军人利落感，关切而忠诚。
+sherlock_holmes（书桌旁高瘦、鹰钩鼻、手夹铜边放大镜的深色外套男性）音色：三十多岁男性，干冷男中音带锋利边缘，节奏快速精确，低音高，受教育伦敦标准口音，带克制的讥诮与不耐。
+镜头1: inspector_lestrade："We broke the door after ten minutes of calling. No window disturbed, no chimney wide enough for a cat."
+镜头2: dr_watson："No burn at the temple. The muzzle was not close."
+镜头3: sherlock_holmes："Sir Edmund wrote, sealed, and cut his cigars with the left hand. Yet despair made him a right-handed marksman?"
+镜头4: inspector_lestrade："A dying man may drop anything into either hand."
+镜头5: sherlock_holmes："The shot came from that chair, across the desk. A suicide would require arms of quite un-English length."
+
+[音效]
+镜头1：窗外雨声持续敲打玻璃，室内有低沉煤炉噼啪、钟摆轻响、莱斯特雷德清晰人声和书房木墙的轻微反射。
+镜头2：手枪金属轻碰指根，皮肤与袖口细微摩擦，医药包搭扣咔嗒一声，华生近处呼吸变清楚。
+镜头3：印戒拖过湿墨发出黏滞细响，纸张被指尖压出轻微沙沙声，福尔摩斯人声低而清晰，雨声被室内静默压低。
+镜头4：笔记本纸页翻开，放大镜柄轻触指节，远处钟摆继续，派克吞咽声贴着硬领短促响起。
+镜头5：膝盖压入厚地毯的闷声，手杖尖端停住时摩擦绒面，雨痕顺窗滑落，福尔摩斯台词在书桌与木墙间干净回响。
+
+[约束]
+面部清晰稳定，五官不畸变不变形，正常人体结构与自然比例，尸体保持一致位置和垂坠重量。动作自然连贯不僵硬不抖帧，手枪、手腕、印戒、放大镜与手杖都要有真实重量、接触摩擦和惯性。
+
+保持无字幕，画面中不得出现任何字幕 / 台词字幕 / 说明文字 / 标题 / 水印 / Logo / 标志 / 品牌标识 / 叠加文字；对白只用声音表达（口型同步），绝不烧录成画面可见文字。

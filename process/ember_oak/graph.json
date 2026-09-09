@@ -1,0 +1,666 @@
+{
+ "key": "ember_oak",
+ "title": "The Morning Ritual",
+ "genre": "Brand Ad · Specialty Coffee",
+ "cat": "Advertisement",
+ "prompt": "A ~30s specialty pour-over coffee brand ad. It sells the morning ritual and that sense of unhurried calm — no specs, no features — so that after watching you want to slowly brew yourself a cup. Warm, slow-paced, quality-lifestyle tone. The user supplies the product packaging image and logo; brand identity must stay consistent. English, no voice-over; a single short slogan subtitle is allowed.",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/topic19_coffee_ad/workspace_global_20260720_183931"
+ },
+ "generated_at": "2026-09-09T15:56:41+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 3
+  },
+  {
+   "id": "IntakeImageAgent__step_1_d45c556a",
+   "agent": "IntakeImageAgent",
+   "label": "IntakeImage",
+   "step": "step_1_d45c556a",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "BriefEnricherAgent__step_1_d45c556a",
+   "agent": "BriefEnricherAgent",
+   "label": "BriefEnricher",
+   "step": "step_1_d45c556a",
+   "order": 2,
+   "n": 1
+  },
+  {
+   "id": "AdvertisementAgent__step_1_d45c556a",
+   "agent": "AdvertisementAgent",
+   "label": "Advertisement",
+   "step": "step_1_d45c556a",
+   "order": 3,
+   "n": 1
+  },
+  {
+   "id": "KeyframeSheetAgent__step_1_d45c556a",
+   "agent": "KeyframeSheetAgent",
+   "label": "KeyframeSheet",
+   "step": "step_1_d45c556a",
+   "order": 4,
+   "n": 11
+  },
+  {
+   "id": "ShotPromptAgent__step_1_d45c556a",
+   "agent": "ShotPromptAgent",
+   "label": "ShotPrompt",
+   "step": "step_1_d45c556a",
+   "order": 5,
+   "n": 3
+  },
+  {
+   "id": "ClipAgent__step_1_d45c556a",
+   "agent": "ClipAgent",
+   "label": "Clip",
+   "step": "step_1_d45c556a",
+   "order": 6,
+   "n": 4
+  },
+  {
+   "id": "CompositorAgent__step_1_76a81c5b",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_1_76a81c5b",
+   "order": 7,
+   "n": 2
+  }
+ ],
+ "nodes": [
+  {
+   "id": "ember_oak_logo",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "ember oak logo",
+   "src_name": "20260720_183931_999511_ember_oak_logo.png",
+   "bytes": 1246779,
+   "caption": "Global style reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/ember_oak/media/ember_oak_logo.jpg",
+   "w": 2048,
+   "h": 2048
+  },
+  {
+   "id": "ember_oak_packaging",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "ember oak packaging",
+   "src_name": "20260720_183931_986122_ember_oak_packaging.png",
+   "bytes": 4878682,
+   "caption": "Raw user upload (mime=image/png). Pending intake processing — only visible to Intake* agents.",
+   "scope": "raw_pending",
+   "file": "process/ember_oak/media/ember_oak_packaging.jpg",
+   "w": 2048,
+   "h": 2048
+  },
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260720_183932_005054.json",
+   "bytes": 510,
+   "caption": "Structured metadata document (JSON) for a user-submitted text brief. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/ember_oak/media/creative_brief.json",
+   "excerpt": "{\"text\": \"做一条 30 秒左右的精品手冲咖啡品牌广告。诉求是卖\\\"清晨的仪式感\\\"和那份从容,不讲参数功能,让人看完想给自己慢慢冲一杯。温暖、慢节奏的质感生活方式调性。我会提供产品包装图和 logo,保持品牌一致。英文,不要旁白,可有一句简短 slogan 字幕。\"}"
+  },
+  {
+   "id": "intakeimageagent_output",
+   "stage": "IntakeImageAgent__step_1_d45c556a",
+   "kind": "json",
+   "label": "IntakeImageAgent output",
+   "src_name": "step_1_d45c556a_intakeimageagent_exec_1.json",
+   "bytes": 480,
+   "caption": "Structured metadata document (JSON) for a user-uploaded image. Payload carries the visual description and image-asset metadata.",
+   "scope": "global",
+   "file": "process/ember_oak/media/intakeimageagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"visual_description\": \"Minimalist logo with a brown oak leaf outline enclosing an orange flame, above the text EMBER & OAK COFFEE ROASTERS on a plain background.\", \"image_asset\": {\"asset_id\": \"\", \"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/topic19_coffee_ad/workspace_global_20260720_183931/inputs/…"
+  },
+  {
+   "id": "briefenricheragent_output",
+   "stage": "BriefEnricherAgent__step_1_d45c556a",
+   "kind": "json",
+   "label": "BriefEnricherAgent output",
+   "src_name": "step_1_d45c556a_briefenricheragent_exec_2.json",
+   "bytes": 1160,
+   "caption": "Enriched creative brief with visual reference descriptions integrated. Supersedes the raw user brief for story generation — contains the user's original concept plus detailed visual descriptions of uploaded reference images.",
+   "scope": "global",
+   "file": "process/ember_oak/media/briefenricheragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"enriched_brief\": \"Create a warm, slow-paced 30-second premium lifestyle commercial for 'Ember & Oak Coffee Roasters' that sells the cozy 'morning ritual' and sense of calm. The video should focus on the tactile, visual pleasure of slowly brewing pour-over coffee rather than technical parameters, ins…"
+  },
+  {
+   "id": "advertisementagent_output",
+   "stage": "AdvertisementAgent__step_1_d45c556a",
+   "kind": "json",
+   "label": "AdvertisementAgent output",
+   "src_name": "step_1_d45c556a_advertisementagent_exec_3.json",
+   "bytes": 7408,
+   "caption": "Shot-rich story: 2 shot(s), 1 character(s) — drives keyframe/storyboard/audio.",
+   "scope": "global",
+   "file": "process/ember_oak/media/advertisementagent_output.json",
+   "excerpt": "{\"title\": \"Ember & Oak - Morning Ritual\", \"logline\": \"A warm, slow-paced lifestyle ad focusing on the tactile beauty of morning pour-over coffee to sell the cozy comfort of Ember & Oak Coffee Roasters.\", \"setting\": \"A premium cozy minimalist kitchen with rich dark oak countertops, soft morning sunlight streaming throug…"
+  },
+  {
+   "id": "coffee_dripper_setup_anchor",
+   "stage": "KeyframeSheetAgent__step_1_d45c556a",
+   "kind": "image",
+   "label": "coffee dripper setup anchor",
+   "src_name": "step_1_d45c556a_img_coffee_dripper_setup_anchor.png",
+   "bytes": 4388144,
+   "caption": "GENERATED internal identity reference card for prop coffee_dripper_setup — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/ember_oak/media/coffee_dripper_setup_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "ember_oak_coffee_bag_anchor",
+   "stage": "KeyframeSheetAgent__step_1_d45c556a",
+   "kind": "image",
+   "label": "ember oak coffee bag anchor",
+   "src_name": "step_1_d45c556a_img_ember_oak_coffee_bag_anchor.png",
+   "bytes": 4278742,
+   "caption": "GENERATED internal identity reference card for prop ember_oak_coffee_bag — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/ember_oak/media/ember_oak_coffee_bag_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sunlit_kitchen_counter_anchor",
+   "stage": "KeyframeSheetAgent__step_1_d45c556a",
+   "kind": "image",
+   "label": "sunlit kitchen counter anchor",
+   "src_name": "step_1_d45c556a_img_sunlit_kitchen_counter_anchor.png",
+   "bytes": 5763411,
+   "caption": "GENERATED internal identity reference card for location sunlit_kitchen_counter — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/ember_oak/media/sunlit_kitchen_counter_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "coffee_dripper_setup_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_d45c556a",
+   "kind": "text",
+   "label": "coffee dripper setup anchor prompt",
+   "src_name": "step_1_d45c556a_img_coffee_dripper_setup_anchor_prompt.txt",
+   "bytes": 1516,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the prop coffee_dripper_setup anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/ember_oak/media/coffee_dripper_setup_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): 写实温暖生活方式短片 (Realistic warm lifestyle short film style); Soft, warm morning sunlight streaming through a window with dancing dust motes; Natural wood textures, primarily rich dark oak; High-end lifestyle product cinematography with organic tones …"
+  },
+  {
+   "id": "ember_oak_coffee_bag_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_d45c556a",
+   "kind": "text",
+   "label": "ember oak coffee bag anchor prompt",
+   "src_name": "step_1_d45c556a_img_ember_oak_coffee_bag_anchor_prompt.txt",
+   "bytes": 1523,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the prop ember_oak_coffee_bag anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/ember_oak/media/ember_oak_coffee_bag_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): 写实温暖生活方式短片 (Realistic warm lifestyle short film style); Soft, warm morning sunlight streaming through a window with dancing dust motes; Natural wood textures, primarily rich dark oak; High-end lifestyle product cinematography with organic tones …"
+  },
+  {
+   "id": "sunlit_kitchen_counter_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_d45c556a",
+   "kind": "text",
+   "label": "sunlit kitchen counter anchor prompt",
+   "src_name": "step_1_d45c556a_img_sunlit_kitchen_counter_anchor_prompt.txt",
+   "bytes": 1976,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location sunlit_kitchen_counter anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/ember_oak/media/sunlit_kitchen_counter_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): 写实温暖生活方式短片 (Realistic warm lifestyle short film style); Soft, warm morning sunlight streaming through a window with dancing dust motes; Natural wood textures, primarily rich dark oak; High-end lifestyle product cinematography with organic tones …"
+  },
+  {
+   "id": "keyframesheetagent_output",
+   "stage": "KeyframeSheetAgent__step_1_d45c556a",
+   "kind": "json",
+   "label": "KeyframeSheetAgent output",
+   "src_name": "step_1_d45c556a_keyframesheetagent_exec_4.json",
+   "bytes": 10989,
+   "caption": "Sheet-model keyframe package: 3 identity anchor card(s) + 2 per-shot storyboard sheet(s). Drives the downstream image-to-video stage.",
+   "scope": "global",
+   "file": "process/ember_oak/media/keyframesheetagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"anchors\": {\"character_anchors\": [], \"location_anchors\": [{\"entity_id\": \"sunlit_kitchen_counter\", \"prompt_summary\": \"A quiet, premium cozy minimalist kitchen scene. It features beautiful dark oak wood countertops bathed in soft, golden morning sunlight filtering through a nearby window, casting a war…"
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_d45c556a",
+   "kind": "image",
+   "label": "sh 001 storyboard",
+   "src_name": "step_1_d45c556a_img_sh_001_storyboard.png",
+   "bytes": 4799964,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_001 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/ember_oak/media/sh_001_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_d45c556a",
+   "kind": "text",
+   "label": "sh 001 storyboard prompt",
+   "src_name": "step_1_d45c556a_img_sh_001_storyboard_prompt.txt",
+   "bytes": 4022,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_001's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/ember_oak/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. [STYLE F…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_d45c556a",
+   "kind": "image",
+   "label": "sh 002 storyboard",
+   "src_name": "step_1_d45c556a_img_sh_002_storyboard.png",
+   "bytes": 3838342,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_002 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/ember_oak/media/sh_002_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_d45c556a",
+   "kind": "text",
+   "label": "sh 002 storyboard prompt",
+   "src_name": "step_1_d45c556a_img_sh_002_storyboard_prompt.txt",
+   "bytes": 4476,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_002's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/ember_oak/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. [STYLE F…"
+  },
+  {
+   "id": "shotpromptagent_output",
+   "stage": "ShotPromptAgent__step_1_d45c556a",
+   "kind": "json",
+   "label": "ShotPromptAgent output",
+   "src_name": "step_1_d45c556a_shotpromptagent_exec_5.json",
+   "bytes": 8483,
+   "caption": "Per-shot video-generation prompt package: 2 Seedance prompt(s) (9-section), one per shot — pairs with the storyboard sheet to drive the image-to-video clip stage.",
+   "scope": "global",
+   "file": "process/ember_oak/media/shotpromptagent_output.json",
+   "excerpt": "[{\"shot_id\": \"sh_001\", \"text_prompt\": \"[设定]\\n当代都市精致简约厨房，散发着静谧、温暖、讲究的高端现代生活方式气息。\\n\\n[风格]\\n写实温暖生活方式短片。全片基调宁静舒适，传递清晨冲煮咖啡的治愈感与仪式感。\\n\\n[参考图]\\n[Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角…"
+  },
+  {
+   "id": "shot_prompt_sh_001",
+   "stage": "ShotPromptAgent__step_1_d45c556a",
+   "kind": "text",
+   "label": "shot prompt sh 001",
+   "src_name": "step_1_d45c556a_shot_prompt_sh_001.txt",
+   "bytes": 4062,
+   "caption": "video-generation text prompt for shot sh_001 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/ember_oak/media/shot_prompt_sh_001.txt",
+   "excerpt": "[设定] 当代都市精致简约厨房，散发着静谧、温暖、讲究的高端现代生活方式气息。 [风格] 写实温暖生活方式短片。全片基调宁静舒适，传递清晨冲煮咖啡的治愈感与仪式感。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得再现任何编号、文字或网格线。 […"
+  },
+  {
+   "id": "shot_prompt_sh_002",
+   "stage": "ShotPromptAgent__step_1_d45c556a",
+   "kind": "text",
+   "label": "shot prompt sh 002",
+   "src_name": "step_1_d45c556a_shot_prompt_sh_002.txt",
+   "bytes": 3756,
+   "caption": "video-generation text prompt for shot sh_002 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/ember_oak/media/shot_prompt_sh_002.txt",
+   "excerpt": "[设定] 现代都市高品质居家生活设定，整体呈现温馨、宁静的晨间居家氛围。 [风格] 写实温暖生活方式短片。以细腻、静谧的晨间暖光调性烘托高品质生活的松弛与惬意。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得再现任何编号、文字或网格线。 [镜头…"
+  },
+  {
+   "id": "clip_final",
+   "stage": "ClipAgent__step_1_d45c556a",
+   "kind": "video",
+   "label": "clip final",
+   "src_name": "step_1_d45c556a_clip_final.mp4",
+   "bytes": 5057200,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_final] Complete assembled film bytes (2 shot(s) concatenated). The final visual deliverable — consumed by a downstream audio-mix / compositor step's materializer for muxing / subtitle burn-in.",
+   "scope": "global",
+   "w": 864,
+   "h": 496,
+   "dur": 30.21,
+   "poster": "process/ember_oak/media/clip_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "clipagent_output",
+   "stage": "ClipAgent__step_1_d45c556a",
+   "kind": "json",
+   "label": "ClipAgent output",
+   "src_name": "step_1_d45c556a_clipagent_exec_6.json",
+   "bytes": 575,
+   "caption": "[JSON MANIFEST] Clip-assembly plan: 2 per-shot clip plan(s) with duration + transition + scene grouping. Read by a downstream audio-mix / compositor step's LLM.",
+   "scope": "global",
+   "file": "process/ember_oak/media/clipagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"clips\": [{\"shot_id\": \"sh_001\", \"duration_sec\": 10.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_002\", \"duration_sec\": 10.0, \"scene_id\": \"sc_001\"}], \"assembly\": {\"shot_order\": [\"sh_001\", \"sh_002\"], \"scene_order\": [\"sc_001\"], \"transitions\": [{\"from_shot_id\": \"sh_001\", \"to_shot_id\": \"sh_002\", \"transition_t…"
+  },
+  {
+   "id": "clip_sh_001",
+   "stage": "ClipAgent__step_1_d45c556a",
+   "kind": "video",
+   "label": "clip sh 001",
+   "src_name": "step_1_d45c556a_clip_sh_001.mp4",
+   "bytes": 2941398,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_001] Rendered video clip bytes for shot sh_001 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/ember_oak/media/clip_sh_001_poster.jpg",
+   "file": "process/ember_oak/media/clip_sh_001.mp4"
+  },
+  {
+   "id": "clip_sh_002",
+   "stage": "ClipAgent__step_1_d45c556a",
+   "kind": "video",
+   "label": "clip sh 002",
+   "src_name": "step_1_d45c556a_clip_sh_002.mp4",
+   "bytes": 2160213,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_002] Rendered video clip bytes for shot sh_002 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/ember_oak/media/clip_sh_002_poster.jpg",
+   "file": "process/ember_oak/media/clip_sh_002.mp4"
+  },
+  {
+   "id": "compositor_final",
+   "stage": "CompositorAgent__step_1_76a81c5b",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_1_76a81c5b_compositor_final.mp4",
+   "bytes": 2884455,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "file": "videos/ember_oak.mp4",
+   "poster": "posters/ember_oak.jpg",
+   "final": true,
+   "w": 864,
+   "h": 496,
+   "dur": 30.21
+  },
+  {
+   "id": "compositoragent_output",
+   "stage": "CompositorAgent__step_1_76a81c5b",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_1_76a81c5b_compositoragent_exec_1.json",
+   "bytes": 426,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/ember_oak/media/compositoragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"plan\": {\"color_grade\": {\"brightness\": 0.02, \"contrast\": 0.05, \"saturation\": 0.05}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"subtitle_language\": \"en\", \"output_resolution\": \"1920x1080\", \"output_fps\": 30}}"
+  }
+ ],
+ "edges": [
+  {
+   "from": "ember_oak_logo",
+   "to": "IntakeImageAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "ember_oak_packaging",
+   "to": "IntakeImageAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "BriefEnricherAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeimageagent_output",
+   "to": "BriefEnricherAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "briefenricheragent_output",
+   "to": "KeyframeSheetAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "advertisementagent_output",
+   "to": "KeyframeSheetAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "ember_oak_logo",
+   "to": "KeyframeSheetAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "ember_oak_packaging",
+   "to": "KeyframeSheetAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "keyframesheetagent_output",
+   "to": "ShotPromptAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "coffee_dripper_setup_anchor",
+   "to": "ShotPromptAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "ember_oak_coffee_bag_anchor",
+   "to": "ShotPromptAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sunlit_kitchen_counter_anchor",
+   "to": "ShotPromptAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPromptAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPromptAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "advertisementagent_output",
+   "to": "ShotPromptAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "ClipAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "ClipAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "coffee_dripper_setup_anchor",
+   "to": "ClipAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "ember_oak_coffee_bag_anchor",
+   "to": "ClipAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sunlit_kitchen_counter_anchor",
+   "to": "ClipAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ClipAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ClipAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "clip_final",
+   "to": "CompositorAgent__step_1_76a81c5b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_001",
+   "to": "CompositorAgent__step_1_76a81c5b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_002",
+   "to": "CompositorAgent__step_1_76a81c5b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "ember_oak_logo",
+   "to": "CompositorAgent__step_1_76a81c5b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "ember_oak_packaging",
+   "to": "CompositorAgent__step_1_76a81c5b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "briefenricheragent_output",
+   "to": "AdvertisementAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "AdvertisementAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeimageagent_output",
+   "to": "AdvertisementAgent__step_1_d45c556a",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "compositor_final",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

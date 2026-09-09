@@ -1,0 +1,862 @@
+{
+ "key": "saiweng",
+ "title": "Blessing in Disguise",
+ "genre": "Ink-wash · Fable",
+ "cat": "Adaptation",
+ "prompt": "On the northern frontier below the Great Wall, an old man's prized horse vanishes one night; the neighbors come to console him, and he only says lightly, 'How do you know this isn't a blessing?' Months later the horse returns leading a herd of wild steppe horses — they congratulate him, and he says it may yet be a misfortune; his son, riding the new horse, is thrown and breaks his leg — they console him, and he still says it may yet be a blessing; soon the nomads invade, nine of every ten village youths die in battle, but his lame son is spared conscription, and father and son remain together: four turns of fortune and misfortune intertwined, all passing across the old man's ever-calm face. Traditional Chinese xieyi ink-wash painting (vast negative space, graded ink washes, the breath of a handscroll — hand-painted ink, non-photoreal), a storyteller's Chinese narration over minimal dialogue, English subtitles, with frontier wind, hoofbeats, distant war drums, a lone reed-pipe cry, and foley.",
+ "source": {
+  "type": "subrun",
+  "path": "sub_agents/runs/saiweng_lost_horse_01"
+ },
+ "generated_at": "2026-09-09T15:56:35+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 1
+  },
+  {
+   "id": "Story",
+   "agent": "StoryAgent",
+   "label": "Story",
+   "step": "",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "Keyframes",
+   "agent": "KeyframeSheetAgent",
+   "label": "Keyframe sheet",
+   "step": "",
+   "order": 2,
+   "n": 17
+  },
+  {
+   "id": "ShotPrompts",
+   "agent": "ShotPromptAgent",
+   "label": "Shot prompts",
+   "step": "",
+   "order": 3,
+   "n": 4
+  },
+  {
+   "id": "Clips",
+   "agent": "ClipAgent",
+   "label": "Clips",
+   "step": "",
+   "order": 4,
+   "n": 4
+  },
+  {
+   "id": "Narration",
+   "agent": "NarratorAgent",
+   "label": "Narration",
+   "step": "",
+   "order": 5,
+   "n": 3
+  },
+  {
+   "id": "Final",
+   "agent": "CompositorAgent",
+   "label": "Final cut",
+   "step": "",
+   "order": 6,
+   "n": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "user_goal",
+   "stage": "Inputs",
+   "kind": "text",
+   "label": "user goal",
+   "src_name": "user_goal.txt",
+   "bytes": 776,
+   "caption": "The user's instruction, verbatim.",
+   "scope": "",
+   "file": "process/saiweng/media/user_goal.txt",
+   "excerpt": "古时长城脚下的边塞人家，塞翁的骏马一夜走失，邻人皆来惋惜，他只淡淡道\"此何遽不为福乎\"——数月后那马竟领着一群胡马归来，众人来贺，他却说未必非祸；其子爱骑新马，纵马坠地折了腿，众人来慰，他仍说未必非福；不久胡兵大举入侵，村中青壮十死其九，独其子因瘸腿得免征戍，父子相守：四度祸福相倚，皆在老人始终平静的面容上静静流转。中国传统写意水墨画风格（大面积留白、浓淡墨色晕染、长卷般的呼吸感——明显是手绘水墨，非写实、非 3D），说书人中文旁白配极简人物对白，英文字幕，伴以塞外长风、马蹄踏尘、远处隐约战鼓与一声悠长胡笳，全程 foley。"
+  },
+  {
+   "id": "story",
+   "stage": "Story",
+   "kind": "json",
+   "label": "story",
+   "src_name": "story.json",
+   "bytes": 17877,
+   "caption": "Story: logline, characters, locations, shot list with panel beats.",
+   "scope": "",
+   "file": "process/saiweng/media/story.json",
+   "excerpt": "{\"title\": \"空桩上的马绳\", \"logline\": \"长城脚下的塞翁只想守住儿子和一颗不被众口牵走的心，可失马、得马、折腿、征戍一次次把福祸翻面；若他也急着给命运下判词，最后被牵走的可能不是马，而是儿子的命。\", \"setting\": \"古代中国北方长城边塞，汉人村落贴着荒草关隘而居，胡汉马队与征戍制度构成日常阴影；人物为汉族边民与远处胡骑剪影。叙事借中国寓言与说书传统，像一卷缓缓展开的边塞水墨长卷。\", \"style_anchor\": \"手绘中国传统写意水墨动画，宣纸纹理清晰，大面积留白，浓淡墨色晕染，少量赭石与淡青点染边塞尘土；长卷式横向呼吸感，镜头运动像卷轴展开，非写实、非3D，画面留白处可承载淡灰英文字幕。\", \"…"
+  },
+  {
+   "id": "border_courtyard_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "border_courtyard anchor",
+   "src_name": "border_courtyard.png",
+   "bytes": 3066789,
+   "caption": "Identity reference card for location border_courtyard — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/saiweng/media/border_courtyard_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "frontier_pass_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "frontier_pass anchor",
+   "src_name": "frontier_pass.png",
+   "bytes": 3003191,
+   "caption": "Identity reference card for location frontier_pass — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/saiweng/media/frontier_pass_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "hu_qi_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "hu_qi anchor",
+   "src_name": "hu_qi.png",
+   "bytes": 2959413,
+   "caption": "Identity reference card for character hu_qi — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/saiweng/media/hu_qi_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "linren_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "linren anchor",
+   "src_name": "linren.png",
+   "bytes": 2852509,
+   "caption": "Identity reference card for character linren — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/saiweng/media/linren_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sai_weng_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sai_weng anchor",
+   "src_name": "sai_weng.png",
+   "bytes": 2811377,
+   "caption": "Identity reference card for character sai_weng — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/saiweng/media/sai_weng_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sai_zi_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sai_zi anchor",
+   "src_name": "sai_zi.png",
+   "bytes": 2906914,
+   "caption": "Identity reference card for character sai_zi — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/saiweng/media/sai_zi_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "shuoshuren_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "shuoshuren anchor",
+   "src_name": "shuoshuren.png",
+   "bytes": 2565899,
+   "caption": "Identity reference card for character shuoshuren — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/saiweng/media/shuoshuren_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "village_road_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "village_road anchor",
+   "src_name": "village_road.png",
+   "bytes": 3245588,
+   "caption": "Identity reference card for location village_road — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/saiweng/media/village_road_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "zheng_li_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "zheng_li anchor",
+   "src_name": "zheng_li.png",
+   "bytes": 2492066,
+   "caption": "Identity reference card for character zheng_li — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/saiweng/media/zheng_li_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_001 storyboard",
+   "src_name": "sh_001_storyboard.png",
+   "bytes": 3199138,
+   "caption": "Storyboard sheet for sh_001: 5 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/saiweng/media/sh_001_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_001 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_001.storyboard_prompt",
+   "bytes": 5395,
+   "caption": "Image prompt that produced the sh_001 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/saiweng/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_002 storyboard",
+   "src_name": "sh_002_storyboard.png",
+   "bytes": 3730296,
+   "caption": "Storyboard sheet for sh_002: 4 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/saiweng/media/sh_002_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_002 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_002.storyboard_prompt",
+   "bytes": 5526,
+   "caption": "Image prompt that produced the sh_002 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/saiweng/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_003_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_003 storyboard",
+   "src_name": "sh_003_storyboard.png",
+   "bytes": 3352490,
+   "caption": "Storyboard sheet for sh_003: 5 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/saiweng/media/sh_003_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_003_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_003 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_003.storyboard_prompt",
+   "bytes": 5799,
+   "caption": "Image prompt that produced the sh_003 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/saiweng/media/sh_003_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_004_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_004 storyboard",
+   "src_name": "sh_004_storyboard.png",
+   "bytes": 3743233,
+   "caption": "Storyboard sheet for sh_004: 4 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/saiweng/media/sh_004_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_004_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_004 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_004.storyboard_prompt",
+   "bytes": 5293,
+   "caption": "Image prompt that produced the sh_004 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/saiweng/media/sh_004_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_001_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_001 video prompt",
+   "src_name": "sh_001.txt",
+   "bytes": 9882,
+   "caption": "Video-generation prompt for sh_001: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/saiweng/media/sh_001_video_prompt.txt",
+   "excerpt": "[设定] 古代中国北方长城边塞，汉人村落贴着荒草关隘而居，胡汉马队与征戍制度构成日常阴影；人物为汉族边民与远处胡骑剪影。叙事借中国寓言与说书传统，像一卷缓缓展开的边塞水墨长卷。 [风格] 24mm与28mm用于边塞院落宽景，35mm用于群像压迫，50mm用于父子中景对话，85mm用于塞翁情绪特写；广角 f/8 深景深保留长城、院墙、木桩层次，85mm f/2 浅景深只压住眉眼与绳结。 5600K偏冷纸白天光，淡赭尘土反光，宣纸留白、干笔风沙、浓淡墨影的绘本插画；高清、细节丰富、电影质感、色彩自然、光影柔和。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右…"
+  },
+  {
+   "id": "sh_002_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_002 video prompt",
+   "src_name": "sh_002.txt",
+   "bytes": 9042,
+   "caption": "Video-generation prompt for sh_002: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/saiweng/media/sh_002_video_prompt.txt",
+   "excerpt": "[设定] 古代中国北方长城边塞，汉人村落贴着荒草关隘而居，胡汉马队与征戍制度构成日常阴影；人物为汉族边民与远处胡骑剪影。叙事借中国寓言与说书传统，像一卷缓缓展开的边塞水墨长卷。 [风格] 24mm 与 35mm 建立边塞横卷空间，关键情绪转入 85mm 压缩近景；浅景深只用于塞翁手指、断绳与侧脸，远景保持层次清楚。 绘本插画，水墨干笔与淡赭尘色，5600K 偏冷天光混暖尘反射，高清、细节丰富、电影质感、色彩自然、光影柔和。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 4 格 = 右下；每格左上角有一个大的白色编号 1..4）…"
+  },
+  {
+   "id": "sh_003_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_003 video prompt",
+   "src_name": "sh_003.txt",
+   "bytes": 8986,
+   "caption": "Video-generation prompt for sh_003: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/saiweng/media/sh_003_video_prompt.txt",
+   "excerpt": "[设定] 古代中国北方长城边塞，汉人村落贴着荒草关隘而居，胡汉马队与征戍制度构成日常阴影；人物为汉族边民与远处胡骑剪影。叙事借中国寓言与说书传统，像一卷缓缓展开的边塞水墨长卷。 [风格] 24mm广角建立边塞空间，35mm与50mm承接坠马动作，85mm压近父子情绪；光圈偏大到中等，关键触点锐利，前后景以浅景深柔化。 5600K偏暖赭灰纸面色温，干笔风沙、高反差浓墨冲击，视觉媒介为绘本插画；高清、细节丰富、电影质感、色彩自然、光影柔和。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 5 格 = 右下；每格左上角有一个大的白色编…"
+  },
+  {
+   "id": "sh_004_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_004 video prompt",
+   "src_name": "sh_004.txt",
+   "bytes": 9509,
+   "caption": "Video-generation prompt for sh_004: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/saiweng/media/sh_004_video_prompt.txt",
+   "excerpt": "[设定] 古代中国北方长城边塞，汉人村落贴着荒草关隘而居，胡汉马队与征戍制度构成日常阴影；人物为汉族边民与远处胡骑剪影。叙事借中国寓言与说书传统，像一卷缓缓展开的边塞水墨长卷。 [风格] 24mm广角建立边塞空间，35mm群像保持征戍轴线，85mm压缩情绪细节，50mm收束到空桩意象；浅景深只用于笔尖、伤腿、绳结等关键物，远景保持纸面留白与层次。 水墨绘本插画，光圈意图为前景物件清晰、背景柔化，冷灰阴天约5600K过渡到暖尘侧光约4300K，高清、细节丰富、电影质感、色彩自然、光影柔和。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左…"
+  },
+  {
+   "id": "sh_001_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_001 clip",
+   "src_name": "sh_001.mp4",
+   "bytes": 6644453,
+   "caption": "Rendered clip for sh_001 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_001",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.09,
+   "poster": "process/saiweng/media/sh_001_clip_poster.jpg",
+   "file": "process/saiweng/media/sh_001_clip.mp4"
+  },
+  {
+   "id": "sh_002_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_002 clip",
+   "src_name": "sh_002.mp4",
+   "bytes": 7804430,
+   "caption": "Rendered clip for sh_002 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_002",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/saiweng/media/sh_002_clip_poster.jpg",
+   "file": "process/saiweng/media/sh_002_clip.mp4"
+  },
+  {
+   "id": "sh_003_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_003 clip",
+   "src_name": "sh_003.mp4",
+   "bytes": 8110334,
+   "caption": "Rendered clip for sh_003 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_003",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/saiweng/media/sh_003_clip_poster.jpg",
+   "file": "process/saiweng/media/sh_003_clip.mp4"
+  },
+  {
+   "id": "sh_004_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_004 clip",
+   "src_name": "sh_004.mp4",
+   "bytes": 5000031,
+   "caption": "Rendered clip for sh_004 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_004",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/saiweng/media/sh_004_clip_poster.jpg",
+   "file": "process/saiweng/media/sh_004_clip.mp4"
+  },
+  {
+   "id": "subtitles",
+   "stage": "Narration",
+   "kind": "text",
+   "label": "subtitles",
+   "src_name": "narration.srt",
+   "bytes": 1638,
+   "caption": "Subtitle track (SRT).",
+   "scope": "",
+   "file": "process/saiweng/media/subtitles.srt",
+   "excerpt": "1 00:00:00,000 --> 00:00:04,000 On the frontier, after a night of fierce wind, the old man’s fine horse crossed the pass and was gone. 2 00:00:04,000 --> 00:00:07,500 Father, the post is still here. The rope has snapped. 3 00:00:07,500 --> 00:00:10,500 To lose such a splendid horse—old brother, that is a great misfortu…"
+  },
+  {
+   "id": "narration_cues",
+   "stage": "Narration",
+   "kind": "json",
+   "label": "narration cues",
+   "src_name": "narration.json",
+   "bytes": 1565,
+   "caption": "Narration plan: voice, delivery instructions, timed cues per shot.",
+   "scope": "",
+   "file": "process/saiweng/media/narration_cues.json",
+   "excerpt": "{\"voice\": \"onyx\", \"voice_instructions\": \"A weathered Mandarin Chinese storyteller's voice, thick with grief held under ritual dignity. Slow, grave, and intimate, as if speaking over an ink scroll at dusk. Let dread gather beneath each line: the voice tightens when fate turns, swells with bitter reverence, then falls ne…"
+  },
+  {
+   "id": "line_sh_002_0",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_002_0",
+   "src_name": "sh_002_0.wav",
+   "bytes": 168044,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/saiweng/media/line_sh_002_0.mp3",
+   "dur": 3.5
+  },
+  {
+   "id": "final_film",
+   "stage": "Final",
+   "kind": "video",
+   "label": "final film",
+   "src_name": "final.mp4",
+   "bytes": 17550544,
+   "caption": "Delivered film: clips + narration + subtitles + mix.",
+   "scope": "",
+   "file": "videos/saiweng.mp4",
+   "poster": "posters/saiweng.jpg",
+   "final": true,
+   "w": 1280,
+   "h": 720,
+   "dur": 60.4
+  }
+ ],
+ "edges": [
+  {
+   "from": "user_goal",
+   "to": "Story",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "Keyframes",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "shuoshuren_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sai_weng_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sai_zi_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "linren_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "zheng_li_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "hu_qi_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "border_courtyard_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "frontier_pass_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "village_road_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "shuoshuren_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sai_weng_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sai_zi_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "linren_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "zheng_li_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "hu_qi_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "border_courtyard_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "frontier_pass_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "village_road_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_video_prompt",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_video_prompt",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_video_prompt",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_video_prompt",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "narration_cues",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_002_0",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "subtitles",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  }
+ ],
+ "final": "final_film",
+ "notes": [
+  "Early cine-chain run: the sequence Story → Keyframes → Shot prompts → Clips → Narration → Final is fixed, so connections are structural."
+ ]
+}

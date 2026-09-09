@@ -1,0 +1,73 @@
+{
+  "content": {
+    "language": "en",
+    "criteria": "Select high-quality, energetic travel and event highlights, discarding blurry, duplicate, and static shots, aimed at a total duration of around 60 seconds with short English captions.",
+    "target_duration_s": 60.0,
+    "clips": [
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_065168_clip_01_travel.mp4",
+        "clip_id": "clip_001",
+        "start_time": 0.0,
+        "end_time": 8.0,
+        "reason": "Clear landscape shot of a river flowing around a grassy island framed by sunlit hills.",
+        "caption": "Serene river flow"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_124919_clip_02_travel.mp4",
+        "clip_id": "clip_002",
+        "start_time": 0.0,
+        "end_time": 5.5,
+        "reason": "Crisp top-down aerial view of ocean waves washing over a sandy shoreline.",
+        "caption": "Crystal turquoise waters"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_161637_clip_03_travel.mp4",
+        "clip_id": "clip_003",
+        "start_time": 2.0,
+        "end_time": 12.0,
+        "reason": "High-energy event shot of a beach sprint competition ending with panoramic coastline views.",
+        "caption": "Beach race showdown"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_182281_clip_04_travel.mp4",
+        "clip_id": "clip_004",
+        "start_time": 0.0,
+        "end_time": 6.5,
+        "reason": "Scenic perspective of a rocky islet with breaking waves washing up the beach.",
+        "caption": "Waves on the coast"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_219954_clip_05_travel.mp4",
+        "clip_id": "clip_005",
+        "start_time": 0.0,
+        "end_time": 5.8,
+        "reason": "Dynamic driving perspective along a snow-covered alpine mountain pass road.",
+        "caption": "Alpine mountain drive"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_234619_clip_06_travel.mp4",
+        "clip_id": "clip_006",
+        "start_time": 0.0,
+        "end_time": 4.5,
+        "reason": "Smooth panning view across lush green mountain slopes and forested valleys.",
+        "caption": "Endless mountain greenery"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_287868_clip_07_travel.mp4",
+        "clip_id": "clip_007",
+        "start_time": 0.0,
+        "end_time": 12.0,
+        "reason": "Captivating multi-tiered waterfall cascading through dense forest and sunlight.",
+        "caption": "Majestic forest waterfall"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_306119_clip_08_travel.mp4",
+        "clip_id": "clip_008",
+        "start_time": 0.0,
+        "end_time": 4.8,
+        "reason": "Stunning canyon viewpoint looking out towards expansive desert plains.",
+        "caption": "Desert canyon outlook"
+      }
+    ]
+  }
+}

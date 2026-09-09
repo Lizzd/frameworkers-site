@@ -1,0 +1,73 @@
+[设定]
+Victorian London, 1892 Bloomsbury, in the tradition of classic British locked-room detective fiction; cast is white British. The story stays around Sir Edmund Vale's townhouse study because the crime's central claim is physical confinement: a door bolted from within.
+
+[风格]
+2D 彩色漫画插画（graphic-novel：干净墨线叠加丰富上色，明显非写实、非真人）；35mm到100mm用于书房证据与面部压迫，28mm用于桌面拦截动作，光圈偏大、浅景深突出证物与口型，背景保持柔和虚化。
+绿金台灯约3200K作硬主光，雨窗冷蓝约5600K作弱补光；高清、细节丰富、电影质感、色彩自然、光影柔和。
+
+[参考图]
+[Image 1]：本镜头的分镜网格图 —— 5 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 5 格 = 右下；每格左上角有一个大的白色编号 1..5）。它同时锁定三件事：① 每格中角色的身份（脸 / 发型 / 服装 / 体型，全片必须一致）；② 每格的画面构图 / 动作 / 镜头；③ 第 N 格 = [镜头]/[时间轴] 中按序的 镜头N。严格遵循。
+角色 `sherlock_holmes` 的固定外形（以分镜网格中该角色为准，全片一致）：Tall narrow man in his late 30s with a hawk nose, sharp grey eyes under heavy lids, black hair brushed back from a high forehead, nicotine-yellow fingertips, a dark Inverness coat over a black waistcoat, and a brass-rimmed magnifying lens tucked between two fingers.
+角色 `caleb_pike` 的固定外形（以分镜网格中该角色为准，全片一致）：Private secretary in his early 30s with a pale oval face, oiled black centre-parted hair, thin moustache waxed to needle points, starched white collar too tight at the throat, ink-darkened left thumb, and a right shirt cuff marked by a tiny crescent of dried blue sealing wax.
+角色 `inspector_lestrade` 的固定外形（以分镜网格中该角色为准，全片一致）：Small wiry Scotland Yard inspector in his 40s with a pointed chin, narrow watchful eyes, rain-speckled bowler hat, dark overcoat with shiny elbows, and a black notebook held tight against his ribs.
+角色 `dr_watson` 的固定外形（以分镜网格中该角色为准，全片一致）：Sturdy military doctor in his early 40s with a thick sandy moustache, warm eyes, a faint limp in the left leg, brown tweed suit damp at the cuffs, leather medical bag in one hand, and a silver watch chain crossing his waistcoat.
+角色 `sir_edmund_vale` 的固定外形（以分镜网格中该角色为准，全片一致）：Dead gentleman in his late 60s with silver mutton-chop whiskers, blue-veined left hand wearing a heavy signet ring, burgundy smoking jacket, loosened silk cravat, and a dark bullet wound at the right temple while seated at a massive writing desk.
+
+[镜头]
+镜头1
+35mm / 隔桌的福尔摩斯与派克手部中近景 / 平视正拍、机位略贴近桌面 / 画面右侧绿金台灯硬主光，雨窗冷蓝弱补光 / 中近景起幅 → 缓慢推进 → 落幅信纸与放大镜边缘近景 / 运镜平稳丝滑、无抖动
+
+镜头2
+85mm / 派克右袖口与下半张脸特写 / 平视略向下俯拍约10° / 集中暖色灯光闪点，冷色烟雾房间衰减 / 特写起幅 → 固定保持 → 落幅蓝色蜡痕特写 / 运镜平稳丝滑、无抖动
+
+镜头3
+100mm / 派克嘴部、针尖胡须与烟蒂面部大特写 / 平视正拍、近距离审问轴线 / 绿灯窄侧硬光，胡须边缘硬轮廓光，脸颊深阴影 / 面部大特写起幅 → 缓慢推进 → 落幅烟蒂与前齿大特写 / 运镜平稳丝滑、无抖动
+
+镜头4
+28mm / 书桌上方多人动作全景 / 高位俯拍约35° / 摇摆台灯投下硬金色高光与冷蓝阴影 / 全景起幅 → 平稳跟移半步 → 落幅手腕、医疗包与手枪拦截点全景 / 运镜平稳丝滑、无抖动
+
+镜头5
+50mm / 逮捕人群中景 / 低位微仰拍 / 移动绿金台灯硬主光形成栅栏状阴影，冷雨蓝背侧边缘光 / 中景起幅 → 缓慢推进 → 落幅派克被反扣手臂与脸部近景 / 运镜平稳丝滑、无抖动
+
+[物理]
+书桌、手枪、医疗包、信纸与蜡线都 obey 重力与摩擦：物体滑动沿桌面阻力逐渐减速，碰到手掌或印戒后停住，不穿模、不悬浮。人物动作保持人体结构一致，肩、肘、腕的受力方向清楚，手臂被反扣时关节受限，身体重心必须随步伐转移。
+派克扑向手枪、华生下压医疗包、雷斯垂德扣腕逮捕都拆成起手、移重心、接触、反震、锁定的连续中小幅度动作；强调重量、惯性和反作用力，不做亚秒级姿态跳变。
+
+[时间轴]
+镜头1
+画面焦点锁在福尔摩斯用放大镜金属边缘挑起半写信纸的手指，尼古丁染黄的指尖夹住镜柄轻抬约三指宽，信纸下缘因重力轻微弯曲。蜡线被他放在手枪旁，桌面形成绿灯三角光斑，信上辞退派克与伪造账目的字迹逐行进入清晰区；派克在背景中先张开戴手套的双手，五指分开约一掌宽，随后指节向掌心压紧，手套背面被绷出白色折线，腕部僵硬不动。福尔摩斯说话时上身只前倾少许，灰眼不离信纸；派克听到结论后鼻翼收窄、下颌线绷直，视线从信纸跳到手枪又迅速收回。
+
+镜头2
+派克借上一镜拳头收紧的惯性，把肩背压直，做出一个小而僵硬的鞠躬，头颈只下折很浅，像把动作硬拦在领口处。汗珠从发际线冒出，在油亮中分发旁聚成细点，沿鬓角向下拖出一条湿痕；他的嘴角保持平直，胡须尖端却轻轻颤动。福尔摩斯不碰派克皮肤，只用手势和视线逼他把右袖口转向灯光，袖口转过一小段角度时，蓝色蜡月牙突然反光，颜色与门锁孔边的蓝色污痕相互呼应；构图重心被这点电蓝色压在温褐色书房中央。
+
+镜头3
+福尔摩斯从折好的信封里取出烟蒂，手腕平稳向前送到派克胡须下方，烟蒂横线贴近派克上唇与不齐前齿之间，焦点集中在双重咬痕与牙缝对齐的位置。派克上唇先微微掀起，随后立刻压紧，薄唇闭合过晚，咬肌在脸侧鼓起一条硬线；他屏住气，喉结上下滑动一次，眼神避开烟蒂向侧后方闪。雷斯垂德在后景中眼睛从烟灰猛地移到派克嘴边，眼睑张大、下巴前探；福尔摩斯的信封停在画面边缘，形成证物、牙齿、警官视线的水平指向。
+
+镜头4
+派克承接上一镜暴露后的僵直，突然把右肩向桌侧压低，右脚向侧前方抢出半步，手臂沿桌面伸向手枪，手套指尖距离枪柄只剩数指宽。华生从侧面把左腿重心压下，右臂带着医疗包由上向下砸落，皮革包底命中派克手腕外侧，派克手背被压得贴近桌面，袖口皱褶向肘部挤起，手指被迫张开。手枪受冲击沿吸墨垫斜向滑出，枪口转过一小角度后撞上埃德蒙爵士戴印戒的青筋手背旁停住；雷斯垂德从后方蹬地前冲，圆顶礼帽从头顶翻落到土耳其地毯，福尔摩斯身体微侧让开路径，桌面力线从派克前扑到华生下压形成明显对角。
+
+镜头5
+雷斯垂德借前冲动量贴到派克身后，左手扣住派克手腕向外旋，右手压住派克肘部向背后折去，派克肩膀被迫抬高，胸口向前顶出半步后被锁回原位。派克浆硬白领在喉结旁崩开，领扣弹松，脖颈皮肤被勒出一道浅红压痕；他的牙关咬紧，嘴角向一侧抽动，额角汗珠被栅栏状阴影切成断点。福尔摩斯在旁边快速伸手接住坠落蜡线，拇指和食指在血点上方提前合拢，蜡线未碰到桌面的暗红痕迹；绿灯被动作带动摆动，硬阴影横过派克脸部和衣领，像栏杆一样把他困在画面中心，华生在侧后方握紧医疗包停住，呼吸沉重但站姿稳住。
+
+[对白]
+sherlock_holmes（高瘦、黑色斗篷大衣、手持铜边放大镜的三十多岁男性）音色：三十多岁男性，干冷男中音，语速精准偏快，低音高，受过教育的伦敦标准口音，带克制的讥诮与不耐。
+caleb_pike（苍白椭圆脸、针尖胡须、白硬领秘书服的三十岁出头男性）音色：三十岁出头男性，顺滑偏轻男中音，受压时破音，节奏从克制转为急促，中音高，精致伦敦文员口音，恭顺外壳下压着慌乱。
+dr_watson（棕色粗花呢西装、厚沙色胡须、手提皮革医疗包的四十岁出头男性）音色：四十岁出头男性，温厚圆润男高音，语速适中，中音高，受过教育的英格兰口音带轻微军人干脆感，关切而忠诚。
+inspector_lestrade（矮小精瘦、深色大衣、圆顶礼帽的四十多岁男性）音色：四十多岁男性，鼻音中高男声，短促偏快，音高略高，伦敦警务口音，务实中带防御感。
+镜头1: sherlock_holmes："Sir Edmund discovered the theft at six, wrote your dismissal at seven, and was dead before the ink dried."
+镜头2: caleb_pike："This is conjecture dressed as theatre."
+镜头3: sherlock_holmes："Your cigarette, your wax, your thread, your motive. Only the courage was borrowed from a dead man's hand."
+镜头4: dr_watson："Leave it!"
+镜头5: inspector_lestrade："Caleb Pike, I arrest you for the murder of Sir Edmund Vale."
+
+[音效]
+镜头1：清晰人声贴近室内反射，信纸被挑起的细微沙沙声，蜡线落在桃花心木桌面的轻响，窗外雨声与钟摆低频。
+镜头2：派克衣领轻擦脖颈，袖口布料转动的细响，台灯玻璃罩微鸣，压低的呼吸声与远处雨声。
+镜头3：信封纸边摩擦，烟蒂被捏住的干脆细响，派克屏息后的鼻腔呼吸，雷斯垂德皮鞋轻挪声。
+镜头4：皮革医疗包重重闷响，手腕受击的沉闷肉响，手枪金属滑过吸墨垫的刮擦声，鞋底摩擦地面，圆顶礼帽落地的软响，急促喘息。
+镜头5：衣料被扭紧的绷裂声，关节受力的骨擦音，派克短促闷哼，绿灯链条摇摆轻响，警官宣告声在书房木墙间回荡。
+
+[约束]
+面部清晰稳定，五官不畸变不变形，正常人体结构与自然比例，角色服装和位置延续 [Image 1] 不错乱。持械拦截与扣腕逮捕必须有重量、惯性和受力反馈，动作自然连贯不僵硬、不抖帧。
+
+保持无字幕，画面中不得出现任何字幕 / 台词字幕 / 说明文字 / 标题 / 水印 / Logo / 标志 / 品牌标识 / 叠加文字；对白只用声音表达（口型同步），绝不烧录成画面可见文字。

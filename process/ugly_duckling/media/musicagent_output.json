@@ -1,0 +1,11 @@
+{
+  "content": {
+    "language": "en",
+    "cues": [
+      {
+        "cue_id": "music_film",
+        "mood": "gentle, whimsical, solo piano, warm orchestral strings"
+      }
+    ]
+  }
+}

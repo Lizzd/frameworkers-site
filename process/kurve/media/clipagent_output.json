@@ -1,0 +1,21 @@
+{
+  "content": {
+    "language": "en",
+    "clips": [
+      {
+        "shot_id": "sh_001",
+        "duration_sec": 10.0,
+        "scene_id": "sc_001"
+      }
+    ],
+    "assembly": {
+      "shot_order": [
+        "sh_001"
+      ],
+      "scene_order": [
+        "sc_001"
+      ],
+      "transitions": []
+    }
+  }
+}

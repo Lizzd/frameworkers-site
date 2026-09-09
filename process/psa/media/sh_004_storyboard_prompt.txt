@@ -1,0 +1,26 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 with the sixth cell as solid neutral gray; N=6 → 3×2.
+
+[STYLE FOUNDATION]
+VISUAL MEDIUM and aesthetic are dictated entirely by story.style_anchor (below) — live-action film, 2D anime, illustration, 3D, etc.; do NOT default to photoreal, do NOT impose any medium the brief omits. Apply verbatim: 干净、温和、专业的 2D 医疗科普动画。柔和蓝绿为主，少量暖黄色点亮安心感；扁平清晰造型、平静光线、留足画面下方中文字幕空间，全片可信、克制、不惊悚。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the generic_clinic location anchor for the clean consultation room: pale blue-green wall, examination bed, sink, simple medical tray, no labels or writing. Use the FRONT sections of the clinic_doctor, child_patient, and parent_mother character anchors for body identity, with the child’s right forearm visible. A 50mm medium close-up shows the doctor in gloves gently cleaning, disinfecting, and placing a small neat bandage over the very small shallow red scratch fixed on the child’s right forearm near the wrist. The mother stands close beside the child, calm and supportive. Keep the action professional, clear, non-graphic, with large clean lower space for subtitles.
+
+[PANEL 2]
+Use the FRONT section of the generic_clinic location anchor, same calm clinic continuity. Use the FRONT section of the child_patient character anchor for the yellow hoodie and upper-arm posture, the FACE section subtly for the child’s calm expression, and the FRONT sections of clinic_doctor and parent_mother for their supportive positions. A stable 50mm medium close-up clearly shows the doctor administering an unmarked simplified syringe vaccine into the child’s upper arm; the mother steadies and comforts the child with one hand. The child’s expression remains composed, no distress, no dramatic pain. All medical objects are generic and unbranded, with no text anywhere.
+
+[PANEL 3]
+Use the FRONT section of the generic_clinic location anchor for the doctor–parent consultation angle, and use the FACE/FRONT sections of clinic_doctor, parent_mother, and child_patient anchors to keep identities exact. A 35mm medium three-shot: the doctor calmly holds a small unmarked medicine vial at chest height and gestures gently as if explaining that this additional medicine is based on the doctor’s judgment and only needed in some situations. The mother listens attentively and nods; the child sits quietly beside her. The vial is clear and central but contains no label, letters, numbers, logo, or markings. Mood is reassuring and procedural.
+
+[PANEL 4]
+Use the abstract_infographic_space location look: soft blue-green abstract background with slow circular and line graphics, no characters. Render a flat 2D motion-graphic summary with three large circular icons arranged horizontally left to right, connected by simple arrows: first a small forearm/wound-care icon with gentle cleaning sparkles, second a warm-highlight shield icon for vaccine protection, third a small unmarked vial icon surrounded by a soft dotted halo to imply conditional use. The three icons glow in sequence from left to right; do not include any words, letters, extra numbers, labels, logos, or captions inside the infographic. Maintain broad lower subtitle-safe blank space.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 3 reference image(s) in this i2i call are PREVIOUS-SHOT storyboards (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to maintain CROSS-SHOT continuity in: color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality — so the final cut sequence flows smoothly. Identity (character / location / ship details) is still locked exclusively by the FIRST 4 refs (character anchors / location anchor / style anchor).

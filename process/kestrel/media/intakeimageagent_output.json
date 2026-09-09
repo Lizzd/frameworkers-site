@@ -1,0 +1,47 @@
+{
+  "content": {
+    "language": "en",
+    "images": [
+      {
+        "visual_description": "Minimalist black logo with a stylized line-art wing icon above the word \"KESTREL\" centered on a plain white background.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_407400_brand_logo.png",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "Black headlamp with a rust-orange elastic strap centered on a plain light gray background in soft studio light.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_865501_product_lamp.png",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "Side profile of a blue-gray trail shoe with orange laces and a black lugged sole against a clean light gray background in bright studio light.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_914222_product_shoe.png",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "Dark gray mesh running vest with terracotta trim holds two water flasks, set against a plain background in clean studio lighting.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_955288_product_vest.png",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      }
+    ]
+  }
+}

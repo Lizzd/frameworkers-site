@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 medium diagram -> P2 medium diagram -> P3 close-up infographic -> P4 wide
+
+[PANEL 1]
+SHOT: medium diagram eye-level
+PLACEMENT: Vascular circulatory diagram of tubeworm tissue centered in frame.
+ACTION: Hemoglobin vascular lines carrying dissolved hydrogen sulphide and oxygen into internal bacterial organ tissue.
+ENV: Clean vector anatomical diagram on dark background.
+
+[PANEL 2]
+SHOT: medium diagram eye-level
+PLACEMENT: Bacterial organ tissue interface in central frame.
+ACTION: Reverse chemical arrows returning synthesized nutrient molecules from bacteria into the worm's bloodstream.
+ENV: Clean 2D motion graphic layout with bright yellow/cyan exchange arrows.
+
+[PANEL 3]
+SHOT: close-up infographic eye-level
+PLACEMENT: Interlocking circular symbiotic symbol centered in frame.
+ACTION: Two glowing circular vector rings merging together to represent biological symbiosis.
+ENV: Dark ocean backdrop with sleek vector infographic symbols.
+
+[PANEL 4]
+SHOT: wide eye-level
+PLACEMENT: Dense tubeworm field occupying lower half of frame.
+ACTION: Flourishing red tubeworm colony fully expanded and swaying near active seafloor hydrothermal vents.
+ENV: Abyssal floor with warm vent glow illuminating surrounding tubeworm forest.
+
+[RENDERED TEXT]
+No panel numbers, captions, or watermarks.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 1 refs (character / prop / location anchors).

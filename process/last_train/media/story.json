@@ -1,0 +1,363 @@
+{
+  "title": "黒窓の紙舟",
+  "logline": "終電の車内で見習い祓い師の陽菜は、終点到着までに眠る乗客へ絡みつく霊を封じなければならない。しかし黒い窓ガラスに映ったのは怨霊ではなく、溺れたまま母に似た匂いへ縋る幼い子で、封じれば永遠に沈め、逃せば規則も結界も破ることになる。",
+  "setting": "2010年代末の東京湾岸から都心へ向かう私鉄最終電車、台風の多い季節の深夜。日本人キャスト、都市伝説的な鉄道怪談と神道系の紙札祓いが、無言の通勤文化と混ざる現代ダークファンタジー。",
+  "style_anchor": "2D hand-drawn anime, modern dark-fantasy anime look, clearly non-photoreal with visible ink line variation and subtle cel-shadow texture. Palette of bruised navy, oxidized green, dirty fluorescent white, and occasional red seal ink; low-key lighting, flickering overhead tubes, grainy compositing, tense cinematic framing inspired by late-1990s Japanese occult anime and Satoshi Kon-like reflective surfaces.",
+  "dialogue_language": "Japanese spoken dialogue; English subtitles intended downstream",
+  "characters": [
+    {
+      "id": "hina",
+      "role": "protagonist",
+      "look_description": "16-year-old Japanese apprentice exorcist with a short blunt black bob, a single uneven white streak above her right temple, and a tiny plaster on her left thumb from paper cuts. She wears a dark navy school blazer under a charcoal rain poncho, red braided cord around her wrist, a canvas satchel bulging with folded paper talismans, and a brass seal stamp clipped to the strap.",
+      "voice_description": "10代後半女性、低めで澄んだ声、語速は普段やや速いが緊張時に短く切る、ピッチ低め、東京方言、感情を抑えた硬い息づかい"
+    },
+    {
+      "id": "miharu",
+      "role": "foil",
+      "look_description": "6-year-old Japanese drowned child spirit, translucent and small, with wet chin-length hair stuck in separate black strands across her cheeks, one missing red rain boot, and a faded yellow raincoat darkened at the cuffs. Her outline drips upward instead of downward, and a soggy kindergarten name tag with blurred ink hangs from her chest.",
+      "voice_description": "幼い女児、細く湿ったささやき声、語速は遅く途切れがち、ピッチ高め、東京下町寄りの幼い発音、眠気と泣き疲れが混じる"
+    },
+    {
+      "id": "sachiko",
+      "role": "bystander",
+      "look_description": "Japanese office worker in her early 30s, sleeping upright with a pale beige trench coat, rain-speckled black flats, and a loose low ponytail smelling faintly of soap. She has a small crescent-shaped mole under her right eye, earbuds fallen into her lap, and an IC card case with a chipped penguin charm on her wrist strap.",
+      "voice_description": "30代女性、柔らかく少し掠れた寝起き声、語速ゆっくり、ピッチ中低め、標準語、疲労と戸惑いが滲む"
+    }
+  ],
+  "locations": [
+    {
+      "id": "last_train_carriage",
+      "look_description": "A nearly empty Tokyo commuter train carriage with blue-gray bench seats, stainless poles, dangling white hand straps, advertisement cards trembling above the windows, and long fluorescent tubes that hum and intermittently fail. The windows are black mirrors at night, the floor reflects thin tracks of rainwater from umbrellas, and the carriage rocks with rhythmic rail joints."
+    },
+    {
+      "id": "black_window_reflection",
+      "look_description": "The supernatural reflection plane inside the train window: black glass becomes a layered mirror of the carriage and an underwater pedestrian underpass, with floating ticket stubs, wavering station lights, bubbles caught like dust, and silhouettes stretched by passing tunnel lamps. Reflected faces appear sharper than real ones, while the real carriage behind them blurs green-white."
+    },
+    {
+      "id": "terminus_platform",
+      "look_description": "A late-night terminal platform under rain-dark steel beams, with yellow tactile paving, closed kiosk shutters, puddles vibrating from train brakes, green departure LEDs, and a red end-of-line signal beyond the platform. Fluorescent platform lights cast hard stripes through the open train doors, and the far tunnel mouth is black beyond the buffer stop track."
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "sh_001",
+      "duration_s": 15.0,
+      "narrative_purpose": "Establish the last train as a sealed ticking-clock space and show Hina discovering the spirit coiled around the sleeping stranger.",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            4.0
+          ],
+          "categories": [
+            "establishing_wide"
+          ],
+          "moment_description": "Wide view down the swaying empty carriage → overhead fluorescents buzz, one tube blinks out for 0.2 seconds and returns green-white → hanging straps swing in alternating rows like pendulums → rainwater beads crawl across the black window exterior → the train hits a rail joint and every ad card snaps once → Hina enters from the rear door, one hand gripping the pole, satchel thumping her hip in rhythm with the wheels.",
+          "dialogue": null,
+          "characters_present": [
+            "hina"
+          ]
+        },
+        {
+          "time_range": [
+            4.0,
+            8.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "emotional_close_up"
+          ],
+          "moment_description": "Camera tracks low beside Hina's shoes as she advances aisle by aisle → a loose talisman corner peeks from her satchel and flutters toward the front of the car rather than backward → her red wrist cord tightens by itself, leaving a wet ring on her skin → Sachiko sleeps three benches ahead with her head tilted against the window → a dark spiral shape briefly tightens around Sachiko's beige coat in the glass reflection, then vanishes when the light steadies.",
+          "dialogue": "hina: 終電に、子どもの影は乗らないはず。",
+          "characters_present": [
+            "hina",
+            "sachiko"
+          ]
+        },
+        {
+          "time_range": [
+            8.0,
+            12.0
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "Close on Hina's thumb sliding under the satchel flap → her plaster catches on paper fibers and lifts at the edge → she draws three talismans marked in red ink, fans them between two fingers, and exhales onto the seals → the ink darkens as if wet → the carriage jolts, her knees bend to absorb it, and the talismans snap flat toward Sachiko like compass needles finding north.",
+          "dialogue": null,
+          "characters_present": [
+            "hina",
+            "sachiko"
+          ]
+        },
+        {
+          "time_range": [
+            12.0,
+            15.0
+          ],
+          "categories": [
+            "emotional_close_up",
+            "inner_monologue_VO"
+          ],
+          "moment_description": "Hina raises the brass stamp to her lips without kissing it → reflected tunnel lights stripe across her eyes → in the window behind Sachiko, Miharu's small wet fingers appear one by one over the sleeper's shoulder → the red cord on Hina's wrist jerks forward half a centimeter → Hina stops exactly at the yellow priority-seat line painted on the floor.",
+          "dialogue": "hina: あと二分。紙が間に合えばいい。",
+          "characters_present": [
+            "hina",
+            "sachiko",
+            "miharu"
+          ]
+        }
+      ],
+      "primary_location": "last_train_carriage",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_002",
+      "duration_s": 15.0,
+      "narrative_purpose": "Hina begins a textbook binding, but the spirit's behavior does not match a vengeful attack.",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "emotional_close_up"
+          ],
+          "moment_description": "Medium two-shot across the aisle: Hina crouches in front of sleeping Sachiko while keeping one foot braced against the train sway → she sticks the first talisman to the chrome pole and the paper crackles with dry static → Miharu's translucent raincoat sleeve tightens around Sachiko's shoulder → Sachiko's fallen earbud trembles against her lap → Hina's eyes flick from the spirit's missing boot to the sleeper's mole under the eye.",
+          "dialogue": "hina: 名前を出して。紙が噛む前に。",
+          "characters_present": [
+            "hina",
+            "sachiko",
+            "miharu"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            6.0
+          ],
+          "categories": [
+            "transformation_body_horror",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "Hina slaps the second talisman onto the window beside Sachiko's head → the seal ink blooms into threadlike red lines that arc toward Miharu's wrist → Miharu's fingers lengthen into watery ribbons for 0.3 seconds, then shrink back into a child's hand → the carriage light pops twice, making the spirit appear as a black coil, then as a yellow raincoat → the binding line stops just short of the child's palm, quivering.",
+          "dialogue": "miharu: いたいの、やだ。",
+          "characters_present": [
+            "hina",
+            "sachiko",
+            "miharu"
+          ]
+        },
+        {
+          "time_range": [
+            6.0,
+            9.0
+          ],
+          "categories": [
+            "emotional_close_up",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "Close on Sachiko's sleeping face as the train leans into a curve → her ponytail slips from her collar, releasing a faint shimmer of rain and soap scent visualized as pale threads → Miharu presses her cheek to the coat sleeve and closes both eyes → the red binding line slackens instead of tightening → Hina's stamp hand freezes midair, knuckles whitening around the brass edge.",
+          "dialogue": "miharu: おかあさんの匂い、する。",
+          "characters_present": [
+            "hina",
+            "sachiko",
+            "miharu"
+          ]
+        },
+        {
+          "time_range": [
+            9.0,
+            12.0
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "Sachiko stirs without waking → her hand rises limply, almost touching Miharu's wet hair but passing through cold air → frost dots spread across the beige sleeve where the spirit clings → Hina slides a third talisman between them, then hesitates with the paper edge hovering against the child's forehead → the wheels shriek under braking, stretching the sound into a thin metallic cry.",
+          "dialogue": "sachiko: ん……傘、忘れないで……。",
+          "characters_present": [
+            "hina",
+            "sachiko",
+            "miharu"
+          ]
+        },
+        {
+          "time_range": [
+            12.0,
+            15.0
+          ],
+          "categories": [
+            "transformation_body_horror",
+            "emotional_close_up"
+          ],
+          "moment_description": "The talisman in Hina's hand suddenly folds inward as if soaked → red characters crawl backward from seal to blank paper → Miharu turns her face, and for one frame her mouth opens too wide with black water behind her teeth → Hina recoils only a few centimeters, then plants her palm on the floor to steady herself → through the speakers a station chime warps into the rail hum while the door indicator begins blinking red.",
+          "dialogue": "hina: 怨みなら、もっと真っ直ぐ噛むはずだ。",
+          "characters_present": [
+            "hina",
+            "sachiko",
+            "miharu"
+          ]
+        }
+      ],
+      "primary_location": "last_train_carriage",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_003",
+      "duration_s": 15.0,
+      "narrative_purpose": "The black window reveals the drowned child's memory and forces Hina to understand that the haunting is grief, not malice.",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "inner_monologue_VO"
+          ],
+          "moment_description": "Camera pushes into the black window until the real carriage becomes a thin reflected strip → tunnel lamps smear into wavering underwater bars → Hina's face floats beside Sachiko's reflection, then slides out of alignment like a misprinted cel → bubbles rise past hanging hand straps that now look like drowned loops → the name tag on Miharu's chest sharpens enough to show the first two kana before ink runs again.",
+          "dialogue": null,
+          "characters_present": [
+            "hina",
+            "sachiko",
+            "miharu"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            7.0
+          ],
+          "categories": [
+            "transformation_body_horror",
+            "establishing_wide"
+          ],
+          "moment_description": "The reflection opens into a flooded pedestrian underpass seen through the train window → a small yellow raincoat tumbles in brown water while a red boot spins free near a stair rail → a woman's silhouette reaches from the surface but the current pulls her hand into distorted white lines → Miharu's present-day spirit mirrors the motion, clutching empty air with the same fingers → the train carriage reflection flickers over the flood scene, placing Sachiko's mole where the mother's reflected cheek once was.",
+          "dialogue": "miharu: ガラスの向こうで、手だけ見えたの。",
+          "characters_present": [
+            "hina",
+            "sachiko",
+            "miharu"
+          ]
+        },
+        {
+          "time_range": [
+            7.0,
+            11.0
+          ],
+          "categories": [
+            "emotional_close_up",
+            "inner_monologue_VO"
+          ],
+          "moment_description": "Extreme close on Hina's eyes reflected in the wet glass → the red seal lines across her pupils rearrange from a binding circle into the shape of train route marks → her thumb wound reopens and a tiny bead of blood darkens the talisman edge → behind her reflection, Miharu's face becomes briefly solid, cheeks round and frightened rather than monstrous → Hina lowers the brass stamp one notch, letting it hang from the strap instead of aiming it.",
+          "dialogue": "hina: 封じたら、この子は沈んだままだ。",
+          "characters_present": [
+            "hina",
+            "miharu"
+          ]
+        },
+        {
+          "time_range": [
+            11.0,
+            15.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "emotional_close_up"
+          ],
+          "moment_description": "The underwater reflection snaps back to the real train as platform lights begin strobing through the windows → Sachiko exhales and her head lifts a few millimeters from the glass → Miharu tightens both arms around Sachiko in panic, frost spreading in child-sized handprints → Hina catches the third talisman before it falls, folds its top corner once instead of pressing it flat, and looks toward the approaching terminal sign flashing green in the glass.",
+          "dialogue": "miharu: まだ降りないで。",
+          "characters_present": [
+            "hina",
+            "sachiko",
+            "miharu"
+          ]
+        }
+      ],
+      "primary_location": "black_window_reflection",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_004",
+      "duration_s": 15.0,
+      "narrative_purpose": "At the terminus doors, Hina reverses the sealing ritual into an escort and lets the child ride beyond the official end.",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            2.0
+          ],
+          "categories": [
+            "establishing_wide"
+          ],
+          "moment_description": "The train stops hard at the terminal platform → door seams split open with a rubber sigh → rain-cooled platform air rushes in and lifts every talisman edge in Hina's satchel → green LEDs blink the final station name → Sachiko wakes fully, blinking at the empty platform while Miharu's arms remain locked around her coat.",
+          "dialogue": null,
+          "characters_present": [
+            "hina",
+            "sachiko",
+            "miharu"
+          ]
+        },
+        {
+          "time_range": [
+            2.0,
+            6.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "emotional_close_up"
+          ],
+          "moment_description": "Sachiko stands and steps toward the open doors, unaware of the cold handprints whitening her sleeve → Miharu is dragged a half-step after her, stretching thin like water pulled from a cup → Hina slides between them, not as an attack but as a human barrier → she presses two fingers to the red wrist cord and snaps it loose from her own skin → the brass stamp swings and knocks once against the pole.",
+          "dialogue": "sachiko: あの……忘れ物ですか？",
+          "characters_present": [
+            "hina",
+            "sachiko",
+            "miharu"
+          ]
+        },
+        {
+          "time_range": [
+            6.0,
+            10.5
+          ],
+          "categories": [
+            "emotional_close_up",
+            "transformation_body_horror"
+          ],
+          "moment_description": "Hina answers without looking away from Miharu → she folds the softened sealing talisman along the crease made earlier, then another crease, turning the weapon-paper into a small paper boat → her blood from the thumb stains the bow like a red ticket punch → Miharu's stretched arms recoil from Sachiko and re-form into small hands reaching for the boat → platform warning beeps accelerate as Sachiko steps out onto the yellow tactile paving and the gap between her and the child widens.",
+          "dialogue": "hina: いいえ。乗り越しです。",
+          "characters_present": [
+            "hina",
+            "sachiko",
+            "miharu"
+          ]
+        },
+        {
+          "time_range": [
+            10.5,
+            15.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "emotional_close_up"
+          ],
+          "moment_description": "Hina places the paper boat in Miharu's cupped hands and ties the loosened red cord around it like a tiny towline → the doors close between Sachiko on the platform and Hina inside the car, reflecting both women for one instant in the glass but leaving the child visible only beside Hina → the official end-of-line signal outside turns red while the train lurches forward into the dark service track beyond the platform → on the wet carriage floor, the paper boat glides a few centimeters with the motion, and Miharu sits beside it without touching Sachiko's fading reflection.",
+          "dialogue": "hina: 一駅だけ。私が降ろす。",
+          "characters_present": [
+            "hina",
+            "sachiko",
+            "miharu"
+          ]
+        }
+      ],
+      "primary_location": "terminus_platform",
+      "notes": null,
+      "audit_notes": ""
+    }
+  ]
+}

@@ -19,8 +19,8 @@
 <meta name="twitter:description" content="An AI film director that plans a custom production and orchestrates a crew of specialist agents — turning any prompt into a finished short with cinematic shots, voice, score, and native sound." />
 <meta name="twitter:image" content="https://frameworkers.insait.ai/assets/og-cover.jpg" />
 <title>FrameWorkers — Portfolio</title>
-<link rel="stylesheet" href="assets/styles.css?v=78" />
-<script src="assets/app.js?v=76" defer></script>
+<link rel="stylesheet" href="assets/styles.css?v=83" />
+<script src="assets/app.js?v=83" defer></script>
 </head>
 <body data-page="films">
 
@@ -47,7 +47,7 @@
     <div class="container">
       <div class="section-head" id="portfolio-head">
         <h2 class="section-title">The film <span class="gtext">gallery</span></h2>
-        <p class="section-sub">Pick a prompt and watch the pipeline assemble it — finished shorts across a range of mediums.</p>
+        <p class="section-sub">Pick a prompt and watch the pipeline assemble it — finished shorts across a range of mediums. Hover a film for its <b>creation process</b>: every asset the crew produced, and how they connect.</p>
       </div>
 
       <div class="filters" id="filters"></div>
@@ -70,8 +70,9 @@
             <div class="pr"><span class="qlabel">Your prompt</span><span id="pprompt"></span><span id="pprompt-en" class="pr-en" style="display:none"></span></div>
             <div class="pr" id="pinputs" style="display:none"><span class="qlabel">Input materials</span><div id="pinputs-list" class="pin-list"></div></div>
           </div>
-          <div class="col" style="flex:0 0 auto">
+          <div class="col pactions" style="flex:0 0 auto">
             <button class="btn btn-grad" id="replay">↻ Replay</button>
+            <a class="btn btn-ghost" id="pproc" href="process.html">Creation process ↗</a>
           </div>
         </div>
       </section>

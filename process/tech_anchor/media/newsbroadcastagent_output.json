@@ -1,0 +1,291 @@
+{
+  "content": {
+    "title": "Tech Update: DeepSeek R1, Quantum Threshold, EU AI Act",
+    "logline": "A sixty-second global tech broadcast reporting on DeepSeek's open-weights model release, Google's quantum error correction milestone, and the enforcement of the EU AI Act.",
+    "setting": "A sleek generic modern news studio set with abstract digital light walls and a minimalist anchor desk, formatted for a global English-speaking news audience. Free of real-world logos and text.",
+    "style_anchor": "High-end stylized 3D digital animation aesthetic with soft studio key lighting, clean metallic slate gray and cyan neon accents, and balanced camera framing maintaining clean spatial contrast near the lower margin for downstream captions.",
+    "dialogue_language": "English",
+    "subtitle_language": "en",
+    "characters": [
+      {
+        "id": "anchor",
+        "role": "anchor",
+        "look_description": "Stylized 3D animated virtual presenter with neat dark navy hair styled back, wearing a tailored charcoal gray suit jacket over a crisp light-blue collar shirt, presenting with neutral composure.",
+        "voice_description": "Clear, measured, professional news broadcast cadence with an even mid-range tone and crisp articulation.",
+        "on_screen": true,
+        "reference_image_index": null
+      }
+    ],
+    "props": [],
+    "locations": [
+      {
+        "id": "studio",
+        "look_description": "A modern generic broadcast newsroom studio featuring a curved metallic desk and background LED light panels showing abstract geometric patterns; entirely textless and unbranded.",
+        "reference_image_index": null
+      },
+      {
+        "id": "broll_datacenter",
+        "look_description": "A futuristic generic data center aisle lined with tall server racks pulsing with subtle blue optical signals; text-free and logo-free.",
+        "reference_image_index": null
+      },
+      {
+        "id": "broll_quantum_lab",
+        "look_description": "A high-tech cleanroom laboratory housing a gold-and-copper chandelier cryostat system for quantum hardware; clean, modern, text-free.",
+        "reference_image_index": null
+      },
+      {
+        "id": "broll_eu_building",
+        "look_description": "An exterior view of a modern glass-and-steel international government building under clear blue skies; free of flags or readable signage.",
+        "reference_image_index": null
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "sh_001",
+        "duration_s": 15.0,
+        "narrative_purpose": "Broadcast open, bulletin headlines intro, and lead story on DeepSeek R1 release.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "Wide shot of the virtual news studio as the stylized anchor stands behind the curved desk against light blue geometric background panels.",
+            "dialogue": null,
+            "characters_present": [
+              "anchor"
+            ]
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Medium shot of the anchor speaking calmly to camera, gesturing slightly with hands held over the desk.",
+            "dialogue": null,
+            "characters_present": [
+              "anchor"
+            ]
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "B-roll cutaway showing tall server rack arrays illuminated by glowing blue light strips in a dark server room.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "B-roll macro shot of an unbranded silicon microchip wafer sparkling under cold white lab lighting.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "studio",
+        "notes": "VO: Welcome to Tech Update. Today's major developments: DeepSeek releases open-weights model R1, quantum hardware crosses a key error threshold, and the EU AI Act enters into force. In January 2025, Chinese AI lab DeepSeek released R1, an open-weights reasoning model trained for a fraction of the cost of Western frontier models.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_002",
+        "duration_s": 15.0,
+        "narrative_purpose": "Report on market reaction to DeepSeek R1, then transition to Google Willow quantum chip announcement.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              4.0
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Wordless graphic visual showing a downward red line graph dipping sharply against a dark grid background without numbers or text.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              4.0,
+              8.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Anchor on screen in medium close-up delivering financial market context with serious, steady posture.",
+            "dialogue": null,
+            "characters_present": [
+              "anchor"
+            ]
+          },
+          {
+            "time_range": [
+              8.0,
+              11.5
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "B-roll wide view of a modern quantum optics lab with a central brass chandelier cryostat structure.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Extreme close-up of a golden quantum processor module mounted on a cooled laboratory plate.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "studio",
+        "notes": "VO: The release triggered a global selloff in AI-related stocks, including the largest single-day market-value loss in U.S. history at the time — roughly 590 billion dollars wiped from Nvidia in one session. Moving to quantum computing: in late 2024, Google unveiled its Willow quantum chip.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_003",
+        "duration_s": 15.0,
+        "narrative_purpose": "Explain quantum error correction threshold milestone and introduce the EU AI Act entry into force.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              4.0
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Wordless visual animation of glowing blue spherical particles converging into orderly grid nodes, representing reduced error.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              4.0,
+              7.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Anchor back on screen presenting in the newsroom studio, transitioning smoothly to global policy news.",
+            "dialogue": null,
+            "characters_present": [
+              "anchor"
+            ]
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "B-roll exterior shot of a modern glass legislative assembly building under afternoon sun.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "B-roll interior shot of an empty international summit chamber with polished wooden desks and clean light walls.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "broll_quantum_lab",
+        "notes": "VO: Willow demonstrated for the first time that adding more physical qubits to a logical qubit reduced the error rate — crossing the long-sought below-threshold milestone for quantum error correction. In regulatory news, on August 1st, 2024, the European Union's AI Act — the world's first comprehensive AI law — entered into force.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_004",
+        "duration_s": 15.0,
+        "narrative_purpose": "Detail EU AI Act phase-in timeline and sign off the broadcast.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              4.0
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Abstract wordless motion graphic displaying three glowing horizontal stepped tiers lighting up sequentially in yellow, orange, and blue.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              4.0,
+              8.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Anchor in medium close-up summarizing the compliance timeline with professional clarity.",
+            "dialogue": null,
+            "characters_present": [
+              "anchor"
+            ]
+          },
+          {
+            "time_range": [
+              8.0,
+              11.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Anchor nods slightly toward camera delivering the final closing sentence.",
+            "dialogue": null,
+            "characters_present": [
+              "anchor"
+            ]
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "Wide studio shot showing the anchor at the desk as the studio background illumination dims gently to a calm holding loop.",
+            "dialogue": null,
+            "characters_present": [
+              "anchor"
+            ]
+          }
+        ],
+        "primary_location": "studio",
+        "notes": "VO: The law phases in obligations by risk tier: bans on unacceptable-risk practices from February 2025, and duties for general-purpose AI models from August 2025. That covers today's bulletin. Thank you for watching.",
+        "audit_notes": ""
+      }
+    ]
+  }
+}

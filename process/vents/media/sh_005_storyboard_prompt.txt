@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 medium -> P2 close-up -> P3 medium schematic -> P4 wide
+
+[PANEL 1]
+SHOT: medium eye-level
+PLACEMENT: Stylized solar ray icon positioned in upper left; large strike-through cross overlaying it.
+ACTION: Solar light ray fading out completely into total abyssal blackness.
+ENV: Deep ocean darkness devoid of sunlight.
+
+[PANEL 2]
+SHOT: close-up microscopic view
+PLACEMENT: Chemosynthetic bacterial cells floating in central frame.
+ACTION: Oval bacterial cells absorbing glowing chemical particle streams from surrounding current.
+ENV: Stylized dark teal fluid background with luminous chemical particle tracks.
+
+[PANEL 3]
+SHOT: medium schematic eye-level
+PLACEMENT: Molecular conversion diagram centered in frame.
+ACTION: Hydrogen sulphide molecular icons oxidizing and transferring energy to form sugar molecules from carbon dioxide.
+ENV: Clean dark motion graphic interface with vector chemical bonds and energy symbols.
+
+[PANEL 4]
+SHOT: wide eye-level
+PLACEMENT: Cluster of bacterial colonies glowing soft green/cyan in lower frame.
+ACTION: Glowing energy pathways radiating outward from bacterial cells into the surrounding ecosystem.
+ENV: Dark abyssal seabed illuminated by stylized biological energy pathways.
+
+[RENDERED TEXT]
+No panel numbers, captions, or watermarks.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 1 refs (character / prop / location anchors).

@@ -1,0 +1,170 @@
+{
+  "content": {
+    "language": "en-US",
+    "overall_style": "warm vintage storybook illustration, 1900s New York flat, soft watercolor textures, rich muted tones",
+    "character_anchors": [
+      {
+        "character_id": "char_001",
+        "appearance_prompt": "A slender young woman in her early twenties with expressive dark eyes and cascading brown hair reaching past her knees, wearing a modest turn-of-the-century dress.",
+        "appearance_states": [
+          {
+            "state_id": "short_curls",
+            "from_segment": "seg_012",
+            "appearance_prompt": "A slender young woman in her early twenties with expressive dark eyes and short, tight brown curls covering her head, wearing a modest turn-of-the-century dress."
+          }
+        ]
+      },
+      {
+        "character_id": "char_002",
+        "appearance_prompt": "A tall, thin 22-year-old man with serious dark eyes and neat brown hair, wearing a worn dark 1900s overcoat without gloves.",
+        "appearance_states": []
+      }
+    ],
+    "illustrations": [
+      {
+        "segment_id": "seg_001",
+        "image_prompt": "Inside a modest 1900s New York flat, a young woman sitting at a small wooden table counting a pile of copper pennies and coins near a window.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_002",
+        "image_prompt": "A young woman collapsed on a worn, shabby small couch in a modest dimly lit living room, weeping quietly.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_003",
+        "image_prompt": "The vestibule of an old turn-of-the-century New York apartment building, featuring a letter box and an electric doorbell with a faded name card.",
+        "characters_in_segment": []
+      },
+      {
+        "segment_id": "seg_004",
+        "image_prompt": "A warm cozy doorway inside the apartment flat where a loving young couple embrace near the entrance.",
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_005",
+        "image_prompt": "A young woman standing by a winter window, gazing out pensively at a gray cat walking along a wooden backyard fence.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_006",
+        "image_prompt": "A slender young woman standing before a narrow pier glass mirror between two apartment windows, letting down her long thick hair.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_007",
+        "image_prompt": "A grand conceptual scene illustrating mythical royal treasures alongside an antique gold pocket watch.",
+        "characters_in_segment": []
+      },
+      {
+        "segment_id": "seg_008",
+        "image_prompt": "A beautiful young woman standing in a cozy room, her long brown hair flowing like a cascade past her knees, a tear falling on the worn red carpet.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_009",
+        "image_prompt": "A young woman in a worn brown jacket and brown hat hurrying down an old apartment staircase toward the street outside.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_010",
+        "image_prompt": "Inside a Victorian hair shop with shop sign reading Madame Sofronie, a large stern shopkeeper inspecting a young woman's long brown hair.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_011",
+        "image_prompt": "A delicate platinum watch fob chain resting on a shop counter in an elegant turn-of-the-century store.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_012",
+        "image_prompt": "A young woman with short curly hair standing by a mirror in her flat, holding a hot curling iron over a gas flame.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_013",
+        "image_prompt": "In a cozy kitchen at dusk, a stove with a frying pan hot with dinner chops, a young woman with short curly hair sitting by the table listening toward the door.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_014",
+        "image_prompt": "A serious thin young man in an overcoat entering the doorway of the flat, staring motionless at his young wife.",
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_015",
+        "image_prompt": "A young woman with short curly hair rushing up to her husband, speaking eagerly while he looks around the room bewildered.",
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_016",
+        "image_prompt": "A warm emotional scene of a young husband tenderly embracing his wife in the middle of their cozy living room.",
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_017",
+        "image_prompt": "A young woman opening a small paper-wrapped package on the wooden table, revealing a set of ornate pure tortoise shell combs with jeweled rims.",
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_018",
+        "image_prompt": "A smiling young woman holding out a shining platinum watch fob chain in her open palm toward her husband.",
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_019",
+        "image_prompt": "A young man leaning back on a small shabby couch with his hands behind his head, smiling warmly at his wife.",
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_020",
+        "image_prompt": "A glowing warm winter scene inside the small apartment window at night, with Christmas lights outside in early 1900s New York.",
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      }
+    ]
+  }
+}

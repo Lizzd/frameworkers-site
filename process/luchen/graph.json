@@ -1,0 +1,1183 @@
+{
+ "key": "luchen",
+ "title": "Shatter",
+ "genre": "Donghua · Xianxia",
+ "cat": "Narrative",
+ "prompt": "《Shatter · Episode 1》— a xianxia cultivation short. On a late-Tang night at a ruined mountain-sect outpost, white-haired Lu Chen — the last name left on his clan's sect rolls — can raise only a wick-thin thread of white spirit-energy. On the triennial spirit-test, a green-aura enforcer forces his palm onto the lone jade testing-disc; it flickers and dies. The enforcer brands his spirit-root 'dead ash,' seizes his wrist, and a clash of energies blasts him through the wall — his glass-like spirit-core, webbed with cracks, shatters. But the blow's residual force also slays a bone-jackal demon lurking in the yard, and its cracked, crimson demon-core answers his blood, filling the 'cripple's' palm with a red light that belongs to no orthodox path. Stylized 2D hand-drawn Chinese animation (donghua — clean ink lines, thick painterly color, dark cinematic illustration, non-photoreal, non-3D), Lu Chen's first-person inner monologue and the enforcer's dialogue in Mandarin, Chinese subtitles, and foley.",
+ "source": {
+  "type": "subrun",
+  "path": "sub_agents/runs/luchen_shatter_01_v5"
+ },
+ "generated_at": "2026-09-09T15:56:34+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 1
+  },
+  {
+   "id": "Story",
+   "agent": "StoryAgent",
+   "label": "Story",
+   "step": "",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "Keyframes",
+   "agent": "KeyframeSheetAgent",
+   "label": "Keyframe sheet",
+   "step": "",
+   "order": 2,
+   "n": 27
+  },
+  {
+   "id": "ShotPrompts",
+   "agent": "ShotPromptAgent",
+   "label": "Shot prompts",
+   "step": "",
+   "order": 3,
+   "n": 5
+  },
+  {
+   "id": "Clips",
+   "agent": "ClipAgent",
+   "label": "Clips",
+   "step": "",
+   "order": 4,
+   "n": 5
+  },
+  {
+   "id": "Narration",
+   "agent": "NarratorAgent",
+   "label": "Narration",
+   "step": "",
+   "order": 5,
+   "n": 6
+  },
+  {
+   "id": "Final",
+   "agent": "CompositorAgent",
+   "label": "Final cut",
+   "step": "",
+   "order": 6,
+   "n": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "user_goal",
+   "stage": "Inputs",
+   "kind": "text",
+   "label": "user goal",
+   "src_name": "user_goal.txt",
+   "bytes": 3808,
+   "caption": "The user's instruction, verbatim.",
+   "scope": "",
+   "file": "process/luchen/media/user_goal.txt",
+   "excerpt": "玄幻修仙国漫短片《碎 · 第一集》：晚唐气质的山野宗门边陲，一间废墟般的旧屋，月光从破窗斜入。陆家在宗门山籍上只剩最后一个名字。白发青年陆沉盘膝吐纳，掌心只凝得起一缕细弱如灯芯的白色灵气——这点微薄修为，是陆家保住山籍的最后指望。三年一度的测灵复核之夜，一名孔武有力、周身缠绕幽绿灵气的执法修士破门而入，把唯一一枚测灵玉盘重重拍在他面前，逼他当掌按验：玉盘只亮起一丝微光，旋即黯灭。执法修士狞笑宣判：「灵根如死灰，也配占宗门名籍？陆沉，废物就该有废物的下场！」陆沉攥紧玉盘起身怒驳，还要再验一次；执法修士不耐，欺身上前一把扼住他手腕，掌中幽绿灵气暴涨与陆沉掌心残存的白芒猛然对撞、迸出刺目火花，随即被他一掌轰飞、整个人撞穿身后土墙。轰飞坠地…"
+  },
+  {
+   "id": "story",
+   "stage": "Story",
+   "kind": "json",
+   "label": "story",
+   "src_name": "story.json",
+   "bytes": 18336,
+   "caption": "Story: logline, characters, locations, shot list with panel beats.",
+   "scope": "",
+   "file": "process/luchen/media/story.json",
+   "excerpt": "{\"title\": \"碎 · 掌心裂红\", \"logline\": \"想替陆家保住最后山籍的白发青年陆沉，被执法修士逼着当夜复核测灵；测灵玉盘黯灭、丹田灵核碎裂后，他若彻底倒下，陆家之名将从宗门山籍上被抹去。可击碎他的那一掌也误杀了暗伏妖兽，裂纹妖丹循血认主，让“废人”的掌心第一次亮起不属于旧仙途的红光。\", \"setting\": \"晚唐气质的架空中土山野宗门边陲，玄幻修仙国漫传统；破败屋舍、荒院荆棘、宗门山籍制度带有唐末门阀与山门法度的压迫感。角色为汉族风貌的东亚面孔，服饰取唐风窄袖、束带、旧麻布与执法黑袍的混合设计。\", \"style_anchor\": \"2D 国漫手绘电影短片，干净自信的墨线与厚涂上色，暗黑电影感彩色插画质感，非…"
+  },
+  {
+   "id": "bone_jackal_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "bone_jackal anchor",
+   "src_name": "bone_jackal.png",
+   "bytes": 2969680,
+   "caption": "Identity reference card for character bone_jackal — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/luchen/media/bone_jackal_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "dantian_inner_space_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "dantian_inner_space anchor",
+   "src_name": "dantian_inner_space.png",
+   "bytes": 2711034,
+   "caption": "Identity reference card for location dantian_inner_space — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/luchen/media/dantian_inner_space_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "enforcer_xu_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "enforcer_xu anchor",
+   "src_name": "enforcer_xu.png",
+   "bytes": 2742633,
+   "caption": "Identity reference card for character enforcer_xu — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/luchen/media/enforcer_xu_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "lu_chen_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "lu_chen anchor",
+   "src_name": "lu_chen.png",
+   "bytes": 2939217,
+   "caption": "Identity reference card for character lu_chen — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/luchen/media/lu_chen_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "ruined_lu_house_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "ruined_lu_house anchor",
+   "src_name": "ruined_lu_house.png",
+   "bytes": 2610371,
+   "caption": "Identity reference card for location ruined_lu_house — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/luchen/media/ruined_lu_house_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "thorn_courtyard_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "thorn_courtyard anchor",
+   "src_name": "thorn_courtyard.png",
+   "bytes": 2519215,
+   "caption": "Identity reference card for location thorn_courtyard — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/luchen/media/thorn_courtyard_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "bone_jackal_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "bone_jackal prompt",
+   "src_name": "bone_jackal.txt",
+   "bytes": 2246,
+   "caption": "Image prompt used for this keyframe asset.",
+   "scope": "",
+   "file": "process/luchen/media/bone_jackal_prompt.txt",
+   "excerpt": "# gpt-image-2 · t2i · size=1536x1024 # refs: (none) Rendered entirely in this visual style / medium (governs the whole image): 2D 国漫手绘电影短片，干净自信的墨线与厚涂上色，暗黑电影感彩色插画质感，非写实、非 3D。冷蓝月光与低饱和土灰环境为底，幽绿与血红高对比发光元素形成强烈冷暖冲突，阴影厚重、颗粒细腻、边缘有手绘笔触。 A single-subject character reference card. The single 16:9 widescreen image is composed of T…"
+  },
+  {
+   "id": "dantian_inner_space_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "dantian_inner_space prompt",
+   "src_name": "dantian_inner_space.txt",
+   "bytes": 2355,
+   "caption": "Image prompt used for this keyframe asset.",
+   "scope": "",
+   "file": "process/luchen/media/dantian_inner_space_prompt.txt",
+   "excerpt": "# gpt-image-2 · t2i · size=1536x1024 # refs: (none) Rendered entirely in this visual style / medium (governs the whole image): 2D 国漫手绘电影短片，干净自信的墨线与厚涂上色，暗黑电影感彩色插画质感，非写实、非 3D。冷蓝月光与低饱和土灰环境为底，幽绿与血红高对比发光元素形成强烈冷暖冲突，阴影厚重、颗粒细腻、边缘有手绘笔触。 A single physical place rendered as a location reference card. The single 16:9 widescreen im…"
+  },
+  {
+   "id": "enforcer_xu_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "enforcer_xu prompt",
+   "src_name": "enforcer_xu.txt",
+   "bytes": 2327,
+   "caption": "Image prompt used for this keyframe asset.",
+   "scope": "",
+   "file": "process/luchen/media/enforcer_xu_prompt.txt",
+   "excerpt": "# gpt-image-2 · t2i · size=1536x1024 # refs: (none) Rendered entirely in this visual style / medium (governs the whole image): 2D 国漫手绘电影短片，干净自信的墨线与厚涂上色，暗黑电影感彩色插画质感，非写实、非 3D。冷蓝月光与低饱和土灰环境为底，幽绿与血红高对比发光元素形成强烈冷暖冲突，阴影厚重、颗粒细腻、边缘有手绘笔触。 A single-subject character reference card. The single 16:9 widescreen image is composed of T…"
+  },
+  {
+   "id": "lu_chen_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "lu_chen prompt",
+   "src_name": "lu_chen.txt",
+   "bytes": 2387,
+   "caption": "Image prompt used for this keyframe asset.",
+   "scope": "",
+   "file": "process/luchen/media/lu_chen_prompt.txt",
+   "excerpt": "# gpt-image-2 · t2i · size=1536x1024 # refs: (none) Rendered entirely in this visual style / medium (governs the whole image): 2D 国漫手绘电影短片，干净自信的墨线与厚涂上色，暗黑电影感彩色插画质感，非写实、非 3D。冷蓝月光与低饱和土灰环境为底，幽绿与血红高对比发光元素形成强烈冷暖冲突，阴影厚重、颗粒细腻、边缘有手绘笔触。 A single-subject character reference card. The single 16:9 widescreen image is composed of T…"
+  },
+  {
+   "id": "ruined_lu_house_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "ruined_lu_house prompt",
+   "src_name": "ruined_lu_house.txt",
+   "bytes": 2355,
+   "caption": "Image prompt used for this keyframe asset.",
+   "scope": "",
+   "file": "process/luchen/media/ruined_lu_house_prompt.txt",
+   "excerpt": "# gpt-image-2 · t2i · size=1536x1024 # refs: (none) Rendered entirely in this visual style / medium (governs the whole image): 2D 国漫手绘电影短片，干净自信的墨线与厚涂上色，暗黑电影感彩色插画质感，非写实、非 3D。冷蓝月光与低饱和土灰环境为底，幽绿与血红高对比发光元素形成强烈冷暖冲突，阴影厚重、颗粒细腻、边缘有手绘笔触。 A single physical place rendered as a location reference card. The single 16:9 widescreen im…"
+  },
+  {
+   "id": "thorn_courtyard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "thorn_courtyard prompt",
+   "src_name": "thorn_courtyard.txt",
+   "bytes": 2355,
+   "caption": "Image prompt used for this keyframe asset.",
+   "scope": "",
+   "file": "process/luchen/media/thorn_courtyard_prompt.txt",
+   "excerpt": "# gpt-image-2 · t2i · size=1536x1024 # refs: (none) Rendered entirely in this visual style / medium (governs the whole image): 2D 国漫手绘电影短片，干净自信的墨线与厚涂上色，暗黑电影感彩色插画质感，非写实、非 3D。冷蓝月光与低饱和土灰环境为底，幽绿与血红高对比发光元素形成强烈冷暖冲突，阴影厚重、颗粒细腻、边缘有手绘笔触。 A single physical place rendered as a location reference card. The single 16:9 widescreen im…"
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_001 storyboard",
+   "src_name": "sh_001_storyboard.png",
+   "bytes": 2780421,
+   "caption": "Storyboard sheet for sh_001: 0 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/luchen/media/sh_001_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_001 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_001.storyboard_prompt",
+   "bytes": 9110,
+   "caption": "Image prompt that produced the sh_001 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/luchen/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. [STYLE F…"
+  },
+  {
+   "id": "sh_001_storyboard_prompt_2",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_001_storyboard prompt",
+   "src_name": "sh_001_storyboard.txt",
+   "bytes": 9223,
+   "caption": "Image prompt used for this keyframe asset.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/luchen/media/sh_001_storyboard_prompt_2.txt",
+   "excerpt": "# gpt-image-2 · i2i edit, 3 ref(s) · size=1536x1024 # refs: lu_chen.png, enforcer_xu.png, ruined_lu_house.png [ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-le…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_002 storyboard",
+   "src_name": "sh_002_storyboard.png",
+   "bytes": 2789671,
+   "caption": "Storyboard sheet for sh_002: 0 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/luchen/media/sh_002_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_002 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_002.storyboard_prompt",
+   "bytes": 9923,
+   "caption": "Image prompt that produced the sh_002 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/luchen/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. [STYLE F…"
+  },
+  {
+   "id": "sh_002_storyboard_prompt_2",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_002_storyboard prompt",
+   "src_name": "sh_002_storyboard.txt",
+   "bytes": 10059,
+   "caption": "Image prompt used for this keyframe asset.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/luchen/media/sh_002_storyboard_prompt_2.txt",
+   "excerpt": "# gpt-image-2 · i2i edit, 4 ref(s) · size=1536x1024 # refs: lu_chen.png, enforcer_xu.png, ruined_lu_house.png, sh_001_storyboard.png [ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-…"
+  },
+  {
+   "id": "sh_003_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_003 storyboard",
+   "src_name": "sh_003_storyboard.png",
+   "bytes": 2810463,
+   "caption": "Storyboard sheet for sh_003: 0 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/luchen/media/sh_003_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_003_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_003 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_003.storyboard_prompt",
+   "bytes": 6659,
+   "caption": "Image prompt that produced the sh_003 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/luchen/media/sh_003_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] VISUAL MEDIUM and aesthetic are dictated entirely by story.styl…"
+  },
+  {
+   "id": "sh_003_storyboard_prompt_2",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_003_storyboard prompt",
+   "src_name": "sh_003_storyboard.txt",
+   "bytes": 6782,
+   "caption": "Image prompt used for this keyframe asset.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/luchen/media/sh_003_storyboard_prompt_2.txt",
+   "excerpt": "# gpt-image-2 · i2i edit, 3 ref(s) · size=1536x1024 # refs: lu_chen.png, dantian_inner_space.png, sh_001_storyboard.png [ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel …"
+  },
+  {
+   "id": "sh_004_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_004 storyboard",
+   "src_name": "sh_004_storyboard.png",
+   "bytes": 3052487,
+   "caption": "Storyboard sheet for sh_004: 0 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/luchen/media/sh_004_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_004_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_004 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_004.storyboard_prompt",
+   "bytes": 7040,
+   "caption": "Image prompt that produced the sh_004 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/luchen/media/sh_004_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] VISUAL MEDIUM and aesthetic are dictated entirely by story.styl…"
+  },
+  {
+   "id": "sh_004_storyboard_prompt_2",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_004_storyboard prompt",
+   "src_name": "sh_004_storyboard.txt",
+   "bytes": 7163,
+   "caption": "Image prompt used for this keyframe asset.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/luchen/media/sh_004_storyboard_prompt_2.txt",
+   "excerpt": "# gpt-image-2 · i2i edit, 3 ref(s) · size=1536x1024 # refs: bone_jackal.png, thorn_courtyard.png, sh_001_storyboard.png [ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel …"
+  },
+  {
+   "id": "sh_005_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_005 storyboard",
+   "src_name": "sh_005_storyboard.png",
+   "bytes": 3010136,
+   "caption": "Storyboard sheet for sh_005: 0 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/luchen/media/sh_005_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_005_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_005 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_005.storyboard_prompt",
+   "bytes": 10920,
+   "caption": "Image prompt that produced the sh_005 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/luchen/media/sh_005_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. [STYLE F…"
+  },
+  {
+   "id": "sh_005_storyboard_prompt_2",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_005_storyboard prompt",
+   "src_name": "sh_005_storyboard.txt",
+   "bytes": 11073,
+   "caption": "Image prompt used for this keyframe asset.",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/luchen/media/sh_005_storyboard_prompt_2.txt",
+   "excerpt": "# gpt-image-2 · i2i edit, 5 ref(s) · size=1536x1024 # refs: bone_jackal.png, lu_chen.png, enforcer_xu.png, ruined_lu_house.png, sh_001_storyboard.png [ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then …"
+  },
+  {
+   "id": "sh_001_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_001 video prompt",
+   "src_name": "sh_001.txt",
+   "bytes": 4937,
+   "caption": "Video-generation prompt for sh_001: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/luchen/media/sh_001_video_prompt.txt",
+   "excerpt": "[设定] 晚唐气质的架空中土山野宗门边陲，宗门法度与家族山籍压迫感浓重。人物为汉族风貌东亚面孔，普通话对白带古风修仙语境。 [风格] 2D 国漫手绘电影短片。全片情绪压抑、冷峻，冲突从隐忍逐步压到羞辱爆点。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— …"
+  },
+  {
+   "id": "sh_002_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_002 video prompt",
+   "src_name": "sh_002.txt",
+   "bytes": 4972,
+   "caption": "Video-generation prompt for sh_002: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/luchen/media/sh_002_video_prompt.txt",
+   "excerpt": "[设定] 晚唐气质的架空中土山野宗门边陲，修仙门规压迫下的正面冲突。对白为普通话语境，许执法带轻微关中口音压迫感。 [风格] 2D 国漫手绘电影短片。全片情绪从隐忍对峙迅速升级为灵气冲撞与暴力镇压。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不…"
+  },
+  {
+   "id": "sh_003_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_003 video prompt",
+   "src_name": "sh_003.txt",
+   "bytes": 4152,
+   "caption": "Video-generation prompt for sh_003: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/luchen/media/sh_003_video_prompt.txt",
+   "excerpt": "[设定] 晚唐气质的架空中土修仙边陲，族群与口音方向以汉族风貌、普通话语感为主。山门法度压迫下的内视崩解，语言氛围隐忍、克制、带宗族负担。 [风格] 2D 国漫手绘电影短片。全片情绪压低，像旧仙途在体内无声断裂。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得再现任何编号、…"
+  },
+  {
+   "id": "sh_004_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_004 video prompt",
+   "src_name": "sh_004.txt",
+   "bytes": 3663,
+   "caption": "Video-generation prompt for sh_004: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/luchen/media/sh_004_video_prompt.txt",
+   "excerpt": "[设定] 晚唐气质的架空中土山野宗门边陲，玄幻修仙氛围压抑冷峻。语言与气息偏中土汉族山门体系，但本 shot 无人开口。 [风格] 2D 国漫手绘电影短片。全片情绪基调为暴力余波后的冷静、残酷与窒息。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得再现任何编号、文字或网格线…"
+  },
+  {
+   "id": "sh_005_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_005 video prompt",
+   "src_name": "sh_005.txt",
+   "bytes": 5392,
+   "caption": "Video-generation prompt for sh_005: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/luchen/media/sh_005_video_prompt.txt",
+   "excerpt": "[设定] 晚唐气质的架空中土山野宗门边陲，汉族风貌修仙者之间以普通话交锋，口音可带轻微关中压迫感。宗门法度与家族出身的等级羞辱笼罩全场。 [风格] 2D 国漫手绘电影短片。情绪从受辱濒死压到极低，再转向血红觉醒的冷硬反击。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是…"
+  },
+  {
+   "id": "sh_001_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_001 clip",
+   "src_name": "sh_001.mp4",
+   "bytes": 4137588,
+   "caption": "Rendered clip for sh_001 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_001",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/luchen/media/sh_001_clip_poster.jpg",
+   "file": "process/luchen/media/sh_001_clip.mp4"
+  },
+  {
+   "id": "sh_002_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_002 clip",
+   "src_name": "sh_002.mp4",
+   "bytes": 4204805,
+   "caption": "Rendered clip for sh_002 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_002",
+   "w": 864,
+   "h": 496,
+   "dur": 15.07,
+   "poster": "process/luchen/media/sh_002_clip_poster.jpg",
+   "file": "process/luchen/media/sh_002_clip.mp4"
+  },
+  {
+   "id": "sh_003_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_003 clip",
+   "src_name": "sh_003.mp4",
+   "bytes": 4098014,
+   "caption": "Rendered clip for sh_003 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_003",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/luchen/media/sh_003_clip_poster.jpg",
+   "file": "process/luchen/media/sh_003_clip.mp4"
+  },
+  {
+   "id": "sh_004_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_004 clip",
+   "src_name": "sh_004.mp4",
+   "bytes": 4516139,
+   "caption": "Rendered clip for sh_004 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_004",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/luchen/media/sh_004_clip_poster.jpg",
+   "file": "process/luchen/media/sh_004_clip.mp4"
+  },
+  {
+   "id": "sh_005_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_005 clip",
+   "src_name": "sh_005.mp4",
+   "bytes": 4410036,
+   "caption": "Rendered clip for sh_005 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_005",
+   "w": 864,
+   "h": 496,
+   "dur": 15.07,
+   "poster": "process/luchen/media/sh_005_clip_poster.jpg",
+   "file": "process/luchen/media/sh_005_clip.mp4"
+  },
+  {
+   "id": "line_gap_00",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line gap_00",
+   "src_name": "gap_00.wav",
+   "bytes": 199724,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "file": "process/luchen/media/line_gap_00.mp3",
+   "dur": 4.16
+  },
+  {
+   "id": "line_gap_01",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line gap_01",
+   "src_name": "gap_01.wav",
+   "bytes": 284204,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "file": "process/luchen/media/line_gap_01.mp3",
+   "dur": 5.92
+  },
+  {
+   "id": "line_gap_02",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line gap_02",
+   "src_name": "gap_02.wav",
+   "bytes": 672044,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "file": "process/luchen/media/line_gap_02.mp3",
+   "dur": 14.0
+  },
+  {
+   "id": "line_gap_03",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line gap_03",
+   "src_name": "gap_03.wav",
+   "bytes": 163244,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "file": "process/luchen/media/line_gap_03.mp3",
+   "dur": 3.4
+  },
+  {
+   "id": "subtitles",
+   "stage": "Narration",
+   "kind": "text",
+   "label": "subtitles",
+   "src_name": "narration.srt",
+   "bytes": 1263,
+   "caption": "Subtitle track (SRT).",
+   "scope": "",
+   "file": "process/luchen/media/subtitles.srt",
+   "excerpt": "1 00:00:00,000 --> 00:00:03,900 今夜若过不了复核，陆家最后一笔仙籍就没了。 2 00:00:05,120 --> 00:00:07,700 三年复核，陆辰把掌按上去。 3 00:00:07,700 --> 00:00:10,310 旧名悬一线。 4 00:00:09,620 --> 00:00:12,140 灵根如死灰，也配占宗门名额？ 5 00:00:12,300 --> 00:00:15,200 陆辰，废物就该有废物的下场。 6 00:00:15,440 --> 00:00:20,460 再验一次，他刚才量过，量过。 7 00:00:20,540 --> 00:00:22,120 萤火也敢叫星辰？…"
+  },
+  {
+   "id": "narration_cues",
+   "stage": "Narration",
+   "kind": "json",
+   "label": "narration cues",
+   "src_name": "narration.json",
+   "bytes": 2500,
+   "caption": "Narration plan: voice, delivery instructions, timed cues per shot.",
+   "scope": "",
+   "file": "process/luchen/media/narration_cues.json",
+   "excerpt": "{\"voice\": \"\", \"voice_instructions\": \"A weathered middle-aged male voice, deeply emotional and restrained, carrying grief, dread, and a buried ember of defiance. Speak in Mandarin with a solemn, literary wuxia-xianxia register, low timbre, slow pacing, and clear diction. Let the voice tighten as the old path collapses, …"
+  },
+  {
+   "id": "final_film",
+   "stage": "Final",
+   "kind": "video",
+   "label": "final film",
+   "src_name": "final.mp4",
+   "bytes": 12317297,
+   "caption": "Delivered film: clips + narration + subtitles + mix.",
+   "scope": "",
+   "file": "videos/luchen.mp4",
+   "poster": "posters/luchen.jpg",
+   "final": true,
+   "w": 864,
+   "h": 496,
+   "dur": 75.53
+  }
+ ],
+ "edges": [
+  {
+   "from": "user_goal",
+   "to": "Story",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "Keyframes",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "lu_chen_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "enforcer_xu_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "bone_jackal_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "ruined_lu_house_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "dantian_inner_space_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "thorn_courtyard_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "lu_chen_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "enforcer_xu_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "bone_jackal_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "ruined_lu_house_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "dantian_inner_space_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "thorn_courtyard_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "bone_jackal_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "dantian_inner_space_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "enforcer_xu_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "lu_chen_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "ruined_lu_house_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "thorn_courtyard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt_2",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt_2",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt_2",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt_2",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard_prompt_2",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "sh_005_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard_prompt",
+   "to": "sh_005_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt_2",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt_2",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt_2",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt_2",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard_prompt_2",
+   "to": "sh_005_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_video_prompt",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_video_prompt",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_video_prompt",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_video_prompt",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_video_prompt",
+   "to": "sh_005_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "narration_cues",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_gap_00",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_gap_01",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_gap_02",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_gap_03",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "subtitles",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  }
+ ],
+ "final": "final_film",
+ "notes": [
+  "Early cine-chain run: the sequence Story → Keyframes → Shot prompts → Clips → Narration → Final is fixed, so connections are structural."
+ ]
+}

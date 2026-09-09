@@ -1,0 +1,29 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 5 panels arranged in a 3x2 grid (panel 1 = top-left, panel 5 = bottom-middle; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=5 → 3×2 with the sixth cell as solid neutral gray.
+
+[STYLE FOUNDATION]
+Stylized 3D cartoon animation (Pixar/Arcane aesthetic blend). High-contrast cinematic lighting: deep obsidian shadows pierced by aggressive, strobing siege-fire orange and sickly magical cyan. Textures are stylized but tactile—rough spun wool, cracked glowing marble, and soft expressive facial rigs with dramatic rim lighting.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the alaric character anchor and the FRONT section of the elara character anchor. Medium two-shot inside the great_hall_ruins. Alaric's midnight-blue velvet robes take up the center of the frame as his hands violently pull the sentient dark-leather hat (the_relic) away from Elara. He wraps the thick fabric around the hat, hiding it. He looks sharply away, avoiding eye contact. Elara stands in the foreground-left, her hands slightly raised in shock. Harsh orange siege-fire casts deep shadows.
+
+[PANEL 2]
+Use the FACE section of the elara character anchor for this extreme close-up. Elara's face dominates the frame from a slightly low angle. Her huge green eyes are wide with desperation. A distinct tear cuts through the thick black soot on her left cheek, catching the orange firelight from off-screen. Her tiny fingers grasp desperately at empty air at the bottom edge of the frame. The background is pure shadow filled with drifting ash motes.
+
+[PANEL 3]
+Use the FRONT section of the alaric character anchor. Medium over-the-shoulder shot from behind Alaric. Alaric has his back fully turned to the camera, his shoulders slumped in profound shame. In the foreground, his hands tightly grip his dead, sputtering crystal-tipped wooden staff, white-knuckling the wood. Over his shoulder, Elara is visible in the background, staring at him. The lighting is cold cyan magical ambient mixing with orange rim light.
+
+[PANEL 4]
+Use the OVERHEAD section of the great_hall_ruins location anchor and FRONT sections for both characters. Wide shot from a high angle. The colossal gothic hall spreads out, its cracked marble floor littered with smashed floating candles. Elara stands completely frozen, a tiny figure in the exact center of the vast empty floor. Ahead of her, Alaric strides rapidly away toward the massive oak exit doors at the far end. Long, aggressive shadows stretch across the floor from the orange siege-fire.
+
+[PANEL 5]
+Use the FRONT section of the great_hall_ruins location anchor. Extreme wide shot. The heavy oak doors at the end of the hall slam shut with thunderous impact. Thick clouds of white masonry dust drop from the gothic ceiling arches. Elara is left entirely alone as a small silhouette in the foreground, swallowed by deep obsidian shadows. A sliver of aggressive orange light hits the dust before the doors seal completely shut.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 2 reference image(s) in this i2i call are PREVIOUS-SHOT storyboards (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to maintain CROSS-SHOT continuity in: color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality — so the final cut sequence flows smoothly. Identity (character / location / ship details) is still locked exclusively by the FIRST 4 refs (character anchors / location anchor / style anchor).

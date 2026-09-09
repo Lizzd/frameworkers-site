@@ -1,0 +1,450 @@
+{
+ "key": "octopus",
+ "title": "Strange Nature: The Octopus",
+ "genre": "Visualized Podcast · Audio-driven",
+ "cat": "Explainer",
+ "prompt": "A visualized podcast: the user supplies one episode's audio plus its transcript; the system builds an illustrated short with a consistent host figure and key-point visuals, keeps the ORIGINAL audio untouched (no re-dub), and burns English subtitles. Episode: 'Strange Nature — The Octopus' (three hearts, copper-based blue blood, arm-distributed neurons, colorblind camouflage). Key points are burned as bold on-screen cards (top) while the spoken line runs as a caption (bottom); the illustrated pages themselves stay wordless. (The 'user recording' is a synthesized 59s host read standing in for a real one — archived below, so the exact same input reproduces the experiment.)",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/topic13_podcast/workspace_global_20260727_173842"
+ },
+ "generated_at": "2026-09-09T15:56:39+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 2
+  },
+  {
+   "id": "IntakeAudioAgent__step_1_fa542f14",
+   "agent": "IntakeAudioAgent",
+   "label": "IntakeAudio",
+   "step": "step_1_fa542f14",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "TranscriptionAgent__step_1_fa542f14",
+   "agent": "TranscriptionAgent",
+   "label": "Transcription",
+   "step": "step_1_fa542f14",
+   "order": 2,
+   "n": 1
+  },
+  {
+   "id": "NarrationAgent__step_1_fa542f14",
+   "agent": "NarrationAgent",
+   "label": "Narration",
+   "step": "step_1_fa542f14",
+   "order": 3,
+   "n": 2
+  },
+  {
+   "id": "IllustrationAgent__step_1_fa542f14",
+   "agent": "IllustrationAgent",
+   "label": "Illustration",
+   "step": "step_1_fa542f14",
+   "order": 4,
+   "n": 9
+  },
+  {
+   "id": "NarratorAgent__step_1_fa542f14",
+   "agent": "NarratorAgent",
+   "label": "Narrator",
+   "step": "step_1_fa542f14",
+   "order": 5,
+   "n": 4
+  },
+  {
+   "id": "CompositorAgent__step_1_fa542f14",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_1_fa542f14",
+   "order": 6,
+   "n": 2
+  }
+ ],
+ "nodes": [
+  {
+   "id": "podcast_audio",
+   "stage": "Inputs",
+   "kind": "audio",
+   "label": "podcast audio",
+   "src_name": "20260727_173842_415022_podcast_audio.wav",
+   "bytes": 2832044,
+   "caption": "Raw user upload (mime=audio/wav).",
+   "scope": "global",
+   "file": "process/octopus/media/podcast_audio.mp3",
+   "dur": 59.0
+  },
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260727_173842_419614.json",
+   "bytes": 1162,
+   "caption": "Structured metadata document (JSON) for a user-submitted text brief. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/octopus/media/creative_brief.json",
+   "excerpt": "{\"text\": \"我会提供一期播客的音频 + 对应文字稿。帮我做成一条可视化播客短片(主持人形象保持一致 + 要点字幕卡),用我的原音频不要重配,英文字幕。\\n\\n文字稿如下(逐字):\\nWelcome back to Strange Nature — I'm your host, and today: the octopus.\\n\\nAn octopus has three hearts. Two pump blood through the gills, and one drives it around the body. That blood runs blue, because it carries oxygen with…"
+  },
+  {
+   "id": "intakeaudioagent_output",
+   "stage": "IntakeAudioAgent__step_1_fa542f14",
+   "kind": "json",
+   "label": "IntakeAudioAgent output",
+   "src_name": "step_1_fa542f14_intakeaudioagent_exec_1.json",
+   "bytes": 382,
+   "caption": "Structured metadata document (JSON) for a user-uploaded audio clip. Payload carries the audio kind (speech / music / ambient), an audible summary, and audio-asset metadata.",
+   "scope": "global",
+   "file": "process/octopus/media/intakeaudioagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"kind\": \"speech\", \"audio_summary\": \"A female host speaks in an engaging, informative English tone about fascinating biological traits of the octopus.\", \"audio_asset\": {\"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/topic13_podcast/workspace_global_20260727_173842/inputs/20260727_173842_415022_podcast…"
+  },
+  {
+   "id": "transcriptionagent_output",
+   "stage": "TranscriptionAgent__step_1_fa542f14",
+   "kind": "json",
+   "label": "TranscriptionAgent output",
+   "src_name": "step_1_fa542f14_transcriptionagent_exec_2.json",
+   "bytes": 2774,
+   "caption": "Transcript (en): 10 timestamped segment(s). SRT-shaped subtitle artifact — ready for direct burn-in by a compositor's subtitle track (each segment is one SRT cue with start/end seconds + text). Also usable as the 'source text' input to a translation step when bilingual subtitles are needed.",
+   "scope": "global",
+   "file": "process/octopus/media/transcriptionagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"segments\": [{\"segment_id\": \"seg_001\", \"start_time\": 0.0, \"end_time\": 2.8, \"text\": \"Welcome back to Strange Nature.\"}, {\"segment_id\": \"seg_002\", \"start_time\": 2.8, \"end_time\": 7.0, \"text\": \"I'm your host, and today, the octopus.\"}, {\"segment_id\": \"seg_003\", \"start_time\": 7.0, \"end_time\": 15.0, \"text\"…"
+  },
+  {
+   "id": "narrationagent_output",
+   "stage": "NarrationAgent__step_1_fa542f14",
+   "kind": "json",
+   "label": "NarrationAgent output",
+   "src_name": "step_1_fa542f14_narrationagent_exec_3.json",
+   "bytes": 5324,
+   "caption": "Illustrated-storytelling narration script — the NARRATIVE PLAN of this film: 7 segment(s), 10 narrator line(s). Carries per-segment image_prompt + optional on-screen key-point card + per-line TTS text + cross-segment art-style anchor. Consumed by an illustration image step and a narrator TTS step.",
+   "scope": "global",
+   "file": "process/octopus/media/narrationagent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"overall_style\": \"scientific documentary illustration, sleek digital painting, luminous marine colors, atmospheric depth\", \"voice\": \"\", \"voice_instructions\": \"Male narrator voice with an engaging, inquisitive, articulate tone. Speak with clear American English pronunciation at a moderate, fascinat…"
+  },
+  {
+   "id": "narrator_voice_spec",
+   "stage": "NarrationAgent__step_1_fa542f14",
+   "kind": "json",
+   "label": "narrator voice spec",
+   "src_name": "step_1_fa542f14_narrator_voice_spec.json",
+   "bytes": 286,
+   "caption": "Narrator voice direction (gender / tone / pace / warmth) the illustrated-story author cast for the read-aloud narration — consumed by the narrator TTS step.",
+   "scope": "global",
+   "file": "process/octopus/media/narrator_voice_spec.json",
+   "excerpt": "{\"voice\": \"\", \"voice_instructions\": \"Male narrator voice with an engaging, inquisitive, articulate tone. Speak with clear American English pronunciation at a moderate, fascinated pace. Sound knowledgeable yet accessible, like a science podcast host sharing an extraordinary discovery.\"}"
+  },
+  {
+   "id": "illustration_anchor_char_001",
+   "stage": "IllustrationAgent__step_1_fa542f14",
+   "kind": "image",
+   "label": "illustration anchor char 001",
+   "src_name": "step_1_fa542f14_illustration_anchor_char_001.png",
+   "bytes": 5169113,
+   "caption": "",
+   "scope": "global",
+   "file": "process/octopus/media/illustration_anchor_char_001.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_001",
+   "stage": "IllustrationAgent__step_1_fa542f14",
+   "kind": "image",
+   "label": "illustration seg 001",
+   "src_name": "step_1_fa542f14_illustration_seg_001.png",
+   "bytes": 6700732,
+   "caption": "Illustration image (png) for narration segment seg_001 (order 1/7). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/octopus/media/illustration_seg_001.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_002",
+   "stage": "IllustrationAgent__step_1_fa542f14",
+   "kind": "image",
+   "label": "illustration seg 002",
+   "src_name": "step_1_fa542f14_illustration_seg_002.png",
+   "bytes": 7114608,
+   "caption": "Illustration image (png) for narration segment seg_002 (order 2/7). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/octopus/media/illustration_seg_002.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_003",
+   "stage": "IllustrationAgent__step_1_fa542f14",
+   "kind": "image",
+   "label": "illustration seg 003",
+   "src_name": "step_1_fa542f14_illustration_seg_003.png",
+   "bytes": 7139710,
+   "caption": "Illustration image (png) for narration segment seg_003 (order 3/7). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/octopus/media/illustration_seg_003.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_004",
+   "stage": "IllustrationAgent__step_1_fa542f14",
+   "kind": "image",
+   "label": "illustration seg 004",
+   "src_name": "step_1_fa542f14_illustration_seg_004.png",
+   "bytes": 7823908,
+   "caption": "Illustration image (png) for narration segment seg_004 (order 4/7). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/octopus/media/illustration_seg_004.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_005",
+   "stage": "IllustrationAgent__step_1_fa542f14",
+   "kind": "image",
+   "label": "illustration seg 005",
+   "src_name": "step_1_fa542f14_illustration_seg_005.png",
+   "bytes": 7595276,
+   "caption": "Illustration image (png) for narration segment seg_005 (order 5/7). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/octopus/media/illustration_seg_005.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_006",
+   "stage": "IllustrationAgent__step_1_fa542f14",
+   "kind": "image",
+   "label": "illustration seg 006",
+   "src_name": "step_1_fa542f14_illustration_seg_006.png",
+   "bytes": 7532006,
+   "caption": "Illustration image (png) for narration segment seg_006 (order 6/7). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/octopus/media/illustration_seg_006.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_007",
+   "stage": "IllustrationAgent__step_1_fa542f14",
+   "kind": "image",
+   "label": "illustration seg 007",
+   "src_name": "step_1_fa542f14_illustration_seg_007.png",
+   "bytes": 6876781,
+   "caption": "Illustration image (png) for narration segment seg_007 (order 7/7). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/octopus/media/illustration_seg_007.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustrationagent_output",
+   "stage": "IllustrationAgent__step_1_fa542f14",
+   "kind": "json",
+   "label": "IllustrationAgent output",
+   "src_name": "step_1_fa542f14_illustrationagent_exec_4.json",
+   "bytes": 2584,
+   "caption": "Illustration manifest (JSON): a render record of 7 page(s) aligned to narration segments. Carries no image bytes and no narrative text — the pages themselves are the separate PNG artifacts.",
+   "scope": "global",
+   "file": "process/octopus/media/illustrationagent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"overall_style\": \"scientific documentary illustration, sleek digital painting, luminous marine colors, atmospheric depth\", \"character_anchors\": [{\"character_id\": \"char_001\", \"appearance_prompt\": \"A friendly male science podcast host in his mid-30s with short neat dark brown hair, light beard stubb…"
+  },
+  {
+   "id": "aud_narrator_full",
+   "stage": "NarratorAgent__step_1_fa542f14",
+   "kind": "audio",
+   "label": "aud narrator full",
+   "src_name": "step_1_fa542f14_aud_narrator_full.wav",
+   "bytes": 2832044,
+   "caption": "[BINARY WAV FILE · mime=audio/wav · sys_id aud_narrator_full] Narrator voiceover audio bytes (59.0s, language=en-US). Concatenated TTS for an illustrated-storytelling video. Consumed by the audio-mix or compositor materializer.",
+   "scope": "global",
+   "file": "process/octopus/media/aud_narrator_full.mp3",
+   "dur": 59.0
+  },
+  {
+   "id": "narratoragent_output",
+   "stage": "NarratorAgent__step_1_fa542f14",
+   "kind": "json",
+   "label": "NarratorAgent output",
+   "src_name": "step_1_fa542f14_narratoragent_exec_5.json",
+   "bytes": 6007,
+   "caption": "[JSON MANIFEST] Narrator session manifest: 10 line(s), 7 segment(s), total 59.0s. Per-line / per-segment timing. Dev/debug view; downstream consumption goes through the sibling audio / srt / timing artifacts.",
+   "scope": "global",
+   "file": "process/octopus/media/narratoragent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"speaker\": \"\", \"lines\": [{\"line_id\": \"ln_001\", \"segment_id\": \"seg_001\", \"text\": \"Welcome back to Strange Nature.\", \"pause_after_ms\": 300}, {\"line_id\": \"ln_002\", \"segment_id\": \"seg_001\", \"text\": \"I'm your host, and today, the octopus.\", \"pause_after_ms\": 500}, {\"line_id\": \"ln_003\", \"segment_id\": \"s…"
+  },
+  {
+   "id": "narrator_segment_timing",
+   "stage": "NarratorAgent__step_1_fa542f14",
+   "kind": "json",
+   "label": "narrator segment timing",
+   "src_name": "step_1_fa542f14_narrator_segment_timing.json",
+   "bytes": 1434,
+   "caption": "[JSON MANIFEST] Narrator per-segment timing: 7 segment(s) with start / end / duration seconds. Used by a slideshow compositor to set how long each illustration stays on screen.",
+   "scope": "global",
+   "file": "process/octopus/media/narrator_segment_timing.json",
+   "excerpt": "{\"total_duration_sec\": 59.0, \"segment_timings\": [{\"segment_id\": \"seg_001\", \"start_sec\": 0.0, \"end_sec\": 5.08, \"duration_sec\": 5.08, \"line_ids\": [\"ln_001\", \"ln_002\"]}, {\"segment_id\": \"seg_002\", \"start_sec\": 5.08, \"end_sec\": 12.38, \"duration_sec\": 7.3, \"line_ids\": [\"ln_003\"]}, {\"segment_id\": \"seg_003\", \"start_sec\": 12.38…"
+  },
+  {
+   "id": "narrator_srt",
+   "stage": "NarratorAgent__step_1_fa542f14",
+   "kind": "json",
+   "label": "narrator srt",
+   "src_name": "step_1_fa542f14_narrator_srt.json",
+   "bytes": 1217,
+   "caption": "[JSON MANIFEST · SRT cues] Narrator subtitle track (language=en-US): one cue per narration line, timed against the narrator audio. Consumed by the compositor step as a burn-in subtitle source.",
+   "scope": "global",
+   "file": "process/octopus/media/narrator_srt.json",
+   "excerpt": "{\"tracks\": [{\"language\": \"en-US\", \"srt_text\": \"1\\n00:00:00,000 --> 00:00:02,282\\nWelcome back to Strange Nature.\\n\\n2\\n00:00:02,282 --> 00:00:05,080\\nI'm your host, and today, the octopus.\\n\\n3\\n00:00:05,080 --> 00:00:12,380\\nAn octopus has three hearts: two pump blood through the gills, and one drives it around the bo…"
+  },
+  {
+   "id": "compositor_final",
+   "stage": "CompositorAgent__step_1_fa542f14",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_1_fa542f14_compositor_final.mp4",
+   "bytes": 7177870,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "file": "videos/octopus.mp4",
+   "poster": "posters/octopus.jpg",
+   "final": true,
+   "w": 1920,
+   "h": 1080,
+   "dur": 59.0
+  },
+  {
+   "id": "compositoragent_output",
+   "stage": "CompositorAgent__step_1_fa542f14",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_1_fa542f14_compositoragent_exec_6.json",
+   "bytes": 1462,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/octopus/media/compositoragent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"plan\": {\"color_grade\": {\"brightness\": 0.0, \"contrast\": 0.05, \"saturation\": 0.05}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"authored_cues\": [{\"text\": \"Strange Nature: The Octopus\", \"start_sec\": 0.0, \"end_sec\": 5.08}, {\"text\": \"Thre…"
+  }
+ ],
+ "edges": [
+  {
+   "from": "podcast_audio",
+   "to": "IntakeAudioAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narrationagent_output",
+   "to": "IllustrationAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narrator_voice_spec",
+   "to": "IllustrationAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narrationagent_output",
+   "to": "NarratorAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narrator_voice_spec",
+   "to": "NarratorAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "podcast_audio",
+   "to": "NarratorAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_anchor_char_001",
+   "to": "CompositorAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_001",
+   "to": "CompositorAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_002",
+   "to": "CompositorAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_003",
+   "to": "CompositorAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_004",
+   "to": "CompositorAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_005",
+   "to": "CompositorAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_006",
+   "to": "CompositorAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_007",
+   "to": "CompositorAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_narrator_full",
+   "to": "CompositorAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "transcriptionagent_output",
+   "to": "CompositorAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "NarrationAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeaudioagent_output",
+   "to": "NarrationAgent__step_1_fa542f14",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "compositor_final",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

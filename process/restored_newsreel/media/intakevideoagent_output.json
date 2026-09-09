@@ -1,0 +1,13 @@
+{
+  "content": {
+    "language": "en",
+    "videos": [
+      {
+        "visual_summary": "In a vintage black-and-white newsreel, President Eisenhower signs a proclamation granting Alaska statehood at the White House, followed by factory workers manufacturing new 49-star American flags.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic43_restore/workspace_global_20260727_185647/inputs/20260727_185647_985735_newsreel_full.mp4"
+        }
+      }
+    ]
+  }
+}

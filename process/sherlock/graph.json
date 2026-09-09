@@ -1,0 +1,1203 @@
+{
+ "key": "sherlock",
+ "title": "The Blue Wax at the Keyhole",
+ "genre": "Graphic-novel · Mystery",
+ "cat": "Adaptation",
+ "prompt": "A classic Sherlock Holmes locked-room mystery, about 90 seconds. A gentleman is found dead in his bolted study and the Yard calls it suicide, but Holmes reads the clues, proves it was murder, and names the real killer — the victim's private secretary — standing right there in the room. A clear, straightforward deduction (no flashbacks) where Holmes explains his reasoning aloud. Colored graphic-novel style, English dialogue, English subtitles, foley.",
+ "source": {
+  "type": "subrun",
+  "path": "sub_agents/runs/sherlock_locked_study_03"
+ },
+ "generated_at": "2026-09-09T15:56:36+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 1
+  },
+  {
+   "id": "Story",
+   "agent": "StoryAgent",
+   "label": "Story",
+   "step": "",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "Keyframes",
+   "agent": "KeyframeSheetAgent",
+   "label": "Keyframe sheet",
+   "step": "",
+   "order": 2,
+   "n": 19
+  },
+  {
+   "id": "ShotPrompts",
+   "agent": "ShotPromptAgent",
+   "label": "Shot prompts",
+   "step": "",
+   "order": 3,
+   "n": 6
+  },
+  {
+   "id": "Clips",
+   "agent": "ClipAgent",
+   "label": "Clips",
+   "step": "",
+   "order": 4,
+   "n": 6
+  },
+  {
+   "id": "Narration",
+   "agent": "NarratorAgent",
+   "label": "Narration",
+   "step": "",
+   "order": 5,
+   "n": 12
+  },
+  {
+   "id": "Final",
+   "agent": "CompositorAgent",
+   "label": "Final cut",
+   "step": "",
+   "order": 6,
+   "n": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "user_goal",
+   "stage": "Inputs",
+   "kind": "text",
+   "label": "user goal",
+   "src_name": "user_goal.txt",
+   "bytes": 457,
+   "caption": "The user's instruction, verbatim.",
+   "scope": "",
+   "file": "process/sherlock/media/user_goal.txt",
+   "excerpt": "A classic Sherlock Holmes locked-room mystery, about 90 seconds. A gentleman is found dead in his bolted study and the Yard calls it suicide, but Holmes reads the clues, proves it was murder, and names the real killer — the victim's private secretary — standing right there in the room. A clear, straightforward deductio…"
+  },
+  {
+   "id": "story",
+   "stage": "Story",
+   "kind": "json",
+   "label": "story",
+   "src_name": "story.json",
+   "bytes": 26472,
+   "caption": "Story: logline, characters, locations, shot list with panel beats.",
+   "scope": "",
+   "file": "process/sherlock/media/story.json",
+   "excerpt": "{\"title\": \"The Blue Wax at the Keyhole\", \"logline\": \"Sherlock Holmes wants to overturn a tidy suicide verdict before Scotland Yard seals the case, but the bolted study seems to prove no killer could have left. If he cannot make the room confess, a murderer in mourning cuffs will walk out with the dead man's stolen fort…"
+  },
+  {
+   "id": "caleb_pike_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "caleb_pike anchor",
+   "src_name": "caleb_pike.png",
+   "bytes": 2888932,
+   "caption": "Identity reference card for character caleb_pike — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/sherlock/media/caleb_pike_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "dr_watson_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "dr_watson anchor",
+   "src_name": "dr_watson.png",
+   "bytes": 3102123,
+   "caption": "Identity reference card for character dr_watson — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/sherlock/media/dr_watson_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "inspector_lestrade_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "inspector_lestrade anchor",
+   "src_name": "inspector_lestrade.png",
+   "bytes": 2797949,
+   "caption": "Identity reference card for character inspector_lestrade — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/sherlock/media/inspector_lestrade_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sherlock_holmes_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sherlock_holmes anchor",
+   "src_name": "sherlock_holmes.png",
+   "bytes": 2778384,
+   "caption": "Identity reference card for character sherlock_holmes — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/sherlock/media/sherlock_holmes_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sir_edmund_vale_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sir_edmund_vale anchor",
+   "src_name": "sir_edmund_vale.png",
+   "bytes": 2601024,
+   "caption": "Identity reference card for character sir_edmund_vale — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/sherlock/media/sir_edmund_vale_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "upper_hallway_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "upper_hallway anchor",
+   "src_name": "upper_hallway.png",
+   "bytes": 2647180,
+   "caption": "Identity reference card for location upper_hallway — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/sherlock/media/upper_hallway_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "vale_study_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "vale_study anchor",
+   "src_name": "vale_study.png",
+   "bytes": 2495601,
+   "caption": "Identity reference card for location vale_study — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/sherlock/media/vale_study_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_001 storyboard",
+   "src_name": "sh_001_storyboard.png",
+   "bytes": 3166397,
+   "caption": "Storyboard sheet for sh_001: 4 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/sherlock/media/sh_001_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_001 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_001.storyboard_prompt",
+   "bytes": 4936,
+   "caption": "Image prompt that produced the sh_001 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/sherlock/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_002 storyboard",
+   "src_name": "sh_002_storyboard.png",
+   "bytes": 2858775,
+   "caption": "Storyboard sheet for sh_002: 5 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/sherlock/media/sh_002_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_002 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_002.storyboard_prompt",
+   "bytes": 6686,
+   "caption": "Image prompt that produced the sh_002 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/sherlock/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_003_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_003 storyboard",
+   "src_name": "sh_003_storyboard.png",
+   "bytes": 2786645,
+   "caption": "Storyboard sheet for sh_003: 5 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/sherlock/media/sh_003_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_003_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_003 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_003.storyboard_prompt",
+   "bytes": 6232,
+   "caption": "Image prompt that produced the sh_003 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/sherlock/media/sh_003_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → …"
+  },
+  {
+   "id": "sh_004_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_004 storyboard",
+   "src_name": "sh_004_storyboard.png",
+   "bytes": 3029190,
+   "caption": "Storyboard sheet for sh_004: 4 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/sherlock/media/sh_004_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_004_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_004 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_004.storyboard_prompt",
+   "bytes": 6791,
+   "caption": "Image prompt that produced the sh_004 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/sherlock/media/sh_004_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_005_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_005 storyboard",
+   "src_name": "sh_005_storyboard.png",
+   "bytes": 3095384,
+   "caption": "Storyboard sheet for sh_005: 5 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/sherlock/media/sh_005_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_005_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_005 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_005.storyboard_prompt",
+   "bytes": 5934,
+   "caption": "Image prompt that produced the sh_005 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/sherlock/media/sh_005_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_006_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_006 storyboard",
+   "src_name": "sh_006_storyboard.png",
+   "bytes": 3061262,
+   "caption": "Storyboard sheet for sh_006: 4 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_006",
+   "file": "process/sherlock/media/sh_006_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_006_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_006 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_006.storyboard_prompt",
+   "bytes": 5682,
+   "caption": "Image prompt that produced the sh_006 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_006",
+   "file": "process/sherlock/media/sh_006_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_001_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_001 video prompt",
+   "src_name": "sh_001.txt",
+   "bytes": 9482,
+   "caption": "Video-generation prompt for sh_001: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/sherlock/media/sh_001_video_prompt.txt",
+   "excerpt": "[设定] Victorian London, 1892 Bloomsbury, in the tradition of classic British locked-room detective fiction; cast is white British. The story stays around Sir Edmund Vale's townhouse study because the crime's central claim is physical confinement: a door bolted from within. [风格] 2D 彩色漫画插画（graphic-novel：干净墨线叠加丰富上色，明显非写实、非…"
+  },
+  {
+   "id": "sh_002_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_002 video prompt",
+   "src_name": "sh_002.txt",
+   "bytes": 11505,
+   "caption": "Video-generation prompt for sh_002: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/sherlock/media/sh_002_video_prompt.txt",
+   "excerpt": "[设定] Victorian London, 1892 Bloomsbury, in the tradition of classic British locked-room detective fiction; cast is white British. The story stays around Sir Edmund Vale's townhouse study because the crime's central claim is physical confinement: a door bolted from within. [风格] 2D 彩色漫画插画（graphic-novel：干净墨线叠加丰富上色，明显非写实、非…"
+  },
+  {
+   "id": "sh_003_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_003 video prompt",
+   "src_name": "sh_003.txt",
+   "bytes": 10032,
+   "caption": "Video-generation prompt for sh_003: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/sherlock/media/sh_003_video_prompt.txt",
+   "excerpt": "[设定] Victorian London, 1892 Bloomsbury, in the tradition of classic British locked-room detective fiction; cast is white British. The story stays around Sir Edmund Vale's townhouse study because the crime's central claim is physical confinement: a door bolted from within. [风格] 2D 彩色漫画插画（graphic-novel：干净墨线叠加丰富上色，明显非写实、非…"
+  },
+  {
+   "id": "sh_004_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_004 video prompt",
+   "src_name": "sh_004.txt",
+   "bytes": 9693,
+   "caption": "Video-generation prompt for sh_004: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/sherlock/media/sh_004_video_prompt.txt",
+   "excerpt": "[设定] Victorian London, 1892 Bloomsbury, in the tradition of classic British locked-room detective fiction; cast is white British. The story stays around Sir Edmund Vale's townhouse study because the crime's central claim is physical confinement: a door bolted from within. [风格] 2D 彩色漫画插画（graphic-novel：干净墨线叠加丰富上色，明显非写实、非…"
+  },
+  {
+   "id": "sh_005_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_005 video prompt",
+   "src_name": "sh_005.txt",
+   "bytes": 10649,
+   "caption": "Video-generation prompt for sh_005: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/sherlock/media/sh_005_video_prompt.txt",
+   "excerpt": "[设定] Victorian London, 1892 Bloomsbury, in the tradition of classic British locked-room detective fiction; cast is white British. The story stays around Sir Edmund Vale's townhouse study because the crime's central claim is physical confinement: a door bolted from within. [风格] 2D 彩色漫画插画（graphic-novel：干净墨线叠加丰富上色，明显非写实、非…"
+  },
+  {
+   "id": "sh_006_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_006 video prompt",
+   "src_name": "sh_006.txt",
+   "bytes": 8982,
+   "caption": "Video-generation prompt for sh_006: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_006",
+   "file": "process/sherlock/media/sh_006_video_prompt.txt",
+   "excerpt": "[设定] Victorian London, 1892 Bloomsbury, in the tradition of classic British locked-room detective fiction; cast is white British. The story stays around Sir Edmund Vale's townhouse study because the crime's central claim is physical confinement: a door bolted from within. [风格] 2D 彩色漫画插画（graphic-novel：干净墨线叠加丰富上色，明显非写实、非…"
+  },
+  {
+   "id": "sh_001_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_001 clip",
+   "src_name": "sh_001.mp4",
+   "bytes": 8243398,
+   "caption": "Rendered clip for sh_001 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_001",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.09,
+   "poster": "process/sherlock/media/sh_001_clip_poster.jpg",
+   "file": "process/sherlock/media/sh_001_clip.mp4"
+  },
+  {
+   "id": "sh_002_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_002 clip",
+   "src_name": "sh_002.mp4",
+   "bytes": 5178415,
+   "caption": "Rendered clip for sh_002 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_002",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.09,
+   "poster": "process/sherlock/media/sh_002_clip_poster.jpg",
+   "file": "process/sherlock/media/sh_002_clip.mp4"
+  },
+  {
+   "id": "sh_003_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_003 clip",
+   "src_name": "sh_003.mp4",
+   "bytes": 5443716,
+   "caption": "Rendered clip for sh_003 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_003",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/sherlock/media/sh_003_clip_poster.jpg",
+   "file": "process/sherlock/media/sh_003_clip.mp4"
+  },
+  {
+   "id": "sh_004_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_004 clip",
+   "src_name": "sh_004.mp4",
+   "bytes": 5010431,
+   "caption": "Rendered clip for sh_004 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_004",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.09,
+   "poster": "process/sherlock/media/sh_004_clip_poster.jpg",
+   "file": "process/sherlock/media/sh_004_clip.mp4"
+  },
+  {
+   "id": "sh_005_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_005 clip",
+   "src_name": "sh_005.mp4",
+   "bytes": 5283457,
+   "caption": "Rendered clip for sh_005 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_005",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/sherlock/media/sh_005_clip_poster.jpg",
+   "file": "process/sherlock/media/sh_005_clip.mp4"
+  },
+  {
+   "id": "sh_006_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_006 clip",
+   "src_name": "sh_006.mp4",
+   "bytes": 4285013,
+   "caption": "Rendered clip for sh_006 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_006",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/sherlock/media/sh_006_clip_poster.jpg",
+   "file": "process/sherlock/media/sh_006_clip.mp4"
+  },
+  {
+   "id": "subtitles",
+   "stage": "Narration",
+   "kind": "text",
+   "label": "subtitles",
+   "src_name": "narration.srt",
+   "bytes": 962,
+   "caption": "Subtitle track (SRT).",
+   "scope": "",
+   "file": "process/sherlock/media/subtitles.srt",
+   "excerpt": "1 00:00:00,000 --> 00:00:02,000 Death kept still. 2 00:00:04,000 --> 00:00:08,000 A gentleman’s last argument with himself. 3 00:00:08,000 --> 00:00:11,150 The room had lied too neatly. 4 00:00:15,093 --> 00:00:17,543 A tear had lied. 5 00:00:18,093 --> 00:00:22,093 Wax does not climb into a draught. 6 00:00:22,093 -->…"
+  },
+  {
+   "id": "narration_cues",
+   "stage": "Narration",
+   "kind": "json",
+   "label": "narration cues",
+   "src_name": "narration.json",
+   "bytes": 5461,
+   "caption": "Narration plan: voice, delivery instructions, timed cues per shot.",
+   "scope": "",
+   "file": "process/sherlock/media/narration_cues.json",
+   "excerpt": "{\"voice\": \"onyx\", \"voice_instructions\": \"Grief first: a grave, educated Victorian British male voice, low and resonant, carrying dread beneath strict composure. Speak slowly, with weighted pauses before words of guilt, death, and truth. Let intensity tighten as the clues gather, swell with cold moral certainty during r…"
+  },
+  {
+   "id": "line_sh_001_0",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_001_0",
+   "src_name": "sh_001_0.wav",
+   "bytes": 96044,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/sherlock/media/line_sh_001_0.mp3",
+   "dur": 2.0
+  },
+  {
+   "id": "line_sh_001_1",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_001_1",
+   "src_name": "sh_001_1.wav",
+   "bytes": 151244,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/sherlock/media/line_sh_001_1.mp3",
+   "dur": 3.15
+  },
+  {
+   "id": "line_sh_002_2",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_002_2",
+   "src_name": "sh_002_2.wav",
+   "bytes": 117644,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/sherlock/media/line_sh_002_2.mp3",
+   "dur": 2.45
+  },
+  {
+   "id": "line_sh_002_3",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_002_3",
+   "src_name": "sh_002_3.wav",
+   "bytes": 196844,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/sherlock/media/line_sh_002_3.mp3",
+   "dur": 4.1
+  },
+  {
+   "id": "line_sh_003_4",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_003_4",
+   "src_name": "sh_003_4.wav",
+   "bytes": 86444,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/sherlock/media/line_sh_003_4.mp3",
+   "dur": 1.8
+  },
+  {
+   "id": "line_sh_003_5",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_003_5",
+   "src_name": "sh_003_5.wav",
+   "bytes": 144044,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/sherlock/media/line_sh_003_5.mp3",
+   "dur": 3.0
+  },
+  {
+   "id": "line_sh_004_6",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_004_6",
+   "src_name": "sh_004_6.wav",
+   "bytes": 213644,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/sherlock/media/line_sh_004_6.mp3",
+   "dur": 4.45
+  },
+  {
+   "id": "line_sh_005_8",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_005_8",
+   "src_name": "sh_005_8.wav",
+   "bytes": 132044,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/sherlock/media/line_sh_005_8.mp3",
+   "dur": 2.75
+  },
+  {
+   "id": "line_sh_006_10",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_006_10",
+   "src_name": "sh_006_10.wav",
+   "bytes": 122444,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_006",
+   "file": "process/sherlock/media/line_sh_006_10.mp3",
+   "dur": 2.55
+  },
+  {
+   "id": "line_sh_006_9",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_006_9",
+   "src_name": "sh_006_9.wav",
+   "bytes": 122444,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_006",
+   "file": "process/sherlock/media/line_sh_006_9.mp3",
+   "dur": 2.55
+  },
+  {
+   "id": "final_film",
+   "stage": "Final",
+   "kind": "video",
+   "label": "final film",
+   "src_name": "final.mp4",
+   "bytes": 18054701,
+   "caption": "Delivered film: clips + narration + subtitles + mix.",
+   "scope": "",
+   "file": "videos/sherlock.mp4",
+   "poster": "posters/sherlock.jpg",
+   "final": true,
+   "w": 1280,
+   "h": 720,
+   "dur": 90.51
+  }
+ ],
+ "edges": [
+  {
+   "from": "user_goal",
+   "to": "Story",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "Keyframes",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sherlock_holmes_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "dr_watson_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "inspector_lestrade_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "caleb_pike_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sir_edmund_vale_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "upper_hallway_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "vale_study_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sherlock_holmes_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "dr_watson_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "inspector_lestrade_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "caleb_pike_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sir_edmund_vale_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "upper_hallway_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "vale_study_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "sh_005_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard_prompt",
+   "to": "sh_005_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "sh_006_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_storyboard_prompt",
+   "to": "sh_006_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_video_prompt",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_video_prompt",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_video_prompt",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_video_prompt",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_video_prompt",
+   "to": "sh_005_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_video_prompt",
+   "to": "sh_006_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "narration_cues",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_001_0",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_001_1",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_002_2",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_002_3",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_003_4",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_003_5",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_004_6",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_005_8",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_006_10",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_006_9",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "subtitles",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  }
+ ],
+ "final": "final_film",
+ "notes": [
+  "Early cine-chain run: the sequence Story → Keyframes → Shot prompts → Clips → Narration → Final is fixed, so connections are structural."
+ ]
+}

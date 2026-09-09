@@ -1,0 +1,38 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 extreme-wide -> P2 wide -> P3 medium -> P4 wide
+
+[PANEL 1]
+SHOT: extreme-wide, eye-level.
+PLACEMENT: The single-span arch of the bridge is bound flush to the horizontal riverbank line along the lower third of the frame, spanning the calm water channel.
+ACTION: The 1387 limestone bridge stands silent spanning the Vère river, its profile perfectly still over the mirror-like water.
+ENV: Refer to loc_bridge_side anchor FRONT section. Green forested hills enclose the river valley; clear daylight casts soft reflections.
+
+[PANEL 2]
+SHOT: wide, low-angle.
+PLACEMENT: The 22-metre arch curve is framed centrally, grounded directly on both stone abutment bases embedded in the grassy shores.
+ACTION: The architectural curve of the single segmental arch spans gracefully across the river channel.
+ENV: Refer to loc_bridge_side anchor FRONT section. Natural light highlights the precise geometry of vault stones over reflective water.
+
+[PANEL 3]
+SHOT: medium, eye-level.
+PLACEMENT: Weathered limestone masonry blocks are bound tightly to the arch vault edge along the middle frame.
+ACTION: Sunlight moves slowly across the weathered limestone surface, illuminating six centuries of stone texture.
+ENV: Refer to loc_bridge_side anchor FRONT section. Detailed stone textures, lichen patches, and hand-fitted mortar joints visible under warm sunlight.
+
+[PANEL 4]
+SHOT: wide, high-angle.
+PLACEMENT: The entire stone arch bridge is nested securely within the river valley landscape between two green forested banks.
+ACTION: The historic bridge sits peacefully in the surrounding valley landscape as gentle water currents pass beneath the arch.
+ENV: Refer to loc_bridge_side anchor OVERHEAD section. Lush green forest canopy surrounds the river channel under a calm sky.
+
+[RENDERED TEXT]
+Do NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet.

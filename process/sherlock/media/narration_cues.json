@@ -1,0 +1,141 @@
+{
+  "voice": "onyx",
+  "voice_instructions": "Grief first: a grave, educated Victorian British male voice, low and resonant, carrying dread beneath strict composure. Speak slowly, with weighted pauses before words of guilt, death, and truth. Let intensity tighten as the clues gather, swell with cold moral certainty during revelation, then fall almost to a whisper on the final standoff. The voice must sound emotionally invested—aching, reverent, and appalled—never neutral or explanatory.",
+  "subtitle_lang": "en",
+  "cues": [
+    {
+      "stretch_id": "sh_001#0",
+      "shot_id": "sh_001",
+      "window_start_s": 0.0,
+      "window_end_s": 4.0,
+      "text": "Death kept still",
+      "subtitle_text": "Death kept still.",
+      "global_start_s": 0.0,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sherlock_locked_study_03/narration/lines/sh_001_0.wav",
+      "audio_duration_sec": 2.0,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_001#1",
+      "shot_id": "sh_001",
+      "window_start_s": 8.0,
+      "window_end_s": 15.0,
+      "text": "The room had lied too neatly",
+      "subtitle_text": "The room had lied too neatly.",
+      "global_start_s": 8.0,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sherlock_locked_study_03/narration/lines/sh_001_1.wav",
+      "audio_duration_sec": 3.15,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_002#2",
+      "shot_id": "sh_002",
+      "window_start_s": 0.0,
+      "window_end_s": 3.0,
+      "text": "A tear lied",
+      "subtitle_text": "A tear had lied.",
+      "global_start_s": 15.092971,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sherlock_locked_study_03/narration/lines/sh_002_2.wav",
+      "audio_duration_sec": 2.45,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_002#3",
+      "shot_id": "sh_002",
+      "window_start_s": 7.0,
+      "window_end_s": 15.0,
+      "text": "Truth cooled where fear moved",
+      "subtitle_text": "Truth had cooled where fear had moved.",
+      "global_start_s": 22.092971,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sherlock_locked_study_03/narration/lines/sh_002_3.wav",
+      "audio_duration_sec": 4.1,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_003#4",
+      "shot_id": "sh_003",
+      "window_start_s": 0.0,
+      "window_end_s": 4.0,
+      "text": "Rain hid much",
+      "subtitle_text": "The rain hid much.",
+      "global_start_s": 30.161973,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sherlock_locked_study_03/narration/lines/sh_003_4.wav",
+      "audio_duration_sec": 1.8,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_003#5",
+      "shot_id": "sh_003",
+      "window_start_s": 7.5,
+      "window_end_s": 15.0,
+      "text": "But not the hand that schemed",
+      "subtitle_text": "But not the hand that schemed.",
+      "global_start_s": 37.661973,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sherlock_locked_study_03/narration/lines/sh_003_5.wav",
+      "audio_duration_sec": 3.0,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_004#6",
+      "shot_id": "sh_004",
+      "window_start_s": 0.0,
+      "window_end_s": 15.0,
+      "text": "Past sin rose under the boards and dressed murder as suicide",
+      "subtitle_text": "Past sin rose under the boards and dressed murder as suicide.",
+      "global_start_s": 45.230975,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sherlock_locked_study_03/narration/lines/sh_004_6.wav",
+      "audio_duration_sec": 4.45,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_005#7",
+      "shot_id": "sh_005",
+      "window_start_s": 0.0,
+      "window_end_s": 3.0,
+      "text": null,
+      "subtitle_text": "",
+      "global_start_s": 60.299977,
+      "audio_path": "",
+      "audio_duration_sec": 0.0,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_005#8",
+      "shot_id": "sh_005",
+      "window_start_s": 6.0,
+      "window_end_s": 15.0,
+      "text": "Guilt stood on the hidden door",
+      "subtitle_text": "Guilt stood upon the hidden door.",
+      "global_start_s": 66.299977,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sherlock_locked_study_03/narration/lines/sh_005_8.wav",
+      "audio_duration_sec": 2.75,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_006#9",
+      "shot_id": "sh_006",
+      "window_start_s": 0.0,
+      "window_end_s": 6.0,
+      "text": "The floor confessed",
+      "subtitle_text": "The floor confessed.",
+      "global_start_s": 75.392948,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sherlock_locked_study_03/narration/lines/sh_006_9.wav",
+      "audio_duration_sec": 2.55,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_006#10",
+      "shot_id": "sh_006",
+      "window_start_s": 10.5,
+      "window_end_s": 15.0,
+      "text": "Even time recoiled",
+      "subtitle_text": "Even time recoiled.",
+      "global_start_s": 85.892948,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sherlock_locked_study_03/narration/lines/sh_006_10.wav",
+      "audio_duration_sec": 2.55,
+      "atempo": 1.0
+    }
+  ],
+  "srt_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sherlock_locked_study_03/narration/narration.srt",
+  "narrated_video_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sherlock_locked_study_03/narration/main_narrated_subbed.mp4"
+}

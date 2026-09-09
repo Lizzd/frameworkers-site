@@ -1,0 +1,9 @@
+{
+  "content": {
+    "language": "en",
+    "upscale_spec": {
+      "target_resolution": "1080p",
+      "rationale": "no target specified in brief — defaulting to 1080p"
+    }
+  }
+}

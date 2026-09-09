@@ -1,0 +1,80 @@
+{
+ "sorting_hat": {
+  "nodes": 30
+ },
+ "peking": {
+  "nodes": 27
+ },
+ "last_train": {
+  "nodes": 31
+ },
+ "luchen": {
+  "nodes": 46
+ },
+ "saiweng": {
+  "nodes": 31
+ },
+ "sherlock": {
+  "nodes": 46
+ },
+ "psa": {
+  "nodes": 66
+ },
+ "space_blockade": {
+  "nodes": 26
+ },
+ "tech_anchor": {
+  "nodes": 39
+ },
+ "octopus": {
+  "nodes": 21
+ },
+ "bridge": {
+  "nodes": 64
+ },
+ "vents": {
+  "nodes": 60
+ },
+ "ember_oak": {
+  "nodes": 26
+ },
+ "martin": {
+  "nodes": 52
+ },
+ "northspur": {
+  "nodes": 38
+ },
+ "kurve": {
+  "nodes": 29
+ },
+ "iceland_aerial": {
+  "nodes": 32
+ },
+ "ugly_duckling": {
+  "nodes": 21
+ },
+ "magi": {
+  "nodes": 36
+ },
+ "reel_travel": {
+  "nodes": 21
+ },
+ "restored_newsreel": {
+  "nodes": 9
+ },
+ "kestrel": {
+  "nodes": 29
+ },
+ "video_extend": {
+  "nodes": 5
+ },
+ "orpheus": {
+  "nodes": 23
+ },
+ "poem_recital": {
+  "nodes": 22
+ },
+ "tortoise": {
+  "nodes": 27
+ }
+}

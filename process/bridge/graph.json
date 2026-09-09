@@ -1,0 +1,1721 @@
+{
+ "key": "bridge",
+ "title": "Six Hundred More Years",
+ "genre": "Documentary · Heritage Restoration",
+ "cat": "Explainer",
+ "prompt": "A heritage project's restoration film, and the hardest input case so far: a commentary that must be read as written (dates, quarry, the 1612 / 1875 / 2019 floods, a 6:1 hot-mixed lime, nineteen months — not a figure may change), three real photographs the bridge on screen has to match, the craftsman's own recorded English narration to be used as his voice rather than re-dubbed, and a string bed underneath. The bridge is locked to the uploaded photos through an identity anchor built FROM them, so the single segmental arch, the grey limestone and the wide pale mortar joints hold across all nine shots. Subtitles are transcribed from the craftsman's recording; the ASR mishears the French place names, so two proper nouns are spelled differently from the script.",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/topic14_bridge/workspace_global_20260803_172357"
+ },
+ "generated_at": "2026-09-09T15:56:40+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 6
+  },
+  {
+   "id": "IntakeImageAgent__step_1_682f7a15",
+   "agent": "IntakeImageAgent",
+   "label": "IntakeImage",
+   "step": "step_1_682f7a15",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "IntakeAudioAgent__step_1_682f7a15",
+   "agent": "IntakeAudioAgent",
+   "label": "IntakeAudio",
+   "step": "step_1_682f7a15",
+   "order": 2,
+   "n": 1
+  },
+  {
+   "id": "BriefEnricherAgent__step_1_682f7a15",
+   "agent": "BriefEnricherAgent",
+   "label": "BriefEnricher",
+   "step": "step_1_682f7a15",
+   "order": 3,
+   "n": 1
+  },
+  {
+   "id": "TranscriptionAgent__step_1_682f7a15",
+   "agent": "TranscriptionAgent",
+   "label": "Transcription",
+   "step": "step_1_682f7a15",
+   "order": 4,
+   "n": 1
+  },
+  {
+   "id": "ExplainerAgent__step_1_682f7a15",
+   "agent": "ExplainerAgent",
+   "label": "Explainer",
+   "step": "step_1_682f7a15",
+   "order": 5,
+   "n": 1
+  },
+  {
+   "id": "KeyframeSheetAgent__step_1_682f7a15",
+   "agent": "KeyframeSheetAgent",
+   "label": "KeyframeSheet",
+   "step": "step_1_682f7a15",
+   "order": 6,
+   "n": 27
+  },
+  {
+   "id": "ShotPromptAgent__step_1_682f7a15",
+   "agent": "ShotPromptAgent",
+   "label": "ShotPrompt",
+   "step": "step_1_682f7a15",
+   "order": 7,
+   "n": 10
+  },
+  {
+   "id": "ClipAgent__step_1_682f7a15",
+   "agent": "ClipAgent",
+   "label": "Clip",
+   "step": "step_1_682f7a15",
+   "order": 8,
+   "n": 11
+  },
+  {
+   "id": "AudioMixAgent__step_1_682f7a15",
+   "agent": "AudioMixAgent",
+   "label": "AudioMix",
+   "step": "step_1_682f7a15",
+   "order": 9,
+   "n": 2
+  },
+  {
+   "id": "CompositorAgent__step_1_682f7a15",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_1_682f7a15",
+   "order": 10,
+   "n": 3
+  }
+ ],
+ "nodes": [
+  {
+   "id": "bridge_deck",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "bridge deck",
+   "src_name": "20260803_172357_486235_bridge_deck.jpg",
+   "bytes": 9281461,
+   "caption": "Global location reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/bridge/media/bridge_deck.jpg",
+   "w": 2816,
+   "h": 1536
+  },
+  {
+   "id": "bridge_joints",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "bridge joints",
+   "src_name": "20260803_172357_418768_bridge_joints.jpg",
+   "bytes": 8966506,
+   "caption": "Global location reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/bridge/media/bridge_joints.jpg",
+   "w": 2816,
+   "h": 1536
+  },
+  {
+   "id": "bridge_side",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "bridge side",
+   "src_name": "20260803_172357_352688_bridge_side.jpg",
+   "bytes": 9472108,
+   "caption": "Global location reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/bridge/media/bridge_side.jpg",
+   "w": 2816,
+   "h": 1536
+  },
+  {
+   "id": "craftsman_narration",
+   "stage": "Inputs",
+   "kind": "audio",
+   "label": "craftsman narration",
+   "src_name": "20260803_172357_536653_craftsman_narration.wav",
+   "bytes": 5928524,
+   "caption": "Raw user upload (mime=audio/wav).",
+   "scope": "global",
+   "file": "process/bridge/media/craftsman_narration.mp3",
+   "dur": 123.51
+  },
+  {
+   "id": "string_music",
+   "stage": "Inputs",
+   "kind": "audio",
+   "label": "string music",
+   "src_name": "20260803_172357_725279_string_music.wav",
+   "bytes": 21873678,
+   "caption": "Raw user upload (mime=audio/wav).",
+   "scope": "global",
+   "file": "process/bridge/media/string_music.mp3",
+   "dur": 124.0
+  },
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260803_172357_738534.json",
+   "bytes": 2670,
+   "caption": "Structured metadata document (JSON) for the user's own typed brief — the instruction describing WHAT TO MAKE. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/bridge/media/creative_brief.json",
+   "excerpt": "{\"text\": \"I'm with a cultural heritage project in Europe, and I want a documentary explainer about a medieval stone arch bridge we've just finished restoring. The accuracy rests entirely on the script I'm giving you — read it as written and don't fill anything in yourself: the date of the bridge, where the stone came f…"
+  },
+  {
+   "id": "intakeimageagent_output",
+   "stage": "IntakeImageAgent__step_1_682f7a15",
+   "kind": "json",
+   "label": "IntakeImageAgent output",
+   "src_name": "step_1_682f7a15_intakeimageagent_exec_1.json",
+   "bytes": 1436,
+   "caption": "Structured metadata document (JSON) for 3 user-uploaded image(s). Payload lists every image's visual description and image-asset metadata.",
+   "scope": "global",
+   "file": "process/bridge/media/intakeimageagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"images\": [{\"visual_description\": \"An arched stone bridge reflects in a calm river, creating an eye shape in daylight against lush green forest hills.\", \"image_asset\": {\"asset_id\": \"\", \"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/topic14_bridge/workspace_global_20260803_172357/inputs/20260803_17235…"
+  },
+  {
+   "id": "intakeaudioagent_output",
+   "stage": "IntakeAudioAgent__step_1_682f7a15",
+   "kind": "json",
+   "label": "IntakeAudioAgent output",
+   "src_name": "step_1_682f7a15_intakeaudioagent_exec_2.json",
+   "bytes": 945,
+   "caption": "Structured metadata document (JSON) covering 2 user-uploaded audio clip(s). Payload lists each clip's kind (speech / music / ambient), an audible summary, and its audio-asset path.",
+   "scope": "global",
+   "file": "process/bridge/media/intakeaudioagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"clips\": [{\"kind\": \"speech\", \"audio_summary\": \"A male speaker with a deep, resonant tone narrates the history and meticulous restoration of an ancient stone bridge in English.\", \"duration_s\": 123.51, \"audio_asset\": {\"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/topic14_bridge/workspace_global_202608…"
+  },
+  {
+   "id": "briefenricheragent_output",
+   "stage": "BriefEnricherAgent__step_1_682f7a15",
+   "kind": "json",
+   "label": "BriefEnricherAgent output",
+   "src_name": "step_1_682f7a15_briefenricheragent_exec_3.json",
+   "bytes": 3583,
+   "caption": "Enriched creative brief with visual reference descriptions integrated. Supersedes the raw user brief for story generation — contains the user's original concept plus detailed visual descriptions of uploaded reference images.",
+   "scope": "global",
+   "file": "process/bridge/media/briefenricheragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"enriched_brief\": \"This creative brief is for a documentary explainer video produced for a European cultural heritage project, celebrating the complete restoration of the Pont de la Roche-Vieille. The film must adhere strictly to the supplied script, preserving every date, figure, and historical fact…"
+  },
+  {
+   "id": "transcriptionagent_output",
+   "stage": "TranscriptionAgent__step_1_682f7a15",
+   "kind": "json",
+   "label": "TranscriptionAgent output",
+   "src_name": "step_1_682f7a15_transcriptionagent_exec_4.json",
+   "bytes": 4128,
+   "caption": "Transcript (en): 15 timestamped segment(s). SRT-shaped subtitle artifact — ready for direct burn-in by a compositor's subtitle track (each segment is one SRT cue with start/end seconds + text). Also usable as the 'source text' input to a translation step when bilingual subtitles are needed.",
+   "scope": "global",
+   "file": "process/bridge/media/transcriptionagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"segments\": [{\"segment_id\": \"seg_001\", \"start_time\": 0.0, \"end_time\": 5.5, \"text\": \"The Pont de la Roche-Veyre was completed in 1387.\"}, {\"segment_id\": \"seg_002\", \"start_time\": 5.5, \"end_time\": 13.3, \"text\": \"It carries a single segmental arch of 22 meters over the Vère,\"}, {\"segment_id\": \"seg_003\", …"
+  },
+  {
+   "id": "explaineragent_output",
+   "stage": "ExplainerAgent__step_1_682f7a15",
+   "kind": "json",
+   "label": "ExplainerAgent output",
+   "src_name": "step_1_682f7a15_explaineragent_exec_5.json",
+   "bytes": 20453,
+   "caption": "Shot-rich story: 9 shot(s), 0 character(s) — drives keyframe/storyboard/audio.",
+   "scope": "global",
+   "file": "process/bridge/media/explaineragent_output.json",
+   "excerpt": "{\"title\": \"Restoration of the Pont de la Roche-Vieille\", \"logline\": \"A grounded documentary explainer detailing the 19-month traditional restoration of the 1387 segmental stone arch bridge over the Vère.\", \"setting\": \"A European documentary explainer presentation tailored for a global audience, showcasing traditional s…"
+  },
+  {
+   "id": "loc_bridge_deck_anchor",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "image",
+   "label": "loc bridge deck anchor",
+   "src_name": "step_1_682f7a15_img_loc_bridge_deck_anchor.png",
+   "bytes": 8825751,
+   "caption": "GENERATED internal identity reference card for location loc_bridge_deck — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/bridge/media/loc_bridge_deck_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "loc_bridge_joints_anchor",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "image",
+   "label": "loc bridge joints anchor",
+   "src_name": "step_1_682f7a15_img_loc_bridge_joints_anchor.png",
+   "bytes": 8868120,
+   "caption": "GENERATED internal identity reference card for location loc_bridge_joints — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/bridge/media/loc_bridge_joints_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "loc_bridge_side_anchor",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "image",
+   "label": "loc bridge side anchor",
+   "src_name": "step_1_682f7a15_img_loc_bridge_side_anchor.png",
+   "bytes": 8239097,
+   "caption": "GENERATED internal identity reference card for location loc_bridge_side — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/bridge/media/loc_bridge_side_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "loc_quarry_anchor",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "image",
+   "label": "loc quarry anchor",
+   "src_name": "step_1_682f7a15_img_loc_quarry_anchor.png",
+   "bytes": 8152687,
+   "caption": "GENERATED internal identity reference card for location loc_quarry — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/bridge/media/loc_quarry_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "loc_bridge_deck_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "loc bridge deck anchor prompt",
+   "src_name": "step_1_682f7a15_img_loc_bridge_deck_anchor_prompt.txt",
+   "bytes": 2822,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location loc_bridge_deck anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/bridge/media/loc_bridge_deck_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "loc_bridge_joints_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "loc bridge joints anchor prompt",
+   "src_name": "step_1_682f7a15_img_loc_bridge_joints_anchor_prompt.txt",
+   "bytes": 2879,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location loc_bridge_joints anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/bridge/media/loc_bridge_joints_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "loc_bridge_side_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "loc bridge side anchor prompt",
+   "src_name": "step_1_682f7a15_img_loc_bridge_side_anchor_prompt.txt",
+   "bytes": 2907,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location loc_bridge_side anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/bridge/media/loc_bridge_side_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "loc_quarry_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "loc quarry anchor prompt",
+   "src_name": "step_1_682f7a15_img_loc_quarry_anchor_prompt.txt",
+   "bytes": 1976,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location loc_quarry anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/bridge/media/loc_quarry_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): Clean architectural documentary animation style; Realistic stone and wood textures with natural lighting; Crisp grey limestone masonry and hand-dressed mortar joints; Green oak timbering and calm river reflections; Spacious lower-third architect…"
+  },
+  {
+   "id": "keyframesheetagent_output",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "json",
+   "label": "KeyframeSheetAgent output",
+   "src_name": "step_1_682f7a15_keyframesheetagent_exec_6.json",
+   "bytes": 30386,
+   "caption": "Sheet-model keyframe package: 4 identity anchor card(s) + 9 per-shot storyboard sheet(s). Drives the downstream image-to-video stage.",
+   "scope": "global",
+   "file": "process/bridge/media/keyframesheetagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"anchors\": {\"character_anchors\": [], \"location_anchors\": [{\"entity_id\": \"loc_bridge_side\", \"prompt_summary\": \"Single segmental arch stone bridge constructed from textured grey limestone blocks spanning across the calm Vère river. Surrounded by lush green forested hills and dense riverbank trees. The …"
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "image",
+   "label": "sh 001 storyboard",
+   "src_name": "step_1_682f7a15_img_sh_001_storyboard.png",
+   "bytes": 8240264,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_001 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/bridge/media/sh_001_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "sh 001 storyboard prompt",
+   "src_name": "step_1_682f7a15_img_sh_001_storyboard_prompt.txt",
+   "bytes": 2838,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_001's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/bridge/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean architectural documentary animation with realistic textur…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "image",
+   "label": "sh 002 storyboard",
+   "src_name": "step_1_682f7a15_img_sh_002_storyboard.png",
+   "bytes": 7763888,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_002 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/bridge/media/sh_002_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "sh 002 storyboard prompt",
+   "src_name": "step_1_682f7a15_img_sh_002_storyboard_prompt.txt",
+   "bytes": 3306,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_002's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/bridge/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean architectural documentary animation with realistic textur…"
+  },
+  {
+   "id": "sh_003_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "image",
+   "label": "sh 003 storyboard",
+   "src_name": "step_1_682f7a15_img_sh_003_storyboard.png",
+   "bytes": 7249319,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_003 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/bridge/media/sh_003_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_003_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "sh 003 storyboard prompt",
+   "src_name": "step_1_682f7a15_img_sh_003_storyboard_prompt.txt",
+   "bytes": 3316,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_003's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/bridge/media/sh_003_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean architectural documentary animation with realistic textur…"
+  },
+  {
+   "id": "sh_004_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "image",
+   "label": "sh 004 storyboard",
+   "src_name": "step_1_682f7a15_img_sh_004_storyboard.png",
+   "bytes": 8085131,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_004 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/bridge/media/sh_004_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_004_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "sh 004 storyboard prompt",
+   "src_name": "step_1_682f7a15_img_sh_004_storyboard_prompt.txt",
+   "bytes": 3227,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_004's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/bridge/media/sh_004_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean architectural documentary animation with realistic textur…"
+  },
+  {
+   "id": "sh_005_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "image",
+   "label": "sh 005 storyboard",
+   "src_name": "step_1_682f7a15_img_sh_005_storyboard.png",
+   "bytes": 7672851,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_005 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_005",
+   "shot": "sh_005",
+   "file": "process/bridge/media/sh_005_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_005_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "sh 005 storyboard prompt",
+   "src_name": "step_1_682f7a15_img_sh_005_storyboard_prompt.txt",
+   "bytes": 3290,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_005's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_005",
+   "shot": "sh_005",
+   "file": "process/bridge/media/sh_005_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean architectural documentary animation with realistic textur…"
+  },
+  {
+   "id": "sh_006_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "image",
+   "label": "sh 006 storyboard",
+   "src_name": "step_1_682f7a15_img_sh_006_storyboard.png",
+   "bytes": 6623556,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_006 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_006",
+   "shot": "sh_006",
+   "file": "process/bridge/media/sh_006_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_006_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "sh 006 storyboard prompt",
+   "src_name": "step_1_682f7a15_img_sh_006_storyboard_prompt.txt",
+   "bytes": 3314,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_006's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_006",
+   "shot": "sh_006",
+   "file": "process/bridge/media/sh_006_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean architectural documentary animation with realistic textur…"
+  },
+  {
+   "id": "sh_007_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "image",
+   "label": "sh 007 storyboard",
+   "src_name": "step_1_682f7a15_img_sh_007_storyboard.png",
+   "bytes": 6697709,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_007 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_007",
+   "shot": "sh_007",
+   "file": "process/bridge/media/sh_007_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_007_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "sh 007 storyboard prompt",
+   "src_name": "step_1_682f7a15_img_sh_007_storyboard_prompt.txt",
+   "bytes": 3324,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_007's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_007",
+   "shot": "sh_007",
+   "file": "process/bridge/media/sh_007_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean architectural documentary animation with realistic textur…"
+  },
+  {
+   "id": "sh_008_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "image",
+   "label": "sh 008 storyboard",
+   "src_name": "step_1_682f7a15_img_sh_008_storyboard.png",
+   "bytes": 5450510,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_008 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_008",
+   "shot": "sh_008",
+   "file": "process/bridge/media/sh_008_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_008_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "sh 008 storyboard prompt",
+   "src_name": "step_1_682f7a15_img_sh_008_storyboard_prompt.txt",
+   "bytes": 3298,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_008's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_008",
+   "shot": "sh_008",
+   "file": "process/bridge/media/sh_008_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean architectural documentary animation with realistic textur…"
+  },
+  {
+   "id": "sh_009_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "image",
+   "label": "sh 009 storyboard",
+   "src_name": "step_1_682f7a15_img_sh_009_storyboard.png",
+   "bytes": 7621259,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_009 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_009",
+   "shot": "sh_009",
+   "file": "process/bridge/media/sh_009_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_009_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "sh 009 storyboard prompt",
+   "src_name": "step_1_682f7a15_img_sh_009_storyboard_prompt.txt",
+   "bytes": 3248,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_009's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_009",
+   "shot": "sh_009",
+   "file": "process/bridge/media/sh_009_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean architectural documentary animation with realistic textur…"
+  },
+  {
+   "id": "shotpromptagent_output",
+   "stage": "ShotPromptAgent__step_1_682f7a15",
+   "kind": "json",
+   "label": "ShotPromptAgent output",
+   "src_name": "step_1_682f7a15_shotpromptagent_exec_7.json",
+   "bytes": 28535,
+   "caption": "Per-shot video-generation prompt package: 9 Seedance prompt(s) (9-section), one per shot — pairs with the storyboard sheet to drive the image-to-video clip stage.",
+   "scope": "global",
+   "file": "process/bridge/media/shotpromptagent_output.json",
+   "excerpt": "[{\"shot_id\": \"sh_001\", \"text_prompt\": \"[设定]\\n欧洲历史工程与石匠工艺纪实科普展示，具备专业可信与冷静理性的纪录片氛围。\\n\\n[风格]\\nClean architectural documentary animation with realistic textures and natural lighting。整体呈现冷静理性的工程科普基调。\\n\\n[参考图]\\n[Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / …"
+  },
+  {
+   "id": "shot_prompt_sh_001",
+   "stage": "ShotPromptAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "shot prompt sh 001",
+   "src_name": "step_1_682f7a15_shot_prompt_sh_001.txt",
+   "bytes": 2863,
+   "caption": "video-generation text prompt for shot sh_001 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/bridge/media/shot_prompt_sh_001.txt",
+   "excerpt": "[设定] 欧洲历史工程与石匠工艺纪实科普展示，具备专业可信与冷静理性的纪录片氛围。 [风格] Clean architectural documentary animation with realistic textures and natural lighting。整体呈现冷静理性的工程科普基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。…"
+  },
+  {
+   "id": "shot_prompt_sh_002",
+   "stage": "ShotPromptAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "shot prompt sh 002",
+   "src_name": "step_1_682f7a15_shot_prompt_sh_002.txt",
+   "bytes": 2622,
+   "caption": "video-generation text prompt for shot sh_002 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/bridge/media/shot_prompt_sh_002.txt",
+   "excerpt": "[设定] 本设定呈现欧洲历史工程与传统石匠工艺纪实科普氛围，语调冷静客观、专业可信。 [风格] Clean architectural documentary animation with realistic textures and natural lighting. 整体保持专业冷静、清晰理性的纪实叙事基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 …"
+  },
+  {
+   "id": "shot_prompt_sh_003",
+   "stage": "ShotPromptAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "shot prompt sh 003",
+   "src_name": "step_1_682f7a15_shot_prompt_sh_003.txt",
+   "bytes": 3000,
+   "caption": "video-generation text prompt for shot sh_003 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/bridge/media/shot_prompt_sh_003.txt",
+   "excerpt": "[设定] 本拍摄设定于欧洲历史建筑修复现场与传统采石场，展现传统石匠工艺与工程科学细节，整体呈现纪实科普与专业可信的氛围。 [风格] Clean architectural documentary animation with realistic textures and natural lighting. 整体基调冷静、清晰且专业可信。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴…"
+  },
+  {
+   "id": "shot_prompt_sh_004",
+   "stage": "ShotPromptAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "shot prompt sh 004",
+   "src_name": "step_1_682f7a15_shot_prompt_sh_004.txt",
+   "bytes": 2976,
+   "caption": "video-generation text prompt for shot sh_004 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/bridge/media/shot_prompt_sh_004.txt",
+   "excerpt": "[设定] 欧洲历史工程与石匠工艺纪录片展示语境，面向全球观众的严肃科普解说氛围。 [风格] Clean architectural documentary animation with realistic textures and natural lighting. 整体基调严谨而平静，呈现古桥结构与水流相互作用的历史纪实感。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜…"
+  },
+  {
+   "id": "shot_prompt_sh_005",
+   "stage": "ShotPromptAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "shot prompt sh 005",
+   "src_name": "step_1_682f7a15_shot_prompt_sh_005.txt",
+   "bytes": 3070,
+   "caption": "video-generation text prompt for shot sh_005 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_005",
+   "shot": "sh_005",
+   "file": "process/bridge/media/shot_prompt_sh_005.txt",
+   "excerpt": "[设定] 欧洲历史建筑工程科普纪实场景，展现传统石造建筑与古桥修复工艺，语言氛围为专业客观的纪录片旁白风格。 [风格] Clean architectural documentary animation。呈现严谨客观测绘与历史建筑修复工程的冷静纪实氛围。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不…"
+  },
+  {
+   "id": "shot_prompt_sh_006",
+   "stage": "ShotPromptAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "shot prompt sh 006",
+   "src_name": "step_1_682f7a15_shot_prompt_sh_006.txt",
+   "bytes": 2652,
+   "caption": "video-generation text prompt for shot sh_006 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_006",
+   "shot": "sh_006",
+   "file": "process/bridge/media/shot_prompt_sh_006.txt",
+   "excerpt": "[设定] 欧洲传统土木工程与石匠技艺纪录片演示，呈现严谨、专业的古典建筑工艺氛围。 [风格] Clean architectural documentary animation with realistic textures and natural lighting. 整体基调克制、清晰且具科学纪录片质感。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格…"
+  },
+  {
+   "id": "shot_prompt_sh_007",
+   "stage": "ShotPromptAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "shot prompt sh 007",
+   "src_name": "step_1_682f7a15_shot_prompt_sh_007.txt",
+   "bytes": 2809,
+   "caption": "video-generation text prompt for shot sh_007 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_007",
+   "shot": "sh_007",
+   "file": "process/bridge/media/shot_prompt_sh_007.txt",
+   "excerpt": "[设定] 欧洲中世纪传统石匠工艺与历史土木工程科普纪录片语境，整体氛围严谨、专业、冷静沉稳。 [风格] Clean architectural documentary animation with realistic textures and natural lighting。基调宁静克制，注重建筑工艺与材料动态过程的清晰示范。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 …"
+  },
+  {
+   "id": "shot_prompt_sh_008",
+   "stage": "ShotPromptAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "shot prompt sh 008",
+   "src_name": "step_1_682f7a15_shot_prompt_sh_008.txt",
+   "bytes": 2584,
+   "caption": "video-generation text prompt for shot sh_008 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_008",
+   "shot": "sh_008",
+   "file": "process/bridge/media/shot_prompt_sh_008.txt",
+   "excerpt": "[设定] 欧洲历史土木工程与传统石匠工艺纪录片科普演示氛围。 [风格] Clean architectural documentary animation with realistic textures and natural lighting. 克制、专业而清澈的科普纪实基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号…"
+  },
+  {
+   "id": "shot_prompt_sh_009",
+   "stage": "ShotPromptAgent__step_1_682f7a15",
+   "kind": "text",
+   "label": "shot prompt sh 009",
+   "src_name": "step_1_682f7a15_shot_prompt_sh_009.txt",
+   "bytes": 3093,
+   "caption": "video-generation text prompt for shot sh_009 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_009",
+   "shot": "sh_009",
+   "file": "process/bridge/media/shot_prompt_sh_009.txt",
+   "excerpt": "[设定] 欧洲传统石匠工艺与历史土木工程纪录片片断，呈现严肃、精准、专业的学术展示氛围。 [风格] Clean architectural documentary animation。整体呈现严谨、平实、宁静的纪录片美学基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得…"
+  },
+  {
+   "id": "clip_final",
+   "stage": "ClipAgent__step_1_682f7a15",
+   "kind": "video",
+   "label": "clip final",
+   "src_name": "step_1_682f7a15_clip_final.mp4",
+   "bytes": 51198321,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_final] Complete assembled film bytes (9 shot(s) concatenated). The final visual deliverable — consumed by a downstream audio-mix / compositor step's materializer for muxing / subtitle burn-in.",
+   "scope": "global",
+   "w": 864,
+   "h": 496,
+   "dur": 135.76,
+   "poster": "process/bridge/media/clip_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "clipagent_output",
+   "stage": "ClipAgent__step_1_682f7a15",
+   "kind": "json",
+   "label": "ClipAgent output",
+   "src_name": "step_1_682f7a15_clipagent_exec_8.json",
+   "bytes": 2396,
+   "caption": "[JSON MANIFEST] Clip-assembly plan: 9 per-shot clip plan(s) with duration + transition + scene grouping. Read by a downstream audio-mix / compositor step's LLM.",
+   "scope": "global",
+   "file": "process/bridge/media/clipagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"clips\": [{\"shot_id\": \"sh_001\", \"duration_sec\": 5.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_002\", \"duration_sec\": 5.0, \"scene_id\": \"sc_002\"}, {\"shot_id\": \"sh_003\", \"duration_sec\": 5.0, \"scene_id\": \"sc_002\"}, {\"shot_id\": \"sh_004\", \"duration_sec\": 5.0, \"scene_id\": \"sc_003\"}, {\"shot_id\": \"sh_005\", \"dura…"
+  },
+  {
+   "id": "clip_sh_001",
+   "stage": "ClipAgent__step_1_682f7a15",
+   "kind": "video",
+   "label": "clip sh 001",
+   "src_name": "step_1_682f7a15_clip_sh_001.mp4",
+   "bytes": 5668212,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_001] Rendered video clip bytes for shot sh_001 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "w": 864,
+   "h": 496,
+   "dur": 15.07,
+   "poster": "process/bridge/media/clip_sh_001_poster.jpg",
+   "file": "process/bridge/media/clip_sh_001.mp4"
+  },
+  {
+   "id": "clip_sh_002",
+   "stage": "ClipAgent__step_1_682f7a15",
+   "kind": "video",
+   "label": "clip sh 002",
+   "src_name": "step_1_682f7a15_clip_sh_002.mp4",
+   "bytes": 7661142,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_002] Rendered video clip bytes for shot sh_002 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "w": 864,
+   "h": 496,
+   "dur": 15.07,
+   "poster": "process/bridge/media/clip_sh_002_poster.jpg",
+   "file": "process/bridge/media/clip_sh_002.mp4"
+  },
+  {
+   "id": "clip_sh_003",
+   "stage": "ClipAgent__step_1_682f7a15",
+   "kind": "video",
+   "label": "clip sh 003",
+   "src_name": "step_1_682f7a15_clip_sh_003.mp4",
+   "bytes": 5423004,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_003] Rendered video clip bytes for shot sh_003 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/bridge/media/clip_sh_003_poster.jpg",
+   "file": "process/bridge/media/clip_sh_003.mp4"
+  },
+  {
+   "id": "clip_sh_004",
+   "stage": "ClipAgent__step_1_682f7a15",
+   "kind": "video",
+   "label": "clip sh 004",
+   "src_name": "step_1_682f7a15_clip_sh_004.mp4",
+   "bytes": 8622702,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_004] Rendered video clip bytes for shot sh_004 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/bridge/media/clip_sh_004_poster.jpg",
+   "file": "process/bridge/media/clip_sh_004.mp4"
+  },
+  {
+   "id": "clip_sh_005",
+   "stage": "ClipAgent__step_1_682f7a15",
+   "kind": "video",
+   "label": "clip sh 005",
+   "src_name": "step_1_682f7a15_clip_sh_005.mp4",
+   "bytes": 7579005,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_005] Rendered video clip bytes for shot sh_005 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_005",
+   "shot": "sh_005",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/bridge/media/clip_sh_005_poster.jpg",
+   "file": "process/bridge/media/clip_sh_005.mp4"
+  },
+  {
+   "id": "clip_sh_006",
+   "stage": "ClipAgent__step_1_682f7a15",
+   "kind": "video",
+   "label": "clip sh 006",
+   "src_name": "step_1_682f7a15_clip_sh_006.mp4",
+   "bytes": 4020189,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_006] Rendered video clip bytes for shot sh_006 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_006",
+   "shot": "sh_006",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/bridge/media/clip_sh_006_poster.jpg",
+   "file": "process/bridge/media/clip_sh_006.mp4"
+  },
+  {
+   "id": "clip_sh_007",
+   "stage": "ClipAgent__step_1_682f7a15",
+   "kind": "video",
+   "label": "clip sh 007",
+   "src_name": "step_1_682f7a15_clip_sh_007.mp4",
+   "bytes": 5852458,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_007] Rendered video clip bytes for shot sh_007 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_007",
+   "shot": "sh_007",
+   "w": 864,
+   "h": 496,
+   "dur": 15.07,
+   "poster": "process/bridge/media/clip_sh_007_poster.jpg",
+   "file": "process/bridge/media/clip_sh_007.mp4"
+  },
+  {
+   "id": "clip_sh_008",
+   "stage": "ClipAgent__step_1_682f7a15",
+   "kind": "video",
+   "label": "clip sh 008",
+   "src_name": "step_1_682f7a15_clip_sh_008.mp4",
+   "bytes": 3018543,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_008] Rendered video clip bytes for shot sh_008 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_008",
+   "shot": "sh_008",
+   "w": 864,
+   "h": 496,
+   "dur": 15.07,
+   "poster": "process/bridge/media/clip_sh_008_poster.jpg",
+   "file": "process/bridge/media/clip_sh_008.mp4"
+  },
+  {
+   "id": "clip_sh_009",
+   "stage": "ClipAgent__step_1_682f7a15",
+   "kind": "video",
+   "label": "clip sh 009",
+   "src_name": "step_1_682f7a15_clip_sh_009.mp4",
+   "bytes": 3557611,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_009] Rendered video clip bytes for shot sh_009 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_009",
+   "shot": "sh_009",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/bridge/media/clip_sh_009_poster.jpg",
+   "file": "process/bridge/media/clip_sh_009.mp4"
+  },
+  {
+   "id": "aud_final",
+   "stage": "AudioMixAgent__step_1_682f7a15",
+   "kind": "audio",
+   "label": "aud final",
+   "src_name": "step_1_682f7a15_aud_final.wav",
+   "bytes": 23961418,
+   "caption": "[BINARY WAV FILE · mime=audio/wav · sys_id aud_final] Final-mix audio bytes — all source audio tracks (dialogue / foley / music / ambience / narrator) merged. Ready to be muxed onto the delivered video by a downstream compositing step.",
+   "scope": "global",
+   "file": "process/bridge/media/aud_final.mp3",
+   "dur": 135.84
+  },
+  {
+   "id": "audiomixagent_output",
+   "stage": "AudioMixAgent__step_1_682f7a15",
+   "kind": "json",
+   "label": "AudioMixAgent output",
+   "src_name": "step_1_682f7a15_audiomixagent_exec_9.json",
+   "bytes": 43,
+   "caption": "[JSON MANIFEST] Final-audio-mix envelope: amix of 0 source track(s) (video dialogue+foley + optional global music/ambience/narrator). Planning manifest only; the wav is a sibling artifact.",
+   "scope": "global",
+   "file": "process/bridge/media/audiomixagent_output.json",
+   "excerpt": "{\"language\": \"en\"}"
+  },
+  {
+   "id": "compositor_final",
+   "stage": "CompositorAgent__step_1_682f7a15",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_1_682f7a15_compositor_final.mp4",
+   "bytes": 25314709,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "w": 864,
+   "h": 496,
+   "dur": 135.84,
+   "poster": "process/bridge/media/compositor_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "compositoragent_output",
+   "stage": "CompositorAgent__step_1_682f7a15",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_1_682f7a15_compositoragent_exec_10.json",
+   "bytes": 624,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/bridge/media/compositoragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"plan\": {\"color_grade\": {\"brightness\": 0.0, \"contrast\": 0.05, \"saturation\": 0.0}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"authored_cues\": [], \"card_style\": {\"font_size\": 34, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"posit…"
+  },
+  {
+   "id": "final_film",
+   "stage": "CompositorAgent__step_1_682f7a15",
+   "kind": "video",
+   "label": "final film",
+   "file": "videos/bridge.mp4",
+   "poster": "posters/bridge.jpg",
+   "final": true,
+   "caption": "Delivered film as published on this site.",
+   "src_name": "bridge.mp4",
+   "w": 864,
+   "h": 496,
+   "dur": 135.84
+  }
+ ],
+ "edges": [
+  {
+   "from": "bridge_deck",
+   "to": "IntakeImageAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "bridge_joints",
+   "to": "IntakeImageAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "bridge_side",
+   "to": "IntakeImageAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "craftsman_narration",
+   "to": "IntakeAudioAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "string_music",
+   "to": "IntakeAudioAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "BriefEnricherAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeimageagent_output",
+   "to": "BriefEnricherAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeaudioagent_output",
+   "to": "BriefEnricherAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "briefenricheragent_output",
+   "to": "KeyframeSheetAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "explaineragent_output",
+   "to": "KeyframeSheetAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "bridge_deck",
+   "to": "KeyframeSheetAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "bridge_joints",
+   "to": "KeyframeSheetAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "bridge_side",
+   "to": "KeyframeSheetAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "keyframesheetagent_output",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "shot_prompt_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard_prompt",
+   "to": "shot_prompt_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "shot_prompt_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard_prompt",
+   "to": "shot_prompt_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard",
+   "to": "shot_prompt_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard_prompt",
+   "to": "shot_prompt_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard",
+   "to": "shot_prompt_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard_prompt",
+   "to": "shot_prompt_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard",
+   "to": "shot_prompt_sh_009",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard_prompt",
+   "to": "shot_prompt_sh_009",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "loc_bridge_deck_anchor",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "loc_bridge_joints_anchor",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "loc_bridge_side_anchor",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "loc_quarry_anchor",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "explaineragent_output",
+   "to": "ShotPromptAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_005",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_006",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_007",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_008",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_009",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_005",
+   "to": "clip_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_006",
+   "to": "clip_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_007",
+   "to": "clip_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_008",
+   "to": "clip_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_009",
+   "to": "clip_sh_009",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "loc_bridge_deck_anchor",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "loc_bridge_joints_anchor",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "loc_bridge_side_anchor",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "loc_quarry_anchor",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard",
+   "to": "ClipAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "clip_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard_prompt",
+   "to": "clip_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "clip_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard_prompt",
+   "to": "clip_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard",
+   "to": "clip_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard_prompt",
+   "to": "clip_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard",
+   "to": "clip_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard_prompt",
+   "to": "clip_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard",
+   "to": "clip_sh_009",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard_prompt",
+   "to": "clip_sh_009",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "craftsman_narration",
+   "to": "AudioMixAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "string_music",
+   "to": "AudioMixAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_final",
+   "to": "AudioMixAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_001",
+   "to": "AudioMixAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_002",
+   "to": "AudioMixAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_003",
+   "to": "AudioMixAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_004",
+   "to": "AudioMixAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_005",
+   "to": "AudioMixAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_006",
+   "to": "AudioMixAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_007",
+   "to": "AudioMixAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_008",
+   "to": "AudioMixAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_009",
+   "to": "AudioMixAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_final",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_001",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_002",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_003",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_004",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_005",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_006",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_007",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_008",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_009",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_final",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "transcriptionagent_output",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "bridge_deck",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "bridge_joints",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "bridge_side",
+   "to": "CompositorAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "briefenricheragent_output",
+   "to": "ExplainerAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "ExplainerAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeimageagent_output",
+   "to": "ExplainerAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeaudioagent_output",
+   "to": "ExplainerAgent__step_1_682f7a15",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "final_film",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

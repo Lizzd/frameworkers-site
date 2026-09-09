@@ -1,0 +1,29 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 with the sixth cell as solid neutral gray; N=6 → 3×2.
+
+[STYLE FOUNDATION]
+VISUAL MEDIUM and aesthetic are dictated entirely by story.style_anchor (below) — live-action film, 2D anime, illustration, 3D, etc.; do NOT default to photoreal, do NOT impose any medium the brief omits. Apply verbatim: 2D colored graphic-novel animation with crisp black ink lines, muted Victorian browns, gaslight gold, rain-blue shadows, and selective crimson accents. High-contrast panel compositions inspired by Sidney Paget illustrations and modern noir comics, with subtle paper grain, visible foley lettering, and clean English subtitle styling.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the vale_study location anchor for the desk-and-green-lamp composition. Use the FACE section of the sherlock_holmes character anchor for Holmes’s speaking profile and the FRONT section of the caleb_pike character anchor for Pike’s tense torso and gloved hands. Holmes places a waxed thread beside the pistol, then lifts Sir Edmund’s half-written letter with the brass-rimmed magnifier edge; show the letter as dark ink lines without readable text. Pike’s gloved hands open, then close into white-knuckled fists in the lamplight. Sir Edmund Vale is only suggested by a motionless signet hand near the desk edge, matching his anchor without graphic detail.
+
+[PANEL 2]
+Use the BACK section of the vale_study location anchor for a view toward the bolted oak door and keyhole in the smoky background. Use the FACE section of the caleb_pike character anchor for his stiff bow, tight collar, needle moustache, and sweat at the hairline; use the FACE/FRONT identity of sherlock_holmes as he stands close but does not touch him. Pike speaks with controlled disdain, mouth forming the line while his eyes avoid Holmes. Holmes angles Pike’s right cuff toward the green lamp, revealing a tiny blue sealing-wax crescent that matches the blue smear near the keyhole.
+
+[PANEL 3]
+Use the FRONT section of the vale_study location anchor for the interrogation around the desk. Use the FACE section of caleb_pike for the tight mouth-and-moustache identity lock; use the FACE section of sherlock_holmes for his sharp profile and the FACE section of inspector_lestrade for his startled reaction. Holmes produces a cigarette end from a folded envelope and holds it just below Pike’s needle moustache, aligning the double bite with Pike’s uneven front teeth. Lestrade’s gaze snaps from the cigarette end to Pike’s mouth; Pike presses his lips shut too late, pupils tight, breath held.
+
+[PANEL 4]
+Use the OVERHEAD section of the vale_study location anchor for a clear high-angle desk action layout: green lamp, blotter, pistol, letter, thread, and Turkish carpet edges. Use the FRONT sections of caleb_pike, dr_watson, inspector_lestrade, sherlock_holmes, and sir_edmund_vale for consistent costume and body shape, extrapolating dynamic poses from the anchors. Pike lunges sideways for the pistol; Watson drives his leather medical bag down onto Pike’s reaching wrist in a decisive interception, with cloth folds and papers jolting from the impact. The pistol skids across the blotter and stops near Sir Edmund’s still signet hand; Lestrade springs forward as his bowler hat tumbles toward the carpet. No sound-effect text or captions.
+
+[PANEL 5]
+Use the BACK section of the vale_study location anchor for the oak door, bookshelves, swinging green lamp, and rain-blue window shadows. Use the FRONT section of inspector_lestrade for his wiry arrest posture, the FRONT/FACE sections of caleb_pike for his loosened collar and panicked expression, and the FACE/FRONT sections of sherlock_holmes and dr_watson for flanking reactions. Lestrade twists Pike’s arm behind his back and announces the arrest through posture and mouth shape, without subtitles. Pike’s starched collar has popped loose at the throat. Holmes catches the falling waxed thread just above an old dark spot on the carpet; the swinging lamp throws prison-bar shadows across Pike’s face.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 4 reference image(s) in this i2i call are PREVIOUS-SHOT storyboards (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to maintain CROSS-SHOT continuity in: color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality — so the final cut sequence flows smoothly. Identity (character / location / ship details) is still locked exclusively by the FIRST 6 refs (character anchors / location anchor / style anchor).

@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide -> P2 close-up -> P3 medium -> P4 wide
+
+[PANEL 1]
+SHOT: wide, eye-level.
+PLACEMENT: High river surge water is bound halfway up the arch ring vault along the stone bridge facade.
+ACTION: Swollen river waters press against the ancient central arch during the severe October 2019 hundred-year flood.
+ENV: Refer to loc_bridge_joints anchor FRONT section. Dark turbulent flood water pushing against grey limestone.
+
+[PANEL 2]
+SHOT: close-up, eye-level.
+PLACEMENT: A distinct structural crack line is bound running vertically across three adjacent limestone arch ring blocks.
+ACTION: A clear structural crack line opens through the central arch stone ring across old mortar joints.
+ENV: Refer to loc_bridge_joints anchor FRONT section. Raking sunlight revealing crack depth and displaced stone jointing.
+
+[PANEL 3]
+SHOT: medium, low-angle.
+PLACEMENT: Hand chisels, wooden mallets, and green oak timbers are bound resting on a staging platform by the river bank.
+ACTION: Authentic traditional stone tools and oak timbering materials lie ready along the shore for reconstruction work.
+ENV: Refer to loc_bridge_joints anchor OVERHEAD section. Dry riverside bank under clear autumn daylight.
+
+[PANEL 4]
+SHOT: wide, low-angle.
+PLACEMENT: A curved heavy oak timber centring arch framework is bound directly beneath the inner curve of the stone vault.
+ACTION: Traditional green oak timber centring is erected beneath the arch to support authentic stonemasonry rebuilding.
+ENV: Refer to loc_bridge_joints anchor FRONT section. Fresh timber framework resting securely against riverbed footings.
+
+[RENDERED TEXT]
+Do NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 1 refs (character / prop / location anchors).

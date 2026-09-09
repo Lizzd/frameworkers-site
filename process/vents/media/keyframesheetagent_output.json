@@ -1,0 +1,267 @@
+{
+  "content": {
+    "language": "en",
+    "anchors": {
+      "character_anchors": [],
+      "location_anchors": [
+        {
+          "entity_id": "deep_sea_hydrothermal_vent",
+          "prompt_summary": "Abyssal ocean floor in complete deep-sea darkness composed of dark basalt rock and mineral-rich geological formations. Tall volcanic chimney columns vent dense, billowing mineral clouds into dark blue deep-water surroundings. Fissures in the rocky seabed glow faintly from geothermal activity, surrounded by localized biological structures like tubeworm clusters.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": ""
+        }
+      ],
+      "prop_anchors": [
+        {
+          "entity_id": "temp_depth_graph",
+          "prompt_summary": "Clean scientific graphic overlay depicting an ocean depth graph in 2D vector style. Features a continuous smooth blue line representing ambient seawater temperature and a glowing red marker highlighting high vent fluid temperature against a dark ocean background.",
+          "views": [
+            "HERO",
+            "FRONT"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic16_vents/workspace_global_20260803_120643/inputs/20260803_120643_508048_fig_temp_depth.png"
+        },
+        {
+          "entity_id": "food_web_diagram",
+          "prompt_summary": "Clean 2D motion infographic diagram showing deep-sea biological trophic levels. Arranged with light blue rectangular nodes and connecting directional flow arrows on a dark ocean background.",
+          "views": [
+            "HERO",
+            "FRONT"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic16_vents/workspace_global_20260803_120643/inputs/20260803_120643_511283_fig_food_web.png"
+        }
+      ]
+    },
+    "shot_visuals": {
+      "sh_001": {
+        "shot_id": "sh_001",
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 extreme-wide -> P2 medium -> P3 wide -> P4 close-up\n\n[PANEL 1]\nSHOT: extreme-wide high-angle\nPLACEMENT: Empty abyssal water column filling the upper frame; no biological figures present.\nACTION: Smooth gradient of dark abyssal blue fading into total ocean darkness near the seafloor.\nENV: Featureless deep abyssal ocean water with subtle vertical gradient from deep teal to charcoal black.\n\n[PANEL 2]\nSHOT: medium eye-level\nPLACEMENT: Graphic indicator scale centered vertically in the frame.\nACTION: Sleek vector depth gauge marker gliding downward with numeric scale callouts.\nENV: Dark abyssal seawater backdrop with soft luminous cyan UI accents.\n\n[PANEL 3]\nSHOT: wide eye-level\nPLACEMENT: Basalt rock ridge extending horizontally across the lower third.\nACTION: Dark basalt seafloor cracks revealing bright red tubeworm plumes sprouting in dense clusters.\nENV: Dark volcanic seabed with soft glowing red warmth emanating from active fissures.\n\n[PANEL 4]\nSHOT: close-up low-angle\nPLACEMENT: Red-plumed tubeworm stalks anchored to basalt rock in foreground left; white crabs positioned on rock surface right.\nACTION: White vent crabs resting along dark rock edges beside thriving red tubeworm plumes.\nENV: Textured basalt fissure wall illuminated by warm geothermal under-lighting.\n\n[RENDERED TEXT]\nNo panel numbers or captions. Clean graphic UI labels for depth and temperature markers in English if shown."
+      },
+      "sh_002": {
+        "shot_id": "sh_002",
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide cross-section -> P2 medium cross-section -> P3 close-up cross-section -> P4 wide\n\n[PANEL 1]\nSHOT: wide cross-section eye-level\nPLACEMENT: Cutaway geological stratum spanning the full frame horizontally.\nACTION: Jagged rock fissures extending down from the seabed into the subterranean oceanic crust.\nENV: Dark blue ocean above, dark slate gray basalt crust below with crisp interior cross-section boundaries.\n\n[PANEL 2]\nSHOT: medium cross-section eye-level\nPLACEMENT: Porous rock channel network occupying central frame.\nACTION: Cool blue fluid arrows flowing downward through subterranean rock channels toward deep magma chambers.\nENV: Subterranean dark gray rock layer with glowing cyan flow lines.\n\n[PANEL 3]\nSHOT: close-up cross-section low-angle\nPLACEMENT: Subterranean chamber bounded by crust rock walls.\nACTION: Fluid streams shifting color from cool blue to bright warm orange near glowing magma.\nENV: Deep volcanic mantle zone illuminated by intense orange-red geothermal glow.\n\n[PANEL 4]\nSHOT: wide low-angle\nPLACEMENT: Volcanic chimney nozzle positioned in lower central frame.\nACTION: Superheated fluid surging rapidly upward, erupting from the vent chimney orifice into ocean water.\nENV: Abyssal floor with a towering hydrothermal chimney discharging dense plumes into dark blue seawater.\n\n[RENDERED TEXT]\nNo panel numbers, captions, or watermarks."
+      },
+      "sh_003": {
+        "shot_id": "sh_003",
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "temp_depth_graph"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "temp_depth_graph"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 medium -> P3 close-up -> P4 wide\n\n[PANEL 1]\nSHOT: medium low-angle\nPLACEMENT: Towering black smoker chimney orifice anchored in lower center frame.\nACTION: Swirling black mineral plume spewing intensely from the chimney nozzle into surrounding ocean water.\nENV: Dark abyssal ocean background with high-contrast black fluid discharge.\n\n[PANEL 2]\nSHOT: medium eye-level\nPLACEMENT: Anchor prop temp_depth_graph overlaying the center frame.\nACTION: Graphic line graph plotting a smooth cyan seawater temperature baseline alongside a steep red thermal spike.\nENV: Dark ocean backdrop with glowing 2D vector infographic elements.\n\n[PANEL 3]\nSHOT: close-up eye-level\nPLACEMENT: Anchor prop temp_depth_graph focused on thermal peak marker in upper frame.\nACTION: Graphic thermal curve peaking near 400 degrees Celsius while the fluid stream stays entirely liquid without bubbles.\nENV: High-tech vector graphic overlay set against deep blue ocean gradients.\n\n[PANEL 4]\nSHOT: wide eye-level\nPLACEMENT: Hydrothermal plume column in central frame.\nACTION: Downward vector pressure arrows pressing uniformly against the superheated fluid stream.\nENV: Abyssal water column with symmetrical graphic overlay arrows indicating heavy hydrostatic pressure.\n\n[RENDERED TEXT]\nNo panel numbers or captions. Minimal axis numbers on the graph overlay in English."
+      },
+      "sh_004": {
+        "shot_id": "sh_004",
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 close-up -> P2 detail -> P3 medium -> P4 wide\n\n[PANEL 1]\nSHOT: close-up eye-level\nPLACEMENT: Mineral chimney nozzle filling lower half of frame.\nACTION: Dense dark mineral clouds expanding outward from chimney opening into cold seawater.\nENV: Dark basalt chimney structure contrasted against deep dark-blue water.\n\n[PANEL 2]\nSHOT: detail microscopic view\nPLACEMENT: Molecular graphic symbols distributed across central frame.\nACTION: Dissolved metallic icons combining rapidly into geometric solid mineral crystals.\nENV: Clean stylized dark microscopic background with glowing metallic vector elements.\n\n[PANEL 3]\nSHOT: medium eye-level\nPLACEMENT: Thermal boundary zone centered horizontally.\nACTION: Hot red mineral stream encountering cold cyan ambient seawater with subtle boundary gradients.\nENV: Dark abyssal ocean water showing sharp thermal gradient visualization.\n\n[PANEL 4]\nSHOT: wide eye-level\nPLACEMENT: Chimney column structure rising vertically in central frame.\nACTION: Dark crystallized mineral particles cascading down onto outer chimney walls, increasing structure height.\nENV: Mineral chimney spire on dark seafloor surrounded by subtle mineral dust clouds.\n\n[RENDERED TEXT]\nNo panel numbers, captions, or watermarks."
+      },
+      "sh_005": {
+        "shot_id": "sh_005",
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 close-up -> P3 medium schematic -> P4 wide\n\n[PANEL 1]\nSHOT: medium eye-level\nPLACEMENT: Stylized solar ray icon positioned in upper left; large strike-through cross overlaying it.\nACTION: Solar light ray fading out completely into total abyssal blackness.\nENV: Deep ocean darkness devoid of sunlight.\n\n[PANEL 2]\nSHOT: close-up microscopic view\nPLACEMENT: Chemosynthetic bacterial cells floating in central frame.\nACTION: Oval bacterial cells absorbing glowing chemical particle streams from surrounding current.\nENV: Stylized dark teal fluid background with luminous chemical particle tracks.\n\n[PANEL 3]\nSHOT: medium schematic eye-level\nPLACEMENT: Molecular conversion diagram centered in frame.\nACTION: Hydrogen sulphide molecular icons oxidizing and transferring energy to form sugar molecules from carbon dioxide.\nENV: Clean dark motion graphic interface with vector chemical bonds and energy symbols.\n\n[PANEL 4]\nSHOT: wide eye-level\nPLACEMENT: Cluster of bacterial colonies glowing soft green/cyan in lower frame.\nACTION: Glowing energy pathways radiating outward from bacterial cells into the surrounding ecosystem.\nENV: Dark abyssal seabed illuminated by stylized biological energy pathways.\n\n[RENDERED TEXT]\nNo panel numbers, captions, or watermarks."
+      },
+      "sh_006": {
+        "shot_id": "sh_006",
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 medium cutaway -> P3 close-up cutaway -> P4 medium cutaway\n\n[PANEL 1]\nSHOT: medium eye-level\nPLACEMENT: Cluster of giant Riftia pachyptila tubeworms rooted in white chitinous tubes in lower frame.\nACTION: Bright red plume tops swaying gently in deep ocean currents near a vent fissure.\nENV: Dark basalt rocks with warm geothermal lighting accenting the crimson plumes.\n\n[PANEL 2]\nSHOT: medium cutaway eye-level\nPLACEMENT: Single adult tubeworm body shown in anatomical cross-section.\nACTION: Smooth white outer cylinder body revealed to lack a mouth opening and gut tube.\nENV: Clean 2D medical/biological vector graphic background.\n\n[PANEL 3]\nSHOT: close-up cutaway eye-level\nPLACEMENT: Internal trophosome organ occupying central frame.\nACTION: Trophosome organ cavity packed with dense, glowing chemosynthetic bacterial colonies.\nENV: Biological vector schematic with soft inner ambient illumination.\n\n[PANEL 4]\nSHOT: medium cutaway eye-level\nPLACEMENT: Red branchial plume top connected to internal vascular channels.\nACTION: Flow arrows showing absorbed chemical compounds traveling down vascular tubes into internal tissues.\nENV: Stylized biological diagram with crisp vector directional paths.\n\n[RENDERED TEXT]\nNo panel numbers, captions, or watermarks."
+      },
+      "sh_007": {
+        "shot_id": "sh_007",
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium diagram -> P2 medium diagram -> P3 close-up infographic -> P4 wide\n\n[PANEL 1]\nSHOT: medium diagram eye-level\nPLACEMENT: Vascular circulatory diagram of tubeworm tissue centered in frame.\nACTION: Hemoglobin vascular lines carrying dissolved hydrogen sulphide and oxygen into internal bacterial organ tissue.\nENV: Clean vector anatomical diagram on dark background.\n\n[PANEL 2]\nSHOT: medium diagram eye-level\nPLACEMENT: Bacterial organ tissue interface in central frame.\nACTION: Reverse chemical arrows returning synthesized nutrient molecules from bacteria into the worm's bloodstream.\nENV: Clean 2D motion graphic layout with bright yellow/cyan exchange arrows.\n\n[PANEL 3]\nSHOT: close-up infographic eye-level\nPLACEMENT: Interlocking circular symbiotic symbol centered in frame.\nACTION: Two glowing circular vector rings merging together to represent biological symbiosis.\nENV: Dark ocean backdrop with sleek vector infographic symbols.\n\n[PANEL 4]\nSHOT: wide eye-level\nPLACEMENT: Dense tubeworm field occupying lower half of frame.\nACTION: Flourishing red tubeworm colony fully expanded and swaying near active seafloor hydrothermal vents.\nENV: Abyssal floor with warm vent glow illuminating surrounding tubeworm forest.\n\n[RENDERED TEXT]\nNo panel numbers, captions, or watermarks."
+      },
+      "sh_008": {
+        "shot_id": "sh_008",
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": [
+              "food_web_diagram"
+            ]
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "food_web_diagram"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "food_web_diagram"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": [
+              "food_web_diagram"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide infographic -> P2 wide infographic -> P3 wide infographic -> P4 wide infographic\n\n[PANEL 1]\nSHOT: wide infographic eye-level\nPLACEMENT: Anchor prop food_web_diagram positioned in center frame.\nACTION: Base level rectangular node glowing cyan, representing chemosynthetic bacteria as primary producers.\nENV: Dark ocean backdrop with clean 2D vector hierarchy lines.\n\n[PANEL 2]\nSHOT: wide infographic eye-level\nPLACEMENT: Anchor prop food_web_diagram expanding to second tier.\nACTION: Directional arrows extending upward from bacteria node to primary consumer nodes for tubeworms and mussels.\nENV: Dark background with crisp vector nodes and connecting flow lines.\n\n[PANEL 3]\nSHOT: wide infographic eye-level\nPLACEMENT: Anchor prop food_web_diagram expanding to third tier.\nACTION: Flow arrows continuing upward to scavenger nodes depicting vent crabs and bresiliid shrimp.\nENV: Deep blue graphic layout with illuminated network branches.\n\n[PANEL 4]\nSHOT: wide infographic eye-level\nPLACEMENT: Anchor prop food_web_diagram fully revealed in upper frame.\nACTION: Apex predator node illuminating at top of hierarchy featuring deep-sea zoarcid eelpout fish.\nENV: Complete, balanced 2D motion infographic web on dark ocean background.\n\n[RENDERED TEXT]\nNo panel numbers or captions. Minimal clean node text labels in English if necessary."
+      },
+      "sh_009": {
+        "shot_id": "sh_009",
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 extreme-wide -> P2 wide -> P3 medium -> P4 extreme-wide\n\n[PANEL 1]\nSHOT: extreme-wide high-angle\nPLACEMENT: Grand hydrothermal vent field spreading across the lower two-thirds of the frame.\nACTION: Multiple active black smoker chimneys venting fluid alongside dense tubeworm and crab colonies.\nENV: Vast abyssal ocean floor glowing warmly from active geothermal fissures in permanent dark ocean depths.\n\n[PANEL 2]\nSHOT: wide eye-level\nPLACEMENT: Active chimney column in center-left, marine life colonies clustered at base.\nACTION: Glowing mineral fluid plumes billowing steadily into dark abyssal water surrounding rich organism communities.\nENV: Deep ocean floor with atmospheric geothermal lighting and deep blue water.\n\n[PANEL 3]\nSHOT: medium low-angle\nPLACEMENT: Seabed vent fissure positioned in lower central frame.\nACTION: Radiant orange-gold energy lines flowing gently out from fissure rocks into surrounding water.\nENV: Dark basalt terrain illuminated by soft, radiant geothermal heat lines.\n\n[PANEL 4]\nSHOT: extreme-wide high-angle\nPLACEMENT: Entire hydrothermal vent community shrinking in scale in central lower frame.\nACTION: Camera pulling back as black smoker plumes continue rising slowly into vast dark ocean space.\nENV: Vast, quiet deep ocean abyss with dark blue and slate gray atmospheric depth.\n\n[RENDERED TEXT]\nNo panel numbers, captions, or watermarks."
+      }
+    },
+    "style_notes": [
+      "Clean 2D vector explainer animation with stylized motion graphic overlays.",
+      "Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures.",
+      "Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space."
+    ],
+    "must_avoid": []
+  }
+}

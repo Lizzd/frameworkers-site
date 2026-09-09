@@ -1,0 +1,1585 @@
+{
+ "key": "psa",
+ "title": "Don't Gamble on a Bite",
+ "genre": "Explainer · Public Health",
+ "cat": "Explainer",
+ "prompt": "A health-education PSA. After a cat or dog bite or scratch, don't count on luck and don't delay: (1) immediately rinse the wound thoroughly under running water with soap, (2) get to a clinic as soon as possible, (3) let a doctor assess the exposure risk, and (4) complete rabies post-exposure prophylaxis as directed — the vaccine, plus immunoglobulin if needed. Clean, gentle, professional 2D medical-explainer animation (flat, clear shapes, soft blue-green palette, symbolic — no gore, no on-screen text), Chinese narration, Chinese subtitles, and foley.",
+ "source": {
+  "type": "subrun",
+  "path": "sub_agents/runs/rabies_psa_01"
+ },
+ "generated_at": "2026-09-09T15:56:38+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 1
+  },
+  {
+   "id": "Story",
+   "agent": "StoryAgent",
+   "label": "Story",
+   "step": "",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "Keyframes",
+   "agent": "KeyframeSheetAgent",
+   "label": "Keyframe sheet",
+   "step": "",
+   "order": 2,
+   "n": 20
+  },
+  {
+   "id": "ShotPrompts",
+   "agent": "ShotPromptAgent",
+   "label": "Shot prompts",
+   "step": "",
+   "order": 3,
+   "n": 6
+  },
+  {
+   "id": "Clips",
+   "agent": "ClipAgent",
+   "label": "Clips",
+   "step": "",
+   "order": 4,
+   "n": 6
+  },
+  {
+   "id": "Narration",
+   "agent": "NarratorAgent",
+   "label": "Narration",
+   "step": "",
+   "order": 5,
+   "n": 31
+  },
+  {
+   "id": "Final",
+   "agent": "CompositorAgent",
+   "label": "Final cut",
+   "step": "",
+   "order": 6,
+   "n": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "user_goal",
+   "stage": "Inputs",
+   "kind": "text",
+   "label": "user goal",
+   "src_name": "user_goal.txt",
+   "bytes": 3347,
+   "caption": "The user's instruction, verbatim.",
+   "scope": "",
+   "file": "process/psa/media/user_goal.txt",
+   "excerpt": "健康科普公益短片：《被猫狗咬伤后，别赌运气》 【类型】健康科普 / 医疗科普公益短片（非叙事、非氛围片，目标是让观众看懂并照做） 【画面风格】干净、专业、温和的 2D 医疗科普动画 【语言环境】中国大陆普通社区 【受众】普通家庭、儿童家长、宠物接触人群、社区居民 【整体时长】约 85 秒左右（软目标；具体收成几段、每段几拍由你按信息密度决定，不要凑时长，也不要硬塞） 【核心科普信息（必须忠实保留，不许增删医学结论、不许改顺序）】 被猫狗咬伤或抓伤后，不要侥幸、不要拖延。正确做法依次是： 1. 立刻用流动清水 + 肥皂水充分冲洗伤口（是“充分清洗”，不是冲一下）； 2. 尽快到正规医疗机构就诊； 3. 由医生评估暴露风险（按咬伤 / …"
+  },
+  {
+   "id": "story",
+   "stage": "Story",
+   "kind": "json",
+   "label": "story",
+   "src_name": "story.json",
+   "bytes": 19614,
+   "caption": "Story: logline, characters, locations, shot list with panel beats.",
+   "scope": "",
+   "file": "process/psa/media/story.json",
+   "excerpt": "{\"title\": \"被猫狗咬伤后，别赌运气\", \"logline\": \"被猫狗咬伤或抓伤后，立即充分冲洗、尽快就医，让医生评估并按医嘱完成狂犬病暴露后预防。\", \"setting\": \"中国大陆普通社区，当代；面向普通家庭、儿童家长、宠物接触人群和社区居民，东亚面孔。全片是干净的 2D 公益医疗科普动画，不是 live-action film。\", \"style_anchor\": \"干净、温和、专业的 2D 医疗科普动画。柔和蓝绿为主，少量暖黄色点亮安心感；扁平清晰造型、平静光线、留足画面下方中文字幕空间，全片可信、克制、不惊悚。\", \"dialogue_language\": \"Mandarin Chinese\", \"charac…"
+  },
+  {
+   "id": "abstract_infographic_space_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "abstract_infographic_space anchor",
+   "src_name": "abstract_infographic_space.png",
+   "bytes": 1202132,
+   "caption": "Identity reference card for location abstract_infographic_space — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/psa/media/abstract_infographic_space_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "child_patient_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "child_patient anchor",
+   "src_name": "child_patient.png",
+   "bytes": 1986448,
+   "caption": "Identity reference card for character child_patient — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/psa/media/child_patient_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "clinic_doctor_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "clinic_doctor anchor",
+   "src_name": "clinic_doctor.png",
+   "bytes": 1857120,
+   "caption": "Identity reference card for character clinic_doctor — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/psa/media/clinic_doctor_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "community_park_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "community_park anchor",
+   "src_name": "community_park.png",
+   "bytes": 2084785,
+   "caption": "Identity reference card for location community_park — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/psa/media/community_park_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "community_pet_dog_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "community_pet_dog anchor",
+   "src_name": "community_pet_dog.png",
+   "bytes": 2056827,
+   "caption": "Identity reference card for character community_pet_dog — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/psa/media/community_pet_dog_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "generic_clinic_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "generic_clinic anchor",
+   "src_name": "generic_clinic.png",
+   "bytes": 1544613,
+   "caption": "Identity reference card for location generic_clinic — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/psa/media/generic_clinic_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "parent_mother_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "parent_mother anchor",
+   "src_name": "parent_mother.png",
+   "bytes": 1814270,
+   "caption": "Identity reference card for character parent_mother — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/psa/media/parent_mother_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "public_sink_area_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "public_sink_area anchor",
+   "src_name": "public_sink_area.png",
+   "bytes": 2064872,
+   "caption": "Identity reference card for location public_sink_area — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/psa/media/public_sink_area_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_001 storyboard",
+   "src_name": "sh_001_storyboard.png",
+   "bytes": 2434208,
+   "caption": "Storyboard sheet for sh_001: 5 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/psa/media/sh_001_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_001 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_001.storyboard_prompt",
+   "bytes": 4451,
+   "caption": "Image prompt that produced the sh_001 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/psa/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_002 storyboard",
+   "src_name": "sh_002_storyboard.png",
+   "bytes": 2257715,
+   "caption": "Storyboard sheet for sh_002: 4 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/psa/media/sh_002_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_002 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_002.storyboard_prompt",
+   "bytes": 5455,
+   "caption": "Image prompt that produced the sh_002 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/psa/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_003_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_003 storyboard",
+   "src_name": "sh_003_storyboard.png",
+   "bytes": 2163465,
+   "caption": "Storyboard sheet for sh_003: 4 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/psa/media/sh_003_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_003_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_003 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_003.storyboard_prompt",
+   "bytes": 4417,
+   "caption": "Image prompt that produced the sh_003 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/psa/media/sh_003_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_004_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_004 storyboard",
+   "src_name": "sh_004_storyboard.png",
+   "bytes": 2226006,
+   "caption": "Storyboard sheet for sh_004: 4 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/psa/media/sh_004_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_004_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_004 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_004.storyboard_prompt",
+   "bytes": 5214,
+   "caption": "Image prompt that produced the sh_004 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/psa/media/sh_004_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_005_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_005 storyboard",
+   "src_name": "sh_005_storyboard.png",
+   "bytes": 1687031,
+   "caption": "Storyboard sheet for sh_005: 5 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/psa/media/sh_005_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_005_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_005 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_005.storyboard_prompt",
+   "bytes": 4985,
+   "caption": "Image prompt that produced the sh_005 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/psa/media/sh_005_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_006_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_006 storyboard",
+   "src_name": "sh_006_storyboard.png",
+   "bytes": 2145159,
+   "caption": "Storyboard sheet for sh_006: 4 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_006",
+   "file": "process/psa/media/sh_006_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_006_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_006 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_006.storyboard_prompt",
+   "bytes": 5546,
+   "caption": "Image prompt that produced the sh_006 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_006",
+   "file": "process/psa/media/sh_006_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_001_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_001 video prompt",
+   "src_name": "sh_001.txt",
+   "bytes": 8297,
+   "caption": "Video-generation prompt for sh_001: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/psa/media/sh_001_video_prompt.txt",
+   "excerpt": "[设定] 中国大陆普通社区，当代；面向普通家庭、儿童家长、宠物接触人群和社区居民，东亚面孔。全片是干净的 2D 公益医疗科普动画，不是 live-action film。 [风格] 焦段约定：24mm 用于社区公园建立宽景，50mm 用于伤口教学近景，35mm 用于抽象信息图与跟随离场中广角；浅景深只用于突出手部与抓痕，其余保持清晰可读。 光圈意图为柔和背景虚化、主体边缘清楚，5600K 自然日光，清浅蓝绿主调配少量暖黄色；干净、温和、专业的 2D 医疗科普动画。高清、细节丰富、电影质感、色彩自然、光影柔和。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到…"
+  },
+  {
+   "id": "sh_002_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_002 video prompt",
+   "src_name": "sh_002.txt",
+   "bytes": 6722,
+   "caption": "Video-generation prompt for sh_002: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/psa/media/sh_002_video_prompt.txt",
+   "excerpt": "[设定] 中国大陆普通社区，当代；面向普通家庭、儿童家长、宠物接触人群和社区居民，东亚面孔。全片是干净的 2D 公益医疗科普动画，不是 live-action film。 [风格] 人物示范以35mm中景建立、50mm近景讲清手部步骤，信息图用35mm平面全景构图；中等光圈，背景柔化但手部、水流、泡沫和伤口保持清晰，5600K偏冷洁净色温。 干净、温和、专业的 2D 医疗科普动画；柔和蓝绿为主，少量暖黄色点亮安心感，高清、细节丰富、电影质感、色彩自然、光影柔和。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 4 格 = 右下；…"
+  },
+  {
+   "id": "sh_003_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_003 video prompt",
+   "src_name": "sh_003.txt",
+   "bytes": 7488,
+   "caption": "Video-generation prompt for sh_003: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/psa/media/sh_003_video_prompt.txt",
+   "excerpt": "[设定] 中国大陆普通社区，当代；面向普通家庭、儿童家长、宠物接触人群和社区居民，东亚面孔。全片是干净的 2D 公益医疗科普动画，不是 live-action film。 [风格] 35mm 用于明亮门诊空间与信息图全景，50mm 用于诊室中景和手部检查；f/4 至 f/5.6，适度景深，手部与关键图标清晰，背景柔和退后。 5600K 清浅蓝绿主调，少量暖黄色点亮安心感；干净、温和、专业的 2D 医疗科普动画，高清、细节丰富、电影质感、色彩自然、光影柔和。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 4 格 = 右下；每格左…"
+  },
+  {
+   "id": "sh_004_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_004 video prompt",
+   "src_name": "sh_004.txt",
+   "bytes": 7262,
+   "caption": "Video-generation prompt for sh_004: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/psa/media/sh_004_video_prompt.txt",
+   "excerpt": "[设定] 中国大陆普通社区，当代；面向普通家庭、儿童家长、宠物接触人群和社区居民，东亚面孔。全片是干净的 2D 公益医疗科普动画，不是 live-action film。 [风格] 50mm 中近景用于清楚示范手部医疗步骤，35mm 中景与全景用于诊室说明和流程图；中等光圈，人物与手部焦点清晰，背景柔和虚化，5600K 冷蓝绿诊室光。 干净、温和、专业的 2D 医疗科普动画；柔和蓝绿主调，少量暖黄色提供安心感，高清、细节丰富、电影质感、色彩自然、光影柔和。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 4 格 = 右下；每格左…"
+  },
+  {
+   "id": "sh_005_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_005 video prompt",
+   "src_name": "sh_005.txt",
+   "bytes": 7177,
+   "caption": "Video-generation prompt for sh_005: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/psa/media/sh_005_video_prompt.txt",
+   "excerpt": "[设定] 中国大陆普通社区，当代；面向普通家庭、儿童家长、宠物接触人群和社区居民，东亚面孔。全片是干净的 2D 公益医疗科普动画，不是 live-action film。 [风格] 35mm 与 50mm 交替的扁平正交信息图构图，图形平面稳定无透视夸张；浅景深意图只用于背景圆形与装饰线条柔化，核心图标始终清晰。 5600K 偏柔和蓝绿，少量暖黄色强调安心感；干净、温和、专业的 2D 医疗科普动画。高清、细节丰富、电影质感、色彩自然、光影柔和。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 5 格 = 右下；每格左上角有一个大…"
+  },
+  {
+   "id": "sh_006_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_006 video prompt",
+   "src_name": "sh_006.txt",
+   "bytes": 7338,
+   "caption": "Video-generation prompt for sh_006: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_006",
+   "file": "process/psa/media/sh_006_video_prompt.txt",
+   "excerpt": "[设定] 中国大陆普通社区，当代；面向普通家庭、儿童家长、宠物接触人群和社区居民，东亚面孔。全片是干净的 2D 公益医疗科普动画，不是 live-action film。 [风格] 以35mm宽中景和扁平信息图全景为主，收尾使用50mm扁平端卡构图；光圈感保持浅景深意图但图标和人物焦点清晰，背景柔和退后。 5600K偏柔和蓝绿环境光，少量暖黄色作为安心强调；干净、温和、专业的 2D 医疗科普动画，高清、细节丰富、色彩自然、光影柔和。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 4 格 = 右下；每格左上角有一个大的白色编号 …"
+  },
+  {
+   "id": "sh_001_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_001 clip",
+   "src_name": "sh_001.mp4",
+   "bytes": 6266022,
+   "caption": "Rendered clip for sh_001 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_001",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/psa/media/sh_001_clip_poster.jpg",
+   "file": "process/psa/media/sh_001_clip.mp4"
+  },
+  {
+   "id": "sh_002_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_002 clip",
+   "src_name": "sh_002.mp4",
+   "bytes": 5804253,
+   "caption": "Rendered clip for sh_002 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_002",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.09,
+   "poster": "process/psa/media/sh_002_clip_poster.jpg",
+   "file": "process/psa/media/sh_002_clip.mp4"
+  },
+  {
+   "id": "sh_003_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_003 clip",
+   "src_name": "sh_003.mp4",
+   "bytes": 7466806,
+   "caption": "Rendered clip for sh_003 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_003",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.09,
+   "poster": "process/psa/media/sh_003_clip_poster.jpg",
+   "file": "process/psa/media/sh_003_clip.mp4"
+  },
+  {
+   "id": "sh_004_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_004 clip",
+   "src_name": "sh_004.mp4",
+   "bytes": 6583449,
+   "caption": "Rendered clip for sh_004 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_004",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.09,
+   "poster": "process/psa/media/sh_004_clip_poster.jpg",
+   "file": "process/psa/media/sh_004_clip.mp4"
+  },
+  {
+   "id": "sh_005_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_005 clip",
+   "src_name": "sh_005.mp4",
+   "bytes": 4107648,
+   "caption": "Rendered clip for sh_005 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_005",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.09,
+   "poster": "process/psa/media/sh_005_clip_poster.jpg",
+   "file": "process/psa/media/sh_005_clip.mp4"
+  },
+  {
+   "id": "sh_006_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_006 clip",
+   "src_name": "sh_006.mp4",
+   "bytes": 5892050,
+   "caption": "Rendered clip for sh_006 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_006",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.09,
+   "poster": "process/psa/media/sh_006_clip_poster.jpg",
+   "file": "process/psa/media/sh_006_clip.mp4"
+  },
+  {
+   "id": "line_gap_00",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line gap_00",
+   "src_name": "gap_00.wav",
+   "bytes": 415244,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "file": "process/psa/media/line_gap_00.mp3",
+   "dur": 8.65
+  },
+  {
+   "id": "line_gap_01",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line gap_01",
+   "src_name": "gap_01.wav",
+   "bytes": 463244,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "file": "process/psa/media/line_gap_01.mp3",
+   "dur": 9.65
+  },
+  {
+   "id": "line_gap_02",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line gap_02",
+   "src_name": "gap_02.wav",
+   "bytes": 542444,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "file": "process/psa/media/line_gap_02.mp3",
+   "dur": 11.3
+  },
+  {
+   "id": "line_gap_03",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line gap_03",
+   "src_name": "gap_03.wav",
+   "bytes": 223244,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "file": "process/psa/media/line_gap_03.mp3",
+   "dur": 4.65
+  },
+  {
+   "id": "subtitles",
+   "stage": "Narration",
+   "kind": "text",
+   "label": "subtitles",
+   "src_name": "narration.srt",
+   "bytes": 1409,
+   "caption": "Subtitle track (SRT).",
+   "scope": "",
+   "file": "process/psa/media/subtitles.srt",
+   "excerpt": "1 00:00:00,000 --> 00:00:05,760 社区里，孩子接触猫狗，咬抓伤可能突然发生。 2 00:00:06,010 --> 00:00:09,250 伤口再小，也别侥幸。 3 00:00:09,500 --> 00:00:12,940 请立刻正确处理，别拖延。 4 00:00:15,069 --> 00:00:18,309 立刻用流动清水冲洗伤口。 5 00:00:18,559 --> 00:00:29,839 再用肥皂水持续充分清洗，动作放稳，让水流和泡沫接触伤口周围，降低病毒风险。 6 00:00:30,162 --> 00:00:33,664 充分清洗后，尽快正规就医。 7 00:00:33,914 --…"
+  },
+  {
+   "id": "narration_cues",
+   "stage": "Narration",
+   "kind": "json",
+   "label": "narration cues",
+   "src_name": "narration.json",
+   "bytes": 7867,
+   "caption": "Narration plan: voice, delivery instructions, timed cues per shot.",
+   "scope": "",
+   "file": "process/psa/media/narration_cues.json",
+   "excerpt": "{\"voice\": \"nova\", \"voice_instructions\": \"A very gentle, tender, soft-spoken (温柔) female Mandarin narrator — like a trusted community doctor speaking warmly and patiently to families. Clear and unhurried, with soft maternal warmth; reassuring rather than clinical; a soft, caring tone with gentle falling intonation. A li…"
+  },
+  {
+   "id": "line_sh_001_vo0",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_001_vo0",
+   "src_name": "sh_001_vo0.wav",
+   "bytes": 276524,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/psa/media/line_sh_001_vo0.mp3",
+   "dur": 5.76
+  },
+  {
+   "id": "line_sh_001_vo1",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_001_vo1",
+   "src_name": "sh_001_vo1.wav",
+   "bytes": 155564,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/psa/media/line_sh_001_vo1.mp3",
+   "dur": 3.24
+  },
+  {
+   "id": "line_sh_001_vo2",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_001_vo2",
+   "src_name": "sh_001_vo2.wav",
+   "bytes": 165164,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/psa/media/line_sh_001_vo2.mp3",
+   "dur": 3.44
+  },
+  {
+   "id": "line_sh_001_vo3",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_001_vo3",
+   "src_name": "sh_001_vo3.wav",
+   "bytes": 272684,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/psa/media/line_sh_001_vo3.mp3",
+   "dur": 5.68
+  },
+  {
+   "id": "line_sh_002_vo0",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_002_vo0",
+   "src_name": "sh_002_vo0.wav",
+   "bytes": 155564,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/psa/media/line_sh_002_vo0.mp3",
+   "dur": 3.24
+  },
+  {
+   "id": "line_sh_002_vo1",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_002_vo1",
+   "src_name": "sh_002_vo1.wav",
+   "bytes": 541484,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/psa/media/line_sh_002_vo1.mp3",
+   "dur": 11.28
+  },
+  {
+   "id": "line_sh_002_vo2",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_002_vo2",
+   "src_name": "sh_002_vo2.wav",
+   "bytes": 380204,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/psa/media/line_sh_002_vo2.mp3",
+   "dur": 7.92
+  },
+  {
+   "id": "line_sh_002_vo3",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_002_vo3",
+   "src_name": "sh_002_vo3.wav",
+   "bytes": 230444,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/psa/media/line_sh_002_vo3.mp3",
+   "dur": 4.8
+  },
+  {
+   "id": "line_sh_003_vo0",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_003_vo0",
+   "src_name": "sh_003_vo0.wav",
+   "bytes": 184364,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/psa/media/line_sh_003_vo0.mp3",
+   "dur": 3.84
+  },
+  {
+   "id": "line_sh_003_vo1",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_003_vo1",
+   "src_name": "sh_003_vo1.wav",
+   "bytes": 163244,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/psa/media/line_sh_003_vo1.mp3",
+   "dur": 3.4
+  },
+  {
+   "id": "line_sh_003_vo2",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_003_vo2",
+   "src_name": "sh_003_vo2.wav",
+   "bytes": 418604,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/psa/media/line_sh_003_vo2.mp3",
+   "dur": 8.72
+  },
+  {
+   "id": "line_sh_003_vo3",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_003_vo3",
+   "src_name": "sh_003_vo3.wav",
+   "bytes": 245804,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/psa/media/line_sh_003_vo3.mp3",
+   "dur": 5.12
+  },
+  {
+   "id": "line_sh_004_vo0",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_004_vo0",
+   "src_name": "sh_004_vo0.wav",
+   "bytes": 385964,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/psa/media/line_sh_004_vo0.mp3",
+   "dur": 8.04
+  },
+  {
+   "id": "line_sh_004_vo1",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_004_vo1",
+   "src_name": "sh_004_vo1.wav",
+   "bytes": 324524,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/psa/media/line_sh_004_vo1.mp3",
+   "dur": 6.76
+  },
+  {
+   "id": "line_sh_004_vo2",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_004_vo2",
+   "src_name": "sh_004_vo2.wav",
+   "bytes": 241964,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/psa/media/line_sh_004_vo2.mp3",
+   "dur": 5.04
+  },
+  {
+   "id": "line_sh_004_vo3",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_004_vo3",
+   "src_name": "sh_004_vo3.wav",
+   "bytes": 428204,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/psa/media/line_sh_004_vo3.mp3",
+   "dur": 8.92
+  },
+  {
+   "id": "line_sh_005_vo0",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_005_vo0",
+   "src_name": "sh_005_vo0.wav",
+   "bytes": 230444,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/psa/media/line_sh_005_vo0.mp3",
+   "dur": 4.8
+  },
+  {
+   "id": "line_sh_005_vo1",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_005_vo1",
+   "src_name": "sh_005_vo1.wav",
+   "bytes": 284204,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/psa/media/line_sh_005_vo1.mp3",
+   "dur": 5.92
+  },
+  {
+   "id": "line_sh_005_vo2",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_005_vo2",
+   "src_name": "sh_005_vo2.wav",
+   "bytes": 201644,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/psa/media/line_sh_005_vo2.mp3",
+   "dur": 4.2
+  },
+  {
+   "id": "line_sh_005_vo3",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_005_vo3",
+   "src_name": "sh_005_vo3.wav",
+   "bytes": 228524,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/psa/media/line_sh_005_vo3.mp3",
+   "dur": 4.76
+  },
+  {
+   "id": "line_sh_005_vo4",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_005_vo4",
+   "src_name": "sh_005_vo4.wav",
+   "bytes": 307244,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_005",
+   "file": "process/psa/media/line_sh_005_vo4.mp3",
+   "dur": 6.4
+  },
+  {
+   "id": "line_sh_006_vo0",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_006_vo0",
+   "src_name": "sh_006_vo0.wav",
+   "bytes": 311084,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_006",
+   "file": "process/psa/media/line_sh_006_vo0.mp3",
+   "dur": 6.48
+  },
+  {
+   "id": "line_sh_006_vo1",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_006_vo1",
+   "src_name": "sh_006_vo1.wav",
+   "bytes": 101804,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_006",
+   "file": "process/psa/media/line_sh_006_vo1.mp3",
+   "dur": 2.12
+  },
+  {
+   "id": "line_sh_006_vo2",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_006_vo2",
+   "src_name": "sh_006_vo2.wav",
+   "bytes": 460844,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_006",
+   "file": "process/psa/media/line_sh_006_vo2.mp3",
+   "dur": 9.6
+  },
+  {
+   "id": "line_sh_006_vo3",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_006_vo3",
+   "src_name": "sh_006_vo3.wav",
+   "bytes": 353324,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_006",
+   "file": "process/psa/media/line_sh_006_vo3.mp3",
+   "dur": 7.36
+  },
+  {
+   "id": "final_film",
+   "stage": "Final",
+   "kind": "video",
+   "label": "final film",
+   "src_name": "final.mp4",
+   "bytes": 19676516,
+   "caption": "Delivered film: clips + narration + subtitles + mix.",
+   "scope": "",
+   "file": "videos/psa.mp4",
+   "poster": "posters/psa.jpg",
+   "final": true,
+   "w": 1280,
+   "h": 720,
+   "dur": 90.67
+  }
+ ],
+ "edges": [
+  {
+   "from": "user_goal",
+   "to": "Story",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "Keyframes",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "parent_mother_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "child_patient_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "clinic_doctor_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "community_pet_dog_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "community_park_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "public_sink_area_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "generic_clinic_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "abstract_infographic_space_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "parent_mother_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "child_patient_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "clinic_doctor_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "community_pet_dog_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "community_park_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "public_sink_area_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "generic_clinic_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "abstract_infographic_space_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "sh_005_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_storyboard_prompt",
+   "to": "sh_005_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "sh_006_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_storyboard_prompt",
+   "to": "sh_006_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_video_prompt",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_video_prompt",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_video_prompt",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_video_prompt",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_video_prompt",
+   "to": "sh_005_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_video_prompt",
+   "to": "sh_006_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_005_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_006_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "narration_cues",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_gap_00",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_gap_01",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_gap_02",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_gap_03",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_001_vo0",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_001_vo1",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_001_vo2",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_001_vo3",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_002_vo0",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_002_vo1",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_002_vo2",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_002_vo3",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_003_vo0",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_003_vo1",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_003_vo2",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_003_vo3",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_004_vo0",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_004_vo1",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_004_vo2",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_004_vo3",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_005_vo0",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_005_vo1",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_005_vo2",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_005_vo3",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_005_vo4",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_006_vo0",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_006_vo1",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_006_vo2",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_006_vo3",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "subtitles",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  }
+ ],
+ "final": "final_film",
+ "notes": [
+  "Early cine-chain run: the sequence Story → Keyframes → Shot prompts → Clips → Narration → Final is fixed, so connections are structural."
+ ]
+}

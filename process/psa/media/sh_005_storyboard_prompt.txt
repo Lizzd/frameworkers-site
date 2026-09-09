@@ -1,0 +1,29 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 with the sixth cell as solid neutral gray; N=6 → 3×2.
+
+[STYLE FOUNDATION]
+VISUAL MEDIUM and aesthetic are dictated entirely by story.style_anchor (below) — live-action film, 2D anime, illustration, 3D, etc.; do NOT default to photoreal, do NOT impose any medium the brief omits. Apply verbatim: 干净、温和、专业的 2D 医疗科普动画。柔和蓝绿为主，少量暖黄色点亮安心感；扁平清晰造型、平静光线、留足画面下方中文字幕空间，全片可信、克制、不惊悚。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the abstract_infographic_space location anchor for the flat frontal infographic background. A simple neutral human silhouette stands at the base of a clean forked road icon, pausing in uncertainty. A small rounded hesitation bubble floats above the silhouette, and a soft warm warning ring gently encloses that bubble. No words, letters, logos, signage, or digits inside the artwork other than the required panel index label; keep large lower subtitle-safe empty space.
+
+[PANEL 2]
+Use the FRONT section of the abstract_infographic_space location anchor for the same blue-green clean background. Center a very small pale wound icon, abstract and non-graphic, with a gentle soft red X mark appearing beside and lightly over it to show that small size should not be ignored. Minimal vector shapes, calm medical-science tone, no realism, no blood, no injury detail, no text or labels other than the required panel index number.
+
+[PANEL 3]
+Use the FRONT section of the abstract_infographic_space location anchor, and use the FRONT section of the community_pet_dog character anchor only as a simplified flat icon reference: a calm medium yellow-white dog with round eyes, soft ears, and a plain unmarked collar, sitting quietly and looking normal. A soft red X mark appears beside the dog icon. Background remains bright, clean, and reassuring, with no menace and no written content other than the required panel index label.
+
+[PANEL 4]
+Use the FRONT section of the abstract_infographic_space location anchor for a centered motion-graphic composition. Show a wordless clock icon with simple hands visibly implying rapid rotation through repeated ghosted positions; several blank calendar pages drift past as plain empty rectangles with no writing, numbers, month grids, or marks. A soft red X mark settles over the time-delay idea. Keep the scene gentle and clear, with no text or symbols except the graphic X and the mandatory panel index label.
+
+[PANEL 5]
+Use the FRONT section of the abstract_infographic_space location anchor and return to the same forked road composition from panel 1. The human silhouette now turns decisively and steps onto the correct path, posture upright and confident. The three earlier misconception icons appear small and subdued in the background, their soft X marks visually replaced by one clear bright check mark near the chosen path. Warm yellow accent glow, clean blue-green space, no clinic, doctor, sink, shield, water-flow sequence, or written words beyond the required panel index label.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 4 reference image(s) in this i2i call are PREVIOUS-SHOT storyboards (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to maintain CROSS-SHOT continuity in: color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality — so the final cut sequence flows smoothly. Identity (character / location / ship details) is still locked exclusively by the FIRST 1 refs (character anchors / location anchor / style anchor).

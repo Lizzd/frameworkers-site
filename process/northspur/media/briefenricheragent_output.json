@@ -1,0 +1,20 @@
+{
+  "content": {
+    "language": "en",
+    "enriched_brief": "Create a product-story ad based on the provided shot-by-shot script with English dialogue and English subtitles. The ad centers on a main character depicted as a 20s Hispanic woman with dark braided hair wearing an olive jacket. Branding elements feature the 'NORTHSPUR' brand logo, comprised of dark blue text centered below a minimal geometric mountain outline icon on a solid white background. Ensure consistency for the main character and brand logo across all shots. The user has supplied their own narration recording (speech, 34.08s) and a music bed (34.5s); lock the final video timing to this provided audio.",
+    "image_classifications": [
+      {
+        "image_index": 0,
+        "role": "character"
+      },
+      {
+        "image_index": 1,
+        "role": "prop"
+      }
+    ],
+    "image_paths": [
+      "/home/zhendong_li/FrameWorkers/Runtime/topic22_northspur/workspace_global_20260803_123754/inputs/20260803_123754_268817_character_ref.png",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic22_northspur/workspace_global_20260803_123754/inputs/20260803_123754_284918_brand_logo.png"
+    ]
+  }
+}

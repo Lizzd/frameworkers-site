@@ -1,0 +1,18 @@
+IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on identity, TRUST THE IMAGE.
+
+Rendered entirely in this visual style / medium (governs the whole image):
+Clean 2D vector explainer animation with stylized motion graphic overlays.; Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures.; Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.
+
+A single-product reference card. The single 16:9 widescreen image is composed of TWO equal-width vertical sections showing the SAME product (identical shape, color, materials, markings, proportions), only the camera angle differing:
+- SECTION 1 (leftmost): HERO 3/4 view — the product at a flattering three-quarter angle, filling most of the section.
+- SECTION 2 (rightmost): FRONT view — the product straight-on, showing its face / label / front surface.
+
+Strict rules:
+- Both sections the EXACT same product identity (shape, color, materials, logo placement, proportions); only the angle differs. Do NOT redesign or invent features.
+- Clean studio product-shot lighting, even and flattering, showing form and surface; sharp and clearly readable.
+- Plain seamless neutral studio backdrop — no scene props, no environment, no human hands or body.
+- A clean reference plate: NO added text / captions / watermarks / extra logos beyond the product's own real markings.
+
+Product: Clean scientific graphic overlay depicting an ocean depth graph in 2D vector style. Features a continuous smooth blue line representing ambient seawater temperature and a glowing red marker highlighting high vent fluid temperature against a dark ocean background.
+
+IDENTITY OVERRIDE — a reference image is attached, so the subject text above is styling / wardrobe notes ONLY. The actual identity — face, ethnicity, age, build, hair; for places the real room layout, furniture and geometry; for products the real shape, colors and markings — comes EXCLUSIVELY from the attached reference image. Where any wording above contradicts the image (a different ethnicity, age, hairstyle, or room layout), IGNORE the wording and follow the image.

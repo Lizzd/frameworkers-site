@@ -1,0 +1,20 @@
+# gpt-image-2 · t2i · size=1536x1024
+# refs: (none)
+
+Rendered entirely in this visual style / medium (governs the whole image):
+2D 国漫手绘电影短片，干净自信的墨线与厚涂上色，暗黑电影感彩色插画质感，非写实、非 3D。冷蓝月光与低饱和土灰环境为底，幽绿与血红高对比发光元素形成强烈冷暖冲突，阴影厚重、颗粒细腻、边缘有手绘笔触。
+
+A single-subject character reference card. The single 16:9 widescreen image is composed of TWO equal-width vertical sections, each showing the SAME single subject — same identity, costume, and the SAME visual medium — only framing differing:
+- SECTION 1 (leftmost): FACE — head-and-shoulders close-up, subject facing camera; face fills ~60% of section height, clearly readable.
+- SECTION 2 (rightmost): FRONT view — subject facing camera straight on, full body, centered.
+
+Strict rules:
+- Render both sections in the SAME visual style stated above — face, hair, fabric, metal all consistent to that style. A unified card, not a disjoint turnaround.
+- Both sections MUST be the EXACT same identity (face, age, build, hair, costume, accessories); only framing differs.
+- Both sections sharp and clearly readable; even, clear lighting that shows the design.
+- Neutral pose (standing relaxed, arms at sides), neutral expression.
+- Plain seamless backdrop in the medium's natural ground color (e.g. raw paper for ink-wash, neutral gray for photoreal), no scene props, no environmental context.
+- This is a clean reference plate: NO rendered text of any kind — no captions, view labels, watermarks, logos, or lettering anywhere on the card.
+
+Subject: 二十二岁左右的白发青年，长发用褪色青布带松松束起，鬓边有几缕贴着汗的碎发；左眼下有一颗小痣，右手虎口布满旧茧与细裂口。身形清瘦但背脊强撑挺直，穿洗到发白的灰麻内衫和破旧墨蓝外袍，袖口缝着几道歪斜补丁；掌心常凝出一缕细弱如灯芯的白色条状灵气。
+World / era / cultural context (costume, materials, ethnicity): 晚唐气质的架空中土山野宗门边陲，玄幻修仙国漫传统；破败屋舍、荒院荆棘、宗门山籍制度带有唐末门阀与山门法度的压迫感。角色为汉族风貌的东亚面孔，服饰取唐风窄袖、束带、旧麻布与执法黑袍的混合设计。

@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+写实航拍实拍 (Photoreal cinematic aerial documentary). Cold slate blue ocean tones contrasted against pitch-black basalt sand, neon-bright emerald moss, and 1200°C luminous incandescent orange lava streams. Soft diffused arctic sunlight breaking through moody low-hanging clouds, creating wet specular highlights on wet volcanic rock and heavy volumetric fog.
+
+[IDENTITY LOCK]
+All locations across all panels MUST match the attached location anchor refs EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide -> P2 medium -> P3 extreme-wide -> P4 extreme-wide
+
+[PANEL 1]
+SHOT: wide eye-level
+PLACEMENT: Low aerial approach perspective, binding jagged volcanic rocks along the lower frame edge with a glowing central steam plume rising through the midground.
+ACTION: Heat shimmers distort the background air as thick white steam plumes billow from a glowing ground crack.
+ENV: Dark volcanic terrain with heat haze shimmer and glowing crack openings; call out FRONT view of active_volcanic_fissure location anchor.
+
+[PANEL 2]
+SHOT: medium high-angle
+PLACEMENT: Close low aerial tracking perspective, binding a glowing orange magma river along a diagonal axis across the lower two-thirds of the frame.
+ACTION: Incandescent molten lava flows steadily, its surface cooling into dark silver obsidian crust plates that crack open with bright orange light.
+ENV: Molten orange magma river bordered by dark cooling crust plates and glowing fractures; call out FRONT view of active_volcanic_fissure location anchor.
+
+[PANEL 3]
+SHOT: extreme-wide high-angle
+PLACEMENT: Vertical top-down aerial vantage point directly over the volcanic vent, binding the glowing crack network to the entire valley floor frame.
+ACTION: Branched lava channels spread outwards like glowing orange veins across dark basalt terrain.
+ENV: Top-down aerial view of branching incandescent lava streams on dark volcanic earth; call out OVERHEAD view of active_volcanic_fissure location anchor.
+
+[PANEL 4]
+SHOT: extreme-wide eye-level
+PLACEMENT: High stationary vantage point, binding the glowing volcanic field in the lower frame against the darkening twilight sky along the upper horizon.
+ACTION: Glowing lava streams shine bright orange against the dimming landscape under a dark blue and purple twilight.
+ENV: Vast volcanic field with radiant orange lava rivers contrasting against twilight darkness; call out BACK view of active_volcanic_fissure location anchor.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 1 refs (character / prop / location anchors).

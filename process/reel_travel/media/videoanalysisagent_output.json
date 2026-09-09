@@ -1,0 +1,449 @@
+{
+  "content": {
+    "language": "en",
+    "videos": [
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_065168_clip_01_travel.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "River Flowing Past Small Island",
+          "summary": "A serene shot of a wide river flowing around a small vegetation-covered gravel bar. Dry, rolling hills surround the water under a clear blue sky.",
+          "genre": "Nature",
+          "language": "",
+          "duration_seconds": 9.009009
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 8.6,
+            "description": "A wide river flows around a small grassy island with sunlit dry hills in the background.",
+            "setting": "Outdoor river canyon",
+            "mood": "Peaceful",
+            "entities": [
+              "river",
+              "gravel island",
+              "hills",
+              "vegetation"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_124919_clip_02_travel.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Aerial View of Ocean Shoreline",
+          "summary": "Overhead footage shows turquoise ocean waves gently rolling onto a sandy beach. The calm repetition of crashing foam creates a peaceful coastal scene.",
+          "genre": "Nature",
+          "language": "",
+          "duration_seconds": 6.006
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 5.7,
+            "description": "Top-down aerial view of ocean waves washing onto a sandy shore.",
+            "setting": "Coastal beach",
+            "mood": "Calm",
+            "entities": [
+              "ocean",
+              "waves",
+              "sand"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_161637_clip_03_travel.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Beach Sprint Competition",
+          "summary": "Aerial footage captures a beach event featuring participants competing in a sand sprint race along the shoreline, concluding with panoramic views of the coast.",
+          "genre": "Sports & Recreation",
+          "language": "",
+          "duration_seconds": 13.0
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 2.5,
+            "description": "Overhead view of beach tents and crowd, tilting up to clear blue sky.",
+            "setting": "Sandy beach",
+            "mood": "Sunny, relaxed",
+            "entities": [
+              "blue tents",
+              "people",
+              "sky"
+            ],
+            "tension_score": 0.2,
+            "is_climax_candidate": false
+          },
+          {
+            "scene_id": "scene_002",
+            "start_time": 2.5,
+            "end_time": 9.8,
+            "description": "Participants crouch in sand and sprint along the shoreline in a beach race.",
+            "setting": "Sandy beach near water",
+            "mood": "Competitive, energetic",
+            "entities": [
+              "race participants",
+              "spectators",
+              "shoreline"
+            ],
+            "tension_score": 0.6,
+            "is_climax_candidate": true
+          },
+          {
+            "scene_id": "scene_003",
+            "start_time": 9.8,
+            "end_time": 12.5,
+            "description": "Aerial pan over ocean waves and the coastline beach area.",
+            "setting": "Coastal beach ocean view",
+            "mood": "Scenic, peaceful",
+            "entities": [
+              "ocean waves",
+              "beachfront",
+              "buildings"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_182281_clip_04_travel.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Scenic Coastal Waves and Beach",
+          "summary": "A brief nature clip featuring an aerial perspective of a rocky coastline followed by ocean waves washing onto a sandy beach.",
+          "genre": "Nature & Travel",
+          "language": "",
+          "duration_seconds": 7.0
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 1.0,
+            "description": "Aerial view of a rocky islet and green hillside along a sandy coastline.",
+            "setting": "Coastal beach",
+            "mood": "Peaceful",
+            "entities": [
+              "rocky islet",
+              "ocean",
+              "sandy beach",
+              "hillside"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          },
+          {
+            "scene_id": "scene_002",
+            "start_time": 1.0,
+            "end_time": 6.7,
+            "description": "Continuous shot of turquoise waves breaking and flowing over wet beach sand.",
+            "setting": "Shoreline beach",
+            "mood": "Calm",
+            "entities": [
+              "ocean waves",
+              "sandy beach"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_219954_clip_05_travel.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Scenic Mountain Pass Drive",
+          "summary": "A view of snow-covered mountains and winding roads. Vehicles travel through the pass while visitors observe the alpine scenery.",
+          "genre": "Travel / Nature",
+          "language": "",
+          "duration_seconds": 6.21727
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 3.5,
+            "description": "Camera captures snow-covered mountains, rocky fields, and cars driving along a mountain road.",
+            "setting": "Snowy mountain pass road",
+            "mood": "Serene",
+            "entities": [
+              "mountains",
+              "white car",
+              "snow",
+              "road"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          },
+          {
+            "scene_id": "scene_002",
+            "start_time": 3.5,
+            "end_time": 5.9,
+            "description": "Camera tilts up toward cloudy skies and shows tourists gathered by the snow-lined road.",
+            "setting": "Mountain roadside overlook",
+            "mood": "Relaxed",
+            "entities": [
+              "tourists",
+              "mountains",
+              "vehicles",
+              "sky"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_234619_clip_06_travel.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Mountain Forest Landscape Pan",
+          "summary": "A scenic panning view across lush green mountain slopes and forested valleys under cloudy skies.",
+          "genre": "Travel",
+          "language": "",
+          "duration_seconds": 4.980501
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 4.7,
+            "description": "Camera pans across a dense, forested mountain hillside with visible power lines in the foreground.",
+            "setting": "Mountain landscape",
+            "mood": "Peaceful",
+            "entities": [
+              "mountains",
+              "forest",
+              "power lines"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_287868_clip_07_travel.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Forest Waterfall View",
+          "summary": "A multi-tiered waterfall cascades over rock faces surrounded by lush forest foliage while sunlight filters through the trees.",
+          "genre": "Nature",
+          "language": "",
+          "duration_seconds": 15.0
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 14.5,
+            "description": "Water flows down a rocky waterfall amidst dense green foliage and sunlight filtering through the canopy.",
+            "setting": "Forest waterfall",
+            "mood": "Peaceful",
+            "entities": [
+              "waterfall",
+              "rock face",
+              "foliage"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_306119_clip_08_travel.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Canyon Overlook View",
+          "summary": "A continuous shot looking through a rocky canyon gorge toward a wide desert plain under a blue sky.",
+          "genre": "Travel & Nature",
+          "language": "",
+          "duration_seconds": 5.130125
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 4.9,
+            "description": "A stationary view from a dry, rocky canyon looking down toward an expanse of open desert.",
+            "setting": "Rocky desert canyon",
+            "mood": "Peaceful",
+            "entities": [
+              "canyon walls",
+              "sagebrush",
+              "desert valley"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_321020_clip_09_blurry.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Aerial View of Ocean Shoreline",
+          "summary": "An aerial overhead perspective shows ocean waves rolling onto a sandy beach shore continuously throughout the clip.",
+          "genre": "Nature",
+          "language": "",
+          "duration_seconds": 6.973633
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 6.6,
+            "description": "Top-down view of gentle ocean waves washing onto the sandy beach.",
+            "setting": "Ocean coastline",
+            "mood": "Calm",
+            "entities": [
+              "ocean",
+              "waves",
+              "sand shore"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_352203_clip_10_dup.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "River Flowing Past Small Island and Hills",
+          "summary": "A continuous landscape shot shows a wide river flowing around a small vegetated sandbar. Dry rolling hills frame the background under a clear sky.",
+          "genre": "Nature",
+          "language": "",
+          "duration_seconds": 8.008008
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 7.6,
+            "description": "A wide, static shot of a river flowing around a grassy sandbar with rolling dry hills in the background.",
+            "setting": "Outdoor river valley",
+            "mood": "Serene",
+            "entities": [
+              "river",
+              "sandbar",
+              "hills",
+              "vegetation"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_369460_clip_11_static.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Snowy Mountain Pass Scenic View",
+          "summary": "A brief scenic pan showing tourists and vehicles along a mountain road, transitioning to wide views of snow-covered Himalayan-style peaks under dramatic clouds.",
+          "genre": "Travel",
+          "language": "",
+          "duration_seconds": 2.841226
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 1.0,
+            "description": "Camera pans along a mountain road where tourists stand taking photos near vehicles against a backdrop of snowy peaks.",
+            "setting": "Snowy mountain road side",
+            "mood": "Scenic",
+            "entities": [
+              "tourists",
+              "vehicles",
+              "snowy mountains"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          },
+          {
+            "scene_id": "scene_002",
+            "start_time": 1.0,
+            "end_time": 2.7,
+            "description": "Panoramic view sweeping across open snowy valley slopes and distant mountain ranges under cloudy skies.",
+            "setting": "High-altitude mountain landscape",
+            "mood": "Serene",
+            "entities": [
+              "snow-covered mountains",
+              "rocky terrain",
+              "clouds"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_385202_clip_12_dup2.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Beach Sprint Race",
+          "summary": "The video opens with a shot of the sky before transitioning to a beach where five runners line up and sprint across the sand.",
+          "genre": "Sports",
+          "language": "",
+          "duration_seconds": 6.0
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 2.2,
+            "description": "Clear blue sky with passing white clouds.",
+            "setting": "Outdoors, sky",
+            "mood": "Calm",
+            "entities": [
+              "clouds",
+              "sky"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          },
+          {
+            "scene_id": "scene_002",
+            "start_time": 2.2,
+            "end_time": 5.7,
+            "description": "Five contestants start from a crouched position and sprint down the sandy beach.",
+            "setting": "Sandy beach coast",
+            "mood": "Competitive",
+            "entities": [
+              "runners",
+              "beach",
+              "ocean",
+              "spectators"
+            ],
+            "tension_score": 0.5,
+            "is_climax_candidate": false
+          }
+        ]
+      }
+    ]
+  }
+}

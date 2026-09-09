@@ -1,0 +1,10 @@
+{
+  "content": {
+    "language": "en",
+    "kind": "speech",
+    "audio_summary": "A female host speaks in an engaging, informative English tone about fascinating biological traits of the octopus.",
+    "audio_asset": {
+      "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic13_podcast/workspace_global_20260727_173842/inputs/20260727_173842_415022_podcast_audio.wav"
+    }
+  }
+}

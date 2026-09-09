@@ -1,0 +1,61 @@
+{
+  "content": {
+    "total_duration_sec": 34.48,
+    "segment_timings": [
+      {
+        "segment_id": "seg_001",
+        "start_sec": 0.0,
+        "end_sec": 5.1,
+        "duration_sec": 5.1,
+        "line_ids": [
+          "ln_001"
+        ]
+      },
+      {
+        "segment_id": "seg_002",
+        "start_sec": 5.1,
+        "end_sec": 10.36,
+        "duration_sec": 5.26,
+        "line_ids": [
+          "ln_002"
+        ]
+      },
+      {
+        "segment_id": "seg_003",
+        "start_sec": 10.36,
+        "end_sec": 17.06,
+        "duration_sec": 6.7,
+        "line_ids": [
+          "ln_003"
+        ]
+      },
+      {
+        "segment_id": "seg_004",
+        "start_sec": 17.06,
+        "end_sec": 21.6,
+        "duration_sec": 4.54,
+        "line_ids": [
+          "ln_004"
+        ]
+      },
+      {
+        "segment_id": "seg_005",
+        "start_sec": 21.6,
+        "end_sec": 29.28,
+        "duration_sec": 7.68,
+        "line_ids": [
+          "ln_005"
+        ]
+      },
+      {
+        "segment_id": "seg_006",
+        "start_sec": 29.28,
+        "end_sec": 34.48,
+        "duration_sec": 5.2,
+        "line_ids": [
+          "ln_006"
+        ]
+      }
+    ]
+  }
+}

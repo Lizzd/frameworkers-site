@@ -1,0 +1,79 @@
+{
+  "content": {
+    "language": "en",
+    "videos": [
+      {
+        "visual_summary": "A wide river flows smoothly around a small gravel island with sparse vegetation, set against rolling, sunlit hills under a clear blue sky, evoking a serene atmosphere.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_065168_clip_01_travel.mp4"
+        }
+      },
+      {
+        "visual_summary": "An aerial top-down view captures teal ocean waves gently rolling and foaming against a sandy shoreline, creating a serene coastal atmosphere.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_124919_clip_02_travel.mp4"
+        }
+      },
+      {
+        "visual_summary": "On a sunny beach, participants start from the sand and sprint in a beach race while spectators watch under tents along the shoreline.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_161637_clip_03_travel.mp4"
+        }
+      },
+      {
+        "visual_summary": "An aerial view transitions to gentle ocean waves rolling onto a sandy beach along a lush coastal shore on a bright sunny day, creating a serene atmosphere.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_182281_clip_04_travel.mp4"
+        }
+      },
+      {
+        "visual_summary": "A camera pans across a snowy mountain landscape and a paved road where a white SUV drives past under an overcast sky, ending near a person recording the scenery with a smartphone.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_219954_clip_05_travel.mp4"
+        }
+      },
+      {
+        "visual_summary": "A scenic view of lush, tree-covered mountain slopes under a partly cloudy sky, with power lines spanning across the verdant landscape, evoking a serene mood.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_234619_clip_06_travel.mp4"
+        }
+      },
+      {
+        "visual_summary": "A scenic multi-tiered waterfall cascades down a rocky cliff surrounded by lush green foliage and bright sunlight in a serene forest setting.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_287868_clip_07_travel.mp4"
+        }
+      },
+      {
+        "visual_summary": "A static wide shot overlooks a dry, rocky canyon opening up to a vast desert plain under a bright, partly cloudy blue sky.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_306119_clip_08_travel.mp4"
+        }
+      },
+      {
+        "visual_summary": "An aerial top-down view shows turquoise ocean waves gently rolling and breaking onto a sandy beach, creating a calm and serene coastal atmosphere.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_321020_clip_09_blurry.mp4"
+        }
+      },
+      {
+        "visual_summary": "A wide river flows smoothly around a small vegetated gravel island against a backdrop of sunlit, rolling golden hills under a clear blue sky, creating a serene atmosphere.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_352203_clip_10_dup.mp4"
+        }
+      },
+      {
+        "visual_summary": "A camera pans across a scenic mountain landscape featuring snow-dusted peaks, rocky terrain covered in patches of snow, and a cloudy sky, creating a serene and chilly atmosphere.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_369460_clip_11_static.mp4"
+        }
+      },
+      {
+        "visual_summary": "On a sunny beach, a group of young people start from a prone position on the sand and sprint forward during an energetic beach race along the shoreline.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_385202_clip_12_dup2.mp4"
+        }
+      }
+    ]
+  }
+}

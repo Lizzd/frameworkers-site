@@ -1,0 +1,26 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 with the sixth cell as solid neutral gray; N=6 → 3×2.
+
+[STYLE FOUNDATION]
+VISUAL MEDIUM and aesthetic are dictated entirely by story.style_anchor (below) — live-action film, 2D anime, illustration, 3D, etc.; do NOT default to photoreal, do NOT impose any medium the brief omits. Apply verbatim: 干净、温和、专业的 2D 医疗科普动画。柔和蓝绿为主，少量暖黄色点亮安心感；扁平清晰造型、平静光线、留足画面下方中文字幕空间，全片可信、克制、不惊悚。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the public_sink_area location anchor for the clean sink, silver faucet, white countertop, unlabeled soap, and calm blue-green atmosphere. Use the FRONT sections of the parent_mother and child_patient character anchors: ordinary young Chinese mother in light green jacket and beige pants stands on the LEFT, gently guiding the child’s arm; ordinary Chinese schoolchild in yellow hoodie and dark blue shorts stands on the RIGHT, calm and steady. Medium-wide instructional framing. Clear running water flows continuously from the faucet over the child’s RIGHT forearm near the wrist, where a very small pale pink scratch is visible. No blood, no distress, no logos, no written labels; keep clean lower space for subtitles.
+
+[PANEL 2]
+Use the FRONT section of the public_sink_area location anchor for the sink edge and faucet area, cropped close. Use the FRONT sections of parent_mother and child_patient character anchors for exact clothing colors and hand/arm identity continuity. Close-up, slightly top-down: the child’s RIGHT forearm enters from the RIGHT side of the frame, scratch fixed near the wrist; the child remains on the RIGHT side and the mother remains on the LEFT side, absolutely no mirrored left-right flip. The mother’s hands enter from the LEFT holding a plain unlabeled bar of soap, building soft white foam and gently spreading it around the scratch, slow and clear like a health-education demonstration. Background softly simplified, no text, no logo, no dramatic pain reaction.
+
+[PANEL 3]
+Use the FRONT section of the public_sink_area location anchor for the same sink and faucet continuity. Use the FRONT sections of parent_mother and child_patient character anchors; maintain mother LEFT, child RIGHT, child’s RIGHT forearm near wrist as the only scratch location. Stable close-up/medium close-up showing time passing through sustained action: clean water and soap foam continue to wash across the small scratch area and surrounding skin. The mother’s fingers guide the arm steadily without pressing hard; the child’s posture reads relaxed and cooperative. Emphasize “thorough washing, not a quick rinse” through continuous flowing water, repeated foam trails, and calm instructional clarity. No gore, no extra injury, no written text.
+
+[PANEL 4]
+Use the FRONT section of the abstract_infographic_space location anchor for a soft blue-green abstract background with clean circular and line graphics. Pure 2D vector motion-graphic style, no characters. In the center, a simple small wound icon is crossed by a clear water stream and soft soap-bubble shapes; translucent tiny risk particles are carried away by the water-and-foam flow and become fewer toward the edge of the panel. The mood is gentle, reassuring, and non-frightening, symbolizing reduced risk after sufficient washing. Large clean lower negative space remains. Absolutely no words, letters, captions, brand marks, medical labels, or extra symbols except the required panel index number.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are PREVIOUS-SHOT storyboards (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to maintain CROSS-SHOT continuity in: color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality — so the final cut sequence flows smoothly. Identity (character / location / ship details) is still locked exclusively by the FIRST 3 refs (character anchors / location anchor / style anchor).

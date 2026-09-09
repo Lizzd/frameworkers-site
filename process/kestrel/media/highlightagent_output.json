@@ -1,0 +1,89 @@
+{
+  "content": {
+    "language": "en",
+    "criteria": "45-second event brand recap featuring behind-the-scenes setup, keynote presentations, audience reactions, interactive product showcases, gear details, and networking moments with English captions.",
+    "target_duration_s": 45.0,
+    "clips": [
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_614809_event_07_setup.mp4",
+        "clip_id": "clip_001",
+        "start_time": 4.5,
+        "end_time": 9.5,
+        "reason": "Establishes the event preparation with staff organizing product displays along the main hall table.",
+        "caption": "Preparing for the main event"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_726951_event_10_queue.mp4",
+        "clip_id": "clip_002",
+        "start_time": 1.0,
+        "end_time": 6.0,
+        "reason": "Shows enthusiastic attendees gathering and queuing in the sunlit glass corridor.",
+        "caption": "Welcoming guests and attendees"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_424430_event_01_stage.mp4",
+        "clip_id": "clip_003",
+        "start_time": 0.5,
+        "end_time": 4.5,
+        "reason": "Captures the dramatic opening of the keynote speaker under the stage spotlight.",
+        "caption": "Inspiring talks on stage"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_542105_event_05_applause.mp4",
+        "clip_id": "clip_004",
+        "start_time": 0.5,
+        "end_time": 4.5,
+        "reason": "Highlights audience enthusiasm and applause during the main presentation speech.",
+        "caption": "Engaged audience applause"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_484086_event_03_booth.mp4",
+        "clip_id": "clip_005",
+        "start_time": 0.5,
+        "end_time": 4.5,
+        "reason": "Dynamic footage of presenter demonstrating trail running shoes to interested attendees at the booth.",
+        "caption": "Hands-on product showcase"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_503852_event_04_detail.mp4",
+        "clip_id": "clip_006",
+        "start_time": 0.5,
+        "end_time": 4.8,
+        "reason": "Focuses on close-up technical inspection of shoe tread and construction under studio light.",
+        "caption": "Innovative product design details"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_690799_event_09_wall.mp4",
+        "clip_id": "clip_007",
+        "start_time": 4.5,
+        "end_time": 9.5,
+        "reason": "Showcases visitor interaction with illuminated running gear vests on the exhibition wall display.",
+        "caption": "Testing premium gear features"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_646444_event_08_speaker.mp4",
+        "clip_id": "clip_008",
+        "start_time": 1.0,
+        "end_time": 6.5,
+        "reason": "Clear product presentation of a flagship running shoe held up to the audience.",
+        "caption": "Expert product insights"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_765837_event_11_talk.mp4",
+        "clip_id": "clip_009",
+        "start_time": 2.0,
+        "end_time": 8.0,
+        "reason": "Joyful moment of visitors testing active headlamps with the representative and laughing together.",
+        "caption": "Unforgettable interactive experiences"
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_561127_event_06_foyer.mp4",
+        "clip_id": "clip_010",
+        "start_time": 0.5,
+        "end_time": 4.8,
+        "reason": "Warm sunset networking scene in the foyer concluding the event highlight reel.",
+        "caption": "Connecting with the community"
+      }
+    ]
+  }
+}

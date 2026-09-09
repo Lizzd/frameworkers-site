@@ -1,0 +1,89 @@
+{
+  "content": {
+    "language": "en",
+    "plan": {
+      "color_grade": {
+        "brightness": 0.0,
+        "contrast": 0.05,
+        "saturation": 0.05
+      },
+      "subtitle_style": {
+        "font_size": 24,
+        "font_color": "#FFFFFF",
+        "outline_color": "#000000",
+        "burn_in": true
+      },
+      "authored_cues": [
+        {
+          "text": "Preparing for the main event",
+          "start_sec": 0.0,
+          "end_sec": 5.0
+        },
+        {
+          "text": "Welcoming guests and attendees",
+          "start_sec": 5.0,
+          "end_sec": 10.0
+        },
+        {
+          "text": "Inspiring talks on stage",
+          "start_sec": 10.0,
+          "end_sec": 14.0
+        },
+        {
+          "text": "Engaged audience applause",
+          "start_sec": 14.0,
+          "end_sec": 18.0
+        },
+        {
+          "text": "Hands-on product showcase",
+          "start_sec": 18.0,
+          "end_sec": 22.0
+        },
+        {
+          "text": "Innovative product design details",
+          "start_sec": 22.0,
+          "end_sec": 26.3
+        },
+        {
+          "text": "Testing premium gear features",
+          "start_sec": 26.3,
+          "end_sec": 31.3
+        },
+        {
+          "text": "Expert product insights",
+          "start_sec": 31.3,
+          "end_sec": 36.8
+        },
+        {
+          "text": "Unforgettable interactive experiences",
+          "start_sec": 36.8,
+          "end_sec": 42.8
+        },
+        {
+          "text": "Connecting with the community",
+          "start_sec": 42.8,
+          "end_sec": 47.1
+        }
+      ],
+      "card_style": {
+        "font_size": 32,
+        "font_color": "#FFFFFF",
+        "outline_color": "#000000",
+        "position": "bottom",
+        "margin": 40
+      },
+      "image_overlays": [
+        {
+          "image_index": 1,
+          "start_sec": 0.0,
+          "end_sec": 0.0,
+          "position": "top_right",
+          "scale": 0.12
+        }
+      ],
+      "subtitle_language": "",
+      "output_resolution": "1920x1080",
+      "output_fps": 30
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "content": {
+    "language": "en-US",
+    "plan": {
+      "color_grade": {
+        "brightness": 0.0,
+        "contrast": 0.05,
+        "saturation": 0.05
+      },
+      "subtitle_style": {
+        "font_size": 24,
+        "font_color": "#FFFFFF",
+        "outline_color": "#000000",
+        "burn_in": true
+      },
+      "authored_cues": [
+        {
+          "text": "Strange Nature: The Octopus",
+          "start_sec": 0.0,
+          "end_sec": 5.08
+        },
+        {
+          "text": "Three Hearts",
+          "start_sec": 5.08,
+          "end_sec": 12.38
+        },
+        {
+          "text": "Copper-Based Blue Blood",
+          "start_sec": 12.38,
+          "end_sec": 17.18
+        },
+        {
+          "text": "500 Million Neurons",
+          "start_sec": 17.18,
+          "end_sec": 28.14
+        },
+        {
+          "text": "Autonomous Arms",
+          "start_sec": 28.14,
+          "end_sec": 31.42
+        },
+        {
+          "text": "Adaptive Camouflage",
+          "start_sec": 31.42,
+          "end_sec": 45.02
+        },
+        {
+          "text": "Alien Intelligence",
+          "start_sec": 45.02,
+          "end_sec": 59.0
+        }
+      ],
+      "card_style": {
+        "font_size": 34,
+        "font_color": "#FFFFFF",
+        "outline_color": "#000000",
+        "position": "top",
+        "margin": 40
+      },
+      "subtitle_language": "en",
+      "output_resolution": "1920x1080",
+      "output_fps": 30
+    }
+  }
+}

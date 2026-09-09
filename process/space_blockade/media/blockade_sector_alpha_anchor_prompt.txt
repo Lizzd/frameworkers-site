@@ -1,0 +1,17 @@
+Rendered entirely in this visual style / medium (governs the whole image):
+Realistic high-key 3D rendered space sci-fi aesthetic.; Bright white and high-contrast silver-gray color palette.; Exposed sun-glare casting sharp, high-exposure dark shadows.; Blinding cyan and orange engine plumes and clean specular highlights on titanium-composite hull plates.; Prismatic lens flares refracting through orbital dust fields.
+
+A single physical place rendered as a location reference card. The single 16:9 widescreen image is composed of THREE equal-width vertical sections, each showing the SAME location from a different camera position, captured in one coherent pass:
+- LEFT section: FRONT view — the iconic / canonical / approach view of this location (camera at adult eye-level height, horizon roughly at lower-third), the angle a director would default to for establishing this place.
+- MIDDLE section: BACK view — 180-degree opposite of FRONT (same eye-level height, camera turned around to look back from where FRONT was facing toward).
+- RIGHT section: OVERHEAD view — aerial drone-altitude top-down view (~30-50m up) revealing spatial layout, dominant pathways, roof lines, arrangement of structures.
+
+Strict rules:
+- A single coherent place rendered in the brief's medium — consistent architecture and materials across all sections, not a disjoint collage.
+- All three sections depict the EXACT same physical location (same architecture, era, atmosphere, lighting, time of day).
+- NO people / characters / figures / animals in any section.
+- This is a clean reference plate: NO rendered text of any kind — no captions, view-name labels (no "FRONT VIEW" plates), watermarks, logos, or lettering; the section tags are stamped on programmatically AFTER rendering.
+
+Location: The orbital blockade zone above a massive golden-hued gas giant. It is dominated by kilometers-long dreadnoughts with architectural tiered superstructures, heavy weapon batteries, and vast hangar chasms. Space is filled with defense beams, flak explosions, and glowing engine particles under high-contrast solar glares and sharp, dark shadows.
+
+Do NOT use: cockpit scenes; interior shots; HUD overlays.

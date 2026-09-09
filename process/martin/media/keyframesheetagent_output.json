@@ -1,0 +1,250 @@
+{
+  "content": {
+    "language": "en",
+    "anchors": {
+      "character_anchors": [
+        {
+          "entity_id": "martin",
+          "prompt_summary": "Caucasian male in his 30s with short black hair, thin-framed round glasses, and neat light stubble beard. He wears a clean fitted white button-up dress shirt. Sharp, observant eyes with a friendly, warm smile. Soft hand-drawn colored pencil illustration style with realistic proportions.",
+          "views": [
+            "FACE",
+            "FRONT"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_112504_martin_insait.jpg"
+        },
+        {
+          "entity_id": "jina",
+          "prompt_summary": "East Asian woman in her early 20s with long straight black hair and full straight bangs. She wears a soft light grey knit sweater. Delicate facial features with bright, expressive eyes. Soft colored pencil hand-drawn illustration style with warm texture.",
+          "views": [
+            "FACE",
+            "FRONT"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_098930_jina.jpg"
+        }
+      ],
+      "location_anchors": [
+        {
+          "entity_id": "synergy_tower",
+          "prompt_summary": "Modern glass curtain wall skyscraper with a distinctive slanted roof design. Surrounding environment includes lush green park lawns, wide paved urban avenues, and neighboring city buildings under a bright morning sky.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_265151_synergy_aerial.jpg"
+        },
+        {
+          "entity_id": "synergy_lobby",
+          "prompt_summary": "Spacious double-height building lobby featuring a geometric faceted terrazzo reception desk, slatted wooden ceiling grids, and soft vertical wall lights. The feature wall prominently displays the SYNERGY TOWER logo.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_308867_synergy_lobby.png"
+        },
+        {
+          "entity_id": "meeting_room_13f",
+          "prompt_summary": "Sunlit modern presentation hall on the 13th floor with large floor-to-ceiling windows overlooking a panoramic city skyline. Rows of neat blue conference chairs face a clean white main wall mounted with a 3D INSAIT logo.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_170222_meeting_room.jpg"
+        },
+        {
+          "entity_id": "office_room",
+          "prompt_summary": "Bright, open-plan modern office space with natural daylight streaming through expansive windows. Features ergonomic office chairs, desktop computer monitors, and clean marble and wooden work desks.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_217927_office.jpg"
+        }
+      ],
+      "prop_anchors": [
+        {
+          "entity_id": "insait_logo",
+          "prompt_summary": "3D wall logo made of red and black volumetric block letters spelling INSAIT, mounted on a clean white wall with full black English institutional text centered below.",
+          "views": [
+            "HERO",
+            "FRONT"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_086171_insait_logo.png"
+        },
+        {
+          "entity_id": "shaobing_package",
+          "prompt_summary": "Red-and-white patterned paper food bag for Chinese shaobing pastry, neatly folded at the top, containing golden-crisp baked sesame shaobing.",
+          "views": [
+            "HERO",
+            "FRONT"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_251663_shaobing.jpg"
+        }
+      ]
+    },
+    "shot_visuals": {
+      "sh_001": {
+        "shot_id": "sh_001",
+        "primary_location": "synergy_lobby",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "panel_index": 5,
+            "characters_present": [
+              "martin"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\n彩铅插画艺术风格（柔和彩铅手绘笔触、清新淡彩配色、柔和自然光影与细致纸张纹理，人物采用写实比例与精致手绘线稿，质感温暖亲和）。\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 medium -> P3 medium -> P4 close-up -> P5 medium\n\n[PANEL 1]\nSHOT: wide\nPLACEMENT: Exterior building shot. The modern glass facade of Synergy Tower fills the frame, rising above manicured green park lawns.\nACTION: Morning sunlight glints off the reflective blue glass windows of the skyscraper facade.\nENV: Clear morning daylight shining on glass architectural surfaces under a bright sky.\n\n[PANEL 2]\nSHOT: medium\nPLACEMENT: Martin (use FRONT section of the martin character anchor) walking across the green plaza path, both feet planted on the stone pavement two paces outside the building entrance doors.\nACTION: Martin walks with a confident, relaxed posture, holding a light pleasant smile.\nENV: Bright morning sunlight on the glass building exterior and surrounding green park trees.\n\n[PANEL 3]\nSHOT: medium\nPLACEMENT: Martin (use FRONT section of the martin character anchor) standing in the lobby, positioned three paces in front of the geometric terrazzo reception desk, head below the slatted wooden ceiling grid.\nACTION: Martin nods politely toward the reception area with an easy smile.\nENV: Double-height lobby with slatted wood ceiling grid, vertical wall lights, and SYNERGY TOWER wall emblem.\n\n[PANEL 4]\nSHOT: close-up\nPLACEMENT: Close-up on the elevator control panel. Martin's hand (forearm and white dress shirt sleeve entering from the right frame edge) with index finger pressing the glowing numeric button marked '13'.\nACTION: Martin's finger presses the backlit button, lighting up the floor indicator display screen above.\nENV: Metallic elevator control panel with glowing digital floor indicator.\n\n[PANEL 5]\nSHOT: medium\nPLACEMENT: Martin (use FRONT section of the martin character anchor) stepping out of the elevator doors, feet crossing the threshold onto the hallway floor.\nACTION: Martin steps forward with an expectant, happy smile, walking toward the corridor.\nENV: 13th floor elevator lobby corridor with modern warm lighting and architectural finishes.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels."
+      },
+      "sh_002": {
+        "shot_id": "sh_002",
+        "primary_location": "meeting_room_13f",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": [
+              "martin",
+              "insait_logo"
+            ]
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          },
+          {
+            "panel_index": 5,
+            "characters_present": [
+              "martin"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\n彩铅插画艺术风格（柔和彩铅手绘笔触、清新淡彩配色、柔和自然光影与细致纸张纹理，人物采用写实比例与精致手绘线稿，质感温暖亲和）。\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 medium -> P3 close-up -> P4 medium -> P5 wide\n\n[PANEL 1]\nSHOT: wide\nPLACEMENT: Martin (use FRONT section of the martin character anchor) standing at the front of the hall, positioned one step in front of the white feature wall mounted with the 3D INSAIT logo (use HERO section of insait_logo prop anchor). Rows of blue chairs occupied by colleagues fill the foreground and mid-ground.\nACTION: Martin stands comfortably facing the seated team, open hands gesturing naturally as he speaks.\nENV: Sunlit 13th floor room with large floor-to-ceiling windows showing city panorama in background.\n\n[PANEL 2]\nSHOT: medium\nPLACEMENT: Martin (use FRONT section of the martin character anchor) centered in waist-up framing, standing steadily behind a low podium.\nACTION: Martin smiles warmly while addressing the audience, hand raised lightly in an engaging posture.\nENV: White background wall bathed in soft daylight from window glass.\n\n[PANEL 3]\nSHOT: close-up\nPLACEMENT: Martin (use FACE section of the martin character anchor), tight facial framing centered on his eyes and smile.\nACTION: Martin's eyes light up with enthusiasm and joy as he announces the good news.\nENV: Softly blurred room background with daylight glinting off his eyeglasses.\n\n[PANEL 4]\nSHOT: medium\nPLACEMENT: Audience perspective from front of stage. Colleagues seated in rows of blue chairs, seated with elbows on armrests or lap.\nACTION: Audience members shift from focused listening to surprised smiles, applauding warmly and quietly.\nENV: Bright meeting room interior with city view through large windows.\n\n[PANEL 5]\nSHOT: wide\nPLACEMENT: Martin (use FRONT section of the martin character anchor) standing at front right of frame, looking at the applauding team members seated across the room.\nACTION: Friendly, relaxed atmosphere as Martin smiles amidst continuous applause.\nENV: Complete interior view of 13th floor presentation hall bathed in clear morning sunlight.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels."
+      },
+      "sh_003": {
+        "shot_id": "sh_003",
+        "primary_location": "office_room",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": [
+              "martin",
+              "jina",
+              "shaobing_package"
+            ]
+          },
+          {
+            "panel_index": 5,
+            "characters_present": [
+              "martin",
+              "jina",
+              "shaobing_package"
+            ]
+          },
+          {
+            "panel_index": 6,
+            "characters_present": [
+              "martin",
+              "jina"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\n彩铅插画艺术风格（柔和彩铅手绘笔触、清新淡彩配色、柔和自然光影与细致纸张纹理，人物采用写实比例与精致手绘线稿，质感温暖亲和）。\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 wide -> P3 close-up -> P4 medium -> P5 medium -> P6 medium\n\n[PANEL 1]\nSHOT: medium\nPLACEMENT: Martin (use FRONT section of the martin character anchor) standing in the open door frame of the office room, one hand resting on the wooden door frame.\nACTION: Martin pushes the door open with a energetic gesture and calls out a friendly greeting.\nENV: Sunlit open-plan office entrance with morning light falling across wooden desk surfaces.\n\n[PANEL 2]\nSHOT: wide\nPLACEMENT: An empty office workstation centered in frame. An unoccupied black ergonomic chair is tucked under a clean desk next to an unlit black monitor.\nACTION: The workstation is completely quiet and silent with no person present.\nENV: Bright open office interior with daylight reflecting off marble tabletop.\n\n[PANEL 3]\nSHOT: close-up\nPLACEMENT: Martin (use FACE section of the martin character anchor), framing tight on face and shoulders.\nACTION: Martin turns his head, raising an eyebrow with an inquisitive, puzzled facial expression.\nENV: Soft blurred office background with subtle window reflections on his spectacles.\n\n[PANEL 4]\nSHOT: medium\nPLACEMENT: Martin (use FRONT section of the martin character anchor) standing beside Jina's desk, positioned one arm-length from Jina (use FRONT section of the jina character anchor) who sits in her office chair. The red-and-white shaobing package (use HERO section of shaobing_package prop anchor) rests on top of the desk surface.\nACTION: Martin points his index finger at the shaobing paper bag with a curious smile, while Jina looks up in surprise.\nENV: Bright office workstation illuminated by soft window daylight.\n\n[PANEL 5]\nSHOT: medium\nPLACEMENT: Martin (use FRONT section of the martin character anchor) turning on his heel away from the desk, holding a crisp golden shaobing in hand. Jina (use FRONT section of the jina character anchor) reaches her hand out toward the desk in surprise.\nACTION: Martin swiftly retrieves a shaobing from the open paper bag and steps away, catching Jina off guard just as she starts to speak.\nENV: Marble office desk with the opened red-and-white paper food bag sitting beside a computer monitor.\n\n[PANEL 6]\nSHOT: medium\nPLACEMENT: Martin (use FRONT section of the martin character anchor) walking out through the background office doorway, raised hand holding the shaobing. Jina (use FRONT section of the jina character anchor) sitting at her foreground desk turned around in her chair.\nACTION: Martin offers a cheerful wave as he departs; Jina watches him leave with an amusing, speech-blocked expression.\nENV: Open office doorway and desk area illuminated by gentle natural light.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels."
+      },
+      "sh_004": {
+        "shot_id": "sh_004",
+        "primary_location": "office_room",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": [
+              "martin",
+              "shaobing_package"
+            ]
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          },
+          {
+            "panel_index": 5,
+            "characters_present": [
+              "insait_logo"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\n彩铅插画艺术风格（柔和彩铅手绘笔触、清新淡彩配色、柔和自然光影与细致纸张纹理，人物采用写实比例与精致手绘线稿，质感温暖亲和）。\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 close-up -> P3 wide -> P4 extreme-wide -> P5 detail\n\n[PANEL 1]\nSHOT: medium\nPLACEMENT: Martin (use FRONT section of the martin character anchor) settling into his ergonomic desk chair, placing the red-and-white shaobing bag (use HERO section of shaobing_package prop anchor) onto his wooden desk.\nACTION: Martin sits back comfortably into his office chair, setting his snack down beside his computer keyboard.\nENV: Bright personal office room with expansive window behind the desk.\n\n[PANEL 2]\nSHOT: close-up\nPLACEMENT: Martin (use FACE section of the martin character anchor) leaning back in his desk chair, hands clasped behind his head, head resting comfortably back.\nACTION: Martin closes his eyes in satisfaction, taking a deep, relaxed breath with a broad smile.\nENV: Warm morning light streaming around his head and spectacles from the window behind.\n\n[PANEL 3]\nSHOT: wide\nPLACEMENT: Wide room view showing Martin (use FRONT section of the martin character anchor) sitting relaxed in his desk chair, framed against the floor-to-ceiling glass window.\nACTION: Martin rests in complete ease, enjoying his morning in peaceful comfort.\nENV: Panoramic floor-to-ceiling window showcasing a bright sunlit view of Sofia city skyline.\n\n[PANEL 4]\nSHOT: extreme-wide\nPLACEMENT: High-angle aerial exterior shot of Synergy Tower with its slanted roof, surrounded by green park foliage and city streets under a clear morning sky.\nACTION: Bright morning light casts crisp architectural reflections across the tower and surrounding park landscape.\nENV: Clear atmospheric daylight over modern urban skyscraper and parkland.\n\n[PANEL 5]\nSHOT: detail\nPLACEMENT: Centered view of the 3D INSAIT wall logo (use HERO section of insait_logo prop anchor) featuring red and black volumetric block letters on a clean white background wall.\nACTION: Bold presentation of the institutional emblem on the clean wall surface.\nENV: Even, crisp studio lighting on a pristine white wall.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels."
+      }
+    },
+    "style_notes": [
+      "Colored pencil hand-drawn illustration style with soft pencil strokes and fine paper texture.",
+      "Fresh light watercolor palette with gentle natural lighting and delicate hand-drawn outlines.",
+      "Realistic character proportions with warm, inviting, and approachable aesthetic."
+    ],
+    "must_avoid": []
+  }
+}

@@ -1,0 +1,60 @@
+[设定]
+Victorian London, 1892 Bloomsbury, in the tradition of classic British locked-room detective fiction; cast is white British. The story stays around Sir Edmund Vale's townhouse study because the crime's central claim is physical confinement: a door bolted from within.
+
+[风格]
+2D 彩色漫画插画（graphic-novel：干净墨线叠加丰富上色，明显非写实、非真人），广角走廊建立与35mm门口对白交替，85mm用于钥匙孔与微表情细节；光圈偏大，走廊纵深保留层次，关键线索浅景深突出。
+煤气灯约3200K暖金，雨窗冷蓝约5600K补光，冷暖对比明确；高清、细节丰富、电影质感、色彩自然、光影柔和。
+
+[参考图]
+[Image 1]：本镜头的分镜网格图 —— 4 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 4 格 = 右下；每格左上角有一个大的白色编号 1..4）。它同时锁定三件事：① 每格中角色的身份（脸 / 发型 / 服装 / 体型，全片必须一致）；② 每格的画面构图 / 动作 / 镜头；③ 第 N 格 = [镜头]/[时间轴] 中按序的 镜头N。严格遵循。
+角色 `inspector_lestrade` 的固定外形（以分镜网格中该角色为准，全片一致）：Small wiry Scotland Yard inspector in his 40s with a pointed chin, narrow watchful eyes, rain-speckled bowler hat, dark overcoat with shiny elbows, and a black notebook held tight against his ribs.
+角色 `dr_watson` 的固定外形（以分镜网格中该角色为准，全片一致）：Sturdy military doctor in his early 40s with a thick sandy moustache, warm eyes, a faint limp in the left leg, brown tweed suit damp at the cuffs, leather medical bag in one hand, and a silver watch chain crossing his waistcoat.
+角色 `sherlock_holmes` 的固定外形（以分镜网格中该角色为准，全片一致）：Tall narrow man in his late 30s with a hawk nose, sharp grey eyes under heavy lids, black hair brushed back from a high forehead, nicotine-yellow fingertips, a dark Inverness coat over a black waistcoat, and a brass-rimmed magnifying lens tucked between two fingers.
+角色 `caleb_pike` 的固定外形（以分镜网格中该角色为准，全片一致）：Private secretary in his early 30s with a pale oval face, oiled black centre-parted hair, thin moustache waxed to needle points, starched white collar too tight at the throat, ink-darkened left thumb, and a right shirt cuff marked by a tiny crescent of dried blue sealing wax.
+角色 `sir_edmund_vale` 的固定外形（以分镜网格中该角色为准，全片一致）：Dead gentleman in his late 60s with silver mutton-chop whiskers, blue-veined left hand wearing a heavy signet ring, burgundy smoking jacket, loosened silk cravat, and a dark bullet wound at the right temple while seated at a massive writing desk.
+
+[镜头]
+镜头1
+24mm / 狭窄上层走廊全景 / 平视正拍，沿走廊中轴 / 两侧煤气壁灯暖色柔侧光，楼梯雨窗冷蓝柔补光，雷光短促压冷阴影 / 走廊全景起幅 → 缓慢推进 → 落幅破裂书房门锁特写 / 运镜平稳丝滑、无抖动
+
+镜头2
+35mm / 书房门口三人中景 / 平视正拍，严守走廊180度轴线 / 画面右侧煤气壁灯暖色硬光切过Lestrade脸颊，Holmes半身沉入冷阴影，Watson由潮湿走廊光勾边 / 三人中景起幅 → 固定保持 → 落幅Lestrade合上黑色笔记本的近景 / 运镜平稳丝滑、无抖动
+
+镜头3
+85mm / Holmes与钥匙孔的细节近景 / 低位平视，轻微俯向钥匙孔 / 左上方狭窄煤气灯暖金硬光，走廊冷蓝阴影包围，强反差 / 钥匙孔细节近景起幅 → 缓慢推进 → 落幅放大镜中蓝色封蜡大特写 / 运镜平稳丝滑、无抖动
+
+镜头4
+28mm / 从走廊进入书房的全景 / 平视正拍，贴近Lestrade手肘边缘但不越轴 / 绿色台灯在书桌形成暖硬光池，煤气金光擦过门边，雨窗冷蓝压低后景 / 门口全景起幅 → 缓慢推进 → 落幅黄铜横闩高光特写 / 运镜平稳丝滑、无抖动
+
+[物理]
+雨水沿伞骨、帽檐、衣领向下汇聚后滴落到瓷砖，水滴受重力形成短暂反弹与小水痕；湿布料贴近肩背和袖口，动作时先被身体带动再缓慢回垂。人物转身、合笔记本、俯身观察都保留关节支点和重心转移，前一动作的惯性自然带到下一动作，不出现瞬移或姿态跳变。门锁碎木、黄铜横闩、放大镜、医疗包都有明确重量，手指接触会产生轻微反作用；角色与门框、桌椅、书架保持不穿模，人体结构和比例前后统一。
+
+[时间轴]
+镜头1
+前景黑白瓷砖上积着伞尖滴下的水，水滴溅成细小半月形亮点；中景衣帽架挤满湿伞，伞面边缘缓慢下坠并连续滴水；后景走廊尽头橡木书房门的锁孔周围木料炸裂，露出新鲜浅色木茬。画面焦点始终钉在破裂门锁上，楼梯雨窗和远处靴底刮动只保持柔化形状；煤气火苗被远处雷声震得向一侧短暂倾斜，橙色灯焰与雨窗冷蓝把走廊透视线压向门锁。
+
+镜头2
+Lestrade从破门边跨出半步，右肩先出、左脚跟随后收稳，黑色笔记本被他用拇指压住后啪地合拢，肘部夹回肋侧；他下巴向上顶起少许，鼻翼收紧，眼睛越过Watson肩线扫向Holmes。Watson脱下湿手套，指尖用力拉过掌根，皮革贴着手背发出黏滞褶皱，他再偏头越过Lestrade肩膀往书房内看，左腿站姿略迟半拍以适应旧伤；Holmes留在背景左侧煤气壁灯下，外套领口挂着细水珠，眼皮压低，视线没有追Lestrade的手势而是落向门锁。构图中门框像硬直矩形把Lestrade堵在中央，Holmes作为左后方暗色竖线压住画面平衡；Lestrade说话时口型清楚，画面下缘出现简洁白色字幕线贴近他嘴部下方。
+
+镜头3
+承接Holmes先前停在阴影中的姿态，他不跨过门槛，只把腰背向前折下，右手两指夹住黄铜边放大镜，手腕小幅旋转让镜片贴近钥匙孔外缘；指节上的烟渍在暖光里发黄，镜片边缘反出一道圆形亮线。焦点从钥匙孔铁圈锁住到放大镜内的针尖大小蓝色封蜡，蓝点在棕金色木屑之间突然闪亮；Holmes眼睛从钥匙孔缓慢下移到裂木中卷曲的黑色细丝，眉峰抬起一线，嘴角只向一侧收紧，下颌肌肉压出硬线。Watson在软焦层里把医疗包提手攥紧，四根手指向掌心压入，皮革提手形成深折；Lestrade站在更远处不动，只有帽檐水珠继续向下滑，画面中心由放大镜圆形与钥匙孔圆形套住蓝蜡点。
+
+镜头4
+镜头从破门口顺着Lestrade弯曲的手肘旁进入，前景袖口短暂遮挡画面边缘后滑开；黄铜横闩先捕捉到一条硬金色亮线，Holmes的长影从门边斜穿过去，亮线被阴影切断再重新露出。中景Sir Edmund Vale坐在厚重书桌旁，银色络腮胡垂在松开的丝质领巾上，右太阳穴深色弹孔不扩散，蓝筋左手戴着厚重印章戒指垂在桌边；绿色台灯把桌面、手背和勃艮第色吸烟夹克照成一块暖光池。后景Caleb Pike站在书架旁，脊背过直，戴手套的双手在腹前叠得过分整齐，右袖口蓝色干封蜡小弯月露在白袖边；他的喉结轻微上下滑动，眼睛不看尸体而贴着门闩方向游移。构图让明亮横闩像一条水平切线连接门、尸体和嫌疑人，画面重心从尸身转回锁闭机关。
+
+[对白]
+inspector_lestrade（门口戴雨点圆顶礼帽、夹紧黑色笔记本的瘦小中年男性）音色：四十多岁男性，鼻音明显的中音偏高男声，语速短促偏快，伦敦警务口音，语气防备而务实。
+sherlock_holmes（左后方半隐在煤气灯阴影里、深色披肩大衣的高瘦男性）音色：三十多岁男性，干冷男中音，边缘锋利，语速精准偏快，低音位，受教育的伦敦标准口音，带克制的讥讽与不耐。
+镜头2: inspector_lestrade："Bolted on the inside, pistol in hand, servants heard one shot. Suicide, Mr. Holmes."
+镜头3: sherlock_holmes："Then the room has been very obliging. It locked itself for your report."
+
+[音效]
+镜头1：窗外密雨敲打玻璃，湿伞连续滴水落在黑白瓷砖上，远处低沉雷鸣压过走廊回声，煤气灯火苗轻微嘶响，书房内有模糊警员靴底刮地声。
+镜头2：笔记本啪声合拢，湿皮手套被拉下的黏滞摩擦声，衣料带水轻响，对白清晰人声带室内走廊反射，窗外雨声持续作底。
+镜头3：环境低频略收，Holmes近处呼吸更清晰，放大镜金属边轻触木门细响，Watson医疗包提手皮革被攥紧的吱声，远处钟摆细小摆动。
+镜头4：门边衣袖擦过木框，书房内煤火轻爆与纸张微响，绿色台灯下低沉室内静默，黄铜门闩被光扫过时伴随细小金属摩擦感，雨窗声在后景持续。
+
+[约束]
+面部清晰稳定，五官不畸变不变形，正常人体结构与自然比例，角色服装与发型严格保持一致。破门、门闩、放大镜和医疗包的动作要有重量与惯性，人物走位自然连贯不僵硬、不抖帧、不穿模。
+
+保持无字幕，画面中不得出现任何字幕 / 台词字幕 / 说明文字 / 标题 / 水印 / Logo / 标志 / 品牌标识 / 叠加文字；对白只用声音表达（口型同步），绝不烧录成画面可见文字。

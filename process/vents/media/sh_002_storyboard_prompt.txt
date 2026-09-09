@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide cross-section -> P2 medium cross-section -> P3 close-up cross-section -> P4 wide
+
+[PANEL 1]
+SHOT: wide cross-section eye-level
+PLACEMENT: Cutaway geological stratum spanning the full frame horizontally.
+ACTION: Jagged rock fissures extending down from the seabed into the subterranean oceanic crust.
+ENV: Dark blue ocean above, dark slate gray basalt crust below with crisp interior cross-section boundaries.
+
+[PANEL 2]
+SHOT: medium cross-section eye-level
+PLACEMENT: Porous rock channel network occupying central frame.
+ACTION: Cool blue fluid arrows flowing downward through subterranean rock channels toward deep magma chambers.
+ENV: Subterranean dark gray rock layer with glowing cyan flow lines.
+
+[PANEL 3]
+SHOT: close-up cross-section low-angle
+PLACEMENT: Subterranean chamber bounded by crust rock walls.
+ACTION: Fluid streams shifting color from cool blue to bright warm orange near glowing magma.
+ENV: Deep volcanic mantle zone illuminated by intense orange-red geothermal glow.
+
+[PANEL 4]
+SHOT: wide low-angle
+PLACEMENT: Volcanic chimney nozzle positioned in lower central frame.
+ACTION: Superheated fluid surging rapidly upward, erupting from the vent chimney orifice into ocean water.
+ENV: Abyssal floor with a towering hydrothermal chimney discharging dense plumes into dark blue seawater.
+
+[RENDERED TEXT]
+No panel numbers, captions, or watermarks.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 1 refs (character / prop / location anchors).

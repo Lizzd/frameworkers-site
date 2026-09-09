@@ -1,0 +1,57 @@
+{
+  "voice": "onyx",
+  "voice_instructions": "A low, sorrow-heavy Japanese narrator, emotionally restrained but never flat: grief held behind the teeth, dread gathering with each line. Speak slowly, with weighted pauses before images of water, paper, and the final stop. Let the voice tighten when danger nears, swell with aching pity for the child, then drop almost to a whisper on the heaviest beats. Modern Tokyo register, intimate and haunted, dignified rather than theatrical; every sentence should feel like a prayer spoken too late.",
+  "subtitle_lang": "en",
+  "cues": [
+    {
+      "stretch_id": "sh_001#0",
+      "shot_id": "sh_001",
+      "window_start_s": 0.0,
+      "window_end_s": 4.0,
+      "text": "夜は息を潜めていた。",
+      "subtitle_text": "The night was holding its breath.",
+      "global_start_s": 0.0,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/last_train_anime_01/narration/lines/sh_001_0.wav",
+      "audio_duration_sec": 2.7,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_001#1",
+      "shot_id": "sh_001",
+      "window_start_s": 8.0,
+      "window_end_s": 12.0,
+      "text": "未熟な祓いの手が震えた。",
+      "subtitle_text": "The novice exorcist's hands trembled.",
+      "global_start_s": 8.0,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/last_train_anime_01/narration/lines/sh_001_1.wav",
+      "audio_duration_sec": 3.8,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_003#2",
+      "shot_id": "sh_003",
+      "window_start_s": 0.0,
+      "window_end_s": 3.0,
+      "text": "水底が車内を呼んだ。",
+      "subtitle_text": "The bottom of the water called into the carriage.",
+      "global_start_s": 30.161973,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/last_train_anime_01/narration/lines/sh_003_2.wav",
+      "audio_duration_sec": 3.2,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_004#3",
+      "shot_id": "sh_004",
+      "window_start_s": 0.0,
+      "window_end_s": 2.0,
+      "text": "終点はまだ遠い",
+      "subtitle_text": "The last stop was still far away.",
+      "global_start_s": 45.230975,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/last_train_anime_01/narration/lines/sh_004_3_fit.wav",
+      "audio_duration_sec": 2.533583,
+      "atempo": 1.6
+    }
+  ],
+  "srt_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/last_train_anime_01/narration/narration.srt",
+  "narrated_video_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/last_train_anime_01/narration/main_narrated_subbed.mp4"
+}

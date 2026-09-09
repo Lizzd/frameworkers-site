@@ -1,0 +1,19 @@
+# gpt-image-2 · t2i · size=1536x1024
+# refs: (none)
+
+Rendered entirely in this visual style / medium (governs the whole image):
+2D 国漫手绘电影短片，干净自信的墨线与厚涂上色，暗黑电影感彩色插画质感，非写实、非 3D。冷蓝月光与低饱和土灰环境为底，幽绿与血红高对比发光元素形成强烈冷暖冲突，阴影厚重、颗粒细腻、边缘有手绘笔触。
+
+A single physical place rendered as a location reference card. The single 16:9 widescreen image is composed of THREE equal-width vertical sections, each showing the SAME location from a different camera position, captured in one coherent pass:
+- LEFT section: FRONT view — the iconic / canonical / approach view of this location (camera at adult eye-level height, horizon roughly at lower-third), the angle a director would default to for establishing this place.
+- MIDDLE section: BACK view — 180-degree opposite of FRONT (same eye-level height, camera turned around to look back from where FRONT was facing toward).
+- RIGHT section: OVERHEAD view — aerial drone-altitude top-down view (~30-50m up) revealing spatial layout, dominant pathways, roof lines, arrangement of structures.
+
+Strict rules:
+- A single coherent place rendered in the brief's medium — consistent architecture and materials across all sections, not a disjoint collage.
+- All three sections depict the EXACT same physical location (same architecture, era, atmosphere, lighting, time of day).
+- NO people / characters / figures / animals in any section.
+- This is a clean reference plate: NO rendered text of any kind — no captions, view-name labels (no "FRONT VIEW" plates), watermarks, logos, or lettering; the section tags are stamped on programmatically AFTER rendering.
+
+Location: 山门边陲的废墟旧屋，夯土墙开裂，屋梁半塌，破窗漏入斜斜冷月光；地面铺着尘灰、碎瓦、枯草和旧蒲团，墙上残留褪色陆家木牌，整体为灰蓝、土黄和墨黑色调。
+World / era context (architecture, materials, atmospheric era): 晚唐气质的架空中土山野宗门边陲，玄幻修仙国漫传统；破败屋舍、荒院荆棘、宗门山籍制度带有唐末门阀与山门法度的压迫感。角色为汉族风貌的东亚面孔，服饰取唐风窄袖、束带、旧麻布与执法黑袍的混合设计。

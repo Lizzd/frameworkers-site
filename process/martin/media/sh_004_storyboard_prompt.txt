@@ -1,0 +1,47 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. Panels are identified by POSITION only — draw no digits, indices or labels on the artwork (they would burn into the downstream video render).
+
+[STYLE FOUNDATION]
+彩铅插画艺术风格（柔和彩铅手绘笔触、清新淡彩配色、柔和自然光影与细致纸张纹理，人物采用写实比例与精致手绘线稿，质感温暖亲和）。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 medium -> P2 close-up -> P3 wide -> P4 extreme-wide -> P5 detail
+
+[PANEL 1]
+SHOT: medium
+PLACEMENT: Martin (use FRONT section of the martin character anchor) settling into his ergonomic desk chair, placing the red-and-white shaobing bag (use HERO section of shaobing_package prop anchor) onto his wooden desk.
+ACTION: Martin sits back comfortably into his office chair, setting his snack down beside his computer keyboard.
+ENV: Bright personal office room with expansive window behind the desk.
+
+[PANEL 2]
+SHOT: close-up
+PLACEMENT: Martin (use FACE section of the martin character anchor) leaning back in his desk chair, hands clasped behind his head, head resting comfortably back.
+ACTION: Martin closes his eyes in satisfaction, taking a deep, relaxed breath with a broad smile.
+ENV: Warm morning light streaming around his head and spectacles from the window behind.
+
+[PANEL 3]
+SHOT: wide
+PLACEMENT: Wide room view showing Martin (use FRONT section of the martin character anchor) sitting relaxed in his desk chair, framed against the floor-to-ceiling glass window.
+ACTION: Martin rests in complete ease, enjoying his morning in peaceful comfort.
+ENV: Panoramic floor-to-ceiling window showcasing a bright sunlit view of Sofia city skyline.
+
+[PANEL 4]
+SHOT: extreme-wide
+PLACEMENT: High-angle aerial exterior shot of Synergy Tower with its slanted roof, surrounded by green park foliage and city streets under a clear morning sky.
+ACTION: Bright morning light casts crisp architectural reflections across the tower and surrounding park landscape.
+ENV: Clear atmospheric daylight over modern urban skyscraper and parkland.
+
+[PANEL 5]
+SHOT: detail
+PLACEMENT: Centered view of the 3D INSAIT wall logo (use HERO section of insait_logo prop anchor) featuring red and black volumetric block letters on a clean white background wall.
+ACTION: Bold presentation of the institutional emblem on the clean wall surface.
+ENV: Even, crisp studio lighting on a pristine white wall.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 4 refs (character / prop / location anchors).

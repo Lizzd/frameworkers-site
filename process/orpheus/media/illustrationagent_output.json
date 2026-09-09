@@ -1,0 +1,85 @@
+{
+  "content": {
+    "language": "en-US",
+    "overall_style": "classical oil painting, dramatic chiaroscuro, warm romantic tones, soft brushstrokes",
+    "character_anchors": [
+      {
+        "character_id": "char_001",
+        "appearance_prompt": "A young Greek musician with curly dark hair, expressive sorrowful eyes, wearing a simple white wool chiton, holding a glowing golden lyre."
+      },
+      {
+        "character_id": "char_002",
+        "appearance_prompt": "A young Greek nymph with delicate features, long flowing golden-brown hair, wearing a soft pastel blue stola."
+      },
+      {
+        "character_id": "char_003",
+        "appearance_prompt": "The stern ruler of the Underworld, a mature man with a dark beard, pale features, wearing dark robes and a crown of black iron."
+      }
+    ],
+    "illustrations": [
+      {
+        "segment_id": "seg_001",
+        "image_prompt": "Orpheus plays music on his golden lyre in a sun-drenched green meadow of Thrace. Beside him sits Eurydice, listening with a serene smile.",
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_002",
+        "image_prompt": "A dark and tragic scene in a shaded forest. Eurydice lies pale on the forest floor, having been bitten by a snake hidden in the grass. Orpheus kneels beside her in desperate grief.",
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_003",
+        "image_prompt": "Orpheus stands at the edge of the dark, misty River Styx, holding his glowing golden lyre. The skeletal ferryman Charon steers a wooden boat through the eerie fog.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_004",
+        "image_prompt": "Orpheus plays his golden lyre before the throne of Hades. Hades, a stern ruler with a dark beard and black iron crown, sits on a throne of obsidian, looking down with a trace of sorrow.",
+        "characters_in_segment": [
+          "char_001",
+          "char_003"
+        ]
+      },
+      {
+        "segment_id": "seg_005",
+        "image_prompt": "Hades raises his hand in a grand gesture of decree. Orpheus stands hopeful, holding his lyre, while the faint, translucent ghost of Eurydice stands waiting in the background shadows.",
+        "characters_in_segment": [
+          "char_001",
+          "char_002",
+          "char_003"
+        ]
+      },
+      {
+        "segment_id": "seg_006",
+        "image_prompt": "Orpheus climbs a steep, narrow rocky path leading upward toward a distant glimmer of daylight. Behind him, the silent, spectral figure of Eurydice follows closely in the dim cavern shadows.",
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_007",
+        "image_prompt": "At the cavern mouth, bright sunlight streams in. Orpheus has stepped into the light and turned his head back. Eurydice, still in the darkness of the cavern, is fading away into mist, reaching out a hand in tragic farewell.",
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_008",
+        "image_prompt": "Orpheus sits alone on a rocky cliff overlooking a desolate Greek coastline at sunset. He clutches his golden lyre, his face pale with eternal sorrow, looking out over the sea.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      }
+    ]
+  }
+}

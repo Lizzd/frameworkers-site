@@ -1,0 +1,10 @@
+{
+  "content": {
+    "language": "en",
+    "kind": "speech",
+    "audio_summary": "A male speaker dramatically whispers a recitation of Emily Dickinson's poem about hope in English with a slow, solemn tone.",
+    "audio_asset": {
+      "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic10_fixed_outputs/workspace_global_20260711_123603/inputs/20260711_123603_735002_user_recitation.wav"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+VISUAL MEDIUM and aesthetic are dictated entirely by story.style_anchor (below) — live-action film, 2D anime, illustration, 3D, etc.; do NOT default to photoreal, do NOT impose any medium the brief omits. Apply verbatim: 2D 国漫手绘电影短片，干净自信的墨线与厚涂上色，暗黑电影感彩色插画质感，非写实、非 3D。冷蓝月光与低饱和土灰环境为底，幽绿与血红高对比发光元素形成强烈冷暖冲突，阴影厚重、颗粒细腻、边缘有手绘笔触。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key come from the [STYLE FOUNDATION] text above (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide → P2 detail → P3 close-up → P4 wide
+
+[PANEL 1]
+SHOT: wide eye-level.
+PLACEMENT: Lu Chen — use the FRONT section of the lu_chen character anchor, rendered as a pale semi-transparent full torso and meridian outline, contained inside the stable oval meridian halo of the dantian inner space, shoulders one handspan below the halo’s upper arc, abdomen centered on the fixed circular dantian sigil, head smaller than the halo opening and clearly below its top curve.
+ACTION: The faint glass-like spiritual core at Lu Chen’s abdomen holds a weak white glow while a幽绿 external impact-shadow presses inward along two meridian channels; the first fine crack appears across the core surface at its most readable instant, Lu Chen’s mouth closed and body rigid.
+ENV: Use the FRONT section of the dantian_inner_space location anchor: deep blue-black non-real inner void, floating semi-transparent meridian lines, white spiritual mist, tiny light dust, no flesh texture; cold blue darkness surrounds the central white glow, with幽绿 pressure casting a sickly rim-light on the nearest meridian paths.
+
+[PANEL 2]
+SHOT: detail eye-level.
+PLACEMENT: Lu Chen — use the FRONT section of the lu_chen character anchor only as a cropped translucent abdomen-and-rib meridian contour around the core, the lower rib arcs fixed two palm-widths above the stable circular dantian sigil; the spiritual core is the focal object, centered inside the unchanged circular sigil, its diameter about one third of the sigil’s inner opening.
+ACTION: The first crack rapidly branches into a spiderweb pattern across the glass core; white light is squeezed into broken threadlike seams between fractures, and nearby meridian segments lose brightness in uneven patches.
+ENV: Use the OVERHEAD section of the dantian_inner_space location anchor for concentric meridian geometry and floating void depth; the background remains deep blue-black with soft white mist, while幽绿 contamination sits like shadowed pressure around the outer channels, restrained and non-gory.
+
+[PANEL 3]
+SHOT: close-up eye-level.
+PLACEMENT: Lu Chen — use the FACE section of the lu_chen character anchor for a large translucent face overlay occupying the upper half of the panel, white hair and the small mole under the left eye visible through the inner-space glow; his lowered pupils align toward the core below, chin two finger-widths above the stable inner meridian ring; the cracked spiritual core sits beneath his face inside the fixed circular dantian sigil, about an arm-length below his eyes in the composition.
+ACTION: The spiritual core reaches peak collapse: spiderweb cracks cover it, the center caves inward, and several transparent shell pieces open outward like broken glass petals; white light dust flares from the split center then turns dim gray at the edges, while Lu Chen’s jaw is clenched, lips closed, pupils tightened.
+ENV: Use the FRONT section of the dantian_inner_space location anchor, intensified into a symbolic emotional close-up: cold blue-black void, heavy shadow around half of Lu Chen’s translucent face, white and幽绿 reflections caught in the iris area, meridian lines around the core pulled taut but still drawn as light-lines rather than anatomy.
+
+[PANEL 4]
+SHOT: wide high.
+PLACEMENT: Lu Chen — use the FRONT section of the lu_chen character anchor, now reduced to a faint full chest-abdomen silhouette suspended inside the stable oval meridian halo, head just below the upper arc and abdomen centered above the lower arc; the final white spark is the focal object, floating one palm above the stable lower meridian arc and directly beneath the collapsed core’s former center.
+ACTION: The shattered spiritual core has dispersed into dull ash-like light motes drifting across Lu Chen’s translucent chest and abdomen; the once-flowing meridians remain as hollow dark lines, and the final white spark is caught at the instant of going out.
+ENV: Use the BACK section of the dantian_inner_space location anchor for a darker reversed view of the inner void: deep blue-black emptiness, sparse white mist fading, meridian web nearly unlit, thick painterly shadows swallowing the outer frame, no rendered text or symbols beyond the required panel number.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 2 refs (character anchors / location anchor).

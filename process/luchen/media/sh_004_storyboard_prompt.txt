@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+VISUAL MEDIUM and aesthetic are dictated entirely by story.style_anchor (below) — live-action film, 2D anime, illustration, 3D, etc.; do NOT default to photoreal, do NOT impose any medium the brief omits. Apply verbatim: 2D 国漫手绘电影短片，干净自信的墨线与厚涂上色，暗黑电影感彩色插画质感，非写实、非 3D。冷蓝月光与低饱和土灰环境为底，幽绿与血红高对比发光元素形成强烈冷暖冲突，阴影厚重、颗粒细腻、边缘有手绘笔触。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key come from the [STYLE FOUNDATION] text above (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide → P2 wide → P3 medium → P4 close-up.
+
+[PANEL 1]
+SHOT: wide eye-level.
+PLACEMENT: Bone jackal — use the FRONT section of the bone_jackal character anchor, crouched behind the thorn hedge with its belly low to the damp black ground, front paws planted between two stable half-buried stones, spine and bone-spike ridge rising just above the thorn line; it is three body-lengths from the collapsed wall opening in the midground, smaller than the wall hole and partly contained by the thorn mass.
+ACTION: The creature lies in ambush, dark red eye sockets fixed toward the broken wall opening; its exposed gray-white back spines are raised in a breathing posture, with no leap yet.
+ENV: Use the FRONT section of the thorn_courtyard location anchor: foreground thorn silhouettes and bent wild grass, midground collapsed earth wall with a jagged doorway-like hole exhaling pale dust, side rocks and the dark mouth of a ruined corner, background far mountain forest as black cutout shapes under cold blue moonlight. Low dust and night mist pool near the ground;幽绿余光 is only a faint hint inside the wall breach, while the courtyard remains mostly gray-blue and ink-black.
+
+[PANEL 2]
+SHOT: wide low.
+PLACEMENT: Bone jackal — use the FRONT section of the bone_jackal character anchor, now springing up from the same two half-buried stones, rear paws pushing off the stable rubble pile beside the thorn hedge, claws just leaving the topmost stone; it is two body-lengths in front of the collapsed wall hole, facing the incoming force, body still below the height of the broken wall cap.
+ACTION: A幽绿 energy aftershock sweeps horizontally out of the wall opening into the courtyard; the creature arches its back and launches upward at the instant the ground grass flattens into a fan-shaped trail beneath the passing force.
+ENV: Use the FRONT section of the thorn_courtyard location anchor: the collapsed wall hole anchors the left-midground, a枯井 rim and scattered rocks sit to the right, thorn hedges frame the lower edge, and distant trees remain black under cold moonlight. The impact source tears open a thick dust plume around the wall edge; flattened dry grass forms a visible wedge of direction across the damp soil, with limited green motion blur and no debris large enough to obscure the creature identity.
+
+[PANEL 3]
+SHOT: medium eye-level.
+PLACEMENT: Bone jackal — use the FRONT section of the bone_jackal character anchor, suspended half a body-height above the broken thorn hedge, torso centered between the stable枯井 rim on the right and the fixed collapsed wall base on the left; its hind legs trail toward the rubble pile it jumped from, and its head is turned three-quarters toward the viewer while still facing the incoming green force.
+ACTION: The幽绿 aftershock meets the creature’s abdomen as a bright opaque flare and dark red妖气 halo; the jackal’s body twists sideways in mid-air, limbs splayed, bone-spike ridge fanning outward from the force, with no visible wound and no blood.
+ENV: Use the BACK section of the thorn_courtyard location anchor for the opposite view across the same yard: thorn branches snap aside as dark silhouettes, short broken twigs fly laterally, the枯井 stones remain stable and readable, and the collapsed wall’s jagged outline sits behind the green flare. Cold blue moonlight rim-lights the creature’s spines; high-saturation幽绿 and暗红 glow dominate only the impact center, while the rest of the yard stays low-saturation gray-blue.
+
+[PANEL 4]
+SHOT: close-up low.
+PLACEMENT: Bone jackal — use the FACE section of the bone_jackal character anchor for the visible head and eye sockets, with the upper torso extrapolated from the FRONT section; its long muzzle rests against a stable flat rock in the foreground, one forepaw draped over the same rock edge, ribcage lying between two fixed rubble stones, and the thorn hedge blurred behind it at less than one body-length away.
+ACTION: The creature lies sprawled among the rocks, limbs slack and spread; under the mottled belly hide a sealed crack-like dark red inner glow pulses faintly while the幽绿 aftershock has broken apart into thin mist around the body, with no open gore and no blood.
+ENV: Use the FRONT section of the thorn_courtyard location anchor for ground texture and rubble: wet black soil, broken瓦片, thorn roots, flat stones, and a low strip of moonlit grass. The courtyard is returning to heavy cold-blue darkness; only a small red glow under the torso and fading green vapor provide color contrast, with thick hand-painted shadows and fine grain preserving the quiet aftermath.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 2 refs (character anchors / location anchor).

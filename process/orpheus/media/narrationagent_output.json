@@ -1,0 +1,259 @@
+{
+  "content": {
+    "language": "en-US",
+    "overall_style": "classical oil painting, dramatic chiaroscuro, warm romantic tones, soft brushstrokes",
+    "cast": [
+      {
+        "character_id": "char_001",
+        "name": "Orpheus",
+        "appearance_prompt": "A young Greek musician with curly dark hair, expressive sorrowful eyes, wearing a simple white wool chiton, holding a glowing golden lyre."
+      },
+      {
+        "character_id": "char_002",
+        "name": "Eurydice",
+        "appearance_prompt": "A young Greek nymph with delicate features, long flowing golden-brown hair, wearing a soft pastel blue stola."
+      },
+      {
+        "character_id": "char_003",
+        "name": "Hades",
+        "appearance_prompt": "The stern ruler of the Underworld, a mature man with a dark beard, pale features, wearing dark robes and a crown of black iron."
+      }
+    ],
+    "segments": [
+      {
+        "segment_id": "seg_001",
+        "image_prompt": "Orpheus plays music on his golden lyre in a sun-drenched green meadow of Thrace. Beside him sits Eurydice, listening with a serene smile.",
+        "lines": [
+          {
+            "line_id": "ln_001",
+            "text": "In the ancient, sun-drenched hills of Thrace, there lived a musician named Orpheus, whose music could tame the wildest beasts and bend the very trees to listen.",
+            "pause_after_ms": 0
+          },
+          {
+            "line_id": "ln_002",
+            "text": "Yet, of all the wonders of the earth, his heart belonged solely to the gentle nymph, Eurydice.",
+            "pause_after_ms": 300
+          },
+          {
+            "line_id": "ln_003",
+            "text": "They walked hand in hand through fields of wild lilies, their laughter harmonizing with the strings of his golden lyre.",
+            "pause_after_ms": 500
+          },
+          {
+            "line_id": "ln_004",
+            "text": "Orpheus whispered to her, 'As long as my lyre has song, my love, you shall never walk in shadow.'",
+            "pause_after_ms": 1000
+          }
+        ],
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_002",
+        "image_prompt": "A dark and tragic scene in a shaded forest. Eurydice lies pale on the forest floor, having been bitten by a snake hidden in the grass. Orpheus kneels beside her in desperate grief.",
+        "lines": [
+          {
+            "line_id": "ln_005",
+            "text": "But fate is a cruel weaver, and shadow fell upon them all too soon.",
+            "pause_after_ms": 0
+          },
+          {
+            "line_id": "ln_006",
+            "text": "While running through the tall grass, Eurydice trod upon a venomous viper, its fangs sinking deep into her ankle.",
+            "pause_after_ms": 300
+          },
+          {
+            "line_id": "ln_007",
+            "text": "Before the sun could set, her spirit departed, leaving Orpheus to weep over her cold, lifeless form.",
+            "pause_after_ms": 500
+          },
+          {
+            "line_id": "ln_008",
+            "text": "He cried out to the heavens, 'Take my life also, or return my beloved to the light!'",
+            "pause_after_ms": 1000
+          }
+        ],
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_003",
+        "image_prompt": "Orpheus stands at the edge of the dark, misty River Styx, holding his glowing golden lyre. The skeletal ferryman Charon steers a wooden boat through the eerie fog.",
+        "lines": [
+          {
+            "line_id": "ln_009",
+            "text": "Unable to bear the silence of her absence, Orpheus resolved to do what no living mortal had ever dared.",
+            "pause_after_ms": 0
+          },
+          {
+            "line_id": "ln_010",
+            "text": "He descended into the deep, yawning cavern of Taenarum, seeking the gates of the Underworld.",
+            "pause_after_ms": 300
+          },
+          {
+            "line_id": "ln_011",
+            "text": "At the banks of the misty River Styx, his sorrowful music softened the cold heart of Charon, who ferried him across the dark waters.",
+            "pause_after_ms": 1000
+          }
+        ],
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_004",
+        "image_prompt": "Orpheus plays his golden lyre before the throne of Hades. Hades, a stern ruler with a dark beard and black iron crown, sits on a throne of obsidian, looking down with a trace of sorrow.",
+        "lines": [
+          {
+            "line_id": "ln_012",
+            "text": "Deep within the silent realm of the dead, Orpheus stood before the obsidian throne of Hades, Lord of the Underworld.",
+            "pause_after_ms": 0
+          },
+          {
+            "line_id": "ln_013",
+            "text": "He struck his lyre, pouring all his grief, his memories of the sunlit meadows, and his desperate love into a single, haunting melody.",
+            "pause_after_ms": 300
+          },
+          {
+            "line_id": "ln_014",
+            "text": "The cold stones of the Underworld wept, and even the relentless Furies stayed their torment to listen.",
+            "pause_after_ms": 1000
+          }
+        ],
+        "characters_in_segment": [
+          "char_001",
+          "char_003"
+        ]
+      },
+      {
+        "segment_id": "seg_005",
+        "image_prompt": "Hades raises his hand in a grand gesture of decree. Orpheus stands hopeful, holding his lyre, while the faint, translucent ghost of Eurydice stands waiting in the background shadows.",
+        "lines": [
+          {
+            "line_id": "ln_015",
+            "text": "For the first time, the stern heart of Hades was moved to pity.",
+            "pause_after_ms": 400
+          },
+          {
+            "line_id": "ln_016",
+            "text": "Hades spoke, his voice echoing like rolling thunder, 'You may lead her back to the realm of the living, musician.'",
+            "pause_after_ms": 600
+          },
+          {
+            "line_id": "ln_017",
+            "text": "'But heed this warning: she will follow behind you, and you must not turn to look at her until you have both crossed into the light of the sun.'",
+            "pause_after_ms": 600
+          },
+          {
+            "line_id": "ln_018",
+            "text": "'If you look back but once, she will remain mine forever.'",
+            "pause_after_ms": 1000
+          }
+        ],
+        "characters_in_segment": [
+          "char_001",
+          "char_002",
+          "char_003"
+        ]
+      },
+      {
+        "segment_id": "seg_006",
+        "image_prompt": "Orpheus climbs a steep, narrow rocky path leading upward toward a distant glimmer of daylight. Behind him, the silent, spectral figure of Eurydice follows closely in the dim cavern shadows.",
+        "lines": [
+          {
+            "line_id": "ln_019",
+            "text": "With hope rekindled, Orpheus began the arduous journey back up through the silent, dark caverns.",
+            "pause_after_ms": 0
+          },
+          {
+            "line_id": "ln_020",
+            "text": "The silence was oppressive, weighing heavily on his racing heart.",
+            "pause_after_ms": 300
+          },
+          {
+            "line_id": "ln_021",
+            "text": "He could hear no footsteps behind him, only his own breath and the faint rustle of the wind ahead.",
+            "pause_after_ms": 500
+          },
+          {
+            "line_id": "ln_022",
+            "text": "A terrible doubt began to gnaw at his mind: was she truly there, or had the Lord of the Dead deceived him?",
+            "pause_after_ms": 1000
+          }
+        ],
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_007",
+        "image_prompt": "At the cavern mouth, bright sunlight streams in. Orpheus has stepped into the light and turned his head back. Eurydice, still in the darkness of the cavern, is fading away into mist, reaching out a hand in tragic farewell.",
+        "lines": [
+          {
+            "line_id": "ln_023",
+            "text": "At last, Orpheus stepped out into the warm, golden light of the upper world.",
+            "pause_after_ms": 0
+          },
+          {
+            "line_id": "ln_024",
+            "text": "In his overwhelming joy and relief, he forgot the warning, and turned to look back at his beautiful bride.",
+            "pause_after_ms": 400
+          },
+          {
+            "line_id": "ln_025",
+            "text": "But Eurydice was still within the shadow of the cavern.",
+            "pause_after_ms": 300
+          },
+          {
+            "line_id": "ln_026",
+            "text": "As their eyes met, she began to fade, slipping back into the dark depths like a wisp of smoke.",
+            "pause_after_ms": 500
+          },
+          {
+            "line_id": "ln_027",
+            "text": "She whispered her final, agonizing farewell: 'Goodbye, my love.'",
+            "pause_after_ms": 1200
+          }
+        ],
+        "characters_in_segment": [
+          "char_001",
+          "char_002"
+        ]
+      },
+      {
+        "segment_id": "seg_008",
+        "image_prompt": "Orpheus sits alone on a rocky cliff overlooking a desolate Greek coastline at sunset. He clutches his golden lyre, his face pale with eternal sorrow, looking out over the sea.",
+        "lines": [
+          {
+            "line_id": "ln_028",
+            "text": "Orpheus reached out, but grasped only empty air.",
+            "pause_after_ms": 0
+          },
+          {
+            "line_id": "ln_029",
+            "text": "He tried to return, but the gates of the Underworld were shut against him forever.",
+            "pause_after_ms": 300
+          },
+          {
+            "line_id": "ln_030",
+            "text": "For the rest of his days, he wandered the wild hills alone, playing songs of such profound sorrow that the world itself seemed to weep with him.",
+            "pause_after_ms": 500
+          },
+          {
+            "line_id": "ln_031",
+            "text": "Waiting for the day when his own song would end, and he would finally join his beloved Eurydice in the quiet shadows.",
+            "pause_after_ms": 1200
+          }
+        ],
+        "characters_in_segment": [
+          "char_001"
+        ]
+      }
+    ]
+  }
+}

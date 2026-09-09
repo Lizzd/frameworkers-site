@@ -1,0 +1,44 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. Panels are identified by POSITION only — draw no digits, indices or labels on the artwork (they would burn into the downstream video render).
+
+[STYLE FOUNDATION]
+彩铅插画艺术风格（柔和彩铅手绘笔触、清新淡彩配色、柔和自然光影与细致纸张纹理，人物采用写实比例与精致手绘线稿，质感温暖亲和）。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide -> P2 medium -> P3 medium -> P4 close-up -> P5 medium
+
+[PANEL 1]
+SHOT: wide
+PLACEMENT: Exterior building shot. The modern glass facade of Synergy Tower fills the frame, rising above manicured green park lawns.
+ACTION: Morning sunlight glints off the reflective blue glass windows of the skyscraper facade.
+ENV: Clear morning daylight shining on glass architectural surfaces under a bright sky.
+
+[PANEL 2]
+SHOT: medium
+PLACEMENT: Martin (use FRONT section of the martin character anchor) walking across the green plaza path, both feet planted on the stone pavement two paces outside the building entrance doors.
+ACTION: Martin walks with a confident, relaxed posture, holding a light pleasant smile.
+ENV: Bright morning sunlight on the glass building exterior and surrounding green park trees.
+
+[PANEL 3]
+SHOT: medium
+PLACEMENT: Martin (use FRONT section of the martin character anchor) standing in the lobby, positioned three paces in front of the geometric terrazzo reception desk, head below the slatted wooden ceiling grid.
+ACTION: Martin nods politely toward the reception area with an easy smile.
+ENV: Double-height lobby with slatted wood ceiling grid, vertical wall lights, and SYNERGY TOWER wall emblem.
+
+[PANEL 4]
+SHOT: close-up
+PLACEMENT: Close-up on the elevator control panel. Martin's hand (forearm and white dress shirt sleeve entering from the right frame edge) with index finger pressing the glowing numeric button marked '13'.
+ACTION: Martin's finger presses the backlit button, lighting up the floor indicator display screen above.
+ENV: Metallic elevator control panel with glowing digital floor indicator.
+
+[PANEL 5]
+SHOT: medium
+PLACEMENT: Martin (use FRONT section of the martin character anchor) stepping out of the elevator doors, feet crossing the threshold onto the hallway floor.
+ACTION: Martin steps forward with an expectant, happy smile, walking toward the corridor.
+ENV: 13th floor elevator lobby corridor with modern warm lighting and architectural finishes.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.

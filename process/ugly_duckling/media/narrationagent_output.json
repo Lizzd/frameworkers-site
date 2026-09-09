@@ -1,0 +1,164 @@
+{
+  "content": {
+    "language": "en-US",
+    "overall_style": "gentle watercolor storybook, soft pastel colors, warm lighting, charming classic illustration",
+    "voice": "Vindemiatrix",
+    "voice_instructions": "A gentle, warm, and comforting female narrator voice. Speak slowly and clearly as if reading a bedtime story to a young child. Pause naturally between sentences to allow the listener to follow the words on screen. The tone should start soft and compassionate, transitioning to quiet joy by the end.",
+    "cast": [
+      {
+        "character_id": "char_001",
+        "name": "The Ugly Duckling",
+        "appearance_prompt": "A large, fluffy cygnet with dusty grey down feathers, a long neck, and gentle, sad dark eyes."
+      }
+    ],
+    "segments": [
+      {
+        "segment_id": "seg_001",
+        "image_prompt": "A large, textured grey egg hatching in a warm nest of green burdock leaves, revealing a big, fluffy, grey cygnet looking around curiously.",
+        "lines": [
+          {
+            "line_id": "ln_001",
+            "text": "Deep in the green countryside, a giant egg finally cracked open.",
+            "pause_after_ms": 400
+          },
+          {
+            "line_id": "ln_002",
+            "text": "Out tumbled a big, clumsy, grey duckling.",
+            "pause_after_ms": 800
+          }
+        ],
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_002",
+        "image_prompt": "A busy farmyard with yellow ducklings and a proud rooster turning their backs on a sad grey duckling who hangs his head.",
+        "lines": [
+          {
+            "line_id": "ln_003",
+            "text": "The other farm animals laughed at him.",
+            "pause_after_ms": 400
+          },
+          {
+            "line_id": "ln_004",
+            "text": "They called him ugly and chased him away.",
+            "pause_after_ms": 800
+          }
+        ],
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_003",
+        "image_prompt": "The lonely grey duckling walking through tall, wild green reeds under a cloudy autumn sky, looking lost and small.",
+        "lines": [
+          {
+            "line_id": "ln_005",
+            "text": "Feeling very lonely, the poor duckling ran away into the wild marsh.",
+            "pause_after_ms": 800
+          }
+        ],
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_004",
+        "image_prompt": "A cold winter landscape with heavy snow falling, a small grey duckling shivering and huddled under a frozen, snow-capped log.",
+        "lines": [
+          {
+            "line_id": "ln_006",
+            "text": "Winter came with biting winds and deep, heavy snow.",
+            "pause_after_ms": 400
+          },
+          {
+            "line_id": "ln_007",
+            "text": "The shivering duckling hid all alone under a frozen log.",
+            "pause_after_ms": 1000
+          }
+        ],
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_005",
+        "image_prompt": "Golden spring sunshine melting thick blue ice on a pond, green grass shoots beginning to grow along the wet banks.",
+        "lines": [
+          {
+            "line_id": "ln_008",
+            "text": "At last, the warm spring sun began to melt the ice.",
+            "pause_after_ms": 800
+          }
+        ],
+        "characters_in_segment": []
+      },
+      {
+        "segment_id": "seg_006",
+        "image_prompt": "Three majestic, graceful white swans with long elegant necks swimming together on a sparkling, sunlit pond.",
+        "lines": [
+          {
+            "line_id": "ln_009",
+            "text": "He saw three beautiful, elegant white swans gliding gracefully across the pond.",
+            "pause_after_ms": 800
+          }
+        ],
+        "characters_in_segment": []
+      },
+      {
+        "segment_id": "seg_007",
+        "image_prompt": "The grey duckling swimming timidly toward the three majestic white swans, bowing his head down in shyness.",
+        "lines": [
+          {
+            "line_id": "ln_010",
+            "text": "The duckling swam toward them, bowing his head in sadness.",
+            "pause_after_ms": 800
+          }
+        ],
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_008",
+        "image_prompt": "A reflection in clear, blue water showing a stunningly beautiful white swan with elegant feathers, next to the ripples of the pond.",
+        "lines": [
+          {
+            "line_id": "ln_011",
+            "text": "But in the clear water, he saw his own reflection.",
+            "pause_after_ms": 400
+          },
+          {
+            "line_id": "ln_012",
+            "text": "He was no longer a clumsy, dark grey bird.",
+            "pause_after_ms": 800
+          }
+        ],
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_009",
+        "image_prompt": "A beautiful white swan soaring happily into a bright blue spring sky, leaving the sparkling pond below.",
+        "lines": [
+          {
+            "line_id": "ln_013",
+            "text": "He had grown into a beautiful, magnificent white swan!",
+            "pause_after_ms": 400
+          },
+          {
+            "line_id": "ln_014",
+            "text": "With a joyful heart, he flapped his strong wings and flew into the bright blue sky.",
+            "pause_after_ms": 0
+          }
+        ],
+        "characters_in_segment": [
+          "char_001"
+        ]
+      }
+    ]
+  }
+}

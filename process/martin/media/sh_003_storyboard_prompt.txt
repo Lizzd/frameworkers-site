@@ -1,0 +1,53 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 6 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 6 = bottom-right. Panels are identified by POSITION only — draw no digits, indices or labels on the artwork (they would burn into the downstream video render).
+
+[STYLE FOUNDATION]
+彩铅插画艺术风格（柔和彩铅手绘笔触、清新淡彩配色、柔和自然光影与细致纸张纹理，人物采用写实比例与精致手绘线稿，质感温暖亲和）。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 medium -> P2 wide -> P3 close-up -> P4 medium -> P5 medium -> P6 medium
+
+[PANEL 1]
+SHOT: medium
+PLACEMENT: Martin (use FRONT section of the martin character anchor) standing in the open door frame of the office room, one hand resting on the wooden door frame.
+ACTION: Martin pushes the door open with a energetic gesture and calls out a friendly greeting.
+ENV: Sunlit open-plan office entrance with morning light falling across wooden desk surfaces.
+
+[PANEL 2]
+SHOT: wide
+PLACEMENT: An empty office workstation centered in frame. An unoccupied black ergonomic chair is tucked under a clean desk next to an unlit black monitor.
+ACTION: The workstation is completely quiet and silent with no person present.
+ENV: Bright open office interior with daylight reflecting off marble tabletop.
+
+[PANEL 3]
+SHOT: close-up
+PLACEMENT: Martin (use FACE section of the martin character anchor), framing tight on face and shoulders.
+ACTION: Martin turns his head, raising an eyebrow with an inquisitive, puzzled facial expression.
+ENV: Soft blurred office background with subtle window reflections on his spectacles.
+
+[PANEL 4]
+SHOT: medium
+PLACEMENT: Martin (use FRONT section of the martin character anchor) standing beside Jina's desk, positioned one arm-length from Jina (use FRONT section of the jina character anchor) who sits in her office chair. The red-and-white shaobing package (use HERO section of shaobing_package prop anchor) rests on top of the desk surface.
+ACTION: Martin points his index finger at the shaobing paper bag with a curious smile, while Jina looks up in surprise.
+ENV: Bright office workstation illuminated by soft window daylight.
+
+[PANEL 5]
+SHOT: medium
+PLACEMENT: Martin (use FRONT section of the martin character anchor) turning on his heel away from the desk, holding a crisp golden shaobing in hand. Jina (use FRONT section of the jina character anchor) reaches her hand out toward the desk in surprise.
+ACTION: Martin swiftly retrieves a shaobing from the open paper bag and steps away, catching Jina off guard just as she starts to speak.
+ENV: Marble office desk with the opened red-and-white paper food bag sitting beside a computer monitor.
+
+[PANEL 6]
+SHOT: medium
+PLACEMENT: Martin (use FRONT section of the martin character anchor) walking out through the background office doorway, raised hand holding the shaobing. Jina (use FRONT section of the jina character anchor) sitting at her foreground desk turned around in her chair.
+ACTION: Martin offers a cheerful wave as he departs; Jina watches him leave with an amusing, speech-blocked expression.
+ENV: Open office doorway and desk area illuminated by gentle natural light.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 4 refs (character / prop / location anchors).

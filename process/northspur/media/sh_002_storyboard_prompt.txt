@@ -1,0 +1,47 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel.
+
+[STYLE FOUNDATION]
+Cinematic 3D animation style with crisp lighting, rich outdoor textures, earthy olive and slate color palette, and warm morning sunlight accents.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 medium -> P2 close-up -> P3 wide -> P4 close-up -> P5 medium
+
+[PANEL 1]
+SHOT: medium, low viewpoint.
+PLACEMENT: main_character leaning forward into steep climb, right boot wedged into rock fissure, torso filling lower-center frame; referencing FRONT section of main_character anchor.
+ACTION: main_character drives upward across steep granite incline, olive green jacket flexing at shoulders.
+ENV: Steep gray granite rock face with moss patches, warm sunlight glinting off slope edges, referencing mountain_trail location anchor (FRONT section).
+
+[PANEL 2]
+SHOT: close-up, eye-level.
+PLACEMENT: main_character shoulder and upper chest filling center frame; neck and side profile visible; referencing FACE section of main_character anchor.
+ACTION: Clear water droplets beaded up on water-resistant weave of olive jacket shoulder fabric.
+ENV: Out-of-focus background mist glowing in bright morning light, referencing mountain_trail location anchor (FRONT section).
+
+[PANEL 3]
+SHOT: wide, eye-level.
+PLACEMENT: main_character mid-air across narrow stream gap, right boot touching down on far mossy stone, arms spread for balance; referencing FRONT section of main_character anchor.
+ACTION: main_character leaps cleanly across fast mountain stream, landing smoothly on bank.
+ENV: Rushing mountain brook over wet stones, flanked by green pine trees and sunlit rocks, referencing mountain_trail location anchor (FRONT section).
+
+[PANEL 4]
+SHOT: close-up, eye-level.
+PLACEMENT: main_character head and shoulders framed closely, face turned three-quarters toward camera; referencing FACE section of main_character anchor.
+ACTION: main_character smiles determinately while breathing crisp alpine air, dark braids highlighted by rim lighting.
+ENV: Clear blue sky background illuminated by bright golden sunlight, referencing mountain_trail location anchor (FRONT section).
+
+[PANEL 5]
+SHOT: medium, eye-level.
+PLACEMENT: main_character standing on upper ridge shoulder, feet planted on flat rock slab, looking ahead toward summit; referencing FRONT section of main_character anchor.
+ACTION: main_character pauses on rocky crest shoulder, posture confident and focused on summit peak.
+ENV: High altitude mountain ridge shoulder under golden morning sky, referencing mountain_trail location anchor (FRONT section).
+
+[RENDERED TEXT]
+(none for this shot)
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 2 refs (character / prop / location anchors).

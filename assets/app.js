@@ -382,6 +382,7 @@ function stagesFor(d){
 
 const PLAY_SVG  = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
 const CHECK_SVG = '<svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>';
+const PROC_SVG  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="6" height="6" rx="1.5"/><rect x="15" y="14" width="6" height="6" rx="1.5"/><path d="M9 7h3a3 3 0 0 1 3 3v4"/></svg>';
 const ARROW_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
 
 const $ = (id)=>document.getElementById(id);
@@ -447,10 +448,11 @@ function ioRow(d){
 
 function filmCard(d){
   return `
-    <button class="film-card" data-key="${d.key}" aria-label="Generate: ${esc(d.title)}">
+    <article class="film-card" data-key="${d.key}" tabindex="0" role="button" aria-label="Generate: ${esc(d.title)}">
       <div class="ph" style="background-image:url('${d.poster}')">
         <span class="cat">${esc(d.cat)}</span>
         <span class="play-fab">${PLAY_SVG}</span>
+        <a class="proc-link" href="process.html?film=${d.key}" aria-label="View creation process: ${esc(d.title)}">${PROC_SVG} Creation process</a>
       </div>
       <div class="body">
         <div class="ttl">${esc(d.title)}</div>
@@ -458,7 +460,7 @@ function filmCard(d){
         ${ioRow(d)}
         <div class="go">Generate this film ${ARROW_SVG}</div>
       </div>
-    </button>`;
+    </article>`;
 }
 
 function initPortfolio(){
@@ -484,8 +486,14 @@ function initPortfolio(){
   renderGrid();
 
   grid.addEventListener("click", e=>{
+    if (e.target.closest(".proc-link")) return;          // plain navigation to process.html
     const b = e.target.closest(".film-card"); if(!b) return;
     play(b.dataset.key);
+  });
+  grid.addEventListener("keydown", e=>{
+    if (e.key!=="Enter" && e.key!==" ") return;
+    const b = e.target.closest(".film-card"); if(!b || e.target!==b) return;
+    e.preventDefault(); play(b.dataset.key);
   });
 
   function showList(on){
@@ -499,6 +507,7 @@ function initPortfolio(){
     runGeneration(stagesFor(d), ()=>{
       $("pgenre").textContent = d.genre;
       $("ptitle").textContent = d.title;
+      const _pp = $("pproc"); if (_pp) _pp.href = "process.html?film=" + encodeURIComponent(d.key);
       // Verbatim reproducibility: d.prompt IS the exact user instruction fed
       // to the pipeline (Chinese where the real input was Chinese); d.prompt_en
       // is a reference translation only.

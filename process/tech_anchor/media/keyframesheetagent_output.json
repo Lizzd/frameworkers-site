@@ -1,0 +1,180 @@
+{
+  "content": {
+    "language": "en",
+    "anchors": {
+      "character_anchors": [
+        {
+          "entity_id": "anchor",
+          "prompt_summary": "Stylized 3D animated virtual presenter with neat dark navy hair styled back. Clean, symmetrical facial features with a neutral and composed professional expression. Wears a tailored charcoal gray suit jacket over a crisp light-blue collared dress shirt. Slim to average build with polished broadcast appearance.",
+          "views": [
+            "FACE",
+            "FRONT"
+          ],
+          "reference_image_uri": ""
+        }
+      ],
+      "location_anchors": [
+        {
+          "entity_id": "studio",
+          "prompt_summary": "Modern generic broadcast newsroom studio set featuring a central curved metallic desk. The background consists of modern LED light panels displaying abstract geometric cyan and blue lighting patterns. Clean metallic slate gray textures, completely textless and unbranded.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": ""
+        },
+        {
+          "entity_id": "broll_datacenter",
+          "prompt_summary": "Futuristic generic data center interior aisle. Rows of tall, sleek server rack cabinets line the corridor, pulsing with subtle blue optical signals and vertical light strips. Highly polished reflective floor with clean metallic industrial design, entirely free of logos or text.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": ""
+        },
+        {
+          "entity_id": "broll_quantum_lab",
+          "prompt_summary": "High-tech cleanroom quantum physics laboratory featuring a central suspended gold-and-copper chandelier cryostat cooling unit. Surrounding environment includes stainless steel laboratory fixtures, clean white countertops, and cool ambient lighting, completely text-free.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": ""
+        },
+        {
+          "entity_id": "broll_eu_building",
+          "prompt_summary": "Exterior view of a modern glass-and-steel international government assembly building under a clear blue afternoon sky. Architectural features include sweeping geometric curtain walls and clean stone plazas, entirely free of flags, logos, or signage.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": ""
+        }
+      ],
+      "prop_anchors": []
+    },
+    "shot_visuals": {
+      "sh_001": {
+        "shot_id": "sh_001",
+        "primary_location": "studio",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": [
+              "anchor"
+            ]
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "anchor"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nHigh-end stylized 3D digital animation aesthetic with soft studio key lighting, clean metallic slate gray and cyan neon accents, and balanced camera framing maintaining clean spatial contrast near the lower margin for downstream captions.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 medium -> P3 wide -> P4 detail\n\n[PANEL 1]\nSHOT: wide eye-level\nPLACEMENT: use the FRONT section of the anchor character anchor; standing centered behind the curved metallic news desk, waist-up visible above the desk surface with hands resting lightly on the desktop edge.\nACTION: stands composed and poised in a direct news delivery pose.\nENV: use the FRONT section of the studio location anchor; background LED light panels glowing with soft light-blue geometric patterns.\n\n[PANEL 2]\nSHOT: medium eye-level\nPLACEMENT: use the FRONT section of the anchor character anchor; centered behind the curved news desk, chest-up framed in clear focus with forearms resting over the desk surface.\nACTION: gestures subtly with open hands while delivering news to camera.\nENV: studio wall panels with clean cyan neon accents and metallic slate gray framing.\n\n[PANEL 3]\nSHOT: wide eye-level\nPLACEMENT: bind the tall server racks directly to the polished reflective floor along the central walkway aisle.\nACTION: optical light pulses travel smoothly down the dark vertical rack rails.\nENV: futuristic server room aisle lined with tall server racks pulsing with blue light strips.\n\n[PANEL 4]\nSHOT: detail high-angle\nPLACEMENT: bind the circular unbranded silicon microchip wafer flat against a clean metallic laboratory stage plate.\nACTION: bright cold white light reflects softly across the microchip's etched surface features.\nENV: high-tech cleanroom staging platform illuminated by cool overhead laboratory spotlights.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels."
+      },
+      "sh_002": {
+        "shot_id": "sh_002",
+        "primary_location": "studio",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "anchor"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nHigh-end stylized 3D digital animation aesthetic with soft studio key lighting, clean metallic slate gray and cyan neon accents, and balanced camera framing maintaining clean spatial contrast near the lower margin for downstream captions.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 close-up -> P3 wide -> P4 detail\n\n[PANEL 1]\nSHOT: medium eye-level\nPLACEMENT: bind the downward vector line graph directly to the metallic dark digital backdrop wall.\nACTION: a glowing red trend line dips sharply across a dark grid matrix pattern without any visible text or numbers.\nENV: dark slate gray studio digital wall grid backlit with subtle cyan accent ambient lighting.\n\n[PANEL 2]\nSHOT: close-up eye-level\nPLACEMENT: use the FACE section of the anchor character anchor; head and shoulders centered in frame, upper torso positioned neatly above the lower caption margin.\nACTION: maintains a serious, focused composure with eyes fixed directly ahead.\nENV: newsroom studio background with softly blurred cyan geometric background light panels.\n\n[PANEL 3]\nSHOT: wide eye-level\nPLACEMENT: bind the brass and copper cryostat structure suspended centrally from the ceiling frame above the polished laboratory floor.\nACTION: cryogenic hardware sits motionless under clean laboratory spotlight illumination.\nENV: wide cleanroom optics laboratory with metallic wall paneling and cold ambient lighting.\n\n[PANEL 4]\nSHOT: detail low-angle\nPLACEMENT: bind the golden square quantum processor module flush onto a frosted copper cooling plate.\nACTION: intricate golden circuitry pathways glint brightly under a sharp white spotlight beam.\nENV: cryogenic mounting plate surface inside the quantum hardware assembly.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels."
+      },
+      "sh_003": {
+        "shot_id": "sh_003",
+        "primary_location": "broll_quantum_lab",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "anchor"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nHigh-end stylized 3D digital animation aesthetic with soft studio key lighting, clean metallic slate gray and cyan neon accents, and balanced camera framing maintaining clean spatial contrast near the lower margin for downstream captions.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 medium -> P3 wide -> P4 wide\n\n[PANEL 1]\nSHOT: medium eye-level\nPLACEMENT: bind a cluster of glowing blue spheres to an abstract 3D coordinate grid matrix floating in dark space.\nACTION: luminous blue particles converge into an organized, symmetrical grid lattice formation.\nENV: deep blue digital abstract backdrop with subtle cyan light grid lines.\n\n[PANEL 2]\nSHOT: medium eye-level\nPLACEMENT: use the FRONT section of the anchor character anchor; standing centered behind the curved news desk, torso framed cleanly above the lower desk line.\nACTION: turns posture smoothly toward camera while speaking with calm professional composure.\nENV: newsroom studio set featuring illuminated light blue and slate gray geometric LED panels.\n\n[PANEL 3]\nSHOT: wide eye-level\nPLACEMENT: bind the modern glass legislative building directly to the wide granite plaza foundation steps.\nACTION: clear afternoon sunlight reflects off the geometric glass curtain wall panels.\nENV: clean architectural exterior plaza under bright blue sky with zero flags or text.\n\n[PANEL 4]\nSHOT: wide high-angle\nPLACEMENT: bind concentric rows of polished wooden summit desks securely to the terraced assembly hall floor.\nACTION: soft overhead ambient lighting highlights the neat, empty assembly chamber seats.\nENV: spacious international hall interior with polished wood furnishings and light slate walls.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels."
+      },
+      "sh_004": {
+        "shot_id": "sh_004",
+        "primary_location": "studio",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "anchor"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "anchor"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": [
+              "anchor"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nHigh-end stylized 3D digital animation aesthetic with soft studio key lighting, clean metallic slate gray and cyan neon accents, and balanced camera framing maintaining clean spatial contrast near the lower margin for downstream captions.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 close-up -> P3 close-up -> P4 wide\n\n[PANEL 1]\nSHOT: medium eye-level\nPLACEMENT: bind three horizontal metallic stepped bars flat against the dark digital background wall.\nACTION: three stepped horizontal bars illuminate in sequential yellow, orange, and cyan neon light tones.\nENV: dark metallic slate gray studio digital wall with subtle linear grid pattern.\n\n[PANEL 2]\nSHOT: close-up eye-level\nPLACEMENT: use the FACE section of the anchor character anchor; head and shoulders centered, upper chest framed cleanly above the lower desk line.\nACTION: presents directly to camera with a clear, authoritative expression.\nENV: newsroom studio backdrop glowing with soft ambient cyan studio lighting.\n\n[PANEL 3]\nSHOT: close-up eye-level\nPLACEMENT: use the FACE section of the anchor character anchor; head and upper torso centered in camera frame.\nACTION: gives a slight, polished nod toward camera while concluding the broadcast sentence.\nENV: stylized newsroom studio set illuminated by soft slate gray and cyan lighting.\n\n[PANEL 4]\nSHOT: wide eye-level\nPLACEMENT: use the FRONT section of the anchor character anchor; standing centered behind the curved news desk, waist-up visible above the desk edge.\nACTION: rests hands quietly on the desk in a professional sign-off pose.\nENV: wide virtual newsroom studio set as background LED illumination dims gently to a calm cyan holding pattern.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels."
+      }
+    },
+    "style_notes": [
+      "High-end stylized 3D digital animation aesthetic with soft studio key lighting",
+      "Clean metallic slate gray and cyan neon accents",
+      "Balanced camera framing maintaining clean spatial contrast near the lower margin for downstream captions",
+      "Sleek generic modern news studio setting, free of real-world logos and text"
+    ],
+    "must_avoid": [
+      "Real-world logos, text, brand markings, flags, or readable signage",
+      "Disembodied limbs or ownerless hands floating in frame",
+      "Dialogue subtitles, timestamps, or captions inside visual panels"
+    ]
+  }
+}

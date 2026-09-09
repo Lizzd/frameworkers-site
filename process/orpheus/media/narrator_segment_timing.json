@@ -1,0 +1,102 @@
+{
+  "content": {
+    "total_duration_sec": 257.64,
+    "segment_timings": [
+      {
+        "segment_id": "seg_001",
+        "start_sec": 0.0,
+        "end_sec": 37.92,
+        "duration_sec": 37.92,
+        "line_ids": [
+          "ln_001",
+          "ln_002",
+          "ln_003",
+          "ln_004"
+        ]
+      },
+      {
+        "segment_id": "seg_002",
+        "start_sec": 37.92,
+        "end_sec": 69.76,
+        "duration_sec": 31.84,
+        "line_ids": [
+          "ln_005",
+          "ln_006",
+          "ln_007",
+          "ln_008"
+        ]
+      },
+      {
+        "segment_id": "seg_003",
+        "start_sec": 69.76,
+        "end_sec": 97.46,
+        "duration_sec": 27.7,
+        "line_ids": [
+          "ln_009",
+          "ln_010",
+          "ln_011"
+        ]
+      },
+      {
+        "segment_id": "seg_004",
+        "start_sec": 97.46,
+        "end_sec": 127.12,
+        "duration_sec": 29.66,
+        "line_ids": [
+          "ln_012",
+          "ln_013",
+          "ln_014"
+        ]
+      },
+      {
+        "segment_id": "seg_005",
+        "start_sec": 127.12,
+        "end_sec": 160.36,
+        "duration_sec": 33.24,
+        "line_ids": [
+          "ln_015",
+          "ln_016",
+          "ln_017",
+          "ln_018"
+        ]
+      },
+      {
+        "segment_id": "seg_006",
+        "start_sec": 160.36,
+        "end_sec": 191.12,
+        "duration_sec": 30.76,
+        "line_ids": [
+          "ln_019",
+          "ln_020",
+          "ln_021",
+          "ln_022"
+        ]
+      },
+      {
+        "segment_id": "seg_007",
+        "start_sec": 191.12,
+        "end_sec": 225.56,
+        "duration_sec": 34.44,
+        "line_ids": [
+          "ln_023",
+          "ln_024",
+          "ln_025",
+          "ln_026",
+          "ln_027"
+        ]
+      },
+      {
+        "segment_id": "seg_008",
+        "start_sec": 225.56,
+        "end_sec": 257.64,
+        "duration_sec": 32.08,
+        "line_ids": [
+          "ln_028",
+          "ln_029",
+          "ln_030",
+          "ln_031"
+        ]
+      }
+    ]
+  }
+}

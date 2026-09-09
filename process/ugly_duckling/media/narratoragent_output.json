@@ -1,0 +1,271 @@
+{
+  "content": {
+    "language": "en-US",
+    "speaker": "",
+    "lines": [
+      {
+        "line_id": "ln_001",
+        "segment_id": "seg_001",
+        "text": "Deep in the green countryside, a giant egg finally cracked open.",
+        "pause_after_ms": 400
+      },
+      {
+        "line_id": "ln_002",
+        "segment_id": "seg_001",
+        "text": "Out tumbled a big, clumsy, grey duckling.",
+        "pause_after_ms": 800
+      },
+      {
+        "line_id": "ln_003",
+        "segment_id": "seg_002",
+        "text": "The other farm animals laughed at him.",
+        "pause_after_ms": 400
+      },
+      {
+        "line_id": "ln_004",
+        "segment_id": "seg_002",
+        "text": "They called him ugly and chased him away.",
+        "pause_after_ms": 800
+      },
+      {
+        "line_id": "ln_005",
+        "segment_id": "seg_003",
+        "text": "Feeling very lonely, the poor duckling ran away into the wild marsh.",
+        "pause_after_ms": 800
+      },
+      {
+        "line_id": "ln_006",
+        "segment_id": "seg_004",
+        "text": "Winter came with biting winds and deep, heavy snow.",
+        "pause_after_ms": 400
+      },
+      {
+        "line_id": "ln_007",
+        "segment_id": "seg_004",
+        "text": "The shivering duckling hid all alone under a frozen log.",
+        "pause_after_ms": 1000
+      },
+      {
+        "line_id": "ln_008",
+        "segment_id": "seg_005",
+        "text": "At last, the warm spring sun began to melt the ice.",
+        "pause_after_ms": 800
+      },
+      {
+        "line_id": "ln_009",
+        "segment_id": "seg_006",
+        "text": "He saw three beautiful, elegant white swans gliding gracefully across the pond.",
+        "pause_after_ms": 800
+      },
+      {
+        "line_id": "ln_010",
+        "segment_id": "seg_007",
+        "text": "The duckling swam toward them, bowing his head in sadness.",
+        "pause_after_ms": 800
+      },
+      {
+        "line_id": "ln_011",
+        "segment_id": "seg_008",
+        "text": "But in the clear water, he saw his own reflection.",
+        "pause_after_ms": 400
+      },
+      {
+        "line_id": "ln_012",
+        "segment_id": "seg_008",
+        "text": "He was no longer a clumsy, dark grey bird.",
+        "pause_after_ms": 800
+      },
+      {
+        "line_id": "ln_013",
+        "segment_id": "seg_009",
+        "text": "He had grown into a beautiful, magnificent white swan!",
+        "pause_after_ms": 400
+      },
+      {
+        "line_id": "ln_014",
+        "segment_id": "seg_009",
+        "text": "With a joyful heart, he flapped his strong wings and flew into the bright blue sky.",
+        "pause_after_ms": 0
+      }
+    ],
+    "total_duration_sec": 121.8,
+    "clips": [
+      {
+        "line_id": "ln_001",
+        "start_sec": 0.0,
+        "end_sec": 9.24,
+        "duration_sec": 9.24
+      },
+      {
+        "line_id": "ln_002",
+        "start_sec": 9.64,
+        "end_sec": 15.84,
+        "duration_sec": 6.2
+      },
+      {
+        "line_id": "ln_003",
+        "start_sec": 16.64,
+        "end_sec": 20.92,
+        "duration_sec": 4.28
+      },
+      {
+        "line_id": "ln_004",
+        "start_sec": 21.32,
+        "end_sec": 26.6,
+        "duration_sec": 5.28
+      },
+      {
+        "line_id": "ln_005",
+        "start_sec": 27.4,
+        "end_sec": 36.24,
+        "duration_sec": 8.84
+      },
+      {
+        "line_id": "ln_006",
+        "start_sec": 37.04,
+        "end_sec": 44.36,
+        "duration_sec": 7.32
+      },
+      {
+        "line_id": "ln_007",
+        "start_sec": 44.76,
+        "end_sec": 52.16,
+        "duration_sec": 7.4
+      },
+      {
+        "line_id": "ln_008",
+        "start_sec": 53.16,
+        "end_sec": 60.2,
+        "duration_sec": 7.04
+      },
+      {
+        "line_id": "ln_009",
+        "start_sec": 61.0,
+        "end_sec": 71.76,
+        "duration_sec": 10.76
+      },
+      {
+        "line_id": "ln_010",
+        "start_sec": 72.56,
+        "end_sec": 83.32,
+        "duration_sec": 10.76
+      },
+      {
+        "line_id": "ln_011",
+        "start_sec": 84.12,
+        "end_sec": 90.52,
+        "duration_sec": 6.4
+      },
+      {
+        "line_id": "ln_012",
+        "start_sec": 90.92,
+        "end_sec": 101.32,
+        "duration_sec": 10.4
+      },
+      {
+        "line_id": "ln_013",
+        "start_sec": 102.12,
+        "end_sec": 110.2,
+        "duration_sec": 8.08
+      },
+      {
+        "line_id": "ln_014",
+        "start_sec": 110.6,
+        "end_sec": 121.8,
+        "duration_sec": 11.2
+      }
+    ],
+    "segment_timings": [
+      {
+        "segment_id": "seg_001",
+        "start_sec": 0.0,
+        "end_sec": 16.64,
+        "duration_sec": 16.64,
+        "line_ids": [
+          "ln_001",
+          "ln_002"
+        ]
+      },
+      {
+        "segment_id": "seg_002",
+        "start_sec": 16.64,
+        "end_sec": 27.4,
+        "duration_sec": 10.76,
+        "line_ids": [
+          "ln_003",
+          "ln_004"
+        ]
+      },
+      {
+        "segment_id": "seg_003",
+        "start_sec": 27.4,
+        "end_sec": 37.04,
+        "duration_sec": 9.64,
+        "line_ids": [
+          "ln_005"
+        ]
+      },
+      {
+        "segment_id": "seg_004",
+        "start_sec": 37.04,
+        "end_sec": 53.16,
+        "duration_sec": 16.12,
+        "line_ids": [
+          "ln_006",
+          "ln_007"
+        ]
+      },
+      {
+        "segment_id": "seg_005",
+        "start_sec": 53.16,
+        "end_sec": 61.0,
+        "duration_sec": 7.84,
+        "line_ids": [
+          "ln_008"
+        ]
+      },
+      {
+        "segment_id": "seg_006",
+        "start_sec": 61.0,
+        "end_sec": 72.56,
+        "duration_sec": 11.56,
+        "line_ids": [
+          "ln_009"
+        ]
+      },
+      {
+        "segment_id": "seg_007",
+        "start_sec": 72.56,
+        "end_sec": 84.12,
+        "duration_sec": 11.56,
+        "line_ids": [
+          "ln_010"
+        ]
+      },
+      {
+        "segment_id": "seg_008",
+        "start_sec": 84.12,
+        "end_sec": 102.12,
+        "duration_sec": 18.0,
+        "line_ids": [
+          "ln_011",
+          "ln_012"
+        ]
+      },
+      {
+        "segment_id": "seg_009",
+        "start_sec": 102.12,
+        "end_sec": 121.8,
+        "duration_sec": 19.68,
+        "line_ids": [
+          "ln_013",
+          "ln_014"
+        ]
+      }
+    ],
+    "srt_text": "1\n00:00:00,000 --> 00:00:09,240\nDeep in the green countryside, a giant egg finally cracked open.\n\n2\n00:00:09,640 --> 00:00:15,840\nOut tumbled a big, clumsy, grey duckling.\n\n3\n00:00:16,640 --> 00:00:20,920\nThe other farm animals laughed at him.\n\n4\n00:00:21,320 --> 00:00:26,600\nThey called him ugly and chased him away.\n\n5\n00:00:27,400 --> 00:00:36,240\nFeeling very lonely, the poor duckling ran away into the wild marsh.\n\n6\n00:00:37,040 --> 00:00:44,360\nWinter came with biting winds and deep, heavy snow.\n\n7\n00:00:44,760 --> 00:00:52,160\nThe shivering duckling hid all alone under a frozen log.\n\n8\n00:00:53,160 --> 00:01:00,200\nAt last, the warm spring sun began to melt the ice.\n\n9\n00:01:01,000 --> 00:01:11,760\nHe saw three beautiful, elegant white swans gliding gracefully across the pond.\n\n10\n00:01:12,560 --> 00:01:23,320\nThe duckling swam toward them, bowing his head in sadness.\n\n11\n00:01:24,120 --> 00:01:30,520\nBut in the clear water, he saw his own reflection.\n\n12\n00:01:30,920 --> 00:01:41,320\nHe was no longer a clumsy, dark grey bird.\n\n13\n00:01:42,120 --> 00:01:50,200\nHe had grown into a beautiful, magnificent white swan!\n\n14\n00:01:50,600 --> 00:02:01,800\nWith a joyful heart, he flapped his strong wings and flew into the bright blue sky.\n"
+  },
+  "metrics": {
+    "total_duration_sec": 121.8
+  }
+}

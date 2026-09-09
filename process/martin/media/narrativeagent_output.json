@@ -1,0 +1,402 @@
+{
+  "content": {
+    "title": "13楼的烧饼与 GPU",
+    "logline": "INSAIT 科学总监 Martin 准备用全新的 B200 GPU 宣布开启高效周一，但在发现同事缺席后，他顺手“拿走”了桌上的家利烧饼，开启了他普通而美妙的一天。",
+    "setting": "保加利亚索非亚 Synergy Tower，顶尖人工智能研究所 INSAIT；现代高科技学术机构氛围，日光充足，跨文化科研团队。",
+    "style_anchor": "彩铅插画艺术风格（柔和彩铅手绘笔触、清新淡彩配色、柔和自然光影与细致纸张纹理，人物采用写实比例与精致手绘线稿，质感温暖亲和）。",
+    "dialogue_language": "English",
+    "subtitle_language": "en",
+    "characters": [
+      {
+        "id": "martin",
+        "role": "protagonist",
+        "look_description": "30多岁白人男性，短黑发，戴细框圆眼镜，留有干净的微茬胡须，身穿洁净白衬衫，体型精干，眼神敏锐且带着随和的笑意。",
+        "voice_description": "30代男性，清晰标准英音，音色清亮温和且带有一丝诙谐幽默感，语速中等偏快，语气自信随和。",
+        "on_screen": true,
+        "reference_image_index": 2
+      },
+      {
+        "id": "jina",
+        "role": "ally",
+        "look_description": "20岁出头东亚女性，留着带齐刘海的长黑直发，身穿灰色针织衫，五官秀气，眼神灵动带有一丝诧异与幽默感。",
+        "voice_description": "20代女性，轻柔清晰的英语口音，音色甜美自然，语速适中。",
+        "on_screen": true,
+        "reference_image_index": 1
+      }
+    ],
+    "props": [
+      {
+        "id": "insait_logo",
+        "look_description": "白墙上红黑两色立体方块字母组成的 3D INSAIT 墙面 Logo，下方附带黑色英文全称描述。",
+        "reference_image_index": 0
+      },
+      {
+        "id": "shaobing_package",
+        "look_description": "红白相间的纸质“家利烧饼”食品包装袋，顶部折叠捏拢，装有金黄酥脆的烧饼。",
+        "reference_image_index": 5
+      }
+    ],
+    "locations": [
+      {
+        "id": "synergy_tower",
+        "look_description": "高耸的现代玻璃幕墙摩天大楼，带有独特的倾斜屋顶造型，周边环绕着绿意盎然的公园、阔道与城市建筑群。",
+        "reference_image_index": 7
+      },
+      {
+        "id": "synergy_lobby",
+        "look_description": "宽敞明亮的大堂，配有几何切面水磨石前台、slatted 木格栅天花板与柔和垂直照明，墙上嵌有 SYNERGY TOWER 标识。",
+        "reference_image_index": 8
+      },
+      {
+        "id": "meeting_room_13f",
+        "look_description": "13楼采光充沛的现代演示厅，大落地窗俯瞰城市全景，整齐排列的蓝色座椅面向标有 3D INSAIT Logo 的白色主墙。",
+        "reference_image_index": 3
+      },
+      {
+        "id": "office_room",
+        "look_description": "通透舒适的现代开放式办公室，日光透过落地窗洒入，配备工位电脑显示器、人体工学椅与清爽的大理石/木质办公桌。",
+        "reference_image_index": 4
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "sh_001",
+        "duration_s": 15.0,
+        "narrative_purpose": "展现 Martin 清晨步入 Synergy Tower 并打卡上班的过程，立起明快充实的职场节奏",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              2.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "清晨阳光洒在 Synergy Tower 高耸的玻璃幕墙上，折射出耀眼蓝光",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              2.0,
+              5.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "Martin 身穿白衬衫与细框眼镜，步履轻松地穿过大楼前的绿色广场",
+            "dialogue": null,
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "time_range": [
+              5.0,
+              8.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "Martin 走进挑高大堂，向水磨石前台后的工作人员微微点头示意，背景墙显示 SYNERGY TOWER 标识",
+            "dialogue": null,
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "time_range": [
+              8.0,
+              11.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "电梯内，Martin 按下 13 楼按键，数字屏亮起升至 13 楼",
+            "dialogue": null,
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "time_range": [
+              11.0,
+              15.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "13 楼电梯门开启，Martin 带着期待的微笑迈出电梯，步向会议室",
+            "dialogue": null,
+            "characters_present": [
+              "martin"
+            ]
+          }
+        ],
+        "primary_location": "synergy_lobby",
+        "notes": null,
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_002",
+        "duration_s": 15.0,
+        "narrative_purpose": "Martin 在周一晨会上从容宣布 B200 到货的好消息，获得团队真诚响应",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.0
+            ],
+            "categories": [
+              "establishing_wide",
+              "dialogue_two_shot"
+            ],
+            "moment_description": "采光极佳的会议室里，蓝椅上坐满同事，Martin 站在红黑 3D INSAIT Logo 墙前面向大家",
+            "dialogue": null,
+            "characters_present": [
+              "martin",
+              "insait_logo"
+            ]
+          },
+          {
+            "time_range": [
+              3.0,
+              6.5
+            ],
+            "categories": [
+              "emotional_close_up",
+              "dialogue_two_shot"
+            ],
+            "moment_description": "Martin 姿态从容，面带微笑地向大家作周一更新",
+            "dialogue": "martin: Good morning, everyone. Quick Monday update — our B200 GPUs have arrived.",
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "time_range": [
+              6.5,
+              9.5
+            ],
+            "categories": [
+              "emotional_close_up"
+            ],
+            "moment_description": "Martin 眼睛一亮，语气更添兴奋",
+            "dialogue": "martin: We now have B200s!",
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "time_range": [
+              9.5,
+              12.5
+            ],
+            "categories": [
+              "dialogue_two_shot"
+            ],
+            "moment_description": "座席上的同事们表情由专注转为惊喜，开始真诚而安静地鼓掌",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              12.5,
+              15.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "会议室气氛温馨融洽，同事们微笑掌声不断",
+            "dialogue": null,
+            "characters_present": [
+              "martin"
+            ]
+          }
+        ],
+        "primary_location": "meeting_room_13f",
+        "notes": null,
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_003",
+        "duration_s": 15.0,
+        "narrative_purpose": "Martin 找人未果却意外顺走 Jina 桌上的家利烧饼，展现轻松幽默的办公室日常",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.0
+            ],
+            "categories": [
+              "lifestyle_use",
+              "dialogue_two_shot"
+            ],
+            "moment_description": "Martin 推开日光充沛的办公室门，冲着前方工位热情打招呼",
+            "dialogue": "martin: Hi, Zhendong Li!",
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "time_range": [
+              3.0,
+              5.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "工位上只有一张空人体工学椅和黑屏的显示器，安静无声",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              5.0,
+              7.0
+            ],
+            "categories": [
+              "emotional_close_up"
+            ],
+            "moment_description": "Martin 转过头环顾办公室，带着好奇与疑惑",
+            "dialogue": "martin: Where is Zhendong Li?",
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "time_range": [
+              7.0,
+              10.0
+            ],
+            "categories": [
+              "dialogue_two_shot"
+            ],
+            "moment_description": "Martin 的目光停在旁边 Jina 的桌上，伸手指向那包红白相间的家利烧饼",
+            "dialogue": "martin: What's this?",
+            "characters_present": [
+              "martin",
+              "jina",
+              "shaobing_package"
+            ]
+          },
+          {
+            "time_range": [
+              10.0,
+              13.0
+            ],
+            "categories": [
+              "action_fight",
+              "lifestyle_use"
+            ],
+            "moment_description": "在 Jina 刚准备开口的瞬间，Martin 迅速拆开包装拿出一个烧饼转身离开",
+            "dialogue": null,
+            "characters_present": [
+              "martin",
+              "jina",
+              "shaobing_package"
+            ]
+          },
+          {
+            "time_range": [
+              13.0,
+              15.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "Martin 拿着烧饼走出门口并丢下一句问候，留下一脸欲言又止的 Jina",
+            "dialogue": "martin: Great.",
+            "characters_present": [
+              "martin",
+              "jina"
+            ]
+          }
+        ],
+        "primary_location": "office_room",
+        "notes": null,
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_004",
+        "duration_s": 15.0,
+        "narrative_purpose": "Martin 满足地享受烧饼与舒畅的周一，以广阔的摩天楼航拍与 INSAIT 品牌收尾",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "Martin 拿着烧饼回到自己办公室，把烧饼放在桌上并坐进椅子里",
+            "dialogue": null,
+            "characters_present": [
+              "martin",
+              "shaobing_package"
+            ]
+          },
+          {
+            "time_range": [
+              3.0,
+              6.0
+            ],
+            "categories": [
+              "emotional_close_up",
+              "lifestyle_use"
+            ],
+            "moment_description": "Martin 向后靠在椅背上，双手枕在头后，心满意足地长舒一口气",
+            "dialogue": null,
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "time_range": [
+              6.0,
+              9.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "日光穿透落地窗，Martin 悠闲的身影与窗外晴朗的城市全景融为一体",
+            "dialogue": null,
+            "characters_present": [
+              "martin"
+            ]
+          },
+          {
+            "time_range": [
+              9.0,
+              12.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "Synergy Tower 大楼独特的倾斜屋顶与周围绿意盎然的公园在晨光中呈现出明快的航拍全景",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "红黑两色立体 3D INSAIT Logo 及其机构全名在干净背景中醒目呈献，完美落幅",
+            "dialogue": null,
+            "characters_present": [
+              "insait_logo"
+            ]
+          }
+        ],
+        "primary_location": "office_room",
+        "notes": null,
+        "audit_notes": ""
+      }
+    ]
+  }
+}

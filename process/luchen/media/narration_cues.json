@@ -1,0 +1,57 @@
+{
+  "voice": "",
+  "voice_instructions": "A weathered middle-aged male voice, deeply emotional and restrained, carrying grief, dread, and a buried ember of defiance. Speak in Mandarin with a solemn, literary wuxia-xianxia register, low timbre, slow pacing, and clear diction. Let the voice tighten as the old path collapses, swell faintly when fate twists, then fall near a whisper on the blood-red awakening. Use weighted pauses before words of ruin, blood, and destiny; every line should sound dignified, intimate, and painfully earned.",
+  "subtitle_lang": "zh",
+  "cues": [
+    {
+      "stretch_id": "gap_00",
+      "shot_id": "sh_001",
+      "window_start_s": 7.7,
+      "window_end_s": 9.62,
+      "text": "旧名悬一线。",
+      "subtitle_text": "旧名悬一线。",
+      "global_start_s": 7.7,
+      "audio_path": "sub_agents/runs/luchen_shatter_01_v5/narration/lines/gap_00_fit.wav",
+      "audio_duration_sec": 2.610333,
+      "atempo": 1.6
+    },
+    {
+      "stretch_id": "gap_01",
+      "shot_id": "sh_002",
+      "window_start_s": 22.12,
+      "window_end_s": 29.76,
+      "text": "他还想为陆家，再借这灰烬一息。",
+      "subtitle_text": "他还想为陆家，再借这灰烬一息。",
+      "global_start_s": 22.12,
+      "audio_path": "sub_agents/runs/luchen_shatter_01_v5/narration/lines/gap_01.wav",
+      "audio_duration_sec": 5.92,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "gap_02",
+      "shot_id": "sh_003",
+      "window_start_s": 45.24,
+      "window_end_s": 60.28,
+      "text": "那一掌把多年苦修碾成灰，却也掠过荒院，替黑暗里另一颗心开了裂。",
+      "subtitle_text": "那一掌把多年苦修碾成灰，却也掠过荒院，替黑暗里另一颗心开了裂。",
+      "global_start_s": 45.24,
+      "audio_path": "sub_agents/runs/luchen_shatter_01_v5/narration/lines/gap_02.wav",
+      "audio_duration_sec": 14.0,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "gap_03",
+      "shot_id": "sh_005",
+      "window_start_s": 66.98,
+      "window_end_s": 68.84,
+      "text": "血认了他。",
+      "subtitle_text": "血认了他。",
+      "global_start_s": 66.98,
+      "audio_path": "sub_agents/runs/luchen_shatter_01_v5/narration/lines/gap_03_fit.wav",
+      "audio_duration_sec": 2.133542,
+      "atempo": 1.6
+    }
+  ],
+  "srt_path": "sub_agents/runs/luchen_shatter_01_v5/narration/narration.srt",
+  "narrated_video_path": "sub_agents/runs/luchen_shatter_01_v5/subtitle/main_narrated_subbed.mp4"
+}

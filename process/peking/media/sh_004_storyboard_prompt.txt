@@ -1,0 +1,29 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-middle; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=5 → 3×2 with the sixth cell as solid neutral gray.
+
+[STYLE FOUNDATION]
+风格化 3D 卡通动画电影（皮克斯 / 梦工厂式渲染：明显卡通化的造型与比例、干净的卡通材质与大色块、柔和卡通布光；明确是动画角色，非写实、非真人、非照片、非 CG 写实），浓烈红黑对比，沉重悲怆的史诗基调。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Over-the-shoulder view of master_qiu (extrapolated from the FRONT section of the master_qiu character anchor, seen from behind) standing on the theatre_stage (use the FRONT section of the theatre_stage location anchor). Symmetrical framing directly facing the closed heavy wooden double doors of the theatre. His broad back with the four opera flags hangs absolutely motionless in the dusty air. A single stark spotlight hits him from above. The atmosphere is dead silent and tense.
+
+[PANEL 2]
+The heavy wooden doors of the theatre_stage burst inwards violently. A massive explosion outside blasts through, sending a dramatic storm of jagged wood splinters, debris, and dust flying towards the stage. A bright, blinding orange flash of fire illuminates the doorway from the outside. Note: No characters visible in this panel; strictly focus on the explosive architectural destruction and the intense radial burst of the shockwave.
+
+[PANEL 3]
+Wide, low-angle view. master_qiu (use the FRONT section of the master_qiu character anchor) takes the fierce hit of the wind and flying debris. His four back flags bend violently backward under the extreme wind pressure. He sinks into a deep, solid martial-arts horse stance, planting his heavy broadsword down and dragging it into the wooden stage floor. He stands immovable against the fiery wind pushing into the room.
+
+[PANEL 4]
+Extreme close-up on master_qiu's hands and face (use the FACE section of the master_qiu character anchor). He grips the heavy blade tightly with callused hands. The polished steel of the blade reflects the fiery orange light from outside and the stark, cracked black-and-white paint on his stoic face. Long, ominous shadows of rifles with bayonets stretch across the ruined floor behind him.
+
+[PANEL 5]
+Epic compressed wide shot. master_qiu's heavy, dark silhouette steps forward into the swirling thick smoke and raging orange firelight of the ruined doorway. He holds the massive broadsword diagonally across his chest in a classic opera defensive pose. His towering figure begins to dissolve into the dense, turbulent fog of war and smoke as he marches into the flames.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", "4", "5" matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 3 reference image(s) in this i2i call are PREVIOUS-SHOT storyboards (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to maintain CROSS-SHOT continuity in: color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality — so the final cut sequence flows smoothly. Identity (character / location / ship details) is still locked exclusively by the FIRST 2 refs (character anchors / location anchor / style anchor).

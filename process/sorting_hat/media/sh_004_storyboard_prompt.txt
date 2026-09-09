@@ -1,0 +1,26 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 4 panels arranged in a 2x2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=4 -> 2x2.
+
+[STYLE FOUNDATION]
+Stylized 3D cartoon animation (Pixar/Arcane aesthetic blend). High-contrast cinematic lighting: deep obsidian shadows pierced by aggressive, strobing siege-fire orange and sickly magical cyan. Textures are stylized but tactile—rough spun wool, cracked glowing marble, and soft expressive facial rigs with dramatic rim lighting.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the elara character anchor (extrapolating the back view) and the FRONT section of the great_hall_ruins location anchor. Elara stands perfectly still, seen from behind, isolated in the colossal gothic hall. She wears her heavily oversized, frayed grey initiate's robe. Shattered, glowing marble surrounds her feet. Thick ash motes drift through the air in the soft cyan light, creating layers of atmospheric depth. The composition emphasizes her small scale against the massive, ruined architecture.
+
+[PANEL 2]
+Use the FRONT section of the elara character anchor and the FRONT section of the great_hall_ruins location anchor. A blinding white-orange artillery blast erupts from outside the right frame. The dramatic side-lighting casts Elara's shadow violently across the entire left wall. While Elara stands as a physical silhouette in the foreground, the focus is entirely on her projected shadow on the wall: the shadow is visibly warping, its head stretching upward into jagged, crown-like horns.
+
+[PANEL 3]
+Use the FACE section of the elara character anchor and the BACK section of the great_hall_ruins location anchor. Medium close-up on Elara. Her posture is locked rigid. She lifts her chin, her desperate green eyes shedding their fear as her expression melts into a dead, terrifying calmness. The lighting is a stark contrast between a flickering, aggressive orange rim-light from the siege fires and deep obsidian shadows. Her oversized collar is clutched slightly lower now.
+
+[PANEL 4]
+Use the FACE section of the elara character anchor. Extreme close-up cropping tightly on Elara's huge green eyes and the bridge of her freckled nose. The fresh, distinct streak of black soot across her left cheek looks like war paint. The burning fires of the siege reflect intensely inside her irises. Her lips are barely parted in a quiet, inner monologue. The depth of field is incredibly shallow, focusing entirely on her unblinking, chilling gaze.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", "4" matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 3 reference image(s) in this i2i call are PREVIOUS-SHOT storyboards (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to maintain CROSS-SHOT continuity in: color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality — so the final cut sequence flows smoothly. Identity (character / location / ship details) is still locked exclusively by the FIRST 2 refs (character anchors / location anchor / style anchor).

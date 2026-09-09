@@ -1,0 +1,73 @@
+{
+  "content": {
+    "language": "en",
+    "videos": [
+      {
+        "visual_summary": "A speaker illuminated by a spotlight gestures while giving a presentation to a seated audience inside a large industrial venue.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_424430_event_01_stage.mp4"
+        }
+      },
+      {
+        "visual_summary": "Audience members sit attentively in a dimly lit auditorium, while a young woman uses her illuminated smartphone to record the ongoing event.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_447151_event_02_crowd.mp4"
+        }
+      },
+      {
+        "visual_summary": "In a crowded exhibition hall, a presenter demonstrates trail running shoes to a group of attendees at a trade show booth as one customer picks up a shoe to examine it.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_484086_event_03_booth.mp4"
+        }
+      },
+      {
+        "visual_summary": "Under a bright desk lamp, a person's hands hold and rotate a dark trail running shoe to display its upper design and treaded rubber sole.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_503852_event_04_detail.mp4"
+        }
+      },
+      {
+        "visual_summary": "A smiling man in a suit stands at a podium inside a crowded auditorium while a large seated audience applauds him in a triumphant atmosphere.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_542105_event_05_applause.mp4"
+        }
+      },
+      {
+        "visual_summary": "In a modern high-rise room with large floor-to-ceiling windows, a group of professionals in business attire socialize, chat, and drink coffee together during a daytime gathering.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_561127_event_06_foyer.mp4"
+        }
+      },
+      {
+        "visual_summary": "In a spacious event hall, staff members neatly arrange trail running shoes, apparel, and athletic gear along long white display tables.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_614809_event_07_setup.mp4"
+        }
+      },
+      {
+        "visual_summary": "A man presents a blue and grey running sneaker to an audience in a professional indoor setting, speaking enthusiastically.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_646444_event_08_speaker.mp4"
+        }
+      },
+      {
+        "visual_summary": "At a trade show display, a person inspects a black running hydration vest with a built-in light mounted on a pegboard wall and takes it off its hook.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_690799_event_09_wall.mp4"
+        }
+      },
+      {
+        "visual_summary": "Professionals wearing lanyards talk, check their phones, and stand in a long line inside a brightly lit conference hallway with large glass windows.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_726951_event_10_queue.mp4"
+        }
+      },
+      {
+        "visual_summary": "At a busy trade show, a representative helps a smiling woman adjust and turn on a headlamp while her companion laughs and gives a thumbs-up.",
+        "video_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_765837_event_11_talk.mp4"
+        }
+      }
+    ]
+  }
+}

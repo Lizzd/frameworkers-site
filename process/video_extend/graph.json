@@ -1,0 +1,131 @@
+{
+ "key": "video_extend",
+ "title": "Extended Ending",
+ "genre": "Refine existing footage · Video extension",
+ "cat": "Refine",
+ "prompt": "Take an existing short clip whose ending stops too abruptly and extend it — continuing naturally from its final frame in the same style and scene for a few more seconds of atmospheric outro (slow push-in, gentle fade), without touching or re-cutting the original footage. Here: the closing shot of a 2D-anime late-night subway scene, extended into the now-empty carriage.",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/video_extend_lasttrain2_outputs/workspace_global_20260713_114256"
+ },
+ "generated_at": "2026-09-09T15:56:47+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 2
+  },
+  {
+   "id": "IntakeVideoAgent__step_1_934e288f",
+   "agent": "IntakeVideoAgent",
+   "label": "IntakeVideo",
+   "step": "step_1_934e288f",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "VideoExtendAgent__step_1_934e288f",
+   "agent": "VideoExtendAgent",
+   "label": "VideoExtend",
+   "step": "step_1_934e288f",
+   "order": 2,
+   "n": 2
+  }
+ ],
+ "nodes": [
+  {
+   "id": "footage",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "footage",
+   "src_name": "20260713_114256_160917_footage.mp4",
+   "bytes": 2962066,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.02,
+   "poster": "process/video_extend/media/footage_poster.jpg",
+   "file": "process/video_extend/media/footage.mp4"
+  },
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260713_114256_167145.json",
+   "bytes": 625,
+   "caption": "Structured metadata document (JSON) for a user-submitted text brief. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/video_extend/media/creative_brief.json",
+   "excerpt": "{\"text\": \"我有一段 2D 动画短片的结尾(雨夜地铁车厢内的画面),结尾断得有点突然。帮我顺着它的最后一帧、在完全一致的动画画风和这节地铁车厢场景里自然续接大约 5 秒的氛围收尾——镜头极缓慢推进、车窗上的雨痕和车厢灯光轻轻晃动、光线渐暗并轻微渐隐,保持和前面一模一样的画风与这处车厢场景,不要出现任何新的地点、人物或题材。\"}"
+  },
+  {
+   "id": "intakevideoagent_output",
+   "stage": "IntakeVideoAgent__step_1_934e288f",
+   "kind": "json",
+   "label": "IntakeVideoAgent output",
+   "src_name": "step_1_934e288f_intakevideoagent_exec_1.json",
+   "bytes": 433,
+   "caption": "Structured metadata document (JSON) for a user-uploaded video. Payload carries the visual summary and video-asset metadata.",
+   "scope": "global",
+   "file": "process/video_extend/media/intakevideoagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"visual_summary\": \"In a melancholic anime scene inside a train, a girl in a dark cloak folds a paper boat and hands it to a translucent young girl in a yellow raincoat as an older woman watches.\", \"video_asset\": {\"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/video_extend_lasttrain2_outputs/workspace…"
+  },
+  {
+   "id": "video_extend_output",
+   "stage": "VideoExtendAgent__step_1_934e288f",
+   "kind": "video",
+   "label": "video extend output",
+   "src_name": "step_1_934e288f_video_extend_output.mp4",
+   "bytes": 5786314,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id video_extend_output] Extended-video bytes (+5.0s) — continuation clip generated from the source video, ready for re-ingestion by downstream video agents (analysis / style transfer / compositing).",
+   "scope": "global",
+   "file": "videos/video_extend.mp4",
+   "poster": "posters/video_extend.jpg",
+   "final": true,
+   "w": 1280,
+   "h": 720,
+   "dur": 20.12
+  },
+  {
+   "id": "videoextendagent_output",
+   "stage": "VideoExtendAgent__step_1_934e288f",
+   "kind": "json",
+   "label": "VideoExtendAgent output",
+   "src_name": "step_1_934e288f_videoextendagent_exec_2.json",
+   "bytes": 874,
+   "caption": "[JSON MANIFEST] Extended-video planning metadata (+5.0s extension specification). Continuation clip planning context for downstream consumers.",
+   "scope": "global",
+   "file": "process/video_extend/media/videoextendagent_output.json",
+   "excerpt": "{\"language\": \"zh\", \"extension_spec\": {\"continuation_prompt\": \"An empty subway carriage in a rainy night, maintaining the exact same 2D hand-drawn anime art style. The camera extremely slowly dollys forward into the aisle. On the dark window, rain streaks slide down dynamically. The overhead warm lights of the train car…"
+  }
+ ],
+ "edges": [
+  {
+   "from": "footage",
+   "to": "IntakeVideoAgent__step_1_934e288f",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "footage",
+   "to": "VideoExtendAgent__step_1_934e288f",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakevideoagent_output",
+   "to": "VideoExtendAgent__step_1_934e288f",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "video_extend_output",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

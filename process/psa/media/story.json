@@ -1,0 +1,464 @@
+{
+  "title": "被猫狗咬伤后，别赌运气",
+  "logline": "被猫狗咬伤或抓伤后，立即充分冲洗、尽快就医，让医生评估并按医嘱完成狂犬病暴露后预防。",
+  "setting": "中国大陆普通社区，当代；面向普通家庭、儿童家长、宠物接触人群和社区居民，东亚面孔。全片是干净的 2D 公益医疗科普动画，不是 live-action film。",
+  "style_anchor": "干净、温和、专业的 2D 医疗科普动画。柔和蓝绿为主，少量暖黄色点亮安心感；扁平清晰造型、平静光线、留足画面下方中文字幕空间，全片可信、克制、不惊悚。",
+  "dialogue_language": "Mandarin Chinese",
+  "characters": [
+    {
+      "id": "parent_mother",
+      "role": "parent",
+      "look_description": "普通中国社区年轻母亲，黑色齐肩发，浅绿色外套，米色长裤，神情沉稳关切",
+      "voice_description": ""
+    },
+    {
+      "id": "child_patient",
+      "role": "child patient",
+      "look_description": "普通中国小学生，圆脸短黑发，黄色连帽衫，深蓝短裤；右前臂靠近手腕处有一道很小的浅红色抓痕——全片伤口固定在右前臂这一个位置，不要变动、不要换到手掌/手背/其他部位",
+      "voice_description": ""
+    },
+    {
+      "id": "clinic_doctor",
+      "role": "doctor",
+      "look_description": "普通中国医生，中年，短黑发，白色无标识工作服，浅蓝口罩挂在颈侧，姿态专业温和",
+      "voice_description": ""
+    },
+    {
+      "id": "community_pet_dog",
+      "role": "pet dog",
+      "look_description": "家养中型黄白色狗，圆眼睛，软耳朵，普通项圈无标识，外观温顺干净",
+      "voice_description": ""
+    }
+  ],
+  "locations": [
+    {
+      "id": "community_park",
+      "look_description": "中国大陆普通社区公园，绿树、步道、长椅、低矮灌木，环境整洁，无 signage、无 logos、无文字"
+    },
+    {
+      "id": "public_sink_area",
+      "look_description": "社区公共洗手池或家中洗手台风格的干净水池，银色水龙头、白色台面、普通肥皂，无品牌、无文字"
+    },
+    {
+      "id": "generic_clinic",
+      "look_description": "干净通用门诊诊室，浅蓝绿色墙面、检查床、洗手池、医疗托盘，所有瓶罐和设备无标识、无文字"
+    },
+    {
+      "id": "abstract_infographic_space",
+      "look_description": "柔和蓝绿色抽象背景，圆形和线条图形缓慢运动，留足底部字幕空间，无任何文字、字母、数字、logo"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "sh_001",
+      "duration_s": 15.0,
+      "narrative_purpose": "开场事件，提示风险，并抛出关键：第一时间有没有做对。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.5
+          ],
+          "categories": [
+            "explainer_demo",
+            "establishing_wide"
+          ],
+          "moment_description": "社区公园宽景，孩子在家长旁边慢慢伸出右手想摸一只家养狗；狗轻微后退、前爪划过孩子的右前臂（靠近手腕处），明确就在这个位置发生抓碰，气氛短暂紧张但不惊吓、不血腥。",
+          "dialogue": null,
+          "characters_present": [
+            "parent_mother",
+            "child_patient",
+            "community_pet_dog"
+          ]
+        },
+        {
+          "time_range": [
+            3.5,
+            7.0
+          ],
+          "categories": [
+            "explainer_demo"
+          ],
+          "moment_description": "近景明确表现孩子的右前臂靠近手腕处出现一道很小的浅红色抓痕（伤口就固定在右前臂这个位置）；家长立刻蹲下查看那道抓痕，神情关切，没有血腥画面。",
+          "dialogue": null,
+          "characters_present": [
+            "parent_mother",
+            "child_patient",
+            "community_pet_dog"
+          ]
+        },
+        {
+          "time_range": [
+            7.0,
+            11.0
+          ],
+          "categories": [
+            "infographic_motion"
+          ],
+          "moment_description": "画面切到柔和抽象图形：一个小伤口符号旁有几粒半透明风险粒子浮现，画面保持干净克制，没有真实伤口特写。",
+          "dialogue": null,
+          "characters_present": []
+        },
+        {
+          "time_range": [
+            11.0,
+            15.0
+          ],
+          "categories": [
+            "explainer_demo"
+          ],
+          "moment_description": "家长牵着孩子迅速但平稳地离开公园，朝附近水池方向走去，表情从紧张转为专注处理。",
+          "dialogue": null,
+          "characters_present": [
+            "parent_mother",
+            "child_patient"
+          ]
+        }
+      ],
+      "primary_location": "community_park",
+      "notes": "VO: 社区里，孩子接触猫狗时，咬伤或抓伤可能突然发生。\nVO: 伤口可以很小，但被猫狗咬伤或抓伤后，不能侥幸。\nVO: 真正危险的不一定只是伤口本身，关键是第一时间有没有做对。\nVO: 被咬伤或抓伤后，先立刻开始正确处理，不要拖延。",
+      "audit_notes": "覆盖开场事件、轻微不血腥、不要侥幸不要拖延、关键在第一时间做对。"
+    },
+    {
+      "shot_id": "sh_002",
+      "duration_s": 15.0,
+      "narrative_purpose": "讲清第一步：流动清水加肥皂水充分冲洗，并解释为什么要充分冲洗。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.5
+          ],
+          "categories": [
+            "explainer_demo"
+          ],
+          "moment_description": "家长打开水龙头，让清水持续流过孩子手臂上很小的浅色伤痕位置，孩子站稳配合。",
+          "dialogue": null,
+          "characters_present": [
+            "parent_mother",
+            "child_patient"
+          ]
+        },
+        {
+          "time_range": [
+            3.5,
+            7.0
+          ],
+          "categories": [
+            "explainer_demo"
+          ],
+          "moment_description": "近景：孩子的右前臂（伤口在右前臂靠近手腕处）从画面右侧伸入；孩子在画面右侧、家长在画面左侧——与本镜其它帧保持同样的左右布局，绝不做左右镜像翻转；家长的手从左侧拿起无标识肥皂、揉出泡沫，轻柔覆盖右前臂伤痕周围，动作清楚、缓慢、教学感强。",
+          "dialogue": null,
+          "characters_present": [
+            "parent_mother",
+            "child_patient"
+          ]
+        },
+        {
+          "time_range": [
+            7.0,
+            10.8
+          ],
+          "categories": [
+            "explainer_demo"
+          ],
+          "moment_description": "水流和泡沫持续清洗，镜头用平稳近景表现“充分清洗”的时间感，没有夸张疼痛反应。",
+          "dialogue": null,
+          "characters_present": [
+            "parent_mother",
+            "child_patient"
+          ]
+        },
+        {
+          "time_range": [
+            10.8,
+            15.0
+          ],
+          "categories": [
+            "infographic_motion"
+          ],
+          "moment_description": "抽象小伤口图标上，清水和泡沫图形流过，半透明风险粒子被带走、逐渐变少，整体柔和无血腥。",
+          "dialogue": null,
+          "characters_present": []
+        }
+      ],
+      "primary_location": "public_sink_area",
+      "notes": "VO: 第一步，立刻用流动清水冲洗伤口。\nVO: 再配合肥皂水，持续、充分地清洗，不是简单冲一下。\nVO: 清洗时动作要稳，尽量让水流和泡沫充分接触伤口周围。\nVO: 这样做，是为了尽快减少伤口中的病毒风险。",
+      "audit_notes": "覆盖流动清水、肥皂水、充分清洗、不是冲一下，以及冲洗减少病毒风险。"
+    },
+    {
+      "shot_id": "sh_003",
+      "duration_s": 15.0,
+      "narrative_purpose": "讲清第二步就医，以及医生评估暴露风险，强调不要自行判断。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.5
+          ],
+          "categories": [
+            "explainer_demo"
+          ],
+          "moment_description": "家长带孩子走进干净通用门诊走廊，空间明亮整洁，没有任何医院名、标牌或文字。",
+          "dialogue": null,
+          "characters_present": [
+            "parent_mother",
+            "child_patient"
+          ]
+        },
+        {
+          "time_range": [
+            3.5,
+            7.0
+          ],
+          "categories": [
+            "explainer_demo"
+          ],
+          "moment_description": "诊室内，孩子坐在检查椅上，家长在旁，医生戴手套轻柔查看小伤痕，画面不血腥。",
+          "dialogue": null,
+          "characters_present": [
+            "parent_mother",
+            "child_patient",
+            "clinic_doctor"
+          ]
+        },
+        {
+          "time_range": [
+            7.0,
+            11.2
+          ],
+          "categories": [
+            "infographic_motion"
+          ],
+          "moment_description": "三个无字图标依次浮现：牙齿轻碰皮肤、爪印轻划皮肤、唾液水滴接触小伤口和口鼻黏膜轮廓；图标汇向医生听诊器形象。",
+          "dialogue": null,
+          "characters_present": []
+        },
+        {
+          "time_range": [
+            11.2,
+            15.0
+          ],
+          "categories": [
+            "explainer_demo"
+          ],
+          "moment_description": "医生在无字病历板旁用手势耐心说明，家长认真点头，孩子平静坐着，整体专业可信。",
+          "dialogue": null,
+          "characters_present": [
+            "parent_mother",
+            "child_patient",
+            "clinic_doctor"
+          ]
+        }
+      ],
+      "primary_location": "generic_clinic",
+      "notes": "VO: 第二步，充分清洗后，要尽快到正规医疗机构就诊。\nVO: 到了门诊，不要自己判断风险大小。\nVO: 医生会查看伤口，并根据咬伤、抓伤、唾液接触伤口或黏膜等情况评估暴露风险。\nVO: 让医生评估，才能决定后续该怎么规范处理。",
+      "audit_notes": "覆盖尽快正规医疗机构就诊、医生查看、按咬伤/抓伤/唾液接触伤口或黏膜评估、别自己判断。"
+    },
+    {
+      "shot_id": "sh_004",
+      "duration_s": 15.0,
+      "narrative_purpose": "讲清狂犬病暴露后预防的规范流程：伤口处理、接种疫苗、必要时免疫球蛋白。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.4
+          ],
+          "categories": [
+            "explainer_demo"
+          ],
+          "moment_description": "诊室内，医生戴手套对孩子手臂上很小的伤痕做规范伤口处理（清洁、消毒、轻轻包扎），动作专业温和，镜头避开血腥，家长在旁陪伴。",
+          "dialogue": null,
+          "characters_present": [
+            "parent_mother",
+            "child_patient",
+            "clinic_doctor"
+          ]
+        },
+        {
+          "time_range": [
+            3.8,
+            7.6
+          ],
+          "categories": [
+            "explainer_demo"
+          ],
+          "moment_description": "医生为孩子的上臂接种狂犬病疫苗：清楚可辨的打针动作，针管为无标识简化造型，孩子由家长安抚、神情平稳，明确表现“按医嘱接种疫苗”这一步。",
+          "dialogue": null,
+          "characters_present": [
+            "parent_mother",
+            "child_patient",
+            "clinic_doctor"
+          ]
+        },
+        {
+          "time_range": [
+            7.6,
+            11.0
+          ],
+          "categories": [
+            "explainer_demo"
+          ],
+          "moment_description": "医生手持一支无标识小药瓶（狂犬病免疫球蛋白）向家长平静说明，神态体现“医生判断、必要时才用、并非人人需要”，家长认真点头，孩子在旁；清楚的实拍诊室场景。",
+          "dialogue": null,
+          "characters_present": [
+            "clinic_doctor",
+            "parent_mother",
+            "child_patient"
+          ]
+        },
+        {
+          "time_range": [
+            11.0,
+            15.0
+          ],
+          "categories": [
+            "infographic_motion"
+          ],
+          "moment_description": "无字总结流程图，三个圆形图标横向依次发光：① 处理伤口 → ② 疫苗（盾形） → ③ 一支带柔和虚线（表示“必要时”）的药瓶（免疫球蛋白）；清楚表现 伤口处理 → 疫苗 → 必要时免疫球蛋白 的顺序与条件，全程无文字。",
+          "dialogue": null,
+          "characters_present": []
+        }
+      ],
+      "primary_location": "generic_clinic",
+      "notes": "VO: 第三步之后，要按医嘱完成狂犬病暴露后预防。\nVO: 规范流程先是处理伤口。\nVO: 然后接种狂犬病疫苗，帮助身体建立保护。\nVO: 必要时，医生还会判断是否使用狂犬病免疫球蛋白；这不是每个人都一定需要。",
+      "audit_notes": "覆盖按医嘱完成狂犬病暴露后预防，且按顺序明确：伤口处理、疫苗、必要时免疫球蛋白，并说明免疫球蛋白由医生判断、非人人必需。"
+    },
+    {
+      "shot_id": "sh_005",
+      "duration_s": 15.0,
+      "narrative_purpose": "破除侥幸心理，逐条讲清三个常见误区。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            2.8
+          ],
+          "categories": [
+            "infographic_motion"
+          ],
+          "moment_description": "一个人形剪影站在岔路口前，犹豫气泡轻轻浮现又被柔和警示圆环包住，画面无文字。",
+          "dialogue": null,
+          "characters_present": []
+        },
+        {
+          "time_range": [
+            2.8,
+            5.8
+          ],
+          "categories": [
+            "infographic_motion"
+          ],
+          "moment_description": "一个很小的浅色伤口图标旁出现柔和叉号，提醒不能因伤口小而忽视。",
+          "dialogue": null,
+          "characters_present": []
+        },
+        {
+          "time_range": [
+            5.8,
+            8.8
+          ],
+          "categories": [
+            "infographic_motion"
+          ],
+          "moment_description": "一只外观温顺正常的狗图标安静坐着，旁边出现柔和叉号，背景仍然干净明亮。",
+          "dialogue": null,
+          "characters_present": []
+        },
+        {
+          "time_range": [
+            8.8,
+            12.0
+          ],
+          "categories": [
+            "infographic_motion"
+          ],
+          "moment_description": "无数字时钟图标的指针快速转动，日历纸张以无字空白页形式飘过，随后出现柔和叉号。",
+          "dialogue": null,
+          "characters_present": []
+        },
+        {
+          "time_range": [
+            12.0,
+            15.0
+          ],
+          "categories": [
+            "infographic_motion"
+          ],
+          "moment_description": "收束帧：开头那个站在岔路口犹豫的人形剪影，此刻神态坚定地转身走上“正确处理”那条路；先前三个误区上的柔和叉号（✗）被一个清晰明亮的对勾（✓）取代，背景干净温暖，传达“不要侥幸、不要赌，立刻正确处理”。不要画成水流/门诊/医生/盾牌那种回顾流程链（那是别的镜的内容），全程无文字。",
+          "dialogue": null,
+          "characters_present": []
+        }
+      ],
+      "primary_location": "abstract_infographic_space",
+      "notes": "VO: 这时最怕的，是用侥幸代替处理。\nVO: 伤口小，不等于没有风险。\nVO: 动物看起来正常，也不等于绝对安全。\nVO: 拖几天再说，可能错过最佳处理时机。\nVO: 所以，被猫狗咬伤或抓伤后，不要等、不要赌。",
+      "audit_notes": "覆盖三个误区：伤口小不等于没风险、动物正常不等于绝对安全、拖几天会错过最佳时机，以及不要侥幸不要拖延。"
+    },
+    {
+      "shot_id": "sh_006",
+      "duration_s": 15.0,
+      "narrative_purpose": "复盘完整行动链，并以温暖、明确的行动号召收尾。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.8
+          ],
+          "categories": [
+            "infographic_motion"
+          ],
+          "moment_description": "抽象的三步总览行动链横向依次亮起，三个等大圆形图标：① 流水加肥皂泡（冲洗）→ ② 干净门诊建筑（尽快就医）→ ③ 医生加针管（按医嘱规范处理）；简洁清楚，刻意不出现保护盾或液滴分支（那是上一镜 PEP 流程的内容，本镜只做整体三步回顾），全程无文字。",
+          "dialogue": null,
+          "characters_present": []
+        },
+        {
+          "time_range": [
+            3.8,
+            7.2
+          ],
+          "categories": [
+            "explainer_demo"
+          ],
+          "moment_description": "靠近门诊出口处：出口门在画面深处正中、敞开通向阳光绿地公园；医生站在门旁温和送别、抬手示意，家长牵着孩子面向这扇门准备离开，孩子神情放松。诊室为浅蓝绿墙、左侧白色水池、右侧器械车——与下一拍是同一间诊室、同一扇门，保持场景完全一致。",
+          "dialogue": null,
+          "characters_present": [
+            "parent_mother",
+            "child_patient",
+            "clinic_doctor"
+          ]
+        },
+        {
+          "time_range": [
+            7.2,
+            11.0
+          ],
+          "categories": [
+            "explainer_demo"
+          ],
+          "moment_description": "紧接上一拍、同一间诊室同一扇深处正中的出口门：家长牵着孩子背对镜头，正穿过这扇门走向门外阳光绿地公园，门诊在身后；诊室同样是浅蓝绿墙、左侧白色水池、右侧器械车，与上一拍场景完全一致；明确是往外走、离开，不是走进门诊，氛围安心。",
+          "dialogue": null,
+          "characters_present": [
+            "parent_mother",
+            "child_patient"
+          ]
+        },
+        {
+          "time_range": [
+            11.0,
+            15.0
+          ],
+          "categories": [
+            "infographic_motion"
+          ],
+          "moment_description": "最终画面以温暖光线中的保护盾包围家庭和宠物接触场景的简化图形收束，底部留出字幕空间，无任何文字或标识。",
+          "dialogue": null,
+          "characters_present": []
+        }
+      ],
+      "primary_location": "generic_clinic",
+      "notes": "VO: 记住顺序：先立刻用流动清水和肥皂水充分冲洗。\nVO: 再尽快去正规医疗机构就诊。\nVO: 由医生评估暴露风险，并按医嘱完成疫苗接种；必要时使用免疫球蛋白。\nVO: 狂犬病可防、不可赌。被咬伤或抓伤后，请立即处理。",
+      "audit_notes": "复盘完整顺序：充分冲洗、正规就医、医生评估、疫苗、必要时免疫球蛋白；收尾行动号召为可防不可赌、立即处理。"
+    }
+  ]
+}

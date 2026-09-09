@@ -1,0 +1,38 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+写实航拍实拍 (Photoreal cinematic aerial documentary). Cold slate blue ocean tones contrasted against pitch-black basalt sand, neon-bright emerald moss, and 1200°C luminous incandescent orange lava streams. Soft diffused arctic sunlight breaking through moody low-hanging clouds, creating wet specular highlights on wet volcanic rock and heavy volumetric fog.
+
+[IDENTITY LOCK]
+All locations across all panels MUST match the attached location anchor refs EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide -> P2 wide -> P3 extreme-wide -> P4 extreme-wide
+
+[PANEL 1]
+SHOT: wide eye-level
+PLACEMENT: Low-altitude perspective two meters above the wet black shoreline, binding a curling turquoise wave directly to the bottom third of the frame while the black obsidian sand anchors the foreground plane.
+ACTION: A curling ocean wave crests and crashes, white foam spreading across the glistening dark sand.
+ENV: Wet black sand beach with slate-blue Atlantic ocean swells under low moody arctic clouds; call out FRONT view of black_sand_coastline location anchor.
+
+[PANEL 2]
+SHOT: wide high-angle
+PLACEMENT: Mid-altitude perspective pitching downward, binding the intricate foam network to the central beach surface bounded by the wet shoreline along the lower edge.
+ACTION: Ocean water recedes over fine obsidian sand, leaving intricate geometric foam patterns across the wet beach surface.
+ENV: Glistening wet volcanic sand reflecting soft diffused cloud light; call out OVERHEAD view of black_sand_coastline location anchor.
+
+[PANEL 3]
+SHOT: extreme-wide high-angle
+PLACEMENT: Aerial perspective at thirty meters altitude, binding jagged sea stacks to the midground left and right frame edges with the distant horizon spanning the top third.
+ACTION: Camera sweeps past sea stacks as atmospheric salt spray catches a sudden beam of golden sunlight breaking through clouds.
+ENV: Dark basalt sea stacks surrounded by white ocean mist and golden horizon light; call out BACK view of black_sand_coastline location anchor.
+
+[PANEL 4]
+SHOT: extreme-wide eye-level
+PLACEMENT: High panoramic vantage point, binding the black sand beach in a sweeping diagonal curve from bottom-left to mid-right between the ocean and dark coastal mountains.
+ACTION: Wide static vista displaying the vast expanse of black coastline between ocean white water and mountain base.
+ENV: Panoramic black beach under leaden skies with distant misty mountains; call out OVERHEAD view of black_sand_coastline location anchor.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.

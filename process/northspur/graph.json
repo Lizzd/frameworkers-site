@@ -1,0 +1,981 @@
+{
+ "key": "northspur",
+ "title": "The Long Way Round",
+ "genre": "Advertisement · Product Story",
+ "cat": "Advertisement",
+ "prompt": "The everything-supplied case: a shot-by-shot script, a character reference and a brand logo, plus the narration the user recorded and the music bed they want under it — five files, and the instruction to lock the length to the audio. The narration is used as recorded (no re-dubbing) and its subtitles come from transcribing that recording, not from the script. The runtime follows it: the supplied speech runs 34.1s, so the film was planned to cover it rather than to the brief's round '30 seconds'. The flask the script is about stays off-screen — only the character and the logo were given as references, and the system did not invent a hero shot for the product.",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/topic22_northspur/workspace_global_20260803_123754"
+ },
+ "generated_at": "2026-09-09T15:56:42+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 6
+  },
+  {
+   "id": "IntakeImageAgent__step_1_35678f17",
+   "agent": "IntakeImageAgent",
+   "label": "IntakeImage",
+   "step": "step_1_35678f17",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "IntakeAudioAgent__step_1_35678f17",
+   "agent": "IntakeAudioAgent",
+   "label": "IntakeAudio",
+   "step": "step_1_35678f17",
+   "order": 2,
+   "n": 1
+  },
+  {
+   "id": "BriefEnricherAgent__step_1_35678f17",
+   "agent": "BriefEnricherAgent",
+   "label": "BriefEnricher",
+   "step": "step_1_35678f17",
+   "order": 3,
+   "n": 1
+  },
+  {
+   "id": "TranscriptionAgent__step_1_35678f17",
+   "agent": "TranscriptionAgent",
+   "label": "Transcription",
+   "step": "step_1_35678f17",
+   "order": 4,
+   "n": 1
+  },
+  {
+   "id": "AdvertisementAgent__step_1_35678f17",
+   "agent": "AdvertisementAgent",
+   "label": "Advertisement",
+   "step": "step_1_35678f17",
+   "order": 5,
+   "n": 1
+  },
+  {
+   "id": "KeyframeSheetAgent__step_1_35678f17",
+   "agent": "KeyframeSheetAgent",
+   "label": "KeyframeSheet",
+   "step": "step_1_35678f17",
+   "order": 6,
+   "n": 13
+  },
+  {
+   "id": "ShotPromptAgent__step_1_35678f17",
+   "agent": "ShotPromptAgent",
+   "label": "ShotPrompt",
+   "step": "step_1_35678f17",
+   "order": 7,
+   "n": 4
+  },
+  {
+   "id": "ClipAgent__step_1_35678f17",
+   "agent": "ClipAgent",
+   "label": "Clip",
+   "step": "step_1_35678f17",
+   "order": 8,
+   "n": 5
+  },
+  {
+   "id": "AudioMixAgent__step_1_35678f17",
+   "agent": "AudioMixAgent",
+   "label": "AudioMix",
+   "step": "step_1_35678f17",
+   "order": 9,
+   "n": 2
+  },
+  {
+   "id": "CompositorAgent__step_1_35678f17",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_1_35678f17",
+   "order": 10,
+   "n": 3
+  }
+ ],
+ "nodes": [
+  {
+   "id": "brand_logo",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "brand logo",
+   "src_name": "20260803_123754_284918_brand_logo.png",
+   "bytes": 1846771,
+   "caption": "Global prop reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/northspur/media/brand_logo.jpg",
+   "w": 2816,
+   "h": 1536
+  },
+  {
+   "id": "character_ref",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "character ref",
+   "src_name": "20260803_123754_268817_character_ref.png",
+   "bytes": 3919228,
+   "caption": "Global character reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/northspur/media/character_ref.jpg",
+   "w": 2816,
+   "h": 1536
+  },
+  {
+   "id": "music_bed",
+   "stage": "Inputs",
+   "kind": "audio",
+   "label": "music bed",
+   "src_name": "20260803_123754_352503_music_bed.wav",
+   "bytes": 6085878,
+   "caption": "Raw user upload (mime=audio/wav).",
+   "scope": "global",
+   "file": "process/northspur/media/music_bed.mp3",
+   "dur": 34.5
+  },
+  {
+   "id": "narration",
+   "stage": "Inputs",
+   "kind": "audio",
+   "label": "narration",
+   "src_name": "20260803_123754_298727_narration.wav",
+   "bytes": 1635884,
+   "caption": "Raw user upload (mime=audio/wav).",
+   "scope": "global",
+   "file": "process/northspur/media/narration.mp3",
+   "dur": 34.08
+  },
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260803_123754_359145.json",
+   "bytes": 582,
+   "caption": "Structured metadata document (JSON) for the user's own typed brief — the instruction describing WHAT TO MAKE. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/northspur/media/creative_brief.json",
+   "excerpt": "{\"text\": \"I'll be giving you three things: a shot-by-shot script with the lines, a reference image of the main character plus our brand logo, and the narration audio I recorded along with a background music track. Put those together into a 30-second product-story ad — keep the character and the logo consistent, use my …"
+  },
+  {
+   "id": "script",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "script",
+   "src_name": "20260803_123754_233625_script.json",
+   "bytes": 1399,
+   "caption": "Structured metadata document (JSON) wrapping a user-ATTACHED text file ('script.txt'). Payload carries the file's text verbatim. This is source MATERIAL to be used inside the piece — a script to be read as written, a story to adapt, or copy to reproduce — NOT the instruction describing what to make.",
+   "scope": "global",
+   "file": "process/northspur/media/script.json",
+   "excerpt": "{\"text\": \"NORTHSPUR — \\\"The Long Way Round\\\"\\n30-second product story. Shot-by-shot script with the narration lines.\\n\\nSHOT 1 (0:00–0:06)\\nVisual: A woman in her thirties, dark braided hair, olive field jacket, stands\\nat a bus stop before dawn. Rain. She is holding a battered steel flask.\\nNarration: \\\"Every morning …"
+  },
+  {
+   "id": "intakeimageagent_output",
+   "stage": "IntakeImageAgent__step_1_35678f17",
+   "kind": "json",
+   "label": "IntakeImageAgent output",
+   "src_name": "step_1_35678f17_intakeimageagent_exec_1.json",
+   "bytes": 987,
+   "caption": "Structured metadata document (JSON) for 2 user-uploaded image(s). Payload lists every image's visual description and image-asset metadata.",
+   "scope": "global",
+   "file": "process/northspur/media/intakeimageagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"images\": [{\"visual_description\": \"3D character views of a 20s Hispanic woman with dark braided hair, wearing an olive jacket under neutral studio lighting.\", \"image_asset\": {\"asset_id\": \"\", \"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/topic22_northspur/workspace_global_20260803_123754/inputs/20260…"
+  },
+  {
+   "id": "intakeaudioagent_output",
+   "stage": "IntakeAudioAgent__step_1_35678f17",
+   "kind": "json",
+   "label": "IntakeAudioAgent output",
+   "src_name": "step_1_35678f17_intakeaudioagent_exec_2.json",
+   "bytes": 949,
+   "caption": "Structured metadata document (JSON) covering 2 user-uploaded audio clip(s). Payload lists each clip's kind (speech / music / ambient), an audible summary, and its audio-asset path.",
+   "scope": "global",
+   "file": "process/northspur/media/intakeaudioagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"clips\": [{\"kind\": \"speech\", \"audio_summary\": \"A female speaker narrates a reflective story in English with a soft, gentle tone about a person taking the long way and keeping a durable flask for 11 years.\", \"duration_s\": 34.08, \"audio_asset\": {\"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/topic22_no…"
+  },
+  {
+   "id": "briefenricheragent_output",
+   "stage": "BriefEnricherAgent__step_1_35678f17",
+   "kind": "json",
+   "label": "BriefEnricherAgent output",
+   "src_name": "step_1_35678f17_briefenricheragent_exec_3.json",
+   "bytes": 1178,
+   "caption": "Enriched creative brief with visual reference descriptions integrated. Supersedes the raw user brief for story generation — contains the user's original concept plus detailed visual descriptions of uploaded reference images.",
+   "scope": "global",
+   "file": "process/northspur/media/briefenricheragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"enriched_brief\": \"Create a product-story ad based on the provided shot-by-shot script with English dialogue and English subtitles. The ad centers on a main character depicted as a 20s Hispanic woman with dark braided hair wearing an olive jacket. Branding elements feature the 'NORTHSPUR' brand logo,…"
+  },
+  {
+   "id": "transcriptionagent_output",
+   "stage": "TranscriptionAgent__step_1_35678f17",
+   "kind": "json",
+   "label": "TranscriptionAgent output",
+   "src_name": "step_1_35678f17_transcriptionagent_exec_4.json",
+   "bytes": 1389,
+   "caption": "Transcript (en): 6 timestamped segment(s). SRT-shaped subtitle artifact — ready for direct burn-in by a compositor's subtitle track (each segment is one SRT cue with start/end seconds + text). Also usable as the 'source text' input to a translation step when bilingual subtitles are needed.",
+   "scope": "global",
+   "file": "process/northspur/media/transcriptionagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"segments\": [{\"segment_id\": \"seg_001\", \"start_time\": 0.0, \"end_time\": 4.92, \"text\": \"Every morning she takes the long way round,\"}, {\"segment_id\": \"seg_002\", \"start_time\": 4.92, \"end_time\": 12.16, \"text\": \"not because it is faster, because it is hers.\"}, {\"segment_id\": \"seg_003\", \"start_time\": 12.16,…"
+  },
+  {
+   "id": "advertisementagent_output",
+   "stage": "AdvertisementAgent__step_1_35678f17",
+   "kind": "json",
+   "label": "AdvertisementAgent output",
+   "src_name": "step_1_35678f17_advertisementagent_exec_5.json",
+   "bytes": 9321,
+   "caption": "Shot-rich story: 3 shot(s), 2 character(s) — drives keyframe/storyboard/audio.",
+   "scope": "global",
+   "file": "process/northspur/media/advertisementagent_output.json",
+   "excerpt": "{\"title\": \"NORTHSPUR - Conquer New Heights\", \"logline\": \"An adventurous female hiker equipped with NORTHSPUR gear navigates rugged mountain terrain to inspire outdoor enthusiasts to gear up for their next journey.\", \"setting\": \"Alpine mountain trail winding through pine forests, granite ridges, and sunlit summits. Styl…"
+  },
+  {
+   "id": "brand_logo_anchor",
+   "stage": "KeyframeSheetAgent__step_1_35678f17",
+   "kind": "image",
+   "label": "brand logo anchor",
+   "src_name": "step_1_35678f17_img_brand_logo_anchor.png",
+   "bytes": 10161989,
+   "caption": "GENERATED internal identity reference card for prop brand_logo — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/northspur/media/brand_logo_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "main_character_anchor",
+   "stage": "KeyframeSheetAgent__step_1_35678f17",
+   "kind": "image",
+   "label": "main character anchor",
+   "src_name": "step_1_35678f17_img_main_character_anchor.png",
+   "bytes": 4070538,
+   "caption": "GENERATED internal identity reference card for character main_character — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/northspur/media/main_character_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "mountain_trail_anchor",
+   "stage": "KeyframeSheetAgent__step_1_35678f17",
+   "kind": "image",
+   "label": "mountain trail anchor",
+   "src_name": "step_1_35678f17_img_mountain_trail_anchor.png",
+   "bytes": 9319463,
+   "caption": "GENERATED internal identity reference card for location mountain_trail — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/northspur/media/mountain_trail_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "brand_logo_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_35678f17",
+   "kind": "text",
+   "label": "brand logo anchor prompt",
+   "src_name": "step_1_35678f17_img_brand_logo_anchor_prompt.txt",
+   "bytes": 2431,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the prop brand_logo anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/northspur/media/brand_logo_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "main_character_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_35678f17",
+   "kind": "text",
+   "label": "main character anchor prompt",
+   "src_name": "step_1_35678f17_img_main_character_anchor_prompt.txt",
+   "bytes": 2830,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the character main_character anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/northspur/media/main_character_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "mountain_trail_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_35678f17",
+   "kind": "text",
+   "label": "mountain trail anchor prompt",
+   "src_name": "step_1_35678f17_img_mountain_trail_anchor_prompt.txt",
+   "bytes": 2032,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location mountain_trail anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/northspur/media/mountain_trail_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): Cinematic 3D animation style with crisp lighting and soft rendered shading; Rich outdoor environmental textures including granite rock, pine needles, and high-performance jacket weave; Earthy palette dominated by olive greens, slate grays, dark …"
+  },
+  {
+   "id": "keyframesheetagent_output",
+   "stage": "KeyframeSheetAgent__step_1_35678f17",
+   "kind": "json",
+   "label": "KeyframeSheetAgent output",
+   "src_name": "step_1_35678f17_keyframesheetagent_exec_6.json",
+   "bytes": 13705,
+   "caption": "Sheet-model keyframe package: 3 identity anchor card(s) + 3 per-shot storyboard sheet(s). Drives the downstream image-to-video stage.",
+   "scope": "global",
+   "file": "process/northspur/media/keyframesheetagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"anchors\": {\"character_anchors\": [{\"entity_id\": \"main_character\", \"prompt_summary\": \"A 20s Hispanic female outdoor enthusiast with athletic build, warm brown eyes, and dark braided hair. She wears a technical olive green outdoor jacket over high-performance hiking apparel. Rendered in clean cinematic…"
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_35678f17",
+   "kind": "image",
+   "label": "sh 001 storyboard",
+   "src_name": "step_1_35678f17_img_sh_001_storyboard.png",
+   "bytes": 5978879,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_001 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/northspur/media/sh_001_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_35678f17",
+   "kind": "text",
+   "label": "sh 001 storyboard prompt",
+   "src_name": "step_1_35678f17_img_sh_001_storyboard_prompt.txt",
+   "bytes": 3420,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_001's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/northspur/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. [STYLE F…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_35678f17",
+   "kind": "image",
+   "label": "sh 002 storyboard",
+   "src_name": "step_1_35678f17_img_sh_002_storyboard.png",
+   "bytes": 6415623,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_002 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/northspur/media/sh_002_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_35678f17",
+   "kind": "text",
+   "label": "sh 002 storyboard prompt",
+   "src_name": "step_1_35678f17_img_sh_002_storyboard_prompt.txt",
+   "bytes": 3885,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_002's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/northspur/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. [STYLE F…"
+  },
+  {
+   "id": "sh_003_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_35678f17",
+   "kind": "image",
+   "label": "sh 003 storyboard",
+   "src_name": "step_1_35678f17_img_sh_003_storyboard.png",
+   "bytes": 4731818,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_003 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/northspur/media/sh_003_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_003_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_35678f17",
+   "kind": "text",
+   "label": "sh 003 storyboard prompt",
+   "src_name": "step_1_35678f17_img_sh_003_storyboard_prompt.txt",
+   "bytes": 3602,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_003's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/northspur/media/sh_003_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. [STYLE F…"
+  },
+  {
+   "id": "shotpromptagent_output",
+   "stage": "ShotPromptAgent__step_1_35678f17",
+   "kind": "json",
+   "label": "ShotPromptAgent output",
+   "src_name": "step_1_35678f17_shotpromptagent_exec_7.json",
+   "bytes": 11264,
+   "caption": "Per-shot video-generation prompt package: 3 Seedance prompt(s) (9-section), one per shot — pairs with the storyboard sheet to drive the image-to-video clip stage.",
+   "scope": "global",
+   "file": "process/northspur/media/shotpromptagent_output.json",
+   "excerpt": "[{\"shot_id\": \"sh_001\", \"text_prompt\": \"[设定]\\n高山徒步户外场景，展现当代拉美裔女性的自然探索之旅。\\n\\n[风格]\\n3D animation style，整体展现高山徒步探索的自然韵律。\\n\\n[参考图]\\n[Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线…"
+  },
+  {
+   "id": "shot_prompt_sh_001",
+   "stage": "ShotPromptAgent__step_1_35678f17",
+   "kind": "text",
+   "label": "shot prompt sh 001",
+   "src_name": "step_1_35678f17_shot_prompt_sh_001.txt",
+   "bytes": 3551,
+   "caption": "video-generation text prompt for shot sh_001 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/northspur/media/shot_prompt_sh_001.txt",
+   "excerpt": "[设定] 高山徒步户外场景，展现当代拉美裔女性的自然探索之旅。 [风格] 3D animation style，整体展现高山徒步探索的自然韵律。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得再现任何编号、文字或网格线。 本 shot 出场角色…"
+  },
+  {
+   "id": "shot_prompt_sh_002",
+   "stage": "ShotPromptAgent__step_1_35678f17",
+   "kind": "text",
+   "label": "shot prompt sh 002",
+   "src_name": "step_1_35678f17_shot_prompt_sh_002.txt",
+   "bytes": 3390,
+   "caption": "video-generation text prompt for shot sh_002 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/northspur/media/shot_prompt_sh_002.txt",
+   "excerpt": "[设定] 现代高山户外场景，拉丁美洲裔青年女性的攀登旅程，氛围展现探索乐趣与户外活力。 [风格] Cinematic 3D animation style，充满明亮自然光感与高能户外探索活力的写实动画基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— …"
+  },
+  {
+   "id": "shot_prompt_sh_003",
+   "stage": "ShotPromptAgent__step_1_35678f17",
+   "kind": "text",
+   "label": "shot prompt sh 003",
+   "src_name": "step_1_35678f17_shot_prompt_sh_003.txt",
+   "bytes": 3331,
+   "caption": "video-generation text prompt for shot sh_003 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/northspur/media/shot_prompt_sh_003.txt",
+   "excerpt": "[设定] 高山徒步与户外冒险环境，展现拉美女性在自然之巅的轻松体验。 [风格] Cinematic 3D animation style，呈现场景与品牌结合的明快户外商业质感。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得再现任何编号、文字或…"
+  },
+  {
+   "id": "clip_final",
+   "stage": "ClipAgent__step_1_35678f17",
+   "kind": "video",
+   "label": "clip final",
+   "src_name": "step_1_35678f17_clip_final.mp4",
+   "bytes": 13218964,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_final] Complete assembled film bytes (3 shot(s) concatenated). The final visual deliverable — consumed by a downstream audio-mix / compositor step's materializer for muxing / subtitle burn-in.",
+   "scope": "global",
+   "w": 864,
+   "h": 496,
+   "dur": 45.28,
+   "poster": "process/northspur/media/clip_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "clipagent_output",
+   "stage": "ClipAgent__step_1_35678f17",
+   "kind": "json",
+   "label": "ClipAgent output",
+   "src_name": "step_1_35678f17_clipagent_exec_8.json",
+   "bytes": 816,
+   "caption": "[JSON MANIFEST] Clip-assembly plan: 3 per-shot clip plan(s) with duration + transition + scene grouping. Read by a downstream audio-mix / compositor step's LLM.",
+   "scope": "global",
+   "file": "process/northspur/media/clipagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"clips\": [{\"shot_id\": \"sh_001\", \"duration_sec\": 5.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_002\", \"duration_sec\": 5.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_003\", \"duration_sec\": 5.0, \"scene_id\": \"sc_001\"}], \"assembly\": {\"shot_order\": [\"sh_001\", \"sh_002\", \"sh_003\"], \"scene_order\": [\"sc_001\"], \"trans…"
+  },
+  {
+   "id": "clip_sh_001",
+   "stage": "ClipAgent__step_1_35678f17",
+   "kind": "video",
+   "label": "clip sh 001",
+   "src_name": "step_1_35678f17_clip_sh_001.mp4",
+   "bytes": 4936246,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_001] Rendered video clip bytes for shot sh_001 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "w": 864,
+   "h": 496,
+   "dur": 15.07,
+   "poster": "process/northspur/media/clip_sh_001_poster.jpg",
+   "file": "process/northspur/media/clip_sh_001.mp4"
+  },
+  {
+   "id": "clip_sh_002",
+   "stage": "ClipAgent__step_1_35678f17",
+   "kind": "video",
+   "label": "clip sh 002",
+   "src_name": "step_1_35678f17_clip_sh_002.mp4",
+   "bytes": 5020895,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_002] Rendered video clip bytes for shot sh_002 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/northspur/media/clip_sh_002_poster.jpg",
+   "file": "process/northspur/media/clip_sh_002.mp4"
+  },
+  {
+   "id": "clip_sh_003",
+   "stage": "ClipAgent__step_1_35678f17",
+   "kind": "video",
+   "label": "clip sh 003",
+   "src_name": "step_1_35678f17_clip_sh_003.mp4",
+   "bytes": 3329056,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_003] Rendered video clip bytes for shot sh_003 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/northspur/media/clip_sh_003_poster.jpg",
+   "file": "process/northspur/media/clip_sh_003.mp4"
+  },
+  {
+   "id": "aud_final",
+   "stage": "AudioMixAgent__step_1_35678f17",
+   "kind": "audio",
+   "label": "aud final",
+   "src_name": "step_1_35678f17_aud_final.wav",
+   "bytes": 7995470,
+   "caption": "[BINARY WAV FILE · mime=audio/wav · sys_id aud_final] Final-mix audio bytes — all source audio tracks (dialogue / foley / music / ambience / narrator) merged. Ready to be muxed onto the delivered video by a downstream compositing step.",
+   "scope": "global",
+   "file": "process/northspur/media/aud_final.mp3",
+   "dur": 45.33
+  },
+  {
+   "id": "audiomixagent_output",
+   "stage": "AudioMixAgent__step_1_35678f17",
+   "kind": "json",
+   "label": "AudioMixAgent output",
+   "src_name": "step_1_35678f17_audiomixagent_exec_9.json",
+   "bytes": 43,
+   "caption": "[JSON MANIFEST] Final-audio-mix envelope: amix of 0 source track(s) (video dialogue+foley + optional global music/ambience/narrator). Planning manifest only; the wav is a sibling artifact.",
+   "scope": "global",
+   "file": "process/northspur/media/audiomixagent_output.json",
+   "excerpt": "{\"language\": \"en\"}"
+  },
+  {
+   "id": "compositor_final",
+   "stage": "CompositorAgent__step_1_35678f17",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_1_35678f17_compositor_final.mp4",
+   "bytes": 7289536,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "w": 864,
+   "h": 496,
+   "dur": 45.33,
+   "poster": "process/northspur/media/compositor_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "compositoragent_output",
+   "stage": "CompositorAgent__step_1_35678f17",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_1_35678f17_compositoragent_exec_10.json",
+   "bytes": 626,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/northspur/media/compositoragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"plan\": {\"color_grade\": {\"brightness\": 0.02, \"contrast\": 0.05, \"saturation\": 0.05}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"authored_cues\": [], \"card_style\": {\"font_size\": 34, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"pos…"
+  },
+  {
+   "id": "final_film",
+   "stage": "CompositorAgent__step_1_35678f17",
+   "kind": "video",
+   "label": "final film",
+   "file": "videos/northspur.mp4",
+   "poster": "posters/northspur.jpg",
+   "final": true,
+   "caption": "Delivered film as published on this site.",
+   "src_name": "northspur.mp4",
+   "w": 864,
+   "h": 496,
+   "dur": 45.33
+  }
+ ],
+ "edges": [
+  {
+   "from": "brand_logo",
+   "to": "IntakeImageAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "character_ref",
+   "to": "IntakeImageAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "music_bed",
+   "to": "IntakeAudioAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narration",
+   "to": "IntakeAudioAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "BriefEnricherAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "script",
+   "to": "BriefEnricherAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeimageagent_output",
+   "to": "BriefEnricherAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeaudioagent_output",
+   "to": "BriefEnricherAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "briefenricheragent_output",
+   "to": "KeyframeSheetAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "advertisementagent_output",
+   "to": "KeyframeSheetAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "brand_logo",
+   "to": "KeyframeSheetAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "character_ref",
+   "to": "KeyframeSheetAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "keyframesheetagent_output",
+   "to": "ShotPromptAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "brand_logo_anchor",
+   "to": "ShotPromptAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "main_character_anchor",
+   "to": "ShotPromptAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "mountain_trail_anchor",
+   "to": "ShotPromptAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPromptAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPromptAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPromptAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "advertisementagent_output",
+   "to": "ShotPromptAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "ClipAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "ClipAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "ClipAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "brand_logo_anchor",
+   "to": "ClipAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "main_character_anchor",
+   "to": "ClipAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "mountain_trail_anchor",
+   "to": "ClipAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ClipAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ClipAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ClipAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "music_bed",
+   "to": "AudioMixAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narration",
+   "to": "AudioMixAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_final",
+   "to": "AudioMixAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_001",
+   "to": "AudioMixAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_002",
+   "to": "AudioMixAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_003",
+   "to": "AudioMixAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_final",
+   "to": "CompositorAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_001",
+   "to": "CompositorAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_002",
+   "to": "CompositorAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_003",
+   "to": "CompositorAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_final",
+   "to": "CompositorAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "transcriptionagent_output",
+   "to": "CompositorAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "brand_logo",
+   "to": "CompositorAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "character_ref",
+   "to": "CompositorAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "briefenricheragent_output",
+   "to": "AdvertisementAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "AdvertisementAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "script",
+   "to": "AdvertisementAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeimageagent_output",
+   "to": "AdvertisementAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeaudioagent_output",
+   "to": "AdvertisementAgent__step_1_35678f17",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "final_film",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

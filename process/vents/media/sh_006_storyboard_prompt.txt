@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 medium -> P2 medium cutaway -> P3 close-up cutaway -> P4 medium cutaway
+
+[PANEL 1]
+SHOT: medium eye-level
+PLACEMENT: Cluster of giant Riftia pachyptila tubeworms rooted in white chitinous tubes in lower frame.
+ACTION: Bright red plume tops swaying gently in deep ocean currents near a vent fissure.
+ENV: Dark basalt rocks with warm geothermal lighting accenting the crimson plumes.
+
+[PANEL 2]
+SHOT: medium cutaway eye-level
+PLACEMENT: Single adult tubeworm body shown in anatomical cross-section.
+ACTION: Smooth white outer cylinder body revealed to lack a mouth opening and gut tube.
+ENV: Clean 2D medical/biological vector graphic background.
+
+[PANEL 3]
+SHOT: close-up cutaway eye-level
+PLACEMENT: Internal trophosome organ occupying central frame.
+ACTION: Trophosome organ cavity packed with dense, glowing chemosynthetic bacterial colonies.
+ENV: Biological vector schematic with soft inner ambient illumination.
+
+[PANEL 4]
+SHOT: medium cutaway eye-level
+PLACEMENT: Red branchial plume top connected to internal vascular channels.
+ACTION: Flow arrows showing absorbed chemical compounds traveling down vascular tubes into internal tissues.
+ENV: Stylized biological diagram with crisp vector directional paths.
+
+[RENDERED TEXT]
+No panel numbers, captions, or watermarks.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 1 refs (character / prop / location anchors).

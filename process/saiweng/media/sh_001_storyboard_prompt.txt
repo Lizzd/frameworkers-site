@@ -1,0 +1,26 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 with the sixth cell as solid neutral gray; N=6 → 3×2.
+
+[STYLE FOUNDATION]
+VISUAL MEDIUM and aesthetic are dictated entirely by story.style_anchor (below) — live-action film, 2D anime, illustration, 3D, etc.; do NOT default to photoreal, do NOT impose any medium the brief omits. Apply verbatim: 手绘中国传统写意水墨动画，宣纸纹理清晰，大面积留白，浓淡墨色晕染，少量赭石与淡青点染边塞尘土；长卷式横向呼吸感，镜头运动像卷轴展开，非写实、非3D，画面留白处可承载淡灰英文字幕。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the border_courtyard location anchor for the iconic courtyard layout, and use the FRONT section of the shuoshuren character anchor for the small narrator ink silhouette at the scroll edge. Extreme wide ink-wash establishing view: blank paper sky, broken-line Great Wall and tiny beacon towers in the distance, earth courtyard walls, empty water trough, and one worn horse-post in the yard. The broken hemp rope flicks twice in the wind; fresh hoofprints near the trough are half veiled by fine sand. The narrator sits at the lower corner with bamboo clappers, mouth closed as this is voiceover, not visible speech. Slow-scroll feeling, right-to-left reveal, restrained and spacious.
+
+[PANEL 2]
+Use the FRONT sections of the sai_zi and sai_weng character anchors for costume and body identity, and use the FACE section of the sai_weng anchor for the old man’s calm brow and beard. Medium dialogue two-shot in the same courtyard, preserving one side of the 180-degree axis: Sai Zi has rushed from the doorway and crouches by the trough, gripping the snapped rope in his palm; Sai Weng enters with bamboo cane, robe hem lifted slightly by wind. Sai Zi’s mouth is open mid-line, urgent; Sai Weng listens without answering yet. The visual focus rests between the rope and the old man’s level eyes, with wind lines and dust in dry brush.
+
+[PANEL 3]
+Use the FRONT section of the border_courtyard location anchor for the gate and yard relationship, and use the FRONT sections of sai_weng, sai_zi, and linren character anchors; for linren, make the middle-aged woman with dark headscarf and willow basket the clear foreground representative, with other villagers as pale ink silhouettes. Wide group dialogue composition: neighbors stream in through the courtyard gate, basket bumping the frame, one villager bending to inspect hoofprints, another setting a hoe upright. The woman presses down her wind-lifted headscarf and speaks toward Sai Weng. Their shadows lean toward the empty post, darkening it, while Sai Weng remains half a step beside the post and does not retreat.
+
+[PANEL 4]
+Use the FACE section of the sai_weng character anchor for a close emotional identity lock; keep linren only as soft background silhouettes extrapolated from the FRONT anchor. Tight side close-up of Sai Weng: long white brows and goatee blown left by the same wind, eyelid lifting once with measured restraint. His thumb smooths the old rope knot at his waist; behind him, the hoofprints near the broken post fade under blown sand. Neighbors’ mouths may appear faintly moving in the blurred background, but no readable text or captions. The old man’s expression is quiet, not triumphant: a small eye highlight, half the face in pale ink shadow, breath held before release.
+
+[PANEL 5]
+Use the FRONT section of the border_courtyard location anchor for the final courtyard tableau; use FRONT sections of sai_weng, sai_zi, linren, and shuoshuren anchors for small full-body silhouettes. Wide closing image: bamboo clappers implied by the narrator’s tiny edge silhouette, villagers retreating toward the courtyard gate, their layered footprints crossing over the horse tracks. Sai Zi tries to hang the broken rope back on the post, but it slips; Sai Weng gently picks up the rope end and lets it hang loose without tying it. Faces are small, mouths closed because the final line is voiceover. The blank paper sky expands, wind lines fill the yard, and the sixth unused grid cell remains solid neutral gray.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)

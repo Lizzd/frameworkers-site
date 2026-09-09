@@ -1,0 +1,483 @@
+{
+ "key": "poem_recital",
+ "title": "Hope Is the Thing with Feathers",
+ "genre": "Audio-driven · Illustrated Poem",
+ "cat": "Narrative",
+ "prompt": "An audio-driven illustrated poem: the user supplies their OWN spoken-word recitation, and the visuals — a slideshow of painted illustrations — are timed to that real recording, advancing with the poem's mood, with English subtitles and light foley. The user's own voice is the narration (no re-synthesis). Here: Emily Dickinson's 'Hope is the thing with feathers'. (Note: the goal text estimated ~60s, but the recording actually supplied — archived below — runs ~35s; the film follows the real audio.)",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/topic10_fixed_outputs/workspace_global_20260711_123603"
+ },
+ "generated_at": "2026-09-09T15:56:47+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 2
+  },
+  {
+   "id": "IntakeAudioAgent__step_1_5b478042",
+   "agent": "IntakeAudioAgent",
+   "label": "IntakeAudio",
+   "step": "step_1_5b478042",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "TranscriptionAgent__step_1_5b478042",
+   "agent": "TranscriptionAgent",
+   "label": "Transcription",
+   "step": "step_1_5b478042",
+   "order": 2,
+   "n": 1
+  },
+  {
+   "id": "NarrationAgent__step_1_5b478042",
+   "agent": "NarrationAgent",
+   "label": "Narration",
+   "step": "step_1_5b478042",
+   "order": 3,
+   "n": 1
+  },
+  {
+   "id": "IllustrationAgent__step_1_5b478042",
+   "agent": "IllustrationAgent",
+   "label": "Illustration",
+   "step": "step_1_5b478042",
+   "order": 4,
+   "n": 8
+  },
+  {
+   "id": "NarratorAgent__step_1_5b478042",
+   "agent": "NarratorAgent",
+   "label": "Narrator",
+   "step": "step_1_5b478042",
+   "order": 5,
+   "n": 4
+  },
+  {
+   "id": "AmbienceAgent__step_1_5b478042",
+   "agent": "AmbienceAgent",
+   "label": "Ambience",
+   "step": "step_1_5b478042",
+   "order": 6,
+   "n": 1
+  },
+  {
+   "id": "AudioMixAgent__step_1_5b478042",
+   "agent": "AudioMixAgent",
+   "label": "AudioMix",
+   "step": "step_1_5b478042",
+   "order": 7,
+   "n": 2
+  },
+  {
+   "id": "CompositorAgent__step_1_5b478042",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_1_5b478042",
+   "order": 8,
+   "n": 2
+  }
+ ],
+ "nodes": [
+  {
+   "id": "user_recitation",
+   "stage": "Inputs",
+   "kind": "audio",
+   "label": "user recitation",
+   "src_name": "20260711_123603_735002_user_recitation.wav",
+   "bytes": 1655084,
+   "caption": "Raw user upload (mime=audio/wav).",
+   "scope": "global",
+   "file": "process/poem_recital/media/user_recitation.mp3",
+   "dur": 34.48
+  },
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260711_123603_738586.json",
+   "bytes": 414,
+   "caption": "Structured metadata document (JSON) for a user-submitted text brief. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/poem_recital/media/creative_brief.json",
+   "excerpt": "{\"text\": \"我会上传我自己录好的约 60 秒英文诗朗诵音频(只有人声)。帮我按诗的意境生成一条同步的画面短片,用我的原声做旁白、画面随情绪推进,可叠加轻量环境声。横屏,配英文字幕。\"}"
+  },
+  {
+   "id": "intakeaudioagent_output",
+   "stage": "IntakeAudioAgent__step_1_5b478042",
+   "kind": "json",
+   "label": "IntakeAudioAgent output",
+   "src_name": "step_1_5b478042_intakeaudioagent_exec_1.json",
+   "bytes": 400,
+   "caption": "Structured metadata document (JSON) for a user-uploaded audio clip. Payload carries the audio kind (speech / music / ambient), an audible summary, and audio-asset metadata.",
+   "scope": "global",
+   "file": "process/poem_recital/media/intakeaudioagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"kind\": \"speech\", \"audio_summary\": \"A male speaker dramatically whispers a recitation of Emily Dickinson's poem about hope in English with a slow, solemn tone.\", \"audio_asset\": {\"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/topic10_fixed_outputs/workspace_global_20260711_123603/inputs/20260711_12360…"
+  },
+  {
+   "id": "transcriptionagent_output",
+   "stage": "TranscriptionAgent__step_1_5b478042",
+   "kind": "json",
+   "label": "TranscriptionAgent output",
+   "src_name": "step_1_5b478042_transcriptionagent_exec_2.json",
+   "bytes": 1173,
+   "caption": "Transcript (en): 6 timestamped segment(s). SRT-shaped subtitle artifact — ready for direct burn-in by a compositor's subtitle track (each segment is one SRT cue with start/end seconds + text). Also usable as the 'source text' input to a translation step when bilingual subtitles are needed.",
+   "scope": "global",
+   "file": "process/poem_recital/media/transcriptionagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"segments\": [{\"segment_id\": \"seg_001\", \"start_time\": 0.0, \"end_time\": 5.0, \"text\": \"Hope is the thing with feathers\"}, {\"segment_id\": \"seg_002\", \"start_time\": 5.0, \"end_time\": 11.2, \"text\": \"that perches in the soul\"}, {\"segment_id\": \"seg_003\", \"start_time\": 11.2, \"end_time\": 18.0, \"text\": \"and sings…"
+  },
+  {
+   "id": "narrationagent_output",
+   "stage": "NarrationAgent__step_1_5b478042",
+   "kind": "json",
+   "label": "NarrationAgent output",
+   "src_name": "step_1_5b478042_narrationagent_exec_3.json",
+   "bytes": 3102,
+   "caption": "Illustrated-storytelling narration script: 6 segment(s), 6 narrator line(s). Carries per-segment image_prompt + per-line TTS text + cross-segment art-style anchor. Consumed by an illustration image step and a narrator TTS step.",
+   "scope": "global",
+   "file": "process/poem_recital/media/narrationagent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"overall_style\": \"ethereal watercolor, luminous light, moody indigo and gold\", \"cast\": [{\"character_id\": \"char_001\", \"name\": \"Hope Bird\", \"appearance_prompt\": \"A tiny, delicate bird made of glowing golden light and translucent feathers, radiating a warm and soft luminescence.\"}], \"segments\": [{\"se…"
+  },
+  {
+   "id": "illustration_anchor_char_001",
+   "stage": "IllustrationAgent__step_1_5b478042",
+   "kind": "image",
+   "label": "illustration anchor char 001",
+   "src_name": "step_1_5b478042_illustration_anchor_char_001.png",
+   "bytes": 1774425,
+   "caption": "",
+   "scope": "global",
+   "file": "process/poem_recital/media/illustration_anchor_char_001.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_seg_001",
+   "stage": "IllustrationAgent__step_1_5b478042",
+   "kind": "image",
+   "label": "illustration seg 001",
+   "src_name": "step_1_5b478042_illustration_seg_001.png",
+   "bytes": 2174526,
+   "caption": "Illustration image (png) for narration segment seg_001 (order 1/6). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/poem_recital/media/illustration_seg_001.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_seg_002",
+   "stage": "IllustrationAgent__step_1_5b478042",
+   "kind": "image",
+   "label": "illustration seg 002",
+   "src_name": "step_1_5b478042_illustration_seg_002.png",
+   "bytes": 2098936,
+   "caption": "Illustration image (png) for narration segment seg_002 (order 2/6). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/poem_recital/media/illustration_seg_002.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_seg_003",
+   "stage": "IllustrationAgent__step_1_5b478042",
+   "kind": "image",
+   "label": "illustration seg 003",
+   "src_name": "step_1_5b478042_illustration_seg_003.png",
+   "bytes": 1911252,
+   "caption": "Illustration image (png) for narration segment seg_003 (order 3/6). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/poem_recital/media/illustration_seg_003.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_seg_004",
+   "stage": "IllustrationAgent__step_1_5b478042",
+   "kind": "image",
+   "label": "illustration seg 004",
+   "src_name": "step_1_5b478042_illustration_seg_004.png",
+   "bytes": 2228222,
+   "caption": "Illustration image (png) for narration segment seg_004 (order 4/6). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/poem_recital/media/illustration_seg_004.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_seg_005",
+   "stage": "IllustrationAgent__step_1_5b478042",
+   "kind": "image",
+   "label": "illustration seg 005",
+   "src_name": "step_1_5b478042_illustration_seg_005.png",
+   "bytes": 2074965,
+   "caption": "Illustration image (png) for narration segment seg_005 (order 5/6). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/poem_recital/media/illustration_seg_005.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_seg_006",
+   "stage": "IllustrationAgent__step_1_5b478042",
+   "kind": "image",
+   "label": "illustration seg 006",
+   "src_name": "step_1_5b478042_illustration_seg_006.png",
+   "bytes": 1832680,
+   "caption": "Illustration image (png) for narration segment seg_006 (order 6/6). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/poem_recital/media/illustration_seg_006.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustrationagent_output",
+   "stage": "IllustrationAgent__step_1_5b478042",
+   "kind": "json",
+   "label": "IllustrationAgent output",
+   "src_name": "step_1_5b478042_illustrationagent_exec_4.json",
+   "bytes": 2059,
+   "caption": "Illustration manifest (JSON): 6 image(s) aligned to narration segments. Consumed by the compositor step when assembling an illustrated-storytelling slideshow.",
+   "scope": "global",
+   "file": "process/poem_recital/media/illustrationagent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"overall_style\": \"ethereal watercolor, luminous light, moody indigo and gold\", \"character_anchors\": [{\"character_id\": \"char_001\", \"appearance_prompt\": \"A tiny, delicate bird made of glowing golden light and translucent feathers, radiating a warm and soft luminescence.\"}], \"illustrations\": [{\"segme…"
+  },
+  {
+   "id": "aud_narrator_full",
+   "stage": "NarratorAgent__step_1_5b478042",
+   "kind": "audio",
+   "label": "aud narrator full",
+   "src_name": "step_1_5b478042_aud_narrator_full.wav",
+   "bytes": 1655084,
+   "caption": "[BINARY WAV FILE · mime=audio/wav · sys_id aud_narrator_full] Narrator voiceover audio bytes (34.5s, language=en-US). Concatenated TTS for an illustrated-storytelling video. Consumed by the audio-mix or compositor materializer.",
+   "scope": "global",
+   "file": "process/poem_recital/media/aud_narrator_full.mp3",
+   "dur": 34.48
+  },
+  {
+   "id": "narratoragent_output",
+   "stage": "NarratorAgent__step_1_5b478042",
+   "kind": "json",
+   "label": "NarratorAgent output",
+   "src_name": "step_1_5b478042_narratoragent_exec_5.json",
+   "bytes": 3439,
+   "caption": "[JSON MANIFEST] Narrator session manifest: 6 line(s), 6 segment(s), total 34.5s. Per-line / per-segment timing. Dev/debug view; downstream consumption goes through the sibling audio / srt / timing artifacts.",
+   "scope": "global",
+   "file": "process/poem_recital/media/narratoragent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"speaker\": \"\", \"lines\": [{\"line_id\": \"ln_001\", \"segment_id\": \"seg_001\", \"text\": \"Hope is the thing with feathers\", \"pause_after_ms\": 0}, {\"line_id\": \"ln_002\", \"segment_id\": \"seg_002\", \"text\": \"that perches in the soul\", \"pause_after_ms\": 0}, {\"line_id\": \"ln_003\", \"segment_id\": \"seg_003\", \"text\": \"…"
+  },
+  {
+   "id": "narrator_segment_timing",
+   "stage": "NarratorAgent__step_1_5b478042",
+   "kind": "json",
+   "label": "narrator segment timing",
+   "src_name": "step_1_5b478042_narrator_segment_timing.json",
+   "bytes": 1184,
+   "caption": "[JSON MANIFEST] Narrator per-segment timing: 6 segment(s) with start / end / duration seconds. Used by a slideshow compositor to set how long each illustration stays on screen.",
+   "scope": "global",
+   "file": "process/poem_recital/media/narrator_segment_timing.json",
+   "excerpt": "{\"total_duration_sec\": 34.48, \"segment_timings\": [{\"segment_id\": \"seg_001\", \"start_sec\": 0.0, \"end_sec\": 5.1, \"duration_sec\": 5.1, \"line_ids\": [\"ln_001\"]}, {\"segment_id\": \"seg_002\", \"start_sec\": 5.1, \"end_sec\": 10.36, \"duration_sec\": 5.26, \"line_ids\": [\"ln_002\"]}, {\"segment_id\": \"seg_003\", \"start_sec\": 10.36, \"end_sec\"…"
+  },
+  {
+   "id": "narrator_srt",
+   "stage": "NarratorAgent__step_1_5b478042",
+   "kind": "json",
+   "label": "narrator srt",
+   "src_name": "step_1_5b478042_narrator_srt.json",
+   "bytes": 510,
+   "caption": "[JSON MANIFEST · SRT cues] Narrator subtitle track (language=en-US): one cue per narration line, timed against the narrator audio. Consumed by the compositor step as a burn-in subtitle source.",
+   "scope": "global",
+   "file": "process/poem_recital/media/narrator_srt.json",
+   "excerpt": "{\"tracks\": [{\"language\": \"en-US\", \"srt_text\": \"1\\n00:00:00,000 --> 00:00:05,100\\nHope is the thing with feathers\\n\\n2\\n00:00:05,100 --> 00:00:10,360\\nthat perches in the soul\\n\\n3\\n00:00:10,360 --> 00:00:17,060\\nand sings the tune without the words\\n\\n4\\n00:00:17,060 --> 00:00:21,600\\nand never stops at all\\n\\n5\\n00:00…"
+  },
+  {
+   "id": "ambienceagent_output",
+   "stage": "AmbienceAgent__step_1_5b478042",
+   "kind": "json",
+   "label": "AmbienceAgent output",
+   "src_name": "step_1_5b478042_ambienceagent_exec_6.json",
+   "bytes": 276,
+   "caption": "[JSON MANIFEST] Ambience planning metadata: 1 bed(s) carrying the LLM-chosen description for the film-wide room-tone underlay. Read by the audio-mix LLM for mix planning.",
+   "scope": "global",
+   "file": "process/poem_recital/media/ambienceagent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"beds\": [{\"ambience_id\": \"amb_film\", \"description\": \"A quiet, ethereal space ambience with a very soft, sweeping wind and a subtle, warm atmospheric hum that evokes a vast, starlit sky.\"}]}"
+  },
+  {
+   "id": "aud_final",
+   "stage": "AudioMixAgent__step_1_5b478042",
+   "kind": "audio",
+   "label": "aud final",
+   "src_name": "step_1_5b478042_aud_final.wav",
+   "bytes": 1655084,
+   "caption": "[BINARY WAV FILE · mime=audio/wav · sys_id aud_final] Final-mix audio bytes — all source audio tracks (dialogue / foley / music / ambience / narrator) merged. Ready to be muxed onto the delivered video by a downstream compositing step.",
+   "scope": "global",
+   "file": "process/poem_recital/media/aud_final.mp3",
+   "dur": 34.48
+  },
+  {
+   "id": "audiomixagent_output",
+   "stage": "AudioMixAgent__step_1_5b478042",
+   "kind": "json",
+   "label": "AudioMixAgent output",
+   "src_name": "step_1_5b478042_audiomixagent_exec_7.json",
+   "bytes": 43,
+   "caption": "[JSON MANIFEST] Final-audio-mix envelope: amix of 0 source track(s) (video dialogue+foley + optional global music/ambience/narrator). Planning manifest only; the wav is a sibling artifact.",
+   "scope": "global",
+   "file": "process/poem_recital/media/audiomixagent_output.json",
+   "excerpt": "{\"language\": \"en\"}"
+  },
+  {
+   "id": "compositor_final",
+   "stage": "CompositorAgent__step_1_5b478042",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_1_5b478042_compositor_final.mp4",
+   "bytes": 3712249,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "file": "videos/poem_recital.mp4",
+   "poster": "posters/poem_recital.jpg",
+   "final": true,
+   "w": 1920,
+   "h": 1080,
+   "dur": 34.48
+  },
+  {
+   "id": "compositoragent_output",
+   "stage": "CompositorAgent__step_1_5b478042",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_1_5b478042_compositoragent_exec_8.json",
+   "bytes": 425,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/poem_recital/media/compositoragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"plan\": {\"color_grade\": {\"brightness\": 0.0, \"contrast\": 0.05, \"saturation\": 0.05}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"subtitle_language\": \"en\", \"output_resolution\": \"1920x1080\", \"output_fps\": 30}}"
+  }
+ ],
+ "edges": [
+  {
+   "from": "user_recitation",
+   "to": "IntakeAudioAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narrationagent_output",
+   "to": "IllustrationAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narrationagent_output",
+   "to": "NarratorAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "user_recitation",
+   "to": "NarratorAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narrationagent_output",
+   "to": "AmbienceAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_narrator_full",
+   "to": "AudioMixAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "user_recitation",
+   "to": "AudioMixAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_anchor_char_001",
+   "to": "CompositorAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_001",
+   "to": "CompositorAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_002",
+   "to": "CompositorAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_003",
+   "to": "CompositorAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_004",
+   "to": "CompositorAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_005",
+   "to": "CompositorAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_006",
+   "to": "CompositorAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_final",
+   "to": "CompositorAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_narrator_full",
+   "to": "CompositorAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "transcriptionagent_output",
+   "to": "CompositorAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "NarrationAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeaudioagent_output",
+   "to": "NarrationAgent__step_1_5b478042",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "compositor_final",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

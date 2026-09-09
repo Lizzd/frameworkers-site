@@ -1,0 +1,952 @@
+{
+ "key": "tech_anchor",
+ "title": "Tech Update",
+ "genre": "News Broadcast · Virtual Anchor",
+ "cat": "Explainer",
+ "prompt": "A 60-second tech news bulletin: the user supplies the three stories word for word and the system must read them as given, inventing nothing. A stylized 3D anchor holds one identity across the whole bulletin (a photoreal anchor would be rejected by the video backend's real-person filter), delivered in English with English subtitles.",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/topic12_anchor/workspace_global_20260730_121744"
+ },
+ "generated_at": "2026-09-09T15:56:39+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 1
+  },
+  {
+   "id": "NewsBroadcastAgent__step_1_9a0ae09b",
+   "agent": "NewsBroadcastAgent",
+   "label": "NewsBroadcast",
+   "step": "step_1_9a0ae09b",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "agent": "KeyframeSheetAgent",
+   "label": "KeyframeSheet",
+   "step": "step_1_9a0ae09b",
+   "order": 2,
+   "n": 19
+  },
+  {
+   "id": "ShotPromptAgent__step_1_9a0ae09b",
+   "agent": "ShotPromptAgent",
+   "label": "ShotPrompt",
+   "step": "step_1_9a0ae09b",
+   "order": 3,
+   "n": 5
+  },
+  {
+   "id": "ClipAgent__step_1_9a0ae09b",
+   "agent": "ClipAgent",
+   "label": "Clip",
+   "step": "step_1_9a0ae09b",
+   "order": 4,
+   "n": 6
+  },
+  {
+   "id": "VoiceoverAgent__step_1_9a0ae09b",
+   "agent": "VoiceoverAgent",
+   "label": "Voiceover",
+   "step": "step_1_9a0ae09b",
+   "order": 5,
+   "n": 3
+  },
+  {
+   "id": "AudioMixAgent__step_1_9a0ae09b",
+   "agent": "AudioMixAgent",
+   "label": "AudioMix",
+   "step": "step_1_9a0ae09b",
+   "order": 6,
+   "n": 2
+  },
+  {
+   "id": "CompositorAgent__step_1_9a0ae09b",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_1_9a0ae09b",
+   "order": 7,
+   "n": 2
+  }
+ ],
+ "nodes": [
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260730_121744_034616.json",
+   "bytes": 1685,
+   "caption": "Structured metadata document (JSON) for a user-submitted text brief. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/creative_brief.json",
+   "excerpt": "{\"text\": \"Make a tech news broadcast around 60 seconds, with a virtual anchor in a clean studio reading the day's three big tech stories. Which three and the exact wording of each I'll provide — read them as given, don't go making up news yourself. The anchor should look the same the whole way through, and put up title…"
+  },
+  {
+   "id": "newsbroadcastagent_output",
+   "stage": "NewsBroadcastAgent__step_1_9a0ae09b",
+   "kind": "json",
+   "label": "NewsBroadcastAgent output",
+   "src_name": "step_1_9a0ae09b_newsbroadcastagent_exec_1.json",
+   "bytes": 11438,
+   "caption": "Shot-rich story: 4 shot(s), 1 character(s) — drives keyframe/storyboard/audio.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/newsbroadcastagent_output.json",
+   "excerpt": "{\"title\": \"Tech Update: DeepSeek R1, Quantum Threshold, EU AI Act\", \"logline\": \"A sixty-second global tech broadcast reporting on DeepSeek's open-weights model release, Google's quantum error correction milestone, and the enforcement of the EU AI Act.\", \"setting\": \"A sleek generic modern news studio set with abstract d…"
+  },
+  {
+   "id": "anchor_anchor",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "image",
+   "label": "anchor anchor",
+   "src_name": "step_1_9a0ae09b_img_anchor_anchor.png",
+   "bytes": 4738947,
+   "caption": "GENERATED internal identity reference card for character anchor — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/anchor_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "broll_datacenter_anchor",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "image",
+   "label": "broll datacenter anchor",
+   "src_name": "step_1_9a0ae09b_img_broll_datacenter_anchor.png",
+   "bytes": 5564198,
+   "caption": "GENERATED internal identity reference card for location broll_datacenter — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/broll_datacenter_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "broll_eu_building_anchor",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "image",
+   "label": "broll eu building anchor",
+   "src_name": "step_1_9a0ae09b_img_broll_eu_building_anchor.png",
+   "bytes": 6136272,
+   "caption": "GENERATED internal identity reference card for location broll_eu_building — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/broll_eu_building_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "broll_quantum_lab_anchor",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "image",
+   "label": "broll quantum lab anchor",
+   "src_name": "step_1_9a0ae09b_img_broll_quantum_lab_anchor.png",
+   "bytes": 5713959,
+   "caption": "GENERATED internal identity reference card for location broll_quantum_lab — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/broll_quantum_lab_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "studio_anchor",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "image",
+   "label": "studio anchor",
+   "src_name": "step_1_9a0ae09b_img_studio_anchor.png",
+   "bytes": 5309491,
+   "caption": "GENERATED internal identity reference card for location studio — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/studio_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "anchor_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "text",
+   "label": "anchor anchor prompt",
+   "src_name": "step_1_9a0ae09b_img_anchor_anchor_prompt.txt",
+   "bytes": 2158,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the character anchor anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/anchor_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): High-end stylized 3D digital animation aesthetic with soft studio key lighting; Clean metallic slate gray and cyan neon accents; Balanced camera framing maintaining clean spatial contrast near the lower margin for downstream captions; Sleek gene…"
+  },
+  {
+   "id": "broll_datacenter_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "text",
+   "label": "broll datacenter anchor prompt",
+   "src_name": "step_1_9a0ae09b_img_broll_datacenter_anchor_prompt.txt",
+   "bytes": 2234,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location broll_datacenter anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/broll_datacenter_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): High-end stylized 3D digital animation aesthetic with soft studio key lighting; Clean metallic slate gray and cyan neon accents; Balanced camera framing maintaining clean spatial contrast near the lower margin for downstream captions; Sleek gene…"
+  },
+  {
+   "id": "broll_eu_building_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "text",
+   "label": "broll eu building anchor prompt",
+   "src_name": "step_1_9a0ae09b_img_broll_eu_building_anchor_prompt.txt",
+   "bytes": 2205,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location broll_eu_building anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/broll_eu_building_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): High-end stylized 3D digital animation aesthetic with soft studio key lighting; Clean metallic slate gray and cyan neon accents; Balanced camera framing maintaining clean spatial contrast near the lower margin for downstream captions; Sleek gene…"
+  },
+  {
+   "id": "broll_quantum_lab_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "text",
+   "label": "broll quantum lab anchor prompt",
+   "src_name": "step_1_9a0ae09b_img_broll_quantum_lab_anchor_prompt.txt",
+   "bytes": 2226,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location broll_quantum_lab anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/broll_quantum_lab_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): High-end stylized 3D digital animation aesthetic with soft studio key lighting; Clean metallic slate gray and cyan neon accents; Balanced camera framing maintaining clean spatial contrast near the lower margin for downstream captions; Sleek gene…"
+  },
+  {
+   "id": "studio_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "text",
+   "label": "studio anchor prompt",
+   "src_name": "step_1_9a0ae09b_img_studio_anchor_prompt.txt",
+   "bytes": 2227,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location studio anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/studio_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): High-end stylized 3D digital animation aesthetic with soft studio key lighting; Clean metallic slate gray and cyan neon accents; Balanced camera framing maintaining clean spatial contrast near the lower margin for downstream captions; Sleek gene…"
+  },
+  {
+   "id": "keyframesheetagent_output",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "json",
+   "label": "KeyframeSheetAgent output",
+   "src_name": "step_1_9a0ae09b_keyframesheetagent_exec_2.json",
+   "bytes": 16400,
+   "caption": "Sheet-model keyframe package: 5 identity anchor card(s) + 4 per-shot storyboard sheet(s). Drives the downstream image-to-video stage.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/keyframesheetagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"anchors\": {\"character_anchors\": [{\"entity_id\": \"anchor\", \"prompt_summary\": \"Stylized 3D animated virtual presenter with neat dark navy hair styled back. Clean, symmetrical facial features with a neutral and composed professional expression. Wears a tailored charcoal gray suit jacket over a crisp lig…"
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "image",
+   "label": "sh 001 storyboard",
+   "src_name": "step_1_9a0ae09b_img_sh_001_storyboard.png",
+   "bytes": 5499362,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_001 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/tech_anchor/media/sh_001_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "text",
+   "label": "sh 001 storyboard prompt",
+   "src_name": "step_1_9a0ae09b_img_sh_001_storyboard_prompt.txt",
+   "bytes": 2926,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_001's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/tech_anchor/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] High-end stylized 3D digital animation aesthetic with soft stud…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "image",
+   "label": "sh 002 storyboard",
+   "src_name": "step_1_9a0ae09b_img_sh_002_storyboard.png",
+   "bytes": 5156535,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_002 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/tech_anchor/media/sh_002_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "text",
+   "label": "sh 002 storyboard prompt",
+   "src_name": "step_1_9a0ae09b_img_sh_002_storyboard_prompt.txt",
+   "bytes": 3456,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_002's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/tech_anchor/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] High-end stylized 3D digital animation aesthetic with soft stud…"
+  },
+  {
+   "id": "sh_003_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "image",
+   "label": "sh 003 storyboard",
+   "src_name": "step_1_9a0ae09b_img_sh_003_storyboard.png",
+   "bytes": 5446239,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_003 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/tech_anchor/media/sh_003_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_003_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "text",
+   "label": "sh 003 storyboard prompt",
+   "src_name": "step_1_9a0ae09b_img_sh_003_storyboard_prompt.txt",
+   "bytes": 3422,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_003's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/tech_anchor/media/sh_003_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] High-end stylized 3D digital animation aesthetic with soft stud…"
+  },
+  {
+   "id": "sh_004_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "image",
+   "label": "sh 004 storyboard",
+   "src_name": "step_1_9a0ae09b_img_sh_004_storyboard.png",
+   "bytes": 4558257,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_004 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/tech_anchor/media/sh_004_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_004_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "kind": "text",
+   "label": "sh 004 storyboard prompt",
+   "src_name": "step_1_9a0ae09b_img_sh_004_storyboard_prompt.txt",
+   "bytes": 3435,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_004's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/tech_anchor/media/sh_004_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] High-end stylized 3D digital animation aesthetic with soft stud…"
+  },
+  {
+   "id": "shotpromptagent_output",
+   "stage": "ShotPromptAgent__step_1_9a0ae09b",
+   "kind": "json",
+   "label": "ShotPromptAgent output",
+   "src_name": "step_1_9a0ae09b_shotpromptagent_exec_3.json",
+   "bytes": 13568,
+   "caption": "Per-shot video-generation prompt package: 4 Seedance prompt(s) (9-section), one per shot — pairs with the storyboard sheet to drive the image-to-video clip stage.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/shotpromptagent_output.json",
+   "excerpt": "[{\"shot_id\": \"sh_001\", \"text_prompt\": \"[设定]\\n现代全球化虚拟新闻直播间与科技展演空间，具备理性、专业且平稳的纪实科普氛围。\\n\\n[风格]\\nHigh-end stylized 3D digital animation aesthetic，整体呈现冷峻、专业且充满秩序感的现代科技调性。\\n\\n[参考图]\\n[Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴]…"
+  },
+  {
+   "id": "shot_prompt_sh_001",
+   "stage": "ShotPromptAgent__step_1_9a0ae09b",
+   "kind": "text",
+   "label": "shot prompt sh 001",
+   "src_name": "step_1_9a0ae09b_shot_prompt_sh_001.txt",
+   "bytes": 3076,
+   "caption": "video-generation text prompt for shot sh_001 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/tech_anchor/media/shot_prompt_sh_001.txt",
+   "excerpt": "[设定] 现代全球化虚拟新闻直播间与科技展演空间，具备理性、专业且平稳的纪实科普氛围。 [风格] High-end stylized 3D digital animation aesthetic，整体呈现冷峻、专业且充满秩序感的现代科技调性。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 …"
+  },
+  {
+   "id": "shot_prompt_sh_002",
+   "stage": "ShotPromptAgent__step_1_9a0ae09b",
+   "kind": "text",
+   "label": "shot prompt sh 002",
+   "src_name": "step_1_9a0ae09b_shot_prompt_sh_002.txt",
+   "bytes": 2991,
+   "caption": "video-generation text prompt for shot sh_002 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/tech_anchor/media/shot_prompt_sh_002.txt",
+   "excerpt": "[设定] 现代科技与财经新闻播报环境，具备全球化严肃专业科普与市场资讯传达氛围。 [风格] High-end stylized 3D digital animation aesthetic，严肃冷静、理智专业的科技与财经视听基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中…"
+  },
+  {
+   "id": "shot_prompt_sh_003",
+   "stage": "ShotPromptAgent__step_1_9a0ae09b",
+   "kind": "text",
+   "label": "shot prompt sh 003",
+   "src_name": "step_1_9a0ae09b_shot_prompt_sh_003.txt",
+   "bytes": 3134,
+   "caption": "video-generation text prompt for shot sh_003 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/tech_anchor/media/shot_prompt_sh_003.txt",
+   "excerpt": "[设定] 现代科技与新闻演播室环境，兼具国际政策发布与科学示范氛围，选角与口音定位专业理性的新闻播报风格。 [风格] High-end stylized 3D digital animation aesthetic，整体呈现理性、专业且平稳的纪实新闻与科普质感。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格…"
+  },
+  {
+   "id": "shot_prompt_sh_004",
+   "stage": "ShotPromptAgent__step_1_9a0ae09b",
+   "kind": "text",
+   "label": "shot prompt sh 004",
+   "src_name": "step_1_9a0ae09b_shot_prompt_sh_004.txt",
+   "bytes": 3075,
+   "caption": "video-generation text prompt for shot sh_004 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/tech_anchor/media/shot_prompt_sh_004.txt",
+   "excerpt": "[设定] 现代科技感新闻演播室环境，专为全球资讯播报打造，整体呈现严谨、专业且清晰可信的科普演示氛围。 [风格] High-end stylized 3D digital animation aesthetic。全片保持理性、清晰且温和理性的视觉基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是…"
+  },
+  {
+   "id": "clip_final",
+   "stage": "ClipAgent__step_1_9a0ae09b",
+   "kind": "video",
+   "label": "clip final",
+   "src_name": "step_1_9a0ae09b_clip_final.mp4",
+   "bytes": 12716832,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_final] Complete assembled film bytes (4 shot(s) concatenated). The final visual deliverable — consumed by a downstream audio-mix / compositor step's materializer for muxing / subtitle burn-in.",
+   "scope": "global",
+   "w": 864,
+   "h": 496,
+   "dur": 60.4,
+   "poster": "process/tech_anchor/media/clip_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "clipagent_output",
+   "stage": "ClipAgent__step_1_9a0ae09b",
+   "kind": "json",
+   "label": "ClipAgent output",
+   "src_name": "step_1_9a0ae09b_clipagent_exec_4.json",
+   "bytes": 1064,
+   "caption": "[JSON MANIFEST] Clip-assembly plan: 4 per-shot clip plan(s) with duration + transition + scene grouping. Read by a downstream audio-mix / compositor step's LLM.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/clipagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"clips\": [{\"shot_id\": \"sh_001\", \"duration_sec\": 5.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_002\", \"duration_sec\": 5.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_003\", \"duration_sec\": 5.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_004\", \"duration_sec\": 5.0, \"scene_id\": \"sc_001\"}], \"assembly\": {\"shot_order\":…"
+  },
+  {
+   "id": "clip_sh_001",
+   "stage": "ClipAgent__step_1_9a0ae09b",
+   "kind": "video",
+   "label": "clip sh 001",
+   "src_name": "step_1_9a0ae09b_clip_sh_001.mp4",
+   "bytes": 3554608,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_001] Rendered video clip bytes for shot sh_001 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/tech_anchor/media/clip_sh_001_poster.jpg",
+   "file": "process/tech_anchor/media/clip_sh_001.mp4"
+  },
+  {
+   "id": "clip_sh_002",
+   "stage": "ClipAgent__step_1_9a0ae09b",
+   "kind": "video",
+   "label": "clip sh 002",
+   "src_name": "step_1_9a0ae09b_clip_sh_002.mp4",
+   "bytes": 2956326,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_002] Rendered video clip bytes for shot sh_002 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/tech_anchor/media/clip_sh_002_poster.jpg",
+   "file": "process/tech_anchor/media/clip_sh_002.mp4"
+  },
+  {
+   "id": "clip_sh_003",
+   "stage": "ClipAgent__step_1_9a0ae09b",
+   "kind": "video",
+   "label": "clip sh 003",
+   "src_name": "step_1_9a0ae09b_clip_sh_003.mp4",
+   "bytes": 4184291,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_003] Rendered video clip bytes for shot sh_003 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/tech_anchor/media/clip_sh_003_poster.jpg",
+   "file": "process/tech_anchor/media/clip_sh_003.mp4"
+  },
+  {
+   "id": "clip_sh_004",
+   "stage": "ClipAgent__step_1_9a0ae09b",
+   "kind": "video",
+   "label": "clip sh 004",
+   "src_name": "step_1_9a0ae09b_clip_sh_004.mp4",
+   "bytes": 2111810,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_004] Rendered video clip bytes for shot sh_004 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/tech_anchor/media/clip_sh_004_poster.jpg",
+   "file": "process/tech_anchor/media/clip_sh_004.mp4"
+  },
+  {
+   "id": "aud_voiceover_full",
+   "stage": "VoiceoverAgent__step_1_9a0ae09b",
+   "kind": "audio",
+   "label": "aud voiceover full",
+   "src_name": "step_1_9a0ae09b_aud_voiceover_full.wav",
+   "bytes": 11591502,
+   "caption": "[BINARY WAV FILE · mime=audio/wav · sys_id aud_voiceover_full] Narrator voiceover audio bytes — the authored per-shot VO laid across the rendered timeline. Consumed by the audio-mix or compositor materializer.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/aud_voiceover_full.mp3",
+   "dur": 60.37
+  },
+  {
+   "id": "voiceoveragent_output",
+   "stage": "VoiceoverAgent__step_1_9a0ae09b",
+   "kind": "json",
+   "label": "VoiceoverAgent output",
+   "src_name": "step_1_9a0ae09b_voiceoveragent_exec_5.json",
+   "bytes": 1614,
+   "caption": "[JSON MANIFEST] Cine voice-over plan: 4 narrator line(s) across 4 shot(s) (one narrator, authored per-shot VO). Dev/debug view; downstream consumption goes through the sibling audio / srt artifacts.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/voiceoveragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"voice\": \"\", \"voice_instructions\": \"Male presenter in his late 30s delivering a professional news broadcast. Deep, authoritative, and perfectly articulated English with a neutral General American broadcast accent. Maintains a calm, steady, and measured pace suitable for global technology news reporti…"
+  },
+  {
+   "id": "voiceover_srt",
+   "stage": "VoiceoverAgent__step_1_9a0ae09b",
+   "kind": "json",
+   "label": "voiceover srt",
+   "src_name": "step_1_9a0ae09b_voiceover_srt.json",
+   "bytes": 1062,
+   "caption": "[JSON MANIFEST · SRT cues] Narrator subtitle track: one cue per voice-over line, timed against the narrator audio. Consumed by the compositor step as a burn-in subtitle source.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/voiceover_srt.json",
+   "excerpt": "{\"tracks\": [{\"language\": \"en\", \"srt_text\": \"1\\n00:00:00,000 --> 00:00:15,103\\nWelcome to Tech Update. Today, DeepSeek releases open-weights model R1, quantum hardware crosses a key error threshold, and the EU AI Act enters into force. DeepSeek R1 offers frontier reasoning at a fraction of standard training costs.\\n\\n2\\…"
+  },
+  {
+   "id": "aud_final",
+   "stage": "AudioMixAgent__step_1_9a0ae09b",
+   "kind": "audio",
+   "label": "aud final",
+   "src_name": "step_1_9a0ae09b_aud_final.wav",
+   "bytes": 10661170,
+   "caption": "[BINARY WAV FILE · mime=audio/wav · sys_id aud_final] Final-mix audio bytes — all source audio tracks (dialogue / foley / music / ambience / narrator) merged. Ready to be muxed onto the delivered video by a downstream compositing step.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/aud_final.mp3",
+   "dur": 60.44
+  },
+  {
+   "id": "audiomixagent_output",
+   "stage": "AudioMixAgent__step_1_9a0ae09b",
+   "kind": "json",
+   "label": "AudioMixAgent output",
+   "src_name": "step_1_9a0ae09b_audiomixagent_exec_6.json",
+   "bytes": 43,
+   "caption": "[JSON MANIFEST] Final-audio-mix envelope: amix of 0 source track(s) (video dialogue+foley + optional global music/ambience/narrator). Planning manifest only; the wav is a sibling artifact.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/audiomixagent_output.json",
+   "excerpt": "{\"language\": \"en\"}"
+  },
+  {
+   "id": "compositor_final",
+   "stage": "CompositorAgent__step_1_9a0ae09b",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_1_9a0ae09b_compositor_final.mp4",
+   "bytes": 7046114,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "file": "videos/tech_anchor.mp4",
+   "poster": "posters/tech_anchor.jpg",
+   "final": true,
+   "w": 864,
+   "h": 496,
+   "dur": 60.44
+  },
+  {
+   "id": "compositoragent_output",
+   "stage": "CompositorAgent__step_1_9a0ae09b",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_1_9a0ae09b_compositoragent_exec_7.json",
+   "bytes": 625,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/tech_anchor/media/compositoragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"plan\": {\"color_grade\": {\"brightness\": 0.0, \"contrast\": 0.05, \"saturation\": 0.05}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"authored_cues\": [], \"card_style\": {\"font_size\": 34, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"posi…"
+  }
+ ],
+ "edges": [
+  {
+   "from": "newsbroadcastagent_output",
+   "to": "KeyframeSheetAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "keyframesheetagent_output",
+   "to": "ShotPromptAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "anchor_anchor",
+   "to": "ShotPromptAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "broll_datacenter_anchor",
+   "to": "ShotPromptAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "broll_eu_building_anchor",
+   "to": "ShotPromptAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "broll_quantum_lab_anchor",
+   "to": "ShotPromptAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "studio_anchor",
+   "to": "ShotPromptAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPromptAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPromptAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPromptAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ShotPromptAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "newsbroadcastagent_output",
+   "to": "ShotPromptAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "ClipAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "ClipAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "ClipAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "ClipAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "anchor_anchor",
+   "to": "ClipAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "broll_datacenter_anchor",
+   "to": "ClipAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "broll_eu_building_anchor",
+   "to": "ClipAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "broll_quantum_lab_anchor",
+   "to": "ClipAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "studio_anchor",
+   "to": "ClipAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ClipAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ClipAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ClipAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ClipAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "newsbroadcastagent_output",
+   "to": "VoiceoverAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_voiceover_full",
+   "to": "AudioMixAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_final",
+   "to": "AudioMixAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_001",
+   "to": "AudioMixAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_002",
+   "to": "AudioMixAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_003",
+   "to": "AudioMixAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_004",
+   "to": "AudioMixAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_final",
+   "to": "CompositorAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_001",
+   "to": "CompositorAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_002",
+   "to": "CompositorAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_003",
+   "to": "CompositorAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_004",
+   "to": "CompositorAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_final",
+   "to": "CompositorAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "NewsBroadcastAgent__step_1_9a0ae09b",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "compositor_final",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

@@ -1,0 +1,71 @@
+[设定]
+Victorian London, 1892 Bloomsbury, in the tradition of classic British locked-room detective fiction; cast is white British. The story stays around Sir Edmund Vale's townhouse study because the crime's central claim is physical confinement: a door bolted from within.
+
+[风格]
+2D 彩色漫画插画（graphic-novel：干净墨线叠加丰富上色，明显非写实、非真人），写实电影质感、胶片定格；全镜头以 50mm 至 100mm 的中长焦与微距特写为主，浅景深锁定物证、手指、眼部反光，背景人物保持可读虚化。
+光源以 3200K 银行家台灯暖硬光为主，叠加 5600K 雨窗冷蓝环境光；高清、细节丰富、电影质感、色彩自然、光影柔和。
+
+[参考图]
+[Image 1]：本镜头的分镜网格图 —— 5 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 5 格 = 右下；每格左上角有一个大的白色编号 1..5）。它同时锁定三件事：① 每格中角色的身份（脸 / 发型 / 服装 / 体型，全片必须一致）；② 每格的画面构图 / 动作 / 镜头；③ 第 N 格 = [镜头]/[时间轴] 中按序的 镜头N。严格遵循。
+角色 `sherlock_holmes` 的固定外形（以分镜网格中该角色为准，全片一致）：Tall narrow man in his late 30s with a hawk nose, sharp grey eyes under heavy lids, black hair brushed back from a high forehead, nicotine-yellow fingertips, a dark Inverness coat over a black waistcoat, and a brass-rimmed magnifying lens tucked between two fingers.
+角色 `caleb_pike` 的固定外形（以分镜网格中该角色为准，全片一致）：Private secretary in his early 30s with a pale oval face, oiled black centre-parted hair, thin moustache waxed to needle points, starched white collar too tight at the throat, ink-darkened left thumb, and a right shirt cuff marked by a tiny crescent of dried blue sealing wax.
+角色 `sir_edmund_vale` 的固定外形（以分镜网格中该角色为准，全片一致）：Dead gentleman in his late 60s with silver mutton-chop whiskers, blue-veined left hand wearing a heavy signet ring, burgundy smoking jacket, loosened silk cravat, and a dark bullet wound at the right temple while seated at a massive writing desk.
+角色 `dr_watson` 的固定外形（以分镜网格中该角色为准，全片一致）：Sturdy military doctor in his early 40s with a thick sandy moustache, warm eyes, a faint limp in the left leg, brown tweed suit damp at the cuffs, leather medical bag in one hand, and a silver watch chain crossing his waistcoat.
+角色 `inspector_lestrade` 的固定外形（以分镜网格中该角色为准，全片一致）：Small wiry Scotland Yard inspector in his 40s with a pointed chin, narrow watchful eyes, rain-speckled bowler hat, dark overcoat with shiny elbows, and a black notebook held tight against his ribs.
+
+[镜头]
+镜头1
+100mm 微距 / 烟灰碟与烟蒂的大特写 / 桌面高度平拍，正面，轻微俯角 / 画面右侧暖色硬质台灯主光，雨窗冷蓝环境光衰减，黑色电影高反差 / 烟灰碟大特写起幅 → 缓慢推进 → 落幅廉价烟蒂咬痕大特写 / 运镜平稳丝滑、无抖动
+
+镜头2
+85mm / 抽屉内部、黄铜托盘与蓝色封蜡的特写 / 抽屉边缘低位平拍，正面，轻微俯角 / 上侧暖色台灯形成硬边高光，后方冷蓝室内烟雾虚化 / 抽屉特写起幅 → 缓慢推进 → 落幅封蜡凹痕特写 / 运镜平稳丝滑、无抖动
+
+镜头3
+90mm 微距 / 书房门闩与镊子的特写转双人近景语境 / 门闩高度平拍，正面，严守 180 度对白轴线 / 画面左侧暖色台灯擦光显出纤维纹理，雨窗冷蓝补光压低门漆反光 / 门闩特写起幅 → 缓慢拉出 → 落幅门边双人近景 / 运镜平稳丝滑、无抖动
+
+镜头4
+50mm / 福尔摩斯冷静侧影与派克下半身的双人中近景 / 小腿至腰部低位仰拍，斜侧构图 / 暖琥珀色硬侧光来自台灯，雨窗冷蓝边缘光勾出轮廓，书架深阴影 / 双人中近景起幅 → 固定 → 落幅派克鞋尖与书架底座中近景 / 运镜平稳丝滑、无抖动
+
+镜头5
+100mm 微距 / 派克右袖口、拇指与灯罩反光的大特写 / 手腕高度平拍，正面，近距离静态 / 绿色银行家台灯给出暖色光泽高光，雨窗冷蓝轮廓光压在半阴影内 / 袖口大特写起幅 → 固定 → 落幅蓝蜡碎屑与灯罩反光眼部大特写 / 运镜平稳丝滑、无抖动
+
+[物理]
+所有细小物证遵守真实接触与摩擦：火柴杆推动烟蒂时烟蒂沿瓷碟弧面滚动，灰烬随惯性轻微拖痕，不漂浮不穿模。抽屉、封蜡、镊子、门闩、账本与书架受力后才移动，碰撞产生可见反作用，金属、木头、纸张各自保持不同重量与回弹。人物手指、鞋步、袖口布料遵守人体结构与布料垂坠，分格间位置连续，不瞬移；推理动作以稳而准的小幅度手部控制为主，避免夸张甩动。
+
+[时间轴]
+镜头1
+画面焦点钉在福尔摩斯夹着火柴杆的尼古丁泛黄指尖，火柴杆以很小压力从烟蒂侧面顶入，廉价细烟蒂沿烟灰碟内圈滚动半圈，露出纸边上两道并排咬痕；厚雪茄残端停在旁侧不动，形成粗细对比。放大镜圆框里压出派克针尖状小胡子的微小反射，埃德蒙爵士戴戒指的死手在远处软虚，白瓷碟边缘与放大镜圆形层层套住线索；福尔摩斯说话时手腕几乎不抖，呼吸只让镜片反光轻微偏移。
+
+镜头2
+承接上一镜的手部稳定，福尔摩斯用一枚指关节顶住抽屉拉手，向外拉开一掌宽，木轨发涩后停稳；黄铜托盘里的蓝色封蜡横列成块，焦点落在其中一支新鲜拇指甲凹痕上。福尔摩斯两指夹起封蜡，抬到台灯下方，凹痕边缘出现湿滑的亮线；背景右侧派克的墨黑左拇指向袖口后缩回，手背肌腱绷起，白硬领压住喉结，吞咽时领口只上下顶动一点。
+
+镜头3
+华生的右手用镊子尖端夹住门框木刺上的黑色细丝，手腕慢慢上抬，细丝离开木刺后弯成马毛般的弧，受自身弹性向回卷。福尔摩斯的手指从画面侧边进入，轻敲黄铜门闩环底部，另一根同色黑纤维粘在下缘不落；莱斯特雷德的黑笔记本停在肋旁，铅笔尖悬在纸面上，窄眼从纤维移到福尔摩斯手指，鼻翼短促翕动一次，门闩、木刺、镊子的斜线把两处线索连成一条路径。
+
+镜头4
+承接门边线索，福尔摩斯只转动眼珠看向派克，头部不抬，鹰钩鼻侧影压在半边阴影里；派克的下颌在画外收紧，身体重心向后退，右侧抛光皮鞋后移半步，鞋跟撞上书架底座，发出沉钝一击。撞击沿书架传上去，一排账簿依次轻颤，露出写着工资与十月的账簿标签；埃德蒙爵士死手下的解雇信边缘被气流掀起又落下，派克裤管布料向后绷直，显示他想缩回却被书架挡住。
+
+镜头5
+焦点落在派克右袖口那枚新月形蓝色封蜡痕，派克拇指反复用指腹横向搓擦，力度逐步加重，白袖布被压出浅皱，蓝蜡碎屑剥落成几粒却仍有一段牢牢嵌在纤维里。绿色灯罩椭圆反光中，福尔摩斯灰色眼睛由软虚逐渐变清，眼神光收成两点冷亮；派克的脸在后方虚化，唇缝微张，吸气时鼻翼内收，喉结被紧领顶住，房间其他动作沉下，只留下雨线与他单次压抑呼吸。
+
+[对白]
+sherlock_holmes（高瘦三十多岁男性，黑色披肩外套，灰眼锐利，手持黄铜边放大镜）音色：三十多岁男性，干冷男中音，带锋利切口，语速精准偏快，低音区，受教育的伦敦标准口音，带克制的讥诮与不耐。
+dr_watson（四十出头结实男性，沙色厚胡子，棕色粗花呢西装，手提医疗包）音色：四十出头男性，温厚圆润男高音，语速适中，中音区，受教育的英国口音带轻微军人利落感，关切而忠诚。
+caleb_pike（三十出头苍白男性，黑发中分，针尖小胡子，右袖口有蓝色封蜡痕）音色：三十出头男性，平滑偏轻男中音，受压时破音，语速由克制转急促，中音区，伦敦文员式精致口音，恭顺表面下压着慌乱。
+镜头1: sherlock_holmes："Sir Edmund smoked Havanas to the band. Someone nervous smoked this down to the paper."
+镜头2: sherlock_holmes："Blue wax, unusually soft. Soft enough to stiffen a thread for a journey through a keyhole."
+镜头3: dr_watson："Horsehair?"
+镜头4: sherlock_holmes："Or a violin string. Strong, dark, easily pocketed, and quite at home in a secretary's evening coat."
+镜头5: caleb_pike："I was in the hall when the shot was fired, sir."
+
+[音效]
+镜头1：瓷碟上灰烬细刮声、火柴杆轻触纸烟声、极轻的放大镜金属边碰桌声、窗外雨声与低压钟摆声。
+镜头2：抽屉木轨干涩滑动、黄铜托盘轻颤、封蜡被指尖夹起的细微黏响、室内烟雾般低频环境声。
+镜头3：镊子夹起细丝的纤维拉扯声、黄铜门闩环轻敲声、笔尖停在纸面的短促摩擦、对白清晰人声与窗外雨声。
+镜头4：皮鞋后退碰到书架底座的闷响、账簿纸脊连续轻颤、信纸边缘扑动、台灯电流般低嗡与雨窗声。
+镜头5：拇指搓擦袖布与蜡屑的干脆细响、派克单次压抑吸气、环境低频削弱、雨声贴窗、远处钟摆沉稳摆动。
+
+[约束]
+面部清晰稳定，五官不畸变不变形，正常人体结构与自然比例，手指、袖口、鞋步与物证接触准确不穿模。推理中的细小动作自然连贯不僵硬不抖帧，封蜡、烟蒂、纤维、账簿都要有真实重量、摩擦与惯性。
+
+保持无字幕，画面中不得出现任何字幕 / 台词字幕 / 说明文字 / 标题 / 水印 / Logo / 标志 / 品牌标识 / 叠加文字；对白只用声音表达（口型同步），绝不烧录成画面可见文字。

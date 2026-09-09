@@ -1,0 +1,114 @@
+{
+  "content": {
+    "language": "en",
+    "clips": [
+      {
+        "shot_id": "sh_001",
+        "duration_sec": 5.0,
+        "scene_id": "sc_001"
+      },
+      {
+        "shot_id": "sh_002",
+        "duration_sec": 5.0,
+        "scene_id": "sc_002"
+      },
+      {
+        "shot_id": "sh_003",
+        "duration_sec": 5.0,
+        "scene_id": "sc_002"
+      },
+      {
+        "shot_id": "sh_004",
+        "duration_sec": 5.0,
+        "scene_id": "sc_003"
+      },
+      {
+        "shot_id": "sh_005",
+        "duration_sec": 5.0,
+        "scene_id": "sc_003"
+      },
+      {
+        "shot_id": "sh_006",
+        "duration_sec": 5.0,
+        "scene_id": "sc_004"
+      },
+      {
+        "shot_id": "sh_007",
+        "duration_sec": 5.0,
+        "scene_id": "sc_004"
+      },
+      {
+        "shot_id": "sh_008",
+        "duration_sec": 5.0,
+        "scene_id": "sc_005"
+      },
+      {
+        "shot_id": "sh_009",
+        "duration_sec": 5.0,
+        "scene_id": "sc_005"
+      }
+    ],
+    "assembly": {
+      "shot_order": [
+        "sh_001",
+        "sh_002",
+        "sh_003",
+        "sh_004",
+        "sh_005",
+        "sh_006",
+        "sh_007",
+        "sh_008",
+        "sh_009"
+      ],
+      "scene_order": [
+        "sc_001",
+        "sc_002",
+        "sc_003",
+        "sc_004",
+        "sc_005"
+      ],
+      "transitions": [
+        {
+          "from_shot_id": "sh_001",
+          "to_shot_id": "sh_002",
+          "transition_type": "dissolve"
+        },
+        {
+          "from_shot_id": "sh_002",
+          "to_shot_id": "sh_003",
+          "transition_type": "cut"
+        },
+        {
+          "from_shot_id": "sh_003",
+          "to_shot_id": "sh_004",
+          "transition_type": "dissolve"
+        },
+        {
+          "from_shot_id": "sh_004",
+          "to_shot_id": "sh_005",
+          "transition_type": "cut"
+        },
+        {
+          "from_shot_id": "sh_005",
+          "to_shot_id": "sh_006",
+          "transition_type": "dissolve"
+        },
+        {
+          "from_shot_id": "sh_006",
+          "to_shot_id": "sh_007",
+          "transition_type": "cut"
+        },
+        {
+          "from_shot_id": "sh_007",
+          "to_shot_id": "sh_008",
+          "transition_type": "dissolve"
+        },
+        {
+          "from_shot_id": "sh_008",
+          "to_shot_id": "sh_009",
+          "transition_type": "cut"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "content": {
+    "language": "en-US",
+    "overall_style": "gentle watercolor storybook, soft pastel colors, warm lighting, charming classic illustration",
+    "character_anchors": [
+      {
+        "character_id": "char_001",
+        "appearance_prompt": "A large, fluffy cygnet with dusty grey down feathers, a long neck, and gentle, sad dark eyes."
+      }
+    ],
+    "illustrations": [
+      {
+        "segment_id": "seg_001",
+        "image_prompt": "A large, textured grey egg hatching in a warm nest of green burdock leaves, revealing a big, fluffy, grey cygnet looking around curiously.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_002",
+        "image_prompt": "A busy farmyard with yellow ducklings and a proud rooster turning their backs on a sad grey duckling who hangs his head.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_003",
+        "image_prompt": "The lonely grey duckling walking through tall, wild green reeds under a cloudy autumn sky, looking lost and small.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_004",
+        "image_prompt": "A cold winter landscape with heavy snow falling, a small grey duckling shivering and huddled under a frozen, snow-capped log.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_005",
+        "image_prompt": "Golden spring sunshine melting thick blue ice on a pond, green grass shoots beginning to grow along the wet banks.",
+        "characters_in_segment": []
+      },
+      {
+        "segment_id": "seg_006",
+        "image_prompt": "Three majestic, graceful white swans with long elegant necks swimming together on a sparkling, sunlit pond.",
+        "characters_in_segment": []
+      },
+      {
+        "segment_id": "seg_007",
+        "image_prompt": "The grey duckling swimming timidly toward the three majestic white swans, bowing his head down in shyness.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_008",
+        "image_prompt": "A reflection in clear, blue water showing a stunningly beautiful white swan with elegant feathers, next to the ripples of the pond.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_009",
+        "image_prompt": "A beautiful white swan soaring happily into a bright blue spring sky, leaving the sparkling pond below.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      }
+    ]
+  }
+}

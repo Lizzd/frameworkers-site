@@ -1,0 +1,203 @@
+{
+  "content": {
+    "language": "en-US",
+    "speaker": "",
+    "lines": [
+      {
+        "line_id": "ln_001",
+        "segment_id": "seg_001",
+        "text": "Welcome back to Strange Nature.",
+        "pause_after_ms": 300
+      },
+      {
+        "line_id": "ln_002",
+        "segment_id": "seg_001",
+        "text": "I'm your host, and today, the octopus.",
+        "pause_after_ms": 500
+      },
+      {
+        "line_id": "ln_003",
+        "segment_id": "seg_002",
+        "text": "An octopus has three hearts: two pump blood through the gills, and one drives it around the body.",
+        "pause_after_ms": 500
+      },
+      {
+        "line_id": "ln_004",
+        "segment_id": "seg_003",
+        "text": "That blood runs blue because it carries oxygen with copper instead of iron.",
+        "pause_after_ms": 500
+      },
+      {
+        "line_id": "ln_005",
+        "segment_id": "seg_004",
+        "text": "Of its roughly 500 million neurons, nearly two-thirds live not in its head, but in its arms.",
+        "pause_after_ms": 500
+      },
+      {
+        "line_id": "ln_006",
+        "segment_id": "seg_005",
+        "text": "Each arm tastes, touches, and partly decides on its own.",
+        "pause_after_ms": 500
+      },
+      {
+        "line_id": "ln_007",
+        "segment_id": "seg_006",
+        "text": "And here's the strangest part.",
+        "pause_after_ms": 300
+      },
+      {
+        "line_id": "ln_008",
+        "segment_id": "seg_006",
+        "text": "An octopus is functionally colorblind, yet it can match the color and texture of coral, sand, or stone in under a second using thousands of pigment cells in its skin called chromatophores.",
+        "pause_after_ms": 500
+      },
+      {
+        "line_id": "ln_009",
+        "segment_id": "seg_007",
+        "text": "Some scientists call it the closest thing we have to alien intelligence.",
+        "pause_after_ms": 300
+      },
+      {
+        "line_id": "ln_010",
+        "segment_id": "seg_007",
+        "text": "Maybe intelligence doesn't need a spine at all.",
+        "pause_after_ms": 800
+      }
+    ],
+    "total_duration_sec": 59.0,
+    "clips": [
+      {
+        "line_id": "ln_001",
+        "start_sec": 0.0,
+        "end_sec": 2.282,
+        "duration_sec": 2.282
+      },
+      {
+        "line_id": "ln_002",
+        "start_sec": 2.282,
+        "end_sec": 5.08,
+        "duration_sec": 2.798
+      },
+      {
+        "line_id": "ln_003",
+        "start_sec": 5.08,
+        "end_sec": 12.38,
+        "duration_sec": 7.3
+      },
+      {
+        "line_id": "ln_004",
+        "start_sec": 12.38,
+        "end_sec": 17.18,
+        "duration_sec": 4.8
+      },
+      {
+        "line_id": "ln_005",
+        "start_sec": 17.18,
+        "end_sec": 28.14,
+        "duration_sec": 10.96
+      },
+      {
+        "line_id": "ln_006",
+        "start_sec": 28.14,
+        "end_sec": 31.42,
+        "duration_sec": 3.28
+      },
+      {
+        "line_id": "ln_007",
+        "start_sec": 31.42,
+        "end_sec": 33.292,
+        "duration_sec": 1.872
+      },
+      {
+        "line_id": "ln_008",
+        "start_sec": 33.292,
+        "end_sec": 45.02,
+        "duration_sec": 11.728
+      },
+      {
+        "line_id": "ln_009",
+        "start_sec": 45.02,
+        "end_sec": 53.478,
+        "duration_sec": 8.458
+      },
+      {
+        "line_id": "ln_010",
+        "start_sec": 53.478,
+        "end_sec": 59.0,
+        "duration_sec": 5.522
+      }
+    ],
+    "segment_timings": [
+      {
+        "segment_id": "seg_001",
+        "start_sec": 0.0,
+        "end_sec": 5.08,
+        "duration_sec": 5.08,
+        "line_ids": [
+          "ln_001",
+          "ln_002"
+        ]
+      },
+      {
+        "segment_id": "seg_002",
+        "start_sec": 5.08,
+        "end_sec": 12.38,
+        "duration_sec": 7.3,
+        "line_ids": [
+          "ln_003"
+        ]
+      },
+      {
+        "segment_id": "seg_003",
+        "start_sec": 12.38,
+        "end_sec": 17.18,
+        "duration_sec": 4.8,
+        "line_ids": [
+          "ln_004"
+        ]
+      },
+      {
+        "segment_id": "seg_004",
+        "start_sec": 17.18,
+        "end_sec": 28.14,
+        "duration_sec": 10.96,
+        "line_ids": [
+          "ln_005"
+        ]
+      },
+      {
+        "segment_id": "seg_005",
+        "start_sec": 28.14,
+        "end_sec": 31.42,
+        "duration_sec": 3.28,
+        "line_ids": [
+          "ln_006"
+        ]
+      },
+      {
+        "segment_id": "seg_006",
+        "start_sec": 31.42,
+        "end_sec": 45.02,
+        "duration_sec": 13.6,
+        "line_ids": [
+          "ln_007",
+          "ln_008"
+        ]
+      },
+      {
+        "segment_id": "seg_007",
+        "start_sec": 45.02,
+        "end_sec": 59.0,
+        "duration_sec": 13.98,
+        "line_ids": [
+          "ln_009",
+          "ln_010"
+        ]
+      }
+    ],
+    "srt_text": "1\n00:00:00,000 --> 00:00:02,282\nWelcome back to Strange Nature.\n\n2\n00:00:02,282 --> 00:00:05,080\nI'm your host, and today, the octopus.\n\n3\n00:00:05,080 --> 00:00:12,380\nAn octopus has three hearts: two pump blood through the gills, and one drives it around the body.\n\n4\n00:00:12,380 --> 00:00:17,180\nThat blood runs blue because it carries oxygen with copper instead of iron.\n\n5\n00:00:17,180 --> 00:00:28,140\nOf its roughly 500 million neurons, nearly two-thirds live not in its head, but in its arms.\n\n6\n00:00:28,140 --> 00:00:31,420\nEach arm tastes, touches, and partly decides on its own.\n\n7\n00:00:31,420 --> 00:00:33,292\nAnd here's the strangest part.\n\n8\n00:00:33,292 --> 00:00:45,020\nAn octopus is functionally colorblind, yet it can match the color and texture of coral, sand, or stone in under a second using thousands of pigment cells in its skin called chromatophores.\n\n9\n00:00:45,020 --> 00:00:53,478\nSome scientists call it the closest thing we have to alien intelligence.\n\n10\n00:00:53,478 --> 00:00:59,000\nMaybe intelligence doesn't need a spine at all.\n"
+  },
+  "metrics": {
+    "total_duration_sec": 59.0
+  }
+}

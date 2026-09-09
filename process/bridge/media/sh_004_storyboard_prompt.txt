@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide -> P2 medium -> P3 medium -> P4 wide
+
+[PANEL 1]
+SHOT: wide, eye-level.
+PLACEMENT: The stone arch is bound to the lower frame half as churning swollen water rises around the abutment bases.
+ACTION: Fast-flowing floodwaters surge against the limestone bridge arch during a historic flood demonstration.
+ENV: Refer to loc_bridge_side anchor FRONT section. Overcast stormy sky and dark turbulent river water.
+
+[PANEL 2]
+SHOT: medium, low-angle.
+PLACEMENT: The eastern parapet stone structure is bound along the top edge of the stone arch vault.
+ACTION: Strong water torrents rush over the eastern side where the original parapet was dislodged during the 1612 flood.
+ENV: Refer to loc_bridge_side anchor BACK section. Churning foam and rushing water spray along the stone masonry.
+
+[PANEL 3]
+SHOT: medium, eye-level.
+PLACEMENT: The western triangular cutwater base is bound centered in frame, anchored in deep water currents.
+ACTION: Whirling water currents swirl around the western cutwater masonry base representing 1875 undermining forces.
+ENV: Refer to loc_bridge_side anchor FRONT section. Swirling river eddying around weathered grey limestone blocks.
+
+[PANEL 4]
+SHOT: wide, high-angle.
+PLACEMENT: The complete bridge structure remains firmly anchored spanning the river channel as waters recede.
+ACTION: Floodwaters recede back into a calm river flow around the standing ancient stone arch.
+ENV: Refer to loc_bridge_side anchor OVERHEAD section. Clearing sky overhead and gentle river currents reflecting sunlight.
+
+[RENDERED TEXT]
+Do NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 1 refs (character / prop / location anchors).

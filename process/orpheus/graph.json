@@ -1,0 +1,477 @@
+{
+ "key": "orpheus",
+ "title": "Orpheus and Eurydice",
+ "genre": "Illustrated Audiobook · Myth",
+ "cat": "Storybook",
+ "prompt": "An illustrated audiobook of the myth of Orpheus and Eurydice: a narrator tells the whole story over a slideshow of painted illustrations, with Orpheus, Eurydice, and Hades each speaking their own lines of dialogue woven into the narration — a richer, multi-voice dramatic telling (not a one-line-per-page children's book). Gentle read-aloud English narration, English subtitles, and foley.",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/orpheus_nanopro_outputs/workspace_global_20260711_124855"
+ },
+ "generated_at": "2026-09-09T15:56:47+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 1
+  },
+  {
+   "id": "NarrationAgent__step_1_a4ac8219",
+   "agent": "NarrationAgent",
+   "label": "Narration",
+   "step": "step_1_a4ac8219",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "IllustrationAgent__step_1_a4ac8219",
+   "agent": "IllustrationAgent",
+   "label": "Illustration",
+   "step": "step_1_a4ac8219",
+   "order": 2,
+   "n": 12
+  },
+  {
+   "id": "NarratorAgent__step_1_a4ac8219",
+   "agent": "NarratorAgent",
+   "label": "Narrator",
+   "step": "step_1_a4ac8219",
+   "order": 3,
+   "n": 4
+  },
+  {
+   "id": "AmbienceAgent__step_1_a4ac8219",
+   "agent": "AmbienceAgent",
+   "label": "Ambience",
+   "step": "step_1_a4ac8219",
+   "order": 4,
+   "n": 1
+  },
+  {
+   "id": "AudioMixAgent__step_1_a4ac8219",
+   "agent": "AudioMixAgent",
+   "label": "AudioMix",
+   "step": "step_1_a4ac8219",
+   "order": 5,
+   "n": 2
+  },
+  {
+   "id": "CompositorAgent__step_1_a4ac8219",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_1_a4ac8219",
+   "order": 6,
+   "n": 2
+  }
+ ],
+ "nodes": [
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260711_124855_755359.json",
+   "bytes": 572,
+   "caption": "Structured metadata document (JSON) for a user-submitted text brief. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/orpheus/media/creative_brief.json",
+   "excerpt": "{\"text\": \"An illustrated audiobook of the myth of Orpheus and Eurydice: a narrator tells the whole story over a slideshow of painted illustrations, with Orpheus, Eurydice, and Hades each speaking their own lines of dialogue woven into the narration — a richer, multi-voice dramatic telling (not a one-line-per-page child…"
+  },
+  {
+   "id": "narrationagent_output",
+   "stage": "NarrationAgent__step_1_a4ac8219",
+   "kind": "json",
+   "label": "NarrationAgent output",
+   "src_name": "step_1_a4ac8219_narrationagent_exec_1.json",
+   "bytes": 10511,
+   "caption": "Illustrated-storytelling narration script: 8 segment(s), 31 narrator line(s). Carries per-segment image_prompt + per-line TTS text + cross-segment art-style anchor. Consumed by an illustration image step and a narrator TTS step.",
+   "scope": "global",
+   "file": "process/orpheus/media/narrationagent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"overall_style\": \"classical oil painting, dramatic chiaroscuro, warm romantic tones, soft brushstrokes\", \"cast\": [{\"character_id\": \"char_001\", \"name\": \"Orpheus\", \"appearance_prompt\": \"A young Greek musician with curly dark hair, expressive sorrowful eyes, wearing a simple white wool chiton, holdin…"
+  },
+  {
+   "id": "illustration_anchor_char_001",
+   "stage": "IllustrationAgent__step_1_a4ac8219",
+   "kind": "image",
+   "label": "illustration anchor char 001",
+   "src_name": "step_1_a4ac8219_illustration_anchor_char_001.png",
+   "bytes": 922366,
+   "caption": "",
+   "scope": "global",
+   "file": "process/orpheus/media/illustration_anchor_char_001.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_anchor_char_002",
+   "stage": "IllustrationAgent__step_1_a4ac8219",
+   "kind": "image",
+   "label": "illustration anchor char 002",
+   "src_name": "step_1_a4ac8219_illustration_anchor_char_002.png",
+   "bytes": 1326263,
+   "caption": "",
+   "scope": "global",
+   "file": "process/orpheus/media/illustration_anchor_char_002.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_anchor_char_003",
+   "stage": "IllustrationAgent__step_1_a4ac8219",
+   "kind": "image",
+   "label": "illustration anchor char 003",
+   "src_name": "step_1_a4ac8219_illustration_anchor_char_003.png",
+   "bytes": 1227350,
+   "caption": "",
+   "scope": "global",
+   "file": "process/orpheus/media/illustration_anchor_char_003.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_seg_001",
+   "stage": "IllustrationAgent__step_1_a4ac8219",
+   "kind": "image",
+   "label": "illustration seg 001",
+   "src_name": "step_1_a4ac8219_illustration_seg_001.png",
+   "bytes": 1632022,
+   "caption": "Illustration image (png) for narration segment seg_001 (order 1/8). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/orpheus/media/illustration_seg_001.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_seg_002",
+   "stage": "IllustrationAgent__step_1_a4ac8219",
+   "kind": "image",
+   "label": "illustration seg 002",
+   "src_name": "step_1_a4ac8219_illustration_seg_002.png",
+   "bytes": 1338171,
+   "caption": "Illustration image (png) for narration segment seg_002 (order 2/8). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/orpheus/media/illustration_seg_002.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_seg_003",
+   "stage": "IllustrationAgent__step_1_a4ac8219",
+   "kind": "image",
+   "label": "illustration seg 003",
+   "src_name": "step_1_a4ac8219_illustration_seg_003.png",
+   "bytes": 1540117,
+   "caption": "Illustration image (png) for narration segment seg_003 (order 3/8). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/orpheus/media/illustration_seg_003.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_seg_004",
+   "stage": "IllustrationAgent__step_1_a4ac8219",
+   "kind": "image",
+   "label": "illustration seg 004",
+   "src_name": "step_1_a4ac8219_illustration_seg_004.png",
+   "bytes": 1361342,
+   "caption": "Illustration image (png) for narration segment seg_004 (order 4/8). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/orpheus/media/illustration_seg_004.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_seg_005",
+   "stage": "IllustrationAgent__step_1_a4ac8219",
+   "kind": "image",
+   "label": "illustration seg 005",
+   "src_name": "step_1_a4ac8219_illustration_seg_005.png",
+   "bytes": 1417435,
+   "caption": "Illustration image (png) for narration segment seg_005 (order 5/8). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/orpheus/media/illustration_seg_005.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_seg_006",
+   "stage": "IllustrationAgent__step_1_a4ac8219",
+   "kind": "image",
+   "label": "illustration seg 006",
+   "src_name": "step_1_a4ac8219_illustration_seg_006.png",
+   "bytes": 1639237,
+   "caption": "Illustration image (png) for narration segment seg_006 (order 6/8). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/orpheus/media/illustration_seg_006.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_seg_007",
+   "stage": "IllustrationAgent__step_1_a4ac8219",
+   "kind": "image",
+   "label": "illustration seg 007",
+   "src_name": "step_1_a4ac8219_illustration_seg_007.png",
+   "bytes": 1463777,
+   "caption": "Illustration image (png) for narration segment seg_007 (order 7/8). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/orpheus/media/illustration_seg_007.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustration_seg_008",
+   "stage": "IllustrationAgent__step_1_a4ac8219",
+   "kind": "image",
+   "label": "illustration seg 008",
+   "src_name": "step_1_a4ac8219_illustration_seg_008.png",
+   "bytes": 1549680,
+   "caption": "Illustration image (png) for narration segment seg_008 (order 8/8). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/orpheus/media/illustration_seg_008.jpg",
+   "w": 1376,
+   "h": 768
+  },
+  {
+   "id": "illustrationagent_output",
+   "stage": "IllustrationAgent__step_1_a4ac8219",
+   "kind": "json",
+   "label": "IllustrationAgent output",
+   "src_name": "step_1_a4ac8219_illustrationagent_exec_2.json",
+   "bytes": 3585,
+   "caption": "Illustration manifest (JSON): 8 image(s) aligned to narration segments. Consumed by the compositor step when assembling an illustrated-storytelling slideshow.",
+   "scope": "global",
+   "file": "process/orpheus/media/illustrationagent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"overall_style\": \"classical oil painting, dramatic chiaroscuro, warm romantic tones, soft brushstrokes\", \"character_anchors\": [{\"character_id\": \"char_001\", \"appearance_prompt\": \"A young Greek musician with curly dark hair, expressive sorrowful eyes, wearing a simple white wool chiton, holding a gl…"
+  },
+  {
+   "id": "aud_narrator_full",
+   "stage": "NarratorAgent__step_1_a4ac8219",
+   "kind": "audio",
+   "label": "aud narrator full",
+   "src_name": "step_1_a4ac8219_aud_narrator_full.wav",
+   "bytes": 45447774,
+   "caption": "[BINARY WAV FILE · mime=audio/wav · sys_id aud_narrator_full] Narrator voiceover audio bytes (257.6s, language=en-US). Concatenated TTS for an illustrated-storytelling video. Consumed by the audio-mix or compositor materializer.",
+   "scope": "global",
+   "file": "process/orpheus/media/aud_narrator_full.mp3",
+   "dur": 257.64
+  },
+  {
+   "id": "narratoragent_output",
+   "stage": "NarratorAgent__step_1_a4ac8219",
+   "kind": "json",
+   "label": "NarratorAgent output",
+   "src_name": "step_1_a4ac8219_narratoragent_exec_3.json",
+   "bytes": 17509,
+   "caption": "[JSON MANIFEST] Narrator session manifest: 31 line(s), 8 segment(s), total 257.6s. Per-line / per-segment timing. Dev/debug view; downstream consumption goes through the sibling audio / srt / timing artifacts.",
+   "scope": "global",
+   "file": "process/orpheus/media/narratoragent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"speaker\": \"\", \"lines\": [{\"line_id\": \"ln_001\", \"segment_id\": \"seg_001\", \"text\": \"In the ancient, sun-drenched hills of Thrace, there lived a musician named Orpheus, whose music could tame the wildest beasts and bend the very trees to listen.\", \"pause_after_ms\": 0}, {\"line_id\": \"ln_002\", \"segment_i…"
+  },
+  {
+   "id": "narrator_segment_timing",
+   "stage": "NarratorAgent__step_1_a4ac8219",
+   "kind": "json",
+   "label": "narrator segment timing",
+   "src_name": "step_1_a4ac8219_narrator_segment_timing.json",
+   "bytes": 2040,
+   "caption": "[JSON MANIFEST] Narrator per-segment timing: 8 segment(s) with start / end / duration seconds. Used by a slideshow compositor to set how long each illustration stays on screen.",
+   "scope": "global",
+   "file": "process/orpheus/media/narrator_segment_timing.json",
+   "excerpt": "{\"total_duration_sec\": 257.64, \"segment_timings\": [{\"segment_id\": \"seg_001\", \"start_sec\": 0.0, \"end_sec\": 37.92, \"duration_sec\": 37.92, \"line_ids\": [\"ln_001\", \"ln_002\", \"ln_003\", \"ln_004\"]}, {\"segment_id\": \"seg_002\", \"start_sec\": 37.92, \"end_sec\": 69.76, \"duration_sec\": 31.84, \"line_ids\": [\"ln_005\", \"ln_006\", \"ln_007\",…"
+  },
+  {
+   "id": "narrator_srt",
+   "stage": "NarratorAgent__step_1_a4ac8219",
+   "kind": "json",
+   "label": "narrator srt",
+   "src_name": "step_1_a4ac8219_narrator_srt.json",
+   "bytes": 4352,
+   "caption": "[JSON MANIFEST · SRT cues] Narrator subtitle track (language=en-US): one cue per narration line, timed against the narrator audio. Consumed by the compositor step as a burn-in subtitle source.",
+   "scope": "global",
+   "file": "process/orpheus/media/narrator_srt.json",
+   "excerpt": "{\"tracks\": [{\"language\": \"en-US\", \"srt_text\": \"1\\n00:00:00,000 --> 00:00:11,560\\nIn the ancient, sun-drenched hills of Thrace, there lived a musician named Orpheus, whose music could tame the wildest beasts and bend the very trees to listen.\\n\\n2\\n00:00:11,560 --> 00:00:19,080\\nYet, of all the wonders of the earth, his…"
+  },
+  {
+   "id": "ambienceagent_output",
+   "stage": "AmbienceAgent__step_1_a4ac8219",
+   "kind": "json",
+   "label": "AmbienceAgent output",
+   "src_name": "step_1_a4ac8219_ambienceagent_exec_4.json",
+   "bytes": 356,
+   "caption": "[JSON MANIFEST] Ambience planning metadata: 1 bed(s) carrying the LLM-chosen description for the film-wide room-tone underlay. Read by the audio-mix LLM for mix planning.",
+   "scope": "global",
+   "file": "process/orpheus/media/ambienceagent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"beds\": [{\"ambience_id\": \"amb_film\", \"description\": \"A soft, melancholy ambient underlay featuring a light, tragic wind whispering through cavernous spaces, subtle low-frequency atmospheric hums, and a gentle natural room tone suitable for a mythological landscape.\"}]}"
+  },
+  {
+   "id": "aud_final",
+   "stage": "AudioMixAgent__step_1_a4ac8219",
+   "kind": "audio",
+   "label": "aud final",
+   "src_name": "step_1_a4ac8219_aud_final.wav",
+   "bytes": 45447774,
+   "caption": "[BINARY WAV FILE · mime=audio/wav · sys_id aud_final] Final-mix audio bytes — all source audio tracks (dialogue / foley / music / ambience / narrator) merged. Ready to be muxed onto the delivered video by a downstream compositing step.",
+   "scope": "global",
+   "file": "process/orpheus/media/aud_final.mp3",
+   "dur": 257.64
+  },
+  {
+   "id": "audiomixagent_output",
+   "stage": "AudioMixAgent__step_1_a4ac8219",
+   "kind": "json",
+   "label": "AudioMixAgent output",
+   "src_name": "step_1_a4ac8219_audiomixagent_exec_5.json",
+   "bytes": 43,
+   "caption": "[JSON MANIFEST] Final-audio-mix envelope: amix of 0 source track(s) (video dialogue+foley + optional global music/ambience/narrator). Planning manifest only; the wav is a sibling artifact.",
+   "scope": "global",
+   "file": "process/orpheus/media/audiomixagent_output.json",
+   "excerpt": "{\"language\": \"en\"}"
+  },
+  {
+   "id": "compositor_final",
+   "stage": "CompositorAgent__step_1_a4ac8219",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_1_a4ac8219_compositor_final.mp4",
+   "bytes": 16699594,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "file": "videos/orpheus.mp4",
+   "poster": "posters/orpheus.jpg",
+   "final": true,
+   "w": 1920,
+   "h": 1080,
+   "dur": 257.64
+  },
+  {
+   "id": "compositoragent_output",
+   "stage": "CompositorAgent__step_1_a4ac8219",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_1_a4ac8219_compositoragent_exec_6.json",
+   "bytes": 428,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/orpheus/media/compositoragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"plan\": {\"color_grade\": {\"brightness\": 0.0, \"contrast\": 0.05, \"saturation\": 0.05}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"subtitle_language\": \"en-US\", \"output_resolution\": \"1920x1080\", \"output_fps\": 30}}"
+  }
+ ],
+ "edges": [
+  {
+   "from": "narrationagent_output",
+   "to": "IllustrationAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narrationagent_output",
+   "to": "NarratorAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narrationagent_output",
+   "to": "AmbienceAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_narrator_full",
+   "to": "AudioMixAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_anchor_char_001",
+   "to": "CompositorAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_anchor_char_002",
+   "to": "CompositorAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_anchor_char_003",
+   "to": "CompositorAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_001",
+   "to": "CompositorAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_002",
+   "to": "CompositorAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_003",
+   "to": "CompositorAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_004",
+   "to": "CompositorAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_005",
+   "to": "CompositorAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_006",
+   "to": "CompositorAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_007",
+   "to": "CompositorAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_008",
+   "to": "CompositorAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_final",
+   "to": "CompositorAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_narrator_full",
+   "to": "CompositorAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "NarrationAgent__step_1_a4ac8219",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "compositor_final",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

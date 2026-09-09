@@ -1,0 +1,295 @@
+{
+  "content": {
+    "total_duration_sec": 1064.56,
+    "segment_timings": [
+      {
+        "segment_id": "seg_001",
+        "start_sec": 0.0,
+        "end_sec": 41.98,
+        "duration_sec": 41.98,
+        "line_ids": [
+          "ln_001",
+          "ln_002",
+          "ln_003",
+          "ln_004",
+          "ln_005",
+          "ln_006",
+          "ln_007"
+        ]
+      },
+      {
+        "segment_id": "seg_002",
+        "start_sec": 41.98,
+        "end_sec": 65.08,
+        "duration_sec": 23.1,
+        "line_ids": [
+          "ln_008",
+          "ln_009",
+          "ln_010"
+        ]
+      },
+      {
+        "segment_id": "seg_003",
+        "start_sec": 65.08,
+        "end_sec": 110.24,
+        "duration_sec": 45.16,
+        "line_ids": [
+          "ln_011",
+          "ln_012",
+          "ln_013",
+          "ln_014",
+          "ln_015"
+        ]
+      },
+      {
+        "segment_id": "seg_004",
+        "start_sec": 110.24,
+        "end_sec": 152.76,
+        "duration_sec": 42.52,
+        "line_ids": [
+          "ln_016",
+          "ln_017",
+          "ln_018",
+          "ln_019"
+        ]
+      },
+      {
+        "segment_id": "seg_005",
+        "start_sec": 152.76,
+        "end_sec": 224.7,
+        "duration_sec": 71.94,
+        "line_ids": [
+          "ln_020",
+          "ln_021",
+          "ln_022",
+          "ln_023",
+          "ln_024",
+          "ln_025",
+          "ln_026",
+          "ln_027",
+          "ln_028",
+          "ln_029",
+          "ln_030"
+        ]
+      },
+      {
+        "segment_id": "seg_006",
+        "start_sec": 224.7,
+        "end_sec": 277.0,
+        "duration_sec": 52.3,
+        "line_ids": [
+          "ln_031",
+          "ln_032",
+          "ln_033",
+          "ln_034",
+          "ln_035",
+          "ln_036",
+          "ln_037"
+        ]
+      },
+      {
+        "segment_id": "seg_007",
+        "start_sec": 277.0,
+        "end_sec": 327.62,
+        "duration_sec": 50.62,
+        "line_ids": [
+          "ln_038",
+          "ln_039",
+          "ln_040",
+          "ln_041",
+          "ln_042"
+        ]
+      },
+      {
+        "segment_id": "seg_008",
+        "start_sec": 327.62,
+        "end_sec": 360.26,
+        "duration_sec": 32.64,
+        "line_ids": [
+          "ln_043",
+          "ln_044",
+          "ln_045",
+          "ln_046"
+        ]
+      },
+      {
+        "segment_id": "seg_009",
+        "start_sec": 360.26,
+        "end_sec": 377.18,
+        "duration_sec": 16.92,
+        "line_ids": [
+          "ln_047",
+          "ln_048"
+        ]
+      },
+      {
+        "segment_id": "seg_010",
+        "start_sec": 377.18,
+        "end_sec": 425.82,
+        "duration_sec": 48.64,
+        "line_ids": [
+          "ln_049",
+          "ln_050",
+          "ln_051",
+          "ln_052",
+          "ln_053",
+          "ln_054",
+          "ln_055",
+          "ln_056",
+          "ln_057"
+        ]
+      },
+      {
+        "segment_id": "seg_011",
+        "start_sec": 425.82,
+        "end_sec": 516.16,
+        "duration_sec": 90.34,
+        "line_ids": [
+          "ln_058",
+          "ln_059",
+          "ln_060",
+          "ln_061",
+          "ln_062",
+          "ln_063",
+          "ln_064",
+          "ln_065",
+          "ln_066",
+          "ln_067",
+          "ln_068",
+          "ln_069",
+          "ln_070",
+          "ln_071"
+        ]
+      },
+      {
+        "segment_id": "seg_012",
+        "start_sec": 516.16,
+        "end_sec": 578.4,
+        "duration_sec": 62.24,
+        "line_ids": [
+          "ln_072",
+          "ln_073",
+          "ln_074",
+          "ln_075",
+          "ln_076",
+          "ln_077"
+        ]
+      },
+      {
+        "segment_id": "seg_013",
+        "start_sec": 578.4,
+        "end_sec": 622.2,
+        "duration_sec": 43.8,
+        "line_ids": [
+          "ln_078",
+          "ln_079",
+          "ln_080",
+          "ln_081",
+          "ln_082"
+        ]
+      },
+      {
+        "segment_id": "seg_014",
+        "start_sec": 622.2,
+        "end_sec": 681.38,
+        "duration_sec": 59.18,
+        "line_ids": [
+          "ln_083",
+          "ln_084",
+          "ln_085",
+          "ln_086",
+          "ln_087",
+          "ln_088",
+          "ln_089",
+          "ln_090"
+        ]
+      },
+      {
+        "segment_id": "seg_015",
+        "start_sec": 681.38,
+        "end_sec": 777.32,
+        "duration_sec": 95.94,
+        "line_ids": [
+          "ln_091",
+          "ln_092",
+          "ln_093",
+          "ln_094",
+          "ln_095",
+          "ln_096",
+          "ln_097"
+        ]
+      },
+      {
+        "segment_id": "seg_016",
+        "start_sec": 777.32,
+        "end_sec": 819.9,
+        "duration_sec": 42.58,
+        "line_ids": [
+          "ln_098",
+          "ln_099",
+          "ln_100",
+          "ln_101",
+          "ln_102",
+          "ln_103",
+          "ln_104"
+        ]
+      },
+      {
+        "segment_id": "seg_017",
+        "start_sec": 819.9,
+        "end_sec": 913.42,
+        "duration_sec": 93.52,
+        "line_ids": [
+          "ln_105",
+          "ln_106",
+          "ln_107",
+          "ln_108",
+          "ln_109",
+          "ln_110",
+          "ln_111",
+          "ln_112"
+        ]
+      },
+      {
+        "segment_id": "seg_018",
+        "start_sec": 913.42,
+        "end_sec": 967.56,
+        "duration_sec": 54.14,
+        "line_ids": [
+          "ln_113",
+          "ln_114",
+          "ln_115",
+          "ln_116",
+          "ln_117",
+          "ln_118"
+        ]
+      },
+      {
+        "segment_id": "seg_019",
+        "start_sec": 967.56,
+        "end_sec": 994.9,
+        "duration_sec": 27.34,
+        "line_ids": [
+          "ln_119",
+          "ln_120"
+        ]
+      },
+      {
+        "segment_id": "seg_020",
+        "start_sec": 994.9,
+        "end_sec": 1064.56,
+        "duration_sec": 69.66,
+        "line_ids": [
+          "ln_121",
+          "ln_122",
+          "ln_123",
+          "ln_124",
+          "ln_125",
+          "ln_126",
+          "ln_127",
+          "ln_128"
+        ]
+      }
+    ]
+  }
+}

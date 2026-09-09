@@ -1,0 +1,484 @@
+{
+  "content": {
+    "language": "en-US",
+    "speaker": "",
+    "lines": [
+      {
+        "line_id": "ln_001",
+        "segment_id": "seg_001",
+        "text": "In the ancient, sun-drenched hills of Thrace, there lived a musician named Orpheus, whose music could tame the wildest beasts and bend the very trees to listen.",
+        "pause_after_ms": 0
+      },
+      {
+        "line_id": "ln_002",
+        "segment_id": "seg_001",
+        "text": "Yet, of all the wonders of the earth, his heart belonged solely to the gentle nymph, Eurydice.",
+        "pause_after_ms": 300
+      },
+      {
+        "line_id": "ln_003",
+        "segment_id": "seg_001",
+        "text": "They walked hand in hand through fields of wild lilies, their laughter harmonizing with the strings of his golden lyre.",
+        "pause_after_ms": 500
+      },
+      {
+        "line_id": "ln_004",
+        "segment_id": "seg_001",
+        "text": "Orpheus whispered to her, 'As long as my lyre has song, my love, you shall never walk in shadow.'",
+        "pause_after_ms": 1000
+      },
+      {
+        "line_id": "ln_005",
+        "segment_id": "seg_002",
+        "text": "But fate is a cruel weaver, and shadow fell upon them all too soon.",
+        "pause_after_ms": 0
+      },
+      {
+        "line_id": "ln_006",
+        "segment_id": "seg_002",
+        "text": "While running through the tall grass, Eurydice trod upon a venomous viper, its fangs sinking deep into her ankle.",
+        "pause_after_ms": 300
+      },
+      {
+        "line_id": "ln_007",
+        "segment_id": "seg_002",
+        "text": "Before the sun could set, her spirit departed, leaving Orpheus to weep over her cold, lifeless form.",
+        "pause_after_ms": 500
+      },
+      {
+        "line_id": "ln_008",
+        "segment_id": "seg_002",
+        "text": "He cried out to the heavens, 'Take my life also, or return my beloved to the light!'",
+        "pause_after_ms": 1000
+      },
+      {
+        "line_id": "ln_009",
+        "segment_id": "seg_003",
+        "text": "Unable to bear the silence of her absence, Orpheus resolved to do what no living mortal had ever dared.",
+        "pause_after_ms": 0
+      },
+      {
+        "line_id": "ln_010",
+        "segment_id": "seg_003",
+        "text": "He descended into the deep, yawning cavern of Taenarum, seeking the gates of the Underworld.",
+        "pause_after_ms": 300
+      },
+      {
+        "line_id": "ln_011",
+        "segment_id": "seg_003",
+        "text": "At the banks of the misty River Styx, his sorrowful music softened the cold heart of Charon, who ferried him across the dark waters.",
+        "pause_after_ms": 1000
+      },
+      {
+        "line_id": "ln_012",
+        "segment_id": "seg_004",
+        "text": "Deep within the silent realm of the dead, Orpheus stood before the obsidian throne of Hades, Lord of the Underworld.",
+        "pause_after_ms": 0
+      },
+      {
+        "line_id": "ln_013",
+        "segment_id": "seg_004",
+        "text": "He struck his lyre, pouring all his grief, his memories of the sunlit meadows, and his desperate love into a single, haunting melody.",
+        "pause_after_ms": 300
+      },
+      {
+        "line_id": "ln_014",
+        "segment_id": "seg_004",
+        "text": "The cold stones of the Underworld wept, and even the relentless Furies stayed their torment to listen.",
+        "pause_after_ms": 1000
+      },
+      {
+        "line_id": "ln_015",
+        "segment_id": "seg_005",
+        "text": "For the first time, the stern heart of Hades was moved to pity.",
+        "pause_after_ms": 400
+      },
+      {
+        "line_id": "ln_016",
+        "segment_id": "seg_005",
+        "text": "Hades spoke, his voice echoing like rolling thunder, 'You may lead her back to the realm of the living, musician.'",
+        "pause_after_ms": 600
+      },
+      {
+        "line_id": "ln_017",
+        "segment_id": "seg_005",
+        "text": "'But heed this warning: she will follow behind you, and you must not turn to look at her until you have both crossed into the light of the sun.'",
+        "pause_after_ms": 600
+      },
+      {
+        "line_id": "ln_018",
+        "segment_id": "seg_005",
+        "text": "'If you look back but once, she will remain mine forever.'",
+        "pause_after_ms": 1000
+      },
+      {
+        "line_id": "ln_019",
+        "segment_id": "seg_006",
+        "text": "With hope rekindled, Orpheus began the arduous journey back up through the silent, dark caverns.",
+        "pause_after_ms": 0
+      },
+      {
+        "line_id": "ln_020",
+        "segment_id": "seg_006",
+        "text": "The silence was oppressive, weighing heavily on his racing heart.",
+        "pause_after_ms": 300
+      },
+      {
+        "line_id": "ln_021",
+        "segment_id": "seg_006",
+        "text": "He could hear no footsteps behind him, only his own breath and the faint rustle of the wind ahead.",
+        "pause_after_ms": 500
+      },
+      {
+        "line_id": "ln_022",
+        "segment_id": "seg_006",
+        "text": "A terrible doubt began to gnaw at his mind: was she truly there, or had the Lord of the Dead deceived him?",
+        "pause_after_ms": 1000
+      },
+      {
+        "line_id": "ln_023",
+        "segment_id": "seg_007",
+        "text": "At last, Orpheus stepped out into the warm, golden light of the upper world.",
+        "pause_after_ms": 0
+      },
+      {
+        "line_id": "ln_024",
+        "segment_id": "seg_007",
+        "text": "In his overwhelming joy and relief, he forgot the warning, and turned to look back at his beautiful bride.",
+        "pause_after_ms": 400
+      },
+      {
+        "line_id": "ln_025",
+        "segment_id": "seg_007",
+        "text": "But Eurydice was still within the shadow of the cavern.",
+        "pause_after_ms": 300
+      },
+      {
+        "line_id": "ln_026",
+        "segment_id": "seg_007",
+        "text": "As their eyes met, she began to fade, slipping back into the dark depths like a wisp of smoke.",
+        "pause_after_ms": 500
+      },
+      {
+        "line_id": "ln_027",
+        "segment_id": "seg_007",
+        "text": "She whispered her final, agonizing farewell: 'Goodbye, my love.'",
+        "pause_after_ms": 1200
+      },
+      {
+        "line_id": "ln_028",
+        "segment_id": "seg_008",
+        "text": "Orpheus reached out, but grasped only empty air.",
+        "pause_after_ms": 0
+      },
+      {
+        "line_id": "ln_029",
+        "segment_id": "seg_008",
+        "text": "He tried to return, but the gates of the Underworld were shut against him forever.",
+        "pause_after_ms": 300
+      },
+      {
+        "line_id": "ln_030",
+        "segment_id": "seg_008",
+        "text": "For the rest of his days, he wandered the wild hills alone, playing songs of such profound sorrow that the world itself seemed to weep with him.",
+        "pause_after_ms": 500
+      },
+      {
+        "line_id": "ln_031",
+        "segment_id": "seg_008",
+        "text": "Waiting for the day when his own song would end, and he would finally join his beloved Eurydice in the quiet shadows.",
+        "pause_after_ms": 1200
+      }
+    ],
+    "total_duration_sec": 257.64,
+    "clips": [
+      {
+        "line_id": "ln_001",
+        "start_sec": 0.0,
+        "end_sec": 11.56,
+        "duration_sec": 11.56
+      },
+      {
+        "line_id": "ln_002",
+        "start_sec": 11.56,
+        "end_sec": 19.08,
+        "duration_sec": 7.52
+      },
+      {
+        "line_id": "ln_003",
+        "start_sec": 19.38,
+        "end_sec": 28.18,
+        "duration_sec": 8.8
+      },
+      {
+        "line_id": "ln_004",
+        "start_sec": 28.68,
+        "end_sec": 36.92,
+        "duration_sec": 8.24
+      },
+      {
+        "line_id": "ln_005",
+        "start_sec": 37.92,
+        "end_sec": 43.56,
+        "duration_sec": 5.64
+      },
+      {
+        "line_id": "ln_006",
+        "start_sec": 43.56,
+        "end_sec": 52.04,
+        "duration_sec": 8.48
+      },
+      {
+        "line_id": "ln_007",
+        "start_sec": 52.34,
+        "end_sec": 61.62,
+        "duration_sec": 9.28
+      },
+      {
+        "line_id": "ln_008",
+        "start_sec": 62.12,
+        "end_sec": 68.76,
+        "duration_sec": 6.64
+      },
+      {
+        "line_id": "ln_009",
+        "start_sec": 69.76,
+        "end_sec": 78.32,
+        "duration_sec": 8.56
+      },
+      {
+        "line_id": "ln_010",
+        "start_sec": 78.32,
+        "end_sec": 86.08,
+        "duration_sec": 7.76
+      },
+      {
+        "line_id": "ln_011",
+        "start_sec": 86.38,
+        "end_sec": 96.46,
+        "duration_sec": 10.08
+      },
+      {
+        "line_id": "ln_012",
+        "start_sec": 97.46,
+        "end_sec": 106.74,
+        "duration_sec": 9.28
+      },
+      {
+        "line_id": "ln_013",
+        "start_sec": 106.74,
+        "end_sec": 117.58,
+        "duration_sec": 10.84
+      },
+      {
+        "line_id": "ln_014",
+        "start_sec": 117.88,
+        "end_sec": 126.12,
+        "duration_sec": 8.24
+      },
+      {
+        "line_id": "ln_015",
+        "start_sec": 127.12,
+        "end_sec": 132.48,
+        "duration_sec": 5.36
+      },
+      {
+        "line_id": "ln_016",
+        "start_sec": 132.88,
+        "end_sec": 142.36,
+        "duration_sec": 9.48
+      },
+      {
+        "line_id": "ln_017",
+        "start_sec": 142.96,
+        "end_sec": 153.48,
+        "duration_sec": 10.52
+      },
+      {
+        "line_id": "ln_018",
+        "start_sec": 154.08,
+        "end_sec": 159.36,
+        "duration_sec": 5.28
+      },
+      {
+        "line_id": "ln_019",
+        "start_sec": 160.36,
+        "end_sec": 167.92,
+        "duration_sec": 7.56
+      },
+      {
+        "line_id": "ln_020",
+        "start_sec": 167.92,
+        "end_sec": 173.24,
+        "duration_sec": 5.32
+      },
+      {
+        "line_id": "ln_021",
+        "start_sec": 173.54,
+        "end_sec": 181.1,
+        "duration_sec": 7.56
+      },
+      {
+        "line_id": "ln_022",
+        "start_sec": 181.6,
+        "end_sec": 190.12,
+        "duration_sec": 8.52
+      },
+      {
+        "line_id": "ln_023",
+        "start_sec": 191.12,
+        "end_sec": 197.08,
+        "duration_sec": 5.96
+      },
+      {
+        "line_id": "ln_024",
+        "start_sec": 197.08,
+        "end_sec": 204.56,
+        "duration_sec": 7.48
+      },
+      {
+        "line_id": "ln_025",
+        "start_sec": 204.96,
+        "end_sec": 209.56,
+        "duration_sec": 4.6
+      },
+      {
+        "line_id": "ln_026",
+        "start_sec": 209.86,
+        "end_sec": 217.34,
+        "duration_sec": 7.48
+      },
+      {
+        "line_id": "ln_027",
+        "start_sec": 217.84,
+        "end_sec": 224.36,
+        "duration_sec": 6.52
+      },
+      {
+        "line_id": "ln_028",
+        "start_sec": 225.56,
+        "end_sec": 230.36,
+        "duration_sec": 4.8
+      },
+      {
+        "line_id": "ln_029",
+        "start_sec": 230.36,
+        "end_sec": 236.08,
+        "duration_sec": 5.72
+      },
+      {
+        "line_id": "ln_030",
+        "start_sec": 236.38,
+        "end_sec": 247.58,
+        "duration_sec": 11.2
+      },
+      {
+        "line_id": "ln_031",
+        "start_sec": 248.08,
+        "end_sec": 256.44,
+        "duration_sec": 8.36
+      }
+    ],
+    "segment_timings": [
+      {
+        "segment_id": "seg_001",
+        "start_sec": 0.0,
+        "end_sec": 37.92,
+        "duration_sec": 37.92,
+        "line_ids": [
+          "ln_001",
+          "ln_002",
+          "ln_003",
+          "ln_004"
+        ]
+      },
+      {
+        "segment_id": "seg_002",
+        "start_sec": 37.92,
+        "end_sec": 69.76,
+        "duration_sec": 31.84,
+        "line_ids": [
+          "ln_005",
+          "ln_006",
+          "ln_007",
+          "ln_008"
+        ]
+      },
+      {
+        "segment_id": "seg_003",
+        "start_sec": 69.76,
+        "end_sec": 97.46,
+        "duration_sec": 27.7,
+        "line_ids": [
+          "ln_009",
+          "ln_010",
+          "ln_011"
+        ]
+      },
+      {
+        "segment_id": "seg_004",
+        "start_sec": 97.46,
+        "end_sec": 127.12,
+        "duration_sec": 29.66,
+        "line_ids": [
+          "ln_012",
+          "ln_013",
+          "ln_014"
+        ]
+      },
+      {
+        "segment_id": "seg_005",
+        "start_sec": 127.12,
+        "end_sec": 160.36,
+        "duration_sec": 33.24,
+        "line_ids": [
+          "ln_015",
+          "ln_016",
+          "ln_017",
+          "ln_018"
+        ]
+      },
+      {
+        "segment_id": "seg_006",
+        "start_sec": 160.36,
+        "end_sec": 191.12,
+        "duration_sec": 30.76,
+        "line_ids": [
+          "ln_019",
+          "ln_020",
+          "ln_021",
+          "ln_022"
+        ]
+      },
+      {
+        "segment_id": "seg_007",
+        "start_sec": 191.12,
+        "end_sec": 225.56,
+        "duration_sec": 34.44,
+        "line_ids": [
+          "ln_023",
+          "ln_024",
+          "ln_025",
+          "ln_026",
+          "ln_027"
+        ]
+      },
+      {
+        "segment_id": "seg_008",
+        "start_sec": 225.56,
+        "end_sec": 257.64,
+        "duration_sec": 32.08,
+        "line_ids": [
+          "ln_028",
+          "ln_029",
+          "ln_030",
+          "ln_031"
+        ]
+      }
+    ],
+    "srt_text": "1\n00:00:00,000 --> 00:00:11,560\nIn the ancient, sun-drenched hills of Thrace, there lived a musician named Orpheus, whose music could tame the wildest beasts and bend the very trees to listen.\n\n2\n00:00:11,560 --> 00:00:19,080\nYet, of all the wonders of the earth, his heart belonged solely to the gentle nymph, Eurydice.\n\n3\n00:00:19,380 --> 00:00:28,180\nThey walked hand in hand through fields of wild lilies, their laughter harmonizing with the strings of his golden lyre.\n\n4\n00:00:28,680 --> 00:00:36,920\nOrpheus whispered to her, 'As long as my lyre has song, my love, you shall never walk in shadow.'\n\n5\n00:00:37,920 --> 00:00:43,560\nBut fate is a cruel weaver, and shadow fell upon them all too soon.\n\n6\n00:00:43,560 --> 00:00:52,040\nWhile running through the tall grass, Eurydice trod upon a venomous viper, its fangs sinking deep into her ankle.\n\n7\n00:00:52,340 --> 00:01:01,620\nBefore the sun could set, her spirit departed, leaving Orpheus to weep over her cold, lifeless form.\n\n8\n00:01:02,120 --> 00:01:08,760\nHe cried out to the heavens, 'Take my life also, or return my beloved to the light!'\n\n9\n00:01:09,760 --> 00:01:18,320\nUnable to bear the silence of her absence, Orpheus resolved to do what no living mortal had ever dared.\n\n10\n00:01:18,320 --> 00:01:26,080\nHe descended into the deep, yawning cavern of Taenarum, seeking the gates of the Underworld.\n\n11\n00:01:26,380 --> 00:01:36,460\nAt the banks of the misty River Styx, his sorrowful music softened the cold heart of Charon, who ferried him across the dark waters.\n\n12\n00:01:37,460 --> 00:01:46,740\nDeep within the silent realm of the dead, Orpheus stood before the obsidian throne of Hades, Lord of the Underworld.\n\n13\n00:01:46,740 --> 00:01:57,580\nHe struck his lyre, pouring all his grief, his memories of the sunlit meadows, and his desperate love into a single, haunting melody.\n\n14\n00:01:57,880 --> 00:02:06,120\nThe cold stones of the Underworld wept, and even the relentless Furies stayed their torment to listen.\n\n15\n00:02:07,120 --> 00:02:12,480\nFor the first time, the stern heart of Hades was moved to pity.\n\n16\n00:02:12,880 --> 00:02:22,360\nHades spoke, his voice echoing like rolling thunder, 'You may lead her back to the realm of the living, musician.'\n\n17\n00:02:22,960 --> 00:02:33,480\n'But heed this warning: she will follow behind you, and you must not turn to look at her until you have both crossed into the light of the sun.'\n\n18\n00:02:34,080 --> 00:02:39,360\n'If you look back but once, she will remain mine forever.'\n\n19\n00:02:40,360 --> 00:02:47,920\nWith hope rekindled, Orpheus began the arduous journey back up through the silent, dark caverns.\n\n20\n00:02:47,920 --> 00:02:53,240\nThe silence was oppressive, weighing heavily on his racing heart.\n\n21\n00:02:53,540 --> 00:03:01,100\nHe could hear no footsteps behind him, only his own breath and the faint rustle of the wind ahead.\n\n22\n00:03:01,600 --> 00:03:10,120\nA terrible doubt began to gnaw at his mind: was she truly there, or had the Lord of the Dead deceived him?\n\n23\n00:03:11,120 --> 00:03:17,080\nAt last, Orpheus stepped out into the warm, golden light of the upper world.\n\n24\n00:03:17,080 --> 00:03:24,560\nIn his overwhelming joy and relief, he forgot the warning, and turned to look back at his beautiful bride.\n\n25\n00:03:24,960 --> 00:03:29,560\nBut Eurydice was still within the shadow of the cavern.\n\n26\n00:03:29,860 --> 00:03:37,340\nAs their eyes met, she began to fade, slipping back into the dark depths like a wisp of smoke.\n\n27\n00:03:37,840 --> 00:03:44,360\nShe whispered her final, agonizing farewell: 'Goodbye, my love.'\n\n28\n00:03:45,560 --> 00:03:50,360\nOrpheus reached out, but grasped only empty air.\n\n29\n00:03:50,360 --> 00:03:56,080\nHe tried to return, but the gates of the Underworld were shut against him forever.\n\n30\n00:03:56,380 --> 00:04:07,580\nFor the rest of his days, he wandered the wild hills alone, playing songs of such profound sorrow that the world itself seemed to weep with him.\n\n31\n00:04:08,080 --> 00:04:16,440\nWaiting for the day when his own song would end, and he would finally join his beloved Eurydice in the quiet shadows.\n"
+  },
+  "metrics": {
+    "total_duration_sec": 257.64
+  }
+}

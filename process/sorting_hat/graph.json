@@ -1,0 +1,813 @@
+{
+ "key": "sorting_hat",
+ "title": "The Crown of Ash",
+ "genre": "3D · Dark Fantasy",
+ "cat": "Narrative",
+ "prompt": "On the night the castle finally falls, the thousand-year-old Sorting Hat is lowered onto the last trembling first-year — but for the first time in a thousand years it refuses to name a house, sensing the darkness this child will one day become, and the old headmaster quietly lifts it away, leaving the child alone in the emptied hall: the very abandonment that will forge the monster. Stylized 3D cartoon animation (Pixar / DreamWorks look — clearly animated, non-photoreal), spoken dialogue in English, English subtitles, with distant siege blasts, cracking stone, and foley.",
+ "source": {
+  "type": "subrun",
+  "path": "sub_agents/runs/sorting_hat_last_01"
+ },
+ "generated_at": "2026-09-09T15:56:33+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 1
+  },
+  {
+   "id": "Story",
+   "agent": "StoryAgent",
+   "label": "Story",
+   "step": "",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "Keyframes",
+   "agent": "KeyframeSheetAgent",
+   "label": "Keyframe sheet",
+   "step": "",
+   "order": 2,
+   "n": 12
+  },
+  {
+   "id": "ShotPrompts",
+   "agent": "ShotPromptAgent",
+   "label": "Shot prompts",
+   "step": "",
+   "order": 3,
+   "n": 4
+  },
+  {
+   "id": "Clips",
+   "agent": "ClipAgent",
+   "label": "Clips",
+   "step": "",
+   "order": 4,
+   "n": 4
+  },
+  {
+   "id": "Narration",
+   "agent": "NarratorAgent",
+   "label": "Narration",
+   "step": "",
+   "order": 5,
+   "n": 7
+  },
+  {
+   "id": "Final",
+   "agent": "CompositorAgent",
+   "label": "Final cut",
+   "step": "",
+   "order": 6,
+   "n": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "user_goal",
+   "stage": "Inputs",
+   "kind": "text",
+   "label": "user goal",
+   "src_name": "user_goal.txt",
+   "bytes": 581,
+   "caption": "The user's instruction, verbatim.",
+   "scope": "",
+   "file": "process/sorting_hat/media/user_goal.txt",
+   "excerpt": "On the night the castle finally falls, the thousand-year-old Sorting Hat is lowered onto the last trembling first-year — but for the first time in a thousand years it refuses to name a house, sensing the darkness this child will one day become, and the old headmaster quietly lifts it away, leaving the child alone in th…"
+  },
+  {
+   "id": "story",
+   "stage": "Story",
+   "kind": "json",
+   "label": "story",
+   "src_name": "story.json",
+   "bytes": 13028,
+   "caption": "Story: logline, characters, locations, shot list with panel beats.",
+   "scope": "",
+   "file": "process/sorting_hat/media/story.json",
+   "excerpt": "{\"title\": \"The Crown of Ash\", \"logline\": \"Desperate for a sanctuary as the academy crumbles under siege fire, an orphaned first-year begs the ancient sorting relic for a home—but when the terrified artifact refuses to speak, the headmaster's choice to abandon her ensures she becomes the very tyrant who will destroy the…"
+  },
+  {
+   "id": "alaric_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "alaric anchor",
+   "src_name": "alaric.png",
+   "bytes": 2475194,
+   "caption": "Identity reference card for character alaric — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/sorting_hat/media/alaric_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "elara_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "elara anchor",
+   "src_name": "elara.png",
+   "bytes": 2298122,
+   "caption": "Identity reference card for character elara — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/sorting_hat/media/elara_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "great_hall_ruins_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "great_hall_ruins anchor",
+   "src_name": "great_hall_ruins.png",
+   "bytes": 2778886,
+   "caption": "Identity reference card for location great_hall_ruins — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/sorting_hat/media/great_hall_ruins_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "the_relic_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "the_relic anchor",
+   "src_name": "the_relic.png",
+   "bytes": 2232385,
+   "caption": "Identity reference card for character the_relic — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/sorting_hat/media/the_relic_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_001 storyboard",
+   "src_name": "sh_001_storyboard.png",
+   "bytes": 2901598,
+   "caption": "Storyboard sheet for sh_001: 4 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/sorting_hat/media/sh_001_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_001 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_001.storyboard_prompt",
+   "bytes": 3187,
+   "caption": "Image prompt that produced the sh_001 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/sorting_hat/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2x2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_002 storyboard",
+   "src_name": "sh_002_storyboard.png",
+   "bytes": 2671903,
+   "caption": "Storyboard sheet for sh_002: 5 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/sorting_hat/media/sh_002_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_002 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_002.storyboard_prompt",
+   "bytes": 3971,
+   "caption": "Image prompt that produced the sh_002 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/sorting_hat/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 5 panels arranged in a 3x2 grid (panel 1 = top-left, panel 5 = bottom-middle; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=5 → 3x2 with the sixth cell as solid neutral gray. [ST…"
+  },
+  {
+   "id": "sh_003_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_003 storyboard",
+   "src_name": "sh_003_storyboard.png",
+   "bytes": 2712830,
+   "caption": "Storyboard sheet for sh_003: 5 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/sorting_hat/media/sh_003_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_003_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_003 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_003.storyboard_prompt",
+   "bytes": 4644,
+   "caption": "Image prompt that produced the sh_003 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/sorting_hat/media/sh_003_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 5 panels arranged in a 3x2 grid (panel 1 = top-left, panel 5 = bottom-middle; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=5 → 3×2 with the sixth cell as solid neutral gray. [ST…"
+  },
+  {
+   "id": "sh_004_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_004 storyboard",
+   "src_name": "sh_004_storyboard.png",
+   "bytes": 3054433,
+   "caption": "Storyboard sheet for sh_004: 4 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/sorting_hat/media/sh_004_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_004_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_004 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_004.storyboard_prompt",
+   "bytes": 4117,
+   "caption": "Image prompt that produced the sh_004 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/sorting_hat/media/sh_004_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2x2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=4 -> 2x2. [STYLE FOUNDATION] Stylized 3D cartoon animat…"
+  },
+  {
+   "id": "sh_001_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_001 video prompt",
+   "src_name": "sh_001.txt",
+   "bytes": 9066,
+   "caption": "Video-generation prompt for sh_001: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/sorting_hat/media/sh_001_video_prompt.txt",
+   "excerpt": "[设定] Late-medieval dark fantasy magical academy under siege; Northern European gothic architecture. Stylized 3D animation context, characters have expressive, slightly exaggerated Pixar/DreamWorks facial proportions. [风格] 3D 渲染；焦段遵循 24mm 广角建立空间、50mm 双人中景、100mm 微距、85mm 情绪特写的递进，光圈偏大形成浅景深，广角镜保留大厅前中后层次，焦点落在手臂、圣物、面部微动作上。 冷蓝…"
+  },
+  {
+   "id": "sh_002_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_002 video prompt",
+   "src_name": "sh_002.txt",
+   "bytes": 9264,
+   "caption": "Video-generation prompt for sh_002: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/sorting_hat/media/sh_002_video_prompt.txt",
+   "excerpt": "[设定] Late-medieval dark fantasy magical academy under siege; Northern European gothic architecture. Stylized 3D animation context, characters have expressive, slightly exaggerated Pixar/DreamWorks facial proportions. 巨型哥特学院大厅废墟，彩绘玻璃破碎，裂纹大理石地面散落蜡烛残骸与彩色玻璃片，空气中漂浮灰烬，远处炮火从残窗外投进橙色闪光。 [风格] 3D 渲染，焦段以35mm与50mm叙事近景为主，关键惊悚细节用85mm…"
+  },
+  {
+   "id": "sh_003_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_003 video prompt",
+   "src_name": "sh_003.txt",
+   "bytes": 8537,
+   "caption": "Video-generation prompt for sh_003: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/sorting_hat/media/sh_003_video_prompt.txt",
+   "excerpt": "[设定] Late-medieval dark fantasy magical academy under siege; Northern European gothic architecture. Stylized 3D animation context, characters have expressive, slightly exaggerated Pixar/DreamWorks facial proportions. [风格] 中景对白以50mm为基准，情绪面部大特写用85mm，空间压迫感远景用24mm与14mm广角；特写采用f/2.0浅景深，远景采用f/5.6深景深，焦点层次明确。 视觉媒介：3D 渲染；主色温为橙色攻…"
+  },
+  {
+   "id": "sh_004_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_004 video prompt",
+   "src_name": "sh_004.txt",
+   "bytes": 6605,
+   "caption": "Video-generation prompt for sh_004: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/sorting_hat/media/sh_004_video_prompt.txt",
+   "excerpt": "[设定] Late-medieval dark fantasy magical academy under siege; Northern European gothic architecture. Stylized 3D animation context, characters have expressive, slightly exaggerated Pixar/DreamWorks facial proportions. [风格] 35mm 建立废墟空间，50mm 推进面部微表情，135mm 压缩到眼部极近距离；大光圈浅景深，前景灰烬与后景碎玻璃柔化，焦点锁住女孩肩背、墙影与虹膜。 3D 渲染，冷青魔法残光约 5600K 对…"
+  },
+  {
+   "id": "sh_001_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_001 clip",
+   "src_name": "sh_001.mp4",
+   "bytes": 8524673,
+   "caption": "Rendered clip for sh_001 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_001",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.09,
+   "poster": "process/sorting_hat/media/sh_001_clip_poster.jpg",
+   "file": "process/sorting_hat/media/sh_001_clip.mp4"
+  },
+  {
+   "id": "sh_002_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_002 clip",
+   "src_name": "sh_002.mp4",
+   "bytes": 9713433,
+   "caption": "Rendered clip for sh_002 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_002",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/sorting_hat/media/sh_002_clip_poster.jpg",
+   "file": "process/sorting_hat/media/sh_002_clip.mp4"
+  },
+  {
+   "id": "sh_003_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_003 clip",
+   "src_name": "sh_003.mp4",
+   "bytes": 7179000,
+   "caption": "Rendered clip for sh_003 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_003",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/sorting_hat/media/sh_003_clip_poster.jpg",
+   "file": "process/sorting_hat/media/sh_003_clip.mp4"
+  },
+  {
+   "id": "sh_004_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_004 clip",
+   "src_name": "sh_004.mp4",
+   "bytes": 7199146,
+   "caption": "Rendered clip for sh_004 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_004",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/sorting_hat/media/sh_004_clip_poster.jpg",
+   "file": "process/sorting_hat/media/sh_004_clip.mp4"
+  },
+  {
+   "id": "subtitles",
+   "stage": "Narration",
+   "kind": "text",
+   "label": "subtitles",
+   "src_name": "narration.srt",
+   "bytes": 847,
+   "caption": "Subtitle track (SRT).",
+   "scope": "",
+   "file": "process/sorting_hat/media/subtitles.srt",
+   "excerpt": "1 00:00:00,000 --> 00:00:04,000 Quickly now. The final placement. 2 00:00:04,000 --> 00:00:08,000 Anywhere... please, just don't leave me. 3 00:00:08,000 --> 00:00:09,800 Even mercy recoiled. 4 00:00:18,093 --> 00:00:21,093 No... NO! Mountains of ash! I see fire! 5 00:00:21,093 --> 00:00:24,093 What? Which house? 6 00:…"
+  },
+  {
+   "id": "narration_cues",
+   "stage": "Narration",
+   "kind": "json",
+   "label": "narration cues",
+   "src_name": "narration.json",
+   "bytes": 3210,
+   "caption": "Narration plan: voice, delivery instructions, timed cues per shot.",
+   "scope": "",
+   "file": "process/sorting_hat/media/narration_cues.json",
+   "excerpt": "{\"voice\": \"onyx\", \"voice_instructions\": \"A grave English narrator, low and velvet-dark, carrying grief under strict control. Begin with hushed pity, as if afraid to disturb a wounded child; let dread tighten the breath when the relic recoils. Swell with bitter sorrow as adults choose fear over mercy, then drop nearly t…"
+  },
+  {
+   "id": "line_sh_001_0",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_001_0",
+   "src_name": "sh_001_0.wav",
+   "bytes": 86444,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/sorting_hat/media/line_sh_001_0.mp3",
+   "dur": 1.8
+  },
+  {
+   "id": "line_sh_002_2",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_002_2",
+   "src_name": "sh_002_2.wav",
+   "bytes": 108044,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/sorting_hat/media/line_sh_002_2.mp3",
+   "dur": 2.25
+  },
+  {
+   "id": "line_sh_003_3",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_003_3",
+   "src_name": "sh_003_3.wav",
+   "bytes": 132044,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/sorting_hat/media/line_sh_003_3.mp3",
+   "dur": 2.75
+  },
+  {
+   "id": "line_sh_003_4",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_003_4",
+   "src_name": "sh_003_4.wav",
+   "bytes": 69644,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/sorting_hat/media/line_sh_003_4.mp3",
+   "dur": 1.45
+  },
+  {
+   "id": "line_sh_004_5",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_004_5",
+   "src_name": "sh_004_5.wav",
+   "bytes": 230444,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/sorting_hat/media/line_sh_004_5.mp3",
+   "dur": 4.8
+  },
+  {
+   "id": "final_film",
+   "stage": "Final",
+   "kind": "video",
+   "label": "final film",
+   "src_name": "final.mp4",
+   "bytes": 18430950,
+   "caption": "Delivered film: clips + narration + subtitles + mix.",
+   "scope": "",
+   "file": "videos/sorting_hat.mp4",
+   "poster": "posters/sorting_hat.jpg",
+   "final": true,
+   "w": 1280,
+   "h": 720,
+   "dur": 60.4
+  }
+ ],
+ "edges": [
+  {
+   "from": "user_goal",
+   "to": "Story",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "Keyframes",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "elara_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "alaric_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "the_relic_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "great_hall_ruins_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "elara_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "alaric_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "the_relic_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "great_hall_ruins_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_video_prompt",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_video_prompt",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_video_prompt",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_video_prompt",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "narration_cues",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_001_0",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_002_2",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_003_3",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_003_4",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_004_5",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "subtitles",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  }
+ ],
+ "final": "final_film",
+ "notes": [
+  "Early cine-chain run: the sequence Story → Keyframes → Shot prompts → Clips → Narration → Final is fixed, so connections are structural."
+ ]
+}

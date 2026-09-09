@@ -1,0 +1,86 @@
+{
+  "content": {
+    "language": "en",
+    "anchors": {
+      "character_anchors": [],
+      "location_anchors": [
+        {
+          "entity_id": "loc_warm_kitchen_studio",
+          "prompt_summary": "An upscale kitchen studio countertop environment. The background is a clean, warm beige casting soft studio lighting. Key textures include highly refined natural wood grains and sleek, minimalist surfaces. The overall tone is cozy yet modern, emphasizing a premium lifestyle aesthetic without any figures present.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": ""
+        }
+      ],
+      "prop_anchors": [
+        {
+          "entity_id": "prop_kurve_machine",
+          "prompt_summary": "A high-end home pour-over coffee machine with a modern matte black and dark gray body, elegant copper spouts, refined copper accents, a clean glass carafe sitting underneath, and a premium solid wooden base.",
+          "views": [
+            "HERO",
+            "FRONT"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic24_kurve_ad/workspace_global_20260721_103757/inputs/20260721_103757_859016_kurve_front.png"
+        },
+        {
+          "entity_id": "prop_kurve_logo",
+          "prompt_summary": "A minimalist brand logo set against a clean, solid white background. The word 'KURVE' is written in uppercase, clean, sans-serif dark gray typography, with a highly polished metallic rose-gold wavy line running horizontally just beneath it.",
+          "views": [
+            "HERO",
+            "FRONT"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic24_kurve_ad/workspace_global_20260721_103757/inputs/20260721_103757_887861_kurve_side.png"
+        }
+      ]
+    },
+    "shot_visuals": {
+      "sh_001": {
+        "shot_id": "sh_001",
+        "primary_location": "loc_warm_kitchen_studio",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": [
+              "prop_kurve_machine"
+            ]
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "prop_kurve_machine"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "prop_kurve_machine"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": [
+              "prop_kurve_machine"
+            ]
+          },
+          {
+            "panel_index": 5,
+            "characters_present": [
+              "prop_kurve_logo"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\n写实高端产品广告实拍质感。Warm beige background with soft, inviting studio light casting gentle shadows. The palette features organic textures of rich wood, matte dark metal, and glowing copper, capturing a refined, premium lifestyle aesthetic.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 close-up -> P3 close-up -> P4 medium -> P5 wide\n\n[PANEL 1]\nSHOT: wide / eye-level\nPLACEMENT: The coffee machine (prop_kurve_machine) is centered on the clean kitchen countertop, its premium solid wooden base resting flat on the warm wood-grained surface. No figures present.\nACTION: The coffee machine stands elegantly and completely still. Soft studio light sweeps across its clean, matte dark body and polished copper accents, creating subtle, soft reflections.\nENV: The background is a clean, warm beige studio setting (loc_warm_kitchen_studio FRONT view) with gentle, warm lighting highlighting the clean, high-end surroundings.\n\n[PANEL 2]\nSHOT: close-up\nPLACEMENT: Tight focus on the clean control panel located on the side of the matte dark metal body of the coffee machine (prop_kurve_machine).\nACTION: A single minimalist start button on the panel autonomously glows with a soft, warm amber indicator light.\nENV: The dark, refined matte metal texture of the machine body dominates the frame, catching subtle highlights from the surrounding cozy studio light.\n\n[PANEL 3]\nSHOT: close-up / detail\nPLACEMENT: Macro focus on the elegant, curved copper spout of the coffee machine (prop_kurve_machine) pointing down toward a white paper filter cone.\nACTION: Hot water spirals gracefully down in a perfect, steady stream from the copper spout onto steaming dark coffee grounds inside the filter, releasing delicate, soft curls of rising steam.\nENV: Softly lit, warm-toned steam particles gently disperse in the immediate air, contrasting with the dark coffee grounds and the clean white filter paper.\n\n[PANEL 4]\nSHOT: medium / eye-level\nPLACEMENT: Side profile view of the coffee machine (prop_kurve_machine). A clean glass carafe is positioned directly underneath the drip cone, resting on the solid wooden base.\nACTION: Freshly brewed dark coffee drips steadily from the filter cone down into the glass carafe, causing gentle ripples in the liquid inside.\nENV: The clear glass carafe catches golden, warm ambient reflections, highlighting the rich tone of the dark coffee inside against the warm beige kitchen studio backdrop.\n\n[PANEL 5]\nSHOT: wide / eye-level\nPLACEMENT: Clean centered framing of the KURVE logo (prop_kurve_logo) on a solid white surface. No environment elements or kitchen surfaces are visible.\nACTION: The branding is perfectly clean and static. The dark gray letters of 'KURVE' and the polished rose-gold wavy line below catch a bright, clean light across their metallic surface.\nENV: A completely solid, pristine white background emphasizing a high-end minimalist advertising design.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)"
+      }
+    },
+    "style_notes": [
+      "写实高端产品广告实拍质感 (Realistic high-end commercial live-action texture).",
+      "Warm beige background with soft, inviting studio light casting gentle shadows.",
+      "Organic textures of rich wood, matte dark metal, and glowing copper, capturing a refined, premium lifestyle aesthetic.",
+      "High-end, cozy kitchen studio filled with soft, warm light and minimalist decor."
+    ],
+    "must_avoid": []
+  }
+}

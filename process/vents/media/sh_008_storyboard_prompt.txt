@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide infographic -> P2 wide infographic -> P3 wide infographic -> P4 wide infographic
+
+[PANEL 1]
+SHOT: wide infographic eye-level
+PLACEMENT: Anchor prop food_web_diagram positioned in center frame.
+ACTION: Base level rectangular node glowing cyan, representing chemosynthetic bacteria as primary producers.
+ENV: Dark ocean backdrop with clean 2D vector hierarchy lines.
+
+[PANEL 2]
+SHOT: wide infographic eye-level
+PLACEMENT: Anchor prop food_web_diagram expanding to second tier.
+ACTION: Directional arrows extending upward from bacteria node to primary consumer nodes for tubeworms and mussels.
+ENV: Dark background with crisp vector nodes and connecting flow lines.
+
+[PANEL 3]
+SHOT: wide infographic eye-level
+PLACEMENT: Anchor prop food_web_diagram expanding to third tier.
+ACTION: Flow arrows continuing upward to scavenger nodes depicting vent crabs and bresiliid shrimp.
+ENV: Deep blue graphic layout with illuminated network branches.
+
+[PANEL 4]
+SHOT: wide infographic eye-level
+PLACEMENT: Anchor prop food_web_diagram fully revealed in upper frame.
+ACTION: Apex predator node illuminating at top of hierarchy featuring deep-sea zoarcid eelpout fish.
+ENV: Complete, balanced 2D motion infographic web on dark ocean background.
+
+[RENDERED TEXT]
+No panel numbers or captions. Minimal clean node text labels in English if necessary.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 2 refs (character / prop / location anchors).

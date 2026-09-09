@@ -1,0 +1,27 @@
+{
+  "content": {
+    "language": "en",
+    "images": [
+      {
+        "visual_description": "A scientific line graph plotting temperature against depth, featuring a blue line for ambient seawater and a red point for vent fluid.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic16_vents/workspace_global_20260803_120643/inputs/20260803_120643_508048_fig_temp_depth.png",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "Diagram titled 'Chemosynthetic food web at a hydrothermal vent' featuring light blue text boxes connected by arrows on a white background.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic16_vents/workspace_global_20260803_120643/inputs/20260803_120643_511283_fig_food_web.png",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      }
+    ]
+  }
+}

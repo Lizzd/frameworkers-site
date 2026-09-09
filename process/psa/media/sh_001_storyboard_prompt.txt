@@ -1,0 +1,23 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 with the sixth cell as solid neutral gray; N=6 → 3×2.
+
+[STYLE FOUNDATION]
+VISUAL MEDIUM and aesthetic are dictated entirely by story.style_anchor (below) — live-action film, 2D anime, illustration, 3D, etc.; do NOT default to photoreal, do NOT impose any medium the brief omits. Apply verbatim: 干净、温和、专业的 2D 医疗科普动画。柔和蓝绿为主，少量暖黄色点亮安心感；扁平清晰造型、平静光线、留足画面下方中文字幕空间，全片可信、克制、不惊悚。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the community_park location anchor for the clean community park wide view. Use the FRONT sections of the parent_mother, child_patient, and community_pet_dog character anchors for full-body identity consistency. Show a calm park path with green trees, bench, low shrubs, and subtle leaves in the foreground; the child in a yellow hoodie slowly reaches the right hand toward the gentle yellow-white pet dog beside the mother. The dog steps back slightly, and its front paw lightly brushes the child’s right forearm near the wrist. Keep the moment clear but restrained, no blood, no panic, no frightening expression, with lower subtitle-safe empty space.
+
+[PANEL 2]
+Use the FACE section of the parent_mother character anchor for her kneeling concerned expression, and use the FRONT section of the child_patient anchor for clothing and body proportions while framing the child’s right forearm. Use the FRONT section of the community_pet_dog anchor in the soft background. Medium close-up: the mother immediately crouches and gently supports the child’s arm, looking at one very small shallow red scratch fixed on the child’s right forearm near the wrist. The child stays calm, the dog is behind them and non-threatening. Clean 2D medical-explainer tone, soft daylight, no gore, no dramatic fear, no text.
+
+[PANEL 3]
+Use the abstract_infographic_space location anchor as a soft blue-green 2D motion-graphic background. No people. Center a simple small wound symbol, not a realistic injury, with a few translucent blue-green risk particles softly appearing beside it. Use flat vector shapes, gentle circles and lines, clean negative space, and a restrained warm accent. The composition should imply hidden risk after a small scratch without showing a real wound close-up. Absolutely no words, letters, logos, captions, or medical labels inside the panel; only the required panel index number may appear.
+
+[PANEL 4]
+Use the FRONT section of the community_park location anchor for the park path, and include the nearby public_sink_area location anchor FRONT section visible ahead as a clean white sink with silver faucet and no branding. Use the FRONT sections of the parent_mother and child_patient anchors for full-body identity. Show the mother calmly but promptly guiding the child away from the encounter and toward the sink area, faces shifting from brief concern to focused action. The child’s right forearm remains the consistent injury location, not emphasized as a graphic close-up. Stable medium-wide framing, clear leading path, gentle public-health demonstration mood, no text.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)

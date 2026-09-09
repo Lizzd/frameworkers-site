@@ -1,0 +1,27 @@
+{
+  "content": {
+    "language": "en",
+    "images": [
+      {
+        "visual_description": "3D character views of a 20s Hispanic woman with dark braided hair, wearing an olive jacket under neutral studio lighting.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic22_northspur/workspace_global_20260803_123754/inputs/20260803_123754_268817_character_ref.png",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "Dark blue text 'NORTHSPUR' centered below a minimal geometric mountain outline icon on a solid white background.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic22_northspur/workspace_global_20260803_123754/inputs/20260803_123754_284918_brand_logo.png",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      }
+    ]
+  }
+}

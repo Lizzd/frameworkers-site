@@ -1,0 +1,20 @@
+{
+  "content": {
+    "language": "en",
+    "enriched_brief": "I need a 90-second animated explainer on deep-sea hydrothermal vent ecosystems (black smokers) aimed at middle school through high school students. The accuracy is critical, so stick strictly to the verbatim script provided below without padding or rewording a single word—the temperature figures, chemosynthesis mechanisms, and tubeworm symbiosis details have all been pre-verified. \n\nThe visual production must be done in a 2D explainer animation plus infographic style with a cool palette, remaining restrained and professional throughout. Two real research figures are provided as references and must be rendered cleanly and accurately as on-screen infographics without changing numbers or structure:\n\n1. For the temperature profile section, render an infographic styled after the reference scientific line graph plotting temperature against depth, featuring a clear blue line representing ambient seawater and a distinct red point highlighting the vent fluid fluid temperature.\n2. For the food web section, render an infographic styled after the reference diagram titled 'Chemosynthetic food web at a hydrothermal vent', featuring light blue text boxes connected by directional arrows on a clean white background.\n\nAudio requirements: English voice-over reading the script word for word, accompanied by English subtitles. Beyond the narration, do not include music; use only low, subtle underwater ambient foley.\n\nVerbatim Script:\n\nTwo and a half kilometres down, there is no sunlight at all. The water here sits at about two degrees Celsius. And yet, crowded around cracks in the seafloor, there are animals everywhere.\n\nThese cracks are hydrothermal vents. Seawater seeps into the crust, is heated by magma below, and comes roaring back out. At the orifice of a black smoker the fluid can reach about four hundred degrees Celsius — it does not boil, because the pressure at this depth is roughly two hundred and fifty times the pressure at the surface. The black smoke is not smoke: it is metal sulphide minerals crystallising the instant the hot fluid hits near-freezing seawater.\n\nNothing here photosynthesises. Instead, bacteria use chemosynthesis: they oxidise the hydrogen sulphide streaming out of the vent to get energy, and use that energy to fix carbon dioxide into sugars. Sunlight is replaced by chemistry.\n\nThe giant tubeworm Riftia pachyptila takes this one step further. An adult has no mouth and no gut. Inside its body is an organ packed with these bacteria, and the worm supplies them with hydrogen sulphide, oxygen and carbon dioxide carried in its blood. The bacteria feed the worm in return. Neither one survives alone — this is symbiosis.\n\nFrom those bacteria the food web climbs: tubeworms and mussels, then crabs and shrimp that graze on them, then fish at the top. An entire ecosystem, in permanent darkness, running on chemistry from the planet's own interior.",
+    "image_classifications": [
+      {
+        "image_index": 0,
+        "role": "prop"
+      },
+      {
+        "image_index": 1,
+        "role": "prop"
+      }
+    ],
+    "image_paths": [
+      "/home/zhendong_li/FrameWorkers/Runtime/topic16_vents/workspace_global_20260803_120643/inputs/20260803_120643_508048_fig_temp_depth.png",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic16_vents/workspace_global_20260803_120643/inputs/20260803_120643_511283_fig_food_web.png"
+    ]
+  }
+}

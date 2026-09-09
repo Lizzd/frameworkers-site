@@ -1,0 +1,54 @@
+{
+  "content": {
+    "language": "en-US",
+    "overall_style": "scientific documentary illustration, sleek digital painting, luminous marine colors, atmospheric depth",
+    "character_anchors": [
+      {
+        "character_id": "char_001",
+        "appearance_prompt": "A friendly male science podcast host in his mid-30s with short neat dark brown hair, light beard stubble, wearing a navy blue casual button-down shirt in a modern studio setup.",
+        "appearance_states": []
+      }
+    ],
+    "illustrations": [
+      {
+        "segment_id": "seg_001",
+        "image_prompt": "A science podcast host sitting at a studio desk with a broadcasting microphone, warm mood lighting and subtle aquatic digital graphics glowing softly in the background.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_002",
+        "image_prompt": "An anatomical illustration of an octopus swimming gracefully underwater, featuring three glowing, highlighted hearts with translucent red and blue pathways guiding blood through its body and gills.",
+        "characters_in_segment": []
+      },
+      {
+        "segment_id": "seg_003",
+        "image_prompt": "Close-up cinematic detail of vibrant cyan-blue blood flowing inside translucent copper-rich circulatory vessels of a deep-sea creature.",
+        "characters_in_segment": []
+      },
+      {
+        "segment_id": "seg_004",
+        "image_prompt": "An artistic visualization showing an octopus illuminated by glowing neural pathways along its eight arms, emphasizing the dense concentration of nerve clusters outside its head.",
+        "characters_in_segment": []
+      },
+      {
+        "segment_id": "seg_005",
+        "image_prompt": "Macro shot of a single flexible octopus arm reaching across a ocean reef, suction cups delicately probing coral textures in clear seawater.",
+        "characters_in_segment": []
+      },
+      {
+        "segment_id": "seg_006",
+        "image_prompt": "A dynamic side-by-side view of an octopus seamlessly shifting its skin patterns to blend into colorful coral reefs and grainy sea floor, with magnified inset of microscopic pigment cells called chromatophores shifting color.",
+        "characters_in_segment": []
+      },
+      {
+        "segment_id": "seg_007",
+        "image_prompt": "The podcast host gazing thoughtfully at a glowing holographic projection of an octopus drifting in ambient studio air, symbolizing otherworldly intelligence.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      }
+    ]
+  }
+}

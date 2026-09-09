@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 extreme-wide -> P2 wide -> P3 close-up -> P4 extreme-wide
+
+[PANEL 1]
+SHOT: extreme-wide, eye-level.
+PLACEMENT: The fully restored bridge is bound spanning the Vère river in the lower third framed against green hills.
+ACTION: The restored Pont de la Roche-Vieille stands complete and clear, reopen to the river landscape.
+ENV: Refer to loc_bridge_side anchor FRONT section. Verdant forested hills under brilliant natural sunlight.
+
+[PANEL 2]
+SHOT: wide, low-angle.
+PLACEMENT: The 22-metre arch is bound centered above its precise mirror reflection in the glass-still water below.
+ACTION: The single segmental arch reflects perfectly in the calm river, forming an iconic eye-shaped loop.
+ENV: Refer to loc_bridge_side anchor FRONT section. Pristine water reflections and warm direct sunshine.
+
+[PANEL 3]
+SHOT: close-up, eye-level.
+PLACEMENT: Tight mortar joints and hand-dressed limestone ashlar blocks are bound filling the central frame area.
+ACTION: Hand-dressed limestone blocks and tight flush mortar joints gleam under clear natural sunlight.
+ENV: Refer to loc_bridge_joints anchor FRONT section. Immaculate stone craftsmanship and subtle tool mark textures.
+
+[PANEL 4]
+SHOT: extreme-wide, high-angle.
+PLACEMENT: The stone bridge is bound nestled within the river valley channel between lush green forest canopies.
+ACTION: The 600-year-old restored bridge stands proudly across the forest valley in serene afternoon light.
+ENV: Refer to loc_bridge_side anchor OVERHEAD section. Peaceful river, green foliage, and clear atmospheric depth.
+
+[RENDERED TEXT]
+Do NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 1 refs (character / prop / location anchors).

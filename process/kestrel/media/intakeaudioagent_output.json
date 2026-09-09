@@ -1,0 +1,15 @@
+{
+  "content": {
+    "language": "en",
+    "clips": [
+      {
+        "kind": "music",
+        "audio_summary": "A slow, peaceful instrumental piece featuring gentle fingerpicked guitar accompanied by soft glockenspiel accents.",
+        "duration_s": 34.5,
+        "audio_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_820359_event_music.wav"
+        }
+      }
+    ]
+  }
+}

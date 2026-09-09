@@ -1,0 +1,47 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. Panels are identified by POSITION only — draw no digits, indices or labels on the artwork (they would burn into the downstream video render).
+
+[STYLE FOUNDATION]
+彩铅插画艺术风格（柔和彩铅手绘笔触、清新淡彩配色、柔和自然光影与细致纸张纹理，人物采用写实比例与精致手绘线稿，质感温暖亲和）。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide -> P2 medium -> P3 close-up -> P4 medium -> P5 wide
+
+[PANEL 1]
+SHOT: wide
+PLACEMENT: Martin (use FRONT section of the martin character anchor) standing at the front of the hall, positioned one step in front of the white feature wall mounted with the 3D INSAIT logo (use HERO section of insait_logo prop anchor). Rows of blue chairs occupied by colleagues fill the foreground and mid-ground.
+ACTION: Martin stands comfortably facing the seated team, open hands gesturing naturally as he speaks.
+ENV: Sunlit 13th floor room with large floor-to-ceiling windows showing city panorama in background.
+
+[PANEL 2]
+SHOT: medium
+PLACEMENT: Martin (use FRONT section of the martin character anchor) centered in waist-up framing, standing steadily behind a low podium.
+ACTION: Martin smiles warmly while addressing the audience, hand raised lightly in an engaging posture.
+ENV: White background wall bathed in soft daylight from window glass.
+
+[PANEL 3]
+SHOT: close-up
+PLACEMENT: Martin (use FACE section of the martin character anchor), tight facial framing centered on his eyes and smile.
+ACTION: Martin's eyes light up with enthusiasm and joy as he announces the good news.
+ENV: Softly blurred room background with daylight glinting off his eyeglasses.
+
+[PANEL 4]
+SHOT: medium
+PLACEMENT: Audience perspective from front of stage. Colleagues seated in rows of blue chairs, seated with elbows on armrests or lap.
+ACTION: Audience members shift from focused listening to surprised smiles, applauding warmly and quietly.
+ENV: Bright meeting room interior with city view through large windows.
+
+[PANEL 5]
+SHOT: wide
+PLACEMENT: Martin (use FRONT section of the martin character anchor) standing at front right of frame, looking at the applauding team members seated across the room.
+ACTION: Friendly, relaxed atmosphere as Martin smiles amidst continuous applause.
+ENV: Complete interior view of 13th floor presentation hall bathed in clear morning sunlight.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 3 refs (character / prop / location anchors).

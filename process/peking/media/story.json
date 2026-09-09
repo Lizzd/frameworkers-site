@@ -1,0 +1,358 @@
+{
+  "title": "空台走楚军",
+  "logline": "逃难在即的徒弟想用最后两张船票带走固执的京剧师父，但在轰炸声逼近的空荡戏台上，师父扔下木制道具换上了见血的真刀——对老角儿来说，霸王不肯过江东从来不是一出戏，而退场等于剥夺了他的脊梁。",
+  "setting": "1937 年秋，武汉沦陷前夕的汉口老戏院。京剧传统行头与残破的民国西式剧院建筑形成视觉碰撞，台下无观众，背景音是极具压迫感的防空警报。演员全华人。",
+  "style_anchor": "风格化 3D 卡通动画电影（皮克斯 / 梦工厂式渲染：明显卡通化的造型与比例、干净的卡通材质与大色块、柔和卡通布光；明确是动画角色，非写实、非真人、非照片、非 CG 写实），浓烈红黑对比，沉重悲怆的史诗基调。",
+  "characters": [
+    {
+      "id": "master_qiu",
+      "role": "protagonist",
+      "look_description": "55岁，饰演项羽的净角。脸上黑白油彩已干裂剥落，露出眼角的深纹；穿着沉重且边缘磨损的楚霸王黑金“靠”（戏曲铠甲），背后四面靠旗微斜，右手虎口有常年练刀的老茧。",
+      "voice_description": "55岁男性，京剧净角铜锤花脸的浑厚炸音，沙哑苍劲、带金属共鸣，中气十足，语速沉稳，京韵普通话，情绪底色是英雄末路的悲怆与不肯低头的执拗。"
+    },
+    {
+      "id": "apprentice_ming",
+      "role": "foil",
+      "look_description": "19岁，饰演虞姬的旦角。假发头套已摘，勒头胶带在额头勒出刺眼的红印；穿着素白色的贴身水衣，右侧袖口内捏着两张边缘起皱的红色江华轮船票，双手止不住地轻颤。",
+      "voice_description": "19岁青年男性（旦角真声），清亮略紧绷，音调偏高，语速偏快，普通话，情绪是逃难在即的焦灼与对师父的恳切哀求。"
+    }
+  ],
+  "locations": [
+    {
+      "id": "theatre_stage",
+      "look_description": "汉口某戏院舞台。背景是残破的“垓下之围”手绘布景，木地板布满划痕与暗色污渍，头顶唯一一盏聚光灯投下刺眼的锥形黄光，空气中悬浮着浓重的灰尘与硝烟。"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "sh_001",
+      "duration_s": 15.0,
+      "narrative_purpose": "建立环境空旷与角色状态的对比，引出逃生希望的降临",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "emotional_close_up"
+          ],
+          "moment_description": "镜头从空荡的红丝绒座椅平推至舞台 -> 聚光灯黄光切开黑暗 -> master_qiu 笔直站在光晕正中，胸口因剧烈喘息大幅起伏 -> 汗水冲刷着脸颊的油彩滑落至下巴",
+          "dialogue": null,
+          "characters_present": [
+            "master_qiu"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            6.0
+          ],
+          "categories": [
+            "action_fight"
+          ],
+          "moment_description": "master_qiu 右手猛然下压 -> 木制霸王枪重重顿击台板 0.2 秒 -> 沉闷“咚”声带起一圈灰尘 -> 顺着枪杆往上看，他右手虎口正不受控地微颤 -> 聚光灯边缘光晕随之摇晃",
+          "dialogue": null,
+          "characters_present": [
+            "master_qiu"
+          ]
+        },
+        {
+          "time_range": [
+            6.0,
+            9.0
+          ],
+          "categories": [
+            "action_fight",
+            "establishing_wide"
+          ],
+          "moment_description": "apprentice_ming 从左侧画外阴影中跌撞着冲入光晕 -> 素白水衣下摆剧烈翻飞 -> 右手死死攥着两张红色船票，指关节泛白 -> 脚步在木地板上拖出一道刺耳的摩擦声",
+          "dialogue": null,
+          "characters_present": [
+            "master_qiu",
+            "apprentice_ming"
+          ]
+        },
+        {
+          "time_range": [
+            9.0,
+            12.0
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "apprentice_ming 在聚光灯边缘急刹住脚步 -> 胸腔剧烈起伏，喉结快速上下滑动吞咽 -> 充满血丝的双眼惊恐地扫视了一圈空无一人的观众席 -> 视线最终死死钉在师父背影上",
+          "dialogue": null,
+          "characters_present": [
+            "apprentice_ming"
+          ]
+        },
+        {
+          "time_range": [
+            12.0,
+            15.0
+          ],
+          "categories": [
+            "dialogue_two_shot"
+          ],
+          "moment_description": "master_qiu 极为缓慢地转过头 -> 沉重的头饰珠翠发出细碎碰撞声 -> 嘴角干裂的油彩因牵动而掉落细屑 -> 目光越过徒弟的脸，冷冷垂落在两张发皱的红票子上",
+          "dialogue": "apprentice_ming: 师父，票弄到了！末班船，快走！",
+          "characters_present": [
+            "master_qiu",
+            "apprentice_ming"
+          ]
+        }
+      ],
+      "primary_location": "theatre_stage",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_002",
+      "duration_s": 15.0,
+      "narrative_purpose": "徒弟的求生欲与师父的赴死决意发生正面情感碰撞",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "emotional_close_up"
+          ],
+          "moment_description": "apprentice_ming 颤抖着把船票强行递进两人中间的暖黄光区 -> 红票子在灯下反射出蜡质光泽 -> 水衣袖口被汗水湿透贴在手腕上 -> 镜头低位仰拍，强化压迫感",
+          "dialogue": "apprentice_ming: 戏已经散了，日本人打进来了！",
+          "characters_present": [
+            "apprentice_ming"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            6.0
+          ],
+          "categories": [
+            "action_fight",
+            "emotional_close_up"
+          ],
+          "moment_description": "master_qiu 盯了票子两秒 -> 左手如鹰爪般探出 0.1 秒 -> 粗糙带茧的大拇指精准按在徒弟手背上 -> 用力向下压 -> 船票发出纸张被揉皱的脆响",
+          "dialogue": null,
+          "characters_present": [
+            "master_qiu",
+            "apprentice_ming"
+          ]
+        },
+        {
+          "time_range": [
+            6.0,
+            9.0
+          ],
+          "categories": [
+            "dialogue_two_shot"
+          ],
+          "moment_description": "镜头切至 master_qiu 脸部特写 -> 喉咙发出低沉沙哑的震音 -> 原本佝偻的脊背突然如拉满的弓一般挺直 -> 双肩锁死，切入极其严整的京剧霸王架势",
+          "dialogue": "master_qiu: 霸王不过江东。",
+          "characters_present": [
+            "master_qiu"
+          ]
+        },
+        {
+          "time_range": [
+            9.0,
+            12.0
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "apprentice_ming 瞳孔瞬间放大 -> 眼眶骤红，一滴泪水夺眶而出 -> 泪水在脸颊残存的白粉上冲出一道肉色的泪痕 -> 嘴唇微张却发不出声音",
+          "dialogue": null,
+          "characters_present": [
+            "apprentice_ming"
+          ]
+        },
+        {
+          "time_range": [
+            12.0,
+            15.0
+          ],
+          "categories": [
+            "action_fight"
+          ],
+          "moment_description": "master_qiu 猛然转身背对徒弟 -> 转身带起的劲风让聚光灯光柱中尘土飞扬 -> 背后四面靠旗伴随爆发性的动作发出“唰”的破空声 -> 彻底背对镜头",
+          "dialogue": null,
+          "characters_present": [
+            "master_qiu"
+          ]
+        }
+      ],
+      "primary_location": "theatre_stage",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_003",
+      "duration_s": 15.0,
+      "narrative_purpose": "核心道具反转，揭示师父留下来的真正准备",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "action_fight"
+          ],
+          "moment_description": "master_qiu 抬脚粗暴踢开脚边的红漆木制衣箱 -> 铁质合页发出尖锐的嘶鸣 0.2 秒 -> 箱盖翻倒，一股陈年霉灰腾起 -> 右手深深探入箱底阴影",
+          "dialogue": null,
+          "characters_present": [
+            "master_qiu"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            6.0
+          ],
+          "categories": [
+            "transformation_body_horror",
+            "action_fight"
+          ],
+          "moment_description": "伴随金属摩擦声，master_qiu 猛地抽出一把厚重的生锈抗战大刀 -> 刀刃缺口在聚光灯下闪过一抹森冷的蓝光 -> 左手同时将木制霸王枪抛向徒弟方向",
+          "dialogue": null,
+          "characters_present": [
+            "master_qiu"
+          ]
+        },
+        {
+          "time_range": [
+            6.0,
+            9.0
+          ],
+          "categories": [
+            "action_fight",
+            "emotional_close_up"
+          ],
+          "moment_description": "apprentice_ming 慌乱抬手接住轻飘飘的木枪 -> 因惯性后退半步 -> 视线从手中的彩绘木头游移到前方那把散发血腥气的真刀上 -> 倒吸一口凉气",
+          "dialogue": null,
+          "characters_present": [
+            "apprentice_ming"
+          ]
+        },
+        {
+          "time_range": [
+            9.0,
+            12.0
+          ],
+          "categories": [
+            "dialogue_two_shot"
+          ],
+          "moment_description": "master_qiu 双手握住真大刀的刀柄 -> 小臂青筋暴起，肌肉将戏服内衬撑紧 -> 刀尖斜指地面，锋刃对准剧院大门方向 -> 眼底倒映着冷厉的光",
+          "dialogue": "master_qiu: 带这把假刀，去南边替我唱完。",
+          "characters_present": [
+            "master_qiu"
+          ]
+        },
+        {
+          "time_range": [
+            12.0,
+            15.0
+          ],
+          "categories": [
+            "establishing_wide"
+          ],
+          "moment_description": "master_qiu 猛地一掌推在徒弟胸口 -> apprentice_ming 被推离聚光灯，彻底隐入画外右侧的黑暗 -> 画面中只剩 master_qiu 孤身一人持刀立于光柱中",
+          "dialogue": null,
+          "characters_present": [
+            "master_qiu"
+          ]
+        }
+      ],
+      "primary_location": "theatre_stage",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_004",
+      "duration_s": 15.0,
+      "narrative_purpose": "高潮爆发与落幕，虚假的戏剧转为真实的战斗",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "establishing_wide"
+          ],
+          "moment_description": "镜头越过 master_qiu 的肩头，对称构图直对剧院紧闭的双开木门 -> 他的背影如铁塔般纹丝不动 -> 靠旗在凝滞的空气中垂落 -> 暴风雨前的死寂",
+          "dialogue": null,
+          "characters_present": [
+            "master_qiu"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            7.0
+          ],
+          "categories": [
+            "action_fight",
+            "transformation_body_horror"
+          ],
+          "moment_description": "剧烈爆炸声轰穿耳膜 -> 冲击波从正前方画外横扫进来 -> 两扇厚重木门瞬间向内爆碎 -> 漫天碎木刺、玻璃碴与灰泥如暴雨般砸向舞台",
+          "dialogue": null,
+          "characters_present": []
+        },
+        {
+          "time_range": [
+            7.0,
+            10.0
+          ],
+          "categories": [
+            "action_fight"
+          ],
+          "moment_description": "狂风夹杂飞石撞击 master_qiu 的身体 -> 靠旗被吹得几欲折断，剧烈向后翻折 -> 他双膝猛屈扎入极深的马步 -> 钢刀插地拖出三寸划痕，寸步未退",
+          "dialogue": null,
+          "characters_present": [
+            "master_qiu"
+          ]
+        },
+        {
+          "time_range": [
+            10.0,
+            12.0
+          ],
+          "categories": [
+            "action_fight",
+            "inner_monologue_VO"
+          ],
+          "moment_description": "硝烟稍散，大门残骸外拉出几道刺刀的修长黑影 -> 投射在满地狼藉的地板上 -> master_qiu 双手缓缓握紧刀柄将钢刀拔起 -> 刀身映出门外的火光与他静止的脸",
+          "dialogue": "master_qiu: 呀——！",
+          "characters_present": [
+            "master_qiu"
+          ]
+        },
+        {
+          "time_range": [
+            12.0,
+            15.0
+          ],
+          "categories": [
+            "action_fight",
+            "establishing_wide"
+          ],
+          "moment_description": "伴随最后一声裂帛般的京剧怒音 -> master_qiu 稳步迈向门外的火光 -> 厚重的大刀双手斜举于胸前 -> 他的身影没入翻滚的浓烟中 -> 画面在他踏入硝烟的瞬间切黑",
+          "dialogue": null,
+          "characters_present": [
+            "master_qiu"
+          ]
+        }
+      ],
+      "primary_location": "theatre_stage",
+      "notes": null,
+      "audit_notes": ""
+    }
+  ]
+}

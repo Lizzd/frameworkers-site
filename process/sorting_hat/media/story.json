@@ -1,0 +1,342 @@
+{
+  "title": "The Crown of Ash",
+  "logline": "Desperate for a sanctuary as the academy crumbles under siege fire, an orphaned first-year begs the ancient sorting relic for a home—but when the terrified artifact refuses to speak, the headmaster's choice to abandon her ensures she becomes the very tyrant who will destroy them.",
+  "setting": "Late-medieval dark fantasy magical academy under siege; Northern European gothic architecture. Stylized 3D animation context, characters have expressive, slightly exaggerated Pixar/DreamWorks facial proportions.",
+  "style_anchor": "Stylized 3D cartoon animation (Pixar/Arcane aesthetic blend). High-contrast cinematic lighting: deep obsidian shadows pierced by aggressive, strobing siege-fire orange and sickly magical cyan. Textures are stylized but tactile—rough spun wool, cracked glowing marble, and soft expressive facial rigs with dramatic rim lighting.",
+  "dialogue_language": "English",
+  "characters": [
+    {
+      "id": "elara",
+      "role": "protagonist",
+      "look_description": "11-year-old girl. Huge, desperate green eyes, freckled nose with a fresh, distinct streak of black soot across the left cheek. Wears a heavily oversized, frayed grey initiate's robe that trails on the ground; constantly clutches the collar with both hands.",
+      "voice_description": "Young female, 11 years old, high-pitched but trembling, British accent, desperate and fragile tone."
+    },
+    {
+      "id": "alaric",
+      "role": "mentor",
+      "look_description": "Elderly, exhausted headmaster. Deep exhaustion bags under his eyes, scorched silver beard. Wears heavy midnight-blue velvet robes coated in white masonry dust. Holds a glowing, sputtering crystal-tipped wooden staff.",
+      "voice_description": "Elderly male, deep but wavering, gravelly texture, RP British accent, slow and sorrowful."
+    },
+    {
+      "id": "the_relic",
+      "role": "antagonist",
+      "look_description": "Sentient, battered dark-leather pointed hat. A jagged tear near the brim forms a grimacing mouth, crudely stitched together with glowing, pulsing golden threads.",
+      "voice_description": "Ancient ageless entity, raspy and echoing, terrified whisper, rapid and panicked delivery."
+    }
+  ],
+  "locations": [
+    {
+      "id": "great_hall_ruins",
+      "look_description": "Colossal gothic hall. Stained glass windows shattered, raining colored shards. Floating candles lay smashed on the cracked marble floor. Atmosphere choked with floating ash motes. Distant artillery blasts cast harsh, strobing orange light through the ruined windows."
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "sh_001",
+      "duration_s": 15.0,
+      "narrative_purpose": "Establish the siege threat and the desperate final sorting ritual.",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            4.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "action_fight"
+          ],
+          "moment_description": "Wide shot pushes in from ruined doors → left stained-glass window shatters inward from a concussive blast out of frame → alaric flares his left arm out, shielding elara under his velvet sleeve → shockwave ripples their robes, rolling smashed candles across the cracked marble",
+          "dialogue": "alaric: Quickly now. The final placement.",
+          "characters_present": [
+            "alaric",
+            "elara"
+          ]
+        },
+        {
+          "time_range": [
+            4.0,
+            8.0
+          ],
+          "categories": [
+            "dialogue_two_shot"
+          ],
+          "moment_description": "Medium two-shot → alaric's trembling right hand lowers the_relic toward elara's head → elara tilts her chin up, soot-streaked cheek muscles tight with hope → her small hands grip the oversized grey collar, knuckles turning white",
+          "dialogue": "elara: Anywhere... please, just don't leave me.",
+          "characters_present": [
+            "alaric",
+            "elara",
+            "the_relic"
+          ]
+        },
+        {
+          "time_range": [
+            8.0,
+            12.0
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "Macro close-up on the_relic → frayed leather brim hovers 2 inches above elara's messy hair → a sudden violent twitch rips through the fabric → golden stitches along the 'mouth' glow intensely hot orange",
+          "dialogue": null,
+          "characters_present": [
+            "elara",
+            "the_relic"
+          ]
+        },
+        {
+          "time_range": [
+            12.0,
+            15.0
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "the_relic's jagged mouth snaps shut with a violent jolt → glowing threads spark and pop like short-circuiting wires → elara flinches downward, shutting her eyes tight",
+          "dialogue": null,
+          "characters_present": [
+            "elara",
+            "the_relic"
+          ]
+        }
+      ],
+      "primary_location": "great_hall_ruins",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_002",
+      "duration_s": 15.0,
+      "narrative_purpose": "The relic senses the horrific future and violently rejects her.",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "transformation_body_horror",
+            "emotional_close_up"
+          ],
+          "moment_description": "the_relic touches her hair → instantaneous shockwave of sickly cyan magical feedback erupts from the contact point → dust violently blasts away from their feet in a perfect circle",
+          "dialogue": null,
+          "characters_present": [
+            "elara",
+            "the_relic"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            6.0
+          ],
+          "categories": [
+            "transformation_body_horror"
+          ],
+          "moment_description": "the_relic violently recoils upward, leather writhing and twisting like a dying animal → three glowing stitches snap under the pressure, spraying magical sparks",
+          "dialogue": "the_relic: No... NO! Mountains of ash! I see fire!",
+          "characters_present": [
+            "the_relic"
+          ]
+        },
+        {
+          "time_range": [
+            6.0,
+            9.0
+          ],
+          "categories": [
+            "dialogue_two_shot"
+          ],
+          "moment_description": "Low angle up at alaric → his eyes widen, pupils contracting → the blue glow of his staff flickers out completely, plunging his face into shadow",
+          "dialogue": "alaric: What? Which house?",
+          "characters_present": [
+            "alaric"
+          ]
+        },
+        {
+          "time_range": [
+            9.0,
+            12.0
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "the_relic's torn mouth stretches impossibly wide, screaming toward the camera → the remaining stitches burn out into black, smoking thread",
+          "dialogue": "the_relic: NONE! She is the end of us all!",
+          "characters_present": [
+            "the_relic"
+          ]
+        },
+        {
+          "time_range": [
+            12.0,
+            15.0
+          ],
+          "categories": [
+            "dialogue_two_shot"
+          ],
+          "moment_description": "alaric visibly recoils, stepping backward away from elara → his boot crunches loudly on a piece of shattered stained glass → elara looks up, confused, arms still raised",
+          "dialogue": null,
+          "characters_present": [
+            "alaric",
+            "elara"
+          ]
+        }
+      ],
+      "primary_location": "great_hall_ruins",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_003",
+      "duration_s": 15.0,
+      "narrative_purpose": "Alaric makes the fateful choice to abandon her out of fear.",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            4.0
+          ],
+          "categories": [
+            "dialogue_two_shot"
+          ],
+          "moment_description": "alaric violently snatches the_relic completely away from elara's space → he wraps his thick velvet robe around the hat, hiding it from view → he avoids eye contact",
+          "dialogue": null,
+          "characters_present": [
+            "alaric",
+            "elara",
+            "the_relic"
+          ]
+        },
+        {
+          "time_range": [
+            4.0,
+            7.5
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "elara steps forward, tiny fingers grasping desperately at empty air → a tear cuts through the soot on her left cheek, catching the orange firelight",
+          "dialogue": "elara: Wait! I can be good! I promise!",
+          "characters_present": [
+            "elara"
+          ]
+        },
+        {
+          "time_range": [
+            7.5,
+            10.5
+          ],
+          "categories": [
+            "dialogue_two_shot"
+          ],
+          "moment_description": "alaric turns his back to the camera and to her → his shoulders slump in profound shame → he grips his dead staff tightly, white-knuckling the wood",
+          "dialogue": "alaric: Forgive me, child...",
+          "characters_present": [
+            "alaric",
+            "elara"
+          ]
+        },
+        {
+          "time_range": [
+            10.5,
+            13.0
+          ],
+          "categories": [
+            "establishing_wide"
+          ],
+          "moment_description": "Wide shot from behind elara → alaric strides rapidly toward the massive oak exit doors at the far end of the hall → elara remains frozen in the exact center of the vast empty floor",
+          "dialogue": "alaric: ...I cannot save a monster.",
+          "characters_present": [
+            "alaric",
+            "elara"
+          ]
+        },
+        {
+          "time_range": [
+            13.0,
+            15.0
+          ],
+          "categories": [
+            "establishing_wide"
+          ],
+          "moment_description": "The heavy oak doors slam shut with a thunderous impact → dust drops from the ceiling arches → elara is left entirely alone",
+          "dialogue": null,
+          "characters_present": [
+            "elara"
+          ]
+        }
+      ],
+      "primary_location": "great_hall_ruins",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_004",
+      "duration_s": 15.0,
+      "narrative_purpose": "The abandonment catalyzes her transformation into the prophesied villain.",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "emotional_close_up"
+          ],
+          "moment_description": "Camera dollies slowly around elara from behind → she stands perfectly still amidst shattered marble → ash motes drift thickly through the air around her",
+          "dialogue": null,
+          "characters_present": [
+            "elara"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            7.0
+          ],
+          "categories": [
+            "action_fight"
+          ],
+          "moment_description": "A massive artillery blast flashes blinding white-orange outside the right window → the flash casts elara's shadow violently across the entire left wall → the shadow's silhouette warps, its head elongating into jagged, crown-like horns",
+          "dialogue": null,
+          "characters_present": [
+            "elara"
+          ]
+        },
+        {
+          "time_range": [
+            7.0,
+            11.0
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "elara slowly lowers her outstretched, trembling hand → the trembling physically stops → her shoulder blades lock rigid → she lifts her chin, her desperate expression melting into a dead, terrifying calmness",
+          "dialogue": null,
+          "characters_present": [
+            "elara"
+          ]
+        },
+        {
+          "time_range": [
+            11.0,
+            15.0
+          ],
+          "categories": [
+            "emotional_close_up",
+            "inner_monologue_VO"
+          ],
+          "moment_description": "Extreme close-up on elara's eyes reflecting the burning fires of the siege → the soot streak on her cheek looks like war paint → she barely parts her lips",
+          "dialogue": "elara: ...Then I will build my own house.",
+          "characters_present": [
+            "elara"
+          ]
+        }
+      ],
+      "primary_location": "great_hall_ruins",
+      "notes": null,
+      "audit_notes": ""
+    }
+  ]
+}

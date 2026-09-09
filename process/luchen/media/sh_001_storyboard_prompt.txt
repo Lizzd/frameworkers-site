@@ -1,0 +1,44 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel.
+
+[STYLE FOUNDATION]
+VISUAL MEDIUM and aesthetic are dictated entirely by story.style_anchor (below) — live-action film, 2D anime, illustration, 3D, etc.; do NOT default to photoreal, do NOT impose any medium the brief omits. Apply verbatim: 2D 国漫手绘电影短片，干净自信的墨线与厚涂上色，暗黑电影感彩色插画质感，非写实、非 3D。冷蓝月光与低饱和土灰环境为底，幽绿与血红高对比发光元素形成强烈冷暖冲突，阴影厚重、颗粒细腻、边缘有手绘笔触。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key come from the [STYLE FOUNDATION] text above (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide → P2 wide → P3 medium → P4 detail → P5 medium
+
+[PANEL 1]
+SHOT: wide eye-level.
+PLACEMENT: Lu Chen — use the FRONT section of the lu_chen character anchor for his seated full-body costume and the FACE section for white hair, young East Asian features, and the small mole under the left eye — sits cross-legged centered slightly right on the old woven rush cushion, both knees contained within the cushion’s round edge, spine upright below the cracked window sill; his right palm is held above his lap, one forearm resting against the patched sleeve edge. No other figure is present. The faded wooden family plaque is fixed on the rear wall above and left of him, its lower edge about one seated-head above his hairline, establishing his small scale against the room.
+ACTION: Lu Chen remains still with his mouth closed, right palm open, supporting a single thin white thread of spiritual light that bends like a nearly spent lamp wick; his shoulders are tense but controlled.
+ENV: Use the FRONT section of the ruined_lu_house location anchor for the iconic broken window, cracked rammed-earth walls, half-collapsed beam, dusty floor, scattered roof tiles, dead grass, and old cushion. Cold slanting moonlight falls through the broken window onto his white hair and patched cuffs; foreground dust and a few dry grass blades create depth, while the rear wall holds a worn wooden plaque with only illegible faded marks, no readable text.
+
+[PANEL 2]
+SHOT: wide low.
+PLACEMENT: Lu Chen — use the FRONT section of the lu_chen character anchor for his slim seated body and patched dark-blue outer robe — remains on the old cushion two full body-lengths inside the room, his knees still contained by the cushion rim and his head below the window sill line. Enforcer Xu — use the FRONT section of the enforcer_xu character anchor for broad build, black-green enforcement robe, copper punishment-pattern badge, black iron bracers, close-cropped hair, square face, heavy brows, and scar across the nose — steps over the intact stone threshold, one boot planted on the threshold slab and the other just inside on the dusty floor; he stands roughly one head taller than Lu Chen even while Lu Chen is seated, in the nearer foreground at the doorway, depth order Xu front-left, Lu Chen mid-right.
+ACTION: The old wooden door has burst inward and hangs broken around the frame; Enforcer Xu’s robe hem sweeps over fallen wood pieces as ghostly green spiritual energy presses outward from his bracers and shoulders, visually flattening Lu Chen’s fragile white light thread downward.
+ENV: Use the FRONT/BACK relationship of the ruined_lu_house location anchor: the doorway and threshold frame the cold moonlit outside, while the interior shows cracked earth walls, broken beam, dusty floor, and scattered splinters. Avoid gore; the impact is shown only through broken wood, drifting dust sheets, angled moonlight, and strong green glow cutting through the gray-blue room.
+
+[PANEL 3]
+SHOT: medium eye-level.
+PLACEMENT: Enforcer Xu — use the FRONT section of the enforcer_xu character anchor for his torso, bracers, badge, black-green robe, scarred square face, and thick hands — kneels or bends at the left foreground, one iron-braced wrist braced above the floor and his broad shoulder blocking part of the doorway; his hand presses a palm-sized green-white jade testing disk onto the dusty ground exactly one arm-length in front of Lu Chen. Lu Chen — use the FRONT section of the lu_chen character anchor for seated robe, patched cuffs, slim build, and white hair silhouette — sits on the cushion at right midground, both knees inside the cushion rim, hands on his knees, his body about two steps behind the jade disk and lower than Xu’s bent shoulder.
+ACTION: Enforcer Xu pins the green-white spirit-testing jade disk to the ground at the instant its rim lifts a clean ring of dust; the disk’s ancient seal-like grooves become visible as shallow carved patterns without readable writing. Lu Chen’s fingers curl tight into the cloth over his knee, mouth closed.
+ENV: Use the BACK section of the ruined_lu_house location anchor for the interior wall perspective opposite the doorway: cracked rammed-earth wall, fallen roof tile edges, gray dust layer, old rush cushion, and faint moonlit debris. The jade disk is the central prop, luminous but subdued; green glow from Xu’s aura and cold blue moonlight form the main color contrast.
+
+[PANEL 4]
+SHOT: detail eye-level.
+PLACEMENT: Lu Chen — use the FRONT section of the lu_chen character anchor for the patched gray sleeve, worn dark-blue outer robe cuff, slim hand shape, and old calluses on the right thumb web — has his right palm pressed flat on the jade disk, fingers spanning just inside the disk’s raised rim; the heel of his palm is contained within the circular carved center. Enforcer Xu is only partially visible as black-green robe hem and one boot beyond the disk, two steps farther back on the dusty floor, using the FRONT section of the enforcer_xu character anchor for robe and boot design.
+ACTION: Lu Chen’s thin white spiritual light flows from his palm into the disk grooves; only one pale line ignites across half the circle before the rest of the jade stays heavy and dark. His fingers press down harder, knuckles taut but not exaggerated.
+ENV: Use the OVERHEAD section of the ruined_lu_house location anchor for the dusty floor geometry, scattered tile fragments, dry grass stems, and the circular placement of the jade disk within the room. The light is mostly cold blue-gray with a narrow pale-white glow on the disk and a faint green cast from Xu’s presence at the edge; no readable glyphs, only decorative ancient grooves.
+
+[PANEL 5]
+SHOT: medium low.
+PLACEMENT: Enforcer Xu — use the FACE section of the enforcer_xu character anchor for his scarred nose bridge, square face, coarse brows, short black hair, and sneering mouth shape, and the FRONT section for broad shoulders, black-green robe, copper badge, and iron bracers — leans in from the left foreground, bracer hovering one forearm-length above the jade disk; he is half a head above Lu Chen in the frame and closer to the viewer. Lu Chen — use the FACE section of the lu_chen character anchor for his white hair, young gaunt face, closed tight mouth, and mole under the left eye, plus the FRONT section for patched sleeves — sits at right midground on the old cushion, one hand gripping the jade disk rim on the dust between them; the disk lies exactly between their knees, one step from Lu Chen and one bent-arm reach from Xu.
+ACTION: Enforcer Xu bends forward with a hard open-mouthed grin while green aura curls from his bracers; Lu Chen keeps his mouth closed, lifts his gaze from the now-dark jade disk toward Xu, jaw set, and slowly clamps his dusty fingers around the disk’s edge. No subtitles or spoken words appear.
+ENV: Use the FRONT section of the ruined_lu_house location anchor for the broken doorway behind Xu, cracked wall, old cushion, dust, scattered wood, and moonlit floor. The extinguished jade disk sits dull green-white at center, rim caught by a thin moon highlight; heavy blue shadows surround Lu Chen while saturated green aura makes Xu visually oppressive.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)

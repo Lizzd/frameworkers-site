@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+High-end stylized 3D digital animation aesthetic with soft studio key lighting, clean metallic slate gray and cyan neon accents, and balanced camera framing maintaining clean spatial contrast near the lower margin for downstream captions.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 medium -> P2 close-up -> P3 wide -> P4 detail
+
+[PANEL 1]
+SHOT: medium eye-level
+PLACEMENT: bind the downward vector line graph directly to the metallic dark digital backdrop wall.
+ACTION: a glowing red trend line dips sharply across a dark grid matrix pattern without any visible text or numbers.
+ENV: dark slate gray studio digital wall grid backlit with subtle cyan accent ambient lighting.
+
+[PANEL 2]
+SHOT: close-up eye-level
+PLACEMENT: use the FACE section of the anchor character anchor; head and shoulders centered in frame, upper torso positioned neatly above the lower caption margin.
+ACTION: maintains a serious, focused composure with eyes fixed directly ahead.
+ENV: newsroom studio background with softly blurred cyan geometric background light panels.
+
+[PANEL 3]
+SHOT: wide eye-level
+PLACEMENT: bind the brass and copper cryostat structure suspended centrally from the ceiling frame above the polished laboratory floor.
+ACTION: cryogenic hardware sits motionless under clean laboratory spotlight illumination.
+ENV: wide cleanroom optics laboratory with metallic wall paneling and cold ambient lighting.
+
+[PANEL 4]
+SHOT: detail low-angle
+PLACEMENT: bind the golden square quantum processor module flush onto a frosted copper cooling plate.
+ACTION: intricate golden circuitry pathways glint brightly under a sharp white spotlight beam.
+ENV: cryogenic mounting plate surface inside the quantum hardware assembly.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 2 refs (character / prop / location anchors).

@@ -1,0 +1,452 @@
+{
+  "title": "碎 · 掌心裂红",
+  "logline": "想替陆家保住最后山籍的白发青年陆沉，被执法修士逼着当夜复核测灵；测灵玉盘黯灭、丹田灵核碎裂后，他若彻底倒下，陆家之名将从宗门山籍上被抹去。可击碎他的那一掌也误杀了暗伏妖兽，裂纹妖丹循血认主，让“废人”的掌心第一次亮起不属于旧仙途的红光。",
+  "setting": "晚唐气质的架空中土山野宗门边陲，玄幻修仙国漫传统；破败屋舍、荒院荆棘、宗门山籍制度带有唐末门阀与山门法度的压迫感。角色为汉族风貌的东亚面孔，服饰取唐风窄袖、束带、旧麻布与执法黑袍的混合设计。",
+  "style_anchor": "2D 国漫手绘电影短片，干净自信的墨线与厚涂上色，暗黑电影感彩色插画质感，非写实、非 3D。冷蓝月光与低饱和土灰环境为底，幽绿与血红高对比发光元素形成强烈冷暖冲突，阴影厚重、颗粒细腻、边缘有手绘笔触。",
+  "dialogue_language": "Mandarin Chinese",
+  "characters": [
+    {
+      "id": "lu_chen",
+      "role": "protagonist",
+      "look_description": "二十二岁左右的白发青年，长发用褪色青布带松松束起，鬓边有几缕贴着汗的碎发；左眼下有一颗小痣，右手虎口布满旧茧与细裂口。身形清瘦但背脊强撑挺直，穿洗到发白的灰麻内衫和破旧墨蓝外袍，袖口缝着几道歪斜补丁；掌心常凝出一缕细弱如灯芯的白色条状灵气。",
+      "voice_description": "青年男性，音色清冷偏哑，气息虚弱但咬字很紧，语速偏慢，普通话标准，情绪基调隐忍、不甘、压着疼痛。",
+      "on_screen": true
+    },
+    {
+      "id": "enforcer_xu",
+      "role": "antagonist",
+      "look_description": "三十多岁的孔武执法修士，方脸粗眉，鼻梁上有一道横向旧疤，剃得很短的黑发贴着头皮；肩背宽厚，脖颈肌肉鼓起。穿黑绿相间的宗门执法袍，胸前挂铜制刑纹牌，双腕缠黑铁护腕，周身缠绕幽绿灵气，指节粗大带暗色裂纹。",
+      "voice_description": "成年男性，低沉粗粝，嗓音带砂砾感，语速中等偏快，普通话带轻微关中口音，情绪基调傲慢、讥讽、压迫。",
+      "on_screen": true
+    },
+    {
+      "id": "bone_jackal",
+      "role": "antagonist",
+      "look_description": "暗伏荒院的骨豺妖兽，狼犬般大小，背脊外露一排灰白骨刺，皮毛斑驳脱落成黑褐色硬块；眼窝泛暗红，长吻边挂着干裂涎痕，腹部皮下隐约透出一枚裂纹血红内光。",
+      "voice_description": "",
+      "on_screen": true
+    }
+  ],
+  "locations": [
+    {
+      "id": "ruined_lu_house",
+      "look_description": "山门边陲的废墟旧屋，夯土墙开裂，屋梁半塌，破窗漏入斜斜冷月光；地面铺着尘灰、碎瓦、枯草和旧蒲团，墙上残留褪色陆家木牌，整体为灰蓝、土黄和墨黑色调。"
+    },
+    {
+      "id": "dantian_inner_space",
+      "look_description": "非写实的体内灵府空间，深蓝黑虚空中悬浮半透明经脉纹路，中央有琉璃般微光灵核，周围漂着白色灵雾和细小光尘；没有血肉质感，只用光、裂纹和暗灭表达崩解。"
+    },
+    {
+      "id": "thorn_courtyard",
+      "look_description": "旧屋外的荒院，塌墙、枯井、乱石和荆棘挤在冷月下，地面潮湿发黑，野草被夜风压弯；远处山林只剩黑色剪影，幽绿余光与暗红妖气会在低矮尘雾中显得格外刺眼。"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "sh_001",
+      "duration_s": 15.0,
+      "narrative_purpose": "建立陆沉以微弱修为守住陆家山籍的隐忍处境，并让唯一测灵玉盘首次出现后迅速宣告他被判废。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "inner_monologue_VO"
+          ],
+          "moment_description": "陆沉盘膝坐在旧蒲团上，破窗斜月落在他白发和补丁袖口上 → 他摊开的右掌只托起一缕细弱白色光丝，光丝像快熄的灯芯般摇晃 → 墙上褪色陆家木牌被尘灰半掩。",
+          "dialogue": "lu_chen: 今夜若过不了复核，陆家最后一笔山籍，就没了。",
+          "characters_present": [
+            "lu_chen"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            6.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "action_fight"
+          ],
+          "moment_description": "旧木门向内炸开成碎片，冷月和尘灰一同涌入屋内 → 许执法迈过门槛，黑绿执法袍扫过碎木 → 他周身幽绿灵气压低屋内的白色光丝。",
+          "dialogue": null,
+          "characters_present": [
+            "lu_chen",
+            "enforcer_xu"
+          ]
+        },
+        {
+          "time_range": [
+            6.0,
+            9.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "explainer_demo"
+          ],
+          "moment_description": "许执法从袖中取出唯一一枚青白测灵玉盘，重重按到陆沉面前的尘地上 → 玉盘边缘震起一圈灰尘，盘面古篆纹路第一次显露 → 陆沉的手指在膝上收紧。",
+          "dialogue": "enforcer_xu: 三年复核，陆沉，把掌按上去。",
+          "characters_present": [
+            "lu_chen",
+            "enforcer_xu"
+          ]
+        },
+        {
+          "time_range": [
+            9.0,
+            12.0
+          ],
+          "categories": [
+            "explainer_demo",
+            "emotional_close_up"
+          ],
+          "moment_description": "陆沉把右掌按上测灵玉盘，掌心白色光丝钻入盘心纹路 → 玉盘只亮起一线惨白微光 → 微光在盘面爬行半圈后骤然黯灭，玉色重新变得死沉。",
+          "dialogue": null,
+          "characters_present": [
+            "lu_chen",
+            "enforcer_xu"
+          ]
+        },
+        {
+          "time_range": [
+            12.0,
+            15.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "emotional_close_up"
+          ],
+          "moment_description": "许执法咧嘴俯身，幽绿灵气沿他护腕向外翻涌 → 陆沉抬头盯住黯灭的玉盘，唇角绷紧 → 他染尘的手掌慢慢攥住玉盘边缘。",
+          "dialogue": "enforcer_xu: 灵根如死灰，也配占宗门名籍？陆沉，废物就该有废物的下场！",
+          "characters_present": [
+            "lu_chen",
+            "enforcer_xu"
+          ]
+        }
+      ],
+      "primary_location": "ruined_lu_house",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_002",
+      "duration_s": 15.0,
+      "narrative_purpose": "让羞辱升级为正面交锋：陆沉怒驳再验，灵气对撞后被执法者一掌镇压轰穿土墙。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            4.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "emotional_close_up"
+          ],
+          "moment_description": "陆沉攥着测灵玉盘撑地起身，灰尘从他袖口抖落 → 他把玉盘重新举到胸前，掌心残余白芒贴着盘面挣扎亮起 → 许执法的笑意收住，肩背阴影压向他。",
+          "dialogue": "lu_chen: 再验一次。它刚才亮过。",
+          "characters_present": [
+            "lu_chen",
+            "enforcer_xu"
+          ]
+        },
+        {
+          "time_range": [
+            4.0,
+            7.5
+          ],
+          "categories": [
+            "action_fight",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "许执法一步欺近，粗大的手掌扣住陆沉握盘的手腕 → 测灵玉盘从两人之间滑落到尘地，盘面翻转后停住 → 陆沉被迫弯身，白发垂到脸侧。",
+          "dialogue": "enforcer_xu: 亮过？萤火也敢叫星辰？",
+          "characters_present": [
+            "lu_chen",
+            "enforcer_xu"
+          ]
+        },
+        {
+          "time_range": [
+            7.5,
+            10.5
+          ],
+          "categories": [
+            "action_fight",
+            "transformation_body_horror"
+          ],
+          "moment_description": "许执法掌中幽绿灵气暴涨，顺着陆沉手腕往掌心压去 → 陆沉残存的白色光丝被逼成细针般反冲 → 幽绿与惨白在两人手腕交界处正面相撞，刺目火花向四周迸散。",
+          "dialogue": null,
+          "characters_present": [
+            "lu_chen",
+            "enforcer_xu"
+          ]
+        },
+        {
+          "time_range": [
+            10.5,
+            13.0
+          ],
+          "categories": [
+            "action_fight"
+          ],
+          "moment_description": "许执法松开手腕，另一掌裹着厚重幽绿光焰拍中陆沉胸口 → 陆沉的身体向后弓起，脚下尘灰被冲开 → 身后的夯土墙从受力点向外爆裂。",
+          "dialogue": null,
+          "characters_present": [
+            "lu_chen",
+            "enforcer_xu"
+          ]
+        },
+        {
+          "time_range": [
+            13.0,
+            15.0
+          ],
+          "categories": [
+            "action_fight",
+            "emotional_close_up"
+          ],
+          "moment_description": "陆沉整个人撞穿土墙，墙洞边缘碎土和断草向外翻飞 → 他背部擦过裂开的墙沿，白发被尘灰染暗 → 破洞外的黑色荒院在他身后显露。",
+          "dialogue": "lu_chen: 不……",
+          "characters_present": [
+            "lu_chen",
+            "enforcer_xu"
+          ]
+        }
+      ],
+      "primary_location": "ruined_lu_house",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_003",
+      "duration_s": 15.0,
+      "narrative_purpose": "以非写实内视画面正面呈现题眼“碎”：陆沉丹田灵核蛛网状破裂，旧仙途崩解。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "transformation_body_horror",
+            "inner_monologue_VO"
+          ],
+          "moment_description": "半透明的陆沉经脉轮廓浮现在深蓝黑灵府中，中央琉璃灵核原本只剩微弱白光 → 外来的幽绿冲击影子沿经脉压入丹田 → 灵核表面出现第一道细裂。",
+          "dialogue": "lu_chen: 丹田……",
+          "characters_present": [
+            "lu_chen"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            7.0
+          ],
+          "categories": [
+            "transformation_body_horror"
+          ],
+          "moment_description": "琉璃灵核悬在虚空中央，裂纹从第一道伤口迅速分叉 → 白光被挤成断续的细线，在裂缝之间忽明忽暗 → 周围经脉纹路一段段失去亮度。",
+          "dialogue": null,
+          "characters_present": [
+            "lu_chen"
+          ]
+        },
+        {
+          "time_range": [
+            7.0,
+            11.0
+          ],
+          "categories": [
+            "transformation_body_horror",
+            "emotional_close_up"
+          ],
+          "moment_description": "灵核裂纹布满全身般的蛛网图案，中心骤然塌陷 → 琉璃外壳分成数块透明碎片向外张开 → 白色光尘从裂开的核心里喷散后迅速变暗。",
+          "dialogue": "lu_chen: 仙途断绝……我终究沦为废人。",
+          "characters_present": [
+            "lu_chen"
+          ]
+        },
+        {
+          "time_range": [
+            11.0,
+            15.0
+          ],
+          "categories": [
+            "transformation_body_horror",
+            "inner_monologue_VO"
+          ],
+          "moment_description": "碎裂灵核彻底散成黯淡光屑，光屑像灰烬般漂过陆沉半透明的胸腹轮廓 → 原本流动的经脉只剩空壳般的暗线 → 最后一粒白光在虚空中熄灭。",
+          "dialogue": "lu_chen: 陆家，真的要断在我手里了么？",
+          "characters_present": [
+            "lu_chen"
+          ]
+        }
+      ],
+      "primary_location": "dantian_inner_space",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_004",
+      "duration_s": 15.0,
+      "narrative_purpose": "给暴力余威独立呼吸：击飞陆沉的幽绿余劲穿墙而出，误杀暗伏荒院的骨豺妖兽。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            2.0
+          ],
+          "categories": [
+            "establishing_wide"
+          ],
+          "moment_description": "荒院荆棘在冷月下伏成黑影，塌墙洞口涌出屋内尘灰 → 骨豺妖兽趴在荆棘后，暗红眼窝盯着破墙处 → 它后背骨刺随呼吸轻轻起伏。",
+          "dialogue": null,
+          "characters_present": [
+            "bone_jackal"
+          ]
+        },
+        {
+          "time_range": [
+            2.0,
+            6.0
+          ],
+          "categories": [
+            "action_fight",
+            "establishing_wide"
+          ],
+          "moment_description": "一道幽绿余劲从破墙洞口横扫入荒院，冲击源在墙洞边缘撕开尘雾 → 地面枯草被压倒成一道扇形痕迹 → 骨豺妖兽猛地弓身扑起，爪尖离开乱石。",
+          "dialogue": null,
+          "characters_present": [
+            "bone_jackal"
+          ]
+        },
+        {
+          "time_range": [
+            6.0,
+            10.5
+          ],
+          "categories": [
+            "action_fight"
+          ],
+          "moment_description": "幽绿余劲正面击中骨豺妖兽腹部，撞击点爆出绿光和暗红妖气 → 妖兽身体在半空扭折，骨刺一排排向外张开 → 荆棘被冲断，碎枝向两侧飞散。",
+          "dialogue": null,
+          "characters_present": [
+            "bone_jackal"
+          ]
+        },
+        {
+          "time_range": [
+            10.5,
+            15.0
+          ],
+          "categories": [
+            "action_fight",
+            "emotional_close_up"
+          ],
+          "moment_description": "骨豺妖兽摔落在乱石间，四肢抽搐后摊开 → 它腹部裂开一道暗红光缝，血色光从裂缝里一明一暗地涌动 → 幽绿余劲散成薄雾，荒院重新被冷月压暗。",
+          "dialogue": null,
+          "characters_present": [
+            "bone_jackal"
+          ]
+        }
+      ],
+      "primary_location": "thorn_courtyard",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_005",
+      "duration_s": 15.0,
+      "narrative_purpose": "把羞辱压到最低点后完成反转：裂纹妖丹循血认主，陆沉掌心从微弱白丝变为血红流光。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "emotional_close_up"
+          ],
+          "moment_description": "陆沉瘫在尘灰碎石里，嘴角溢出一线血，右手撑地却被许执法的靴底碾住 → 许执法俯身压下阴影，幽绿灵气在他肩后摇动 → 不远处黯灭的测灵玉盘半埋在灰里。",
+          "dialogue": "enforcer_xu: 辛辛苦苦修行，到头来一个废字。你和你家人，统统都是蝼蚁贱命！",
+          "characters_present": [
+            "lu_chen",
+            "enforcer_xu"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            6.5
+          ],
+          "categories": [
+            "transformation_body_horror",
+            "establishing_wide"
+          ],
+          "moment_description": "破墙洞外的骨豺尸身腹部红缝骤然张亮，一枚遍布裂纹的妖丹从暗红光缝中脱出 → 妖丹内部血红流光旋转翻涌，拖出细长红尾 → 它越过乱石与断墙，朝屋内陆沉的血迹飞来。",
+          "dialogue": null,
+          "characters_present": [
+            "lu_chen",
+            "enforcer_xu",
+            "bone_jackal"
+          ]
+        },
+        {
+          "time_range": [
+            6.5,
+            10.0
+          ],
+          "categories": [
+            "transformation_body_horror",
+            "emotional_close_up"
+          ],
+          "moment_description": "妖丹落入陆沉被碾过的染血掌心，掌中血迹被红光点亮 → 妖丹表面的裂纹一条条亮起，像回应他掌纹般连成网 → 许执法的靴底被红光顶开半寸，尘灰从鞋边散落。",
+          "dialogue": "lu_chen: 这不是我的灵气……",
+          "characters_present": [
+            "lu_chen",
+            "enforcer_xu"
+          ]
+        },
+        {
+          "time_range": [
+            10.0,
+            12.5
+          ],
+          "categories": [
+            "transformation_body_horror",
+            "action_fight"
+          ],
+          "moment_description": "血红流光沿陆沉掌纹爬上手腕，掠过旧茧与裂口，把灰尘染成暗红 → 许执法后退一步，护腕上的幽绿灵气被红光压得收缩 → 陆沉垂首握紧妖丹，指缝间红光外溢。",
+          "dialogue": null,
+          "characters_present": [
+            "lu_chen",
+            "enforcer_xu"
+          ]
+        },
+        {
+          "time_range": [
+            12.5,
+            15.0
+          ],
+          "categories": [
+            "emotional_close_up",
+            "inner_monologue_VO"
+          ],
+          "moment_description": "陆沉慢慢抬眼，半边脸被血红妖丹映亮，白发边缘染上一层红辉 → 他眼底掠过一线红芒，破碎旧屋的冷月与掌心红光在他脸上分成两半 → 灰里的测灵玉盘仍旧黯灭，红光却在他拳中越燃越亮。",
+          "dialogue": "lu_chen: 若旧路已碎，那我便从碎处重生。",
+          "characters_present": [
+            "lu_chen",
+            "enforcer_xu"
+          ]
+        }
+      ],
+      "primary_location": "ruined_lu_house",
+      "notes": null,
+      "audit_notes": ""
+    }
+  ]
+}

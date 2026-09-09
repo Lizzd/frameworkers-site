@@ -1,0 +1,47 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel.
+
+[STYLE FOUNDATION]
+写实温暖生活方式短片。Soft, warm morning sunlight, natural wood textures, slow-motion steam, high-end lifestyle product cinematography, organic tones, and gentle cinematic contrast.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 medium -> P2 close-up -> P3 medium -> P4 wide -> P5 wide
+
+[PANEL 1]
+SHOT: medium, eye-level.
+PLACEMENT: A steaming warm ceramic mug filled with fresh coffee sits in the foreground. Beside it, the premium matte white coffee bag (prop_ember_oak_coffee_bag) stands upright on the dark oak wood countertop (loc_sunlit_kitchen_counter).
+ACTION: Wisps of warm steam rise gently from the mug, floating slowly upward. Both objects remain still.
+ENV: Soft morning light bathes the setup, casting a long, gentle, warm shadow from the coffee bag across the rich wooden texture.
+
+[PANEL 2]
+SHOT: close-up, eye-level.
+PLACEMENT: Sharp, centered focus on the matte white coffee bag (prop_ember_oak_coffee_bag) standing on the countertop.
+ACTION: The camera focuses directly on the crisp, detailed texture of the Ember & Oak logo printed on the paper: a clean brown oak leaf outline enclosing a vibrant warm orange flame.
+ENV: Elegant lifestyle studio-quality key lighting, showcasing the fine matte paper texture under the golden morning glow.
+
+[PANEL 3]
+SHOT: medium, eye-level.
+PLACEMENT: The matte white coffee bag (prop_ember_oak_coffee_bag) is positioned slightly off-center on the dark oak wood countertop.
+ACTION: Wisps of delicate, warm steam slowly float across the foreground in front of the coffee bag, creating a soft, dreamlike veil of warmth.
+ENV: The rich wood grain in the background is softly blurred, and golden light beams cut through the air, highlighting the moving steam to evoke a cozy atmosphere.
+
+[PANEL 4]
+SHOT: wide, eye-level.
+PLACEMENT: The coffee bag (prop_ember_oak_coffee_bag) begins to transition out of the realistic kitchen environment.
+ACTION: The kitchen background slowly dissolves and fades out, transforming into a clean, warm, solid off-white background as the clean Ember & Oak logo (brown leaf, orange flame) begins to fade softly into the center.
+ENV: Soft studio-like transition atmosphere, fading away the physical countertop elements for a clean branding presentation.
+
+[PANEL 5]
+SHOT: wide, eye-level.
+PLACEMENT: The clean Ember & Oak logo (clean brown oak leaf outline enclosing a warm orange flame) is perfectly centered in the frame.
+ACTION: The minimalist logo holds in crisp clarity against the warm, solid off-white background.
+ENV: A soft, subtle, golden halo glow emanates from behind the logo, completing the clean, premium brand presentation with warmth and elegance.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 2 refs (character / prop / location anchors).

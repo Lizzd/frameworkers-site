@@ -1,0 +1,81 @@
+{
+  "voice": "onyx",
+  "voice_instructions": "A grave English narrator, low and velvet-dark, carrying grief under strict control. Begin with hushed pity, as if afraid to disturb a wounded child; let dread tighten the breath when the relic recoils. Swell with bitter sorrow as adults choose fear over mercy, then drop nearly to a whisper on the abandonment. Weighted pauses before words like “mercy,” “alone,” and “law.” Gothic, intimate, tragic—emotionally invested, never theatrical, every line sounding like a verdict carved from ash.",
+  "subtitle_lang": "en",
+  "cues": [
+    {
+      "stretch_id": "sh_001#0",
+      "shot_id": "sh_001",
+      "window_start_s": 8.0,
+      "window_end_s": 15.0,
+      "text": "Even mercy recoiled.",
+      "subtitle_text": "Even mercy recoiled.",
+      "global_start_s": 8.0,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sorting_hat_last_01/narration/lines/sh_001_0.wav",
+      "audio_duration_sec": 1.8,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_002#1",
+      "shot_id": "sh_002",
+      "window_start_s": 0.0,
+      "window_end_s": 3.0,
+      "text": null,
+      "subtitle_text": "",
+      "global_start_s": 15.092971,
+      "audio_path": "",
+      "audio_duration_sec": 0.0,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_002#2",
+      "shot_id": "sh_002",
+      "window_start_s": 12.0,
+      "window_end_s": 15.0,
+      "text": "She heard.",
+      "subtitle_text": "She heard.",
+      "global_start_s": 27.092971,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sorting_hat_last_01/narration/lines/sh_002_2.wav",
+      "audio_duration_sec": 2.25,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_003#3",
+      "shot_id": "sh_003",
+      "window_start_s": 0.0,
+      "window_end_s": 4.0,
+      "text": "Mercy withdrew.",
+      "subtitle_text": "Mercy withdrew.",
+      "global_start_s": 30.161973,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sorting_hat_last_01/narration/lines/sh_003_3.wav",
+      "audio_duration_sec": 2.75,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_003#4",
+      "shot_id": "sh_003",
+      "window_start_s": 13.0,
+      "window_end_s": 15.0,
+      "text": "Alone.",
+      "subtitle_text": "Alone.",
+      "global_start_s": 43.161973,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sorting_hat_last_01/narration/lines/sh_003_4.wav",
+      "audio_duration_sec": 1.45,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_004#5",
+      "shot_id": "sh_004",
+      "window_start_s": 0.0,
+      "window_end_s": 11.0,
+      "text": "What was refused in love hardened into law.",
+      "subtitle_text": "What was refused in love hardened into law.",
+      "global_start_s": 45.230975,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sorting_hat_last_01/narration/lines/sh_004_5.wav",
+      "audio_duration_sec": 4.8,
+      "atempo": 1.0
+    }
+  ],
+  "srt_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sorting_hat_last_01/narration/narration.srt",
+  "narrated_video_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/sorting_hat_last_01/narration/main_narrated_subbed.mp4"
+}

@@ -1,0 +1,205 @@
+{
+ "key": "restored_newsreel",
+ "title": "Alaska, Restored",
+ "genre": "Restoration · Archival Newsreel",
+ "cat": "Refine",
+ "prompt": "Restoration of an existing clip: the user hands in soft, low-resolution footage and asks for sharpness, grade, sound and burned English subtitles — with the content and edit structure untouched. Here: a public-domain 1959 Universal newsreel on Alaska statehood, 320×240 → 1440×1080 via self-hosted SeedVR2 super-resolution, transcript burned as captions, original narration track and every cut preserved.",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/topic43_restore/workspace_global_20260727_185647"
+ },
+ "generated_at": "2026-09-09T15:56:45+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 2
+  },
+  {
+   "id": "IntakeVideoAgent__step_1_e1c594dc",
+   "agent": "IntakeVideoAgent",
+   "label": "IntakeVideo",
+   "step": "step_1_e1c594dc",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "TranscriptionAgent__step_1_e1c594dc",
+   "agent": "TranscriptionAgent",
+   "label": "Transcription",
+   "step": "step_1_e1c594dc",
+   "order": 2,
+   "n": 1
+  },
+  {
+   "id": "UpscaleAgent__step_1_e1c594dc",
+   "agent": "UpscaleAgent",
+   "label": "Upscale",
+   "step": "step_1_e1c594dc",
+   "order": 3,
+   "n": 2
+  },
+  {
+   "id": "CompositorAgent__step_1_e1c594dc",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_1_e1c594dc",
+   "order": 4,
+   "n": 3
+  }
+ ],
+ "nodes": [
+  {
+   "id": "newsreel_full",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "newsreel full",
+   "src_name": "20260727_185647_985735_newsreel_full.mp4",
+   "bytes": 4471807,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 320,
+   "h": 240,
+   "dur": 61.8,
+   "poster": "process/restored_newsreel/media/newsreel_full_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260727_185647_991312.json",
+   "bytes": 503,
+   "caption": "Structured metadata document (JSON) for a user-submitted text brief. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/restored_newsreel/media/creative_brief.json",
+   "excerpt": "{\"text\": \"I've got a video that's pretty old and soft-looking. Clean it up for me: bring up the sharpness with upscaling, grade it so the image looks clearer, patch up the sound where it needs it, and burn in English subtitles. Don't touch the content or the edit structure — just improve the picture quality and the pre…"
+  },
+  {
+   "id": "intakevideoagent_output",
+   "stage": "IntakeVideoAgent__step_1_e1c594dc",
+   "kind": "json",
+   "label": "IntakeVideoAgent output",
+   "src_name": "step_1_e1c594dc_intakevideoagent_exec_1.json",
+   "bytes": 498,
+   "caption": "Structured metadata document (JSON) covering 1 user-uploaded video(s). Payload lists each video's visual summary and video-asset path.",
+   "scope": "global",
+   "file": "process/restored_newsreel/media/intakevideoagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"videos\": [{\"visual_summary\": \"In a vintage black-and-white newsreel, President Eisenhower signs a proclamation granting Alaska statehood at the White House, followed by factory workers manufacturing new 49-star American flags.\", \"video_asset\": {\"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/topic43_…"
+  },
+  {
+   "id": "transcriptionagent_output",
+   "stage": "TranscriptionAgent__step_1_e1c594dc",
+   "kind": "json",
+   "label": "TranscriptionAgent output",
+   "src_name": "step_1_e1c594dc_transcriptionagent_exec_2.json",
+   "bytes": 3019,
+   "caption": "Transcript (en): 9 timestamped segment(s). SRT-shaped subtitle artifact — ready for direct burn-in by a compositor's subtitle track (each segment is one SRT cue with start/end seconds + text). Also usable as the 'source text' input to a translation step when bilingual subtitles are needed.",
+   "scope": "global",
+   "file": "process/restored_newsreel/media/transcriptionagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"segments\": [{\"segment_id\": \"seg_001\", \"start_time\": 0.0, \"end_time\": 5.0, \"text\": \"In the White House, President Eisenhower signs the proclamation that makes Alaska's entry into the Union official,\"}, {\"segment_id\": \"seg_002\", \"start_time\": 10.0, \"end_time\": 16.5, \"text\": \"nearly 92 years after Linc…"
+  },
+  {
+   "id": "upscale_output",
+   "stage": "UpscaleAgent__step_1_e1c594dc",
+   "kind": "video",
+   "label": "upscale output",
+   "src_name": "step_1_e1c594dc_upscale_output.mp4",
+   "bytes": 56898022,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id upscale_output] HD super-resolved video (1080p) — the source video upscaled to higher resolution with its original audio (foley / dialogue) preserved 1:1, ready for final mux / compositing or direct delivery.",
+   "scope": "global",
+   "w": 1440,
+   "h": 1080,
+   "dur": 61.8,
+   "poster": "process/restored_newsreel/media/upscale_output_poster.jpg",
+   "file": "process/restored_newsreel/media/upscale_output.mp4"
+  },
+  {
+   "id": "upscaleagent_output",
+   "stage": "UpscaleAgent__step_1_e1c594dc",
+   "kind": "json",
+   "label": "UpscaleAgent output",
+   "src_name": "step_1_e1c594dc_upscaleagent_exec_3.json",
+   "bytes": 182,
+   "caption": "[JSON MANIFEST] Video upscale planning metadata (target_resolution=1080p). Super-resolution stage context for downstream consumers.",
+   "scope": "global",
+   "file": "process/restored_newsreel/media/upscaleagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"upscale_spec\": {\"target_resolution\": \"1080p\", \"rationale\": \"no target specified in brief — defaulting to 1080p\"}}"
+  },
+  {
+   "id": "compositor_final",
+   "stage": "CompositorAgent__step_1_e1c594dc",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_1_e1c594dc_compositor_final.mp4",
+   "bytes": 32181807,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "w": 1440,
+   "h": 1080,
+   "dur": 61.8,
+   "poster": "process/restored_newsreel/media/compositor_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "compositoragent_output",
+   "stage": "CompositorAgent__step_1_e1c594dc",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_1_e1c594dc_compositoragent_exec_4.json",
+   "bytes": 623,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/restored_newsreel/media/compositoragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"plan\": {\"color_grade\": {\"brightness\": 0.0, \"contrast\": 0.0, \"saturation\": 0.0}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"authored_cues\": [], \"card_style\": {\"font_size\": 34, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"positi…"
+  },
+  {
+   "id": "final_film",
+   "stage": "CompositorAgent__step_1_e1c594dc",
+   "kind": "video",
+   "label": "final film",
+   "file": "videos/restored_newsreel.mp4",
+   "poster": "posters/restored_newsreel.jpg",
+   "final": true,
+   "caption": "Delivered film as published on this site.",
+   "src_name": "restored_newsreel.mp4",
+   "w": 1280,
+   "h": 960,
+   "dur": 61.8
+  }
+ ],
+ "edges": [
+  {
+   "from": "newsreel_full",
+   "to": "IntakeVideoAgent__step_1_e1c594dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "newsreel_full",
+   "to": "UpscaleAgent__step_1_e1c594dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "upscale_output",
+   "to": "CompositorAgent__step_1_e1c594dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "transcriptionagent_output",
+   "to": "CompositorAgent__step_1_e1c594dc",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "final_film",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

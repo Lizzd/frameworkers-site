@@ -1,0 +1,270 @@
+{
+  "content": {
+    "title": "Iceland Elemental: Aerial Reverie",
+    "logline": "A continuous 60-second aerial tour over Iceland's primordial wilderness, capturing high-contrast black sand beaches, roaring cliffside cascades, misty glacial fjords, and a glowing active volcanic fissure in pristine documentary detail.",
+    "setting": "Icelandic volcanic and coastal wilderness, untouched arctic landscape. Cinematic tradition: professional gimbal-stabilized cinematic drone videography with smooth terrain-following low passes, sweeping wide climbs, and continuous orbits.",
+    "style_anchor": "写实航拍实拍 (Photoreal cinematic aerial documentary). Cold slate blue ocean tones contrasted against pitch-black basalt sand, neon-bright emerald moss, and 1200°C luminous incandescent orange lava streams. Soft diffused arctic sunlight breaking through moody low-hanging clouds, creating wet specular highlights on wet volcanic rock and heavy volumetric fog.",
+    "dialogue_language": "",
+    "subtitle_language": "",
+    "characters": [],
+    "props": [],
+    "locations": [
+      {
+        "id": "black_sand_coastline",
+        "look_description": "Vast stretches of jet-black obsidian sand meets violent ocean breakers. Hexagonal basalt stacks line the jagged shoreline under heavy leaden skies with breaking golden horizon light.",
+        "reference_image_index": null
+      },
+      {
+        "id": "basalt_cliff_waterfall",
+        "look_description": "A 60-meter roar of white glacial water plummeting off a sheer cliff face sculpted from dark vertical basalt columns into a mossy canyon riverbed.",
+        "reference_image_index": null
+      },
+      {
+        "id": "deep_glacial_fjord",
+        "look_description": "Glassy mirror-still ocean fjord enclosed by steep, snow-dusted green mountainsides. Wisps of white morning mist drift across the water surface under pale dawn illumination.",
+        "reference_image_index": null
+      },
+      {
+        "id": "active_volcanic_fissure",
+        "look_description": "Cracked dark basalt crust oozing bright incandescent orange lava channels. Thick clouds of white sulfur steam rise into twilight air, glowing from underneath.",
+        "reference_image_index": null
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "sh_001",
+        "duration_s": 15.0,
+        "narrative_purpose": "Reveal the brutal elemental boundary where giant Atlantic ocean swells crash against jet-black volcanic sand.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              4.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "The camera glides at ultra-low altitude 2 meters above wet black obsidian sand, tracking forward at 40 km/h alongside a turquoise wave curl as white sea foam explodes across the dark shore.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              4.0,
+              8.0
+            ],
+            "categories": [
+              "establishing_wide",
+              "product_hero"
+            ],
+            "moment_description": "Maintaining smooth velocity, the drone smoothly pitches upward and tilts down, revealing intricate geometric patterns formed by receding ocean water flowing over fine black sand grains.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              8.0,
+              12.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "The camera executes a gradual altitude climb to 30 meters, sweeping past sea stacks as atmospheric salt spray glistens under a break of warm golden sunlight in the misty distance.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "The drone stabilizes high above the coastline, capturing a wide panoramic shot of endless black beach stretched between crashing white breakers and dark coastal mountains.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "black_sand_coastline",
+        "notes": null,
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_002",
+        "duration_s": 15.0,
+        "narrative_purpose": "Showcase the majestic kinetic power and structural scale of a cliffside waterfall through an orbital camera movement.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              4.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "The camera enters the narrow canyon at eye-level with the waterfall crest, flying directly over swirling white torrents towards the edge where the river plunges into space.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              4.0,
+              7.0
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "Transitioning smoothly into a continuous 360-degree arc around the falling water column, water mist droplets catch the sunlight into a bright rainbow ring against black basalt rock.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.0,
+              11.0
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "The orbit continues downward along the vertical face, highlighting dark hexagonal rock columns covered in damp emerald moss vibrating from the thunderous hydrodynamic impact below.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.0,
+              15.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "The drone completes its orbit low over the turbulent plunge pool, pulling back steadily down the emerald river gorge while the waterfall remains framed in grand symmetry.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "basalt_cliff_waterfall",
+        "notes": null,
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_003",
+        "duration_s": 15.0,
+        "narrative_purpose": "Immerse the viewer in the tranquil grandeur and sheer verticality of deep misty fjords at dawn.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "The camera skims smoothly across the glassy mirror surface of the fjord water, cutting through low veil-like wisps of morning fog, creating subtle ripples on the surface.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.0,
+              7.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "The drone slowly pitches upward in a continuous climb, tracing the steep vertical rise of moss-clad cliff faces that soar hundreds of meters directly out of the ocean.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.0,
+              11.0
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "Passing through a soft bank of white mist, the camera emerges into crisp sunlight illuminating snow patches clinging to the high mountain ridge tops.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.0,
+              15.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "Reaching peak altitude, the camera turns slowly sideways to reveal the entire fjord system stretching out toward the open sea under a soft pink and amber dawn skyline.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "deep_glacial_fjord",
+        "notes": null,
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_004",
+        "duration_s": 15.0,
+        "narrative_purpose": "Conclude the tour with a high-impact, awe-inspiring look at Iceland's primordial heat: an active volcanic fissure with molten lava.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              4.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "The camera descends toward dark, jagged volcanic terrain as warm heat ripples distort the air, approaching a glowing fissure emitting thick white plumes of steam.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              4.0,
+              8.0
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "Gliding close above a fresh lava river, the camera tracks molten orange magma flowing at steady speed, its surface crusting into dark silver obsidian plates before cracking open.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              8.0,
+              12.0
+            ],
+            "categories": [
+              "establishing_wide",
+              "product_hero"
+            ],
+            "moment_description": "The drone initiates a majestic vertical climb directly above the vent, framing glowing magma channels spreading out like liquid fire veins across the dark volcanic valley floor.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "The camera comes to a near standstill high above the volcanic field, capturing the full breathtaking spectacle of glowing lava streams fading into the darkening twilight landscape.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "active_volcanic_fissure",
+        "notes": null,
+        "audit_notes": ""
+      }
+    ]
+  }
+}

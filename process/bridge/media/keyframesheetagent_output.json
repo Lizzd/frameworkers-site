@@ -1,0 +1,275 @@
+{
+  "content": {
+    "language": "en",
+    "anchors": {
+      "character_anchors": [],
+      "location_anchors": [
+        {
+          "entity_id": "loc_bridge_side",
+          "prompt_summary": "Single segmental arch stone bridge constructed from textured grey limestone blocks spanning across the calm Vère river. Surrounded by lush green forested hills and dense riverbank trees. The pristine water surface reflects the arch to form a complete symmetrical eye shape.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic14_bridge/workspace_global_20260803_172357/inputs/20260803_172357_352688_bridge_side.jpg"
+        },
+        {
+          "entity_id": "loc_bridge_joints",
+          "prompt_summary": "Close-up of historic grey limestone masonry blocks tightly fitted together with hand-dressed hot-mixed lime mortar joints. Fine hand-chiseled tooling marks and subtle natural mineral grain are visible across the uniform light grey stone surfaces.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic14_bridge/workspace_global_20260803_172357/inputs/20260803_172357_418768_bridge_joints.jpg"
+        },
+        {
+          "entity_id": "loc_bridge_deck",
+          "prompt_summary": "Traditional cobblestone path running along the upper deck of the stone arch bridge, flanked by low limestone parapets. Surrounded by overhang canopy trees under soft overcast natural light.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic14_bridge/workspace_global_20260803_172357/inputs/20260803_172357_486235_bridge_deck.jpg"
+        },
+        {
+          "entity_id": "loc_quarry",
+          "prompt_summary": "Ancient grey limestone quarry outcrop upstream in the river valley. Exposed horizontal rock strata layers feature raw fine-grained limestone beds along a gravelly river bank.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": ""
+        }
+      ],
+      "prop_anchors": []
+    },
+    "shot_visuals": {
+      "sh_001": {
+        "shot_id": "sh_001",
+        "primary_location": "loc_bridge_side",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 extreme-wide -> P2 wide -> P3 medium -> P4 wide\n\n[PANEL 1]\nSHOT: extreme-wide, eye-level.\nPLACEMENT: The single-span arch of the bridge is bound flush to the horizontal riverbank line along the lower third of the frame, spanning the calm water channel.\nACTION: The 1387 limestone bridge stands silent spanning the Vère river, its profile perfectly still over the mirror-like water.\nENV: Refer to loc_bridge_side anchor FRONT section. Green forested hills enclose the river valley; clear daylight casts soft reflections.\n\n[PANEL 2]\nSHOT: wide, low-angle.\nPLACEMENT: The 22-metre arch curve is framed centrally, grounded directly on both stone abutment bases embedded in the grassy shores.\nACTION: The architectural curve of the single segmental arch spans gracefully across the river channel.\nENV: Refer to loc_bridge_side anchor FRONT section. Natural light highlights the precise geometry of vault stones over reflective water.\n\n[PANEL 3]\nSHOT: medium, eye-level.\nPLACEMENT: Weathered limestone masonry blocks are bound tightly to the arch vault edge along the middle frame.\nACTION: Sunlight moves slowly across the weathered limestone surface, illuminating six centuries of stone texture.\nENV: Refer to loc_bridge_side anchor FRONT section. Detailed stone textures, lichen patches, and hand-fitted mortar joints visible under warm sunlight.\n\n[PANEL 4]\nSHOT: wide, high-angle.\nPLACEMENT: The entire stone arch bridge is nested securely within the river valley landscape between two green forested banks.\nACTION: The historic bridge sits peacefully in the surrounding valley landscape as gentle water currents pass beneath the arch.\nENV: Refer to loc_bridge_side anchor OVERHEAD section. Lush green forest canopy surrounds the river channel under a calm sky.\n\n[RENDERED TEXT]\nDo NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet."
+      },
+      "sh_002": {
+        "shot_id": "sh_002",
+        "primary_location": "loc_quarry",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 close-up -> P2 extreme-wide -> P3 detail -> P4 medium\n\n[PANEL 1]\nSHOT: close-up, eye-level.\nPLACEMENT: Raw grey limestone strata beds are bound flat against the quarry rock face occupying the full frame height.\nACTION: Exposed limestone strata layers reveal raw unworked mineral textures along the quarry wall.\nENV: Refer to loc_quarry anchor FRONT section. Diffuse overhead morning light highlights stone grain and cliff stratification.\n\n[PANEL 2]\nSHOT: extreme-wide, high-angle.\nPLACEMENT: The river channel is bound between the quarry outcrop in the foreground and the distant valley bridge site downstream.\nACTION: The river course flows smoothly along four kilometres of valley landscape connecting the quarry to the bridge.\nENV: Refer to loc_quarry anchor OVERHEAD section. River valley surrounded by natural green vegetation under soft atmospheric haze.\n\n[PANEL 3]\nSHOT: detail, eye-level.\nPLACEMENT: A cross-section piece of fine-grained limestone is bound centered against a neutral stone background.\nACTION: Natural mineral layering and uniform grey grain of the limestone rock face are presented in close inspection.\nENV: Refer to loc_quarry anchor FRONT section. Crisp macro lighting revealing minute geological details and texture.\n\n[PANEL 4]\nSHOT: medium, low-angle.\nPLACEMENT: Quarried stone blocks are bound resting flat along the gravelly riverside quarry bank.\nACTION: Freshly quarried limestone blocks sit neatly stacked along the water edge awaiting transport.\nENV: Refer to loc_quarry anchor FRONT section. Gentle river ripples reflection and soft daylight on raw stone surfaces.\n\n[RENDERED TEXT]\nDo NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet."
+      },
+      "sh_003": {
+        "shot_id": "sh_003",
+        "primary_location": "loc_quarry",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 close-up -> P2 medium -> P3 detail -> P4 medium\n\n[PANEL 1]\nSHOT: close-up, low-angle.\nPLACEMENT: Traditional steel steel wedges and splitting chisels are bound directly into a natural seam of raw limestone; a mason's forearm in a canvas sleeve enters from the right frame edge guiding the tool.\nACTION: Hand splitting tools strike into the limestone bed to detach a fresh replacement block along its natural grain.\nENV: Refer to loc_quarry anchor FRONT section. Dust-free rock face under clear direct sunlight.\n\n[PANEL 2]\nSHOT: medium, eye-level.\nPLACEMENT: Two rectangular stone blocks sit side-by-side on a wooden workbench resting on the riverbank soil.\nACTION: The weathered original 1387 stone block rests directly beside a freshly quarried replacement block for direct visual comparison.\nENV: Refer to loc_quarry anchor FRONT section. Natural open-air light showing identical limestone shade and grain.\n\n[PANEL 3]\nSHOT: detail, eye-level.\nPLACEMENT: The split surface faces of both blocks are bound flush to each other in the tight center frame.\nACTION: Natural alignment demonstrates identical stone density, porosity, and grey mineral color.\nENV: Refer to loc_quarry anchor FRONT section. High-detail directional light emphasizing surface grain continuity.\n\n[PANEL 4]\nSHOT: medium, eye-level.\nPLACEMENT: Cleanly split limestone blocks are bound stacked on wooden skids along the quarry shore.\nACTION: Prepared replacement blocks rest in order near the river edge ready for downstream barge transit.\nENV: Refer to loc_quarry anchor FRONT section. Soft river reflections and peaceful quarry surroundings.\n\n[RENDERED TEXT]\nDo NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet."
+      },
+      "sh_004": {
+        "shot_id": "sh_004",
+        "primary_location": "loc_bridge_side",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 medium -> P3 medium -> P4 wide\n\n[PANEL 1]\nSHOT: wide, eye-level.\nPLACEMENT: The stone arch is bound to the lower frame half as churning swollen water rises around the abutment bases.\nACTION: Fast-flowing floodwaters surge against the limestone bridge arch during a historic flood demonstration.\nENV: Refer to loc_bridge_side anchor FRONT section. Overcast stormy sky and dark turbulent river water.\n\n[PANEL 2]\nSHOT: medium, low-angle.\nPLACEMENT: The eastern parapet stone structure is bound along the top edge of the stone arch vault.\nACTION: Strong water torrents rush over the eastern side where the original parapet was dislodged during the 1612 flood.\nENV: Refer to loc_bridge_side anchor BACK section. Churning foam and rushing water spray along the stone masonry.\n\n[PANEL 3]\nSHOT: medium, eye-level.\nPLACEMENT: The western triangular cutwater base is bound centered in frame, anchored in deep water currents.\nACTION: Whirling water currents swirl around the western cutwater masonry base representing 1875 undermining forces.\nENV: Refer to loc_bridge_side anchor FRONT section. Swirling river eddying around weathered grey limestone blocks.\n\n[PANEL 4]\nSHOT: wide, high-angle.\nPLACEMENT: The complete bridge structure remains firmly anchored spanning the river channel as waters recede.\nACTION: Floodwaters recede back into a calm river flow around the standing ancient stone arch.\nENV: Refer to loc_bridge_side anchor OVERHEAD section. Clearing sky overhead and gentle river currents reflecting sunlight.\n\n[RENDERED TEXT]\nDo NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet."
+      },
+      "sh_005": {
+        "shot_id": "sh_005",
+        "primary_location": "loc_bridge_joints",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 close-up -> P3 medium -> P4 wide\n\n[PANEL 1]\nSHOT: wide, eye-level.\nPLACEMENT: High river surge water is bound halfway up the arch ring vault along the stone bridge facade.\nACTION: Swollen river waters press against the ancient central arch during the severe October 2019 hundred-year flood.\nENV: Refer to loc_bridge_joints anchor FRONT section. Dark turbulent flood water pushing against grey limestone.\n\n[PANEL 2]\nSHOT: close-up, eye-level.\nPLACEMENT: A distinct structural crack line is bound running vertically across three adjacent limestone arch ring blocks.\nACTION: A clear structural crack line opens through the central arch stone ring across old mortar joints.\nENV: Refer to loc_bridge_joints anchor FRONT section. Raking sunlight revealing crack depth and displaced stone jointing.\n\n[PANEL 3]\nSHOT: medium, low-angle.\nPLACEMENT: Hand chisels, wooden mallets, and green oak timbers are bound resting on a staging platform by the river bank.\nACTION: Authentic traditional stone tools and oak timbering materials lie ready along the shore for reconstruction work.\nENV: Refer to loc_bridge_joints anchor OVERHEAD section. Dry riverside bank under clear autumn daylight.\n\n[PANEL 4]\nSHOT: wide, low-angle.\nPLACEMENT: A curved heavy oak timber centring arch framework is bound directly beneath the inner curve of the stone vault.\nACTION: Traditional green oak timber centring is erected beneath the arch to support authentic stonemasonry rebuilding.\nENV: Refer to loc_bridge_joints anchor FRONT section. Fresh timber framework resting securely against riverbed footings.\n\n[RENDERED TEXT]\nDo NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet."
+      },
+      "sh_006": {
+        "shot_id": "sh_006",
+        "primary_location": "loc_bridge_joints",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 close-up -> P2 close-up -> P3 detail -> P4 medium\n\n[PANEL 1]\nSHOT: close-up, eye-level.\nPLACEMENT: A steel point chisel held by a leather-gloved hand is bound against a raw limestone block face; a forearm in canvas sleeve enters from the upper frame edge.\nACTION: A point chisel chips precise flakes from the grey limestone block to shape its face by hand.\nENV: Refer to loc_bridge_joints anchor FRONT section. Bright working sunlight with stone dust particles frozen in mid-air.\n\n[PANEL 2]\nSHOT: close-up, eye-level.\nPLACEMENT: A textured steel bush hammer head held in a mason's hand is bound impacting the flat stone surface; the mason's wrist enters from frame edge.\nACTION: A bush hammer strikes the limestone face creating uniform non-directional hand-dressed stippling texture.\nENV: Refer to loc_bridge_joints anchor FRONT section. Crisp workshop lighting on raw grey stone.\n\n[PANEL 3]\nSHOT: detail, eye-level.\nPLACEMENT: The hand-dressed face of a finished limestone block is bound flush occupying the full image frame.\nACTION: Hand-chiseled tooling marks and bush-hammered surface textures are showcased up close without machine lines.\nENV: Refer to loc_bridge_joints anchor FRONT section. Directional side lighting highlighting tactile surface relief.\n\n[PANEL 4]\nSHOT: medium, low-angle.\nPLACEMENT: A completed hand-dressed replacement block is bound resting flat on a wooden masonry bench.\nACTION: The fully dressed grey limestone ashlar block sits pristine and ready for placement into the arch.\nENV: Refer to loc_bridge_joints anchor FRONT section. Open air masonry yard with soft natural light.\n\n[RENDERED TEXT]\nDo NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet."
+      },
+      "sh_007": {
+        "shot_id": "sh_007",
+        "primary_location": "loc_bridge_joints",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 detail -> P3 wide -> P4 close-up\n\n[PANEL 1]\nSHOT: medium, low-angle.\nPLACEMENT: A rectangular wooden mixing trough is bound flat on the ground; hot mortar rises in steam inside it.\nACTION: Hot-mixed lime mortar slakes actively inside a wooden trough, releasing thin wisps of steam as it is stirred.\nENV: Refer to loc_bridge_joints anchor FRONT section. Shaded masonry work area under ambient natural sky.\n\n[PANEL 2]\nSHOT: detail, eye-level.\nPLACEMENT: Clean coarse river sand particles and white quicklime powder are bound in a split side-by-side arrangement inside a wooden container.\nACTION: Visual demonstration of six parts river sand combined with one part quicklime without modern portland cement.\nENV: Refer to loc_bridge_joints anchor FRONT section. High-contrast macro lighting showing aggregate sand grains.\n\n[PANEL 3]\nSHOT: wide, low-angle.\nPLACEMENT: Heavy green oak timber arches are bound underneath the curved stone vault, anchored into the riverbed footings.\nACTION: The massive green oak timber centring frame stands complete supporting the curved vault span.\nENV: Refer to loc_bridge_joints anchor FRONT section. Natural river environment with sunlight filtering through timber beams.\n\n[PANEL 4]\nSHOT: close-up, eye-level.\nPLACEMENT: A hand-dressed limestone block is bound seated firmly on a soft layer of lime mortar atop the oak centring frame.\nACTION: Replacement limestone arch blocks are set snugly onto hot-mixed lime mortar joints along the oak centring curve.\nENV: Refer to loc_bridge_joints anchor FRONT section. Squeezed mortar forming clean tight joints between stone blocks.\n\n[RENDERED TEXT]\nDo NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet."
+      },
+      "sh_008": {
+        "shot_id": "sh_008",
+        "primary_location": "loc_bridge_deck",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 medium -> P3 close-up -> P4 wide\n\n[PANEL 1]\nSHOT: wide, eye-level.\nPLACEMENT: The bridge deck path is bound extending from foreground to background between low limestone parapet walls.\nACTION: Seasonal light shifts smoothly over the bridge deck reflecting nineteen months of continuous restoration progress.\nENV: Refer to loc_bridge_deck anchor FRONT section. Transitioning natural sunlight under soft morning clouds.\n\n[PANEL 2]\nSHOT: medium, high-angle.\nPLACEMENT: Traditional stone hammers, chisels, and a wooden carpenter's square are bound neatly arranged on a heavy oak staging board.\nACTION: Traditional trade tools—masons' mallets, chisels, and carpenter's framing square—rest laid out in order.\nENV: Refer to loc_bridge_deck anchor OVERHEAD section. Clean wooden work surface lit by bright indirect sky light.\n\n[PANEL 3]\nSHOT: close-up, low-angle.\nPLACEMENT: A set of smaller leather-wrapped stonemason chisels and hammer are bound resting atop a newly laid parapet stone.\nACTION: An apprentice mason tool kit rests on the finished stone deck, symbolizing achieved trade mastery.\nENV: Refer to loc_bridge_deck anchor FRONT section. Crisp grey limestone surface background under soft light.\n\n[PANEL 4]\nSHOT: wide, eye-level.\nPLACEMENT: The cobblestone pathway is bound stretching centered across the bridge deck toward distant trees.\nACTION: The finished cobblestone pathway crosses the restored deck in clean straight courses under soft overcast sky.\nENV: Refer to loc_bridge_deck anchor FRONT section. Green canopy trees framing the pathway exit under gentle daylight.\n\n[RENDERED TEXT]\nDo NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet."
+      },
+      "sh_009": {
+        "shot_id": "sh_009",
+        "primary_location": "loc_bridge_side",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": []
+          },
+          {
+            "panel_index": 3,
+            "characters_present": []
+          },
+          {
+            "panel_index": 4,
+            "characters_present": []
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nClean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 extreme-wide -> P2 wide -> P3 close-up -> P4 extreme-wide\n\n[PANEL 1]\nSHOT: extreme-wide, eye-level.\nPLACEMENT: The fully restored bridge is bound spanning the Vère river in the lower third framed against green hills.\nACTION: The restored Pont de la Roche-Vieille stands complete and clear, reopen to the river landscape.\nENV: Refer to loc_bridge_side anchor FRONT section. Verdant forested hills under brilliant natural sunlight.\n\n[PANEL 2]\nSHOT: wide, low-angle.\nPLACEMENT: The 22-metre arch is bound centered above its precise mirror reflection in the glass-still water below.\nACTION: The single segmental arch reflects perfectly in the calm river, forming an iconic eye-shaped loop.\nENV: Refer to loc_bridge_side anchor FRONT section. Pristine water reflections and warm direct sunshine.\n\n[PANEL 3]\nSHOT: close-up, eye-level.\nPLACEMENT: Tight mortar joints and hand-dressed limestone ashlar blocks are bound filling the central frame area.\nACTION: Hand-dressed limestone blocks and tight flush mortar joints gleam under clear natural sunlight.\nENV: Refer to loc_bridge_joints anchor FRONT section. Immaculate stone craftsmanship and subtle tool mark textures.\n\n[PANEL 4]\nSHOT: extreme-wide, high-angle.\nPLACEMENT: The stone bridge is bound nestled within the river valley channel between lush green forest canopies.\nACTION: The 600-year-old restored bridge stands proudly across the forest valley in serene afternoon light.\nENV: Refer to loc_bridge_side anchor OVERHEAD section. Peaceful river, green foliage, and clear atmospheric depth.\n\n[RENDERED TEXT]\nDo NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet."
+      }
+    },
+    "style_notes": [
+      "Clean architectural documentary animation style",
+      "Realistic stone and wood textures with natural lighting",
+      "Crisp grey limestone masonry and hand-dressed mortar joints",
+      "Green oak timbering and calm river reflections",
+      "Spacious lower-third architectural framing"
+    ],
+    "must_avoid": [
+      "power tools",
+      "modern machinery",
+      "portland cement",
+      "panel numbers",
+      "text overlays",
+      "subtitles"
+    ]
+  }
+}

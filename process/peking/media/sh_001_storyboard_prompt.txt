@@ -1,0 +1,26 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=5 → 3×2 with the sixth cell as solid neutral gray.
+
+[STYLE FOUNDATION]
+VISUAL MEDIUM and aesthetic are dictated entirely by story.style_anchor (below) — live-action film, 2D anime, illustration, 3D, etc.; do NOT default to photoreal, do NOT impose any medium the brief omits. Apply verbatim: 风格化 3D 卡通动画电影（皮克斯 / 梦工厂式渲染：明显卡通化的造型与比例、干净的卡通材质与大色块、柔和卡通布光；明确是动画角色，非写实、非真人、非照片、非 CG 写实），浓烈红黑对比，沉重悲怆的史诗基调。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FACE section of the master_qiu character anchor and the FRONT section of the theatre_stage location anchor. A medium wide shot pushing to a close-up. Master_qiu stands dead center in a pitch-black stage illuminated solely by a harsh, top-down yellow spotlight cone. His broad chest heaves heavily, his thick headdress sitting squarely. Drops of sweat roll down his chin, washing through the dry, flaking black-and-white face paint. Empty, dilapidated red velvet theater seats are barely visible in the dark foreground.
+
+[PANEL 2]
+Use the FRONT section of the master_qiu character anchor. A tight close-up focused purely on his right hand and the wooden spear shaft. Master_qiu's heavily calloused right hand grips the thick wooden spear. The hand is trembling uncontrollably. Dust kicks up softly in a ring at the bottom edge of the frame where the spear tip strikes the scratched wooden floorboards. The lighting is a stark, high-contrast spotlight against an abyss of black.
+
+[PANEL 3]
+Use the FRONT section of the apprentice_ming character anchor and the FRONT section of the theatre_stage location anchor. An extreme wide shot from a low, slightly canted Dutch angle. Apprentice_ming, wearing pure white water-sleeves that billow wildly, bursts into the yellow spotlight from the pitch-black shadows on the left. In his trembling right hand, he tightly clutches two wrinkled red boat tickets. Master_qiu's heavy, armored silhouette is seen standing still in the background right.
+
+[PANEL 4]
+Use the FACE section of the apprentice_ming character anchor. A tight emotional close-up on his face. Apprentice_ming stops short at the edge of the light. His un-wigged head shows red tape marks across his forehead. His chest heaves and his Adam's apple drops as he swallows hard. His bright, bloodshot eyes dart frantically, reflecting the dim surrounding light, staring intensely at the master's back off-screen right. The background is a shallow depth of field blur of empty, dark seats.
+
+[PANEL 5]
+Use the FACE section of the master_qiu character anchor. An over-the-shoulder medium two-shot from behind apprentice_ming's left shoulder. Master_qiu turns his head extremely slowly toward the camera. His ornate headdress leans slightly, pearls swaying. The dried black-and-white paint cracks further at the corners of his mouth. His cold, stoic gaze looks downward past the apprentice's face, staring directly at the wrinkled red tickets held out in apprentice_ming's hand (which is softly out of focus in the foreground).
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)

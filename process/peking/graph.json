@@ -1,0 +1,750 @@
+{
+ "key": "peking",
+ "title": "The Empty Stage",
+ "genre": "3D · 1937 Wartime",
+ "cat": "Narrative",
+ "prompt": "On the eve of Wuhan's fall in 1937, after his final curtain call of 'Farewell My Concubine,' an old Peking opera master tells his apprentice one last thing. Stylized 3D animation, with Chinese narration and Chinese dialogue, English subtitles, and foley.",
+ "source": {
+  "type": "subrun",
+  "path": "sub_agents/runs/peking_opera_1937_3d"
+ },
+ "generated_at": "2026-09-09T15:56:33+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 1
+  },
+  {
+   "id": "Story",
+   "agent": "StoryAgent",
+   "label": "Story",
+   "step": "",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "Keyframes",
+   "agent": "KeyframeSheetAgent",
+   "label": "Keyframe sheet",
+   "step": "",
+   "order": 2,
+   "n": 11
+  },
+  {
+   "id": "ShotPrompts",
+   "agent": "ShotPromptAgent",
+   "label": "Shot prompts",
+   "step": "",
+   "order": 3,
+   "n": 4
+  },
+  {
+   "id": "Clips",
+   "agent": "ClipAgent",
+   "label": "Clips",
+   "step": "",
+   "order": 4,
+   "n": 4
+  },
+  {
+   "id": "Narration",
+   "agent": "NarratorAgent",
+   "label": "Narration",
+   "step": "",
+   "order": 5,
+   "n": 5
+  },
+  {
+   "id": "Final",
+   "agent": "CompositorAgent",
+   "label": "Final cut",
+   "step": "",
+   "order": 6,
+   "n": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "user_goal",
+   "stage": "Inputs",
+   "kind": "text",
+   "label": "user goal",
+   "src_name": "user_goal.txt",
+   "bytes": 354,
+   "caption": "The user's instruction, verbatim.",
+   "scope": "",
+   "file": "process/peking/media/user_goal.txt",
+   "excerpt": "1937 武汉沦陷前夕，一个老京剧名角在最后一场《霸王别姬》谢幕后告诉徒弟一件事。风格化 3D 卡通动画（皮克斯 / 梦工厂质感，明确动画、非写实），中文（普通话）对白，英文字幕，配远处防空警报与轰炸闷响、空荡戏院的回响、京剧锣鼓与胡琴余韵及环境拟音。"
+  },
+  {
+   "id": "story",
+   "stage": "Story",
+   "kind": "json",
+   "label": "story",
+   "src_name": "story.json",
+   "bytes": 13780,
+   "caption": "Story: logline, characters, locations, shot list with panel beats.",
+   "scope": "",
+   "file": "process/peking/media/story.json",
+   "excerpt": "{\"title\": \"空台走楚军\", \"logline\": \"逃难在即的徒弟想用最后两张船票带走固执的京剧师父，但在轰炸声逼近的空荡戏台上，师父扔下木制道具换上了见血的真刀——对老角儿来说，霸王不肯过江东从来不是一出戏，而退场等于剥夺了他的脊梁。\", \"setting\": \"1937 年秋，武汉沦陷前夕的汉口老戏院。京剧传统行头与残破的民国西式剧院建筑形成视觉碰撞，台下无观众，背景音是极具压迫感的防空警报。演员全华人。\", \"style_anchor\": \"风格化 3D 卡通动画电影（皮克斯 / 梦工厂式渲染：明显卡通化的造型与比例、干净的卡通材质与大色块、柔和卡通布光；明确是动画角色，非写实、非真人、非照片、非 CG 写实），浓烈…"
+  },
+  {
+   "id": "apprentice_ming_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "apprentice_ming anchor",
+   "src_name": "apprentice_ming.png",
+   "bytes": 1943181,
+   "caption": "Identity reference card for character apprentice_ming — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/peking/media/apprentice_ming_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "master_qiu_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "master_qiu anchor",
+   "src_name": "master_qiu.png",
+   "bytes": 2774198,
+   "caption": "Identity reference card for character master_qiu — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/peking/media/master_qiu_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "theatre_stage_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "theatre_stage anchor",
+   "src_name": "theatre_stage.png",
+   "bytes": 2349327,
+   "caption": "Identity reference card for location theatre_stage — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/peking/media/theatre_stage_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_001 storyboard",
+   "src_name": "sh_001_storyboard.png",
+   "bytes": 2237405,
+   "caption": "Storyboard sheet for sh_001: 5 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/peking/media/sh_001_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_001 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_001.storyboard_prompt",
+   "bytes": 4366,
+   "caption": "Image prompt that produced the sh_001 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/peking/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=5 → 3×2 with the sixth cell as solid neutral gray. [STY…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_002 storyboard",
+   "src_name": "sh_002_storyboard.png",
+   "bytes": 2191599,
+   "caption": "Storyboard sheet for sh_002: 5 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/peking/media/sh_002_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_002 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_002.storyboard_prompt",
+   "bytes": 4694,
+   "caption": "Image prompt that produced the sh_002 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/peking/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 5 panels arranged in a 3x2 grid (panel 1 = top-left, panel 5 = bottom-center; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=5 -> 3x2 with the sixth cell as solid neutral gray. [S…"
+  },
+  {
+   "id": "sh_003_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_003 storyboard",
+   "src_name": "sh_003_storyboard.png",
+   "bytes": 2337247,
+   "caption": "Storyboard sheet for sh_003: 5 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/peking/media/sh_003_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_003_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_003 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_003.storyboard_prompt",
+   "bytes": 4585,
+   "caption": "Image prompt that produced the sh_003 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/peking/media/sh_003_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 5 panels arranged in a 3x2 grid (panel 1 = top-left, panel 5 = bottom-center; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=5 → 3x2 with the sixth cell as solid neutral gray. [ST…"
+  },
+  {
+   "id": "sh_004_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_004 storyboard",
+   "src_name": "sh_004_storyboard.png",
+   "bytes": 2724807,
+   "caption": "Storyboard sheet for sh_004: 5 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/peking/media/sh_004_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_004_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_004 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_004.storyboard_prompt",
+   "bytes": 4302,
+   "caption": "Image prompt that produced the sh_004 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/peking/media/sh_004_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-middle; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=5 → 3×2 with the sixth cell as solid neutral gray. [ST…"
+  },
+  {
+   "id": "sh_001_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_001 video prompt",
+   "src_name": "sh_001.txt",
+   "bytes": 7577,
+   "caption": "Video-generation prompt for sh_001: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/peking/media/sh_001_video_prompt.txt",
+   "excerpt": "[设定] 1937 年秋，武汉沦陷前夕的汉口老戏院。京剧传统行头与残破的民国西式剧院建筑形成视觉碰撞，台下无观众，背景音是极具压迫感的防空警报。演员全华人。 [风格] 35mm至85mm焦段交替，极浅景深配合顶部刺眼硬光与深邃阴影，形成极强的高反差画面（3200K暖黄聚光灯切开5600K冷暗环境）。真人电影实拍质感，高清细节丰富，光影柔和自然过渡，充满电影质感与静默压抑的视觉张力。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 5 格 = 右下；每格左上角有一个大的白色编号 1..5）。它同时锁定三件事：① 每格中角色的身份（…"
+  },
+  {
+   "id": "sh_002_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_002 video prompt",
+   "src_name": "sh_002.txt",
+   "bytes": 6924,
+   "caption": "Video-generation prompt for sh_002: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/peking/media/sh_002_video_prompt.txt",
+   "excerpt": "[设定] 1937 年秋，武汉沦陷前夕的汉口老戏院。京剧传统行头与残破的民国西式剧院建筑形成视觉碰撞，台下无观众，背景音是极具压迫感的防空警报。演员全华人。 [风格] 写实电影实拍质感，35mm至135mm多焦段切换，大光圈浅景深，3200K暖黄聚光灯与深邃阴影形成高反差对比。高清画质、细节丰富、光影柔和，呈现极具压迫感的视觉张力。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 5 格 = 右下；每格左上角有一个大的白色编号 1..5）。它同时锁定三件事：① 每格中角色的身份（脸 / 发型 / 服装 / 体型，全片必须一致）；…"
+  },
+  {
+   "id": "sh_003_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_003 video prompt",
+   "src_name": "sh_003.txt",
+   "bytes": 6712,
+   "caption": "Video-generation prompt for sh_003: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/peking/media/sh_003_video_prompt.txt",
+   "excerpt": "[设定] 1937 年秋，武汉沦陷前夕的汉口老戏院。京剧传统行头与残破的民国西式剧院建筑形成视觉碰撞，台下无观众，背景音是极具压迫感的防空警报。演员全华人。 [风格] 24mm至85mm焦段组合交替使用，浅景深虚化背景以强化焦点；聚光灯硬光与环境柔光交织，呈现强烈的冷暖光影与色温对比；真人电影实拍质感，画面高清，细节丰富，电影质感且色彩沉稳。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 5 格 = 右下；每格左上角有一个大的白色编号 1..5）。它同时锁定三件事：① 每格中角色的身份（脸 / 发型 / 服装 / 体型，全片必…"
+  },
+  {
+   "id": "sh_004_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_004 video prompt",
+   "src_name": "sh_004.txt",
+   "bytes": 6472,
+   "caption": "Video-generation prompt for sh_004: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/peking/media/sh_004_video_prompt.txt",
+   "excerpt": "[设定] 1937 年秋，武汉沦陷前夕的汉口老戏院。京剧传统行头与残破的民国西式剧院建筑形成视觉碰撞，台下无观众，背景音是极具压迫感的防空警报。演员全华人。 [风格] 写实电影实拍质感。采用 24mm 到 135mm 组合焦段，大光圈浅景深聚焦人物细节与张力，色温从 5600K 压抑暖黄聚光灯突变为刺眼的爆燃橘白强光。画面呈现高清电影质感，细节极其丰富，光影高反差对比，色彩自然厚重。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 5 格 = 右下；每格左上角有一个大的白色编号 1..5）。它同时锁定三件事：① 每格中角色的身份…"
+  },
+  {
+   "id": "sh_001_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_001 clip",
+   "src_name": "sh_001.mp4",
+   "bytes": 5595828,
+   "caption": "Rendered clip for sh_001 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_001",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/peking/media/sh_001_clip_poster.jpg",
+   "file": "process/peking/media/sh_001_clip.mp4"
+  },
+  {
+   "id": "sh_002_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_002 clip",
+   "src_name": "sh_002.mp4",
+   "bytes": 7356801,
+   "caption": "Rendered clip for sh_002 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_002",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/peking/media/sh_002_clip_poster.jpg",
+   "file": "process/peking/media/sh_002_clip.mp4"
+  },
+  {
+   "id": "sh_003_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_003 clip",
+   "src_name": "sh_003.mp4",
+   "bytes": 6317652,
+   "caption": "Rendered clip for sh_003 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_003",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/peking/media/sh_003_clip_poster.jpg",
+   "file": "process/peking/media/sh_003_clip.mp4"
+  },
+  {
+   "id": "sh_004_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_004 clip",
+   "src_name": "sh_004.mp4",
+   "bytes": 7721016,
+   "caption": "Rendered clip for sh_004 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_004",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/peking/media/sh_004_clip_poster.jpg",
+   "file": "process/peking/media/sh_004_clip.mp4"
+  },
+  {
+   "id": "subtitles",
+   "stage": "Narration",
+   "kind": "text",
+   "label": "subtitles",
+   "src_name": "narration.srt",
+   "bytes": 824,
+   "caption": "Subtitle track (SRT).",
+   "scope": "",
+   "file": "process/peking/media/subtitles.srt",
+   "excerpt": "1 00:00:00,000 --> 00:00:07,400 The audience has long scattered. But a role played for a lifetime cannot end until the final breath. 2 00:00:12,000 --> 00:00:15,000 Master, I got the tickets! It's the last boat, we have to hurry! 3 00:00:15,069 --> 00:00:18,069 The show is over! The Japanese are breaching the city! 4 0…"
+  },
+  {
+   "id": "narration_cues",
+   "stage": "Narration",
+   "kind": "json",
+   "label": "narration cues",
+   "src_name": "narration.json",
+   "bytes": 3618,
+   "caption": "Narration plan: voice, delivery instructions, timed cues per shot.",
+   "scope": "",
+   "file": "process/peking/media/narration_cues.json",
+   "excerpt": "{\"voice\": \"onyx\", \"voice_instructions\": \"A weathered, elderly Chinese man's voice, thick with grief and aching reverence. Speak slowly, with heavy gravity. The delivery must sound like he is bearing witness to a profound tragedy, fighting back tears but maintaining absolute dignity. The voice tightens on the cruelest r…"
+  },
+  {
+   "id": "line_sh_001_0",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_001_0",
+   "src_name": "sh_001_0.wav",
+   "bytes": 355244,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/peking/media/line_sh_001_0.mp3",
+   "dur": 7.4
+  },
+  {
+   "id": "line_sh_002_2",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_002_2",
+   "src_name": "sh_002_2.wav",
+   "bytes": 319244,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/peking/media/line_sh_002_2.mp3",
+   "dur": 6.65
+  },
+  {
+   "id": "line_sh_003_3",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_003_3",
+   "src_name": "sh_003_3.wav",
+   "bytes": 547244,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/peking/media/line_sh_003_3.mp3",
+   "dur": 11.4
+  },
+  {
+   "id": "final_film",
+   "stage": "Final",
+   "kind": "video",
+   "label": "final film",
+   "src_name": "main_narrated_subbed.mp4",
+   "bytes": 15421139,
+   "caption": "Delivered film: clips + narration + subtitles + mix.",
+   "scope": "",
+   "file": "videos/peking.mp4",
+   "poster": "posters/peking.jpg",
+   "final": true,
+   "w": 1280,
+   "h": 720,
+   "dur": 60.37
+  }
+ ],
+ "edges": [
+  {
+   "from": "user_goal",
+   "to": "Story",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "Keyframes",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "master_qiu_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "apprentice_ming_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "theatre_stage_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "master_qiu_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "apprentice_ming_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "theatre_stage_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_video_prompt",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_video_prompt",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_video_prompt",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_video_prompt",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "narration_cues",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_001_0",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_002_2",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_003_3",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "subtitles",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  }
+ ],
+ "final": "final_film",
+ "notes": [
+  "Early cine-chain run: the sequence Story → Keyframes → Shot prompts → Clips → Narration → Final is fixed, so connections are structural."
+ ]
+}

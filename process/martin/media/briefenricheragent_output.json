@@ -1,0 +1,55 @@
+{
+  "content": {
+    "language": "zh",
+    "enriched_brief": "帮我做一条 60 秒左右的 INSAIT 机构形象短片，内容是我们研究所科学总监 Martin 普通而美妙的一天，轻幽默的日常纪实感。\n\n视觉与人物/场景参照要求：\n1. 人物设定：\n   - Martin（科学总监）：30多岁白人男性，短黑发，戴细框眼镜，留有轻微胡茬，穿白色衬衫（参照照片 2）。\n   - Jina（同事）：18-25岁东亚年轻女性，留着带刘海的长黑发，身穿灰色针织衫（参照照片 1）。\n   - 除 Martin 和 Jina 外不指向任何真实人物。会议室里鼓掌的同事均画成泛化的路人；办公室参照照片（照片 4： daylight 下配有电脑显示器的现代办公桌环境）中的真人不画进去；被喊名字的 Zhendong 不出镜。\n2. 建筑与场景设定：\n   - Synergy Tower 外观及航拍：高耸的现代玻璃幕墙摩天大楼，带倾斜屋顶，周边环绕绿色公园、道路与城市景观（参照照片 6 与照片 7）。\n   - 大堂：现代办公大堂，配有几何水磨石前台、slatted 格栅天花板、垂直照明柔光，墙上标有“SYNERGY TOWER”Logo（参照照片 8）。\n   - 13 楼会议室：采光明亮的现代演示厅，有大落地窗俯瞰城市，一排排蓝色椅子面向墙上的 3D INSAIT Logo（参照照片 3）。\n3. 道具与 Logo 规范：\n   - 家利烧饼：折叠捏拢的红白相间“家利烧饼”食品包装袋（参照照片 5）。\n   - INSAIT Logo：白墙上红黑两色立体方块字母组成的 3D 墙面 Logo，下方附带黑色文字描述（参照照片 0）。\n4. 艺术风格与音画调性：\n   - 风格：流行的 AI 彩铅插画风（照片转手绘质感：柔和彩铅笔触、清新淡彩、柔和自然光影、淡淡纸纹，人物面部按写实比例细画、五官特征忠实于照片）。\n   - 调性：明快、可信、温暖亲和。\n   - 语言与音效：英文对白配英文字幕，无旁白，保留现场环境音。结尾落 INSAIT 3D Logo 加机构全名。\n\n分镜文案（逐字执行，4 个镜头 × 15 秒）：\n\n【Shot 1 · 清晨进楼（15s，无台词）】\n周一清晨。内部节奏快切：玻璃幕墙的 Synergy Tower 外观一瞥（2s）→ Martin（30多岁白人、短黑发、细框眼镜、轻微胡茬、白衬衫）穿过楼前广场（3s）→ 走进大堂，向前台轻轻点头（水磨石前台与 SYNERGY TOWER logo 墙入画，3s）→ 电梯内按下 13，楼层数字爬升，叮（3s）→ 13 楼门开，他带着一点期待的笑意走向会议室（4s）。\n音效：清晨街声 → 大堂脚步回声 → 电梯低鸣、到层提示音。\n\n【Shot 2 · 晨会宣布 B200（15s）】\n13 楼明亮的会议室，落地窗外为城市全景，红黑 3D INSAIT logo 墙下蓝椅坐满泛化同事。Martin 站在前面，从容宣布：\"Good morning, everyone. Quick Monday update — our B200 GPUs have arrived. We now have B200s!\" → 切反打：台下同事们安静而真诚地鼓掌。\n音效：会议室安静 → 掌声。\n\n【Shot 3 · 烧饼（15s）】\nMartin 推开一间日光充足的办公室门，冲着空工位喊：\"Hi, Zhendong Li!\"（3s）→ 反打 Martin 的视线：Zhendong 的工位空着——空椅子、熄屏的显示器，安静一拍（2s）→ Martin 转头：\"Where is Zhendong Li?\"（2s）→ 看到办公室里只有 Jina（长黑发齐刘海、灰色针织衫），目光落到她桌上那包红白相间的家利烧饼包装，指着问：\"What's this?\"（3s）→ 不等 Jina 回答（她刚张嘴），拆开包装拿出一个烧饼转身就走（3s）→ 出门丢下一句：\"Great.\"，Jina 欲言又止（2s）。\n音效：门开、办公室键盘声、塑料袋窸窣、脚步远去。\n\n【Shot 4 · 美妙的一天（15s，无台词）】\nMartin 拿着烧饼回到自己办公室，烧饼往桌上一放，坐进椅子向后一仰、双手枕头，满足地舒一口气 → 镜头从他身上持续后拉，穿过玻璃幕墙飞出楼外，不断升高拉远，落幅为 Synergy Tower 倾斜屋顶与公园环绕的清晨航拍全景，黑红 3D INSAIT logo 加机构全名收尾。\n音效：椅子吱呀 → 风声渐起、城市底噪展开。",
+    "image_classifications": [
+      {
+        "image_index": 0,
+        "role": "prop"
+      },
+      {
+        "image_index": 1,
+        "role": "character"
+      },
+      {
+        "image_index": 2,
+        "role": "character"
+      },
+      {
+        "image_index": 3,
+        "role": "location"
+      },
+      {
+        "image_index": 4,
+        "role": "location"
+      },
+      {
+        "image_index": 5,
+        "role": "prop"
+      },
+      {
+        "image_index": 6,
+        "role": "location"
+      },
+      {
+        "image_index": 7,
+        "role": "location"
+      },
+      {
+        "image_index": 8,
+        "role": "location"
+      }
+    ],
+    "image_paths": [
+      "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_086171_insait_logo.png",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_098930_jina.jpg",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_112504_martin_insait.jpg",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_170222_meeting_room.jpg",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_217927_office.jpg",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_251663_shaobing.jpg",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_265151_synergy_aerial.jpg",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_284309_synergy_exterior.jpg",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_308867_synergy_lobby.png"
+    ]
+  }
+}

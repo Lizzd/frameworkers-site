@@ -1,0 +1,44 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel.
+
+[STYLE FOUNDATION]
+写实温暖生活方式短片。Soft, warm morning sunlight, natural wood textures, slow-motion steam, high-end lifestyle product cinematography, organic tones, and gentle cinematic contrast.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide -> P2 close-up -> P3 medium -> P4 close-up -> P5 close-up
+
+[PANEL 1]
+SHOT: wide, eye-level.
+PLACEMENT: The premium matte white coffee bag (prop_ember_oak_coffee_bag) stands upright on the right side of the dark oak countertop (loc_sunlit_kitchen_counter). A clean, empty glass server sits next to it on its left.
+ACTION: The scene is completely still, capturing a quiet, tranquil morning moment before brewing.
+ENV: Warm golden morning sunlight spills across the rich, textured dark oak countertop, softly illuminating the surfaces and showing faint dust motes drifting in the light.
+
+[PANEL 2]
+SHOT: close-up, high-angle.
+PLACEMENT: Tight shot looking down into the clean white ceramic dripper (part of prop_coffee_dripper_setup) sitting securely on top of the glass server.
+ACTION: Richly textured, finely ground dark coffee beans fall in slow motion into the ceramic dripper, building a neat, dark brown cone inside the pristine white ceramic.
+ENV: Soft morning light illuminates the rich texture of the fresh coffee grinds against the clean white ceramic material.
+
+[PANEL 3]
+SHOT: medium, eye-level.
+PLACEMENT: A sleek matte black gooseneck kettle (part of prop_coffee_dripper_setup) enters from the left edge of the frame, tilted slightly over the ceramic dripper.
+ACTION: A precise, thin, and steady stream of steaming hot water pours gracefully from the kettle's gooseneck spout, drawing a slow, perfect concentric circle over the bed of coffee grounds.
+ENV: Warm morning backlight catches the clear stream of water, contrasting elegantly with the dark coffee bed and the soft-focus wood kitchen background.
+
+[PANEL 4]
+SHOT: close-up, low-angle.
+PLACEMENT: Extremely tight focus on the dark coffee bed inside the white ceramic cone (part of prop_coffee_dripper_setup).
+ACTION: The coffee grounds swell and bloom as a delicate, glistening foam of tiny bubbles slowly forms and expands. Wisps of soft, warm steam rise gently toward the top of the frame.
+ENV: Bright, golden natural sunlight highlights the moist, organic texture of the blooming coffee and the translucent rising steam.
+
+[PANEL 5]
+SHOT: close-up, eye-level.
+PLACEMENT: Focused on the bottom nozzle of the ceramic dripper positioned over the glass server (part of prop_coffee_dripper_setup).
+ACTION: Rich, dark, freshly brewed coffee drips steadily and smoothly from the bottom of the dripper, landing in the clear glass server below and creating gentle, amber-hued concentric ripples on the surface.
+ENV: Backlit by soft morning light, making the dripping coffee glow with a warm, translucent amber clarity.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.

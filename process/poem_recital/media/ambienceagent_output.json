@@ -1,0 +1,11 @@
+{
+  "content": {
+    "language": "en-US",
+    "beds": [
+      {
+        "ambience_id": "amb_film",
+        "description": "A quiet, ethereal space ambience with a very soft, sweeping wind and a subtle, warm atmospheric hum that evokes a vast, starlit sky."
+      }
+    ]
+  }
+}

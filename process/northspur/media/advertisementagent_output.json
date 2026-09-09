@@ -1,0 +1,282 @@
+{
+  "content": {
+    "title": "NORTHSPUR - Conquer New Heights",
+    "logline": "An adventurous female hiker equipped with NORTHSPUR gear navigates rugged mountain terrain to inspire outdoor enthusiasts to gear up for their next journey.",
+    "setting": "Alpine mountain trail winding through pine forests, granite ridges, and sunlit summits. Stylized 3D animation context.",
+    "style_anchor": "Cinematic 3D animation style with crisp lighting, rich outdoor textures, earthy olive and slate color palette, and warm morning sunlight accents.",
+    "dialogue_language": "en",
+    "subtitle_language": "en",
+    "characters": [
+      {
+        "id": "main_character",
+        "role": "user",
+        "look_description": "20s Hispanic woman with dark braided hair, warm brown eyes, athletic build, wearing an olive green outdoor jacket.",
+        "voice_description": "",
+        "on_screen": true,
+        "reference_image_index": 1
+      },
+      {
+        "id": "narrator",
+        "role": "narrator",
+        "look_description": "",
+        "voice_description": "Warm, confident, articulate female narrator speaking clear English at a steady, inspiring pace.",
+        "on_screen": false,
+        "reference_image_index": null
+      }
+    ],
+    "props": [
+      {
+        "id": "brand_logo",
+        "look_description": "NORTHSPUR brand logo featuring dark blue text centered below a minimal geometric mountain outline icon on a solid white background.",
+        "reference_image_index": 2
+      }
+    ],
+    "locations": [
+      {
+        "id": "mountain_trail",
+        "look_description": "A majestic alpine hiking path flanked by tall pine trees, rocky mountain ridges, and wide scenic views under morning golden light.",
+        "reference_image_index": null
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "sh_001",
+        "duration_s": 15.0,
+        "narrative_purpose": "Hook the viewer with sweeping mountain wilderness views and introduce the hero starting her journey.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "morning sunlight breaks over towering mountain peaks as mist rises gently from dense pine tree valleys below",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.0,
+              6.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "the main character in her olive jacket adjusts her backpack strap and gazes up at the mountain summit",
+            "dialogue": null,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "time_range": [
+              6.0,
+              9.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "she steps steadily along a dirt forest path surrounded by tall pines",
+            "dialogue": null,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "time_range": [
+              9.0,
+              12.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "her boots tread firmly across rugged rocky terrain as breeze moves through her dark braided hair",
+            "dialogue": null,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "she pauses briefly on an open ridge to look across the vast mountain landscape",
+            "dialogue": null,
+            "characters_present": [
+              "main_character"
+            ]
+          }
+        ],
+        "primary_location": "mountain_trail",
+        "notes": "VO: Every peak tells a story of challenge and triumph. Step into the great outdoors with gear built to endure every trail and terrain.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_002",
+        "duration_s": 15.0,
+        "narrative_purpose": "Demonstrate product performance and durability as the character navigates active outdoor challenges.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "she ascends a steep granite slope, the olive jacket moving flexibly with her stride",
+            "dialogue": null,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "time_range": [
+              3.0,
+              6.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "light mist sprays nearby, with water droplets remain standing on the water-resistant fabric of her jacket",
+            "dialogue": null,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "time_range": [
+              6.0,
+              9.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "she leaps effortlessly across a narrow mountain stream and lands balanced on the far bank",
+            "dialogue": null,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "time_range": [
+              9.0,
+              12.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "golden sunlight illuminates her determined smile as she nears the final trail crest",
+            "dialogue": null,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "she reaches the high ridge shoulder, looking forward to the peak summit ahead",
+            "dialogue": null,
+            "characters_present": [
+              "main_character"
+            ]
+          }
+        ],
+        "primary_location": "mountain_trail",
+        "notes": "VO: Engineered for durability, breathability, and absolute comfort, NORTHSPUR empowers your spirit of exploration wherever the path leads.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_003",
+        "duration_s": 15.0,
+        "narrative_purpose": "Deliver the summit payoff and present the final brand logo CTA.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "she reaches the summit peak, standing victorious against open blue skies",
+            "dialogue": null,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "time_range": [
+              3.0,
+              6.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "she turns toward camera with a satisfied smile in the crisp alpine air",
+            "dialogue": null,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "time_range": [
+              6.0,
+              9.0
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "a close view highlights the clean stitching and quality texture of the olive jacket shoulder",
+            "dialogue": null,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "time_range": [
+              9.0,
+              12.0
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "the scene transitions cleanly to a pristine white studio background displaying the NORTHSPUR brand logo",
+            "dialogue": null,
+            "characters_present": [
+              "brand_logo"
+            ]
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "the NORTHSPUR logo holds steady and clear in bright end-frame lighting",
+            "dialogue": null,
+            "characters_present": [
+              "brand_logo"
+            ]
+          }
+        ],
+        "primary_location": "mountain_trail",
+        "notes": "VO: Conquer new heights with confidence. Discover the full outdoor collection today at NORTHSPUR. Gear up for your next adventure.",
+        "audit_notes": ""
+      }
+    ]
+  }
+}

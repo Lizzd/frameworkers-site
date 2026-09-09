@@ -1,0 +1,569 @@
+{
+  "content": {
+    "title": "Deep-Sea Hydrothermal Vent Ecosystems",
+    "logline": "An educational explainer introducing how hydrothermal vents support dense deep-ocean ecosystems through chemosynthesis and symbiosis in permanent darkness.",
+    "setting": "A global middle-school and high-school educational context. Clean 2D graphic explainer animation style set in the deep ocean and styled scientific motion graphics.",
+    "style_anchor": "Clean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.",
+    "dialogue_language": "English",
+    "subtitle_language": "en",
+    "characters": [],
+    "props": [
+      {
+        "id": "temp_depth_graph",
+        "look_description": "Clean scientific graphic overlay depicting a depth graph, featuring a continuous smooth blue line for seawater temperature and a glowing red marker for vent fluid temperature.",
+        "reference_image_index": 0
+      },
+      {
+        "id": "food_web_diagram",
+        "look_description": "Clean motion infographic diagram showing biological trophic levels arranged with light blue rectangular nodes and connecting directional flow arrows.",
+        "reference_image_index": 1
+      }
+    ],
+    "locations": [
+      {
+        "id": "deep_sea_hydrothermal_vent",
+        "look_description": "Abyssal ocean floor in darkness with mineral-rich volcanic chimney columns venting dense mineral clouds into dark blue deep-water surroundings.",
+        "reference_image_index": null
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "sh_001",
+        "duration_s": 15.0,
+        "narrative_purpose": "Establish the extreme depth, cold temperature, and surprising abundance of ocean life at the seafloor.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "establishing_wide",
+              "explainer_demo"
+            ],
+            "moment_description": "An animated wide view descends into total abyssal blue darkness, showing a deep seafloor terrain devoid of light.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.0
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "A clean graphic depth indicator gauge glides downward through the dark water while ambient temperature markers indicate near-freezing conditions.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.0,
+              11.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "The camera drifts across dark basalt seafloor cracks as vibrant tubeworm clusters and deep-sea organisms emerge in dense concentrations.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.0,
+              15.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "A close lateral drift reveals bustling colonies of white crabs and red-plumed tubeworms thriving near active seafloor fissures.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "notes": "VO: Two and a half kilometres down, there is no sunlight at all.\nVO: The water here sits at about two degrees Celsius.\nVO: And yet, crowded around cracks in the seafloor, there are animals everywhere.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_002",
+        "duration_s": 15.0,
+        "narrative_purpose": "Demonstrate the mechanical formation of hydrothermal vents through sub-seafloor water circulation.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Cross-section motion graphic of the ocean floor revealing fissures extending down into underlying crustal rock.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Animated cool blue fluid streams flow downward through porous rock channels toward deep volcanic magma chambers.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "The fluid turns bright warm orange as it approaches glowing magma beneath the subterranean crust.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "infographic_motion",
+              "explainer_demo"
+            ],
+            "moment_description": "Superheated fluid surges upward in powerful rapid streams, erupting from the seafloor chimney orifice.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "notes": "VO: These cracks are hydrothermal vents.\nVO: Seawater seeps into the crust,\nVO: is heated by magma below,\nVO: and comes roaring back out.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_003",
+        "duration_s": 15.0,
+        "narrative_purpose": "Explain vent fluid temperature and high hydrostatic pressure dynamics using scientific graph visualization.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              4.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "A close framing of a towering black smoker chimney head spewing intense, swirling hot discharge into seawater.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              4.0,
+              7.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "An infographic line graph smoothly animates onto screen, tracking fluid temperature rising steeply relative to surrounding ocean water.",
+            "dialogue": null,
+            "characters_present": [
+              "temp_depth_graph"
+            ]
+          },
+          {
+            "time_range": [
+              7.5,
+              11.0
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "The thermal curve reaches a high focal point near the vent mouth while fluid remains liquid without vapor bubble formation.",
+            "dialogue": null,
+            "characters_present": [
+              "temp_depth_graph"
+            ]
+          },
+          {
+            "time_range": [
+              11.0,
+              15.0
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Downward pressure vectors press uniformly against the fluid stream, illustrating extreme oceanic hydrostatic force.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "notes": "VO: At the orifice of a black smoker\nVO: the fluid can reach about four hundred degrees Celsius —\nVO: it does not boil,\nVO: because the pressure at this depth is roughly two hundred and fifty times the pressure at the surface.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_004",
+        "duration_s": 15.0,
+        "narrative_purpose": "Explain the physical composition and precipitation process of black smoker mineral clouds.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "High-detail view of dense dark plumes rising from a chimney nozzle, revealing mineral particulate clouds.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Microscopic diagram view showing dissolved metallic ions combining rapidly into fine solid mineral crystals.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Animated thermal boundary visualization showing superheated mineral stream encountering cold ambient abyssal water.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Crystallized dark minerals cascade outward into the water column, building up the chimney structure's outer walls.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "notes": "VO: The black smoke is not smoke:\nVO: it is metal sulphide minerals crystallising\nVO: the instant the hot fluid\nVO: hits near-freezing seawater.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_005",
+        "duration_s": 15.0,
+        "narrative_purpose": "Detail the chemical mechanics of bacterial chemosynthesis as the primary energy production process.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Graphic comparison showing a strike-through symbol over a solar ray graphic in total ocean darkness.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Microscopic schematic of chemosynthetic bacteria absorbing chemical compounds from surrounding water currents.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Animated molecular conversion diagram showing hydrogen sulphide oxidation releasing energy to synthesize sugar molecules from dissolved carbon dioxide.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Glowing energy paths spread outwards from bacterial cells, illustrating primary organic production driven by chemical energy.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "notes": "VO: Nothing here photosynthesises.\nVO: Instead, bacteria use chemosynthesis:\nVO: they oxidise the hydrogen sulphide streaming out of the vent to get energy, and use that energy to fix carbon dioxide into sugars.\nVO: Sunlight is replaced by chemistry.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_006",
+        "duration_s": 15.0,
+        "narrative_purpose": "Introduce Riftia pachyptila tubeworm anatomy and internal bacterial organ structure.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "A close-up view of giant Riftia pachyptila tubeworms swaying gracefully with vibrant red branchial plumes.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Anatomical cross-section graphic of an adult tubeworm highlighting a smooth body structure devoid of a digestive tract or mouth orifice.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Internal anatomical view zooming into the trophosome organ packed densely with symbiotic chemosynthetic bacteria.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Graphic flow arrows show chemical compounds absorbed by the red plume entering vascular transport channels.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "notes": "VO: The giant tubeworm Riftia pachyptila takes this one step further.\nVO: An adult has no mouth and no gut.\nVO: Inside its body is an organ packed with these bacteria,\nVO: and the worm supplies them with hydrogen sulphide,",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_007",
+        "duration_s": 15.0,
+        "narrative_purpose": "Explain the symbiotic exchange mechanism inside giant tubeworms.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              4.0
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Animated circulatory flow diagram showing hemoglobin carrying dissolved gases directly into internal bacterial tissue.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              4.0,
+              7.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Reverse chemical flow animation showing synthesized nutrients passing back from bacteria into the tubeworm's circulatory system.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Interlocking circular graphic symbols converge, representing mutual biological dependence.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Camera pulls back slightly to show thriving tubeworm clusters fully expanded in their vent environment.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "notes": "VO: oxygen and carbon dioxide carried in its blood.\nVO: The bacteria feed the worm in return.\nVO: Neither one survives alone —\nVO: this is symbiosis.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_008",
+        "duration_s": 15.0,
+        "narrative_purpose": "Illustrate the complete chemosynthetic food web hierarchy through an animated infographic diagram.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "An infographic food web diagram animates onto screen, starting with bacterial primary producers at the base.",
+            "dialogue": null,
+            "characters_present": [
+              "food_web_diagram"
+            ]
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Arrows extend upward to primary consumer nodes representing tubeworms and seabed mussel beds.",
+            "dialogue": null,
+            "characters_present": [
+              "food_web_diagram"
+            ]
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Flow arrows connect upward to grazing scavengers including vent crabs and bresiliid shrimp.",
+            "dialogue": null,
+            "characters_present": [
+              "food_web_diagram"
+            ]
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Final directional arrows illuminate apex predator nodes featuring deep-sea zoarcid fish atop the food web hierarchy.",
+            "dialogue": null,
+            "characters_present": [
+              "food_web_diagram"
+            ]
+          }
+        ],
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "notes": "VO: From those bacteria the food web climbs:\nVO: tubeworms and mussels,\nVO: then crabs and shrimp that graze on them,\nVO: then fish at the top.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_009",
+        "duration_s": 15.0,
+        "narrative_purpose": "Provide a concluding synthesis on deep-sea ecosystems powered entirely by planetary interior chemistry.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              4.0
+            ],
+            "categories": [
+              "establishing_wide",
+              "explainer_demo"
+            ],
+            "moment_description": "A grand wide shot reveals the entire hydrothermal vent field bustling with diverse deep-sea biological activity.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              4.0,
+              8.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "The scene glides through abyssal waters where glowing mineral fluids billow surrounded by rich communities of sea life.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              8.0,
+              11.5
+            ],
+            "categories": [
+              "infographic_motion"
+            ],
+            "moment_description": "Subtle radiant energy paths flow gently out from vent fissures, symbolizing geothermal energy powering life.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "Slow pull-back shot fading softly as black smoker plumes continue rising calmly into the vast ocean depths.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "deep_sea_hydrothermal_vent",
+        "notes": "VO: An entire ecosystem,\nVO: in permanent darkness,\nVO: running on chemistry\nVO: from the planet's own interior.",
+        "audit_notes": ""
+      }
+    ]
+  }
+}

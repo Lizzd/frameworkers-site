@@ -1,0 +1,123 @@
+{
+  "content": {
+    "language": "en",
+    "anchors": {
+      "character_anchors": [],
+      "location_anchors": [
+        {
+          "entity_id": "sunlit_kitchen_counter",
+          "prompt_summary": "A quiet, premium cozy minimalist kitchen scene. It features beautiful dark oak wood countertops bathed in soft, golden morning sunlight filtering through a nearby window, casting a warm and inviting glow across the natural wooden textures.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": ""
+        }
+      ],
+      "prop_anchors": [
+        {
+          "entity_id": "ember_oak_coffee_bag",
+          "prompt_summary": "A premium minimalist matte white stand-up coffee bag. It features the elegant Ember & Oak logo on the front: a clean brown oak leaf outline enclosing a warm orange flame.",
+          "views": [
+            "HERO",
+            "FRONT"
+          ],
+          "reference_image_uri": ""
+        },
+        {
+          "entity_id": "coffee_dripper_setup",
+          "prompt_summary": "An elegant minimalist coffee brewing setup consisting of a clean white ceramic coffee cone dripper, a clear glass server, and a sleek matte black gooseneck kettle.",
+          "views": [
+            "HERO",
+            "FRONT"
+          ],
+          "reference_image_uri": ""
+        }
+      ]
+    },
+    "shot_visuals": {
+      "sh_001": {
+        "shot_id": "sh_001",
+        "primary_location": "sunlit_kitchen_counter",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": [
+              "ember_oak_coffee_bag"
+            ]
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "coffee_dripper_setup"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "coffee_dripper_setup"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": [
+              "coffee_dripper_setup"
+            ]
+          },
+          {
+            "panel_index": 5,
+            "characters_present": [
+              "coffee_dripper_setup"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\n写实温暖生活方式短片。Soft, warm morning sunlight, natural wood textures, slow-motion steam, high-end lifestyle product cinematography, organic tones, and gentle cinematic contrast.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 close-up -> P3 medium -> P4 close-up -> P5 close-up\n\n[PANEL 1]\nSHOT: wide, eye-level.\nPLACEMENT: The premium matte white coffee bag (prop_ember_oak_coffee_bag) stands upright on the right side of the dark oak countertop (loc_sunlit_kitchen_counter). A clean, empty glass server sits next to it on its left.\nACTION: The scene is completely still, capturing a quiet, tranquil morning moment before brewing.\nENV: Warm golden morning sunlight spills across the rich, textured dark oak countertop, softly illuminating the surfaces and showing faint dust motes drifting in the light.\n\n[PANEL 2]\nSHOT: close-up, high-angle.\nPLACEMENT: Tight shot looking down into the clean white ceramic dripper (part of prop_coffee_dripper_setup) sitting securely on top of the glass server.\nACTION: Richly textured, finely ground dark coffee beans fall in slow motion into the ceramic dripper, building a neat, dark brown cone inside the pristine white ceramic.\nENV: Soft morning light illuminates the rich texture of the fresh coffee grinds against the clean white ceramic material.\n\n[PANEL 3]\nSHOT: medium, eye-level.\nPLACEMENT: A sleek matte black gooseneck kettle (part of prop_coffee_dripper_setup) enters from the left edge of the frame, tilted slightly over the ceramic dripper.\nACTION: A precise, thin, and steady stream of steaming hot water pours gracefully from the kettle's gooseneck spout, drawing a slow, perfect concentric circle over the bed of coffee grounds.\nENV: Warm morning backlight catches the clear stream of water, contrasting elegantly with the dark coffee bed and the soft-focus wood kitchen background.\n\n[PANEL 4]\nSHOT: close-up, low-angle.\nPLACEMENT: Extremely tight focus on the dark coffee bed inside the white ceramic cone (part of prop_coffee_dripper_setup).\nACTION: The coffee grounds swell and bloom as a delicate, glistening foam of tiny bubbles slowly forms and expands. Wisps of soft, warm steam rise gently toward the top of the frame.\nENV: Bright, golden natural sunlight highlights the moist, organic texture of the blooming coffee and the translucent rising steam.\n\n[PANEL 5]\nSHOT: close-up, eye-level.\nPLACEMENT: Focused on the bottom nozzle of the ceramic dripper positioned over the glass server (part of prop_coffee_dripper_setup).\nACTION: Rich, dark, freshly brewed coffee drips steadily and smoothly from the bottom of the dripper, landing in the clear glass server below and creating gentle, amber-hued concentric ripples on the surface.\nENV: Backlit by soft morning light, making the dripping coffee glow with a warm, translucent amber clarity.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels."
+      },
+      "sh_002": {
+        "shot_id": "sh_002",
+        "primary_location": "sunlit_kitchen_counter",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": [
+              "ember_oak_coffee_bag"
+            ]
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "ember_oak_coffee_bag"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "ember_oak_coffee_bag"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": [
+              "ember_oak_coffee_bag"
+            ]
+          },
+          {
+            "panel_index": 5,
+            "characters_present": [
+              "ember_oak_coffee_bag"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\n写实温暖生活方式短片。Soft, warm morning sunlight, natural wood textures, slow-motion steam, high-end lifestyle product cinematography, organic tones, and gentle cinematic contrast.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 close-up -> P3 medium -> P4 wide -> P5 wide\n\n[PANEL 1]\nSHOT: medium, eye-level.\nPLACEMENT: A steaming warm ceramic mug filled with fresh coffee sits in the foreground. Beside it, the premium matte white coffee bag (prop_ember_oak_coffee_bag) stands upright on the dark oak wood countertop (loc_sunlit_kitchen_counter).\nACTION: Wisps of warm steam rise gently from the mug, floating slowly upward. Both objects remain still.\nENV: Soft morning light bathes the setup, casting a long, gentle, warm shadow from the coffee bag across the rich wooden texture.\n\n[PANEL 2]\nSHOT: close-up, eye-level.\nPLACEMENT: Sharp, centered focus on the matte white coffee bag (prop_ember_oak_coffee_bag) standing on the countertop.\nACTION: The camera focuses directly on the crisp, detailed texture of the Ember & Oak logo printed on the paper: a clean brown oak leaf outline enclosing a vibrant warm orange flame.\nENV: Elegant lifestyle studio-quality key lighting, showcasing the fine matte paper texture under the golden morning glow.\n\n[PANEL 3]\nSHOT: medium, eye-level.\nPLACEMENT: The matte white coffee bag (prop_ember_oak_coffee_bag) is positioned slightly off-center on the dark oak wood countertop.\nACTION: Wisps of delicate, warm steam slowly float across the foreground in front of the coffee bag, creating a soft, dreamlike veil of warmth.\nENV: The rich wood grain in the background is softly blurred, and golden light beams cut through the air, highlighting the moving steam to evoke a cozy atmosphere.\n\n[PANEL 4]\nSHOT: wide, eye-level.\nPLACEMENT: The coffee bag (prop_ember_oak_coffee_bag) begins to transition out of the realistic kitchen environment.\nACTION: The kitchen background slowly dissolves and fades out, transforming into a clean, warm, solid off-white background as the clean Ember & Oak logo (brown leaf, orange flame) begins to fade softly into the center.\nENV: Soft studio-like transition atmosphere, fading away the physical countertop elements for a clean branding presentation.\n\n[PANEL 5]\nSHOT: wide, eye-level.\nPLACEMENT: The clean Ember & Oak logo (clean brown oak leaf outline enclosing a warm orange flame) is perfectly centered in the frame.\nACTION: The minimalist logo holds in crisp clarity against the warm, solid off-white background.\nENV: A soft, subtle, golden halo glow emanates from behind the logo, completing the clean, premium brand presentation with warmth and elegance.\n\n[PANEL INDEX LABELS]\nIn each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label (\"1\", \"2\", \"3\", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels."
+      }
+    },
+    "style_notes": [
+      "写实温暖生活方式短片 (Realistic warm lifestyle short film style)",
+      "Soft, warm morning sunlight streaming through a window with dancing dust motes",
+      "Natural wood textures, primarily rich dark oak",
+      "High-end lifestyle product cinematography with organic tones and gentle cinematic contrast"
+    ],
+    "must_avoid": []
+  }
+}

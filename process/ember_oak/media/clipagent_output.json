@@ -1,0 +1,33 @@
+{
+  "content": {
+    "language": "en",
+    "clips": [
+      {
+        "shot_id": "sh_001",
+        "duration_sec": 10.0,
+        "scene_id": "sc_001"
+      },
+      {
+        "shot_id": "sh_002",
+        "duration_sec": 10.0,
+        "scene_id": "sc_001"
+      }
+    ],
+    "assembly": {
+      "shot_order": [
+        "sh_001",
+        "sh_002"
+      ],
+      "scene_order": [
+        "sc_001"
+      ],
+      "transitions": [
+        {
+          "from_shot_id": "sh_001",
+          "to_shot_id": "sh_002",
+          "transition_type": "dissolve"
+        }
+      ]
+    }
+  }
+}

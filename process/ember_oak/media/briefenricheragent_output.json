@@ -1,0 +1,15 @@
+{
+  "content": {
+    "language": "en",
+    "enriched_brief": "Create a warm, slow-paced 30-second premium lifestyle commercial for 'Ember & Oak Coffee Roasters' that sells the cozy 'morning ritual' and sense of calm. The video should focus on the tactile, visual pleasure of slowly brewing pour-over coffee rather than technical parameters, inspiring viewers to make their own. The aesthetic must be elegant, featuring the brand's minimalist logo: a clean brown oak leaf outline enclosing a warm orange flame, with the text 'EMBER & OAK COFFEE ROASTERS' below it. This logo should appear elegantly on the product packaging and as a refined end-screen graphic. No voiceover; the commercial relies on natural sounds, a gentle acoustic soundtrack, and soft, warm morning sunlight. Include a brief, elegant English slogan subtitle at the end to encapsulate this peaceful moment.",
+    "image_classifications": [
+      {
+        "image_index": 0,
+        "role": "style"
+      }
+    ],
+    "image_paths": [
+      "/home/zhendong_li/FrameWorkers/Runtime/topic19_coffee_ad/workspace_global_20260720_183931/inputs/20260720_183931_999511_ember_oak_logo.png"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 with the sixth cell as solid neutral gray; N=6 → 3×2.
+
+[STYLE FOUNDATION]
+VISUAL MEDIUM and aesthetic are dictated entirely by story.style_anchor (below) — live-action film, 2D anime, illustration, 3D, etc.; do NOT default to photoreal, do NOT impose any medium the brief omits. Apply verbatim: 手绘中国传统写意水墨动画，宣纸纹理清晰，大面积留白，浓淡墨色晕染，少量赭石与淡青点染边塞尘土；长卷式横向呼吸感，镜头运动像卷轴展开，非写实、非3D，画面留白处可承载淡灰英文字幕。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the village_road location anchor for the iconic village entrance: half-fallen wooden sign and dead tree on the left, road opening toward the Great Wall gate on the right. Use the FRONT section of the shuoshuren character anchor for his small ink-shadow figure seated at the scroll edge, bamboo clappers frozen midair. Extreme wide, low angle: the dirt road is struck by unseen war drums, forming pale concentric ink ripples; behind the pass, smoke columns rise and distant hu_qi silhouettes and flags press forward like black rain. No captions or legible writing.
+
+[PANEL 2]
+Use the FRONT section of the village_road location anchor, keeping the road axis toward the pass. Use the FRONT sections of zheng_li, linren, sai_zi, and hu_qi character anchors for body identity and costume details. Wide group tableau at eye level: zheng_li stands beside the wooden sign with bamboo roster and ink brush, mouth shaped as if giving a clipped order but with no rendered subtitle; young villagers are urged northward in a shrinking line of backs. The foreground linren woman’s hand releases a youth’s sleeve as her willow basket lies in the cart rut. Sai_zi waits at the rear with a temporary wooden crutch, injured leg lifted carefully. The roster shows only abstract ink marks, not readable text.
+
+[PANEL 3]
+Use the FRONT section of the zheng_li character anchor for the official robe, brush hand, and bamboo slip; use the FRONT section of the sai_zi character anchor for the bound trouser leg, old boot, and crutch grip; use the FRONT section of the sai_weng character anchor for the rope-wrapped elderly hand at frame edge. 85mm close-up, slightly high angle: the official’s ink bead swells at the brush tip beside an abstract roster mark, then a single dark drop lands just outside the mark, implying exemption. Sai_zi’s fingers whiten around the crutch and his throat tightens; sai_weng does not plead, only winds old hemp rope once around his palm. No visible wound, no blood, no legible writing.
+
+[PANEL 4]
+Use the FRONT section of the border_courtyard location anchor for the earthen courtyard under the Great Wall: the worn horse-post, empty trough, rough wall, and blank paper sky. Use the FRONT sections of sai_weng and sai_zi character anchors; keep linren and departing conscripts as distant pale ink silhouettes. Closing wide-medium tableau: sai_zi sits beside the empty post and leans his wooden crutch against it; the broken horse rope and crutch cross into a crooked knot. Sai_weng gently ties the crutch steady instead of tying a horse. Far away, the conscripted line has become only a few faint ink dots, grief thinned by wind. At the scroll margin, shuoshuren’s bamboo clapper has just fallen; include a small plain vermilion seal-shaped mark with no characters.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 3 reference image(s) in this i2i call are PREVIOUS-SHOT storyboards (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to maintain CROSS-SHOT continuity in: color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality — so the final cut sequence flows smoothly. Identity (character / location / ship details) is still locked exclusively by the FIRST 7 refs (character anchors / location anchor / style anchor).

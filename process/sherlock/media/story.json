@@ -1,0 +1,579 @@
+{
+  "title": "The Blue Wax at the Keyhole",
+  "logline": "Sherlock Holmes wants to overturn a tidy suicide verdict before Scotland Yard seals the case, but the bolted study seems to prove no killer could have left. If he cannot make the room confess, a murderer in mourning cuffs will walk out with the dead man's stolen fortune.",
+  "setting": "Victorian London, 1892 Bloomsbury, in the tradition of classic British locked-room detective fiction; cast is white British. The story stays around Sir Edmund Vale's townhouse study because the crime's central claim is physical confinement: a door bolted from within.",
+  "style_anchor": "2D colored graphic-novel animation with crisp black ink lines, muted Victorian browns, gaslight gold, rain-blue shadows, and selective crimson accents. High-contrast panel compositions inspired by Sidney Paget illustrations and modern noir comics, with subtle paper grain, visible foley lettering, and clean English subtitle styling.",
+  "dialogue_language": "English",
+  "characters": [
+    {
+      "id": "sherlock_holmes",
+      "role": "protagonist",
+      "look_description": "Tall narrow man in his late 30s with a hawk nose, sharp grey eyes under heavy lids, black hair brushed back from a high forehead, nicotine-yellow fingertips, a dark Inverness coat over a black waistcoat, and a brass-rimmed magnifying lens tucked between two fingers.",
+      "voice_description": "Male late 30s, dry baritone with a cutting edge, quick precise pacing, low pitch, educated London RP accent, amused but impatient emotional undertone."
+    },
+    {
+      "id": "dr_watson",
+      "role": "ally",
+      "look_description": "Sturdy military doctor in his early 40s with a thick sandy moustache, warm eyes, a faint limp in the left leg, brown tweed suit damp at the cuffs, leather medical bag in one hand, and a silver watch chain crossing his waistcoat.",
+      "voice_description": "Male early 40s, warm rounded tenor, moderate pace, mid pitch, educated English accent with a faint army brusqueness, concerned and loyal emotional tone."
+    },
+    {
+      "id": "inspector_lestrade",
+      "role": "foil",
+      "look_description": "Small wiry Scotland Yard inspector in his 40s with a pointed chin, narrow watchful eyes, rain-speckled bowler hat, dark overcoat with shiny elbows, and a black notebook held tight against his ribs.",
+      "voice_description": "Male 40s, nasal mid-tenor, clipped fast pace, slightly higher pitch, London working-police accent, defensive and practical emotional tone."
+    },
+    {
+      "id": "caleb_pike",
+      "role": "antagonist",
+      "look_description": "Private secretary in his early 30s with a pale oval face, oiled black centre-parted hair, thin moustache waxed to needle points, starched white collar too tight at the throat, ink-darkened left thumb, and a right shirt cuff marked by a tiny crescent of dried blue sealing wax.",
+      "voice_description": "Male early 30s, smooth light baritone that cracks when pressed, measured pace turning rushed, mid pitch, polished London clerk accent, controlled deference over buried panic."
+    },
+    {
+      "id": "sir_edmund_vale",
+      "role": "victim",
+      "look_description": "Dead gentleman in his late 60s with silver mutton-chop whiskers, blue-veined left hand wearing a heavy signet ring, burgundy smoking jacket, loosened silk cravat, and a dark bullet wound at the right temple while seated at a massive writing desk.",
+      "voice_description": ""
+    }
+  ],
+  "locations": [
+    {
+      "id": "upper_hallway",
+      "look_description": "Narrow upper corridor of a Bloomsbury townhouse with peeling olive wallpaper, brass gas sconces, a rain-dark window at the stair turn, a coat stand crowded with wet umbrellas, and the splintered oak study door at the far end."
+    },
+    {
+      "id": "vale_study",
+      "look_description": "Mahogany-panelled private study with a heavy writing desk, green banker lamp, coal grate, tall rain-streaked windows, crowded law bookshelves, Turkish carpet, cigar smoke haze, and an oak door fitted with a large horizontal sliding bolt and keyhole."
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "sh_001",
+      "duration_s": 15.0,
+      "narrative_purpose": "Establish the locked-room death and the Yard's premature suicide conclusion as Holmes arrives.",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            4.0
+          ],
+          "categories": [
+            "establishing_wide"
+          ],
+          "moment_description": "Camera glides along the gaslit upper hallway as rain taps the stair window → wet umbrellas drip onto black-and-white tiles → the splintered study door fills the frame with fresh pale wood showing around the broken lock → a muffled constable's boot scrapes inside → distant thunder makes the gas flame flutter sideways.",
+          "dialogue": null,
+          "characters_present": []
+        },
+        {
+          "time_range": [
+            4.0,
+            8.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "establishing_wide"
+          ],
+          "moment_description": "Lestrade steps from the ruined doorway, snapping his notebook shut → Watson removes his wet gloves and peers past Lestrade's shoulder → Holmes remains half in shadow under the gas sconce, water beading on his coat collar → a white subtitle line settles below Lestrade's mouth as he jerks his thumb toward the study.",
+          "dialogue": "inspector_lestrade: Bolted on the inside, pistol in hand, servants heard one shot. Suicide, Mr. Holmes.",
+          "characters_present": [
+            "inspector_lestrade",
+            "dr_watson",
+            "sherlock_holmes"
+          ]
+        },
+        {
+          "time_range": [
+            8.0,
+            12.0
+          ],
+          "categories": [
+            "emotional_close_up",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "Holmes bends without crossing the threshold → his magnifying lens catches the keyhole's rim → a pinhead smear of blue wax glints for 0.3 seconds in the gaslight → his eyes flick from the keyhole down to a curled black filament caught in a splinter → Watson's hand tightens around the medical bag handle.",
+          "dialogue": "sherlock_holmes: Then the room has been very obliging. It locked itself for your report.",
+          "characters_present": [
+            "sherlock_holmes",
+            "dr_watson",
+            "inspector_lestrade"
+          ]
+        },
+        {
+          "time_range": [
+            12.0,
+            15.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "emotional_close_up"
+          ],
+          "moment_description": "The camera pushes through the broken doorway past Lestrade's elbow → Sir Edmund's body appears at the desk under the green lamp → Caleb Pike stands rigid beside the bookcase with gloved hands folded too neatly → the brass bolt on the door edge catches a hard gold highlight as Holmes's shadow crosses it.",
+          "dialogue": null,
+          "characters_present": [
+            "sherlock_holmes",
+            "dr_watson",
+            "inspector_lestrade",
+            "caleb_pike",
+            "sir_edmund_vale"
+          ]
+        }
+      ],
+      "primary_location": "upper_hallway",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_002",
+      "duration_s": 15.0,
+      "narrative_purpose": "Inside the study, Holmes notices that the staged suicide contradicts the victim's habits and body.",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "Wide view anchors the study: corpse at desk, pistol slack in the right hand, documents under the green lamp → Holmes circles clockwise without touching the carpet's central blood spot → Lestrade plants himself by the door bolt → Pike lowers his eyes exactly as Holmes passes him.",
+          "dialogue": "inspector_lestrade: We broke the door after ten minutes of calling. No window disturbed, no chimney wide enough for a cat.",
+          "characters_present": [
+            "sherlock_holmes",
+            "dr_watson",
+            "inspector_lestrade",
+            "caleb_pike",
+            "sir_edmund_vale"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            6.0
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "Holmes lifts Sir Edmund's limp right wrist with two fingers → the pistol tilts, revealing no black powder scorch on the skin → Watson leans in and the metal latch of his medical bag clicks softly → a foley caption, CLICK, appears small near the bag clasp then fades.",
+          "dialogue": "dr_watson: No burn at the temple. The muzzle was not close.",
+          "characters_present": [
+            "sherlock_holmes",
+            "dr_watson",
+            "sir_edmund_vale"
+          ]
+        },
+        {
+          "time_range": [
+            6.0,
+            9.0
+          ],
+          "categories": [
+            "emotional_close_up",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "Holmes turns the dead man's left hand palm up → the signet ring drags a groove through spilled ink → a half-written dismissal letter shows pressure marks slanting from left to right → Pike's gloved fingers pinch his own cuff for 0.2 seconds before going still.",
+          "dialogue": "sherlock_holmes: Sir Edmund wrote, sealed, and cut his cigars with the left hand. Yet despair made him a right-handed marksman?",
+          "characters_present": [
+            "sherlock_holmes",
+            "caleb_pike",
+            "sir_edmund_vale"
+          ]
+        },
+        {
+          "time_range": [
+            9.0,
+            12.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "emotional_close_up"
+          ],
+          "moment_description": "Lestrade frowns and flips open his notebook again → Holmes points the magnifier toward the mantel, not the body → a bullet scar sits high in the wood trim behind the desk chair → Pike swallows, his tight collar pulsing once against his throat.",
+          "dialogue": "inspector_lestrade: A dying man may drop anything into either hand.",
+          "characters_present": [
+            "sherlock_holmes",
+            "inspector_lestrade",
+            "caleb_pike",
+            "sir_edmund_vale"
+          ]
+        },
+        {
+          "time_range": [
+            12.0,
+            15.0
+          ],
+          "categories": [
+            "emotional_close_up",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "Holmes kneels by the carpet and aligns his cane from the mantel scar back through the air to the secretary's chair → the cane tip stops opposite the corpse's temple → Watson's eyes follow the invisible line → rain streaks down the window like vertical ink hatching.",
+          "dialogue": "sherlock_holmes: The shot came from that chair, across the desk. A suicide would require arms of quite un-English length.",
+          "characters_present": [
+            "sherlock_holmes",
+            "dr_watson",
+            "inspector_lestrade",
+            "caleb_pike",
+            "sir_edmund_vale"
+          ]
+        }
+      ],
+      "primary_location": "vale_study",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_003",
+      "duration_s": 15.0,
+      "narrative_purpose": "Holmes converts scattered details into a chain of physical clues pointing away from suicide.",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            4.0
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "Extreme close-up on the ashtray: one thick cigar stump lies beside a thin cheap cigarette end → Holmes nudges the cigarette with a matchstick, rolling it to expose a double bite mark → his lens reflection frames Pike's pointed moustache in miniature → a tiny ASH-SKRR foley caption scratches across the saucer.",
+          "dialogue": "sherlock_holmes: Sir Edmund smoked Havanas to the band. Someone nervous smoked this down to the paper.",
+          "characters_present": [
+            "sherlock_holmes",
+            "caleb_pike",
+            "sir_edmund_vale"
+          ]
+        },
+        {
+          "time_range": [
+            4.0,
+            7.5
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "Holmes slides open the desk drawer with one knuckle → blue sealing wax sticks lie in a brass tray → one stick shows a fresh thumbnail gouge → he lifts it near the lamp and the gouge edge shines wet-smooth → Pike's ink-dark left thumb retreats behind his cuff.",
+          "dialogue": "sherlock_holmes: Blue wax, unusually soft. Soft enough to stiffen a thread for a journey through a keyhole.",
+          "characters_present": [
+            "sherlock_holmes",
+            "caleb_pike",
+            "sir_edmund_vale"
+          ]
+        },
+        {
+          "time_range": [
+            7.5,
+            10.5
+          ],
+          "categories": [
+            "emotional_close_up",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "Watson lifts the tiny black filament from the door splinter with tweezers → it curls back like horsehair under the lamplight → Holmes taps the brass bolt ring and a matching black fiber clings to the underside → Lestrade's notebook stops mid-scribble.",
+          "dialogue": "dr_watson: Horsehair?",
+          "characters_present": [
+            "sherlock_holmes",
+            "dr_watson",
+            "inspector_lestrade"
+          ]
+        },
+        {
+          "time_range": [
+            10.5,
+            13.0
+          ],
+          "categories": [
+            "emotional_close_up",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "Holmes looks toward Pike without raising his voice → Pike shifts one polished shoe backward and hits the bookcase plinth with a dull tap → a row of ledgers trembles, exposing the label WAGES, OCTOBER → the dismissal letter edge flutters under Sir Edmund's dead hand.",
+          "dialogue": "sherlock_holmes: Or a violin string. Strong, dark, easily pocketed, and quite at home in a secretary's evening coat.",
+          "characters_present": [
+            "sherlock_holmes",
+            "caleb_pike",
+            "sir_edmund_vale"
+          ]
+        },
+        {
+          "time_range": [
+            13.0,
+            15.0
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "Close on Pike's right cuff as his thumb rubs the tiny crescent of blue wax → the wax flakes but does not vanish → Holmes's grey eyes sharpen in the reflection of the green lamp glass → the room noise drops to rain and Pike's single breath.",
+          "dialogue": "caleb_pike: I was in the hall when the shot was fired, sir.",
+          "characters_present": [
+            "sherlock_holmes",
+            "caleb_pike"
+          ]
+        }
+      ],
+      "primary_location": "vale_study",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_004",
+      "duration_s": 15.0,
+      "narrative_purpose": "Holmes demonstrates how the locked door was manufactured from the hallway without leaving the study occupied by the killer.",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "Holmes steps into the hallway carrying Watson's black horsehair suture thread between finger and thumb → Lestrade stays inside the study watching the brass bolt through the broken gap → Pike stands in the doorway with his shoulders pinned flat by the frame → the gas sconce throws the thread's shadow like a drawn line across the wallpaper.",
+          "dialogue": "sherlock_holmes: Observe, Inspector. No ghost, no acrobat, no chimney sweep.",
+          "characters_present": [
+            "sherlock_holmes",
+            "dr_watson",
+            "inspector_lestrade",
+            "caleb_pike"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            7.0
+          ],
+          "categories": [
+            "emotional_close_up",
+            "action_fight"
+          ],
+          "moment_description": "Close on Holmes feeding the dark thread through the keyhole with the blue-waxed tip → the stiffened end emerges inside and hooks the bolt ring → Watson guides it with tweezers for one precise second → Holmes shuts the battered door until only a narrow black seam remains → the thread trembles between his fingers.",
+          "dialogue": null,
+          "characters_present": [
+            "sherlock_holmes",
+            "dr_watson",
+            "inspector_lestrade"
+          ]
+        },
+        {
+          "time_range": [
+            7.0,
+            11.0
+          ],
+          "categories": [
+            "action_fight",
+            "emotional_close_up"
+          ],
+          "moment_description": "Holmes pulls steadily from the hall → the brass bolt inside slides across with a heavy metallic CHUNK shown as bold comic lettering → Lestrade jerks back as the bolt shoots home → the door is visibly shut and bolted while Holmes remains outside → Pike's face loses colour at the edge of frame.",
+          "dialogue": "inspector_lestrade: By heaven. From outside.",
+          "characters_present": [
+            "sherlock_holmes",
+            "inspector_lestrade",
+            "caleb_pike"
+          ]
+        },
+        {
+          "time_range": [
+            11.0,
+            15.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "emotional_close_up"
+          ],
+          "moment_description": "Holmes releases one end of the thread and draws the other back through the keyhole → a small snapped curl remains caught on the same splinter seen earlier → he holds the recovered thread beside the wax smear for comparison → Lestrade's notebook drops open against his thigh.",
+          "dialogue": "sherlock_holmes: A locked room, Inspector, may be no more than a knot with good manners.",
+          "characters_present": [
+            "sherlock_holmes",
+            "inspector_lestrade",
+            "dr_watson",
+            "caleb_pike"
+          ]
+        }
+      ],
+      "primary_location": "upper_hallway",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_005",
+      "duration_s": 15.0,
+      "narrative_purpose": "Holmes names Caleb Pike as the murderer and the secretary's composure breaks into attempted flight.",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "emotional_close_up"
+          ],
+          "moment_description": "Back inside the study, Holmes places the waxed thread on the desk beside the pistol → he lifts Sir Edmund's half-written letter with the magnifier edge → the words Dismiss Mr. Pike for falsifying accounts become readable under the green lamp → Pike's gloved hands open, then close into white-knuckled fists.",
+          "dialogue": "sherlock_holmes: Sir Edmund discovered the theft at six, wrote your dismissal at seven, and was dead before the ink dried.",
+          "characters_present": [
+            "sherlock_holmes",
+            "caleb_pike",
+            "inspector_lestrade",
+            "dr_watson",
+            "sir_edmund_vale"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            6.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "emotional_close_up"
+          ],
+          "moment_description": "Pike gives a small stiff bow that almost passes for dignity → sweat beads at his hairline and tracks into his sideburn → Holmes turns Pike's right cuff toward the lamp without touching him → the blue wax crescent flashes the same colour as the smear at the keyhole.",
+          "dialogue": "caleb_pike: This is conjecture dressed as theatre.",
+          "characters_present": [
+            "sherlock_holmes",
+            "caleb_pike",
+            "inspector_lestrade",
+            "dr_watson"
+          ]
+        },
+        {
+          "time_range": [
+            6.0,
+            9.0
+          ],
+          "categories": [
+            "emotional_close_up",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "Holmes produces the cigarette end from a folded envelope → he holds it below Pike's needle moustache, aligning the double bite with the secretary's uneven front teeth → Lestrade's gaze snaps from the ash to Pike's mouth → Pike's lips press shut too late.",
+          "dialogue": "sherlock_holmes: Your cigarette, your wax, your thread, your motive. Only the courage was borrowed from a dead man's hand.",
+          "characters_present": [
+            "sherlock_holmes",
+            "caleb_pike",
+            "inspector_lestrade",
+            "dr_watson"
+          ]
+        },
+        {
+          "time_range": [
+            9.0,
+            12.0
+          ],
+          "categories": [
+            "action_fight"
+          ],
+          "moment_description": "Pike lunges sideways for the pistol on the desk → Watson slams his medical bag down on Pike's wrist with a leather THUD caption → the pistol skids across the blotter and stops against Sir Edmund's signet hand → Lestrade springs forward, bowler hat tumbling to the carpet.",
+          "dialogue": "dr_watson: Leave it!",
+          "characters_present": [
+            "caleb_pike",
+            "dr_watson",
+            "inspector_lestrade",
+            "sherlock_holmes",
+            "sir_edmund_vale"
+          ]
+        },
+        {
+          "time_range": [
+            12.0,
+            15.0
+          ],
+          "categories": [
+            "action_fight",
+            "emotional_close_up"
+          ],
+          "moment_description": "Lestrade twists Pike's arm behind his back → Pike's starched collar pops loose at the throat → Holmes catches the falling waxed thread before it touches the blood spot → the green lamp swings, throwing bars of shadow across Pike's face like prison rails.",
+          "dialogue": "inspector_lestrade: Caleb Pike, I arrest you for the murder of Sir Edmund Vale.",
+          "characters_present": [
+            "inspector_lestrade",
+            "caleb_pike",
+            "sherlock_holmes",
+            "dr_watson",
+            "sir_edmund_vale"
+          ]
+        }
+      ],
+      "primary_location": "vale_study",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_006",
+      "duration_s": 15.0,
+      "narrative_purpose": "The false lock motif returns as the same mechanism that hid the murderer visibly proves and seals his guilt.",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            2.0
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "At the study threshold, Lestrade pulls Pike into the hallway → Pike's right cuff snags on the keyhole splinter → the blue-waxed crescent tears open into a clear smear across white linen → Pike looks down before anyone speaks.",
+          "dialogue": null,
+          "characters_present": [
+            "inspector_lestrade",
+            "caleb_pike",
+            "sherlock_holmes",
+            "dr_watson"
+          ]
+        },
+        {
+          "time_range": [
+            2.0,
+            6.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "emotional_close_up"
+          ],
+          "moment_description": "Holmes takes Pike's cuff with the tip of his cane and presses it beside the original blue smear on the keyhole rim → the two crescents match like a printed seal → Watson exhales through his moustache → Lestrade's earlier certainty drains into a reluctant nod.",
+          "dialogue": "sherlock_holmes: The room did not name you, Mr. Pike. Your cuff did.",
+          "characters_present": [
+            "sherlock_holmes",
+            "caleb_pike",
+            "dr_watson",
+            "inspector_lestrade"
+          ]
+        },
+        {
+          "time_range": [
+            6.0,
+            10.5
+          ],
+          "categories": [
+            "establishing_wide",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "Lestrade secures Pike's wrists and guides him past the dripping umbrellas → Pike's polished shoes leave two dark half-moons on the tile → Holmes stays by the study door, sliding the bolt back and forth once with his cane → the CHUNK sound appears again, smaller now, no longer mysterious.",
+          "dialogue": "inspector_lestrade: I called it suicide because the door was honest.",
+          "characters_present": [
+            "inspector_lestrade",
+            "caleb_pike",
+            "sherlock_holmes",
+            "dr_watson"
+          ]
+        },
+        {
+          "time_range": [
+            10.5,
+            15.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "emotional_close_up"
+          ],
+          "moment_description": "Holmes pulls the recovered thread through the keyhole one final time → the bolt slides open from the wrong side, reversing the first impossible image → Watson closes his medical bag with a soft click → Holmes lets the thread coil in his palm like a dead black worm as rain hardens against the window.",
+          "dialogue": "sherlock_holmes: Doors lie badly, Watson. Men improve on them.",
+          "characters_present": [
+            "sherlock_holmes",
+            "dr_watson",
+            "inspector_lestrade",
+            "caleb_pike"
+          ]
+        }
+      ],
+      "primary_location": "upper_hallway",
+      "notes": null,
+      "audit_notes": ""
+    }
+  ]
+}

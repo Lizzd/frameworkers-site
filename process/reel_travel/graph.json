@@ -1,0 +1,618 @@
+{
+ "key": "reel_travel",
+ "title": "Keep the Good Ones",
+ "genre": "Highlight Reel · Footage Pack",
+ "cat": "Refine",
+ "prompt": "A footage-pack edit: the user drops a pile of loose travel and event clips of assorted lengths — throwaway takes included — and asks for the highlights cut into a reel, with the blurry, repetitive and boring parts thrown out. Here: 12 clips cut from CC-licensed contemporary footage (aerial beaches, Japanese coastline, Sikkim mountains, a mountain stream, a train window), deliberately salted with one out-of-focus take, two near-duplicates and a 22-second static stretch. The system described all 12, analysed all 12, and cut 57 seconds from eight of them — eight different sources against the asked-for ~60 — leaving out every salted throwaway. The pack is silent, so there is no speech to subtitle: the short on-screen lines are authored per selected clip and burned over that clip's window. The vertical phone clip letterboxes into the 1080p frame rather than being stretched. No score — the brief asks for a music-synced cut and the music backend is currently unavailable.",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/topic42_highlight/workspace_global_20260803_115220"
+ },
+ "generated_at": "2026-09-09T15:56:45+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 13
+  },
+  {
+   "id": "IntakeVideoAgent__step_1_aea205dc",
+   "agent": "IntakeVideoAgent",
+   "label": "IntakeVideo",
+   "step": "step_1_aea205dc",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "VideoAnalysisAgent__step_1_aea205dc",
+   "agent": "VideoAnalysisAgent",
+   "label": "VideoAnalysis",
+   "step": "step_1_aea205dc",
+   "order": 2,
+   "n": 1
+  },
+  {
+   "id": "HighlightAgent__step_1_aea205dc",
+   "agent": "HighlightAgent",
+   "label": "Highlight",
+   "step": "step_1_aea205dc",
+   "order": 3,
+   "n": 2
+  },
+  {
+   "id": "TranscriptionAgent__step_1_aea205dc",
+   "agent": "TranscriptionAgent",
+   "label": "Transcription",
+   "step": "step_1_aea205dc",
+   "order": 4,
+   "n": 1
+  },
+  {
+   "id": "CompositorAgent__step_1_aea205dc",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_1_aea205dc",
+   "order": 5,
+   "n": 3
+  }
+ ],
+ "nodes": [
+  {
+   "id": "clip_01_travel",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "clip 01 travel",
+   "src_name": "20260803_115220_065168_clip_01_travel.mp4",
+   "bytes": 5405677,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1920,
+   "h": 1080,
+   "dur": 9.01,
+   "poster": "process/reel_travel/media/clip_01_travel_poster.jpg",
+   "file": "process/reel_travel/media/clip_01_travel.mp4"
+  },
+  {
+   "id": "clip_02_travel",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "clip 02 travel",
+   "src_name": "20260803_115220_124919_clip_02_travel.mp4",
+   "bytes": 7250454,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1920,
+   "h": 1080,
+   "dur": 6.01,
+   "poster": "process/reel_travel/media/clip_02_travel_poster.jpg",
+   "file": "process/reel_travel/media/clip_02_travel.mp4"
+  },
+  {
+   "id": "clip_03_travel",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "clip 03 travel",
+   "src_name": "20260803_115220_161637_clip_03_travel.mp4",
+   "bytes": 5193384,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 13.0,
+   "poster": "process/reel_travel/media/clip_03_travel_poster.jpg",
+   "file": "process/reel_travel/media/clip_03_travel.mp4"
+  },
+  {
+   "id": "clip_04_travel",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "clip 04 travel",
+   "src_name": "20260803_115220_182281_clip_04_travel.mp4",
+   "bytes": 2924898,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 7.0,
+   "poster": "process/reel_travel/media/clip_04_travel_poster.jpg",
+   "file": "process/reel_travel/media/clip_04_travel.mp4"
+  },
+  {
+   "id": "clip_05_travel",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "clip 05 travel",
+   "src_name": "20260803_115220_219954_clip_05_travel.mp4",
+   "bytes": 5471687,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1080,
+   "h": 1920,
+   "dur": 6.22,
+   "poster": "process/reel_travel/media/clip_05_travel_poster.jpg",
+   "file": "process/reel_travel/media/clip_05_travel.mp4"
+  },
+  {
+   "id": "clip_06_travel",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "clip 06 travel",
+   "src_name": "20260803_115220_234619_clip_06_travel.mp4",
+   "bytes": 1428086,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 478,
+   "h": 850,
+   "dur": 4.98,
+   "poster": "process/reel_travel/media/clip_06_travel_poster.jpg",
+   "file": "process/reel_travel/media/clip_06_travel.mp4"
+  },
+  {
+   "id": "clip_07_travel",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "clip 07 travel",
+   "src_name": "20260803_115220_287868_clip_07_travel.mp4",
+   "bytes": 6181970,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 720,
+   "h": 1280,
+   "dur": 15.0,
+   "poster": "process/reel_travel/media/clip_07_travel_poster.jpg",
+   "file": "process/reel_travel/media/clip_07_travel.mp4"
+  },
+  {
+   "id": "clip_08_travel",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "clip 08 travel",
+   "src_name": "20260803_115220_306119_clip_08_travel.mp4",
+   "bytes": 2116634,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1920,
+   "h": 1080,
+   "dur": 5.13,
+   "poster": "process/reel_travel/media/clip_08_travel_poster.jpg",
+   "file": "process/reel_travel/media/clip_08_travel.mp4"
+  },
+  {
+   "id": "clip_09_blurry",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "clip 09 blurry",
+   "src_name": "20260803_115220_321020_clip_09_blurry.mp4",
+   "bytes": 1948262,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1920,
+   "h": 1080,
+   "dur": 6.97,
+   "poster": "process/reel_travel/media/clip_09_blurry_poster.jpg",
+   "file": "process/reel_travel/media/clip_09_blurry.mp4"
+  },
+  {
+   "id": "clip_10_dup",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "clip 10 dup",
+   "src_name": "20260803_115220_352203_clip_10_dup.mp4",
+   "bytes": 4746502,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1920,
+   "h": 1080,
+   "dur": 8.01,
+   "poster": "process/reel_travel/media/clip_10_dup_poster.jpg",
+   "file": "process/reel_travel/media/clip_10_dup.mp4"
+  },
+  {
+   "id": "clip_11_static",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "clip 11 static",
+   "src_name": "20260803_115220_369460_clip_11_static.mp4",
+   "bytes": 2103901,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1080,
+   "h": 1920,
+   "dur": 2.84,
+   "poster": "process/reel_travel/media/clip_11_static_poster.jpg",
+   "file": "process/reel_travel/media/clip_11_static.mp4"
+  },
+  {
+   "id": "clip_12_dup2",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "clip 12 dup2",
+   "src_name": "20260803_115220_385202_clip_12_dup2.mp4",
+   "bytes": 2108117,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 6.0,
+   "poster": "process/reel_travel/media/clip_12_dup2_poster.jpg",
+   "file": "process/reel_travel/media/clip_12_dup2.mp4"
+  },
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260803_115220_389223.json",
+   "bytes": 617,
+   "caption": "Structured metadata document (JSON) for a user-submitted text brief. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/reel_travel/media/creative_brief.json",
+   "excerpt": "{\"text\": \"I'm going to dump a pile of loose travel and event clips on you — all different lengths, and there are plenty of throwaway shots in there. Find the highlights for me and cut them into a highlight reel of about 60 seconds: throw out anything blurry, repetitive or boring, keep the best and most emotional moment…"
+  },
+  {
+   "id": "intakevideoagent_output",
+   "stage": "IntakeVideoAgent__step_1_aea205dc",
+   "kind": "json",
+   "label": "IntakeVideoAgent output",
+   "src_name": "step_1_aea205dc_intakevideoagent_exec_1.json",
+   "bytes": 4781,
+   "caption": "Structured metadata document (JSON) covering 12 user-uploaded video(s). Payload lists each video's visual summary and video-asset path.",
+   "scope": "global",
+   "file": "process/reel_travel/media/intakevideoagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"videos\": [{\"visual_summary\": \"A wide river flows smoothly around a small gravel island with sparse vegetation, set against rolling, sunlit hills under a clear blue sky, evoking a serene atmosphere.\", \"video_asset\": {\"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20…"
+  },
+  {
+   "id": "videoanalysisagent_output",
+   "stage": "VideoAnalysisAgent__step_1_aea205dc",
+   "kind": "json",
+   "label": "VideoAnalysisAgent output",
+   "src_name": "step_1_aea205dc_videoanalysisagent_exec_2.json",
+   "bytes": 16586,
+   "caption": "Video analysis document: 12 video(s), 18 scene(s) total. Per-video scene-by-scene breakdown with entities and descriptions; each video's timestamps are local to its own file.",
+   "scope": "global",
+   "file": "process/reel_travel/media/videoanalysisagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"videos\": [{\"source_video\": \"/home/zhendong_li/FrameWorkers/Runtime/topic42_highlight/workspace_global_20260803_115220/inputs/20260803_115220_065168_clip_01_travel.mp4\", \"usable\": true, \"unusable_reason\": \"\", \"video_summary\": {\"title\": \"River Flowing Past Small Island\", \"summary\": \"A serene shot of a…"
+  },
+  {
+   "id": "highlight_reel",
+   "stage": "HighlightAgent__step_1_aea205dc",
+   "kind": "video",
+   "label": "highlight reel",
+   "src_name": "step_1_aea205dc_highlight_reel.mp4",
+   "bytes": 57143834,
+   "caption": "EDITED OUTPUT video binary (mp4) — the finished highlight reel, selected segments already cut and concatenated. This is the visual track of the piece; the raw source clips it was cut from are its inputs, not the deliverable.",
+   "scope": "global",
+   "w": 1920,
+   "h": 1080,
+   "dur": 57.2,
+   "poster": "process/reel_travel/media/highlight_reel_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "highlightagent_output",
+   "stage": "HighlightAgent__step_1_aea205dc",
+   "kind": "json",
+   "label": "HighlightAgent output",
+   "src_name": "step_1_aea205dc_highlightagent_exec_3.json",
+   "bytes": 3576,
+   "caption": "Highlight reel manifest: 8 clip(s), 57.1s total, compiled from a source video. Structured manifest — see payload for selection criteria.",
+   "scope": "global",
+   "file": "process/reel_travel/media/highlightagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"criteria\": \"Select high-quality, energetic travel and event highlights, discarding blurry, duplicate, and static shots, aimed at a total duration of around 60 seconds with short English captions.\", \"target_duration_s\": 60.0, \"clips\": [{\"source_video\": \"/home/zhendong_li/FrameWorkers/Runtime/topic42_…"
+  },
+  {
+   "id": "transcriptionagent_output",
+   "stage": "TranscriptionAgent__step_1_aea205dc",
+   "kind": "json",
+   "label": "TranscriptionAgent output",
+   "src_name": "step_1_aea205dc_transcriptionagent_exec_4.json",
+   "bytes": 82,
+   "caption": "Transcript (): 0 timestamped segment(s). SRT-shaped subtitle artifact — ready for direct burn-in by a compositor's subtitle track (each segment is one SRT cue with start/end seconds + text). Also usable as the 'source text' input to a translation step when bilingual subtitles are needed.",
+   "scope": "global",
+   "file": "process/reel_travel/media/transcriptionagent_output.json",
+   "excerpt": "{\"language\": \"\", \"segments\": [], \"full_text\": \"\"}"
+  },
+  {
+   "id": "compositor_final",
+   "stage": "CompositorAgent__step_1_aea205dc",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_1_aea205dc_compositor_final.mp4",
+   "bytes": 32625608,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "w": 1920,
+   "h": 1080,
+   "dur": 57.2,
+   "poster": "process/reel_travel/media/compositor_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "compositoragent_output",
+   "stage": "CompositorAgent__step_1_aea205dc",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_1_aea205dc_compositoragent_exec_5.json",
+   "bytes": 1580,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/reel_travel/media/compositoragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"plan\": {\"color_grade\": {\"brightness\": 0.0, \"contrast\": 0.05, \"saturation\": 0.05}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"authored_cues\": [{\"text\": \"Serene river flow\", \"start_sec\": 0.0, \"end_sec\": 8.0}, {\"text\": \"Crystal turquoise …"
+  },
+  {
+   "id": "final_film",
+   "stage": "CompositorAgent__step_1_aea205dc",
+   "kind": "video",
+   "label": "final film",
+   "file": "videos/reel_travel.mp4",
+   "poster": "posters/reel_travel.jpg",
+   "final": true,
+   "caption": "Delivered film as published on this site.",
+   "src_name": "reel_travel.mp4",
+   "w": 1920,
+   "h": 1080,
+   "dur": 57.2
+  }
+ ],
+ "edges": [
+  {
+   "from": "clip_01_travel",
+   "to": "IntakeVideoAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_02_travel",
+   "to": "IntakeVideoAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_03_travel",
+   "to": "IntakeVideoAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_04_travel",
+   "to": "IntakeVideoAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_05_travel",
+   "to": "IntakeVideoAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_06_travel",
+   "to": "IntakeVideoAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_07_travel",
+   "to": "IntakeVideoAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_08_travel",
+   "to": "IntakeVideoAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_09_blurry",
+   "to": "IntakeVideoAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_10_dup",
+   "to": "IntakeVideoAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_11_static",
+   "to": "IntakeVideoAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_12_dup2",
+   "to": "IntakeVideoAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakevideoagent_output",
+   "to": "VideoAnalysisAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_01_travel",
+   "to": "VideoAnalysisAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_02_travel",
+   "to": "VideoAnalysisAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_03_travel",
+   "to": "VideoAnalysisAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_04_travel",
+   "to": "VideoAnalysisAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_05_travel",
+   "to": "VideoAnalysisAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_06_travel",
+   "to": "VideoAnalysisAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_07_travel",
+   "to": "VideoAnalysisAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_08_travel",
+   "to": "VideoAnalysisAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_09_blurry",
+   "to": "VideoAnalysisAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_10_dup",
+   "to": "VideoAnalysisAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_11_static",
+   "to": "VideoAnalysisAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_12_dup2",
+   "to": "VideoAnalysisAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "videoanalysisagent_output",
+   "to": "HighlightAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_01_travel",
+   "to": "HighlightAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_02_travel",
+   "to": "HighlightAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_03_travel",
+   "to": "HighlightAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_04_travel",
+   "to": "HighlightAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_05_travel",
+   "to": "HighlightAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_06_travel",
+   "to": "HighlightAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_07_travel",
+   "to": "HighlightAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_08_travel",
+   "to": "HighlightAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_09_blurry",
+   "to": "HighlightAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_10_dup",
+   "to": "HighlightAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_11_static",
+   "to": "HighlightAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_12_dup2",
+   "to": "HighlightAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "HighlightAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "highlight_reel",
+   "to": "TranscriptionAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "highlight_reel",
+   "to": "CompositorAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "transcriptionagent_output",
+   "to": "CompositorAgent__step_1_aea205dc",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "final_film",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

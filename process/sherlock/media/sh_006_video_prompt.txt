@@ -1,0 +1,61 @@
+[设定]
+Victorian London, 1892 Bloomsbury, in the tradition of classic British locked-room detective fiction; cast is white British. The story stays around Sir Edmund Vale's townhouse study because the crime's central claim is physical confinement: a door bolted from within.
+
+[风格]
+2D 彩色漫画插画（graphic-novel：干净墨线叠加丰富上色，明显非写实、非真人），证物与面部使用85mm、50mm压缩空间，走廊建立使用24mm、35mm保持纵深；大光圈浅景深，焦点落在蜡痕、钥匙孔、手杖尖、黑线与人物微表情上。
+暖煤气灯约3200K与雨窗冷蓝约5600K形成冷暖对比，高清、细节丰富、电影质感、色彩自然、光影柔和。
+
+[参考图]
+[Image 1]：本镜头的分镜网格图 —— 4 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 4 格 = 右下；每格左上角有一个大的白色编号 1..4）。它同时锁定三件事：① 每格中角色的身份（脸 / 发型 / 服装 / 体型，全片必须一致）；② 每格的画面构图 / 动作 / 镜头；③ 第 N 格 = [镜头]/[时间轴] 中按序的 镜头N。严格遵循。
+角色 `inspector_lestrade` 的固定外形（以分镜网格中该角色为准，全片一致）：Small wiry Scotland Yard inspector in his 40s with a pointed chin, narrow watchful eyes, rain-speckled bowler hat, dark overcoat with shiny elbows, and a black notebook held tight against his ribs.
+角色 `caleb_pike` 的固定外形（以分镜网格中该角色为准，全片一致）：Private secretary in his early 30s with a pale oval face, oiled black centre-parted hair, thin moustache waxed to needle points, starched white collar too tight at the throat, ink-darkened left thumb, and a right shirt cuff marked by a tiny crescent of dried blue sealing wax.
+角色 `sherlock_holmes` 的固定外形（以分镜网格中该角色为准，全片一致）：Tall narrow man in his late 30s with a hawk nose, sharp grey eyes under heavy lids, black hair brushed back from a high forehead, nicotine-yellow fingertips, a dark Inverness coat over a black waistcoat, and a brass-rimmed magnifying lens tucked between two fingers.
+角色 `dr_watson` 的固定外形（以分镜网格中该角色为准，全片一致）：Sturdy military doctor in his early 40s with a thick sandy moustache, warm eyes, a faint limp in the left leg, brown tweed suit damp at the cuffs, leather medical bag in one hand, and a silver watch chain crossing his waistcoat.
+
+[镜头]
+镜头1
+85mm / 派克右袖口的特写，派克低垂面部只露出局部虚影 / 胸口高度平拍略俯，沿维多利亚门槛正轴 / 镜头左侧煤气壁灯硬暖侧光，走廊雨窗冷蓝轮廓光 / 袖口特写起幅 → 缓慢推进 → 落幅蓝蜡弧痕与钥匙孔木刺特写 / 运镜平稳丝滑、无抖动
+
+镜头2
+50mm / 福尔摩斯手杖尖与派克袖口的证物双人近景 / 眼平正拍，严守门边180度对白轴线 / 暖煤气灯擦过橡木钥匙孔，柔冷蓝环境阴影压低人物面部 / 双人近景起幅 → 平稳固定 → 落幅两道蓝色弧痕中心构图 / 运镜平稳丝滑、无抖动
+
+镜头3
+24mm / 四人纵深站位的走廊全景 / 低眼平正拍，朝向劈裂的书房门 / 暖黄铜壁灯与冷雨窗逆光交替切出高反差黑色条带 / 走廊全景起幅 → 缓慢平移 → 落幅福尔摩斯手杖尖与横闩位置 / 运镜平稳丝滑、无抖动
+
+镜头4
+35mm / 书房门边线、钥匙孔、福尔摩斯掌心与华生医药包的近景 / 眼平略俯，压向锁具机构 / 壁灯硬暖侧光勾住黄铜门闩边缘，雨窗冷蓝光掠过黑线 / 锁具近景起幅 → 缓慢推进 → 落幅福尔摩斯掌心盘绕黑线特写 / 运镜平稳丝滑、无抖动
+
+[物理]
+袖口被木刺挂住时，布料先被拉紧再沿纤维方向撕开，蓝色封蜡受摩擦压碎并拖成弧形污痕，不要像液体凭空扩散。手杖拨动袖口、门闩与黑线时必须表现接触受力，手杖尖先抵住物体再推动，门闩沿水平轨道滑动，不能穿过木门或金属件。
+莱斯特雷德押送派克时，手腕受控、肩背被带动，脚步重心从后脚过渡到前脚，湿鞋印按鞋底接触顺序留在地砖上。所有人物在分格间保持同一空间位置与身体比例，衣摆和袖口随移动产生轻微滞后下垂。
+
+[时间轴]
+镜头1
+画面焦点钉在白袖口、深橡木钥匙孔和蓝蜡弧痕形成的三角证据上；莱斯特雷德从书房门槛内侧用右手握住派克前臂，向走廊外拉出半步，派克右袖口顺着惯性擦过钥匙孔边缘，木刺勾住袖边，布料先绷直后被扯开一小道口。蓝蜡新月被刮成清楚的蓝色拖痕，派克下巴向胸口压低，视线快速落到袖口，喉结向下滚动，鼻翼收窄，右手手指僵硬弯曲；福尔摩斯、华生、莱斯特雷德在背景虚化中停住，构图重心压在袖口的白、门板的黑褐、蜡痕的蓝之间。
+
+镜头2
+承接派克低头停住的惯性，福尔摩斯不伸手触碰证物，而是用手杖尖从下方托起派克右袖口边缘，缓慢向钥匙孔原本的蓝色污痕旁推近，手杖尖压出布料小凹陷。两道蓝色弧痕在画面中心闭合成印章状椭圆，焦点保持在弧痕接缝；福尔摩斯嘴唇按[对白]开合，眼皮半垂，灰眼越过手杖盯住派克。派克手腕被迫悬停，指节发白，薄胡须两端轻颤，视线从蜡痕跳到福尔摩斯嘴角又落回钥匙孔；华生在后方胡须下缓慢呼气，肩线下沉，莱斯特雷德窄眼收紧后下巴小幅点落，先前挺直的脖颈松开。
+
+镜头3
+前景湿伞立在衣帽架上滴水，中景莱斯特雷德把派克双腕并拢扣住并向走廊深处带出，后景劈裂书房门、黄铜壁灯和雨窗冷光排成纵深线。派克被牵引后脚跟先拖半步，再抬脚跟上，擦亮皮鞋在地砖上留下两枚深色半月湿印；莱斯特雷德手肘贴近肋骨，控制力从手腕传到派克肩背。福尔摩斯停在书房门旁，用手杖尖顶住横闩，沿轨道推回再拨开，金属闩块撞到止口发出缩小的沉闷响声；华生站在中后景偏侧，医药包贴着腿，目光从鞋印移到门闩。构图线条全部汇向门闩，黑伞竖影像栅栏一样夹住被押走的派克。
+
+镜头4
+承接门闩被拨开的动作，福尔摩斯把取回的黑线从钥匙孔处稳稳拉出，拇指和食指分开约两指宽控制线的张力，线先绷直再带动横闩从错误一侧滑开，门闩沿黄铜槽露出真实路径。焦点锁在黑线、钥匙孔和滑动门闩接触点，华生在背景中用左手压住医药包盖，右手扣上搭扣，肩膀随轻响微微放松；莱斯特雷德与派克更远处虚化，派克头低于莱斯特雷德肩线。福尔摩斯松开拉力，让黑线顺着惯性在苍白掌心盘成几圈，像死去的黑虫贴在尼古丁染黄的指尖旁；他说完[对白]后，嘴角只上提极小幅度，眼神光从雨窗冷蓝中偏移，窗外雨点更密地打在玻璃上。
+
+[对白]
+sherlock_holmes（右侧书房门边、高瘦深色披肩外套、鹰钩鼻的三十多岁男性）音色：三十多岁男性，干冷男中音，低音高，语速精准偏快，受教育伦敦口音，带克制的讥讽与急切。
+inspector_lestrade（走廊中押着派克、戴雨点圆顶礼帽的四十多岁小个男性）音色：四十多岁男性，鼻音中高男声，语速短促偏快，伦敦警务口音，带防御性和务实感。
+镜头2: sherlock_holmes："The room did not name you, Mr. Pike. Your cuff did."
+镜头3: inspector_lestrade："I called it suicide because the door was honest."
+镜头4: sherlock_holmes："Doors lie badly, Watson. Men improve on them."
+
+[音效]
+镜头1：门槛处皮鞋轻擦地砖，袖口纤维被木刺刮住的细小撕裂声，雨声隔窗压低，人物呼吸突然收窄。
+镜头2：手杖尖轻触布料与橡木的干声，钥匙孔边缘轻微摩擦，华生胡须下的呼气声，清晰近距离对白与室内木墙反射。
+镜头3：手铐金属轻碰，湿伞滴水落入伞桶，皮鞋踩出湿印的黏响，横闩发出较小的沉闷金属咔嗒，窗外雨声持续。
+镜头4：黑线穿过钥匙孔的细微擦声，黄铜门闩沿槽滑开的金属摩擦，医药包搭扣轻响，雨点敲窗变密，福尔摩斯对白贴近而清楚。
+
+[约束]
+面部清晰稳定，五官不畸变不变形，正常人体结构与自然比例，人物身份、服装、发型和站位连续一致。证物对比、押送与锁具演示动作必须自然连贯不僵硬不抖帧，手杖、门闩、袖口、黑线都有重量、接触和惯性。
+
+保持无字幕，画面中不得出现任何字幕 / 台词字幕 / 说明文字 / 标题 / 水印 / Logo / 标志 / 品牌标识 / 叠加文字；对白只用声音表达（口型同步），绝不烧录成画面可见文字。

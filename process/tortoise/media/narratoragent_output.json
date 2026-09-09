@@ -1,0 +1,332 @@
+{
+  "content": {
+    "language": "en",
+    "speaker": "",
+    "lines": [
+      {
+        "line_id": "ln_001",
+        "segment_id": "seg_001",
+        "text": "Once upon a time, in a sunny meadow, lived a very fast Hare who loved to boast.",
+        "pause_after_ms": 700
+      },
+      {
+        "line_id": "ln_002",
+        "segment_id": "seg_002",
+        "text": "He often teased the slow, quiet Tortoise, who always took his time.",
+        "pause_after_ms": 700
+      },
+      {
+        "line_id": "ln_003",
+        "segment_id": "seg_003",
+        "text": "One day, the Hare challenged the Tortoise to a race to prove who was swifter.",
+        "pause_after_ms": 700
+      },
+      {
+        "line_id": "ln_004",
+        "segment_id": "seg_004",
+        "text": "The Tortoise, though doubtful, bravely agreed.",
+        "pause_after_ms": 700
+      },
+      {
+        "line_id": "ln_005",
+        "segment_id": "seg_005",
+        "text": "The race began! Zoom! The Hare dashed away, a blur of blue and white.",
+        "pause_after_ms": 800
+      },
+      {
+        "line_id": "ln_006",
+        "segment_id": "seg_006",
+        "text": "The Tortoise started slowly, one steady step after another.",
+        "pause_after_ms": 700
+      },
+      {
+        "line_id": "ln_007",
+        "segment_id": "seg_007",
+        "text": "Soon, the Hare was far, far ahead. He decided to take a little nap.",
+        "pause_after_ms": 800
+      },
+      {
+        "line_id": "ln_008",
+        "segment_id": "seg_008",
+        "text": "He snuggled under a big, leafy tree and quickly fell asleep.",
+        "pause_after_ms": 700
+      },
+      {
+        "line_id": "ln_009",
+        "segment_id": "seg_009",
+        "text": "Meanwhile, the Tortoise kept walking, slowly and without stopping.",
+        "pause_after_ms": 700
+      },
+      {
+        "line_id": "ln_010",
+        "segment_id": "seg_010",
+        "text": "Step by step, he came closer and closer to the sleeping Hare.",
+        "pause_after_ms": 800
+      },
+      {
+        "line_id": "ln_011",
+        "segment_id": "seg_011",
+        "text": "At last, the Hare woke up, stretched, and looked around.",
+        "pause_after_ms": 700
+      },
+      {
+        "line_id": "ln_012",
+        "segment_id": "seg_012",
+        "text": "He couldn't believe his eyes! The Tortoise was almost at the finish line!",
+        "pause_after_ms": 800
+      },
+      {
+        "line_id": "ln_013",
+        "segment_id": "seg_013",
+        "text": "The Hare zoomed off again, running as fast as he could.",
+        "pause_after_ms": 700
+      },
+      {
+        "line_id": "ln_014",
+        "segment_id": "seg_014",
+        "text": "But it was too late! The Tortoise crossed the finish line with a smile.",
+        "pause_after_ms": 800
+      },
+      {
+        "line_id": "ln_015",
+        "segment_id": "seg_015",
+        "text": "Everyone cheered for the Tortoise, who proved that slow and steady can win the race!",
+        "pause_after_ms": 0
+      }
+    ],
+    "total_duration_sec": 130.7,
+    "clips": [
+      {
+        "line_id": "ln_001",
+        "start_sec": 0.0,
+        "end_sec": 10.64,
+        "duration_sec": 10.64
+      },
+      {
+        "line_id": "ln_002",
+        "start_sec": 11.34,
+        "end_sec": 19.1,
+        "duration_sec": 7.76
+      },
+      {
+        "line_id": "ln_003",
+        "start_sec": 19.8,
+        "end_sec": 28.24,
+        "duration_sec": 8.44
+      },
+      {
+        "line_id": "ln_004",
+        "start_sec": 28.94,
+        "end_sec": 34.34,
+        "duration_sec": 5.4
+      },
+      {
+        "line_id": "ln_005",
+        "start_sec": 35.04,
+        "end_sec": 43.92,
+        "duration_sec": 8.88
+      },
+      {
+        "line_id": "ln_006",
+        "start_sec": 44.72,
+        "end_sec": 53.6,
+        "duration_sec": 8.88
+      },
+      {
+        "line_id": "ln_007",
+        "start_sec": 54.3,
+        "end_sec": 62.86,
+        "duration_sec": 8.56
+      },
+      {
+        "line_id": "ln_008",
+        "start_sec": 63.66,
+        "end_sec": 71.22,
+        "duration_sec": 7.56
+      },
+      {
+        "line_id": "ln_009",
+        "start_sec": 71.92,
+        "end_sec": 80.08,
+        "duration_sec": 8.16
+      },
+      {
+        "line_id": "ln_010",
+        "start_sec": 80.78,
+        "end_sec": 89.5,
+        "duration_sec": 8.72
+      },
+      {
+        "line_id": "ln_011",
+        "start_sec": 90.3,
+        "end_sec": 98.38,
+        "duration_sec": 8.08
+      },
+      {
+        "line_id": "ln_012",
+        "start_sec": 99.08,
+        "end_sec": 106.52,
+        "duration_sec": 7.44
+      },
+      {
+        "line_id": "ln_013",
+        "start_sec": 107.32,
+        "end_sec": 113.4,
+        "duration_sec": 6.08
+      },
+      {
+        "line_id": "ln_014",
+        "start_sec": 114.1,
+        "end_sec": 121.42,
+        "duration_sec": 7.32
+      },
+      {
+        "line_id": "ln_015",
+        "start_sec": 122.22,
+        "end_sec": 130.7,
+        "duration_sec": 8.48
+      }
+    ],
+    "segment_timings": [
+      {
+        "segment_id": "seg_001",
+        "start_sec": 0.0,
+        "end_sec": 11.34,
+        "duration_sec": 11.34,
+        "line_ids": [
+          "ln_001"
+        ]
+      },
+      {
+        "segment_id": "seg_002",
+        "start_sec": 11.34,
+        "end_sec": 19.8,
+        "duration_sec": 8.46,
+        "line_ids": [
+          "ln_002"
+        ]
+      },
+      {
+        "segment_id": "seg_003",
+        "start_sec": 19.8,
+        "end_sec": 28.94,
+        "duration_sec": 9.14,
+        "line_ids": [
+          "ln_003"
+        ]
+      },
+      {
+        "segment_id": "seg_004",
+        "start_sec": 28.94,
+        "end_sec": 35.04,
+        "duration_sec": 6.1,
+        "line_ids": [
+          "ln_004"
+        ]
+      },
+      {
+        "segment_id": "seg_005",
+        "start_sec": 35.04,
+        "end_sec": 44.72,
+        "duration_sec": 9.68,
+        "line_ids": [
+          "ln_005"
+        ]
+      },
+      {
+        "segment_id": "seg_006",
+        "start_sec": 44.72,
+        "end_sec": 54.3,
+        "duration_sec": 9.58,
+        "line_ids": [
+          "ln_006"
+        ]
+      },
+      {
+        "segment_id": "seg_007",
+        "start_sec": 54.3,
+        "end_sec": 63.66,
+        "duration_sec": 9.36,
+        "line_ids": [
+          "ln_007"
+        ]
+      },
+      {
+        "segment_id": "seg_008",
+        "start_sec": 63.66,
+        "end_sec": 71.92,
+        "duration_sec": 8.26,
+        "line_ids": [
+          "ln_008"
+        ]
+      },
+      {
+        "segment_id": "seg_009",
+        "start_sec": 71.92,
+        "end_sec": 80.78,
+        "duration_sec": 8.86,
+        "line_ids": [
+          "ln_009"
+        ]
+      },
+      {
+        "segment_id": "seg_010",
+        "start_sec": 80.78,
+        "end_sec": 90.3,
+        "duration_sec": 9.52,
+        "line_ids": [
+          "ln_010"
+        ]
+      },
+      {
+        "segment_id": "seg_011",
+        "start_sec": 90.3,
+        "end_sec": 99.08,
+        "duration_sec": 8.78,
+        "line_ids": [
+          "ln_011"
+        ]
+      },
+      {
+        "segment_id": "seg_012",
+        "start_sec": 99.08,
+        "end_sec": 107.32,
+        "duration_sec": 8.24,
+        "line_ids": [
+          "ln_012"
+        ]
+      },
+      {
+        "segment_id": "seg_013",
+        "start_sec": 107.32,
+        "end_sec": 114.1,
+        "duration_sec": 6.78,
+        "line_ids": [
+          "ln_013"
+        ]
+      },
+      {
+        "segment_id": "seg_014",
+        "start_sec": 114.1,
+        "end_sec": 122.22,
+        "duration_sec": 8.12,
+        "line_ids": [
+          "ln_014"
+        ]
+      },
+      {
+        "segment_id": "seg_015",
+        "start_sec": 122.22,
+        "end_sec": 130.7,
+        "duration_sec": 8.48,
+        "line_ids": [
+          "ln_015"
+        ]
+      }
+    ],
+    "srt_text": "1\n00:00:00,000 --> 00:00:10,640\nOnce upon a time, in a sunny meadow, lived a very fast Hare who loved to boast.\n\n2\n00:00:11,340 --> 00:00:19,100\nHe often teased the slow, quiet Tortoise, who always took his time.\n\n3\n00:00:19,800 --> 00:00:28,240\nOne day, the Hare challenged the Tortoise to a race to prove who was swifter.\n\n4\n00:00:28,940 --> 00:00:34,340\nThe Tortoise, though doubtful, bravely agreed.\n\n5\n00:00:35,040 --> 00:00:43,920\nThe race began! Zoom! The Hare dashed away, a blur of blue and white.\n\n6\n00:00:44,720 --> 00:00:53,600\nThe Tortoise started slowly, one steady step after another.\n\n7\n00:00:54,300 --> 00:01:02,860\nSoon, the Hare was far, far ahead. He decided to take a little nap.\n\n8\n00:01:03,660 --> 00:01:11,220\nHe snuggled under a big, leafy tree and quickly fell asleep.\n\n9\n00:01:11,920 --> 00:01:20,080\nMeanwhile, the Tortoise kept walking, slowly and without stopping.\n\n10\n00:01:20,780 --> 00:01:29,500\nStep by step, he came closer and closer to the sleeping Hare.\n\n11\n00:01:30,300 --> 00:01:38,380\nAt last, the Hare woke up, stretched, and looked around.\n\n12\n00:01:39,080 --> 00:01:46,520\nHe couldn't believe his eyes! The Tortoise was almost at the finish line!\n\n13\n00:01:47,320 --> 00:01:53,400\nThe Hare zoomed off again, running as fast as he could.\n\n14\n00:01:54,100 --> 00:02:01,420\nBut it was too late! The Tortoise crossed the finish line with a smile.\n\n15\n00:02:02,220 --> 00:02:10,700\nEveryone cheered for the Tortoise, who proved that slow and steady can win the race!\n"
+  },
+  "metrics": {
+    "total_duration_sec": 130.7
+  }
+}

@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 extreme-wide -> P2 wide -> P3 medium -> P4 extreme-wide
+
+[PANEL 1]
+SHOT: extreme-wide high-angle
+PLACEMENT: Grand hydrothermal vent field spreading across the lower two-thirds of the frame.
+ACTION: Multiple active black smoker chimneys venting fluid alongside dense tubeworm and crab colonies.
+ENV: Vast abyssal ocean floor glowing warmly from active geothermal fissures in permanent dark ocean depths.
+
+[PANEL 2]
+SHOT: wide eye-level
+PLACEMENT: Active chimney column in center-left, marine life colonies clustered at base.
+ACTION: Glowing mineral fluid plumes billowing steadily into dark abyssal water surrounding rich organism communities.
+ENV: Deep ocean floor with atmospheric geothermal lighting and deep blue water.
+
+[PANEL 3]
+SHOT: medium low-angle
+PLACEMENT: Seabed vent fissure positioned in lower central frame.
+ACTION: Radiant orange-gold energy lines flowing gently out from fissure rocks into surrounding water.
+ENV: Dark basalt terrain illuminated by soft, radiant geothermal heat lines.
+
+[PANEL 4]
+SHOT: extreme-wide high-angle
+PLACEMENT: Entire hydrothermal vent community shrinking in scale in central lower frame.
+ACTION: Camera pulling back as black smoker plumes continue rising slowly into vast dark ocean space.
+ENV: Vast, quiet deep ocean abyss with dark blue and slate gray atmospheric depth.
+
+[RENDERED TEXT]
+No panel numbers, captions, or watermarks.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 1 refs (character / prop / location anchors).

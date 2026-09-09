@@ -1,0 +1,47 @@
+{
+  "content": {
+    "language": "en",
+    "images": [
+      {
+        "visual_description": "Matte black coffee maker with copper spouts and glass carafe on a wooden base, softly lit against a warm beige background.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic24_kurve_ad/workspace_global_20260721_103757/inputs/20260721_103757_859016_kurve_front.png",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "Modern dark gray coffee maker with copper accents and glass carafe on a wooden base, under soft studio light against a beige background.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic24_kurve_ad/workspace_global_20260721_103757/inputs/20260721_103757_887861_kurve_side.png",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "Water pours from a copper spout into a steaming pour-over coffee filter, next to a matte black coffee maker under soft, warm lighting.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic24_kurve_ad/workspace_global_20260721_103757/inputs/20260721_103757_923724_kurve_pour_closeup.png",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "The word \"KURVE\" in dark grey uppercase letters sits above a metallic rose-gold wavy line on a solid white background.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic24_kurve_ad/workspace_global_20260721_103757/inputs/20260721_103757_943707_kurve_logo.png",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      }
+    ]
+  }
+}

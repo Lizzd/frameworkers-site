@@ -1,0 +1,29 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 with the sixth cell as solid neutral gray; N=6 → 3×2.
+
+[STYLE FOUNDATION]
+VISUAL MEDIUM and aesthetic are dictated entirely by story.style_anchor (below) — live-action film, 2D anime, illustration, 3D, etc.; do NOT default to photoreal, do NOT impose any medium the brief omits. Apply verbatim: 手绘中国传统写意水墨动画，宣纸纹理清晰，大面积留白，浓淡墨色晕染，少量赭石与淡青点染边塞尘土；长卷式横向呼吸感，镜头运动像卷轴展开，非写实、非3D，画面留白处可承载淡灰英文字幕。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the frontier_pass location anchor for the broad slope and distant Great Wall line. Use the FRONT section of the sai_zi character anchor, extrapolated into a side-riding pose on the new horse: he bursts in from the left, leaning forward with a bright open-mouthed shout, the small whip lifted but not striking. Three dark hoofprints stamp across the dusty path, a dry-brush dust line trails behind, Sai Weng is a tiny still figure far back with cane, and Hu riders remain distant ink silhouettes near the horizon.
+
+[PANEL 2]
+Use the FRONT section of the frontier_pass location anchor for the grass clump and open slope. Use the FRONT section of the sai_zi character anchor for costume and body identity, extrapolated into a slipping riding posture; use Sai Weng’s FRONT anchor for the distant elder lifting his bamboo cane. A wild rabbit appears as a sudden small ink blot springing from grass; the horse rears, forehooves high and black, Sai Zi’s left hand sliding from the mane with two dust flecks between fingers. Frame tightly between horse chest and the youth’s knee; all conflict is shown as startled motion and balance, not graphic harm.
+
+[PANEL 3]
+Use the FRONT section of the frontier_pass location anchor, emphasizing the bare stone on the dusty slope. Use the FRONT section of sai_zi character anchor, extrapolated into a half-rotated falling pose beside the horse. Freeze the readable impact moment with cinematic restraint: Sai Zi falls from the right side of the saddle, his lower leg meets the bare rock, shown as a dense abstract ink splash and dust ring rather than any explicit injury. The horse shadow surges forward, reins stretch into a sharp diagonal, the small whip spins away before landing, and Sai Zi’s face is partly veiled by dust with mouth open in silent shock.
+
+[PANEL 4]
+Use the FRONT section of the frontier_pass location anchor for ground texture, sparse reeds, and distant horse group. Use the FACE section of the sai_weng character anchor for the elder’s controlled expression, the FACE section of sai_zi for his strained micro-expression, and the FRONT section of linren for the kneeling neighbor with basket. Sai Weng kneels beside his son, bamboo cane placed horizontally on the ground, carefully setting two wooden splints and wrapping the first hemp-rope loop; his fingers tremble slightly. Sai Zi bites his sleeve, sweat indicated by pale ink dots. The neighbor half-kneels nearby, overturned basket and beans pressed into dust, distant horses pausing with ears turned toward them.
+
+[PANEL 5]
+Use the FRONT section of the frontier_pass location anchor, reduced to a small bare stone, wind-softened hoofprints, and large paper-white empty space. Use the FACE section of the sai_weng character anchor and the FACE section of sai_zi character anchor for the intimate father-son close-up; keep linren as a soft background presence based on FRONT identity. Sai Weng presses the final rope knot tight, its tail echoing the earlier broken horse rope shape, then wipes dust from his son’s lips with his sleeve without looking toward the neighbor. Sai Zi inhales through pain and grips the old ink-colored sleeve patch. The wind gradually erases hoofprints on the slope, leaving the father, son, knot, and bare stone as the only sharp elements.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 2 reference image(s) in this i2i call are PREVIOUS-SHOT storyboards (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to maintain CROSS-SHOT continuity in: color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality — so the final cut sequence flows smoothly. Identity (character / location / ship details) is still locked exclusively by the FIRST 5 refs (character anchors / location anchor / style anchor).

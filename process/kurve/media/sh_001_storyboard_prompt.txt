@@ -1,0 +1,44 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel.
+
+[STYLE FOUNDATION]
+写实高端产品广告实拍质感。Warm beige background with soft, inviting studio light casting gentle shadows. The palette features organic textures of rich wood, matte dark metal, and glowing copper, capturing a refined, premium lifestyle aesthetic.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide -> P2 close-up -> P3 close-up -> P4 medium -> P5 wide
+
+[PANEL 1]
+SHOT: wide / eye-level
+PLACEMENT: The coffee machine (prop_kurve_machine) is centered on the clean kitchen countertop, its premium solid wooden base resting flat on the warm wood-grained surface. No figures present.
+ACTION: The coffee machine stands elegantly and completely still. Soft studio light sweeps across its clean, matte dark body and polished copper accents, creating subtle, soft reflections.
+ENV: The background is a clean, warm beige studio setting (loc_warm_kitchen_studio FRONT view) with gentle, warm lighting highlighting the clean, high-end surroundings.
+
+[PANEL 2]
+SHOT: close-up
+PLACEMENT: Tight focus on the clean control panel located on the side of the matte dark metal body of the coffee machine (prop_kurve_machine).
+ACTION: A single minimalist start button on the panel autonomously glows with a soft, warm amber indicator light.
+ENV: The dark, refined matte metal texture of the machine body dominates the frame, catching subtle highlights from the surrounding cozy studio light.
+
+[PANEL 3]
+SHOT: close-up / detail
+PLACEMENT: Macro focus on the elegant, curved copper spout of the coffee machine (prop_kurve_machine) pointing down toward a white paper filter cone.
+ACTION: Hot water spirals gracefully down in a perfect, steady stream from the copper spout onto steaming dark coffee grounds inside the filter, releasing delicate, soft curls of rising steam.
+ENV: Softly lit, warm-toned steam particles gently disperse in the immediate air, contrasting with the dark coffee grounds and the clean white filter paper.
+
+[PANEL 4]
+SHOT: medium / eye-level
+PLACEMENT: Side profile view of the coffee machine (prop_kurve_machine). A clean glass carafe is positioned directly underneath the drip cone, resting on the solid wooden base.
+ACTION: Freshly brewed dark coffee drips steadily from the filter cone down into the glass carafe, causing gentle ripples in the liquid inside.
+ENV: The clear glass carafe catches golden, warm ambient reflections, highlighting the rich tone of the dark coffee inside against the warm beige kitchen studio backdrop.
+
+[PANEL 5]
+SHOT: wide / eye-level
+PLACEMENT: Clean centered framing of the KURVE logo (prop_kurve_logo) on a solid white surface. No environment elements or kitchen surfaces are visible.
+ACTION: The branding is perfectly clean and static. The dark gray letters of 'KURVE' and the polished rose-gold wavy line below catch a bright, clean light across their metallic surface.
+ENV: A completely solid, pristine white background emphasizing a high-end minimalist advertising design.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)

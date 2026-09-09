@@ -1,0 +1,264 @@
+{
+  "content": {
+    "title": "Spectacle of the Colossus: A Kinetic Tour of the Blockade Zone",
+    "logline": "A high-speed kinetic tour threading through a massive orbital blockade, using a tiny fighter craft as a scale marker to showcase the dizzying geometry, blinding white armor plates, and immense proportions of planetary siege warships.",
+    "setting": "Outer space, near the sunlit hemisphere of a golden gas giant. Futuristic, high-key bright sci-fi setting. Cinematic tradition: High-speed FPV-style cinematic tracking mixed with ultra-stable cosmic documentary camera work.",
+    "style_anchor": "写实高亮 3D 渲染太空科幻 (Realistic high-key 3D rendered space sci-fi). Bright white and high-contrast silver-gray color palette. Exposed sun-glare casting sharp, high-exposure dark shadows across massive structures. Blinding cyan and orange engine plumes, clean specular highlights on pristine titanium-composite hull plates, and prismatic lens flares from raw sunlight refracting through orbital dust fields. Clean and crisp visual purity without cockpit scenes, interior shots, or HUD overlays.",
+    "dialogue_language": "",
+    "subtitle_language": "",
+    "characters": [],
+    "props": [
+      {
+        "id": "fighter_craft",
+        "look_description": "A sleek, highly maneuverable interceptor with glowing cyan twin-engine trails. Its hull is composed of matte carbon-fiber composites and reflective silver accents, acting as a microscopic speck of movement against the gargantuan enemy fleet.",
+        "reference_image_index": null
+      }
+    ],
+    "locations": [
+      {
+        "id": "blockade_sector_alpha",
+        "look_description": "The orbital blockade zone above a massive golden-hued gas giant. Dominated by kilometers-long dreadnoughts with architectural tiered superstructures, heavy weapon batteries, and vast hangar chasms. The space is filled with high-intensity defense beams, flak explosions, and glowing engine particles.",
+        "reference_image_index": null
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "sh_001",
+        "duration_s": 15.0,
+        "narrative_purpose": "Establish the immense scale disparity by introducing a tiny fighter craft as it enters the colossal warship's defense perimeter.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              4.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "High-angle wide shot of the golden gas giant's horizon. A colossal super-dreadnought, several kilometers long and plated in pristine white titanium armor, floats silently in the sunlit void. The tiny fighter_craft enters from the top-left, diving towards the ship like a microscopic dust mote. A low-frequency hum of distant engines resonates under the silent vacuum.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              4.0,
+              8.0
+            ],
+            "categories": [
+              "establishing_wide",
+              "action_fight"
+            ],
+            "moment_description": "The camera sweeps down, tracking tightly behind the fighter_craft as it reaches the dreadnought's outer defensive perimeter. Intense white defensive laser beams slash across the dark space, illuminating clouds of reflective metallic dust. The engine trail of the fighter glows a sharp, blinding cyan.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              8.0,
+              12.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "Close-range tracking behind the fighter_craft as it enters the sheer, canyon-like trench of the giant dreadnought. The raw, complex mechanical textures of the giant ship's modular hull—monolithic plates, glowing conduits, and massive gun turrets—scroll past at a dizzying speed. The sharp shadows of structural arches sweep over the camera lens.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "The fighter_craft banks hard, its thrusters firing bright cyan gas, leaving a ribbon-like trail that weaves between towering communication spires. The camera catches the blinding sun-glare reflecting off the warship's polished white armor, creating a soft, warm lens flare across the frame.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "blockade_sector_alpha",
+        "notes": null,
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_002",
+        "duration_s": 15.0,
+        "narrative_purpose": "Tour the inner mechanical architecture and defensive fire of the warships up close to emphasize kinetic density.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "establishing_wide",
+              "action_fight"
+            ],
+            "moment_description": "The camera flies parallel to the fighter_craft inside a deep structural trench. Flak bursts of fiery orange and white smoke bloom nearby, their shockwaves subtly vibrating the frame. The low-frequency thud of cosmic explosions reverberates through the metal hull structure.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "action_fight"
+            ],
+            "moment_description": "The fighter_craft weaves through a massive matrix of active launch tubes and venting coolant vapor. The vapor catching the bright sun creates a dense, glowing white mist, briefly obscuring the shot before the fighter_craft bursts through into the clear void.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "product_hero",
+              "action_fight"
+            ],
+            "moment_description": "The fighter_craft executes a barrel roll to clear a massive rotating cooling fan, the camera rolling in perfect sync. The immense scale is emphasized by the colossal gears and mechanical shafts spinning slowly in the dark backdrop of the warship's interior.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "The fighter_craft plunges straight down into a colossal dark bay opening, then immediately pulls out, silhouetted against a brilliant blue plasma hangar shield that crackles with static electricity.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "blockade_sector_alpha",
+        "notes": null,
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_003",
+        "duration_s": 15.0,
+        "narrative_purpose": "Highlight the massive geometry of the fleet from distinct angles to capture the scale from multiple viewpoints.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              4.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "An orbiting camera looks UP from beneath a second, even larger dreadnought. The fighter_craft is a mere streak of blue light passing across the ship's underbelly, completely dwarfed by massive heat-sink grilles glowing a dull, intense crimson.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              4.0,
+              8.0
+            ],
+            "categories": [
+              "establishing_wide",
+              "action_fight"
+            ],
+            "moment_description": "Lateral tracking shot from a distance. The fighter_craft races along the flank of a massive orbital battery. Each turret, the size of a skyscraper, fires high-velocity kinetic slugs that leave bright yellow ionized trails in their wake, accompanied by the muffled metallic clank of automated reloading systems.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              8.0,
+              11.0
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "A frontal extreme telephoto shot looking straight down the flight path of the fighter_craft. It rockets directly toward the camera, weaving around giant structural support beams that frame the composition in stark, geometric patterns.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.0,
+              15.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "Overhead 'god's eye' view looking down as the fighter_craft exits the secondary warship's hull. The fighter's shadow is cast long, sharp, and razor-thin across the pristine white metallic plating far below by the blinding cosmic sun.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "blockade_sector_alpha",
+        "notes": null,
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_004",
+        "duration_s": 15.0,
+        "narrative_purpose": "Transition from high-velocity tracking to an ultimate, majestic pullback showing the full scale of the orbital blockade line.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "establishing_wide",
+              "action_fight"
+            ],
+            "moment_description": "The camera tracks closely under the fighter_craft's wing as it blasts through the outer perimeter of the blockade, finally entering the open, quiet cosmic void beyond the warship canyons.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "The camera begins a rapid, continuous deceleration and pullback. The fighter_craft grows smaller and smaller in the frame, its cyan engine trails shrinking to a thin, glowing thread against the blackness.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.0,
+              11.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "The pullback continues to reveal not just one, but a massive fleet of dozens of giant white dreadnoughts arranged in a flawless orbital wall, with the entire golden-hued gas giant rising majestically behind them in the high-key, sun-drenched cosmos.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.0,
+              15.0
+            ],
+            "categories": [
+              "establishing_wide"
+            ],
+            "moment_description": "The camera settles into an epic, static composition. The tiny fighter_craft has completely vanished from sight, leaving only a fading faint streak of blue dust. The massive fleet hangs in silent, majestic blockade against the bright cosmos as the low engine rumbles slowly fade into total silence.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "blockade_sector_alpha",
+        "notes": null,
+        "audit_notes": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,1603 @@
+{
+ "key": "vents",
+ "title": "Black Smokers",
+ "genre": "Explainer · Science Infographic",
+ "cat": "Explainer",
+ "prompt": "A classroom explainer where the user supplies the script and forbids any rewording: the temperature figures, the chemosynthesis mechanism and the tubeworm symbiosis are all things they have already checked. Two real research figures are uploaded to be reproduced on screen. The narration is the supplied script VERBATIM — all 243 words, every figure intact, including the one an earlier cut lost (vent fluid does not boil because the pressure at depth is roughly 250x the surface). The script needed more speaking time than the requested 90 seconds, so the film ran to nine shots rather than compress it. Some of the denser diagram labels are misspelled by the image model — in-frame lettering at panel scale is still beyond it.",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/topic16_vents/workspace_global_20260803_120643"
+ },
+ "generated_at": "2026-09-09T15:56:41+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 3
+  },
+  {
+   "id": "IntakeImageAgent__step_1_5648c3af",
+   "agent": "IntakeImageAgent",
+   "label": "IntakeImage",
+   "step": "step_1_5648c3af",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "BriefEnricherAgent__step_1_5648c3af",
+   "agent": "BriefEnricherAgent",
+   "label": "BriefEnricher",
+   "step": "step_1_5648c3af",
+   "order": 2,
+   "n": 1
+  },
+  {
+   "id": "ExplainerAgent__step_1_5648c3af",
+   "agent": "ExplainerAgent",
+   "label": "Explainer",
+   "step": "step_1_5648c3af",
+   "order": 3,
+   "n": 1
+  },
+  {
+   "id": "KeyframeSheetAgent__step_1_5648c3af",
+   "agent": "KeyframeSheetAgent",
+   "label": "KeyframeSheet",
+   "step": "step_1_5648c3af",
+   "order": 4,
+   "n": 25
+  },
+  {
+   "id": "ShotPromptAgent__step_1_5648c3af",
+   "agent": "ShotPromptAgent",
+   "label": "ShotPrompt",
+   "step": "step_1_5648c3af",
+   "order": 5,
+   "n": 10
+  },
+  {
+   "id": "ClipAgent__step_1_5648c3af",
+   "agent": "ClipAgent",
+   "label": "Clip",
+   "step": "step_1_5648c3af",
+   "order": 6,
+   "n": 11
+  },
+  {
+   "id": "VoiceoverAgent__step_1_5648c3af",
+   "agent": "VoiceoverAgent",
+   "label": "Voiceover",
+   "step": "step_1_5648c3af",
+   "order": 7,
+   "n": 3
+  },
+  {
+   "id": "AudioMixAgent__step_1_5648c3af",
+   "agent": "AudioMixAgent",
+   "label": "AudioMix",
+   "step": "step_1_5648c3af",
+   "order": 8,
+   "n": 2
+  },
+  {
+   "id": "CompositorAgent__step_1_5648c3af",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_1_5648c3af",
+   "order": 9,
+   "n": 3
+  }
+ ],
+ "nodes": [
+  {
+   "id": "fig_food_web",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "fig food web",
+   "src_name": "20260803_120643_511283_fig_food_web.png",
+   "bytes": 76119,
+   "caption": "Global prop reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/vents/media/fig_food_web.jpg",
+   "w": 1350,
+   "h": 900
+  },
+  {
+   "id": "fig_temp_depth",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "fig temp depth",
+   "src_name": "20260803_120643_508048_fig_temp_depth.png",
+   "bytes": 61222,
+   "caption": "Global prop reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/vents/media/fig_temp_depth.jpg",
+   "w": 1200,
+   "h": 900
+  },
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260803_120643_518117.json",
+   "bytes": 2693,
+   "caption": "Structured metadata document (JSON) for a user-submitted text brief. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/vents/media/creative_brief.json",
+   "excerpt": "{\"text\": \"I need a 90-second animated explainer on deep-sea hydrothermal vent ecosystems — black smokers — aimed at middle school through high school students. The accuracy is on me, so stick strictly to the script I've written out below and don't pad it or reword a single word of it: the temperature figures, the chemo…"
+  },
+  {
+   "id": "intakeimageagent_output",
+   "stage": "IntakeImageAgent__step_1_5648c3af",
+   "kind": "json",
+   "label": "IntakeImageAgent output",
+   "src_name": "step_1_5648c3af_intakeimageagent_exec_1.json",
+   "bytes": 1021,
+   "caption": "Structured metadata document (JSON) for 2 user-uploaded image(s). Payload lists every image's visual description and image-asset metadata.",
+   "scope": "global",
+   "file": "process/vents/media/intakeimageagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"images\": [{\"visual_description\": \"A scientific line graph plotting temperature against depth, featuring a blue line for ambient seawater and a red point for vent fluid.\", \"image_asset\": {\"asset_id\": \"\", \"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/topic16_vents/workspace_global_20260803_120643/inp…"
+  },
+  {
+   "id": "briefenricheragent_output",
+   "stage": "BriefEnricherAgent__step_1_5648c3af",
+   "kind": "json",
+   "label": "BriefEnricherAgent output",
+   "src_name": "step_1_5648c3af_briefenricheragent_exec_2.json",
+   "bytes": 3468,
+   "caption": "Enriched creative brief with visual reference descriptions integrated. Supersedes the raw user brief for story generation — contains the user's original concept plus detailed visual descriptions of uploaded reference images.",
+   "scope": "global",
+   "file": "process/vents/media/briefenricheragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"enriched_brief\": \"I need a 90-second animated explainer on deep-sea hydrothermal vent ecosystems (black smokers) aimed at middle school through high school students. The accuracy is critical, so stick strictly to the verbatim script provided below without padding or rewording a single word—the tempe…"
+  },
+  {
+   "id": "explaineragent_output",
+   "stage": "ExplainerAgent__step_1_5648c3af",
+   "kind": "json",
+   "label": "ExplainerAgent output",
+   "src_name": "step_1_5648c3af_explaineragent_exec_3.json",
+   "bytes": 21275,
+   "caption": "Shot-rich story: 9 shot(s), 0 character(s) — drives keyframe/storyboard/audio.",
+   "scope": "global",
+   "file": "process/vents/media/explaineragent_output.json",
+   "excerpt": "{\"title\": \"Deep-Sea Hydrothermal Vent Ecosystems\", \"logline\": \"An educational explainer introducing how hydrothermal vents support dense deep-ocean ecosystems through chemosynthesis and symbiosis in permanent darkness.\", \"setting\": \"A global middle-school and high-school educational context. Clean 2D graphic explainer …"
+  },
+  {
+   "id": "deep_sea_hydrothermal_vent_anchor",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "image",
+   "label": "deep sea hydrothermal vent anchor",
+   "src_name": "step_1_5648c3af_img_deep_sea_hydrothermal_vent_anchor.png",
+   "bytes": 4813231,
+   "caption": "GENERATED internal identity reference card for location deep_sea_hydrothermal_vent — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/vents/media/deep_sea_hydrothermal_vent_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "food_web_diagram_anchor",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "image",
+   "label": "food web diagram anchor",
+   "src_name": "step_1_5648c3af_img_food_web_diagram_anchor.png",
+   "bytes": 3902996,
+   "caption": "GENERATED internal identity reference card for prop food_web_diagram — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/vents/media/food_web_diagram_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "temp_depth_graph_anchor",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "image",
+   "label": "temp depth graph anchor",
+   "src_name": "step_1_5648c3af_img_temp_depth_graph_anchor.png",
+   "bytes": 3508339,
+   "caption": "GENERATED internal identity reference card for prop temp_depth_graph — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/vents/media/temp_depth_graph_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "deep_sea_hydrothermal_vent_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "deep sea hydrothermal vent anchor prompt",
+   "src_name": "step_1_5648c3af_img_deep_sea_hydrothermal_vent_anchor_prompt.txt",
+   "bytes": 2161,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location deep_sea_hydrothermal_vent anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/vents/media/deep_sea_hydrothermal_vent_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): Clean 2D vector explainer animation with stylized motion graphic overlays.; Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures.; Smooth flat graphics with subtle…"
+  },
+  {
+   "id": "food_web_diagram_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "food web diagram anchor prompt",
+   "src_name": "step_1_5648c3af_img_food_web_diagram_anchor_prompt.txt",
+   "bytes": 2434,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the prop food_web_diagram anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/vents/media/food_web_diagram_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "temp_depth_graph_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "temp depth graph anchor prompt",
+   "src_name": "step_1_5648c3af_img_temp_depth_graph_anchor_prompt.txt",
+   "bytes": 2508,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the prop temp_depth_graph anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/vents/media/temp_depth_graph_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "keyframesheetagent_output",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "json",
+   "label": "KeyframeSheetAgent output",
+   "src_name": "step_1_5648c3af_keyframesheetagent_exec_4.json",
+   "bytes": 26461,
+   "caption": "Sheet-model keyframe package: 3 identity anchor card(s) + 9 per-shot storyboard sheet(s). Drives the downstream image-to-video stage.",
+   "scope": "global",
+   "file": "process/vents/media/keyframesheetagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"anchors\": {\"character_anchors\": [], \"location_anchors\": [{\"entity_id\": \"deep_sea_hydrothermal_vent\", \"prompt_summary\": \"Abyssal ocean floor in complete deep-sea darkness composed of dark basalt rock and mineral-rich geological formations. Tall volcanic chimney columns vent dense, billowing mineral c…"
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "image",
+   "label": "sh 001 storyboard",
+   "src_name": "step_1_5648c3af_img_sh_001_storyboard.png",
+   "bytes": 4263421,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_001 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/vents/media/sh_001_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "sh 001 storyboard prompt",
+   "src_name": "step_1_5648c3af_img_sh_001_storyboard_prompt.txt",
+   "bytes": 2349,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_001's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/vents/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean 2D vector explainer animation with stylized motion graphi…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "image",
+   "label": "sh 002 storyboard",
+   "src_name": "step_1_5648c3af_img_sh_002_storyboard.png",
+   "bytes": 4569327,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_002 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/vents/media/sh_002_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "sh 002 storyboard prompt",
+   "src_name": "step_1_5648c3af_img_sh_002_storyboard_prompt.txt",
+   "bytes": 2933,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_002's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/vents/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean 2D vector explainer animation with stylized motion graphi…"
+  },
+  {
+   "id": "sh_003_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "image",
+   "label": "sh 003 storyboard",
+   "src_name": "step_1_5648c3af_img_sh_003_storyboard.png",
+   "bytes": 3985734,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_003 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/vents/media/sh_003_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_003_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "sh 003 storyboard prompt",
+   "src_name": "step_1_5648c3af_img_sh_003_storyboard_prompt.txt",
+   "bytes": 2917,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_003's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/vents/media/sh_003_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean 2D vector explainer animation with stylized motion graphi…"
+  },
+  {
+   "id": "sh_004_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "image",
+   "label": "sh 004 storyboard",
+   "src_name": "step_1_5648c3af_img_sh_004_storyboard.png",
+   "bytes": 4266091,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_004 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/vents/media/sh_004_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_004_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "sh 004 storyboard prompt",
+   "src_name": "step_1_5648c3af_img_sh_004_storyboard_prompt.txt",
+   "bytes": 2801,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_004's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/vents/media/sh_004_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean 2D vector explainer animation with stylized motion graphi…"
+  },
+  {
+   "id": "sh_005_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "image",
+   "label": "sh 005 storyboard",
+   "src_name": "step_1_5648c3af_img_sh_005_storyboard.png",
+   "bytes": 4021961,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_005 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_005",
+   "shot": "sh_005",
+   "file": "process/vents/media/sh_005_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_005_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "sh 005 storyboard prompt",
+   "src_name": "step_1_5648c3af_img_sh_005_storyboard_prompt.txt",
+   "bytes": 2836,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_005's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_005",
+   "shot": "sh_005",
+   "file": "process/vents/media/sh_005_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean 2D vector explainer animation with stylized motion graphi…"
+  },
+  {
+   "id": "sh_006_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "image",
+   "label": "sh 006 storyboard",
+   "src_name": "step_1_5648c3af_img_sh_006_storyboard.png",
+   "bytes": 4693038,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_006 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_006",
+   "shot": "sh_006",
+   "file": "process/vents/media/sh_006_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_006_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "sh 006 storyboard prompt",
+   "src_name": "step_1_5648c3af_img_sh_006_storyboard_prompt.txt",
+   "bytes": 2838,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_006's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_006",
+   "shot": "sh_006",
+   "file": "process/vents/media/sh_006_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean 2D vector explainer animation with stylized motion graphi…"
+  },
+  {
+   "id": "sh_007_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "image",
+   "label": "sh 007 storyboard",
+   "src_name": "step_1_5648c3af_img_sh_007_storyboard.png",
+   "bytes": 4904875,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_007 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_007",
+   "shot": "sh_007",
+   "file": "process/vents/media/sh_007_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_007_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "sh 007 storyboard prompt",
+   "src_name": "step_1_5648c3af_img_sh_007_storyboard_prompt.txt",
+   "bytes": 2852,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_007's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_007",
+   "shot": "sh_007",
+   "file": "process/vents/media/sh_007_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean 2D vector explainer animation with stylized motion graphi…"
+  },
+  {
+   "id": "sh_008_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "image",
+   "label": "sh 008 storyboard",
+   "src_name": "step_1_5648c3af_img_sh_008_storyboard.png",
+   "bytes": 4096006,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_008 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_008",
+   "shot": "sh_008",
+   "file": "process/vents/media/sh_008_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_008_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "sh 008 storyboard prompt",
+   "src_name": "step_1_5648c3af_img_sh_008_storyboard_prompt.txt",
+   "bytes": 2902,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_008's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_008",
+   "shot": "sh_008",
+   "file": "process/vents/media/sh_008_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean 2D vector explainer animation with stylized motion graphi…"
+  },
+  {
+   "id": "sh_009_storyboard",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "image",
+   "label": "sh 009 storyboard",
+   "src_name": "step_1_5648c3af_img_sh_009_storyboard.png",
+   "bytes": 4486687,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_009 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_009",
+   "shot": "sh_009",
+   "file": "process/vents/media/sh_009_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_009_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "sh 009 storyboard prompt",
+   "src_name": "step_1_5648c3af_img_sh_009_storyboard_prompt.txt",
+   "bytes": 2943,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_009's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_009",
+   "shot": "sh_009",
+   "file": "process/vents/media/sh_009_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right. [STYLE FOUNDATION] Clean 2D vector explainer animation with stylized motion graphi…"
+  },
+  {
+   "id": "shotpromptagent_output",
+   "stage": "ShotPromptAgent__step_1_5648c3af",
+   "kind": "json",
+   "label": "ShotPromptAgent output",
+   "src_name": "step_1_5648c3af_shotpromptagent_exec_5.json",
+   "bytes": 28402,
+   "caption": "Per-shot video-generation prompt package: 9 Seedance prompt(s) (9-section), one per shot — pairs with the storyboard sheet to drive the image-to-video clip stage.",
+   "scope": "global",
+   "file": "process/vents/media/shotpromptagent_output.json",
+   "excerpt": "[{\"shot_id\": \"sh_001\", \"text_prompt\": \"[设定]\\n面向中学生的科普教育动画，聚焦深海热液喷口极端地理环境与深海生物群落。\\n\\n[风格]\\nClean 2D vector explainer animation with stylized motion graphic overlays. 冷静专业、清晰可信的科普演示基调。\\n\\n[参考图]\\n[Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，…"
+  },
+  {
+   "id": "shot_prompt_sh_001",
+   "stage": "ShotPromptAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "shot prompt sh 001",
+   "src_name": "step_1_5648c3af_shot_prompt_sh_001.txt",
+   "bytes": 2906,
+   "caption": "video-generation text prompt for shot sh_001 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/vents/media/shot_prompt_sh_001.txt",
+   "excerpt": "[设定] 面向中学生的科普教育动画，聚焦深海热液喷口极端地理环境与深海生物群落。 [风格] Clean 2D vector explainer animation with stylized motion graphic overlays. 冷静专业、清晰可信的科普演示基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格…"
+  },
+  {
+   "id": "shot_prompt_sh_002",
+   "stage": "ShotPromptAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "shot prompt sh 002",
+   "src_name": "step_1_5648c3af_shot_prompt_sh_002.txt",
+   "bytes": 2804,
+   "caption": "video-generation text prompt for shot sh_002 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/vents/media/shot_prompt_sh_002.txt",
+   "excerpt": "[设定] 全球中学科学教育动画情境，采用清晰可信的严谨科普叙事语调。 [风格] Clean 2D vector explainer animation with stylized motion graphic overlays. 整体呈现清晰平稳、通俗易懂的科普演示基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白…"
+  },
+  {
+   "id": "shot_prompt_sh_003",
+   "stage": "ShotPromptAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "shot prompt sh 003",
+   "src_name": "step_1_5648c3af_shot_prompt_sh_003.txt",
+   "bytes": 2740,
+   "caption": "video-generation text prompt for shot sh_003 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/vents/media/shot_prompt_sh_003.txt",
+   "excerpt": "[设定] 面向中学生的海洋科普教学场景，具备严谨清晰、理智克制的学术演示与动画教学氛围。 [风格] Clean 2D vector explainer animation with stylized motion graphic overlays. 全片呈现冷静深邃、秩序井然的科学图解基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上…"
+  },
+  {
+   "id": "shot_prompt_sh_004",
+   "stage": "ShotPromptAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "shot prompt sh 004",
+   "src_name": "step_1_5648c3af_shot_prompt_sh_004.txt",
+   "bytes": 2776,
+   "caption": "video-generation text prompt for shot sh_004 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/vents/media/shot_prompt_sh_004.txt",
+   "excerpt": "[设定] 本片为面向中学生的深海科学科普动画，语言氛围客观严谨、清晰易懂。 [风格] Clean 2D vector explainer animation with stylized motion graphic overlays. 整体呈现简洁理性的科学科普动画风格。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白…"
+  },
+  {
+   "id": "shot_prompt_sh_005",
+   "stage": "ShotPromptAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "shot prompt sh 005",
+   "src_name": "step_1_5648c3af_shot_prompt_sh_005.txt",
+   "bytes": 2775,
+   "caption": "video-generation text prompt for shot sh_005 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_005",
+   "shot": "sh_005",
+   "file": "process/vents/media/shot_prompt_sh_005.txt",
+   "excerpt": "[设定] 面向全球中学生的深海科学科普教育场景，传递严谨且直观的学术探索氛围。 [风格] 扁平 2D 矢量科普动画与风格化动态图形。全片基调理性、清晰且富有探索感。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得再现任何编号、文字或网格线。 [镜头] 镜头1：特写起幅光束与…"
+  },
+  {
+   "id": "shot_prompt_sh_006",
+   "stage": "ShotPromptAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "shot prompt sh 006",
+   "src_name": "step_1_5648c3af_shot_prompt_sh_006.txt",
+   "bytes": 2805,
+   "caption": "video-generation text prompt for shot sh_006 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_006",
+   "shot": "sh_006",
+   "file": "process/vents/media/shot_prompt_sh_006.txt",
+   "excerpt": "[设定] 面向中学生的海洋生物科学科普短片，具有严谨清晰的深海热液口生态与生物解剖结构演示氛围。 [风格] Clean 2D vector explainer animation with stylized motion graphic overlays。整体保持平稳专业、清晰明了的科普教学基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每…"
+  },
+  {
+   "id": "shot_prompt_sh_007",
+   "stage": "ShotPromptAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "shot prompt sh 007",
+   "src_name": "step_1_5648c3af_shot_prompt_sh_007.txt",
+   "bytes": 3034,
+   "caption": "video-generation text prompt for shot sh_007 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_007",
+   "shot": "sh_007",
+   "file": "process/vents/media/shot_prompt_sh_007.txt",
+   "excerpt": "[设定] 面向中学生的深海热泉生态科普解说，具备专业冷静的科学示意氛围。 [风格] Clean 2D vector explainer animation with stylized motion graphic overlays. 全片呈现冷静可信、清晰直观的科学科普基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格…"
+  },
+  {
+   "id": "shot_prompt_sh_008",
+   "stage": "ShotPromptAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "shot prompt sh 008",
+   "src_name": "step_1_5648c3af_shot_prompt_sh_008.txt",
+   "bytes": 2977,
+   "caption": "video-generation text prompt for shot sh_008 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_008",
+   "shot": "sh_008",
+   "file": "process/vents/media/shot_prompt_sh_008.txt",
+   "excerpt": "[设定] 适合全球中学的深海热液口生态科普教育动画，展现深海无光环境中食物网的能量传递关系。 [风格] Clean 2D vector explainer animation with stylized motion graphic overlays. 整体呈现清晰、严谨而生动的科学科普图示氛围。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每…"
+  },
+  {
+   "id": "shot_prompt_sh_009",
+   "stage": "ShotPromptAgent__step_1_5648c3af",
+   "kind": "text",
+   "label": "shot prompt sh 009",
+   "src_name": "step_1_5648c3af_shot_prompt_sh_009.txt",
+   "bytes": 2729,
+   "caption": "video-generation text prompt for shot sh_009 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_009",
+   "shot": "sh_009",
+   "file": "process/vents/media/shot_prompt_sh_009.txt",
+   "excerpt": "[设定] 全球中中学科学教育情境，深海热泉生态系科普说明环境，整体呈现客观清晰的科学探索语境。 [风格] Clean 2D vector explainer animation with stylized motion graphic overlays. 整体呈现冷静、理智且富有探索感的科普基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按 2×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 4 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每…"
+  },
+  {
+   "id": "clip_final",
+   "stage": "ClipAgent__step_1_5648c3af",
+   "kind": "video",
+   "label": "clip final",
+   "src_name": "step_1_5648c3af_clip_final.mp4",
+   "bytes": 30391402,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_final] Complete assembled film bytes (9 shot(s) concatenated). The final visual deliverable — consumed by a downstream audio-mix / compositor step's materializer for muxing / subtitle burn-in.",
+   "scope": "global",
+   "w": 864,
+   "h": 496,
+   "dur": 135.79,
+   "poster": "process/vents/media/clip_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "clipagent_output",
+   "stage": "ClipAgent__step_1_5648c3af",
+   "kind": "json",
+   "label": "ClipAgent output",
+   "src_name": "step_1_5648c3af_clipagent_exec_6.json",
+   "bytes": 2304,
+   "caption": "[JSON MANIFEST] Clip-assembly plan: 9 per-shot clip plan(s) with duration + transition + scene grouping. Read by a downstream audio-mix / compositor step's LLM.",
+   "scope": "global",
+   "file": "process/vents/media/clipagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"clips\": [{\"shot_id\": \"sh_001\", \"duration_sec\": 5.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_002\", \"duration_sec\": 5.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_003\", \"duration_sec\": 5.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_004\", \"duration_sec\": 5.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_005\", \"dura…"
+  },
+  {
+   "id": "clip_sh_001",
+   "stage": "ClipAgent__step_1_5648c3af",
+   "kind": "video",
+   "label": "clip sh 001",
+   "src_name": "step_1_5648c3af_clip_sh_001.mp4",
+   "bytes": 3534794,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_001] Rendered video clip bytes for shot sh_001 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/vents/media/clip_sh_001_poster.jpg",
+   "file": "process/vents/media/clip_sh_001.mp4"
+  },
+  {
+   "id": "clip_sh_002",
+   "stage": "ClipAgent__step_1_5648c3af",
+   "kind": "video",
+   "label": "clip sh 002",
+   "src_name": "step_1_5648c3af_clip_sh_002.mp4",
+   "bytes": 4309731,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_002] Rendered video clip bytes for shot sh_002 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "w": 864,
+   "h": 496,
+   "dur": 15.07,
+   "poster": "process/vents/media/clip_sh_002_poster.jpg",
+   "file": "process/vents/media/clip_sh_002.mp4"
+  },
+  {
+   "id": "clip_sh_003",
+   "stage": "ClipAgent__step_1_5648c3af",
+   "kind": "video",
+   "label": "clip sh 003",
+   "src_name": "step_1_5648c3af_clip_sh_003.mp4",
+   "bytes": 2477481,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_003] Rendered video clip bytes for shot sh_003 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/vents/media/clip_sh_003_poster.jpg",
+   "file": "process/vents/media/clip_sh_003.mp4"
+  },
+  {
+   "id": "clip_sh_004",
+   "stage": "ClipAgent__step_1_5648c3af",
+   "kind": "video",
+   "label": "clip sh 004",
+   "src_name": "step_1_5648c3af_clip_sh_004.mp4",
+   "bytes": 3137098,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_004] Rendered video clip bytes for shot sh_004 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/vents/media/clip_sh_004_poster.jpg",
+   "file": "process/vents/media/clip_sh_004.mp4"
+  },
+  {
+   "id": "clip_sh_005",
+   "stage": "ClipAgent__step_1_5648c3af",
+   "kind": "video",
+   "label": "clip sh 005",
+   "src_name": "step_1_5648c3af_clip_sh_005.mp4",
+   "bytes": 2595445,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_005] Rendered video clip bytes for shot sh_005 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_005",
+   "shot": "sh_005",
+   "w": 864,
+   "h": 496,
+   "dur": 15.07,
+   "poster": "process/vents/media/clip_sh_005_poster.jpg",
+   "file": "process/vents/media/clip_sh_005.mp4"
+  },
+  {
+   "id": "clip_sh_006",
+   "stage": "ClipAgent__step_1_5648c3af",
+   "kind": "video",
+   "label": "clip sh 006",
+   "src_name": "step_1_5648c3af_clip_sh_006.mp4",
+   "bytes": 3263594,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_006] Rendered video clip bytes for shot sh_006 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_006",
+   "shot": "sh_006",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/vents/media/clip_sh_006_poster.jpg",
+   "file": "process/vents/media/clip_sh_006.mp4"
+  },
+  {
+   "id": "clip_sh_007",
+   "stage": "ClipAgent__step_1_5648c3af",
+   "kind": "video",
+   "label": "clip sh 007",
+   "src_name": "step_1_5648c3af_clip_sh_007.mp4",
+   "bytes": 4330883,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_007] Rendered video clip bytes for shot sh_007 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_007",
+   "shot": "sh_007",
+   "w": 864,
+   "h": 496,
+   "dur": 15.07,
+   "poster": "process/vents/media/clip_sh_007_poster.jpg",
+   "file": "process/vents/media/clip_sh_007.mp4"
+  },
+  {
+   "id": "clip_sh_008",
+   "stage": "ClipAgent__step_1_5648c3af",
+   "kind": "video",
+   "label": "clip sh 008",
+   "src_name": "step_1_5648c3af_clip_sh_008.mp4",
+   "bytes": 2923683,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_008] Rendered video clip bytes for shot sh_008 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_008",
+   "shot": "sh_008",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/vents/media/clip_sh_008_poster.jpg",
+   "file": "process/vents/media/clip_sh_008.mp4"
+  },
+  {
+   "id": "clip_sh_009",
+   "stage": "ClipAgent__step_1_5648c3af",
+   "kind": "video",
+   "label": "clip sh 009",
+   "src_name": "step_1_5648c3af_clip_sh_009.mp4",
+   "bytes": 4023644,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_009] Rendered video clip bytes for shot sh_009 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_009",
+   "shot": "sh_009",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/vents/media/clip_sh_009_poster.jpg",
+   "file": "process/vents/media/clip_sh_009.mp4"
+  },
+  {
+   "id": "aud_voiceover_full",
+   "stage": "VoiceoverAgent__step_1_5648c3af",
+   "kind": "audio",
+   "label": "aud voiceover full",
+   "src_name": "step_1_5648c3af_aud_voiceover_full.wav",
+   "bytes": 26066958,
+   "caption": "[BINARY WAV FILE · mime=audio/wav · sys_id aud_voiceover_full] Narrator voiceover audio bytes — the authored per-shot VO laid across the rendered timeline. Consumed by the audio-mix or compositor materializer.",
+   "scope": "global",
+   "file": "process/vents/media/aud_voiceover_full.mp3",
+   "dur": 135.76
+  },
+  {
+   "id": "voiceoveragent_output",
+   "stage": "VoiceoverAgent__step_1_5648c3af",
+   "kind": "json",
+   "label": "VoiceoverAgent output",
+   "src_name": "step_1_5648c3af_voiceoveragent_exec_7.json",
+   "bytes": 3166,
+   "caption": "[JSON MANIFEST] Cine voice-over plan: 35 narrator line(s) across 9 shot(s) (one narrator, authored per-shot VO). Dev/debug view; downstream consumption goes through the sibling audio / srt artifacts.",
+   "scope": "global",
+   "file": "process/vents/media/voiceoveragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"voice\": \"\", \"voice_instructions\": \"Female voice with an adult tone, speaking English with a neutral, natural native accent. Warm, clear, articulate, and engaging, with the calm and approachable pacing of an expert science documentary narrator. Deliveries should sound knowledgeable yet accessible for…"
+  },
+  {
+   "id": "voiceover_srt",
+   "stage": "VoiceoverAgent__step_1_5648c3af",
+   "kind": "json",
+   "label": "voiceover srt",
+   "src_name": "step_1_5648c3af_voiceover_srt.json",
+   "bytes": 2884,
+   "caption": "[JSON MANIFEST · SRT cues] Narrator subtitle track: one cue per voice-over line, timed against the narrator audio. Consumed by the compositor step as a burn-in subtitle source.",
+   "scope": "global",
+   "file": "process/vents/media/voiceover_srt.json",
+   "excerpt": "{\"tracks\": [{\"language\": \"en\", \"srt_text\": \"1\\n00:00:00,000 --> 00:00:05,225\\nTwo and a half kilometres down, there is no sunlight at all.\\n\\n2\\n00:00:05,475 --> 00:00:09,024\\nThe water here sits at about two degrees Celsius.\\n\\n3\\n00:00:09,274 --> 00:00:15,160\\nAnd yet, crowded around cracks in the seafloor, there are…"
+  },
+  {
+   "id": "aud_final",
+   "stage": "AudioMixAgent__step_1_5648c3af",
+   "kind": "audio",
+   "label": "aud final",
+   "src_name": "step_1_5648c3af_aud_final.wav",
+   "bytes": 23959434,
+   "caption": "[BINARY WAV FILE · mime=audio/wav · sys_id aud_final] Final-mix audio bytes — all source audio tracks (dialogue / foley / music / ambience / narrator) merged. Ready to be muxed onto the delivered video by a downstream compositing step.",
+   "scope": "global",
+   "file": "process/vents/media/aud_final.mp3",
+   "dur": 135.82
+  },
+  {
+   "id": "audiomixagent_output",
+   "stage": "AudioMixAgent__step_1_5648c3af",
+   "kind": "json",
+   "label": "AudioMixAgent output",
+   "src_name": "step_1_5648c3af_audiomixagent_exec_8.json",
+   "bytes": 43,
+   "caption": "[JSON MANIFEST] Final-audio-mix envelope: amix of 0 source track(s) (video dialogue+foley + optional global music/ambience/narrator). Planning manifest only; the wav is a sibling artifact.",
+   "scope": "global",
+   "file": "process/vents/media/audiomixagent_output.json",
+   "excerpt": "{\"language\": \"en\"}"
+  },
+  {
+   "id": "compositor_final",
+   "stage": "CompositorAgent__step_1_5648c3af",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_1_5648c3af_compositor_final.mp4",
+   "bytes": 15762912,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "w": 864,
+   "h": 496,
+   "dur": 135.82,
+   "poster": "process/vents/media/compositor_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "compositoragent_output",
+   "stage": "CompositorAgent__step_1_5648c3af",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_1_5648c3af_compositoragent_exec_9.json",
+   "bytes": 625,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/vents/media/compositoragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"plan\": {\"color_grade\": {\"brightness\": 0.0, \"contrast\": 0.05, \"saturation\": 0.05}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"authored_cues\": [], \"card_style\": {\"font_size\": 34, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"posi…"
+  },
+  {
+   "id": "final_film",
+   "stage": "CompositorAgent__step_1_5648c3af",
+   "kind": "video",
+   "label": "final film",
+   "file": "videos/vents.mp4",
+   "poster": "posters/vents.jpg",
+   "final": true,
+   "caption": "Delivered film as published on this site.",
+   "src_name": "vents.mp4",
+   "w": 864,
+   "h": 496,
+   "dur": 135.84
+  }
+ ],
+ "edges": [
+  {
+   "from": "fig_food_web",
+   "to": "IntakeImageAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "fig_temp_depth",
+   "to": "IntakeImageAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "BriefEnricherAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeimageagent_output",
+   "to": "BriefEnricherAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "briefenricheragent_output",
+   "to": "KeyframeSheetAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "explaineragent_output",
+   "to": "KeyframeSheetAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "fig_food_web",
+   "to": "KeyframeSheetAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "fig_temp_depth",
+   "to": "KeyframeSheetAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "keyframesheetagent_output",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "shot_prompt_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard_prompt",
+   "to": "shot_prompt_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "shot_prompt_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard_prompt",
+   "to": "shot_prompt_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard",
+   "to": "shot_prompt_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard_prompt",
+   "to": "shot_prompt_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard",
+   "to": "shot_prompt_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard_prompt",
+   "to": "shot_prompt_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard",
+   "to": "shot_prompt_sh_009",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard_prompt",
+   "to": "shot_prompt_sh_009",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "deep_sea_hydrothermal_vent_anchor",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "food_web_diagram_anchor",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "temp_depth_graph_anchor",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "explaineragent_output",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_005",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_006",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_007",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_008",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_009",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_005",
+   "to": "clip_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_006",
+   "to": "clip_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_007",
+   "to": "clip_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_008",
+   "to": "clip_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_009",
+   "to": "clip_sh_009",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "deep_sea_hydrothermal_vent_anchor",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "food_web_diagram_anchor",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "temp_depth_graph_anchor",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "clip_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard_prompt",
+   "to": "clip_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "clip_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard_prompt",
+   "to": "clip_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard",
+   "to": "clip_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard_prompt",
+   "to": "clip_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard",
+   "to": "clip_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard_prompt",
+   "to": "clip_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard",
+   "to": "clip_sh_009",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard_prompt",
+   "to": "clip_sh_009",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "explaineragent_output",
+   "to": "VoiceoverAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_voiceover_full",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_final",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_001",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_002",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_003",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_004",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_005",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_006",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_007",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_008",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_009",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_final",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_001",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_002",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_003",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_004",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_005",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_006",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_007",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_008",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_009",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_final",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "fig_food_web",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "fig_temp_depth",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "briefenricheragent_output",
+   "to": "ExplainerAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "ExplainerAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeimageagent_output",
+   "to": "ExplainerAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "final_film",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

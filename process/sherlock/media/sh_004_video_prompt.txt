@@ -1,0 +1,61 @@
+[设定]
+Victorian London, 1892 Bloomsbury, in the tradition of classic British locked-room detective fiction; cast is white British. The story stays around Sir Edmund Vale's townhouse study because the crime's central claim is physical confinement: a door bolted from within.
+
+[风格]
+2D 彩色漫画插画（graphic-novel：干净墨线叠加丰富上色，明显非写实、非真人），维多利亚侦探片质感；广角建立空间、85mm 锁孔细节、50mm 压缩门缝反应、65mm 物证特写，浅景深突出线、锁、蜡痕与手指。
+光圈偏大，背景柔化但关键物证锐利；5600K 雨蓝阴影对暖金煤气灯形成冷暖对比，高清、细节丰富、电影质感、色彩自然、光影柔和。
+
+[参考图]
+[Image 1]：本镜头的分镜网格图 —— 4 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 4 格 = 右下；每格左上角有一个大的白色编号 1..4）。它同时锁定三件事：① 每格中角色的身份（脸 / 发型 / 服装 / 体型，全片必须一致）；② 每格的画面构图 / 动作 / 镜头；③ 第 N 格 = [镜头]/[时间轴] 中按序的 镜头N。严格遵循。
+角色 `sherlock_holmes` 的固定外形（以分镜网格中该角色为准，全片一致）：Tall narrow man in his late 30s with a hawk nose, sharp grey eyes under heavy lids, black hair brushed back from a high forehead, nicotine-yellow fingertips, a dark Inverness coat over a black waistcoat, and a brass-rimmed magnifying lens tucked between two fingers.
+角色 `dr_watson` 的固定外形（以分镜网格中该角色为准，全片一致）：Sturdy military doctor in his early 40s with a thick sandy moustache, warm eyes, a faint limp in the left leg, brown tweed suit damp at the cuffs, leather medical bag in one hand, and a silver watch chain crossing his waistcoat.
+角色 `inspector_lestrade` 的固定外形（以分镜网格中该角色为准，全片一致）：Small wiry Scotland Yard inspector in his 40s with a pointed chin, narrow watchful eyes, rain-speckled bowler hat, dark overcoat with shiny elbows, and a black notebook held tight against his ribs.
+角色 `caleb_pike` 的固定外形（以分镜网格中该角色为准，全片一致）：Private secretary in his early 30s with a pale oval face, oiled black centre-parted hair, thin moustache waxed to needle points, starched white collar too tight at the throat, ink-darkened left thumb, and a right shirt cuff marked by a tiny crescent of dried blue sealing wax.
+
+[镜头]
+镜头1
+24mm / 走廊群像全景，福尔摩斯在走廊中迈步 / 眼平正拍，严格保持走廊与书房的 180 度轴线 / 镜头左侧煤气壁灯硬侧光，暖金色压住雨夜蓝色阴影 / 走廊全景起幅 → 缓慢推进 → 落幅福尔摩斯夹线手指近景 / 运镜平稳丝滑、无抖动
+
+镜头2
+85mm / 锁孔、蜡封线头、镊子与门闩环的大特写 / 贴近锁孔的低位眼平正拍，向下轻微倾斜 / 左上方煤气灯窄束暖光形成硬质铜面高光，门缝内有冷蓝补光 / 锁孔大特写起幅 → 固定 → 落幅蜡封线头钩住铜环的大特写 / 运镜平稳丝滑、无抖动
+
+镜头3
+50mm / 破损门缝内外的中近景 / 眼平正拍，稳定冲击构图 / 琥珀色硬侧光扫过铜门闩，莱斯特雷德身后为深暗阴影，派克边缘带雨蓝轮廓光 / 门缝中近景起幅 → 缓慢推进 → 落幅铜门闩入槽特写 / 运镜平稳丝滑、无抖动
+
+镜头4
+65mm / 福尔摩斯手部与莱斯特雷德笔记本的双人细节特写 / 略低桌面高度，向锁孔方向下倾 / 右上方煤气灯变柔，暖金光压在蜡痕上，走廊边缘包着冷色阴影 / 手部细节特写起幅 → 缓慢推进 → 落幅断线卷、蜡痕与木刺特写 / 运镜平稳丝滑、无抖动
+
+[物理]
+马鬃缝合线细而有韧性，被蓝蜡硬化的一端只能小幅弯曲，穿过锁孔时要受孔壁摩擦约束，不能无支撑悬空转向。铜门闩有明显重量，拉动时先轻微卡滞，再沿槽水平滑行，撞入扣座后产生反震，门板与门框不得穿模。
+人物站位保持连续：福尔摩斯始终在走廊外，莱斯特雷德在书房内，沃森靠近锁孔辅助，派克被门框限制肩背；分格间不瞬移，手、线、锁孔、门闩位置前后对应。所有高张力动作拆成手指收紧、手腕后拉、门闩滑动、身体后避等中小幅度连续动作，强调重量、惯性与受力反作用。
+
+[时间轴]
+镜头1
+福尔摩斯从走廊左侧踏入半步，右脚跟先落地，长外套下摆因前一步惯性向后摆出约一掌宽；他用拇指与食指夹住黑色马鬃线，指尖发黄，指腹收紧到线绷成细直线。焦点落在夹线手指和墙纸上的黑色斜影，线影像墨线一样横过剥落橄榄墙纸；莱斯特雷德在书房破洞后盯住铜门闩，下巴前探，沃森靠后握着医疗袋，派克站在门口，两肩被门框压平，喉结上下一滑。构图由走廊纵深线收向远端门口，黑线斜切画面，把煤气灯、墙纸裂纹与门缝连接成一条可见路径；福尔摩斯说话时嘴唇开合精准，眼皮半垂，视线先扫过莱斯特雷德再落回线头。
+
+镜头2
+承接上一镜的线已被送到锁孔前，福尔摩斯左手稳住门边，右手拇指和食指把蓝蜡硬化的线头缓慢推入孔内，每次推进只有指甲宽的距离，手腕保持低角度不抖。线头从门内侧钻出后轻触铜环下缘，沃森用镊子尖端夹住线头，借前一次推送的惯性向上抬起小半寸，让硬化端绕过门闩环内侧；福尔摩斯随后把破损橡木门向内合拢，门缝压窄成一条黑色竖线，线在门缝中受压轻颤。焦点紧咬蓝蜡线头与铜环接触点，福尔摩斯的指节、沃森镊子与模糊面孔作为次级层次；画面中心由铜环固定，竖直黑门缝把两只手分成内外两侧，动作像一次精密扣腕而非粗暴拉扯。
+
+镜头3
+福尔摩斯站在走廊外，身体重心后移到后脚，右肘贴近肋侧，手指绕线半圈后稳定后拉；线先绷紧，随后把力传进门内铜环，铜门闩沿横槽滑出，表面高光从左端擦到右端。门闩入槽前有轻微停滞，福尔摩斯再用手腕增加一段均匀拉力，铜闩猛地撞进扣座，门板随反震细小回弹，画面中出现粗重中文拟声字“咔砰”。莱斯特雷德被金属声逼得上身后仰半步，右肩撞开空气，肋侧笔记本压住外套形成褶皱；派克在画面边缘嘴唇褪色，鼻翼快速翕动，眼白露出更多，紧领口勒住喉部形成一道红印。焦点锁定铜门闩滑入扣座的机械冲击源，水平门闩像横梁切过竖直门板，福尔摩斯在外、门已闭合上闩的空间关系清晰不变。
+
+镜头4
+承接门闩撞入后的反震，福尔摩斯松开线的一端，另一只手以稳定后抽动作把余线从锁孔拉回，线尾擦过孔边木刺，留下一小圈断裂黑卷卡在早先的裂刺上。福尔摩斯把回收的马鬃线抬到蜡痕旁边，拇指与食指相隔约两指宽，蓝蜡污迹与黑线卷形成可比对的三角；他的下颌线收紧，嘴角只向一侧微微抬起，灰眼在半垂眼皮下看向莱斯特雷德。莱斯特雷德的黑笔记本从肋侧滑落，封皮啪地打开撞在大腿外侧，他的手指停在半空，指节泛白，视线从蜡痕移到福尔摩斯的指尖；沃森在后景微微前倾，派克靠门框，左拇指墨渍与右袖口蓝蜡弧痕隐约对应。焦点锐利落在木刺上的断线卷、福尔摩斯手中的回收线和旁边蜡痕，背景人物柔化为反应层，棕色橡木上黑线与蓝蜡组成最终物证。
+
+[对白]
+sherlock_holmes（右手夹黑色马鬃线、穿深色披肩外套的高瘦三十多岁男性）音色：三十多岁男性，干冷男中音，声线锋利，语速快速而精确，低音位，受教育的伦敦标准口音，带着克制的戏谑与不耐。
+inspector_lestrade（书房内戴雨点圆顶礼帽、抱黑笔记本的瘦小四十多岁男性）音色：四十多岁男性，鼻音明显的中高男高音，语速短促偏快，音高略高，伦敦警务口音，语气防御而务实。
+镜头1: sherlock_holmes："Observe, Inspector. No ghost, no acrobat, no chimney sweep."
+镜头3: inspector_lestrade："By heaven. From outside."
+镜头4: sherlock_holmes："A locked room, Inspector, may be no more than a knot with good manners."
+
+[音效]
+镜头1：清晰对白人声，煤气灯细微嘶声，窗外雨声压在走廊尽头，皮鞋轻触木地板，马鬃线绷直时有极轻摩擦声。
+镜头2：锁孔内细小刮擦声，镊子碰到铜环的清脆轻响，门板合拢的木质低响，人物压低呼吸声，环境低频削弱。
+镜头3：马鬃线绷紧的细响，铜门闩重滑声，入槽时沉重金属碰撞，莱斯特雷德鞋底后蹭地面，远处钟摆声被撞击声短暂盖住。
+镜头4：线从锁孔抽回的丝状摩擦声，断线卷刮过木刺的干涩声，笔记本打开拍在大腿上的闷响，福尔摩斯对白清晰贴近，窗外雨声回落。
+
+[约束]
+面部清晰稳定，五官不畸变不变形，正常人体结构与自然比例，角色服装和站位连续一致。手指、马鬃线、锁孔与铜门闩的动作必须自然连贯不僵硬不抖帧，拉线与上闩要有重量、摩擦和惯性。
+
+保持无字幕，画面中不得出现任何字幕 / 台词字幕 / 说明文字 / 标题 / 水印 / Logo / 标志 / 品牌标识 / 叠加文字；对白只用声音表达（口型同步），绝不烧录成画面可见文字。

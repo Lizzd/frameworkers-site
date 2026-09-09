@@ -1,0 +1,33 @@
+{
+  "voice": "onyx",
+  "voice_instructions": "A weathered Mandarin Chinese storyteller's voice, thick with grief held under ritual dignity. Slow, grave, and intimate, as if speaking over an ink scroll at dusk. Let dread gather beneath each line: the voice tightens when fate turns, swells with bitter reverence, then falls near a whisper on the heaviest words. Use weighted pauses before images of fate, dust, rope, and life. Northern Chinese timbre, restrained but audibly wounded; every sentence should feel earned, not announced.",
+  "subtitle_lang": "en",
+  "cues": [
+    {
+      "stretch_id": "sh_002#0",
+      "shot_id": "sh_002",
+      "window_start_s": 3.0,
+      "window_end_s": 7.0,
+      "text": "命运牵着尘，先不开口。",
+      "subtitle_text": "Fate led the dust, and at first said nothing.",
+      "global_start_s": 18.092971,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/saiweng_lost_horse_01/narration/lines/sh_002_0.wav",
+      "audio_duration_sec": 3.5,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_003#1",
+      "shot_id": "sh_003",
+      "window_start_s": 3.0,
+      "window_end_s": 9.0,
+      "text": null,
+      "subtitle_text": "",
+      "global_start_s": 33.161973,
+      "audio_path": "",
+      "audio_duration_sec": 0.0,
+      "atempo": 1.0
+    }
+  ],
+  "srt_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/saiweng_lost_horse_01/narration/narration.srt",
+  "narrated_video_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/saiweng_lost_horse_01/narration/main_narrated_subbed.mp4"
+}

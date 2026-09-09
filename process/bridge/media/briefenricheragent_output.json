@@ -1,0 +1,25 @@
+{
+  "content": {
+    "language": "en",
+    "enriched_brief": "This creative brief is for a documentary explainer video produced for a European cultural heritage project, celebrating the complete restoration of the Pont de la Roche-Vieille. The film must adhere strictly to the supplied script, preserving every date, figure, and historical fact without alteration or addition.\n\nThe visual representation of the bridge throughout the film must precisely match the uploaded reference photos. The restored structure is a single segmental arch bridge built from textured grey limestone blocks, expertly fitted with hand-dressed mortar joints. When viewed in full profile in daylight against lush green forest hills, the arch reflects in the calm river water below to form a striking eye shape. Up close, the masonry displays carefully dressed grey stone blocks set in hot-mixed lime mortar over the clear stream bed. On top, a traditional cobblestone path crosses the bridge deck, framed by surrounding trees under soft, overcast light.\n\nThe user has supplied their own narration recording (speech, 123.51s) and a music bed (music, 124.0s).\n\nThe overall production tone should be steady and documentary-style with a light infographic feel. The video will use the provided authentic craftsman narration in English (with original regional accent preserved), paired with English subtitles, the gentle string-music track, and ambient sound effects of hand-chiseling and running water matching the on-screen visuals. The runtime will strictly follow the narration audio.\n\nHere is the exact, unalterable commentary script to be read word-for-word:\n\nproject record; nothing may be changed, rounded, or added.\n\nThe Pont de la Roche-Vieille was completed in 1387. It carries a single segmental arch of twenty-two metres over the Vère, and it has stood for six hundred and thirty-nine years.\n\nThe stone is a local grey limestone, quarried at Saint-Martin-de-Vère, four kilometres upstream. We went back to the same quarry for this work, so that every replacement block came out of the same bed as the original.\n\nThe river has taken the bridge three times. The flood of 1612 carried away the eastern parapet. In 1875 the western cutwater was undermined and lost. And in October 2019 a hundred-year flood opened a crack through the arch ring itself.\n\nWe rebuilt it the way it was built. The blocks were dressed by hand with a point chisel and a bush hammer, no power tools on any visible face. They were set in a hot-mixed lime mortar, six parts sand to one part quicklime, with no cement anywhere in the structure. The arch was reset on a timber centring built on site from green oak.\n\nThe work took nineteen months. Four masons, one carpenter, and one apprentice — who is now a mason.\n\nThe bridge is open again. It is expected to stand another six hundred years.",
+    "image_classifications": [
+      {
+        "image_index": 0,
+        "role": "location"
+      },
+      {
+        "image_index": 1,
+        "role": "location"
+      },
+      {
+        "image_index": 2,
+        "role": "location"
+      }
+    ],
+    "image_paths": [
+      "/home/zhendong_li/FrameWorkers/Runtime/topic14_bridge/workspace_global_20260803_172357/inputs/20260803_172357_352688_bridge_side.jpg",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic14_bridge/workspace_global_20260803_172357/inputs/20260803_172357_418768_bridge_joints.jpg",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic14_bridge/workspace_global_20260803_172357/inputs/20260803_172357_486235_bridge_deck.jpg"
+    ]
+  }
+}

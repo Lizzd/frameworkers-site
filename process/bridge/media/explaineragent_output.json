@@ -1,0 +1,571 @@
+{
+  "content": {
+    "title": "Restoration of the Pont de la Roche-Vieille",
+    "logline": "A grounded documentary explainer detailing the 19-month traditional restoration of the 1387 segmental stone arch bridge over the Vère.",
+    "setting": "A European documentary explainer presentation tailored for a global audience, showcasing traditional stonemasonry craftsmanship and historic civil engineering.",
+    "style_anchor": "Clean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.",
+    "dialogue_language": "en",
+    "subtitle_language": "en",
+    "characters": [],
+    "props": [],
+    "locations": [
+      {
+        "id": "loc_bridge_side",
+        "look_description": "Single segmental arch bridge constructed from textured grey limestone blocks spanning over the calm Vère river, surrounded by lush green forested hills with its arch reflecting in the water to form an eye shape.",
+        "reference_image_index": 0
+      },
+      {
+        "id": "loc_bridge_joints",
+        "look_description": "Close-up of carefully dressed grey limestone masonry blocks tightly fitted with hot-mixed lime mortar joints over the clear stream bed.",
+        "reference_image_index": 1
+      },
+      {
+        "id": "loc_bridge_deck",
+        "look_description": "Traditional cobblestone path crossing top of the stone bridge deck framed by trees under soft overcast lighting.",
+        "reference_image_index": 2
+      },
+      {
+        "id": "loc_quarry",
+        "look_description": "Ancient grey limestone quarry outcrop upstream along the river valley with exposed rock beds.",
+        "reference_image_index": null
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "sh_001",
+        "duration_s": 15.0,
+        "narrative_purpose": "Introduce the Pont de la Roche-Vieille, its construction year 1387, 22-metre span, and 639-year history.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "establishing_wide",
+              "explainer_demo"
+            ],
+            "moment_description": "Wide profile shot of the grey limestone segmental arch bridge spanning the calm Vère river, its arch reflecting in the water against green hills.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "explainer_demo",
+              "infographic_motion"
+            ],
+            "moment_description": "Visual highlighting showing the twenty-two metre single segmental arch spanning gracefully across the river channel.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Sunlight moving slowly over the weathered limestone surface, showing six centuries of endurance.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Serene overview of the historic bridge sitting peacefully in the river landscape.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "loc_bridge_side",
+        "notes": "VO: The Pont de la Roche-Vieille was completed in 1387.\nVO: It carries a single segmental arch of twenty-two metres over the Vère...\nVO: ...and it has stood for six hundred and thirty-nine years.\nVO: A monumental testament to medieval engineering and craftsmanship.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_002",
+        "duration_s": 15.0,
+        "narrative_purpose": "Explain the origin of the grey limestone quarried 4km upstream at Saint-Martin-de-Vère.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Close-up view of raw grey limestone strata exposed in the quarry rock face.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "explainer_demo",
+              "infographic_motion"
+            ],
+            "moment_description": "A smooth visual path following four kilometres along the river course from the quarry to the bridge site.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Detailed view of fine-grained grey limestone showing natural mineral layering.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Quarried stone blocks resting along the riverside quarry bank under soft natural light.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "loc_quarry",
+        "notes": "VO: The stone is a local grey limestone...\nVO: ...quarried at Saint-Martin-de-Vère...\nVO: ...four kilometres upstream.\nVO: Sourced from the natural limestone outcrops along the river valley.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_003",
+        "duration_s": 15.0,
+        "narrative_purpose": "Detail returning to the same quarry bed to source identical replacement blocks.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Hand tools splitting a fresh grey limestone block from the exact rock layer in the quarry.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Side-by-side view comparing original historic stone block with freshly quarried replacement block, showing identical texture.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "explainer_demo",
+              "infographic_motion"
+            ],
+            "moment_description": "Visual alignment demonstrating the matching density and grain of replacement stone from the original bed.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Newly quarried limestone blocks prepared for downstream transit.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "loc_quarry",
+        "notes": "VO: We went back to the same quarry for this work...\nVO: ...so that every replacement block...\nVO: ...came out of the same bed as the original.\nVO: Ensuring identical texture and mineral composition across the restoration.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_004",
+        "duration_s": 15.0,
+        "narrative_purpose": "Recount historical flood damages in 1612 (eastern parapet) and 1875 (western cutwater).",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "infographic_motion",
+              "explainer_demo"
+            ],
+            "moment_description": "Rising water levels around the bridge arch representing historical flood forces.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "infographic_motion",
+              "explainer_demo"
+            ],
+            "moment_description": "Water rushing past the eastern side where the original parapet was dislodged during the 1612 flood.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "infographic_motion",
+              "explainer_demo"
+            ],
+            "moment_description": "Strong currents swirling around the western triangular cutwater base affected during the 1875 flood.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Receding floodwaters returning to peaceful river flow around the standing structure.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "loc_bridge_side",
+        "notes": "VO: The river has taken the bridge three times.\nVO: The flood of 1612 carried away the eastern parapet.\nVO: In 1875 the western cutwater was undermined and lost.\nVO: Over centuries, turbulent waters tested the historic stone structure.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_005",
+        "duration_s": 15.0,
+        "narrative_purpose": "Describe the October 2019 hundred-year flood crack in the arch ring and decision to rebuild traditionally.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "explainer_demo",
+              "infographic_motion"
+            ],
+            "moment_description": "Turbulent surge water pushing against the stone arch structure.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "explainer_demo",
+              "infographic_motion"
+            ],
+            "moment_description": "Close view of the central arch ring showing the structural crack line across stone joints.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Traditional stone tools and wooden centring materials placed along the bank.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Timber framework assembling underneath the arch ring to begin authentic reconstruction.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "loc_bridge_joints",
+        "notes": "VO: And in October 2019...\nVO: ...a hundred-year flood opened a crack through the arch ring itself.\nVO: We rebuilt it...\nVO: ...the way it was built.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_006",
+        "duration_s": 15.0,
+        "narrative_purpose": "Demonstrate traditional hand tool dressing with point chisel and bush hammer without power tools.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Hands wielding a point chisel to carefully shape a limestone block face.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "A bush hammer creating hand-dressed texture on the limestone surface.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Macro shot showing authentic hand-chiseled tooling marks across the stone face without machine lines.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "A finished hand-dressed limestone block resting ready for placement.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "loc_bridge_joints",
+        "notes": "VO: The blocks were dressed by hand...\nVO: ...with a point chisel and a bush hammer...\nVO: ...no power tools on any visible face.\nVO: Preserving traditional stonemasonry techniques and surface texture.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_007",
+        "duration_s": 15.0,
+        "narrative_purpose": "Explain hot-mixed lime mortar ratio (6 sand to 1 quicklime, no cement) and green oak timber centring.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Hot-mixed lime mortar releasing gentle steam as it is prepared in a wooden trough.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "explainer_demo",
+              "infographic_motion"
+            ],
+            "moment_description": "Visual combination showing six parts clean river sand mixed with one part quicklime.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Custom timber centring structure crafted from green oak supporting the arch curve.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Limestone blocks set firmly onto hot lime mortar joints along the oak centring.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "loc_bridge_joints",
+        "notes": "VO: They were set in a hot-mixed lime mortar...\nVO: ...six parts sand to one part quicklime, with no cement anywhere in the structure.\nVO: The arch was reset on a timber centring...\nVO: ...built on site from green oak.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_008",
+        "duration_s": 15.0,
+        "narrative_purpose": "Highlight the 19-month timeline and team structure: 4 masons, 1 carpenter, 1 apprentice turned mason.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "infographic_motion",
+              "explainer_demo"
+            ],
+            "moment_description": "Light shifting across the bridge deck showing nineteen months of seasonal progress.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Craftsmen tools laid out on wooden staging—masons' hammers, chisels, and carpenter's square.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "An apprentice tool set symbolising skill progression on the completed bridge deck.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "The meticulously laid cobblestone path crossing the bridge deck under soft overcast light.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "loc_bridge_deck",
+        "notes": "VO: The work took nineteen months.\nVO: Four masons, one carpenter...\nVO: ...and one apprentice...\nVO: ...who is now a mason.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_009",
+        "duration_s": 15.0,
+        "narrative_purpose": "Conclude with the reopening of the bridge and its 600-year future longevity.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "establishing_wide",
+              "explainer_demo"
+            ],
+            "moment_description": "Wide shot of the fully restored Pont de la Roche-Vieille open to the river landscape.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              3.5,
+              7.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "The segmental arch reflecting flawlessly in the calm Vère water forming an eye shape.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              7.5,
+              11.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "Close view of hand-dressed grey limestone blocks and tight lime mortar joints gleaming in sunlight.",
+            "dialogue": null,
+            "characters_present": []
+          },
+          {
+            "time_range": [
+              11.5,
+              15.0
+            ],
+            "categories": [
+              "establishing_wide",
+              "explainer_demo"
+            ],
+            "moment_description": "Final serene profile view of the bridge standing proudly across the forest river valley.",
+            "dialogue": null,
+            "characters_present": []
+          }
+        ],
+        "primary_location": "loc_bridge_side",
+        "notes": "VO: The bridge is open again.\nVO: It is expected to stand...\nVO: ...another six hundred years.\nVO: A lasting bridge between history and the future.",
+        "audit_notes": ""
+      }
+    ]
+  }
+}

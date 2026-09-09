@@ -1,0 +1,793 @@
+{
+ "key": "kestrel",
+ "title": "One Day, One Booth",
+ "genre": "Brand Recap · Mixed Pack",
+ "cat": "Refine",
+ "prompt": "The first brief that hands in three KINDS of file at once: a pack of event clips, a brand logo with three product stills, and a music bed. All sixteen are intaken in one plan; eleven clips are described and ten moments cut to 47 seconds against the asked-for 45, each with its own short on-screen line, and the logo is composited into the corner for the whole runtime. An edited film cannot draw a mark into its frames the way a generated one does — it is cut from footage that already exists — so the logo reaches the screen by being burned over the finished picture. The event footage and the product stills are synthesized stand-ins: no CC-licensed brand-event b-roll exists to shoot this brief with.",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/topic44_kestrel/workspace_global_20260804_125051"
+ },
+ "generated_at": "2026-09-09T15:56:46+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 17
+  },
+  {
+   "id": "IntakeImageAgent__step_1_87b32df6",
+   "agent": "IntakeImageAgent",
+   "label": "IntakeImage",
+   "step": "step_1_87b32df6",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "IntakeVideoAgent__step_1_87b32df6",
+   "agent": "IntakeVideoAgent",
+   "label": "IntakeVideo",
+   "step": "step_1_87b32df6",
+   "order": 2,
+   "n": 1
+  },
+  {
+   "id": "IntakeAudioAgent__step_1_87b32df6",
+   "agent": "IntakeAudioAgent",
+   "label": "IntakeAudio",
+   "step": "step_1_87b32df6",
+   "order": 3,
+   "n": 1
+  },
+  {
+   "id": "VideoAnalysisAgent__step_1_87b32df6",
+   "agent": "VideoAnalysisAgent",
+   "label": "VideoAnalysis",
+   "step": "step_1_87b32df6",
+   "order": 4,
+   "n": 1
+  },
+  {
+   "id": "HighlightAgent__step_1_87b32df6",
+   "agent": "HighlightAgent",
+   "label": "Highlight",
+   "step": "step_1_87b32df6",
+   "order": 5,
+   "n": 2
+  },
+  {
+   "id": "TranscriptionAgent__step_1_87b32df6",
+   "agent": "TranscriptionAgent",
+   "label": "Transcription",
+   "step": "step_1_87b32df6",
+   "order": 6,
+   "n": 1
+  },
+  {
+   "id": "AudioMixAgent__step_1_87b32df6",
+   "agent": "AudioMixAgent",
+   "label": "AudioMix",
+   "step": "step_1_87b32df6",
+   "order": 7,
+   "n": 2
+  },
+  {
+   "id": "CompositorAgent__step_1_87b32df6",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_1_87b32df6",
+   "order": 8,
+   "n": 3
+  }
+ ],
+ "nodes": [
+  {
+   "id": "brand_logo",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "brand logo",
+   "src_name": "20260804_125051_407400_brand_logo.png",
+   "bytes": 2007250,
+   "caption": "Raw user upload (mime=image/png).",
+   "scope": "global",
+   "file": "process/kestrel/media/brand_logo.jpg",
+   "w": 2816,
+   "h": 1536
+  },
+  {
+   "id": "product_lamp",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "product lamp",
+   "src_name": "20260804_125051_865501_product_lamp.png",
+   "bytes": 3850570,
+   "caption": "Raw user upload (mime=image/png).",
+   "scope": "global",
+   "file": "process/kestrel/media/product_lamp.jpg",
+   "w": 2816,
+   "h": 1536
+  },
+  {
+   "id": "product_shoe",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "product shoe",
+   "src_name": "20260804_125051_914222_product_shoe.png",
+   "bytes": 5598188,
+   "caption": "Raw user upload (mime=image/png).",
+   "scope": "global",
+   "file": "process/kestrel/media/product_shoe.jpg",
+   "w": 2816,
+   "h": 1536
+  },
+  {
+   "id": "product_vest",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "product vest",
+   "src_name": "20260804_125051_955288_product_vest.png",
+   "bytes": 5218108,
+   "caption": "Raw user upload (mime=image/png).",
+   "scope": "global",
+   "file": "process/kestrel/media/product_vest.jpg",
+   "w": 2816,
+   "h": 1536
+  },
+  {
+   "id": "event_01_stage",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "event 01 stage",
+   "src_name": "20260804_125051_424430_event_01_stage.mp4",
+   "bytes": 1560854,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 5.09,
+   "poster": "process/kestrel/media/event_01_stage_poster.jpg",
+   "file": "process/kestrel/media/event_01_stage.mp4"
+  },
+  {
+   "id": "event_02_crowd",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "event 02 crowd",
+   "src_name": "20260804_125051_447151_event_02_crowd.mp4",
+   "bytes": 1465087,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 5.09,
+   "poster": "process/kestrel/media/event_02_crowd_poster.jpg",
+   "file": "process/kestrel/media/event_02_crowd.mp4"
+  },
+  {
+   "id": "event_03_booth",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "event 03 booth",
+   "src_name": "20260804_125051_484086_event_03_booth.mp4",
+   "bytes": 2626280,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 5.06,
+   "poster": "process/kestrel/media/event_03_booth_poster.jpg",
+   "file": "process/kestrel/media/event_03_booth.mp4"
+  },
+  {
+   "id": "event_04_detail",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "event 04 detail",
+   "src_name": "20260804_125051_503852_event_04_detail.mp4",
+   "bytes": 2013947,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 5.09,
+   "poster": "process/kestrel/media/event_04_detail_poster.jpg",
+   "file": "process/kestrel/media/event_04_detail.mp4"
+  },
+  {
+   "id": "event_05_applause",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "event 05 applause",
+   "src_name": "20260804_125051_542105_event_05_applause.mp4",
+   "bytes": 1946641,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 5.06,
+   "poster": "process/kestrel/media/event_05_applause_poster.jpg",
+   "file": "process/kestrel/media/event_05_applause.mp4"
+  },
+  {
+   "id": "event_06_foyer",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "event 06 foyer",
+   "src_name": "20260804_125051_561127_event_06_foyer.mp4",
+   "bytes": 2335897,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 5.09,
+   "poster": "process/kestrel/media/event_06_foyer_poster.jpg",
+   "file": "process/kestrel/media/event_06_foyer.mp4"
+  },
+  {
+   "id": "event_07_setup",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "event 07 setup",
+   "src_name": "20260804_125051_614809_event_07_setup.mp4",
+   "bytes": 4576861,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 10.05,
+   "poster": "process/kestrel/media/event_07_setup_poster.jpg",
+   "file": "process/kestrel/media/event_07_setup.mp4"
+  },
+  {
+   "id": "event_08_speaker",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "event 08 speaker",
+   "src_name": "20260804_125051_646444_event_08_speaker.mp4",
+   "bytes": 2936679,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 10.05,
+   "poster": "process/kestrel/media/event_08_speaker_poster.jpg",
+   "file": "process/kestrel/media/event_08_speaker.mp4"
+  },
+  {
+   "id": "event_09_wall",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "event 09 wall",
+   "src_name": "20260804_125051_690799_event_09_wall.mp4",
+   "bytes": 4548626,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 10.05,
+   "poster": "process/kestrel/media/event_09_wall_poster.jpg",
+   "file": "process/kestrel/media/event_09_wall.mp4"
+  },
+  {
+   "id": "event_10_queue",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "event 10 queue",
+   "src_name": "20260804_125051_726951_event_10_queue.mp4",
+   "bytes": 3918934,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 10.05,
+   "poster": "process/kestrel/media/event_10_queue_poster.jpg",
+   "file": "process/kestrel/media/event_10_queue.mp4"
+  },
+  {
+   "id": "event_11_talk",
+   "stage": "Inputs",
+   "kind": "video",
+   "label": "event 11 talk",
+   "src_name": "20260804_125051_765837_event_11_talk.mp4",
+   "bytes": 4006411,
+   "caption": "Raw user upload (mime=video/mp4).",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 10.1,
+   "poster": "process/kestrel/media/event_11_talk_poster.jpg",
+   "file": "process/kestrel/media/event_11_talk.mp4"
+  },
+  {
+   "id": "event_music",
+   "stage": "Inputs",
+   "kind": "audio",
+   "label": "event music",
+   "src_name": "20260804_125051_820359_event_music.wav",
+   "bytes": 6085878,
+   "caption": "Raw user upload (mime=audio/wav).",
+   "scope": "global",
+   "file": "process/kestrel/media/event_music.mp3",
+   "dur": 34.5
+  },
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260804_125051_961505.json",
+   "bytes": 430,
+   "caption": "Structured metadata document (JSON) for the user's own typed brief — the instruction describing WHAT TO MAKE. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/kestrel/media/creative_brief.json",
+   "excerpt": "{\"text\": \"I'll give you the footage from our event plus our brand logo and a few product shots. Cut it into a 45-second brand recap for me, work the logo and the products into the frame so they feel natural, cut it on the beat of the music, English subtitles.\"}"
+  },
+  {
+   "id": "intakeimageagent_output",
+   "stage": "IntakeImageAgent__step_1_87b32df6",
+   "kind": "json",
+   "label": "IntakeImageAgent output",
+   "src_name": "step_1_87b32df6_intakeimageagent_exec_1.json",
+   "bytes": 1938,
+   "caption": "Structured metadata document (JSON) for 4 user-uploaded image(s). Payload lists every image's visual description and image-asset metadata.",
+   "scope": "global",
+   "file": "process/kestrel/media/intakeimageagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"images\": [{\"visual_description\": \"Minimalist black logo with a stylized line-art wing icon above the word \\\"KESTREL\\\" centered on a plain white background.\", \"image_asset\": {\"asset_id\": \"\", \"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/2026080…"
+  },
+  {
+   "id": "intakevideoagent_output",
+   "stage": "IntakeVideoAgent__step_1_87b32df6",
+   "kind": "json",
+   "label": "IntakeVideoAgent output",
+   "src_name": "step_1_87b32df6_intakevideoagent_exec_2.json",
+   "bytes": 4271,
+   "caption": "Structured metadata document (JSON) covering 11 user-uploaded video(s). Payload lists each video's visual summary and video-asset path.",
+   "scope": "global",
+   "file": "process/kestrel/media/intakevideoagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"videos\": [{\"visual_summary\": \"A speaker illuminated by a spotlight gestures while giving a presentation to a seated audience inside a large industrial venue.\", \"video_asset\": {\"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_42443…"
+  },
+  {
+   "id": "intakeaudioagent_output",
+   "stage": "IntakeAudioAgent__step_1_87b32df6",
+   "kind": "json",
+   "label": "IntakeAudioAgent output",
+   "src_name": "step_1_87b32df6_intakeaudioagent_exec_3.json",
+   "bytes": 465,
+   "caption": "Structured metadata document (JSON) covering 1 user-uploaded audio clip(s). Payload lists each clip's kind (speech / music / ambient), an audible summary, and its audio-asset path.",
+   "scope": "global",
+   "file": "process/kestrel/media/intakeaudioagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"clips\": [{\"kind\": \"music\", \"audio_summary\": \"A slow, peaceful instrumental piece featuring gentle fingerpicked guitar accompanied by soft glockenspiel accents.\", \"duration_s\": 34.5, \"audio_asset\": {\"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs…"
+  },
+  {
+   "id": "videoanalysisagent_output",
+   "stage": "VideoAnalysisAgent__step_1_87b32df6",
+   "kind": "json",
+   "label": "VideoAnalysisAgent output",
+   "src_name": "step_1_87b32df6_videoanalysisagent_exec_4.json",
+   "bytes": 16125,
+   "caption": "Video analysis document: 11 video(s), 14 scene(s) total. Per-video scene-by-scene breakdown with entities and descriptions; each video's timestamps are local to its own file.",
+   "scope": "global",
+   "file": "process/kestrel/media/videoanalysisagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"videos\": [{\"source_video\": \"/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_424430_event_01_stage.mp4\", \"usable\": true, \"unusable_reason\": \"\", \"video_summary\": {\"title\": \"Keynote Presentation in Industrial Hall\", \"summary\": \"A speaker st…"
+  },
+  {
+   "id": "highlight_reel",
+   "stage": "HighlightAgent__step_1_87b32df6",
+   "kind": "video",
+   "label": "highlight reel",
+   "src_name": "step_1_87b32df6_highlight_reel.mp4",
+   "bytes": 13193463,
+   "caption": "EDITED OUTPUT video binary (mp4) — the finished highlight reel, selected segments already cut and concatenated. This is the visual track of the piece; the raw source clips it was cut from are its inputs, not the deliverable.",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 47.4,
+   "poster": "process/kestrel/media/highlight_reel_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "highlightagent_output",
+   "stage": "HighlightAgent__step_1_87b32df6",
+   "kind": "json",
+   "label": "HighlightAgent output",
+   "src_name": "step_1_87b32df6_highlightagent_exec_5.json",
+   "bytes": 4557,
+   "caption": "Highlight reel manifest: 10 clip(s), 47.1s total, compiled from a source video. Structured manifest — see payload for selection criteria.",
+   "scope": "global",
+   "file": "process/kestrel/media/highlightagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"criteria\": \"45-second event brand recap featuring behind-the-scenes setup, keynote presentations, audience reactions, interactive product showcases, gear details, and networking moments with English captions.\", \"target_duration_s\": 45.0, \"clips\": [{\"source_video\": \"/home/zhendong_li/FrameWorkers/Run…"
+  },
+  {
+   "id": "transcriptionagent_output",
+   "stage": "TranscriptionAgent__step_1_87b32df6",
+   "kind": "json",
+   "label": "TranscriptionAgent output",
+   "src_name": "step_1_87b32df6_transcriptionagent_exec_6.json",
+   "bytes": 82,
+   "caption": "Transcript (): 0 timestamped segment(s). SRT-shaped subtitle artifact — ready for direct burn-in by a compositor's subtitle track (each segment is one SRT cue with start/end seconds + text). Also usable as the 'source text' input to a translation step when bilingual subtitles are needed.",
+   "scope": "global",
+   "file": "process/kestrel/media/transcriptionagent_output.json",
+   "excerpt": "{\"language\": \"\", \"segments\": [], \"full_text\": \"\"}"
+  },
+  {
+   "id": "aud_final",
+   "stage": "AudioMixAgent__step_1_87b32df6",
+   "kind": "audio",
+   "label": "aud final",
+   "src_name": "step_1_87b32df6_aud_final.wav",
+   "bytes": 8358658,
+   "caption": "[BINARY WAV FILE · mime=audio/wav · sys_id aud_final] Final-mix audio bytes — all source audio tracks (dialogue / foley / music / ambience / narrator) merged. Ready to be muxed onto the delivered video by a downstream compositing step.",
+   "scope": "global",
+   "file": "process/kestrel/media/aud_final.mp3",
+   "dur": 47.38
+  },
+  {
+   "id": "audiomixagent_output",
+   "stage": "AudioMixAgent__step_1_87b32df6",
+   "kind": "json",
+   "label": "AudioMixAgent output",
+   "src_name": "step_1_87b32df6_audiomixagent_exec_7.json",
+   "bytes": 43,
+   "caption": "[JSON MANIFEST] Final-audio-mix envelope: amix of 0 source track(s) (video dialogue+foley + optional global music/ambience/narrator). Planning manifest only; the wav is a sibling artifact.",
+   "scope": "global",
+   "file": "process/kestrel/media/audiomixagent_output.json",
+   "excerpt": "{\"language\": \"en\"}"
+  },
+  {
+   "id": "compositor_final",
+   "stage": "CompositorAgent__step_1_87b32df6",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_1_87b32df6_compositor_final.mp4",
+   "bytes": 10553797,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "w": 1280,
+   "h": 720,
+   "dur": 47.42,
+   "poster": "process/kestrel/media/compositor_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "compositoragent_output",
+   "stage": "CompositorAgent__step_1_87b32df6",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_1_87b32df6_compositoragent_exec_8.json",
+   "bytes": 2088,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/kestrel/media/compositoragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"plan\": {\"color_grade\": {\"brightness\": 0.0, \"contrast\": 0.05, \"saturation\": 0.05}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"authored_cues\": [{\"text\": \"Preparing for the main event\", \"start_sec\": 0.0, \"end_sec\": 5.0}, {\"text\": \"Welcomi…"
+  },
+  {
+   "id": "final_film",
+   "stage": "CompositorAgent__step_1_87b32df6",
+   "kind": "video",
+   "label": "final film",
+   "file": "videos/kestrel.mp4",
+   "poster": "posters/kestrel.jpg",
+   "final": true,
+   "caption": "Delivered film as published on this site.",
+   "src_name": "kestrel.mp4",
+   "w": 1280,
+   "h": 720,
+   "dur": 47.42
+  }
+ ],
+ "edges": [
+  {
+   "from": "brand_logo",
+   "to": "IntakeImageAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "product_lamp",
+   "to": "IntakeImageAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "product_shoe",
+   "to": "IntakeImageAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "product_vest",
+   "to": "IntakeImageAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_01_stage",
+   "to": "IntakeVideoAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_02_crowd",
+   "to": "IntakeVideoAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_03_booth",
+   "to": "IntakeVideoAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_04_detail",
+   "to": "IntakeVideoAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_05_applause",
+   "to": "IntakeVideoAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_06_foyer",
+   "to": "IntakeVideoAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_07_setup",
+   "to": "IntakeVideoAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_08_speaker",
+   "to": "IntakeVideoAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_09_wall",
+   "to": "IntakeVideoAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_10_queue",
+   "to": "IntakeVideoAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_11_talk",
+   "to": "IntakeVideoAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_music",
+   "to": "IntakeAudioAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakevideoagent_output",
+   "to": "VideoAnalysisAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_01_stage",
+   "to": "VideoAnalysisAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_02_crowd",
+   "to": "VideoAnalysisAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_03_booth",
+   "to": "VideoAnalysisAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_04_detail",
+   "to": "VideoAnalysisAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_05_applause",
+   "to": "VideoAnalysisAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_06_foyer",
+   "to": "VideoAnalysisAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_07_setup",
+   "to": "VideoAnalysisAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_08_speaker",
+   "to": "VideoAnalysisAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_09_wall",
+   "to": "VideoAnalysisAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_10_queue",
+   "to": "VideoAnalysisAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_11_talk",
+   "to": "VideoAnalysisAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "videoanalysisagent_output",
+   "to": "HighlightAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_01_stage",
+   "to": "HighlightAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_02_crowd",
+   "to": "HighlightAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_03_booth",
+   "to": "HighlightAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_04_detail",
+   "to": "HighlightAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_05_applause",
+   "to": "HighlightAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_06_foyer",
+   "to": "HighlightAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_07_setup",
+   "to": "HighlightAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_08_speaker",
+   "to": "HighlightAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_09_wall",
+   "to": "HighlightAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_10_queue",
+   "to": "HighlightAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_11_talk",
+   "to": "HighlightAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "HighlightAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "highlight_reel",
+   "to": "TranscriptionAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "event_music",
+   "to": "AudioMixAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "highlight_reel",
+   "to": "AudioMixAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "highlight_reel",
+   "to": "CompositorAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_final",
+   "to": "CompositorAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "transcriptionagent_output",
+   "to": "CompositorAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "brand_logo",
+   "to": "CompositorAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "product_lamp",
+   "to": "CompositorAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "product_shoe",
+   "to": "CompositorAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "product_vest",
+   "to": "CompositorAgent__step_1_87b32df6",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "final_film",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

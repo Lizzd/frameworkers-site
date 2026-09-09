@@ -1,0 +1,123 @@
+{
+  "content": {
+    "title": "KURVE Premium Coffee Machine Ad - Champion's Pour",
+    "logline": "Showcase the elegant KURVE pour-over coffee machine and its effortless replication of a champion's brewing curve to inspire coffee enthusiasts.",
+    "setting": "A high-end, cozy kitchen studio filled with soft, warm light and minimalist decor, emphasizing a premium lifestyle.",
+    "style_anchor": "写实高端产品广告实拍质感。Warm beige background with soft, inviting studio light casting gentle shadows. The palette features organic textures of rich wood, matte dark metal, and glowing copper, capturing a refined, premium lifestyle aesthetic.",
+    "dialogue_language": "English",
+    "subtitle_language": "none",
+    "characters": [
+      {
+        "id": "narrator_vo",
+        "role": "narrator",
+        "look_description": "",
+        "voice_description": "Male, mid-30s, warm, calm, resonant, low-pitch, sophisticated British accent, measured and premium pacing.",
+        "on_screen": false,
+        "reference_image_index": null
+      }
+    ],
+    "props": [
+      {
+        "id": "prop_kurve_machine",
+        "look_description": "A high-end home pour-over coffee machine with a modern matte black and dark gray body, elegant copper spouts, refined copper accents, a clean glass carafe sitting underneath, and a premium solid wooden base.",
+        "reference_image_index": 1
+      },
+      {
+        "id": "prop_kurve_logo",
+        "look_description": "A minimalist brand logo set against a clean, solid white background. The word 'KURVE' is spelled in uppercase, clean, sans-serif dark gray typography, with a highly polished metallic rose-gold wavy line running horizontally just beneath it.",
+        "reference_image_index": 4
+      }
+    ],
+    "locations": [
+      {
+        "id": "loc_warm_kitchen_studio",
+        "look_description": "An upscale kitchen countertop environment with a warm beige background and soft, warm studio light highlighting natural wood grains and clean surfaces.",
+        "reference_image_index": null
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "sh_001",
+        "duration_s": 15.0,
+        "narrative_purpose": "Introduce the elegant coffee machine, depict the perfect automated pour, and close on the premium brand logo.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "product_hero",
+              "establishing_wide"
+            ],
+            "moment_description": "A front full-view shot of the KURVE coffee machine standing elegantly on its wooden base against a clean, warm beige background. Soft, warm studio light sweeps across the matte dark body and copper accents, creating a high-end feel.",
+            "dialogue": null,
+            "characters_present": [
+              "prop_kurve_machine"
+            ]
+          },
+          {
+            "time_range": [
+              3.5,
+              6.5
+            ],
+            "categories": [
+              "explainer_demo"
+            ],
+            "moment_description": "A subtle close-up of the sleek control panel on the matte body. The single start button autonomously glows with a soft, warm amber indicator light, initiating the automated brewing process.",
+            "dialogue": null,
+            "characters_present": [
+              "prop_kurve_machine"
+            ]
+          },
+          {
+            "time_range": [
+              6.5,
+              9.5
+            ],
+            "categories": [
+              "product_hero",
+              "lifestyle_use"
+            ],
+            "moment_description": "A macro close-up of the elegant copper spout. Hot water gracefully spirals out in a perfect, steady stream, pouring onto steaming coffee grounds inside a white paper filter, releasing delicate curls of steam.",
+            "dialogue": null,
+            "characters_present": [
+              "prop_kurve_machine"
+            ]
+          },
+          {
+            "time_range": [
+              9.5,
+              12.0
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "A side profile shot of the machine. Freshly brewed dark coffee drips steadily from the filter cone down into the clear glass carafe below, catching golden warm reflections from the ambient light.",
+            "dialogue": null,
+            "characters_present": [
+              "prop_kurve_machine"
+            ]
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "A clean transition to a solid white background displaying the KURVE brand logo: uppercase sans-serif text 'KURVE' with a polished metallic rose-gold wavy line shimmering beneath it.",
+            "dialogue": null,
+            "characters_present": [
+              "prop_kurve_logo"
+            ]
+          }
+        ],
+        "primary_location": "loc_warm_kitchen_studio",
+        "notes": "VO (panel 1): Every champion pour has a signature — temperature, flow, rhythm.\nVO (panel 3): KURVE remembers it.\nVO (panel 4): One touch, and the championship curve pours again.\n\nSUBTITLE (panel 5): KURVE. One touch. Champion's pour.",
+        "audit_notes": ""
+      }
+    ]
+  }
+}

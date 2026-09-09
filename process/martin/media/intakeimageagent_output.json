@@ -1,0 +1,97 @@
+{
+  "content": {
+    "language": "en",
+    "images": [
+      {
+        "visual_description": "3D wall logo reading INSAIT in black and red block letters above black text on a plain white wall with soft lighting.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_086171_insait_logo.png",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "Young East Asian woman, 18-25, with long dark hair and bangs, wearing a ribbed grey shirt in neutral, soft indoor lighting.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_098930_jina.jpg",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "A White man in his 30s with short dark hair, wire glasses, and slight stubble wears a white shirt under soft studio light.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_112504_martin_insait.jpg",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "Rows of blue chairs face an INSAIT wall logo in a bright modern presentation room with large windows overlooking a city.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_170222_meeting_room.jpg",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "An East Asian man in his 20s with short black hair works at an office desk surrounded by computer monitors in bright daylight.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_217927_office.jpg",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "A crumpled red and white \"Jia Li Shao Bing\" snack bag lies on a light wooden surface beside a box in bright indoor light.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_251663_shaobing.jpg",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "Aerial shot of a modern glass skyscraper with a sloped roof under bright, scattered daylight with city views.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_265151_synergy_aerial.jpg",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "Aerial view of a tall modern glass office tower surrounded by green parkland, roads, and cityscape in bright daylight.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_284309_synergy_exterior.jpg",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "Modern office lobby featuring a geometric terrazzo desk, \"SYNERGY TOWER\" wall logo, slatted ceiling, and bright vertical lights.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200026_308867_synergy_lobby.png",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      }
+    ]
+  }
+}

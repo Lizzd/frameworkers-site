@@ -1,0 +1,38 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 extreme-wide -> P2 medium -> P3 wide -> P4 close-up
+
+[PANEL 1]
+SHOT: extreme-wide high-angle
+PLACEMENT: Empty abyssal water column filling the upper frame; no biological figures present.
+ACTION: Smooth gradient of dark abyssal blue fading into total ocean darkness near the seafloor.
+ENV: Featureless deep abyssal ocean water with subtle vertical gradient from deep teal to charcoal black.
+
+[PANEL 2]
+SHOT: medium eye-level
+PLACEMENT: Graphic indicator scale centered vertically in the frame.
+ACTION: Sleek vector depth gauge marker gliding downward with numeric scale callouts.
+ENV: Dark abyssal seawater backdrop with soft luminous cyan UI accents.
+
+[PANEL 3]
+SHOT: wide eye-level
+PLACEMENT: Basalt rock ridge extending horizontally across the lower third.
+ACTION: Dark basalt seafloor cracks revealing bright red tubeworm plumes sprouting in dense clusters.
+ENV: Dark volcanic seabed with soft glowing red warmth emanating from active fissures.
+
+[PANEL 4]
+SHOT: close-up low-angle
+PLACEMENT: Red-plumed tubeworm stalks anchored to basalt rock in foreground left; white crabs positioned on rock surface right.
+ACTION: White vent crabs resting along dark rock edges beside thriving red tubeworm plumes.
+ENV: Textured basalt fissure wall illuminated by warm geothermal under-lighting.
+
+[RENDERED TEXT]
+No panel numbers or captions. Clean graphic UI labels for depth and temperature markers in English if shown.

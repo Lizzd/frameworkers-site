@@ -1,0 +1,89 @@
+{
+  "content": {
+    "language": "en",
+    "voice": "",
+    "voice_instructions": "Female voice with an adult tone, speaking English with a neutral, natural native accent. Warm, clear, articulate, and engaging, with the calm and approachable pacing of an expert science documentary narrator. Deliveries should sound knowledgeable yet accessible for high school students, maintaining an intriguing, awe-inspired register that highlights the wonders of deep-sea biology and hydrothermal vents without sounding overly dramatic or rushed.",
+    "shots": [
+      {
+        "shot_id": "sh_001",
+        "vo_lines": [
+          "Two and a half kilometres down, there is no sunlight at all.",
+          "The water here sits at about two degrees Celsius.",
+          "And yet, crowded around cracks in the seafloor, there are animals everywhere."
+        ]
+      },
+      {
+        "shot_id": "sh_002",
+        "vo_lines": [
+          "These cracks are hydrothermal vents.",
+          "Seawater seeps into the crust,",
+          "is heated by magma below,",
+          "and comes roaring back out."
+        ]
+      },
+      {
+        "shot_id": "sh_003",
+        "vo_lines": [
+          "At the orifice of a black smoker",
+          "the fluid can reach about four hundred degrees Celsius —",
+          "it does not boil,",
+          "because the pressure at this depth is roughly two hundred and fifty times the pressure at the surface."
+        ]
+      },
+      {
+        "shot_id": "sh_004",
+        "vo_lines": [
+          "The black smoke is not smoke:",
+          "it is metal sulphide minerals crystallising",
+          "the instant the hot fluid",
+          "hits near-freezing seawater."
+        ]
+      },
+      {
+        "shot_id": "sh_005",
+        "vo_lines": [
+          "Nothing here photosynthesises.",
+          "Instead, bacteria use chemosynthesis:",
+          "they oxidise the hydrogen sulphide streaming out of the vent to get energy, and use that energy to fix carbon dioxide into sugars.",
+          "Sunlight is replaced by chemistry."
+        ]
+      },
+      {
+        "shot_id": "sh_006",
+        "vo_lines": [
+          "The giant tubeworm Riftia pachyptila takes this one step further.",
+          "An adult has no mouth and no gut.",
+          "Inside its body is an organ packed with these bacteria,",
+          "and the worm supplies them with hydrogen sulphide,"
+        ]
+      },
+      {
+        "shot_id": "sh_007",
+        "vo_lines": [
+          "oxygen and carbon dioxide carried in its blood.",
+          "The bacteria feed the worm in return.",
+          "Neither one survives alone —",
+          "this is symbiosis."
+        ]
+      },
+      {
+        "shot_id": "sh_008",
+        "vo_lines": [
+          "From those bacteria the food web climbs:",
+          "tubeworms and mussels,",
+          "then crabs and shrimp that graze on them,",
+          "then fish at the top."
+        ]
+      },
+      {
+        "shot_id": "sh_009",
+        "vo_lines": [
+          "An entire ecosystem,",
+          "in permanent darkness,",
+          "running on chemistry",
+          "from the planet's own interior."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 with the sixth cell as solid neutral gray; N=6 → 3×2.
+
+[STYLE FOUNDATION]
+VISUAL MEDIUM and aesthetic are dictated entirely by story.style_anchor (below) — live-action film, 2D anime, illustration, 3D, etc.; do NOT default to photoreal, do NOT impose any medium the brief omits. Apply verbatim: 干净、温和、专业的 2D 医疗科普动画。柔和蓝绿为主，少量暖黄色点亮安心感；扁平清晰造型、平静光线、留足画面下方中文字幕空间，全片可信、克制、不惊悚。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the generic_clinic location anchor for a bright, clean, unbranded outpatient corridor approach. Use the FRONT sections of the parent_mother and child_patient character anchors. The young Chinese mother in a light green jacket calmly guides the Chinese school-age child in a yellow hoodie as they walk into the corridor together. Keep all walls, doors, equipment, bottles, signs, and surfaces completely without readable writing, symbols, logos, or hospital names. Stable wide 2D explainer framing, soft blue-green walls, warm reassuring accent, generous blank lower area for subtitles.
+
+[PANEL 2]
+Use the FRONT section of the generic_clinic location anchor for the examination room with chair, sink, tray, and clean pale blue-green walls. Use the FACE section of the child_patient anchor enough to preserve the child’s calm identity, and the FRONT sections of parent_mother and clinic_doctor. The child sits calmly on the examination chair while the parent stands nearby. The doctor in a plain white unmarked coat, gloves on, gently checks the very small shallow red scratch fixed on the child’s right forearm near the wrist. Non-graphic, no blood, no distress; the doctor’s motion is careful and professional.
+
+[PANEL 3]
+Use the abstract_infographic_space location anchor style: soft blue-green abstract background, floating circular and line graphics, no scene text. Render a clean wordless 2D motion-graphic panel: three simple icons appear in sequence and curve inward toward a central doctor-stethoscope symbol. Icon one shows a tooth lightly touching a simplified skin shape; icon two shows a paw/claw mark lightly grazing skin; icon three shows a saliva droplet contacting a tiny wound symbol and a simple mouth/nose mucous-membrane outline. No letters, no words, no numbers, no logos inside the graphic; keep shapes soft, instructional, and non-alarming, with lower subtitle space left open.
+
+[PANEL 4]
+Use the FRONT section of the generic_clinic location anchor for the same clean consultation room, plus a blank medical record board with no writing or symbols. Use the FRONT sections of clinic_doctor, parent_mother, and child_patient, with FACE identity consistency where faces are visible. The doctor stands beside the wordless board and explains patiently with an open hand gesture, suggesting that the professional assessment determines the next proper steps. The mother listens and nods seriously; the child remains relaxed on the chair. Professional, calm, trustworthy composition; all props and surfaces remain unbranded and text-free.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)

@@ -1,0 +1,401 @@
+{
+  "title": "空桩上的马绳",
+  "logline": "长城脚下的塞翁只想守住儿子和一颗不被众口牵走的心，可失马、得马、折腿、征戍一次次把福祸翻面；若他也急着给命运下判词，最后被牵走的可能不是马，而是儿子的命。",
+  "setting": "古代中国北方长城边塞，汉人村落贴着荒草关隘而居，胡汉马队与征戍制度构成日常阴影；人物为汉族边民与远处胡骑剪影。叙事借中国寓言与说书传统，像一卷缓缓展开的边塞水墨长卷。",
+  "style_anchor": "手绘中国传统写意水墨动画，宣纸纹理清晰，大面积留白，浓淡墨色晕染，少量赭石与淡青点染边塞尘土；长卷式横向呼吸感，镜头运动像卷轴展开，非写实、非3D，画面留白处可承载淡灰英文字幕。",
+  "dialogue_language": "中文普通话（说书人旁白与极简人物对白）",
+  "characters": [
+    {
+      "id": "shuoshuren",
+      "role": "narrator",
+      "look_description": "不入故事主体的说书人墨影，瘦长身形坐在卷轴边缘一只低矮木凳上，戴旧毡帽，手执两片竹板；衣袖和帽檐常被画成几笔飞白，身旁有一枚朱红小印章作视觉标记。",
+      "voice_description": "老年男性，嗓音温厚微哑，语速缓慢，音高偏低，普通话带轻微北方口音，情绪平静如讲古"
+    },
+    {
+      "id": "sai_weng",
+      "role": "protagonist",
+      "look_description": "六十余岁边塞老人，窄脸长白眉，一缕山羊胡被风吹向左侧；穿褪色粗麻长袍，腰间系磨亮的麻绳结，右手常握一根竹节拐杖，袖口有旧墨色补丁。",
+      "voice_description": "老年男性，低沉清淡，气息稳，语速很慢，音量不高，普通话带北方边塞口音，情绪始终克制"
+    },
+    {
+      "id": "sai_zi",
+      "role": "ally",
+      "look_description": "十八九岁青年，眉骨高、脸颊被风晒出两片赭红，头发用黑布条高束；穿短打布衣和旧皮靴，腰侧挂一只小马鞭，衣襟常沾草籽与黄尘。",
+      "voice_description": "青年男性，声音清亮带急促喘息，语速偏快，音高偏高，普通话带轻微北方口音，情绪外露而热"
+    },
+    {
+      "id": "linren",
+      "role": "foil",
+      "look_description": "邻人群像，以一名中年妇人为前景代表，圆脸、眉心有深竖纹，包深色头巾，怀里挎柳条篮；身后几名村民以淡墨剪影呈现，肩上扛锄、衣摆有尘线。",
+      "voice_description": "中年女性为主，嗓音偏尖但带乡土厚度，语速偏快，普通话夹北方土音，情绪容易随众起伏"
+    },
+    {
+      "id": "zheng_li",
+      "role": "antagonist",
+      "look_description": "征役小吏，三十多岁，瘦削脸，短须像干墨点，戴歪斜皂帽；手持竹简名册和一支蘸墨木笔，深色官役短袍下摆溅满路泥。",
+      "voice_description": "成年男性，嗓音干硬偏鼻音，语速短促，音高偏中，普通话带官差腔，情绪冷漠急躁"
+    },
+    {
+      "id": "hu_qi",
+      "role": "distant_threat",
+      "look_description": "远处胡骑剪影，披毛边斗篷，弯弓和旗尾只以浓墨一两笔勾出；马群腿部被尘烟吞没，偶尔露出银白马眼与翻飞鬃毛。",
+      "voice_description": ""
+    }
+  ],
+  "locations": [
+    {
+      "id": "border_courtyard",
+      "look_description": "长城脚下的土墙小院，院门外是荒草坡与断续烽燧，院内有一根磨旧的拴马木桩和空水槽；宣纸留白作天空，地面以淡赭墨扫出风沙纹。"
+    },
+    {
+      "id": "frontier_pass",
+      "look_description": "关外缓坡与浅谷，远处长城像断墨横线压在天边，近处有稀疏芦草和马蹄踏出的尘路；风大，沙尘以干笔横扫，空间开阔而空寒。"
+    },
+    {
+      "id": "village_road",
+      "look_description": "村口征戍土路，左侧是半倒的木牌与枯树，右侧通向长城关门；地上车辙深黑，远处战鼓方向只见烟柱与密集旗点。"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "sh_001",
+      "duration_s": 15.0,
+      "narrative_purpose": "失马之夜后，众人把空桩判作祸，塞翁第一次拒绝下定论。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            4.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "inner_monologue_VO"
+          ],
+          "moment_description": "长卷从右向左缓缓展开 → 留白天空下显出长城断线、烽燧黑点、小院土墙 → 院中拴马木桩独立，麻绳断头在风里抽动两下 → 水槽边一圈新鲜马蹄印被细沙半埋 → 画角说书人墨影敲竹板一下，声响贴着长风散开 → 镜头沿绳影低低滑近空桩",
+          "dialogue": "shuoshuren: 塞上人家，昨夜风紧，老人一匹好马，竟越关而去。",
+          "characters_present": [
+            "shuoshuren"
+          ]
+        },
+        {
+          "time_range": [
+            4.0,
+            7.5
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "emotional_close_up"
+          ],
+          "moment_description": "塞子从屋门冲出，靴底擦过水槽边缘 → 他蹲下抓起断绳，掌心被麻刺刮出细红线 → 塞翁拄杖走入画面，袍角被风揭起一寸 → 父子一高一低对着空桩，马鞭在塞子腰侧轻晃 → 镜头停在断绳与老人平直眉眼之间",
+          "dialogue": "sai_zi: 爹，桩还在，绳断了。",
+          "characters_present": [
+            "sai_weng",
+            "sai_zi"
+          ]
+        },
+        {
+          "time_range": [
+            7.5,
+            10.5
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "establishing_wide"
+          ],
+          "moment_description": "邻人从院门外涌入，柳篮碰到门框发出闷响 → 一名村民弯腰查看马蹄印，另一人摇头把锄柄立在脚边 → 中年妇人的头巾被风掀起，她抬手压住 → 人群影子压向空桩，空桩在画心变黑 → 塞翁仍站在桩旁半步不退",
+          "dialogue": "linren: 这样的骏马丢了，老哥，真是大祸。",
+          "characters_present": [
+            "sai_weng",
+            "sai_zi",
+            "linren"
+          ]
+        },
+        {
+          "time_range": [
+            10.5,
+            13.0
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "镜头推到塞翁脸侧，白眉与胡须被同一阵风吹向左 → 他低头用拇指抚平腰间旧绳结 → 断桩后的马蹄印逐渐被飞沙抹淡 → 邻人的嘴还在动却被风声压低 → 老人眼皮只缓慢抬起一次",
+          "dialogue": "sai_weng: 此何遽不为福乎。",
+          "characters_present": [
+            "sai_weng",
+            "linren"
+          ]
+        },
+        {
+          "time_range": [
+            13.0,
+            15.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "inner_monologue_VO"
+          ],
+          "moment_description": "竹板轻敲第二下 → 人群墨影向院门退散，脚印层层盖住马蹄印 → 塞子把断绳挂回木桩却挂不牢，绳头滑落 → 塞翁拾起绳头，没有系紧，只让它垂在桩侧 → 画面留白扩大，风声占满院子",
+          "dialogue": "shuoshuren: 众人只看见空，老人却不肯把空字写死。",
+          "characters_present": [
+            "shuoshuren",
+            "sai_weng",
+            "sai_zi",
+            "linren"
+          ]
+        }
+      ],
+      "primary_location": "border_courtyard",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_002",
+      "duration_s": 15.0,
+      "narrative_purpose": "数月后失马带胡马归来，众人把所得判作福，塞翁第二次翻转判断。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "inner_monologue_VO"
+          ],
+          "moment_description": "画卷切到关外缓坡，芦草由淡墨变成枯黄点染 → 远处一串小黑点从长城缺口下浮现 → 地面先起尘线，随后马蹄声由远及近一层层叠起 → 说书人墨影在画角翻过一页空白纸 → 镜头横移，让尘路占据画心",
+          "dialogue": "shuoshuren: 数月之后，北风换了方向，旧蹄印带回新的蹄声。",
+          "characters_present": [
+            "shuoshuren"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            7.0
+          ],
+          "categories": [
+            "establishing_wide"
+          ],
+          "moment_description": "失去的骏马率先冲入画面，鬃毛被浓墨甩成弧线 → 它身后七八匹胡马踏尘跟来，银白马眼在墨雾里闪一下 → 尘浪从马蹄接地点向外铺开，芦草被压弯成同一方向 → 镜头低位跟随最前蹄落地，蹄铁点出一粒重墨 → 长城远线被尘气短暂遮住",
+          "dialogue": null,
+          "characters_present": [
+            "hu_qi"
+          ]
+        },
+        {
+          "time_range": [
+            7.0,
+            11.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "establishing_wide"
+          ],
+          "moment_description": "马群被牵回小院外的坡口，邻人从画面两侧聚拢 → 柳篮里的豆子撒出几粒，滚到马蹄旁 → 塞子伸手摸新马鼻梁，新马喷气把他额发吹乱 → 邻人们围成半弧，身体朝马群倾斜 → 塞翁站在半弧之外，拐杖尖轻点尘土一次",
+          "dialogue": "linren: 一马换来这许多马，老哥，这回是大福！",
+          "characters_present": [
+            "sai_weng",
+            "sai_zi",
+            "linren",
+            "hu_qi"
+          ]
+        },
+        {
+          "time_range": [
+            11.0,
+            15.0
+          ],
+          "categories": [
+            "emotional_close_up",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "塞子挑中一匹高大的新马，手指扣住鬃毛试着翻身 → 马背肌肉在淡墨下鼓起又落下，尾巴扫出一片干笔 → 塞翁视线从儿子的皮靴移到马眼，再移到自己腰间绳结 → 他伸手按住木桩上的旧断绳，指节没有用力 → 邻人笑影在背景变淡，老人声音压过马鼻息",
+          "dialogue": "sai_weng: 此何遽不为祸乎。",
+          "characters_present": [
+            "sai_weng",
+            "sai_zi",
+            "linren",
+            "hu_qi"
+          ]
+        }
+      ],
+      "primary_location": "frontier_pass",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_003",
+      "duration_s": 15.0,
+      "narrative_purpose": "塞子贪骑新马坠地折腿，所谓福立刻转成众人眼中的祸。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            3.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "action_fight"
+          ],
+          "moment_description": "坡道上风沙突然加重，塞子骑着新马从左侧冲入 → 马蹄连续踏出三枚重墨点，尘线追在后方 → 塞子身体前倾，马鞭没有落下只悬在空中 → 镜头随马并行，长城线在背景快速滑动 → 他的笑声被蹄声切碎",
+          "dialogue": "sai_zi: 爹，这马认得风！",
+          "characters_present": [
+            "sai_zi",
+            "sai_weng",
+            "hu_qi"
+          ]
+        },
+        {
+          "time_range": [
+            3.0,
+            6.0
+          ],
+          "categories": [
+            "action_fight",
+            "emotional_close_up"
+          ],
+          "moment_description": "一只野兔墨点从草丛弹出 → 新马前蹄猛然立起，蹄尖成为画面最高黑点 → 塞子的左手从鬃毛上滑脱，指缝甩出两粒尘 → 镜头急停在马胸与少年膝盖之间 → 塞翁远处抬杖，杖头刚离地半寸",
+          "dialogue": null,
+          "characters_present": [
+            "sai_zi",
+            "sai_weng",
+            "hu_qi"
+          ]
+        },
+        {
+          "time_range": [
+            6.0,
+            9.0
+          ],
+          "categories": [
+            "action_fight"
+          ],
+          "moment_description": "塞子从马背右侧翻落，身体在空中旋转半圈 → 画面中心锁住他小腿撞上裸石的接触点，浓墨啪地炸开一圈 → 马影向前窜出，缰绳拉成斜线 → 少年手中马鞭飞离，落地前转了两圈 → 尘浪越过他的脸，嘴唇张开却先无声",
+          "dialogue": null,
+          "characters_present": [
+            "sai_zi",
+            "hu_qi"
+          ]
+        },
+        {
+          "time_range": [
+            9.0,
+            12.0
+          ],
+          "categories": [
+            "emotional_close_up",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "塞翁跪到儿子身旁，竹杖横放在地 → 他用两片木条夹住儿子弯折的小腿，麻绳绕第一圈时手指微颤0.2秒 → 塞子咬住袖口，额角汗珠被淡墨点出 → 邻人半跪在旁边，篮子倒扣，豆粒陷进尘里 → 远处马群停下，耳朵齐齐转向这边",
+          "dialogue": "linren: 好端端的福，怎么又成了这般。",
+          "characters_present": [
+            "sai_weng",
+            "sai_zi",
+            "linren",
+            "hu_qi"
+          ]
+        },
+        {
+          "time_range": [
+            12.0,
+            15.0
+          ],
+          "categories": [
+            "emotional_close_up"
+          ],
+          "moment_description": "塞翁把最后一个绳结压紧，绳尾与开头的断马绳形状相似 → 他用袖口擦去儿子唇边尘土，没有看邻人 → 塞子疼得吸气，手指抓住父亲袖口补丁 → 风把坡上马蹄印一点点吹散 → 老人低声说话，画面只剩父子和一小块裸石",
+          "dialogue": "sai_weng: 此何遽不为福乎。",
+          "characters_present": [
+            "sai_weng",
+            "sai_zi",
+            "linren"
+          ]
+        }
+      ],
+      "primary_location": "frontier_pass",
+      "notes": null,
+      "audit_notes": ""
+    },
+    {
+      "shot_id": "sh_004",
+      "duration_s": 15.0,
+      "narrative_purpose": "胡兵入侵与征戍揭示折腿的反面，父子在空桩前完成对开头意象的反转。",
+      "panels": [
+        {
+          "time_range": [
+            0.0,
+            2.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "action_fight",
+            "inner_monologue_VO"
+          ],
+          "moment_description": "村口土路骤然被战鼓震出几圈淡墨波纹 → 远处烟柱从长城关门后升起，胡骑旗点像黑雨压近 → 一声胡笳从画外拖长，枯树枝随声轻颤 → 说书人竹板停在半空没有落下",
+          "dialogue": "shuoshuren: 不久，胡兵大入塞，村中青壮，皆被点往关前。",
+          "characters_present": [
+            "shuoshuren",
+            "hu_qi"
+          ]
+        },
+        {
+          "time_range": [
+            2.0,
+            6.0
+          ],
+          "categories": [
+            "dialogue_two_shot",
+            "establishing_wide"
+          ],
+          "moment_description": "征吏站在木牌旁展开竹简，墨笔逐个点名 → 年轻村民从画面右侧被推向关门方向，背影一排排缩小 → 邻人妇人抓住一个青年的袖子又被松开，柳篮掉在车辙里 → 战鼓每响一次，竹简上一点墨就加深 → 塞子拄着临时木拐站在队尾，伤腿悬起不敢落地",
+          "dialogue": "zheng_li: 名上有者，向北走。",
+          "characters_present": [
+            "zheng_li",
+            "linren",
+            "sai_zi",
+            "hu_qi"
+          ]
+        },
+        {
+          "time_range": [
+            6.0,
+            10.5
+          ],
+          "categories": [
+            "emotional_close_up",
+            "dialogue_two_shot"
+          ],
+          "moment_description": "征吏的笔尖停在塞子名字旁，墨珠鼓起将落未落 → 他低头看见塞子绑木条的伤腿，木条边缘磨破布裤 → 塞子握拐的手指发白，喉结上下动一次 → 塞翁在一旁不求情，只把旧麻绳绕在掌心一圈 → 墨珠最终滴到名字外侧，形成一个废点",
+          "dialogue": "zheng_li: 瘸腿，留。",
+          "characters_present": [
+            "zheng_li",
+            "sai_weng",
+            "sai_zi"
+          ]
+        },
+        {
+          "time_range": [
+            10.5,
+            15.0
+          ],
+          "categories": [
+            "establishing_wide",
+            "emotional_close_up",
+            "inner_monologue_VO"
+          ],
+          "moment_description": "画卷横移回土墙小院的空桩，开头那根断马绳仍垂着 → 塞子坐在桩旁，把木拐靠上去，拐杖与马绳交叉成一个歪斜的结 → 远处征去的队伍只剩几枚淡墨小点，邻人的哭声被风拉薄 → 塞翁伸手没有系马，而是把儿子的木拐轻轻系稳 → 竹板最后一下落下，朱红小印章压在留白处",
+          "dialogue": "shuoshuren: 故福祸相倚，系马的绳，竟也有系命的时候。",
+          "characters_present": [
+            "shuoshuren",
+            "sai_weng",
+            "sai_zi",
+            "linren"
+          ]
+        }
+      ],
+      "primary_location": "village_road",
+      "notes": null,
+      "audit_notes": ""
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "content": {
+    "language": "zh",
+    "enriched_brief": "制作一条 20 秒左右的家用手冲咖啡机新品广告，核心诉求是清晰传达“一键复刻冠军手冲曲线”的卖点。视频调性需温暖、精致、富有高端生活气息，采用温暖的米色背景（warm beige background）和柔和的影棚光线（soft, warm studio light）。\n\n广告中展现的咖啡机（KURVE）外观需严格遵循提供的参考图，严禁模型自由发挥：\n1. 咖啡机主体为现代感十足的哑光黑/深灰色机身（matte black / dark gray body），搭配精致的红铜色出水喷嘴与细节装饰（copper spouts and accents），下方放置一个玻璃咖啡壶（glass carafe），整体坐落于高质感的木质底座（wooden base）上。\n2. 视频需包含正面与侧面的产品全景镜头，展现其优雅平衡的工业设计。\n3. 慢镜头特写：水流从红铜色喷嘴（copper spout）中缓缓注出，注入冒着热气（steaming）的咖啡滤纸中，咖啡在暖光下静静滴落，呈现极致的治愈感。\n\n结尾落版画面：\n展现产品、品牌 Logo 与 Slogan 字幕。其中 Logo 样式必须严格保持一致：在纯白背景（solid white background）上，上方为深灰色大写无衬线英文字体“KURVE”，下方承接一条极具质感的金属玫瑰金色波浪线（metallic rose-gold wavy line）。\n\n音频与字幕要求：\n- 音效：细腻的注水声、咖啡滴落的 foley 声，融合轻柔舒缓的背景乐。\n- 旁白：温暖沉稳的英文旁白将以下文案念出（旁白不要烧制画面字幕）：“Every champion pour has a signature — temperature, flow, rhythm. KURVE remembers it. One touch, and the championship curve pours again.”\n- 屏幕画面文字：仅在结尾落版时，显示以下 slogan 字幕：“KURVE. One touch. Champion's pour.”",
+    "image_classifications": [
+      {
+        "image_index": 0,
+        "role": "prop"
+      },
+      {
+        "image_index": 1,
+        "role": "prop"
+      },
+      {
+        "image_index": 2,
+        "role": "prop"
+      },
+      {
+        "image_index": 3,
+        "role": "style"
+      }
+    ],
+    "image_paths": [
+      "/home/zhendong_li/FrameWorkers/Runtime/topic24_kurve_ad/workspace_global_20260721_103757/inputs/20260721_103757_859016_kurve_front.png",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic24_kurve_ad/workspace_global_20260721_103757/inputs/20260721_103757_887861_kurve_side.png",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic24_kurve_ad/workspace_global_20260721_103757/inputs/20260721_103757_923724_kurve_pour_closeup.png",
+      "/home/zhendong_li/FrameWorkers/Runtime/topic24_kurve_ad/workspace_global_20260721_103757/inputs/20260721_103757_943707_kurve_logo.png"
+    ]
+  }
+}

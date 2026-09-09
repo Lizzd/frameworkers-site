@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+写实航拍实拍 (Photoreal cinematic aerial documentary). Cold slate blue ocean tones contrasted against pitch-black basalt sand, neon-bright emerald moss, and 1200°C luminous incandescent orange lava streams. Soft diffused arctic sunlight breaking through moody low-hanging clouds, creating wet specular highlights on wet volcanic rock and heavy volumetric fog.
+
+[IDENTITY LOCK]
+All locations across all panels MUST match the attached location anchor refs EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide -> P2 wide -> P3 wide -> P4 extreme-wide
+
+[PANEL 1]
+SHOT: wide eye-level
+PLACEMENT: Low skim perspective above water surface, binding glassy dark fjord water to the lower half of the frame with floating mist bands across the middle plane.
+ACTION: Smooth water movement cuts through low white mist wisps, creating delicate ripple lines across the mirror reflection.
+ENV: Mirror-still dark ocean water covered in morning fog patches; call out FRONT view of deep_glacial_fjord location anchor.
+
+[PANEL 2]
+SHOT: wide low-angle
+PLACEMENT: Upward tilting perspective near cliff base, binding the dark vertical mountain wall to the left and right frame bounds soaring upward out of the frame top.
+ACTION: Continuous climb tracing the sheer vertical ascent of mossy green rock walls rising from the sea.
+ENV: Steep mountain slopes covered in moss rising out of dark fjord water; call out FRONT view of deep_glacial_fjord location anchor.
+
+[PANEL 3]
+SHOT: wide high-angle
+PLACEMENT: High ridge-level vantage point, binding crisp mountain peaks to the upper half of the frame surrounded by clear air above cloud banks.
+ACTION: Sunlit mountain ridge emerges through white clouds, revealing snow patches along the rocky crests.
+ENV: High alpine ridges with snow patches bathed in golden morning light above a white mist bed; call out OVERHEAD view of deep_glacial_fjord location anchor.
+
+[PANEL 4]
+SHOT: extreme-wide eye-level
+PLACEMENT: High peak aerial vista, binding the winding fjord waterway through the center of the frame out toward the ocean horizon under a dawn sky.
+ACTION: Panoramic view revealing the expansive fjord system stretching into the distance under twilight dawn hues.
+ENV: Fjords bathed in soft pink and amber morning skies reflected on dark mountain waters; call out BACK view of deep_glacial_fjord location anchor.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 1 refs (character / prop / location anchors).

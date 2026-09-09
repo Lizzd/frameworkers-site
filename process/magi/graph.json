@@ -1,0 +1,716 @@
+{
+ "key": "magi",
+ "title": "The Gift of the Magi",
+ "genre": "Faithful Adaptation · Illustrated Audiobook",
+ "cat": "Adaptation",
+ "prompt": "A faithful full-text adaptation: the user supplies the COMPLETE public-domain text of O. Henry's 'The Gift of the Magi' (2,057 words) and asks for an illustrated audiobook film — a gentle English narrator reads the original sentence by sentence with nothing dropped or rewritten (duration follows the text, ~18 min), over warm early-1900s picture-book illustrations with English subtitles. Della's identity is held by per-state anchors: one long-haired anchor before the haircut, one short-curls anchor after — every page attaches the anchor matching its point in the story.",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/topic37_magi/workspace_global_20260722_100641"
+ },
+ "generated_at": "2026-09-09T15:56:44+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 1
+  },
+  {
+   "id": "NarrationAgent__step_1_28548dc4",
+   "agent": "NarrationAgent",
+   "label": "Narration",
+   "step": "step_1_28548dc4",
+   "order": 1,
+   "n": 2
+  },
+  {
+   "id": "IllustrationAgent__step_1_28548dc4",
+   "agent": "IllustrationAgent",
+   "label": "Illustration",
+   "step": "step_1_28548dc4",
+   "order": 2,
+   "n": 24
+  },
+  {
+   "id": "NarratorAgent__step_1_28548dc4",
+   "agent": "NarratorAgent",
+   "label": "Narrator",
+   "step": "step_1_28548dc4",
+   "order": 3,
+   "n": 4
+  },
+  {
+   "id": "AudioMixAgent__step_1_28548dc4",
+   "agent": "AudioMixAgent",
+   "label": "AudioMix",
+   "step": "step_1_28548dc4",
+   "order": 4,
+   "n": 2
+  },
+  {
+   "id": "CompositorAgent__step_1_28548dc4",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_1_28548dc4",
+   "order": 5,
+   "n": 3
+  }
+ ],
+ "nodes": [
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260722_100641_711927.json",
+   "bytes": 12231,
+   "caption": "Structured metadata document (JSON) for a user-submitted text brief. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/magi/media/creative_brief.json",
+   "excerpt": "{\"text\": \"我会上传欧·亨利《麦琪的礼物》的原文全文(公版英文)。帮我改编成一条带旁白的短片,严格忠于原著——情节、人物、结尾那个反转一字不动,不要现代化改写也不要加戏删减。视觉做成 20 世纪初纽约小公寓的暖旧质感、彩色绘本插画风,基调温暖带一丝心酸。时长跟着原文篇幅走。旁白用英文按原文逐句朗读(温柔男声),配英文字幕。保留公寓的环境音——壁炉、街声、钟摆,配乐压低烘托,不要盖过旁白。\\n\\n原文如下(逐字,公版):\\nOne dollar and eighty-seven cents. That was all. And sixty cents of it was in pennies. Pennies saved on…"
+  },
+  {
+   "id": "narrationagent_output",
+   "stage": "NarrationAgent__step_1_28548dc4",
+   "kind": "json",
+   "label": "NarrationAgent output",
+   "src_name": "step_1_28548dc4_narrationagent_exec_1.json",
+   "bytes": 33296,
+   "caption": "Illustrated-storytelling narration script: 20 segment(s), 128 narrator line(s). Carries per-segment image_prompt + per-line TTS text + cross-segment art-style anchor. Consumed by an illustration image step and a narrator TTS step.",
+   "scope": "global",
+   "file": "process/magi/media/narrationagent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"overall_style\": \"warm vintage storybook illustration, 1900s New York flat, soft watercolor textures, rich muted tones\", \"voice\": \"Charon\", \"voice_instructions\": \"A gentle male narrator with a warm, nostalgic tone, unhurried cadence, and clear American articulation. He speaks with intimate storyte…"
+  },
+  {
+   "id": "narrator_voice_spec",
+   "stage": "NarrationAgent__step_1_28548dc4",
+   "kind": "json",
+   "label": "narrator voice spec",
+   "src_name": "step_1_28548dc4_narrator_voice_spec.json",
+   "bytes": 278,
+   "caption": "Narrator voice direction (gender / tone / pace / warmth) the illustrated-story author cast for the read-aloud narration — consumed by the narrator TTS step.",
+   "scope": "global",
+   "file": "process/magi/media/narrator_voice_spec.json",
+   "excerpt": "{\"voice\": \"Charon\", \"voice_instructions\": \"A gentle male narrator with a warm, nostalgic tone, unhurried cadence, and clear American articulation. He speaks with intimate storytelling warmth, subdued emotion, and quiet reverence suitable for a early 20th-century classic tale.\"}"
+  },
+  {
+   "id": "illustration_anchor_char_001",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration anchor char 001",
+   "src_name": "step_1_28548dc4_illustration_anchor_char_001.png",
+   "bytes": 5023471,
+   "caption": "",
+   "scope": "global",
+   "file": "process/magi/media/illustration_anchor_char_001.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_anchor_char_001_short_curls",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration anchor char 001 short curls",
+   "src_name": "step_1_28548dc4_illustration_anchor_char_001_short_curls.png",
+   "bytes": 4538450,
+   "caption": "",
+   "scope": "global",
+   "file": "process/magi/media/illustration_anchor_char_001_short_curls.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_anchor_char_002",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration anchor char 002",
+   "src_name": "step_1_28548dc4_illustration_anchor_char_002.png",
+   "bytes": 5277236,
+   "caption": "",
+   "scope": "global",
+   "file": "process/magi/media/illustration_anchor_char_002.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_001",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 001",
+   "src_name": "step_1_28548dc4_illustration_seg_001.png",
+   "bytes": 6891760,
+   "caption": "Illustration image (png) for narration segment seg_001 (order 1/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_001.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_002",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 002",
+   "src_name": "step_1_28548dc4_illustration_seg_002.png",
+   "bytes": 7488531,
+   "caption": "Illustration image (png) for narration segment seg_002 (order 2/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_002.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_003",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 003",
+   "src_name": "step_1_28548dc4_illustration_seg_003.png",
+   "bytes": 7238350,
+   "caption": "Illustration image (png) for narration segment seg_003 (order 3/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_003.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_004",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 004",
+   "src_name": "step_1_28548dc4_illustration_seg_004.png",
+   "bytes": 7707876,
+   "caption": "Illustration image (png) for narration segment seg_004 (order 4/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_004.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_005",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 005",
+   "src_name": "step_1_28548dc4_illustration_seg_005.png",
+   "bytes": 7051768,
+   "caption": "Illustration image (png) for narration segment seg_005 (order 5/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_005.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_006",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 006",
+   "src_name": "step_1_28548dc4_illustration_seg_006.png",
+   "bytes": 6833163,
+   "caption": "Illustration image (png) for narration segment seg_006 (order 6/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_006.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_007",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 007",
+   "src_name": "step_1_28548dc4_illustration_seg_007.png",
+   "bytes": 7991176,
+   "caption": "Illustration image (png) for narration segment seg_007 (order 7/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_007.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_008",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 008",
+   "src_name": "step_1_28548dc4_illustration_seg_008.png",
+   "bytes": 7397513,
+   "caption": "Illustration image (png) for narration segment seg_008 (order 8/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_008.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_009",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 009",
+   "src_name": "step_1_28548dc4_illustration_seg_009.png",
+   "bytes": 7217146,
+   "caption": "Illustration image (png) for narration segment seg_009 (order 9/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_009.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_010",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 010",
+   "src_name": "step_1_28548dc4_illustration_seg_010.png",
+   "bytes": 8310337,
+   "caption": "Illustration image (png) for narration segment seg_010 (order 10/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_010.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_011",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 011",
+   "src_name": "step_1_28548dc4_illustration_seg_011.png",
+   "bytes": 7369855,
+   "caption": "Illustration image (png) for narration segment seg_011 (order 11/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_011.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_012",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 012",
+   "src_name": "step_1_28548dc4_illustration_seg_012.png",
+   "bytes": 7096749,
+   "caption": "Illustration image (png) for narration segment seg_012 (order 12/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_012.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_013",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 013",
+   "src_name": "step_1_28548dc4_illustration_seg_013.png",
+   "bytes": 7286064,
+   "caption": "Illustration image (png) for narration segment seg_013 (order 13/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_013.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_014",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 014",
+   "src_name": "step_1_28548dc4_illustration_seg_014.png",
+   "bytes": 6789386,
+   "caption": "Illustration image (png) for narration segment seg_014 (order 14/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_014.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_015",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 015",
+   "src_name": "step_1_28548dc4_illustration_seg_015.png",
+   "bytes": 7117171,
+   "caption": "Illustration image (png) for narration segment seg_015 (order 15/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_015.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_016",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 016",
+   "src_name": "step_1_28548dc4_illustration_seg_016.png",
+   "bytes": 6800468,
+   "caption": "Illustration image (png) for narration segment seg_016 (order 16/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_016.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_017",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 017",
+   "src_name": "step_1_28548dc4_illustration_seg_017.png",
+   "bytes": 6876383,
+   "caption": "Illustration image (png) for narration segment seg_017 (order 17/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_017.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_018",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 018",
+   "src_name": "step_1_28548dc4_illustration_seg_018.png",
+   "bytes": 6805530,
+   "caption": "Illustration image (png) for narration segment seg_018 (order 18/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_018.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_019",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 019",
+   "src_name": "step_1_28548dc4_illustration_seg_019.png",
+   "bytes": 6816693,
+   "caption": "Illustration image (png) for narration segment seg_019 (order 19/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_019.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustration_seg_020",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "image",
+   "label": "illustration seg 020",
+   "src_name": "step_1_28548dc4_illustration_seg_020.png",
+   "bytes": 8088476,
+   "caption": "Illustration image (png) for narration segment seg_020 (order 20/20). One frame of an illustrated-storytelling video; consumed by the compositor step as part of the image sequence that fills the video track.",
+   "scope": "global",
+   "file": "process/magi/media/illustration_seg_020.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "illustrationagent_output",
+   "stage": "IllustrationAgent__step_1_28548dc4",
+   "kind": "json",
+   "label": "IllustrationAgent output",
+   "src_name": "step_1_28548dc4_illustrationagent_exec_2.json",
+   "bytes": 6497,
+   "caption": "Illustration manifest (JSON): 20 image(s) aligned to narration segments. Consumed by the compositor step when assembling an illustrated-storytelling slideshow.",
+   "scope": "global",
+   "file": "process/magi/media/illustrationagent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"overall_style\": \"warm vintage storybook illustration, 1900s New York flat, soft watercolor textures, rich muted tones\", \"character_anchors\": [{\"character_id\": \"char_001\", \"appearance_prompt\": \"A slender young woman in her early twenties with expressive dark eyes and cascading brown hair reaching …"
+  },
+  {
+   "id": "aud_narrator_full",
+   "stage": "NarratorAgent__step_1_28548dc4",
+   "kind": "audio",
+   "label": "aud narrator full",
+   "src_name": "step_1_28548dc4_aud_narrator_full.wav",
+   "bytes": 187788462,
+   "caption": "[BINARY WAV FILE · mime=audio/wav · sys_id aud_narrator_full] Narrator voiceover audio bytes (1064.6s, language=en-US). Concatenated TTS for an illustrated-storytelling video. Consumed by the audio-mix or compositor materializer.",
+   "scope": "global",
+   "file": "process/magi/media/aud_narrator_full.mp3",
+   "dur": 1064.56
+  },
+  {
+   "id": "narratoragent_output",
+   "stage": "NarratorAgent__step_1_28548dc4",
+   "kind": "json",
+   "label": "NarratorAgent output",
+   "src_name": "step_1_28548dc4_narratoragent_exec_3.json",
+   "bytes": 66650,
+   "caption": "[JSON MANIFEST] Narrator session manifest: 128 line(s), 20 segment(s), total 1064.6s. Per-line / per-segment timing. Dev/debug view; downstream consumption goes through the sibling audio / srt / timing artifacts.",
+   "scope": "global",
+   "file": "process/magi/media/narratoragent_output.json",
+   "excerpt": "{\"language\": \"en-US\", \"speaker\": \"\", \"lines\": [{\"line_id\": \"ln_001\", \"segment_id\": \"seg_001\", \"text\": \"One dollar and eighty-seven cents.\", \"pause_after_ms\": 300}, {\"line_id\": \"ln_002\", \"segment_id\": \"seg_001\", \"text\": \"That was all.\", \"pause_after_ms\": 300}, {\"line_id\": \"ln_003\", \"segment_id\": \"seg_001\", \"text\": \"And …"
+  },
+  {
+   "id": "narrator_segment_timing",
+   "stage": "NarratorAgent__step_1_28548dc4",
+   "kind": "json",
+   "label": "narrator segment timing",
+   "src_name": "step_1_28548dc4_narrator_segment_timing.json",
+   "bytes": 5986,
+   "caption": "[JSON MANIFEST] Narrator per-segment timing: 20 segment(s) with start / end / duration seconds. Used by a slideshow compositor to set how long each illustration stays on screen.",
+   "scope": "global",
+   "file": "process/magi/media/narrator_segment_timing.json",
+   "excerpt": "{\"total_duration_sec\": 1064.56, \"segment_timings\": [{\"segment_id\": \"seg_001\", \"start_sec\": 0.0, \"end_sec\": 41.98, \"duration_sec\": 41.98, \"line_ids\": [\"ln_001\", \"ln_002\", \"ln_003\", \"ln_004\", \"ln_005\", \"ln_006\", \"ln_007\"]}, {\"segment_id\": \"seg_002\", \"start_sec\": 41.98, \"end_sec\": 65.08, \"duration_sec\": 23.1, \"line_ids\": …"
+  },
+  {
+   "id": "narrator_srt",
+   "stage": "NarratorAgent__step_1_28548dc4",
+   "kind": "json",
+   "label": "narrator srt",
+   "src_name": "step_1_28548dc4_narrator_srt.json",
+   "bytes": 16336,
+   "caption": "[JSON MANIFEST · SRT cues] Narrator subtitle track (language=en-US): one cue per narration line, timed against the narrator audio. Consumed by the compositor step as a burn-in subtitle source.",
+   "scope": "global",
+   "file": "process/magi/media/narrator_srt.json",
+   "excerpt": "{\"tracks\": [{\"language\": \"en-US\", \"srt_text\": \"1\\n00:00:00,000 --> 00:00:04,840\\nOne dollar and eighty-seven cents.\\n\\n2\\n00:00:05,140 --> 00:00:08,140\\nThat was all.\\n\\n3\\n00:00:08,440 --> 00:00:12,680\\nAnd sixty cents of it was in pennies.\\n\\n4\\n00:00:12,680 --> 00:00:29,920\\nPennies saved one and two at a time by bu…"
+  },
+  {
+   "id": "aud_final",
+   "stage": "AudioMixAgent__step_1_28548dc4",
+   "kind": "audio",
+   "label": "aud final",
+   "src_name": "step_1_28548dc4_aud_final.wav",
+   "bytes": 187788462,
+   "caption": "[BINARY WAV FILE · mime=audio/wav · sys_id aud_final] Final-mix audio bytes — all source audio tracks (dialogue / foley / music / ambience / narrator) merged. Ready to be muxed onto the delivered video by a downstream compositing step.",
+   "scope": "global",
+   "file": "process/magi/media/aud_final.mp3",
+   "dur": 1064.56
+  },
+  {
+   "id": "audiomixagent_output",
+   "stage": "AudioMixAgent__step_1_28548dc4",
+   "kind": "json",
+   "label": "AudioMixAgent output",
+   "src_name": "step_1_28548dc4_audiomixagent_exec_4.json",
+   "bytes": 43,
+   "caption": "[JSON MANIFEST] Final-audio-mix envelope: amix of 0 source track(s) (video dialogue+foley + optional global music/ambience/narrator). Planning manifest only; the wav is a sibling artifact.",
+   "scope": "global",
+   "file": "process/magi/media/audiomixagent_output.json",
+   "excerpt": "{\"language\": \"en\"}"
+  },
+  {
+   "id": "compositor_final",
+   "stage": "CompositorAgent__step_1_28548dc4",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_1_28548dc4_compositor_final.mp4",
+   "bytes": 104313023,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "w": 1920,
+   "h": 1080,
+   "dur": 1064.57,
+   "poster": "process/magi/media/compositor_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "compositoragent_output",
+   "stage": "CompositorAgent__step_1_28548dc4",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_1_28548dc4_compositoragent_exec_5.json",
+   "bytes": 451,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/magi/media/compositoragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"plan\": {\"color_grade\": {\"brightness\": 0.0, \"contrast\": 0.05, \"saturation\": 0.0}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"authored_cues\": [], \"subtitle_language\": \"en\", \"output_resolution\": \"1920x1080\", \"output_fps\": 30}}"
+  },
+  {
+   "id": "final_film",
+   "stage": "CompositorAgent__step_1_28548dc4",
+   "kind": "video",
+   "label": "final film",
+   "file": "videos/magi.mp4",
+   "poster": "posters/magi.jpg",
+   "final": true,
+   "caption": "Delivered film as published on this site.",
+   "src_name": "magi.mp4",
+   "w": 1280,
+   "h": 720,
+   "dur": 1064.57
+  }
+ ],
+ "edges": [
+  {
+   "from": "narrationagent_output",
+   "to": "IllustrationAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narrator_voice_spec",
+   "to": "IllustrationAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narrationagent_output",
+   "to": "NarratorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narrator_voice_spec",
+   "to": "NarratorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_narrator_full",
+   "to": "AudioMixAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_anchor_char_001",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_anchor_char_001_short_curls",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_anchor_char_002",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_001",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_002",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_003",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_004",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_005",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_006",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_007",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_008",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_009",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_010",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_011",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_012",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_013",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_014",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_015",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_016",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_017",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_018",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_019",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "illustration_seg_020",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_final",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "aud_narrator_full",
+   "to": "CompositorAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "NarrationAgent__step_1_28548dc4",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "final_film",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

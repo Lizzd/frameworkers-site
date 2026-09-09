@@ -1,0 +1,56 @@
+{
+  "content": {
+    "language": "en-US",
+    "overall_style": "ethereal watercolor, luminous light, moody indigo and gold",
+    "character_anchors": [
+      {
+        "character_id": "char_001",
+        "appearance_prompt": "A tiny, delicate bird made of glowing golden light and translucent feathers, radiating a warm and soft luminescence."
+      }
+    ],
+    "illustrations": [
+      {
+        "segment_id": "seg_001",
+        "image_prompt": "A tiny, luminous golden bird with delicate feathers floating gently down through a dark, starlit sky.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_002",
+        "image_prompt": "The glowing golden bird nesting gently within the chest of a soft, silhouetted human figure representing the soul.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_003",
+        "image_prompt": "Close-up of the small golden bird singing silently, with ripples of warm light and sparkles radiating from its open beak into a dark, quiet atmosphere.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_004",
+        "image_prompt": "The glowing golden bird singing on a bare tree branch, surrounded by falling autumn leaves transitioning to winter snow.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_005",
+        "image_prompt": "A fierce windstorm with whipping dark branches and rain, where the tiny golden bird clings to a twig, shining brightly in its own protective bubble of warm light.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      },
+      {
+        "segment_id": "seg_006",
+        "image_prompt": "A massive, powerful tempest with towering dark clouds and lightning, while the tiny glowing bird remains defiant, shining like a persistent beacon of hope.",
+        "characters_in_segment": [
+          "char_001"
+        ]
+      }
+    ]
+  }
+}

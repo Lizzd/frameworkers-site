@@ -1,0 +1,28 @@
+{
+  "content": {
+    "language": "en",
+    "plan": {
+      "color_grade": {
+        "brightness": 0.0,
+        "contrast": 0.05,
+        "saturation": 0.0
+      },
+      "subtitle_style": {
+        "font_size": 24,
+        "font_color": "#FFFFFF",
+        "outline_color": "#000000",
+        "burn_in": true
+      },
+      "authored_cues": [
+        {
+          "text": "KURVE. One touch. Champion's pour.",
+          "start_sec": 12.0,
+          "end_sec": 15.0
+        }
+      ],
+      "subtitle_language": "none",
+      "output_resolution": "1920x1080",
+      "output_fps": 30
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "content": {
+    "language": "en",
+    "segments": [
+      {
+        "segment_id": "seg_001",
+        "start_time": 0.0,
+        "end_time": 5.0,
+        "text": "In the White House, President Eisenhower signs the proclamation that makes Alaska's entry into the Union official,"
+      },
+      {
+        "segment_id": "seg_002",
+        "start_time": 10.0,
+        "end_time": 16.5,
+        "text": "nearly 92 years after Lincoln's Secretary of State bought the territory from the Russian Czar for $7 million."
+      },
+      {
+        "segment_id": "seg_003",
+        "start_time": 16.5,
+        "end_time": 24.1,
+        "text": "In the years since, Alaska has yielded well over a billion dollars in new wealth and moved steadily but slowly toward statehood."
+      },
+      {
+        "segment_id": "seg_004",
+        "start_time": 24.1,
+        "end_time": 28.3,
+        "text": "Now, the President's signature makes it officially the 49th state."
+      },
+      {
+        "segment_id": "seg_005",
+        "start_time": 28.3,
+        "end_time": 32.1,
+        "text": "At the same time, Ike solves one problem created by the added state."
+      },
+      {
+        "segment_id": "seg_006",
+        "start_time": 32.1,
+        "end_time": 39.3,
+        "text": "He announces the new design of the flag, and across the country, manufacturers go into action, bringing the stars and stripes up to date."
+      },
+      {
+        "segment_id": "seg_007",
+        "start_time": 39.3,
+        "end_time": 45.9,
+        "text": "The problem of the 49-star has been solved by a field of seven staggered rows of seven stars each,"
+      },
+      {
+        "segment_id": "seg_008",
+        "start_time": 45.9,
+        "end_time": 50.1,
+        "text": "and while it is not mandatory to replace 48-starred flags now in use,"
+      },
+      {
+        "segment_id": "seg_009",
+        "start_time": 50.1,
+        "end_time": 56.4,
+        "text": "the manufacturers hopefully look towards a boom in business as America rushes to keep up with the new look of Old Glory."
+      }
+    ],
+    "full_text": "In the White House, President Eisenhower signs the proclamation that makes Alaska's entry into the Union official, nearly 92 years after Lincoln's Secretary of State bought the territory from the Russian Czar for $7 million. In the years since, Alaska has yielded well over a billion dollars in new wealth and moved steadily but slowly toward statehood. Now, the President's signature makes it officially the 49th state. At the same time, Ike solves one problem created by the added state. He announces the new design of the flag, and across the country, manufacturers go into action, bringing the stars and stripes up to date. The problem of the 49-star has been solved by a field of seven staggered rows of seven stars each, and while it is not mandatory to replace 48-starred flags now in use, the manufacturers hopefully look towards a boom in business as America rushes to keep up with the new look of Old Glory."
+  }
+}

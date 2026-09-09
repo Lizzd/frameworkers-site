@@ -1,0 +1,47 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel.
+
+[STYLE FOUNDATION]
+Cinematic 3D animation style with crisp lighting, rich outdoor textures, earthy olive and slate color palette, and warm morning sunlight accents.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide -> P2 close-up -> P3 detail -> P4 medium -> P5 medium
+
+[PANEL 1]
+SHOT: wide, low viewpoint.
+PLACEMENT: main_character standing at apex of highest summit boulder, feet grounded on summit stone, head and torso silhouetted against sky; referencing FRONT section of main_character anchor.
+ACTION: main_character stands victorious at summit peak, arms raised slightly in triumph.
+ENV: Mountain summit peak overlooking vast open blue sky and distant mountain horizons, referencing mountain_trail location anchor (OVERHEAD section).
+
+[PANEL 2]
+SHOT: close-up, eye-level.
+PLACEMENT: main_character face and shoulders centered in frame; referencing FACE section of main_character anchor.
+ACTION: main_character turns head toward camera with a radiant, satisfied smile in crisp mountain air.
+ENV: Bright alpine atmosphere with warm morning sun illuminating facial features, referencing mountain_trail location anchor (FRONT section).
+
+[PANEL 3]
+SHOT: detail, eye-level.
+PLACEMENT: main_character olive jacket shoulder seam and collar close frame; neck line and dark braid entering upper edge; referencing main_character anchor.
+ACTION: Detailed view of clean fabric stitching, durable weave texture, and metallic zipper accents on olive jacket.
+ENV: Softly blurred outdoor backdrop with warm sunlight glinting off jacket shoulder material.
+
+[PANEL 4]
+SHOT: medium, eye-level.
+PLACEMENT: brand_logo centered on pure solid background; referencing HERO section of brand_logo prop anchor.
+ACTION: Dark blue text and geometric mountain icon displayed clearly on crisp white surface.
+ENV: Clean, flat white studio background with uniform lighting.
+
+[PANEL 5]
+SHOT: medium, eye-level.
+PLACEMENT: brand_logo stationary in exact center of frame; referencing HERO section of brand_logo prop anchor.
+ACTION: NORTHSPUR logo holds steady and sharp under clear studio lights.
+ENV: Pure solid white backdrop with bright end-frame illumination.
+
+[RENDERED TEXT]
+Text label reading "NORTHSPUR" in dark blue sans-serif font centered beneath the mountain peak icon on brand_logo.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 3 refs (character / prop / location anchors).

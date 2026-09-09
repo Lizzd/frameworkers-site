@@ -1,0 +1,17 @@
+{
+  "content": {
+    "language": "en",
+    "voice": "",
+    "voice_instructions": "MALE voice, mid-30s, with a warm, sophisticated, and resonant British accent. The delivery must be calm, slow-paced, and measured to capture a premium, luxurious brand aesthetic. The tone is confident, smooth, and gentle, inviting the listener into an exclusive, cozy kitchen environment.",
+    "shots": [
+      {
+        "shot_id": "sh_001",
+        "vo_lines": [
+          "Every champion pour has a signature—temperature, flow, rhythm.",
+          "KURVE remembers it.",
+          "One touch, and the championship curve pours again."
+        ]
+      }
+    ]
+  }
+}

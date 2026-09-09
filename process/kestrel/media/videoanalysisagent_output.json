@@ -1,0 +1,380 @@
+{
+  "content": {
+    "language": "en",
+    "videos": [
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_424430_event_01_stage.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Keynote Presentation in Industrial Hall",
+          "summary": "A speaker stands under a bright spotlight behind a glowing white podium in a dark, spacious industrial hall. He gestures with his hand as he speaks to a seated audience gathered in silhouette.",
+          "genre": "Presentation",
+          "language": "",
+          "duration_seconds": 5.085011
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 4.8,
+            "description": "In a continuous wide shot inside a dark industrial hall, a speaker illuminated by a spotlight stands behind an illuminated white podium. He extends his right arm while delivering a talk to an audience sitting in the foreground.",
+            "setting": "Industrial event hall / Auditorium stage",
+            "mood": "Professional",
+            "entities": [
+              "speaker",
+              "audience",
+              "illuminated podium",
+              "spotlight",
+              "stage"
+            ],
+            "tension_score": 0.2,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_447151_event_02_crowd.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Audience at a Live Event",
+          "summary": "An audience sits in a dimly lit venue watching a live event. A woman in the crowd holds up her smartphone to record the performance.",
+          "genre": "Stock Footage",
+          "language": "",
+          "duration_seconds": 5.085011
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 4.8,
+            "description": "Camera pans right across an attentive audience as a woman films the stage on her phone.",
+            "setting": "Auditorium venue",
+            "mood": "Attentive",
+            "entities": [
+              "audience members",
+              "woman with smartphone",
+              "smartphone"
+            ],
+            "tension_score": 0.2,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_484086_event_03_booth.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Trail Running Shoe Demonstration at Outdoor Trade Show Booth",
+          "summary": "A product presenter at an outdoor sports trade show explains features of a black trail running shoe to a group of interested attendees. The video zooms in as an attendee picks up and closely inspects the shoe's design, side construction, and sole tread.",
+          "genre": "Product Showcase",
+          "language": "en",
+          "duration_seconds": 5.06195
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 2.0,
+            "description": "A presenter in a grey athletic shirt gestures animatedly while explaining features of outdoor trail running shoes displayed on a white table to a surrounding group of trade show attendees.",
+            "setting": "Indoor trade show exhibition hall",
+            "mood": "Informative",
+            "entities": [
+              "Presenter",
+              "Trade show attendees",
+              "Trail running shoes",
+              "Display table"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          },
+          {
+            "scene_id": "scene_002",
+            "start_time": 2.0,
+            "end_time": 4.8,
+            "description": "A close-up view shows hands picking up the black trail shoe, turning it over to inspect the rugged lug tread on the outsole and pointing out lateral support details while the presenter continues speaking in the background.",
+            "setting": "Indoor trade show exhibition hall",
+            "mood": "Engaged",
+            "entities": [
+              "Black trail shoe",
+              "Hands inspecting shoe",
+              "Presenter"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_503852_event_04_detail.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Trail Running Shoe Inspection",
+          "summary": "A person inspects and demonstrates the features of a dark trail shoe, rotating it to show the upper, side profile, and lugged outsole tread pattern under a spotlight.",
+          "genre": "Product Demonstration",
+          "language": "",
+          "duration_seconds": 5.085011
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 4.8,
+            "description": "Hands rotate a dark trail shoe under a desk lamp, showing the upper, side profile, and pointing to the tread pattern on the outsole.",
+            "setting": "Indoor workshop studio",
+            "mood": "Informative",
+            "entities": [
+              "trail shoe",
+              "hands",
+              "spotlight"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_542105_event_05_applause.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Speaker Addressing Applauding Audience",
+          "summary": "A man in a suit stands at a podium in an auditorium filled with people. The audience applauds as he smiles and prepares to address them.",
+          "genre": "Drama",
+          "language": "",
+          "duration_seconds": 5.06195
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 4.8,
+            "description": "A man stands behind a lectern looking over an applauding audience in a large auditorium.",
+            "setting": "Auditorium",
+            "mood": "Triumphant",
+            "entities": [
+              "speaker",
+              "podium",
+              "microphone",
+              "audience"
+            ],
+            "tension_score": 0.2,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_561127_event_06_foyer.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Corporate Networking Event in Foyer",
+          "summary": "Professionals gather in a modern, sunlit corporate foyer during a conference networking break. Attendees converse, drink coffee, and socialize near floor-to-ceiling windows as warm sunset light streams into the room.",
+          "genre": "Corporate",
+          "language": "",
+          "duration_seconds": 5.085011
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 4.8,
+            "description": "Attendees mingle and talk during a corporate event in a brightly lit foyer. The camera slowly tracks across various small groups holding coffee cups, eventually focusing on a man in a dark jacket actively gesturing as he converses with colleagues.",
+            "setting": "Corporate office foyer with floor-to-ceiling glass windows at sunset",
+            "mood": "Professional, warm, collaborative",
+            "entities": [
+              "business professionals",
+              "paper coffee cups",
+              "tables with AV equipment",
+              "large glass windows"
+            ],
+            "tension_score": 0.2,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_614809_event_07_setup.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Event Gear Table Setup",
+          "summary": "Staff members prepare for an event by organizing running shoes, hydration vests, and gear on a long display table in a convention hall.",
+          "genre": "Behind the Scenes",
+          "language": "",
+          "duration_seconds": 10.053991
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 4.5,
+            "description": "Close-up view of staff placing running shoes and gear along a white display table.",
+            "setting": "Convention hall",
+            "mood": "Focused",
+            "entities": [
+              "running shoes",
+              "hydration vests",
+              "display table"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          },
+          {
+            "scene_id": "scene_002",
+            "start_time": 4.5,
+            "end_time": 9.6,
+            "description": "Wide shot showing staff in matching blue shirts arranging items along the full length of the table.",
+            "setting": "Convention hall",
+            "mood": "Organized",
+            "entities": [
+              "event staff",
+              "display table",
+              "storage bin"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_646444_event_08_speaker.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Running Shoe Presentation",
+          "summary": "A speaker presents a blue athletic shoe to an audience, holding it up while explaining its features during a live presentation.",
+          "genre": "Presentation",
+          "language": "en",
+          "duration_seconds": 10.053991
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 9.6,
+            "description": "A presenter holds up a blue running shoe and speaks to an audience.",
+            "setting": "Conference Room",
+            "mood": "Informative",
+            "entities": [
+              "presenter",
+              "running shoe",
+              "audience"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_690799_event_09_wall.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Running Vest Display and Product Inspection",
+          "summary": "A trade show wall display showcases colorful hydration and running vests fitted with lights. A person inspects the light feature on a grey vest before unhooking it from the pegboard.",
+          "genre": "Product Showcase",
+          "language": "",
+          "duration_seconds": 10.053991
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 4.5,
+            "description": "Camera zooms in on a trade show pegboard display featuring colorful running vests with attached lights.",
+            "setting": "Exhibition hall display booth",
+            "mood": "Informative",
+            "entities": [
+              "Running vests",
+              "Hydration packs",
+              "Pegboard wall"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          },
+          {
+            "scene_id": "scene_002",
+            "start_time": 4.5,
+            "end_time": 9.6,
+            "description": "A person inspects a lit grey running vest and lifts it off the wall hook.",
+            "setting": "Exhibition hall display booth",
+            "mood": "Focused",
+            "entities": [
+              "Person's hand",
+              "Grey running vest",
+              "Chest light"
+            ],
+            "tension_score": 0.2,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_726951_event_10_queue.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Attendees Queuing in Event Hallway",
+          "summary": "A continuous panning shot reveals a long line of attendees waiting along a bright, glass-windowed corridor at a conference or professional event. Participants wearing lanyards are seen chatting, checking smartphones, and patiently queuing behind stanchion barriers.",
+          "genre": "Event / Non-Fiction",
+          "language": "",
+          "duration_seconds": 10.053991
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 9.6,
+            "description": "The camera pans horizontally and pulls back from close-up conversations to a wide shot, showing a long queue of event attendees standing inside a modern, glass-walled hallway.",
+            "setting": "Modern convention center corridor with floor-to-ceiling glass windows",
+            "mood": "Calm, professional",
+            "entities": [
+              "event attendees",
+              "lanyards",
+              "smartphones",
+              "stanchions and rope barriers",
+              "tote bags"
+            ],
+            "tension_score": 0.1,
+            "is_climax_candidate": false
+          }
+        ]
+      },
+      {
+        "source_video": "/home/zhendong_li/FrameWorkers/Runtime/topic44_kestrel/workspace_global_20260804_125051/inputs/20260804_125051_765837_event_11_talk.mp4",
+        "usable": true,
+        "unusable_reason": "",
+        "video_summary": {
+          "title": "Headlamp Product Demonstration at Trade Show",
+          "summary": "At an outdoor gear exhibition booth, a representative helps fit and turn on a headlamp for a female visitor. Once the light shines bright, the group shares a cheerful laugh together.",
+          "genre": "Promotional",
+          "language": "en",
+          "duration_seconds": 10.1
+        },
+        "scenes": [
+          {
+            "scene_id": "scene_001",
+            "start_time": 0.0,
+            "end_time": 9.6,
+            "description": "A representative at a trade show booth fits a headlamp onto a woman in a denim jacket as her companion stands beside her. As the headlamp is activated and lights up brightly, all three break into laughter and give a thumbs-up.",
+            "setting": "Exhibition hall / trade show booth",
+            "mood": "Cheerful",
+            "entities": [
+              "woman in denim jacket",
+              "man in grey t-shirt",
+              "booth representative in grey polo",
+              "headlamp",
+              "exhibition booth counter"
+            ],
+            "tension_score": 0.2,
+            "is_climax_candidate": false
+          }
+        ]
+      }
+    ]
+  }
+}

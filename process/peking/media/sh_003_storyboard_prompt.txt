@@ -1,0 +1,29 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 5 panels arranged in a 3x2 grid (panel 1 = top-left, panel 5 = bottom-center; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=5 → 3x2 with the sixth cell as solid neutral gray.
+
+[STYLE FOUNDATION]
+风格化 3D 卡通动画电影（皮克斯 / 梦工厂式渲染：明显卡通化的造型与比例、干净的卡通材质与大色块、柔和卡通布光；明确是动画角色，非写实、非真人、非照片、非 CG 写实），浓烈红黑对比，沉重悲怆的史诗基调。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the master_qiu character anchor and the FRONT section of the theatre_stage location anchor. A 35mm low-angle medium shot. master_qiu aggressively kicks open a fractured, red wooden costume chest on the scarred stage floor. A cloud of thick, old dust rises into the cone of a harsh yellow spotlight. His right hand plunges deep into the dark shadows of the open chest, his expression grim and resolute under the peeling makeup.
+
+[PANEL 2]
+Use the FRONT section of the master_qiu character anchor. A 50mm medium close-up. master_qiu pulls a heavy, rusted, historically authentic broadsword from the chest. The blade's chipped edge catches a stark, cold blue glint of light, contrasting sharply with the warm yellow stage spotlight. Simultaneously, his left hand tosses a brightly painted, lightweight wooden prop spear out of frame to the right. The dense, textured rust of the real blade is the dominant visual element.
+
+[PANEL 3]
+Use the FACE section of the apprentice_ming character anchor. An 85mm tight close-up. apprentice_ming frantically catches the painted wooden spear, his body shifting backward from the momentum. His eyes shift downward, pupils slightly constricted in a micro-expression of shock and realization as he stares off-screen at the heavy metal sword. His pale, un-made-up face is half-draped in deep shadow, emphasizing his fear and the stark reality of the moment.
+
+[PANEL 4]
+Use the FRONT section of the master_qiu character anchor. An 85mm over-the-shoulder medium close-up, looking past the blurred shoulder of the apprentice in the foreground right. master_qiu grips the thick hilt of the real broadsword with both hands, his forearms tensed, muscles visibly straining against the inner lining of his costume. The tip of the heavy blade points diagonally toward the ground. His eyes hold a cold, unyielding glare under the sharp top light.
+
+[PANEL 5]
+Use the OVERHEAD section of the theatre_stage location anchor and the FRONT section of the master_qiu character anchor. A 24mm high-angle wide shot. master_qiu stands completely alone in the center of a single, dust-filled conical yellow spotlight on the wooden stage, holding the heavy broadsword. The apprentice's blurry silhouette is seen stumbling backward, half-swallowed into the pitch-black void on the far right edge of the frame. The overwhelming, oppressive darkness completely surrounds the lone warrior in the light.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", "4", "5" matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 2 reference image(s) in this i2i call are PREVIOUS-SHOT storyboards (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to maintain CROSS-SHOT continuity in: color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality — so the final cut sequence flows smoothly. Identity (character / location / ship details) is still locked exclusively by the FIRST 3 refs (character anchors / location anchor / style anchor).

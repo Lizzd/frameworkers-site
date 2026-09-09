@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 close-up -> P2 close-up -> P3 detail -> P4 medium
+
+[PANEL 1]
+SHOT: close-up, eye-level.
+PLACEMENT: A steel point chisel held by a leather-gloved hand is bound against a raw limestone block face; a forearm in canvas sleeve enters from the upper frame edge.
+ACTION: A point chisel chips precise flakes from the grey limestone block to shape its face by hand.
+ENV: Refer to loc_bridge_joints anchor FRONT section. Bright working sunlight with stone dust particles frozen in mid-air.
+
+[PANEL 2]
+SHOT: close-up, eye-level.
+PLACEMENT: A textured steel bush hammer head held in a mason's hand is bound impacting the flat stone surface; the mason's wrist enters from frame edge.
+ACTION: A bush hammer strikes the limestone face creating uniform non-directional hand-dressed stippling texture.
+ENV: Refer to loc_bridge_joints anchor FRONT section. Crisp workshop lighting on raw grey stone.
+
+[PANEL 3]
+SHOT: detail, eye-level.
+PLACEMENT: The hand-dressed face of a finished limestone block is bound flush occupying the full image frame.
+ACTION: Hand-chiseled tooling marks and bush-hammered surface textures are showcased up close without machine lines.
+ENV: Refer to loc_bridge_joints anchor FRONT section. Directional side lighting highlighting tactile surface relief.
+
+[PANEL 4]
+SHOT: medium, low-angle.
+PLACEMENT: A completed hand-dressed replacement block is bound resting flat on a wooden masonry bench.
+ACTION: The fully dressed grey limestone ashlar block sits pristine and ready for placement into the arch.
+ENV: Refer to loc_bridge_joints anchor FRONT section. Open air masonry yard with soft natural light.
+
+[RENDERED TEXT]
+Do NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 1 refs (character / prop / location anchors).

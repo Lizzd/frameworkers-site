@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Realistic high-key 3D rendered space sci-fi. Bright white and high-contrast silver-gray color palette. Exposed sun-glare casting sharp, high-exposure dark shadows across massive structures. Blinding cyan and orange engine plumes, clean specular highlights on pristine titanium-composite hull plates, and prismatic lens flares from raw sunlight refracting through orbital dust fields. Clean and crisp visual purity without cockpit scenes, interior shots, or HUD overlays.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide -> P2 extreme-wide -> P3 extreme-wide -> P4 extreme-wide
+
+[PANEL 1]
+SHOT: wide-shot.
+PLACEMENT: The camera tracks under the fighter_craft (prop_anchor: fighter_craft) wing, which dominates the lower-left edge. The massive mechanical spires of the blockade fleet recede in the background.
+ACTION: The fighter_craft breaks free from the fleet's defensive perimeter into open space.
+ENV: The transition zone between the crowded mechanical warship structures (location_anchor: blockade_sector_alpha) and the open, quiet cosmic void.
+
+[PANEL 2]
+SHOT: extreme-wide shot.
+PLACEMENT: The fighter_craft (prop_anchor: fighter_craft) is a microscopic glowing dot near the center-left, with a tiny, faint cyan thread of engine light trailing behind it.
+ACTION: The fighter_craft recedes rapidly into the distance, growing progressively smaller.
+ENV: Vast, empty blackness of deep space, with massive dreadnought hulls beginning to frame the edges of the screen.
+
+[PANEL 3]
+SHOT: extreme-wide shot.
+PLACEMENT: A massive, flawless orbital wall of dozens of giant white dreadnoughts is arranged diagonally across the frame. The massive golden gas giant fills the entire background. The fighter_craft (prop_anchor: fighter_craft) is a microscopic speck, almost invisible in the vast scene.
+ACTION: The camera pulls back continuously, revealing the sheer scale of the entire blockade fleet.
+ENV: High-key, sun-drenched cosmos with a towering golden-hued gas giant looming behind a majestic fleet.
+
+[PANEL 4]
+SHOT: extreme-wide shot.
+PLACEMENT: The massive fleet of white dreadnoughts hangs perfectly still in a grand orbital line. No fighter craft is visible.
+ACTION: A static, serene composition with no movement.
+ENV: A majestic, silent blockade fleet parked against the brilliant cosmic horizon, with a faint blue dust streak fading into nothingness.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 2 refs (character / prop / location anchors).

@@ -1,0 +1,159 @@
+{
+  "content": {
+    "language": "en",
+    "anchors": {
+      "character_anchors": [
+        {
+          "entity_id": "main_character",
+          "prompt_summary": "A 20s Hispanic female outdoor enthusiast with athletic build, warm brown eyes, and dark braided hair. She wears a technical olive green outdoor jacket over high-performance hiking apparel. Rendered in clean cinematic 3D animation style with expressive feature modeling and realistic clothing materials.",
+          "views": [
+            "FACE",
+            "FRONT"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic22_northspur/workspace_global_20260803_123754/inputs/20260803_123754_268817_character_ref.png"
+        }
+      ],
+      "location_anchors": [
+        {
+          "entity_id": "mountain_trail",
+          "prompt_summary": "A high-altitude alpine hiking trail surrounded by dense pine tree valleys, rugged granite ridges, and open summit overlooks. The atmosphere features crisp morning golden sunlight, soft rising valley mist, and clear blue skies.",
+          "views": [
+            "FRONT",
+            "BACK",
+            "OVERHEAD"
+          ],
+          "reference_image_uri": ""
+        }
+      ],
+      "prop_anchors": [
+        {
+          "entity_id": "brand_logo",
+          "prompt_summary": "The NORTHSPUR brand mark consisting of dark blue sans-serif lettering centered beneath a minimal geometric mountain peak icon, presented cleanly on a flat solid white background.",
+          "views": [
+            "HERO",
+            "FRONT"
+          ],
+          "reference_image_uri": "/home/zhendong_li/FrameWorkers/Runtime/topic22_northspur/workspace_global_20260803_123754/inputs/20260803_123754_284918_brand_logo.png"
+        }
+      ]
+    },
+    "shot_visuals": {
+      "sh_001": {
+        "shot_id": "sh_001",
+        "primary_location": "mountain_trail",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": []
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "panel_index": 5,
+            "characters_present": [
+              "main_character"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nCinematic 3D animation style with crisp lighting, rich outdoor textures, earthy olive and slate color palette, and warm morning sunlight accents.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 medium -> P3 medium -> P4 detail -> P5 wide\n\n[PANEL 1]\nSHOT: wide, high viewpoint.\nPLACEMENT: Panoramic alpine scenery; towering granite peaks and misty pine valleys occupy full frame width without human figures.\nACTION: Golden morning light breaks past sharp mountain ridges, illuminating soft fog rising from green pine forests below.\nENV: Mountain valley filled with misty pine trees, crisp atmospheric depth under early sunlight, referencing mountain_trail location anchor (FRONT section).\n\n[PANEL 2]\nSHOT: medium, eye-level.\nPLACEMENT: main_character standing on dirt trail, boots firmly planted on soil, head positioned in top third of frame; referencing FRONT section of main_character anchor.\nACTION: main_character reaches right hand up to adjust olive jacket backpack strap while gazing upward toward distant summit peaks.\nENV: Forest path bordered by tall pine trunks, dappled morning sunlight filtering through needle canopy, referencing mountain_trail location anchor (FRONT section).\n\n[PANEL 3]\nSHOT: medium, eye-level.\nPLACEMENT: main_character in mid-stride along dirt path, left boot forward on ground, right leg pushed off behind; referencing FRONT section of main_character anchor.\nACTION: main_character walks steadily forward along winding path, arms swinging naturally in continuous movement.\nENV: Dirt hiking path surrounded by rocky banks and pine trees, warm golden morning sunbeams across trail, referencing mountain_trail location anchor (FRONT section).\n\n[PANEL 4]\nSHOT: detail, low viewpoint.\nPLACEMENT: main_character lower leg and boot planted firmly on granite boulder edge; main_character olive jacket sleeve and wrist enter frame from top corner to maintain body connection; referencing main_character anchor.\nACTION: Sturdy hiking boot stepping firmly onto rough rock surface as breeze sways dark braid tips.\nENV: Sunlit granite rock ledge with small loose gravel, referencing mountain_trail location anchor (FRONT section).\n\n[PANEL 5]\nSHOT: wide, eye-level.\nPLACEMENT: main_character standing near center of open mountain ridge, both feet grounded on stone outcrop, figure framed small against vast background landscape; referencing FRONT section of main_character anchor.\nACTION: main_character pauses stationary on ridge, looking across sweeping valley vistas.\nENV: Exposed mountain ridge with panoramic view of pine valleys and distant sunlit peaks, referencing mountain_trail location anchor (OVERHEAD section).\n\n[RENDERED TEXT]\n(none for this shot)"
+      },
+      "sh_002": {
+        "shot_id": "sh_002",
+        "primary_location": "mountain_trail",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "panel_index": 5,
+            "characters_present": [
+              "main_character"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nCinematic 3D animation style with crisp lighting, rich outdoor textures, earthy olive and slate color palette, and warm morning sunlight accents.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 close-up -> P3 wide -> P4 close-up -> P5 medium\n\n[PANEL 1]\nSHOT: medium, low viewpoint.\nPLACEMENT: main_character leaning forward into steep climb, right boot wedged into rock fissure, torso filling lower-center frame; referencing FRONT section of main_character anchor.\nACTION: main_character drives upward across steep granite incline, olive green jacket flexing at shoulders.\nENV: Steep gray granite rock face with moss patches, warm sunlight glinting off slope edges, referencing mountain_trail location anchor (FRONT section).\n\n[PANEL 2]\nSHOT: close-up, eye-level.\nPLACEMENT: main_character shoulder and upper chest filling center frame; neck and side profile visible; referencing FACE section of main_character anchor.\nACTION: Clear water droplets beaded up on water-resistant weave of olive jacket shoulder fabric.\nENV: Out-of-focus background mist glowing in bright morning light, referencing mountain_trail location anchor (FRONT section).\n\n[PANEL 3]\nSHOT: wide, eye-level.\nPLACEMENT: main_character mid-air across narrow stream gap, right boot touching down on far mossy stone, arms spread for balance; referencing FRONT section of main_character anchor.\nACTION: main_character leaps cleanly across fast mountain stream, landing smoothly on bank.\nENV: Rushing mountain brook over wet stones, flanked by green pine trees and sunlit rocks, referencing mountain_trail location anchor (FRONT section).\n\n[PANEL 4]\nSHOT: close-up, eye-level.\nPLACEMENT: main_character head and shoulders framed closely, face turned three-quarters toward camera; referencing FACE section of main_character anchor.\nACTION: main_character smiles determinately while breathing crisp alpine air, dark braids highlighted by rim lighting.\nENV: Clear blue sky background illuminated by bright golden sunlight, referencing mountain_trail location anchor (FRONT section).\n\n[PANEL 5]\nSHOT: medium, eye-level.\nPLACEMENT: main_character standing on upper ridge shoulder, feet planted on flat rock slab, looking ahead toward summit; referencing FRONT section of main_character anchor.\nACTION: main_character pauses on rocky crest shoulder, posture confident and focused on summit peak.\nENV: High altitude mountain ridge shoulder under golden morning sky, referencing mountain_trail location anchor (FRONT section).\n\n[RENDERED TEXT]\n(none for this shot)"
+      },
+      "sh_003": {
+        "shot_id": "sh_003",
+        "primary_location": "mountain_trail",
+        "panels": [
+          {
+            "panel_index": 1,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "panel_index": 2,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "panel_index": 3,
+            "characters_present": [
+              "main_character"
+            ]
+          },
+          {
+            "panel_index": 4,
+            "characters_present": [
+              "brand_logo"
+            ]
+          },
+          {
+            "panel_index": 5,
+            "characters_present": [
+              "brand_logo"
+            ]
+          }
+        ],
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nCinematic 3D animation style with crisp lighting, rich outdoor textures, earthy olive and slate color palette, and warm morning sunlight accents.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 close-up -> P3 detail -> P4 medium -> P5 medium\n\n[PANEL 1]\nSHOT: wide, low viewpoint.\nPLACEMENT: main_character standing at apex of highest summit boulder, feet grounded on summit stone, head and torso silhouetted against sky; referencing FRONT section of main_character anchor.\nACTION: main_character stands victorious at summit peak, arms raised slightly in triumph.\nENV: Mountain summit peak overlooking vast open blue sky and distant mountain horizons, referencing mountain_trail location anchor (OVERHEAD section).\n\n[PANEL 2]\nSHOT: close-up, eye-level.\nPLACEMENT: main_character face and shoulders centered in frame; referencing FACE section of main_character anchor.\nACTION: main_character turns head toward camera with a radiant, satisfied smile in crisp mountain air.\nENV: Bright alpine atmosphere with warm morning sun illuminating facial features, referencing mountain_trail location anchor (FRONT section).\n\n[PANEL 3]\nSHOT: detail, eye-level.\nPLACEMENT: main_character olive jacket shoulder seam and collar close frame; neck line and dark braid entering upper edge; referencing main_character anchor.\nACTION: Detailed view of clean fabric stitching, durable weave texture, and metallic zipper accents on olive jacket.\nENV: Softly blurred outdoor backdrop with warm sunlight glinting off jacket shoulder material.\n\n[PANEL 4]\nSHOT: medium, eye-level.\nPLACEMENT: brand_logo centered on pure solid background; referencing HERO section of brand_logo prop anchor.\nACTION: Dark blue text and geometric mountain icon displayed clearly on crisp white surface.\nENV: Clean, flat white studio background with uniform lighting.\n\n[PANEL 5]\nSHOT: medium, eye-level.\nPLACEMENT: brand_logo stationary in exact center of frame; referencing HERO section of brand_logo prop anchor.\nACTION: NORTHSPUR logo holds steady and sharp under clear studio lights.\nENV: Pure solid white backdrop with bright end-frame illumination.\n\n[RENDERED TEXT]\nText label reading \"NORTHSPUR\" in dark blue sans-serif font centered beneath the mountain peak icon on brand_logo."
+      }
+    },
+    "style_notes": [
+      "Cinematic 3D animation style with crisp lighting and soft rendered shading",
+      "Rich outdoor environmental textures including granite rock, pine needles, and high-performance jacket weave",
+      "Earthy palette dominated by olive greens, slate grays, dark pine tones, and crisp sky blue",
+      "Warm morning sunlight accents with golden edge highlights and natural atmospheric mist"
+    ],
+    "must_avoid": []
+  }
+}

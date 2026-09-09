@@ -1,0 +1,1206 @@
+{
+ "key": "martin",
+ "title": "A Great Monday",
+ "genre": "AI Colored-Pencil · Institutional Brand Film",
+ "cat": "Advertisement",
+ "prompt": "A ~60s INSAIT institutional brand film: a wonderfully ordinary day of Martin, the institute's Scientific Director — light-humored, day-in-the-life. Follows his Monday-morning path: he walks into our Synergy Tower, takes the elevator to the 13th floor, and runs the Monday stand-up — where he announces “our B200 GPUs have arrived. We now have B200s!”, cut to colleagues applauding. After the meeting he strolls into an office, calls out “Hi, Zhendong Li!” — no one there — “Where is Zhendong Li?”, spots only Jina, points at the packet of Jiali shaobing on her desk asking “What's this?”, and without waiting for her answer opens it, grabs one and strolls out with a “Great.”, then back in his own office he leans back in his chair, hands behind his head, starting a great day. Supplied references: photos of Martin and Jina, Synergy Tower exterior + aerial, lobby, the 13th-floor meeting room (INSAIT logo wall), a colleague's office, the shaobing packaging, the INSAIT logo — people, buildings, rooms, packaging and logo must stay consistent with the supplied images. The applauding colleagues are generic figures; the real people in the office photo are not drawn; no one but Martin and Jina depicts a real person; Zhendong (only called by name) never appears on screen. Style: the trendy AI colored-pencil illustration look (photo-to-hand-drawn: soft pencil strokes, fresh light watercolor, gentle natural light, faint paper grain; faces drawn at realistic proportions, features faithful to the photos), bright, credible, warm and approachable institutional tone. English dialogue with English subtitles, no voice-over, keep on-scene ambient sound. End on the INSAIT logo with the full institution name.",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/topic21_martin/workspace_global_20260722_200009"
+ },
+ "generated_at": "2026-09-09T15:56:42+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 10
+  },
+  {
+   "id": "IntakeImageAgent__step_1_8ad7955f",
+   "agent": "IntakeImageAgent",
+   "label": "IntakeImage",
+   "step": "step_1_8ad7955f",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "BriefEnricherAgent__step_2_47649f63",
+   "agent": "BriefEnricherAgent",
+   "label": "BriefEnricher",
+   "step": "step_2_47649f63",
+   "order": 2,
+   "n": 1
+  },
+  {
+   "id": "NarrativeAgent__step_3_7e0263dc",
+   "agent": "NarrativeAgent",
+   "label": "Narrative",
+   "step": "step_3_7e0263dc",
+   "order": 3,
+   "n": 1
+  },
+  {
+   "id": "KeyframeSheetAgent__step_4_ed96c161",
+   "agent": "KeyframeSheetAgent",
+   "label": "KeyframeSheet",
+   "step": "step_4_ed96c161",
+   "order": 4,
+   "n": 25
+  },
+  {
+   "id": "ShotPromptAgent__step_5_b945ca5d",
+   "agent": "ShotPromptAgent",
+   "label": "ShotPrompt",
+   "step": "step_5_b945ca5d",
+   "order": 5,
+   "n": 5
+  },
+  {
+   "id": "ClipAgent__step_6_dbd79f98",
+   "agent": "ClipAgent",
+   "label": "Clip",
+   "step": "step_6_dbd79f98",
+   "order": 6,
+   "n": 6
+  },
+  {
+   "id": "TranscriptionAgent__step_7_5ec06f4d",
+   "agent": "TranscriptionAgent",
+   "label": "Transcription",
+   "step": "step_7_5ec06f4d",
+   "order": 7,
+   "n": 1
+  },
+  {
+   "id": "CompositorAgent__step_8_50555689",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_8_50555689",
+   "order": 8,
+   "n": 2
+  }
+ ],
+ "nodes": [
+  {
+   "id": "insait_logo",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "insait logo",
+   "src_name": "20260722_200026_086171_insait_logo.png",
+   "bytes": 2780213,
+   "caption": "Global prop reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/martin/media/insait_logo.jpg",
+   "w": 5712,
+   "h": 4284
+  },
+  {
+   "id": "jina",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "jina",
+   "src_name": "20260722_200026_098930_jina.jpg",
+   "bytes": 232622,
+   "caption": "Global character reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/martin/media/jina.jpg",
+   "w": 1242,
+   "h": 1450
+  },
+  {
+   "id": "martin_insait",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "martin insait",
+   "src_name": "20260722_200026_112504_martin_insait.jpg",
+   "bytes": 284010,
+   "caption": "Global character reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/martin/media/martin_insait.jpg",
+   "w": 682,
+   "h": 890
+  },
+  {
+   "id": "meeting_room",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "meeting room",
+   "src_name": "20260722_200026_170222_meeting_room.jpg",
+   "bytes": 5119519,
+   "caption": "Global location reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/martin/media/meeting_room.jpg",
+   "w": 5712,
+   "h": 4284
+  },
+  {
+   "id": "office",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "office",
+   "src_name": "20260722_200026_217927_office.jpg",
+   "bytes": 3475391,
+   "caption": "Global location reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/martin/media/office.jpg",
+   "w": 5712,
+   "h": 4284
+  },
+  {
+   "id": "shaobing",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "shaobing",
+   "src_name": "20260722_200026_251663_shaobing.jpg",
+   "bytes": 2205009,
+   "caption": "Global prop reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/martin/media/shaobing.jpg",
+   "w": 4032,
+   "h": 3024
+  },
+  {
+   "id": "synergy_aerial",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "synergy aerial",
+   "src_name": "20260722_200026_265151_synergy_aerial.jpg",
+   "bytes": 504951,
+   "caption": "Global location reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/martin/media/synergy_aerial.jpg",
+   "w": 2000,
+   "h": 1310
+  },
+  {
+   "id": "synergy_exterior",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "synergy exterior",
+   "src_name": "20260722_200026_284309_synergy_exterior.jpg",
+   "bytes": 568866,
+   "caption": "Global location reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/martin/media/synergy_exterior.jpg",
+   "w": 2000,
+   "h": 1387
+  },
+  {
+   "id": "synergy_lobby",
+   "stage": "Inputs",
+   "kind": "image",
+   "label": "synergy lobby",
+   "src_name": "20260722_200026_308867_synergy_lobby.png",
+   "bytes": 2187385,
+   "caption": "Global location reference image. Visual identity anchor for downstream keyframe generation.",
+   "scope": "global",
+   "file": "process/martin/media/synergy_lobby.jpg",
+   "w": 1764,
+   "h": 1176
+  },
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260722_200026_324114.json",
+   "bytes": 3159,
+   "caption": "Structured metadata document (JSON) for a user-submitted text brief. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/martin/media/creative_brief.json",
+   "excerpt": "{\"text\": \"帮我做一条 60 秒左右的 INSAIT 机构形象短片，内容是我们研究所科学总监 Martin 普通而美妙的一天，轻幽默的日常纪实感。我会提供 Martin 和 Jina 的照片、Synergy Tower 的外观实拍和航拍、大堂实拍、13 楼会议室实拍（墙上有 INSAIT logo）、同事办公室实拍、家利烧饼包装的照片、INSAIT logo 图——人物样貌、建筑和房间的样子、烧饼包装、logo 都要跟我给的图保持一致。会议室里鼓掌的同事都画成泛化的路人，办公室照片里的真人不画进去，除 Martin 和 Jina 外不指向任何真人；被喊名字的 Zhendong 不出镜。风格用流行的 AI 彩铅插画风（照片转手…"
+  },
+  {
+   "id": "intakeimageagent_output",
+   "stage": "IntakeImageAgent__step_1_8ad7955f",
+   "kind": "json",
+   "label": "IntakeImageAgent output",
+   "src_name": "step_1_8ad7955f_intakeimageagent_exec_1.json",
+   "bytes": 4220,
+   "caption": "Structured metadata document (JSON) for 9 user-uploaded image(s). Payload lists every image's visual description and image-asset metadata.",
+   "scope": "global",
+   "file": "process/martin/media/intakeimageagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"images\": [{\"visual_description\": \"3D wall logo reading INSAIT in black and red block letters above black text on a plain white wall with soft lighting.\", \"image_asset\": {\"asset_id\": \"\", \"uri\": \"/home/zhendong_li/FrameWorkers/Runtime/topic21_martin/workspace_global_20260722_200009/inputs/20260722_200…"
+  },
+  {
+   "id": "briefenricheragent_output",
+   "stage": "BriefEnricherAgent__step_2_47649f63",
+   "kind": "json",
+   "label": "BriefEnricherAgent output",
+   "src_name": "step_2_47649f63_briefenricheragent_exec_2.json",
+   "bytes": 6249,
+   "caption": "Enriched creative brief with visual reference descriptions integrated. Supersedes the raw user brief for story generation — contains the user's original concept plus detailed visual descriptions of uploaded reference images.",
+   "scope": "global",
+   "file": "process/martin/media/briefenricheragent_output.json",
+   "excerpt": "{\"language\": \"zh\", \"enriched_brief\": \"帮我做一条 60 秒左右的 INSAIT 机构形象短片，内容是我们研究所科学总监 Martin 普通而美妙的一天，轻幽默的日常纪实感。\\n\\n视觉与人物/场景参照要求：\\n1. 人物设定：\\n - Martin（科学总监）：30多岁白人男性，短黑发，戴细框眼镜，留有轻微胡茬，穿白色衬衫（参照照片 2）。\\n - Jina（同事）：18-25岁东亚年轻女性，留着带刘海的长黑发，身穿灰色针织衫（参照照片 1）。\\n - 除 Martin 和 Jina 外不指向任何真实人物。会议室里鼓掌的同事均画成泛化的路人；办公室参照照片（照片 4： daylight 下配有电…"
+  },
+  {
+   "id": "narrativeagent_output",
+   "stage": "NarrativeAgent__step_3_7e0263dc",
+   "kind": "json",
+   "label": "NarrativeAgent output",
+   "src_name": "step_3_7e0263dc_narrativeagent_exec_3.json",
+   "bytes": 13429,
+   "caption": "Shot-rich story: 4 shot(s), 2 character(s) — drives keyframe/storyboard/audio.",
+   "scope": "global",
+   "file": "process/martin/media/narrativeagent_output.json",
+   "excerpt": "{\"title\": \"13楼的烧饼与 GPU\", \"logline\": \"INSAIT 科学总监 Martin 准备用全新的 B200 GPU 宣布开启高效周一，但在发现同事缺席后，他顺手“拿走”了桌上的家利烧饼，开启了他普通而美妙的一天。\", \"setting\": \"保加利亚索非亚 Synergy Tower，顶尖人工智能研究所 INSAIT；现代高科技学术机构氛围，日光充足，跨文化科研团队。\", \"style_anchor\": \"彩铅插画艺术风格（柔和彩铅手绘笔触、清新淡彩配色、柔和自然光影与细致纸张纹理，人物采用写实比例与精致手绘线稿，质感温暖亲和）。\", \"dialogue_language\": \"English\", \"su…"
+  },
+  {
+   "id": "insait_logo_anchor",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "image",
+   "label": "insait logo anchor",
+   "src_name": "step_4_ed96c161_img_insait_logo_anchor.png",
+   "bytes": 6162889,
+   "caption": "GENERATED internal identity reference card for prop insait_logo — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/martin/media/insait_logo_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "jina_anchor",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "image",
+   "label": "jina anchor",
+   "src_name": "step_4_ed96c161_img_jina_anchor.png",
+   "bytes": 6447938,
+   "caption": "GENERATED internal identity reference card for character jina — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/martin/media/jina_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "martin_anchor",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "image",
+   "label": "martin anchor",
+   "src_name": "step_4_ed96c161_img_martin_anchor.png",
+   "bytes": 5788893,
+   "caption": "GENERATED internal identity reference card for character martin — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/martin/media/martin_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "meeting_room_13f_anchor",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "image",
+   "label": "meeting room 13f anchor",
+   "src_name": "step_4_ed96c161_img_meeting_room_13f_anchor.png",
+   "bytes": 7459836,
+   "caption": "GENERATED internal identity reference card for location meeting_room_13f — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/martin/media/meeting_room_13f_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "office_room_anchor",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "image",
+   "label": "office room anchor",
+   "src_name": "step_4_ed96c161_img_office_room_anchor.png",
+   "bytes": 7629277,
+   "caption": "GENERATED internal identity reference card for location office_room — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/martin/media/office_room_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "shaobing_package_anchor",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "image",
+   "label": "shaobing package anchor",
+   "src_name": "step_4_ed96c161_img_shaobing_package_anchor.png",
+   "bytes": 6780379,
+   "caption": "GENERATED internal identity reference card for prop shaobing_package — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/martin/media/shaobing_package_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "synergy_lobby_anchor",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "image",
+   "label": "synergy lobby anchor",
+   "src_name": "step_4_ed96c161_img_synergy_lobby_anchor.png",
+   "bytes": 7793950,
+   "caption": "GENERATED internal identity reference card for location synergy_lobby — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/martin/media/synergy_lobby_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "synergy_tower_anchor",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "image",
+   "label": "synergy tower anchor",
+   "src_name": "step_4_ed96c161_img_synergy_tower_anchor.png",
+   "bytes": 8463646,
+   "caption": "GENERATED internal identity reference card for location synergy_tower — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/martin/media/synergy_tower_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "insait_logo_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "text",
+   "label": "insait logo anchor prompt",
+   "src_name": "step_4_ed96c161_img_insait_logo_anchor_prompt.txt",
+   "bytes": 2325,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the prop insait_logo anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/martin/media/insait_logo_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "jina_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "text",
+   "label": "jina anchor prompt",
+   "src_name": "step_4_ed96c161_img_jina_anchor_prompt.txt",
+   "bytes": 2689,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the character jina anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/martin/media/jina_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "martin_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "text",
+   "label": "martin anchor prompt",
+   "src_name": "step_4_ed96c161_img_martin_anchor_prompt.txt",
+   "bytes": 2722,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the character martin anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/martin/media/martin_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "meeting_room_13f_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "text",
+   "label": "meeting room 13f anchor prompt",
+   "src_name": "step_4_ed96c161_img_meeting_room_13f_anchor_prompt.txt",
+   "bytes": 2763,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location meeting_room_13f anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/martin/media/meeting_room_13f_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "office_room_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "text",
+   "label": "office room anchor prompt",
+   "src_name": "step_4_ed96c161_img_office_room_anchor_prompt.txt",
+   "bytes": 2741,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location office_room anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/martin/media/office_room_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "shaobing_package_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "text",
+   "label": "shaobing package anchor prompt",
+   "src_name": "step_4_ed96c161_img_shaobing_package_anchor_prompt.txt",
+   "bytes": 2300,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the prop shaobing_package anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/martin/media/shaobing_package_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "synergy_lobby_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "text",
+   "label": "synergy lobby anchor prompt",
+   "src_name": "step_4_ed96c161_img_synergy_lobby_anchor_prompt.txt",
+   "bytes": 2759,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location synergy_lobby anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/martin/media/synergy_lobby_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "synergy_tower_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "text",
+   "label": "synergy tower anchor prompt",
+   "src_name": "step_4_ed96c161_img_synergy_tower_anchor_prompt.txt",
+   "bytes": 2761,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location synergy_tower anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/martin/media/synergy_tower_anchor_prompt.txt",
+   "excerpt": "IDENTITY LOCK: the attached reference image IS this exact subject. Reproduce its identity — shape, color, proportions, materials, logo / markings, facial identity — EXACTLY into the card layout below. Do NOT redesign, restyle, or invent features it lacks. Where the text description and the reference image disagree on i…"
+  },
+  {
+   "id": "keyframesheetagent_output",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "json",
+   "label": "KeyframeSheetAgent output",
+   "src_name": "step_4_ed96c161_keyframesheetagent_exec_4.json",
+   "bytes": 21810,
+   "caption": "Sheet-model keyframe package: 8 identity anchor card(s) + 4 per-shot storyboard sheet(s). Drives the downstream image-to-video stage.",
+   "scope": "global",
+   "file": "process/martin/media/keyframesheetagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"anchors\": {\"character_anchors\": [{\"entity_id\": \"martin\", \"prompt_summary\": \"Caucasian male in his 30s with short black hair, thin-framed round glasses, and neat light stubble beard. He wears a clean fitted white button-up dress shirt. Sharp, observant eyes with a friendly, warm smile. Soft hand-draw…"
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "image",
+   "label": "sh 001 storyboard",
+   "src_name": "step_4_ed96c161_img_sh_001_storyboard.png",
+   "bytes": 5774170,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_001 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/martin/media/sh_001_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "text",
+   "label": "sh 001 storyboard prompt",
+   "src_name": "step_4_ed96c161_img_sh_001_storyboard_prompt.txt",
+   "bytes": 3573,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_001's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/martin/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. Panels a…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "image",
+   "label": "sh 002 storyboard",
+   "src_name": "step_4_ed96c161_img_sh_002_storyboard.png",
+   "bytes": 6520764,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_002 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/martin/media/sh_002_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "text",
+   "label": "sh 002 storyboard prompt",
+   "src_name": "step_4_ed96c161_img_sh_002_storyboard_prompt.txt",
+   "bytes": 4154,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_002's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/martin/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. Panels a…"
+  },
+  {
+   "id": "sh_003_storyboard",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "image",
+   "label": "sh 003 storyboard",
+   "src_name": "step_4_ed96c161_img_sh_003_storyboard.png",
+   "bytes": 7246891,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_003 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/martin/media/sh_003_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_003_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "text",
+   "label": "sh 003 storyboard prompt",
+   "src_name": "step_4_ed96c161_img_sh_003_storyboard_prompt.txt",
+   "bytes": 4781,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_003's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/martin/media/sh_003_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 6 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 6 = bottom-right. Panels are identified by POSITION only — draw no digits, indices or labels on the …"
+  },
+  {
+   "id": "sh_004_storyboard",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "image",
+   "label": "sh 004 storyboard",
+   "src_name": "step_4_ed96c161_img_sh_004_storyboard.png",
+   "bytes": 5764054,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_004 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/martin/media/sh_004_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_004_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_4_ed96c161",
+   "kind": "text",
+   "label": "sh 004 storyboard prompt",
+   "src_name": "step_4_ed96c161_img_sh_004_storyboard_prompt.txt",
+   "bytes": 4175,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_004's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/martin/media/sh_004_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. Panels a…"
+  },
+  {
+   "id": "shotpromptagent_output",
+   "stage": "ShotPromptAgent__step_5_b945ca5d",
+   "kind": "json",
+   "label": "ShotPromptAgent output",
+   "src_name": "step_5_b945ca5d_shotpromptagent_exec_5.json",
+   "bytes": 16272,
+   "caption": "Per-shot video-generation prompt package: 4 Seedance prompt(s) (9-section), one per shot — pairs with the storyboard sheet to drive the image-to-video clip stage.",
+   "scope": "global",
+   "file": "process/martin/media/shotpromptagent_output.json",
+   "excerpt": "[{\"shot_id\": \"sh_001\", \"text_prompt\": \"[设定]\\n现代保加利亚索非亚，高科技 AI 研究所 INSAIT 的晨间氛围，日光充沛，呈现专业、轻松的跨文化学术办公环境。\\n\\n[风格]\\n彩铅插画艺术风格，柔和手绘笔触与淡彩色调，营造温馨惬意的日常职场律动。\\n\\n[参考图]\\n[Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的…"
+  },
+  {
+   "id": "shot_prompt_sh_001",
+   "stage": "ShotPromptAgent__step_5_b945ca5d",
+   "kind": "text",
+   "label": "shot prompt sh 001",
+   "src_name": "step_5_b945ca5d_shot_prompt_sh_001.txt",
+   "bytes": 3218,
+   "caption": "video-generation text prompt for shot sh_001 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/martin/media/shot_prompt_sh_001.txt",
+   "excerpt": "[设定] 现代保加利亚索非亚，高科技 AI 研究所 INSAIT 的晨间氛围，日光充沛，呈现专业、轻松的跨文化学术办公环境。 [风格] 彩铅插画艺术风格，柔和手绘笔触与淡彩色调，营造温馨惬意的日常职场律动。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— …"
+  },
+  {
+   "id": "shot_prompt_sh_002",
+   "stage": "ShotPromptAgent__step_5_b945ca5d",
+   "kind": "text",
+   "label": "shot prompt sh 002",
+   "src_name": "step_5_b945ca5d_shot_prompt_sh_002.txt",
+   "bytes": 3851,
+   "caption": "video-generation text prompt for shot sh_002 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/martin/media/shot_prompt_sh_002.txt",
+   "excerpt": "[设定] 保加利亚索非亚 Synergy Tower INSAIT 研究所，现代高科技学术机构与跨文化科研团队氛围。 [风格] 彩铅插画艺术风格（柔和彩铅手绘笔触、清新淡彩配色、柔和自然光影与细致纸张纹理，人物采用写实比例与精致手绘线稿，质感温暖亲和）。整体呈现轻松自信、温馨融洽的职场与学术生活基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的…"
+  },
+  {
+   "id": "shot_prompt_sh_003",
+   "stage": "ShotPromptAgent__step_5_b945ca5d",
+   "kind": "text",
+   "label": "shot prompt sh 003",
+   "src_name": "step_5_b945ca5d_shot_prompt_sh_003.txt",
+   "bytes": 4280,
+   "caption": "video-generation text prompt for shot sh_003 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/martin/media/shot_prompt_sh_003.txt",
+   "excerpt": "[设定] 现代高科技学术机构氛围，保加利亚索非亚 Synergy Tower，跨文化科研团队，以清晰标准的英语为日常交流语言。 [风格] 彩铅插画艺术风格。质感温暖亲和，具有柔和日常的幽默生活感。 [参考图] [Image 1]：本镜头的分镜网格图 —— 6 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 6 格 = 下排右）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得再现任何编号、文字或网格线。 …"
+  },
+  {
+   "id": "shot_prompt_sh_004",
+   "stage": "ShotPromptAgent__step_5_b945ca5d",
+   "kind": "text",
+   "label": "shot prompt sh 004",
+   "src_name": "step_5_b945ca5d_shot_prompt_sh_004.txt",
+   "bytes": 3593,
+   "caption": "video-generation text prompt for shot sh_004 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/martin/media/shot_prompt_sh_004.txt",
+   "excerpt": "[设定] 保加利亚索非亚现代高科技学术机构，跨文化科研与办公氛围，语言环境以标准英语与国际交流为主。 [风格] 彩铅插画艺术风格。传递温暖亲和、轻松惬意的日常工作生活质感。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得再现任何编号、文字或网格…"
+  },
+  {
+   "id": "clip_final",
+   "stage": "ClipAgent__step_6_dbd79f98",
+   "kind": "video",
+   "label": "clip final",
+   "src_name": "step_6_dbd79f98_clip_final.mp4",
+   "bytes": 17238093,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_final] Complete assembled film bytes (4 shot(s) concatenated). The final visual deliverable — consumed by a downstream audio-mix / compositor step's materializer for muxing / subtitle burn-in.",
+   "scope": "global",
+   "w": 864,
+   "h": 496,
+   "dur": 60.37,
+   "poster": "process/martin/media/clip_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "clipagent_output",
+   "stage": "ClipAgent__step_6_dbd79f98",
+   "kind": "json",
+   "label": "ClipAgent output",
+   "src_name": "step_6_dbd79f98_clipagent_exec_6.json",
+   "bytes": 1101,
+   "caption": "[JSON MANIFEST] Clip-assembly plan: 4 per-shot clip plan(s) with duration + transition + scene grouping. Read by a downstream audio-mix / compositor step's LLM.",
+   "scope": "global",
+   "file": "process/martin/media/clipagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"clips\": [{\"shot_id\": \"sh_001\", \"duration_sec\": 5.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_002\", \"duration_sec\": 5.0, \"scene_id\": \"sc_002\"}, {\"shot_id\": \"sh_003\", \"duration_sec\": 10.0, \"scene_id\": \"sc_003\"}, {\"shot_id\": \"sh_004\", \"duration_sec\": 5.0, \"scene_id\": \"sc_003\"}], \"assembly\": {\"shot_order\"…"
+  },
+  {
+   "id": "clip_sh_001",
+   "stage": "ClipAgent__step_6_dbd79f98",
+   "kind": "video",
+   "label": "clip sh 001",
+   "src_name": "step_6_dbd79f98_clip_sh_001.mp4",
+   "bytes": 4228014,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_001] Rendered video clip bytes for shot sh_001 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/martin/media/clip_sh_001_poster.jpg",
+   "file": "process/martin/media/clip_sh_001.mp4"
+  },
+  {
+   "id": "clip_sh_002",
+   "stage": "ClipAgent__step_6_dbd79f98",
+   "kind": "video",
+   "label": "clip sh 002",
+   "src_name": "step_6_dbd79f98_clip_sh_002.mp4",
+   "bytes": 4567020,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_002] Rendered video clip bytes for shot sh_002 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/martin/media/clip_sh_002_poster.jpg",
+   "file": "process/martin/media/clip_sh_002.mp4"
+  },
+  {
+   "id": "clip_sh_003",
+   "stage": "ClipAgent__step_6_dbd79f98",
+   "kind": "video",
+   "label": "clip sh 003",
+   "src_name": "step_6_dbd79f98_clip_sh_003.mp4",
+   "bytes": 4192839,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_003] Rendered video clip bytes for shot sh_003 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "w": 864,
+   "h": 496,
+   "dur": 15.07,
+   "poster": "process/martin/media/clip_sh_003_poster.jpg",
+   "file": "process/martin/media/clip_sh_003.mp4"
+  },
+  {
+   "id": "clip_sh_004",
+   "stage": "ClipAgent__step_6_dbd79f98",
+   "kind": "video",
+   "label": "clip sh 004",
+   "src_name": "step_6_dbd79f98_clip_sh_004.mp4",
+   "bytes": 4340238,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_004] Rendered video clip bytes for shot sh_004 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "w": 864,
+   "h": 496,
+   "dur": 15.09,
+   "poster": "process/martin/media/clip_sh_004_poster.jpg",
+   "file": "process/martin/media/clip_sh_004.mp4"
+  },
+  {
+   "id": "transcriptionagent_output",
+   "stage": "TranscriptionAgent__step_7_5ec06f4d",
+   "kind": "json",
+   "label": "TranscriptionAgent output",
+   "src_name": "step_7_5ec06f4d_transcriptionagent_exec_7.json",
+   "bytes": 1263,
+   "caption": "Transcript (en): 7 timestamped segment(s). SRT-shaped subtitle artifact — ready for direct burn-in by a compositor's subtitle track (each segment is one SRT cue with start/end seconds + text). Also usable as the 'source text' input to a translation step when bilingual subtitles are needed.",
+   "scope": "global",
+   "file": "process/martin/media/transcriptionagent_output.json",
+   "excerpt": "{\"language\": \"en\", \"segments\": [{\"segment_id\": \"seg_001\", \"start_time\": 15.5, \"end_time\": 17.38, \"text\": \"Good morning, everyone.\"}, {\"segment_id\": \"seg_002\", \"start_time\": 17.38, \"end_time\": 22.06, \"text\": \"Quick Monday update, our B200 GPU nodes have arrived.\"}, {\"segment_id\": \"seg_003\", \"start_time\": 22.06, \"end_tim…"
+  },
+  {
+   "id": "compositor_final",
+   "stage": "CompositorAgent__step_8_50555689",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_8_50555689_compositor_final.mp4",
+   "bytes": 9118899,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "file": "videos/martin.mp4",
+   "poster": "posters/martin.jpg",
+   "final": true,
+   "w": 864,
+   "h": 496,
+   "dur": 60.37
+  },
+  {
+   "id": "compositoragent_output",
+   "stage": "CompositorAgent__step_8_50555689",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_8_50555689_compositoragent_exec_8.json",
+   "bytes": 452,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/martin/media/compositoragent_output.json",
+   "excerpt": "{\"language\": \"en\", \"plan\": {\"color_grade\": {\"brightness\": 0.0, \"contrast\": 0.05, \"saturation\": 0.05}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"authored_cues\": [], \"subtitle_language\": \"en\", \"output_resolution\": \"1920x1080\", \"output_fps\": 30}}"
+  }
+ ],
+ "edges": [
+  {
+   "from": "insait_logo",
+   "to": "IntakeImageAgent__step_1_8ad7955f",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "jina",
+   "to": "IntakeImageAgent__step_1_8ad7955f",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "martin_insait",
+   "to": "IntakeImageAgent__step_1_8ad7955f",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "meeting_room",
+   "to": "IntakeImageAgent__step_1_8ad7955f",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "office",
+   "to": "IntakeImageAgent__step_1_8ad7955f",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "shaobing",
+   "to": "IntakeImageAgent__step_1_8ad7955f",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "synergy_aerial",
+   "to": "IntakeImageAgent__step_1_8ad7955f",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "synergy_exterior",
+   "to": "IntakeImageAgent__step_1_8ad7955f",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "synergy_lobby",
+   "to": "IntakeImageAgent__step_1_8ad7955f",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "intakeimageagent_output",
+   "to": "BriefEnricherAgent__step_2_47649f63",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "insait_logo",
+   "to": "BriefEnricherAgent__step_2_47649f63",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "jina",
+   "to": "BriefEnricherAgent__step_2_47649f63",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "martin_insait",
+   "to": "BriefEnricherAgent__step_2_47649f63",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "meeting_room",
+   "to": "BriefEnricherAgent__step_2_47649f63",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "office",
+   "to": "BriefEnricherAgent__step_2_47649f63",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "shaobing",
+   "to": "BriefEnricherAgent__step_2_47649f63",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "synergy_aerial",
+   "to": "BriefEnricherAgent__step_2_47649f63",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "synergy_exterior",
+   "to": "BriefEnricherAgent__step_2_47649f63",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "synergy_lobby",
+   "to": "BriefEnricherAgent__step_2_47649f63",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "creative_brief",
+   "to": "BriefEnricherAgent__step_2_47649f63",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "briefenricheragent_output",
+   "to": "NarrativeAgent__step_3_7e0263dc",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "jina",
+   "to": "KeyframeSheetAgent__step_4_ed96c161",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "martin_insait",
+   "to": "KeyframeSheetAgent__step_4_ed96c161",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "meeting_room",
+   "to": "KeyframeSheetAgent__step_4_ed96c161",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "office",
+   "to": "KeyframeSheetAgent__step_4_ed96c161",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "synergy_aerial",
+   "to": "KeyframeSheetAgent__step_4_ed96c161",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "synergy_exterior",
+   "to": "KeyframeSheetAgent__step_4_ed96c161",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "synergy_lobby",
+   "to": "KeyframeSheetAgent__step_4_ed96c161",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "insait_logo",
+   "to": "KeyframeSheetAgent__step_4_ed96c161",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "shaobing",
+   "to": "KeyframeSheetAgent__step_4_ed96c161",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "narrativeagent_output",
+   "to": "KeyframeSheetAgent__step_4_ed96c161",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "keyframesheetagent_output",
+   "to": "ShotPromptAgent__step_5_b945ca5d",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "narrativeagent_output",
+   "to": "ShotPromptAgent__step_5_b945ca5d",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPromptAgent__step_5_b945ca5d",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ShotPromptAgent__step_5_b945ca5d",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPromptAgent__step_5_b945ca5d",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPromptAgent__step_5_b945ca5d",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "keyframesheetagent_output",
+   "to": "ClipAgent__step_6_dbd79f98",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "ClipAgent__step_6_dbd79f98",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "ClipAgent__step_6_dbd79f98",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "ClipAgent__step_6_dbd79f98",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "ClipAgent__step_6_dbd79f98",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ClipAgent__step_6_dbd79f98",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ClipAgent__step_6_dbd79f98",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ClipAgent__step_6_dbd79f98",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ClipAgent__step_6_dbd79f98",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "clip_final",
+   "to": "TranscriptionAgent__step_7_5ec06f4d",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "narrativeagent_output",
+   "to": "TranscriptionAgent__step_7_5ec06f4d",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "narrativeagent_output",
+   "to": "CompositorAgent__step_8_50555689",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "transcriptionagent_output",
+   "to": "CompositorAgent__step_8_50555689",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "clip_final",
+   "to": "CompositorAgent__step_8_50555689",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "clipagent_output",
+   "to": "CompositorAgent__step_8_50555689",
+   "type": "step",
+   "inferred": false
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": false
+  }
+ ],
+ "final": "compositor_final",
+ "notes": [
+  "Connections are the actual inputs each agent step resolved at run time."
+ ]
+}

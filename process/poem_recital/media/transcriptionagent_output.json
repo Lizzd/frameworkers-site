@@ -1,0 +1,44 @@
+{
+  "content": {
+    "language": "en",
+    "segments": [
+      {
+        "segment_id": "seg_001",
+        "start_time": 0.0,
+        "end_time": 5.0,
+        "text": "Hope is the thing with feathers"
+      },
+      {
+        "segment_id": "seg_002",
+        "start_time": 5.0,
+        "end_time": 11.2,
+        "text": "that perches in the soul"
+      },
+      {
+        "segment_id": "seg_003",
+        "start_time": 11.2,
+        "end_time": 18.0,
+        "text": "and sings the tune without the words"
+      },
+      {
+        "segment_id": "seg_004",
+        "start_time": 18.0,
+        "end_time": 24.0,
+        "text": "and never stops at all"
+      },
+      {
+        "segment_id": "seg_005",
+        "start_time": 24.0,
+        "end_time": 30.0,
+        "text": "and sweetest in the gale is heard"
+      },
+      {
+        "segment_id": "seg_006",
+        "start_time": 30.0,
+        "end_time": 34.48,
+        "text": "and sore must be the storm"
+      }
+    ],
+    "full_text": "Hope is the thing with feathers that perches in the soul and sings the tune without the words and never stops at all and sweetest in the gale is heard and sore must be the storm"
+  }
+}

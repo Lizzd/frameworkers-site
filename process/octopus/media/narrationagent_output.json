@@ -1,0 +1,128 @@
+{
+  "content": {
+    "language": "en-US",
+    "overall_style": "scientific documentary illustration, sleek digital painting, luminous marine colors, atmospheric depth",
+    "voice": "",
+    "voice_instructions": "Male narrator voice with an engaging, inquisitive, articulate tone. Speak with clear American English pronunciation at a moderate, fascinated pace. Sound knowledgeable yet accessible, like a science podcast host sharing an extraordinary discovery.",
+    "cast": [
+      {
+        "character_id": "char_001",
+        "appearance_states": [],
+        "name": "Podcast Host",
+        "appearance_prompt": "A friendly male science podcast host in his mid-30s with short neat dark brown hair, light beard stubble, wearing a navy blue casual button-down shirt in a modern studio setup."
+      }
+    ],
+    "segments": [
+      {
+        "segment_id": "seg_001",
+        "image_prompt": "A science podcast host sitting at a studio desk with a broadcasting microphone, warm mood lighting and subtle aquatic digital graphics glowing softly in the background.",
+        "lines": [
+          {
+            "line_id": "ln_001",
+            "text": "Welcome back to Strange Nature.",
+            "pause_after_ms": 300
+          },
+          {
+            "line_id": "ln_002",
+            "text": "I'm your host, and today, the octopus.",
+            "pause_after_ms": 500
+          }
+        ],
+        "characters_in_segment": [
+          "char_001"
+        ],
+        "key_point_card": "Strange Nature: The Octopus"
+      },
+      {
+        "segment_id": "seg_002",
+        "image_prompt": "An anatomical illustration of an octopus swimming gracefully underwater, featuring three glowing, highlighted hearts with translucent red and blue pathways guiding blood through its body and gills.",
+        "lines": [
+          {
+            "line_id": "ln_003",
+            "text": "An octopus has three hearts: two pump blood through the gills, and one drives it around the body.",
+            "pause_after_ms": 500
+          }
+        ],
+        "characters_in_segment": [],
+        "key_point_card": "Three Hearts"
+      },
+      {
+        "segment_id": "seg_003",
+        "image_prompt": "Close-up cinematic detail of vibrant cyan-blue blood flowing inside translucent copper-rich circulatory vessels of a deep-sea creature.",
+        "lines": [
+          {
+            "line_id": "ln_004",
+            "text": "That blood runs blue because it carries oxygen with copper instead of iron.",
+            "pause_after_ms": 500
+          }
+        ],
+        "characters_in_segment": [],
+        "key_point_card": "Copper-Based Blue Blood"
+      },
+      {
+        "segment_id": "seg_004",
+        "image_prompt": "An artistic visualization showing an octopus illuminated by glowing neural pathways along its eight arms, emphasizing the dense concentration of nerve clusters outside its head.",
+        "lines": [
+          {
+            "line_id": "ln_005",
+            "text": "Of its roughly 500 million neurons, nearly two-thirds live not in its head, but in its arms.",
+            "pause_after_ms": 500
+          }
+        ],
+        "characters_in_segment": [],
+        "key_point_card": "500 Million Neurons"
+      },
+      {
+        "segment_id": "seg_005",
+        "image_prompt": "Macro shot of a single flexible octopus arm reaching across a ocean reef, suction cups delicately probing coral textures in clear seawater.",
+        "lines": [
+          {
+            "line_id": "ln_006",
+            "text": "Each arm tastes, touches, and partly decides on its own.",
+            "pause_after_ms": 500
+          }
+        ],
+        "characters_in_segment": [],
+        "key_point_card": "Autonomous Arms"
+      },
+      {
+        "segment_id": "seg_006",
+        "image_prompt": "A dynamic side-by-side view of an octopus seamlessly shifting its skin patterns to blend into colorful coral reefs and grainy sea floor, with magnified inset of microscopic pigment cells called chromatophores shifting color.",
+        "lines": [
+          {
+            "line_id": "ln_007",
+            "text": "And here's the strangest part.",
+            "pause_after_ms": 300
+          },
+          {
+            "line_id": "ln_008",
+            "text": "An octopus is functionally colorblind, yet it can match the color and texture of coral, sand, or stone in under a second using thousands of pigment cells in its skin called chromatophores.",
+            "pause_after_ms": 500
+          }
+        ],
+        "characters_in_segment": [],
+        "key_point_card": "Adaptive Camouflage"
+      },
+      {
+        "segment_id": "seg_007",
+        "image_prompt": "The podcast host gazing thoughtfully at a glowing holographic projection of an octopus drifting in ambient studio air, symbolizing otherworldly intelligence.",
+        "lines": [
+          {
+            "line_id": "ln_009",
+            "text": "Some scientists call it the closest thing we have to alien intelligence.",
+            "pause_after_ms": 300
+          },
+          {
+            "line_id": "ln_010",
+            "text": "Maybe intelligence doesn't need a spine at all.",
+            "pause_after_ms": 800
+          }
+        ],
+        "characters_in_segment": [
+          "char_001"
+        ],
+        "key_point_card": "Alien Intelligence"
+      }
+    ]
+  }
+}

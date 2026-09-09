@@ -1,0 +1,844 @@
+{
+ "key": "last_train",
+ "title": "Paper Boat in the Black Window",
+ "genre": "2D Anime · Occult",
+ "cat": "Narrative",
+ "prompt": "On the last midnight train rattling toward the city, a lone teenage exorcist moves down the swaying carriage to bind the vengeful spirit coiled around a sleeping passenger before the terminus — but in the black window-glass she sees the truth, that it is only a drowned child clinging to the one stranger who resembles its mother, and in the seconds before the doors open she must choose whether to seal it away forever or let it ride one more stop. Stylized 2D hand-drawn anime (modern dark-fantasy anime look — clearly hand-drawn, non-photoreal), spoken dialogue in Japanese, English subtitles, with rattling rails, the hum of failing fluorescents, snapping paper talismans, and foley.",
+ "source": {
+  "type": "subrun",
+  "path": "sub_agents/runs/last_train_anime_01"
+ },
+ "generated_at": "2026-09-09T15:56:34+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 1
+  },
+  {
+   "id": "Story",
+   "agent": "StoryAgent",
+   "label": "Story",
+   "step": "",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "Keyframes",
+   "agent": "KeyframeSheetAgent",
+   "label": "Keyframe sheet",
+   "step": "",
+   "order": 2,
+   "n": 14
+  },
+  {
+   "id": "ShotPrompts",
+   "agent": "ShotPromptAgent",
+   "label": "Shot prompts",
+   "step": "",
+   "order": 3,
+   "n": 4
+  },
+  {
+   "id": "Clips",
+   "agent": "ClipAgent",
+   "label": "Clips",
+   "step": "",
+   "order": 4,
+   "n": 4
+  },
+  {
+   "id": "Narration",
+   "agent": "NarratorAgent",
+   "label": "Narration",
+   "step": "",
+   "order": 5,
+   "n": 6
+  },
+  {
+   "id": "Final",
+   "agent": "CompositorAgent",
+   "label": "Final cut",
+   "step": "",
+   "order": 6,
+   "n": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "user_goal",
+   "stage": "Inputs",
+   "kind": "text",
+   "label": "user goal",
+   "src_name": "user_goal.txt",
+   "bytes": 691,
+   "caption": "The user's instruction, verbatim.",
+   "scope": "",
+   "file": "process/last_train/media/user_goal.txt",
+   "excerpt": "On the last midnight train rattling toward the city, a lone teenage exorcist moves down the swaying carriage to bind the vengeful spirit coiled around a sleeping passenger before the terminus — but in the black window-glass she sees the truth, that it is only a drowned child clinging to the one stranger who resembles i…"
+  },
+  {
+   "id": "story",
+   "stage": "Story",
+   "kind": "json",
+   "label": "story",
+   "src_name": "story.json",
+   "bytes": 19885,
+   "caption": "Story: logline, characters, locations, shot list with panel beats.",
+   "scope": "",
+   "file": "process/last_train/media/story.json",
+   "excerpt": "{\"title\": \"黒窓の紙舟\", \"logline\": \"終電の車内で見習い祓い師の陽菜は、終点到着までに眠る乗客へ絡みつく霊を封じなければならない。しかし黒い窓ガラスに映ったのは怨霊ではなく、溺れたまま母に似た匂いへ縋る幼い子で、封じれば永遠に沈め、逃せば規則も結界も破ることになる。\", \"setting\": \"2010年代末の東京湾岸から都心へ向かう私鉄最終電車、台風の多い季節の深夜。日本人キャスト、都市伝説的な鉄道怪談と神道系の紙札祓いが、無言の通勤文化と混ざる現代ダークファンタジー。\", \"style_anchor\": \"2D hand-drawn anime, modern dark-fantasy anime loo…"
+  },
+  {
+   "id": "black_window_reflection_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "black_window_reflection anchor",
+   "src_name": "black_window_reflection.png",
+   "bytes": 2468690,
+   "caption": "Identity reference card for location black_window_reflection — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/last_train/media/black_window_reflection_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "hina_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "hina anchor",
+   "src_name": "hina.png",
+   "bytes": 2303788,
+   "caption": "Identity reference card for character hina — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/last_train/media/hina_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "last_train_carriage_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "last_train_carriage anchor",
+   "src_name": "last_train_carriage.png",
+   "bytes": 2423238,
+   "caption": "Identity reference card for location last_train_carriage — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/last_train/media/last_train_carriage_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "miharu_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "miharu anchor",
+   "src_name": "miharu.png",
+   "bytes": 2483729,
+   "caption": "Identity reference card for character miharu — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/last_train/media/miharu_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sachiko_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sachiko anchor",
+   "src_name": "sachiko.png",
+   "bytes": 2500894,
+   "caption": "Identity reference card for character sachiko — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/last_train/media/sachiko_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "terminus_platform_anchor",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "terminus_platform anchor",
+   "src_name": "terminus_platform.png",
+   "bytes": 2370488,
+   "caption": "Identity reference card for location terminus_platform — shared by every storyboard and clip.",
+   "scope": "",
+   "file": "process/last_train/media/terminus_platform_anchor.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_001 storyboard",
+   "src_name": "sh_001_storyboard.png",
+   "bytes": 2615324,
+   "caption": "Storyboard sheet for sh_001: 4 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/last_train/media/sh_001_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_001 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_001.storyboard_prompt",
+   "bytes": 5284,
+   "caption": "Image prompt that produced the sh_001 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/last_train/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_002 storyboard",
+   "src_name": "sh_002_storyboard.png",
+   "bytes": 2700149,
+   "caption": "Storyboard sheet for sh_002: 5 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/last_train/media/sh_002_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_002 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_002.storyboard_prompt",
+   "bytes": 6861,
+   "caption": "Image prompt that produced the sh_002 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/last_train/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 5 panels arranged in a 3×2 grid (panel 1 = top-left, panel 5 = bottom-bottom; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wi…"
+  },
+  {
+   "id": "sh_003_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_003 storyboard",
+   "src_name": "sh_003_storyboard.png",
+   "bytes": 2760810,
+   "caption": "Storyboard sheet for sh_003: 4 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/last_train/media/sh_003_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_003_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_003 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_003.storyboard_prompt",
+   "bytes": 6374,
+   "caption": "Image prompt that produced the sh_003 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/last_train/media/sh_003_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_004_storyboard",
+   "stage": "Keyframes",
+   "kind": "image",
+   "label": "sh_004 storyboard",
+   "src_name": "sh_004_storyboard.png",
+   "bytes": 2867251,
+   "caption": "Storyboard sheet for sh_004: 4 panels, one per beat.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/last_train/media/sh_004_storyboard.jpg",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "id": "sh_004_storyboard_prompt",
+   "stage": "Keyframes",
+   "kind": "text",
+   "label": "sh_004 storyboard prompt",
+   "src_name": "keyframes.json#shot_visuals.sh_004.storyboard_prompt",
+   "bytes": 6284,
+   "caption": "Image prompt that produced the sh_004 storyboard sheet.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/last_train/media/sh_004_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] 1536x1024 widescreen, 4 panels arranged in a 2×2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 wit…"
+  },
+  {
+   "id": "sh_001_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_001 video prompt",
+   "src_name": "sh_001.txt",
+   "bytes": 8913,
+   "caption": "Video-generation prompt for sh_001: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/last_train/media/sh_001_video_prompt.txt",
+   "excerpt": "[设定] 2010年代末の東京湾岸から都心へ向かう私鉄最終電車、台風の多い季節の深夜。日本人キャスト、都市伝説的な鉄道怪談と神道系の紙札祓いが、無言の通勤文化と混ざる現代ダークファンタジー。 [风格] 2D 手绘动漫（明显非写实，手绘墨线与赛璐璐阴影质感、暗黑系动漫调性）；广角建立镜头以 24mm 与 35mm 展示车厢纵深，情绪与手部关键镜头切到 85mm 压缩空间，近景浅景深、远景保留车厢层次。 光圈倾向近景背景柔化，色温为病态绿白顶灯 5600K 偏冷，高清、细节丰富、电影质感、色彩自然但压低饱和、光影柔和中带硬质荧光闪烁。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按统一网格排列。阅读顺序：先上排从…"
+  },
+  {
+   "id": "sh_002_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_002 video prompt",
+   "src_name": "sh_002.txt",
+   "bytes": 11050,
+   "caption": "Video-generation prompt for sh_002: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_002",
+   "file": "process/last_train/media/sh_002_video_prompt.txt",
+   "excerpt": "[设定] 2010年代末の東京湾岸から都心へ向かう私鉄最終電車、台風の多い季節の深夜。日本人キャスト、都市伝説的な鉄道怪談と神道系の紙札祓いが、無言の通勤文化と混ざる現代ダークファンタジー。 [风格] 2D 手绘动漫（明显非写实，手绘墨线与赛璐璐阴影质感、暗黑系动漫调性），35mm 车厢双人中景、50mm 窗边中近景、85mm 情绪特写交替；浅景深，光圈偏大，焦点锁纸札、脸部微表情与异常材质变化。 5600K 偏冷脏绿白荧光，红色门灯作高反差警示脉冲；高清、细节丰富、电影质感、色彩自然、光影柔和但压抑。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第…"
+  },
+  {
+   "id": "sh_003_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_003 video prompt",
+   "src_name": "sh_003.txt",
+   "bytes": 10096,
+   "caption": "Video-generation prompt for sh_003: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/last_train/media/sh_003_video_prompt.txt",
+   "excerpt": "[设定] 2010年代末の東京湾岸から都心へ向かう私鉄最終電車、台風の多い季節の深夜。日本人キャスト、都市伝説的な鉄道怪談と神道系の紙札祓いが、無言の通勤文化と混ざる現代ダークファンタジー。 [风格] 2D 手绘动漫（明显非写实，手绘墨线与赛璐璐阴影质感、暗黑系动漫调性）；反射空间建立以35mm与24mm广角为主，情绪决断用85mm眼部大特写，收束群像用50mm中广角压缩玻璃层次；光圈偏大、浅景深，焦点在纸札、眼睛、姓名牌与水流细节间清晰锁定。 冷脏白与绿白荧光为主，色温约4800K至5600K，黑窗反射叠加氧化绿与瘀青蓝；高清、细节丰富、电影质感、色彩自然、光影柔和但带硬质惊悚边缘。 [参考图] [Image 1]：本镜头的分镜网…"
+  },
+  {
+   "id": "sh_004_video_prompt",
+   "stage": "ShotPrompts",
+   "kind": "text",
+   "label": "sh_004 video prompt",
+   "src_name": "sh_004.txt",
+   "bytes": 9753,
+   "caption": "Video-generation prompt for sh_004: motion, camera, timing per beat.",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/last_train/media/sh_004_video_prompt.txt",
+   "excerpt": "[设定] 2010年代末の東京湾岸から都心へ向かう私鉄最終電車、台風の多い季節の深夜。日本人キャスト、都市伝説的な鉄道怪談と神道系の紙札祓いが、無言の通勤文化と混ざる現代ダークファンタジー。 [风格] 2D 动漫，24mm广角建立空间、50mm对白压缩、85mm手部与下半脸特写、35mm收束构图；大光圈浅景深用于情绪与纸札细节，宽景保留车门到站台纵深。 冷白5600K荧光管与冷绿电子牌溢光为主，红色终点信号作局部高饱和点；高清、细节丰富、电影质感、色彩自然、光影柔和。 [参考图] [Image 1]：本镜头的分镜网格图 —— 4 个分格按统一网格排列。阅读顺序：先上排从左到右，再下一排从左到右（第 1 格 = 左上，第 4 格 = …"
+  },
+  {
+   "id": "sh_001_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_001 clip",
+   "src_name": "sh_001.mp4",
+   "bytes": 5434840,
+   "caption": "Rendered clip for sh_001 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_001",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/last_train/media/sh_001_clip_poster.jpg",
+   "file": "process/last_train/media/sh_001_clip.mp4"
+  },
+  {
+   "id": "sh_002_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_002 clip",
+   "src_name": "sh_002.mp4",
+   "bytes": 5332684,
+   "caption": "Rendered clip for sh_002 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_002",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.09,
+   "poster": "process/last_train/media/sh_002_clip_poster.jpg",
+   "file": "process/last_train/media/sh_002_clip.mp4"
+  },
+  {
+   "id": "sh_003_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_003 clip",
+   "src_name": "sh_003.mp4",
+   "bytes": 4609030,
+   "caption": "Rendered clip for sh_003 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_003",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/last_train/media/sh_003_clip_poster.jpg",
+   "file": "process/last_train/media/sh_003_clip.mp4"
+  },
+  {
+   "id": "sh_004_clip",
+   "stage": "Clips",
+   "kind": "video",
+   "label": "sh_004 clip",
+   "src_name": "sh_004.mp4",
+   "bytes": 4587922,
+   "caption": "Rendered clip for sh_004 (Seedance, native foley).",
+   "scope": "",
+   "shot": "sh_004",
+   "w": 1280,
+   "h": 720,
+   "dur": 15.07,
+   "poster": "process/last_train/media/sh_004_clip_poster.jpg",
+   "file": "process/last_train/media/sh_004_clip.mp4"
+  },
+  {
+   "id": "subtitles",
+   "stage": "Narration",
+   "kind": "text",
+   "label": "subtitles",
+   "src_name": "narration.srt",
+   "bytes": 1218,
+   "caption": "Subtitle track (SRT).",
+   "scope": "",
+   "file": "process/last_train/media/subtitles.srt",
+   "excerpt": "1 00:00:00,000 --> 00:00:02,700 The night was holding its breath. 2 00:00:04,000 --> 00:00:08,000 A child's shadow shouldn't be riding the last train. 3 00:00:08,000 --> 00:00:11,800 The novice exorcist's hands trembled. 4 00:00:12,000 --> 00:00:15,000 Two minutes left. If the paper works in time. 5 00:00:15,069 --> 00…"
+  },
+  {
+   "id": "narration_cues",
+   "stage": "Narration",
+   "kind": "json",
+   "label": "narration cues",
+   "src_name": "narration.json",
+   "bytes": 2608,
+   "caption": "Narration plan: voice, delivery instructions, timed cues per shot.",
+   "scope": "",
+   "file": "process/last_train/media/narration_cues.json",
+   "excerpt": "{\"voice\": \"onyx\", \"voice_instructions\": \"A low, sorrow-heavy Japanese narrator, emotionally restrained but never flat: grief held behind the teeth, dread gathering with each line. Speak slowly, with weighted pauses before images of water, paper, and the final stop. Let the voice tighten when danger nears, swell with ac…"
+  },
+  {
+   "id": "line_sh_001_0",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_001_0",
+   "src_name": "sh_001_0.wav",
+   "bytes": 129644,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/last_train/media/line_sh_001_0.mp3",
+   "dur": 2.7
+  },
+  {
+   "id": "line_sh_001_1",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_001_1",
+   "src_name": "sh_001_1.wav",
+   "bytes": 182444,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_001",
+   "file": "process/last_train/media/line_sh_001_1.mp3",
+   "dur": 3.8
+  },
+  {
+   "id": "line_sh_003_2",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_003_2",
+   "src_name": "sh_003_2.wav",
+   "bytes": 153644,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_003",
+   "file": "process/last_train/media/line_sh_003_2.mp3",
+   "dur": 3.2
+  },
+  {
+   "id": "line_sh_004_3",
+   "stage": "Narration",
+   "kind": "audio",
+   "label": "line sh_004_3",
+   "src_name": "sh_004_3.wav",
+   "bytes": 194444,
+   "caption": "Synthesised narration line (TTS).",
+   "scope": "",
+   "shot": "sh_004",
+   "file": "process/last_train/media/line_sh_004_3.mp3",
+   "dur": 4.05
+  },
+  {
+   "id": "final_film",
+   "stage": "Final",
+   "kind": "video",
+   "label": "final film",
+   "src_name": "final.mp4",
+   "bytes": 11913515,
+   "caption": "Delivered film: clips + narration + subtitles + mix.",
+   "scope": "",
+   "file": "videos/last_train.mp4",
+   "poster": "posters/last_train.jpg",
+   "final": true,
+   "w": 1280,
+   "h": 720,
+   "dur": 60.4
+  }
+ ],
+ "edges": [
+  {
+   "from": "user_goal",
+   "to": "Story",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "Keyframes",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "hina_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "miharu_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sachiko_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "last_train_carriage_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "black_window_reflection_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "terminus_platform_anchor",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ShotPrompts",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "hina_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "miharu_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sachiko_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "last_train_carriage_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "black_window_reflection_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "terminus_platform_anchor",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_video_prompt",
+   "to": "Clips",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_video_prompt",
+   "to": "sh_001_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_video_prompt",
+   "to": "sh_002_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_video_prompt",
+   "to": "sh_003_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_video_prompt",
+   "to": "sh_004_clip",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "story",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_clip",
+   "to": "Narration",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_clip",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "narration_cues",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_001_0",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_001_1",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_003_2",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "line_sh_004_3",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  },
+  {
+   "from": "subtitles",
+   "to": "Final",
+   "type": "structural",
+   "inferred": false
+  }
+ ],
+ "final": "final_film",
+ "notes": [
+  "Early cine-chain run: the sequence Story → Keyframes → Shot prompts → Clips → Narration → Final is fixed, so connections are structural."
+ ]
+}

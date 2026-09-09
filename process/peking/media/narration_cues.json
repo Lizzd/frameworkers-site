@@ -1,0 +1,93 @@
+{
+  "voice": "onyx",
+  "voice_instructions": "A weathered, elderly Chinese man's voice, thick with grief and aching reverence. Speak slowly, with heavy gravity. The delivery must sound like he is bearing witness to a profound tragedy, fighting back tears but maintaining absolute dignity. The voice tightens on the cruelest realizations, swelling with bitter pride, and falling to a near whisper on the final farewell.",
+  "subtitle_lang": "en",
+  "cues": [
+    {
+      "stretch_id": "sh_001#0",
+      "shot_id": "sh_001",
+      "window_start_s": 0.0,
+      "window_end_s": 12.0,
+      "text": "台下的看客早已散尽，可这半生的戏，不到命绝，又怎敢落幕。",
+      "subtitle_text": "The audience has long scattered. But a role played for a lifetime cannot end until the final breath.",
+      "global_start_s": 0.0,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/peking_opera_1937_3d/narration/lines/sh_001_0.wav",
+      "audio_duration_sec": 7.4,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_002#1",
+      "shot_id": "sh_002",
+      "window_start_s": 3.0,
+      "window_end_s": 6.0,
+      "text": null,
+      "subtitle_text": "",
+      "global_start_s": 18.069001999999998,
+      "audio_path": "",
+      "audio_duration_sec": 0.0,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_002#2",
+      "shot_id": "sh_002",
+      "window_start_s": 9.0,
+      "window_end_s": 15.0,
+      "text": "这一转身便是诀别。角儿的傲骨，宁折也不肯南渡。",
+      "subtitle_text": "This turn is a final farewell. The pride of a master would rather break than flee south.",
+      "global_start_s": 24.069001999999998,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/peking_opera_1937_3d/narration/lines/sh_002_2_fit.wav",
+      "audio_duration_sec": 5.996875,
+      "atempo": 1.1083
+    },
+    {
+      "stretch_id": "sh_003#3",
+      "shot_id": "sh_003",
+      "window_start_s": 0.0,
+      "window_end_s": 9.0,
+      "text": "唱了一辈子的家国天下，如今戏文成了真。这台上的风骨，终要拿血来淬。",
+      "subtitle_text": "He sang of heroes and empires his whole life. Now, the play becomes reality. The honor of this stage must finally be forged in blood.",
+      "global_start_s": 30.138004,
+      "audio_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/peking_opera_1937_3d/narration/lines/sh_003_3_fit.wav",
+      "audio_duration_sec": 9.002667,
+      "atempo": 1.2667
+    },
+    {
+      "stretch_id": "sh_003#4",
+      "shot_id": "sh_003",
+      "window_start_s": 12.0,
+      "window_end_s": 15.0,
+      "text": null,
+      "subtitle_text": "",
+      "global_start_s": 42.138003999999995,
+      "audio_path": "",
+      "audio_duration_sec": 0.0,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_004#5",
+      "shot_id": "sh_004",
+      "window_start_s": 0.0,
+      "window_end_s": 10.0,
+      "text": null,
+      "subtitle_text": "",
+      "global_start_s": 45.207006,
+      "audio_path": "",
+      "audio_duration_sec": 0.0,
+      "atempo": 1.0
+    },
+    {
+      "stretch_id": "sh_004#6",
+      "shot_id": "sh_004",
+      "window_start_s": 12.0,
+      "window_end_s": 15.0,
+      "text": null,
+      "subtitle_text": "",
+      "global_start_s": 57.207006,
+      "audio_path": "",
+      "audio_duration_sec": 0.0,
+      "atempo": 1.0
+    }
+  ],
+  "srt_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/peking_opera_1937_3d/narration/narration.srt",
+  "narrated_video_path": "/home/zhendong_li/FrameWorkers/sub_agents/runs/peking_opera_1937_3d/narration/main_narrated_subbed.mp4"
+}

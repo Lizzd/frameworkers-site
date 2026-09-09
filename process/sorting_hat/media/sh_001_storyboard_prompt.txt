@@ -1,0 +1,23 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 4 panels arranged in a 2x2 grid (panel 1 = top-left, panel 4 = bottom-right; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=1 → 1×1; N=2 → 2×1; N=3 → 3×1; N=4 → 2×2; N=5 → 3×2 with the sixth cell as solid neutral gray; N=6 → 3×2.
+
+[STYLE FOUNDATION]
+Stylized 3D cartoon animation (Pixar/Arcane aesthetic blend). High-contrast cinematic lighting: deep obsidian shadows pierced by aggressive, strobing siege-fire orange and sickly magical cyan. Textures are stylized but tactile—rough spun wool, cracked glowing marble, and soft expressive facial rigs with dramatic rim lighting.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the great_hall_ruins location anchor. Wide shot pushing in. Alaric (FRONT) defensively flares his left arm out, shielding Elara (FRONT) who huddles beneath his heavy midnight-blue velvet sleeve. A concussive blast from off-frame left floods the space with harsh orange light. The shockwave ripples their robes, rolling smashed candles across the cracked marble floor.
+
+[PANEL 2]
+Use the FRONT sections of the alaric and elara character anchors. Medium two-shot. Alaric's trembling, soot-stained hand lowers the sentient dark-leather hat (the_relic) toward Elara's head. Elara tilts her chin up, her soot-streaked cheek muscles tight with desperate hope, her small hands tightly gripping the oversized grey collar of her robe.
+
+[PANEL 3]
+Use the FACE section of the elara character anchor for background context. Macro close-up on the_relic. The frayed dark-leather brim hovers two inches above Elara's messy hair. A jagged tear near the brim twitches violently, its crude golden stitches glowing intensely hot orange, casting harsh under-light against the deep obsidian shadows.
+
+[PANEL 4]
+Use the FACE section of the elara character anchor. Tight close-up on Elara's reaction. The hat's jagged mouth snaps shut at the top edge of the frame, its glowing threads sparking and popping like short-circuiting wires. Elara flinches violently downward, squeezing her large green eyes shut, her freckled nose illuminated by strobing orange sparks.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)

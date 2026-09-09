@@ -1,0 +1,15 @@
+Rendered entirely in this visual style / medium (governs the whole image):
+Photoreal cinematic aerial documentary style (写实航拍实拍).; Cold slate blue ocean tones contrasted against pitch-black basalt sand, neon-bright emerald moss, and 1200°C luminous incandescent orange lava streams.; Soft diffused arctic sunlight breaking through moody low-hanging clouds.; Wet specular highlights on wet volcanic rock and heavy volumetric fog.
+
+A single physical place rendered as a location reference card. The single 16:9 widescreen image is composed of THREE equal-width vertical sections, each showing the SAME location from a different camera position, captured in one coherent pass:
+- LEFT section: FRONT view — the iconic / canonical / approach view of this location (camera at adult eye-level height, horizon roughly at lower-third), the angle a director would default to for establishing this place.
+- MIDDLE section: BACK view — 180-degree opposite of FRONT (same eye-level height, camera turned around to look back from where FRONT was facing toward).
+- RIGHT section: OVERHEAD view — aerial drone-altitude top-down view (~30-50m up) revealing spatial layout, dominant pathways, roof lines, arrangement of structures.
+
+Strict rules:
+- A single coherent place rendered in the brief's medium — consistent architecture and materials across all sections, not a disjoint collage.
+- All three sections depict the EXACT same physical location (same architecture, era, atmosphere, lighting, time of day).
+- NO people / characters / figures / animals in any section.
+- This is a clean reference plate: NO rendered text of any kind — no captions, view-name labels (no "FRONT VIEW" plates), watermarks, logos, or lettering; the section tags are stamped on programmatically AFTER rendering.
+
+Location: A glassy mirror-still ocean fjord enclosed by towering, steep mountainsides dusted with snow and green moss. Wisps of white morning mist drift softly across the dark blue water surface. Pale dawn light creates subtle amber and pink reflections across the landscape.

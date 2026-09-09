@@ -1,0 +1,37 @@
+{
+  "content": {
+    "language": "en",
+    "images": [
+      {
+        "visual_description": "An arched stone bridge reflects in a calm river, creating an eye shape in daylight against lush green forest hills.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic14_bridge/workspace_global_20260803_172357/inputs/20260803_172357_352688_bridge_side.jpg",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "An arched bridge constructed from textured grey stone blocks stands over a shallow stream under diffuse daylight.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic14_bridge/workspace_global_20260803_172357/inputs/20260803_172357_418768_bridge_joints.jpg",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      },
+      {
+        "visual_description": "An arched stone masonry bridge with a cobblestone path spans a calm river under soft, overcast light, framed by trees.",
+        "image_asset": {
+          "asset_id": "",
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic14_bridge/workspace_global_20260803_172357/inputs/20260803_172357_486235_bridge_deck.jpg",
+          "width": 1024,
+          "height": 576,
+          "format": "png"
+        }
+      }
+    ]
+  }
+}

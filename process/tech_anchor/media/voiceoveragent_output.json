@@ -1,0 +1,33 @@
+{
+  "content": {
+    "language": "en",
+    "voice": "",
+    "voice_instructions": "Male presenter in his late 30s delivering a professional news broadcast. Deep, authoritative, and perfectly articulated English with a neutral General American broadcast accent. Maintains a calm, steady, and measured pace suitable for global technology news reporting, projecting clarity, poise, and journalistic objectivity throughout.",
+    "shots": [
+      {
+        "shot_id": "sh_001",
+        "vo_lines": [
+          "Welcome to Tech Update. Today, DeepSeek releases open-weights model R1, quantum hardware crosses a key error threshold, and the EU AI Act enters into force. DeepSeek R1 offers frontier reasoning at a fraction of standard training costs."
+        ]
+      },
+      {
+        "shot_id": "sh_002",
+        "vo_lines": [
+          "The release triggered a massive global selloff in AI stocks, wiping nearly 590 billion dollars from Nvidia in a single session. Meanwhile, Google unveiled its Willow quantum chip."
+        ]
+      },
+      {
+        "shot_id": "sh_003",
+        "vo_lines": [
+          "Willow proved that adding physical qubits reduces error rates, crossing a crucial milestone in quantum error correction. In global policy, the European Union's comprehensive AI Act has officially entered into force."
+        ]
+      },
+      {
+        "shot_id": "sh_004",
+        "vo_lines": [
+          "The law phases in obligations by risk tier, targeting unacceptable risks and general-purpose AI models throughout 2025. That covers today's bulletin. Thank you for watching."
+        ]
+      }
+    ]
+  }
+}

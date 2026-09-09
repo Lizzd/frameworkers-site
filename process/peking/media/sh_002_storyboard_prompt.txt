@@ -1,0 +1,29 @@
+[ASPECT & GRID]
+1536x1024 widescreen, 5 panels arranged in a 3x2 grid (panel 1 = top-left, panel 5 = bottom-center; reading order: top row left-to-right, then next row left-to-right). Equal panel size, 2px white border between panels. Grid mapping by panel count: N=5 -> 3x2 with the sixth cell as solid neutral gray.
+
+[STYLE FOUNDATION]
+风格化 3D 卡通动画电影（皮克斯 / 梦工厂式渲染：明显卡通化的造型与比例、干净的卡通材质与大色块、柔和卡通布光；明确是动画角色，非写实、非真人、非照片、非 CG 写实），浓烈红黑对比，沉重悲怆的史诗基调。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). All locations across all panels match the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Color palette and lighting key from the style anchor ref apply uniformly across all panels.
+
+[PANEL 1]
+Use the FRONT section of the apprentice_ming character anchor. A low angle medium close-up in the dark theatre_stage. Ming, wearing his plain white water-shirt with a sweat-drenched cuff, leans forward desperately. His trembling hand is extended into a sharp, warm yellow cone of spotlight, tightly pinching a shiny red boat ticket. Ming's face is slightly out-of-focus in the background, showing high anxiety with the red tape mark on his forehead, while the red ticket in the foreground is sharply focused under the dramatic light.
+
+[PANEL 2]
+Use the FRONT sections for both master_qiu and apprentice_ming. An extreme close-up of their hands colliding under the harsh spotlight. Qiu's rough, heavily calloused hand (from his right side) strikes down like an eagle claw, his thumb forcefully pressing onto Ming's pale, sweating wrist. Underneath Qiu's thumb, the red boat ticket is being aggressively crushed and wrinkled. The background is pure dark theatre void, emphasizing the physical tension and weight of the master's overpowering grip.
+
+[PANEL 3]
+Use the FACE section of the master_qiu character anchor. A low angle close-up of Qiu. He suddenly straightens his spine, locking his broad shoulders into an incredibly rigid, imposing Peking Opera "Overlord" stance. His face features cracked, peeling black-and-white theatrical paint and deep wrinkles. Dramatic rim lighting highlights the heavy, worn black-gold "kao" armor. He looks down with a deeply tragic yet unyielding, heroic stubbornness.
+
+[PANEL 4]
+Use the FACE section of the apprentice_ming character anchor. An extreme close-up of Ming's face. His pupils are dilated in shock. A single, distinct tear rolls down his cheek, washing away a streak of the residual white makeup powder to reveal the warm flesh tone underneath. His lips are slightly parted in speechless devastation. Soft bounce lighting catches the glint of the tear, with heavy shadows framing the edges of his face.
+
+[PANEL 5]
+Use the BACK/extrapolated pose from FRONT for master_qiu and the FRONT section of the theatre_stage location anchor. A low angle medium wide shot from behind Qiu. Qiu aggressively turns his back to Ming and the camera. The sudden motion kicks up a thick cloud of dust illuminated by the conical yellow spotlight. The four worn flags on his back swing dynamically with a "swishing" motion, fanning out dramatically in silhouette against the glowing dust. Ming is visible in the lower foreground, blurred and defeated.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall (e.g. ~150-180 px tall on a 1024-px-tall sheet), clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels. (Index labels are part of the rendered image, NOT added post-render.)
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are PREVIOUS-SHOT storyboards (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to maintain CROSS-SHOT continuity in: color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality — so the final cut sequence flows smoothly. Identity (character / location / ship details) is still locked exclusively by the FIRST 3 refs (character anchors / location anchor / style anchor).

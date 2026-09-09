@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean architectural documentary animation with realistic textures and natural lighting. Crisp grey limestone masonry, hand-dressed mortar joints, green oak timbering, and calm river reflections, composed with spacious framing along the lower third.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 medium -> P2 detail -> P3 wide -> P4 close-up
+
+[PANEL 1]
+SHOT: medium, low-angle.
+PLACEMENT: A rectangular wooden mixing trough is bound flat on the ground; hot mortar rises in steam inside it.
+ACTION: Hot-mixed lime mortar slakes actively inside a wooden trough, releasing thin wisps of steam as it is stirred.
+ENV: Refer to loc_bridge_joints anchor FRONT section. Shaded masonry work area under ambient natural sky.
+
+[PANEL 2]
+SHOT: detail, eye-level.
+PLACEMENT: Clean coarse river sand particles and white quicklime powder are bound in a split side-by-side arrangement inside a wooden container.
+ACTION: Visual demonstration of six parts river sand combined with one part quicklime without modern portland cement.
+ENV: Refer to loc_bridge_joints anchor FRONT section. High-contrast macro lighting showing aggregate sand grains.
+
+[PANEL 3]
+SHOT: wide, low-angle.
+PLACEMENT: Heavy green oak timber arches are bound underneath the curved stone vault, anchored into the riverbed footings.
+ACTION: The massive green oak timber centring frame stands complete supporting the curved vault span.
+ENV: Refer to loc_bridge_joints anchor FRONT section. Natural river environment with sunlight filtering through timber beams.
+
+[PANEL 4]
+SHOT: close-up, eye-level.
+PLACEMENT: A hand-dressed limestone block is bound seated firmly on a soft layer of lime mortar atop the oak centring frame.
+ACTION: Replacement limestone arch blocks are set snugly onto hot-mixed lime mortar joints along the oak centring curve.
+ENV: Refer to loc_bridge_joints anchor FRONT section. Squeezed mortar forming clean tight joints between stone blocks.
+
+[RENDERED TEXT]
+Do NOT draw panel numbers, index digits, letters, or any other grid / reading-order marking anywhere on the sheet.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 1 refs (character / prop / location anchors).

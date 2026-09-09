@@ -1,0 +1,23 @@
+{
+  "content": {
+    "language": "en",
+    "clips": [
+      {
+        "kind": "speech",
+        "audio_summary": "A male speaker with a deep, resonant tone narrates the history and meticulous restoration of an ancient stone bridge in English.",
+        "duration_s": 123.51,
+        "audio_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic14_bridge/workspace_global_20260803_172357/inputs/20260803_172357_536653_craftsman_narration.wav"
+        }
+      },
+      {
+        "kind": "music",
+        "audio_summary": "A collection of gentle acoustic guitar instrumental pieces featuring delicate fingerstyle picking and arpeggiated chords, creating a peaceful and reflective atmosphere.",
+        "duration_s": 124.0,
+        "audio_asset": {
+          "uri": "/home/zhendong_li/FrameWorkers/Runtime/topic14_bridge/workspace_global_20260803_172357/inputs/20260803_172357_725279_string_music.wav"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "content": {
+    "title": "Ember & Oak - Morning Ritual",
+    "logline": "A warm, slow-paced lifestyle ad focusing on the tactile beauty of morning pour-over coffee to sell the cozy comfort of Ember & Oak Coffee Roasters.",
+    "setting": "A premium cozy minimalist kitchen with rich dark oak countertops, soft morning sunlight streaming through a window, dust motes dancing in the light, and elegant coffee brewing equipment.",
+    "style_anchor": "写实温暖生活方式短片。Soft, warm morning sunlight, natural wood textures, slow-motion steam, high-end lifestyle product cinematography, organic tones, and gentle cinematic contrast.",
+    "dialogue_language": "en",
+    "subtitle_language": "en",
+    "characters": [
+      {
+        "id": "narrator",
+        "role": "narrator",
+        "look_description": "",
+        "voice_description": "Warm, deep, slow-paced, soothing, reassuring male voice with an English accent.",
+        "on_screen": false,
+        "reference_image_index": null
+      }
+    ],
+    "props": [
+      {
+        "id": "ember_oak_coffee_bag",
+        "look_description": "A premium minimalist matte white stand-up coffee bag featuring the Ember & Oak logo: a clean brown oak leaf outline enclosing a warm orange flame.",
+        "reference_image_index": 1
+      },
+      {
+        "id": "coffee_dripper_setup",
+        "look_description": "Elegant minimalist ceramic coffee dripper, a glass server, and a sleek matte black gooseneck kettle.",
+        "reference_image_index": null
+      }
+    ],
+    "locations": [
+      {
+        "id": "sunlit_kitchen_counter",
+        "look_description": "A quiet, cozy kitchen scene with dark oak wood countertops bathed in soft, golden morning sunlight filtering through a nearby window.",
+        "reference_image_index": null
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "sh_001",
+        "duration_s": 15.0,
+        "narrative_purpose": "Hook the viewer with the peaceful atmosphere of a morning coffee brewing ritual.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.0
+            ],
+            "categories": [
+              "establishing_wide",
+              "lifestyle_use"
+            ],
+            "moment_description": "Warm golden morning sunlight spills across a serene wooden kitchen counter, softly illuminating the matte white coffee bag next to a clean glass server.",
+            "dialogue": null,
+            "characters_present": [
+              "ember_oak_coffee_bag"
+            ]
+          },
+          {
+            "time_range": [
+              3.0,
+              6.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "Richly textured ground coffee beans fall in slow motion into a ceramic dripper, creating a neat, dark brown cone against the clean white ceramic.",
+            "dialogue": null,
+            "characters_present": [
+              "coffee_dripper_setup"
+            ]
+          },
+          {
+            "time_range": [
+              6.0,
+              9.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "A precise, steady stream of hot water pours from a matte black gooseneck kettle, drawing slow, perfect concentric circles over the coffee grounds.",
+            "dialogue": null,
+            "characters_present": [
+              "coffee_dripper_setup"
+            ]
+          },
+          {
+            "time_range": [
+              9.0,
+              12.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "Close-up of the coffee blooming as warm steam gently rises, bubbles slowly forming and expanding on the glistening dark coffee bed.",
+            "dialogue": null,
+            "characters_present": [
+              "coffee_dripper_setup"
+            ]
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "lifestyle_use"
+            ],
+            "moment_description": "Dark, rich freshly brewed coffee drips steadily from the bottom of the dripper into the glass server below, creating gentle ripples.",
+            "dialogue": null,
+            "characters_present": [
+              "coffee_dripper_setup"
+            ]
+          }
+        ],
+        "primary_location": "sunlit_kitchen_counter",
+        "notes": "VO: (Gentle acoustic guitar begins playing softly) Quiet the mind. Savor the morning.",
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_002",
+        "duration_s": 15.0,
+        "narrative_purpose": "Establish the product hero and present the elegant, calm brand slogan.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.0
+            ],
+            "categories": [
+              "lifestyle_use",
+              "product_hero"
+            ],
+            "moment_description": "A steaming, warm ceramic mug filled with fresh coffee sits in the foreground, with the elegant Ember & Oak coffee bag standing beside it.",
+            "dialogue": null,
+            "characters_present": [
+              "ember_oak_coffee_bag"
+            ]
+          },
+          {
+            "time_range": [
+              3.0,
+              6.5
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "The camera shifts focus directly onto the Ember & Oak coffee bag, capturing the detailed texture of the minimalist brown oak leaf and orange flame logo.",
+            "dialogue": null,
+            "characters_present": [
+              "ember_oak_coffee_bag"
+            ]
+          },
+          {
+            "time_range": [
+              6.5,
+              9.5
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "Wisps of warm steam float gently across the coffee bag in the soft morning light, creating an atmosphere of cozy comfort.",
+            "dialogue": null,
+            "characters_present": [
+              "ember_oak_coffee_bag"
+            ]
+          },
+          {
+            "time_range": [
+              9.5,
+              12.0
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "The background slowly transitions to a clean, warm, solid off-white screen, with the Ember & Oak leaf-and-flame logo fading softly into the center.",
+            "dialogue": null,
+            "characters_present": [
+              "ember_oak_coffee_bag"
+            ]
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "product_hero"
+            ],
+            "moment_description": "The elegant minimalist logo holds in perfect clarity at the center of the warm off-white background, surrounded by a soft golden halo.",
+            "dialogue": null,
+            "characters_present": [
+              "ember_oak_coffee_bag"
+            ]
+          }
+        ],
+        "primary_location": "sunlit_kitchen_counter",
+        "notes": "VO: Ember & Oak Coffee Roasters. Slow down, savor the warmth.",
+        "audit_notes": ""
+      }
+    ]
+  }
+}

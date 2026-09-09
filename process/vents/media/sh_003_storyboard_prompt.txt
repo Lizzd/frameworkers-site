@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 medium -> P2 medium -> P3 close-up -> P4 wide
+
+[PANEL 1]
+SHOT: medium low-angle
+PLACEMENT: Towering black smoker chimney orifice anchored in lower center frame.
+ACTION: Swirling black mineral plume spewing intensely from the chimney nozzle into surrounding ocean water.
+ENV: Dark abyssal ocean background with high-contrast black fluid discharge.
+
+[PANEL 2]
+SHOT: medium eye-level
+PLACEMENT: Anchor prop temp_depth_graph overlaying the center frame.
+ACTION: Graphic line graph plotting a smooth cyan seawater temperature baseline alongside a steep red thermal spike.
+ENV: Dark ocean backdrop with glowing 2D vector infographic elements.
+
+[PANEL 3]
+SHOT: close-up eye-level
+PLACEMENT: Anchor prop temp_depth_graph focused on thermal peak marker in upper frame.
+ACTION: Graphic thermal curve peaking near 400 degrees Celsius while the fluid stream stays entirely liquid without bubbles.
+ENV: High-tech vector graphic overlay set against deep blue ocean gradients.
+
+[PANEL 4]
+SHOT: wide eye-level
+PLACEMENT: Hydrothermal plume column in central frame.
+ACTION: Downward vector pressure arrows pressing uniformly against the superheated fluid stream.
+ENV: Abyssal water column with symmetrical graphic overlay arrows indicating heavy hydrostatic pressure.
+
+[RENDERED TEXT]
+No panel numbers or captions. Minimal axis numbers on the graph overlay in English.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 2 refs (character / prop / location anchors).

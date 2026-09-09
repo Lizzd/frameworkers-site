@@ -1,0 +1,38 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Realistic high-key 3D rendered space sci-fi. Bright white and high-contrast silver-gray color palette. Exposed sun-glare casting sharp, high-exposure dark shadows across massive structures. Blinding cyan and orange engine plumes, clean specular highlights on pristine titanium-composite hull plates, and prismatic lens flares from raw sunlight refracting through orbital dust fields. Clean and crisp visual purity without cockpit scenes, interior shots, or HUD overlays.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide -> P2 wide -> P3 medium -> P4 medium
+
+[PANEL 1]
+SHOT: high-angle wide-shot.
+PLACEMENT: The micro-scale fighter_craft (prop_anchor: fighter_craft) is in the upper-left, diving downwards. It is tiny compared to a massive, kilometers-long white titanium dreadnought floating horizontally across the lower frame.
+ACTION: The fighter_craft glides silently down towards the giant ship's surface.
+ENV: Outer space (location_anchor: blockade_sector_alpha). The horizon of a massive golden-hued gas giant fills the lower background. Sharp cosmic shadows sweep across the dreadnought's white hull.
+
+[PANEL 2]
+SHOT: wide-shot.
+PLACEMENT: The camera tracks behind the fighter_craft (prop_anchor: fighter_craft), positioned center-frame and angled slightly downward. Defensive laser beams cross the space around it.
+ACTION: The fighter_craft streaks forward, its dual engines firing, emitting a blindingly bright cyan trail.
+ENV: Outer space defense perimeter. Beams of intense white defensive lasers slice through the dark space, illuminating reflective metallic dust.
+
+[PANEL 3]
+SHOT: medium-shot.
+PLACEMENT: Low-angle close-range tracking shot behind the fighter_craft (prop_anchor: fighter_craft), positioned center-left. The dreadnought's complex mechanical trench walls rise towering on both sides.
+ACTION: The fighter_craft flies at high speed through a deep, canyon-like trench of the giant warship.
+ENV: Complex mechanical textures of modular white armor plates, glowing conduits, and massive gun turrets scroll past. Sharp structural shadows cross the frame.
+
+[PANEL 4]
+SHOT: medium-shot.
+PLACEMENT: The fighter_craft (prop_anchor: fighter_craft) is banked hard at a steep angle in the lower-right third of the frame, leaving a ribbon-like trail. Towering communication spires stand in the background.
+ACTION: The fighter craft turns sharply, its thrusters firing bright cyan gas plumes.
+ENV: The surface of the giant warship with a brilliant, blinding solar lens flare refracting across the lens, highlighting the polished white composite plates.
+
+[PANEL INDEX LABELS]
+In each panel's TOP-LEFT corner, render a LARGE BOLD WHITE numeric label ("1", "2", "3", ... matching the panel's order). The numeric must be approximately 1/5 of the panel's short edge tall, clearly dominant against the panel content, with a thin black outline / drop shadow for legibility on any background. This is the ONLY rendered text allowed — do NOT add other captions, timestamps, dialogue subtitles, watermarks, or labels inside panels.

@@ -1,0 +1,44 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel.
+
+[STYLE FOUNDATION]
+Cinematic 3D animation style with crisp lighting, rich outdoor textures, earthy olive and slate color palette, and warm morning sunlight accents.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 wide -> P2 medium -> P3 medium -> P4 detail -> P5 wide
+
+[PANEL 1]
+SHOT: wide, high viewpoint.
+PLACEMENT: Panoramic alpine scenery; towering granite peaks and misty pine valleys occupy full frame width without human figures.
+ACTION: Golden morning light breaks past sharp mountain ridges, illuminating soft fog rising from green pine forests below.
+ENV: Mountain valley filled with misty pine trees, crisp atmospheric depth under early sunlight, referencing mountain_trail location anchor (FRONT section).
+
+[PANEL 2]
+SHOT: medium, eye-level.
+PLACEMENT: main_character standing on dirt trail, boots firmly planted on soil, head positioned in top third of frame; referencing FRONT section of main_character anchor.
+ACTION: main_character reaches right hand up to adjust olive jacket backpack strap while gazing upward toward distant summit peaks.
+ENV: Forest path bordered by tall pine trunks, dappled morning sunlight filtering through needle canopy, referencing mountain_trail location anchor (FRONT section).
+
+[PANEL 3]
+SHOT: medium, eye-level.
+PLACEMENT: main_character in mid-stride along dirt path, left boot forward on ground, right leg pushed off behind; referencing FRONT section of main_character anchor.
+ACTION: main_character walks steadily forward along winding path, arms swinging naturally in continuous movement.
+ENV: Dirt hiking path surrounded by rocky banks and pine trees, warm golden morning sunbeams across trail, referencing mountain_trail location anchor (FRONT section).
+
+[PANEL 4]
+SHOT: detail, low viewpoint.
+PLACEMENT: main_character lower leg and boot planted firmly on granite boulder edge; main_character olive jacket sleeve and wrist enter frame from top corner to maintain body connection; referencing main_character anchor.
+ACTION: Sturdy hiking boot stepping firmly onto rough rock surface as breeze sways dark braid tips.
+ENV: Sunlit granite rock ledge with small loose gravel, referencing mountain_trail location anchor (FRONT section).
+
+[PANEL 5]
+SHOT: wide, eye-level.
+PLACEMENT: main_character standing near center of open mountain ridge, both feet grounded on stone outcrop, figure framed small against vast background landscape; referencing FRONT section of main_character anchor.
+ACTION: main_character pauses stationary on ridge, looking across sweeping valley vistas.
+ENV: Exposed mountain ridge with panoramic view of pine valleys and distant sunlit peaks, referencing mountain_trail location anchor (OVERHEAD section).
+
+[RENDERED TEXT]
+(none for this shot)

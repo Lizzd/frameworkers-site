@@ -1,0 +1,10 @@
+{
+  "content": {
+    "tracks": [
+      {
+        "language": "en",
+        "srt_text": "1\n00:00:00,000 --> 00:00:15,103\nWelcome to Tech Update. Today, DeepSeek releases open-weights model R1, quantum hardware crosses a key error threshold, and the EU AI Act enters into force. DeepSeek R1 offers frontier reasoning at a fraction of standard training costs.\n\n2\n00:00:15,353 --> 00:00:28,433\nThe release triggered a massive global selloff in AI stocks, wiping nearly 590 billion dollars from Nvidia in a single session. Meanwhile, Google unveiled its Willow quantum chip.\n\n3\n00:00:30,186 --> 00:00:45,241\nWillow proved that adding physical qubits reduces error rates, crossing a crucial milestone in quantum error correction. In global policy, the European Union's comprehensive AI Act has officially entered into force.\n\n4\n00:00:45,491 --> 00:00:57,891\nThe law phases in obligations by risk tier, targeting unacceptable risks and general-purpose AI models throughout 2025. That covers today's bulletin. Thank you for watching.\n"
+      }
+    ]
+  }
+}

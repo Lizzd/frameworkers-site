@@ -1,0 +1,98 @@
+{
+  "content": {
+    "language": "en",
+    "segments": [
+      {
+        "segment_id": "seg_001",
+        "start_time": 0.0,
+        "end_time": 5.5,
+        "text": "The Pont de la Roche-Veyre was completed in 1387."
+      },
+      {
+        "segment_id": "seg_002",
+        "start_time": 5.5,
+        "end_time": 13.3,
+        "text": "It carries a single segmental arch of 22 meters over the Vère,"
+      },
+      {
+        "segment_id": "seg_003",
+        "start_time": 13.3,
+        "end_time": 18.3,
+        "text": "and it has stood for 639 years."
+      },
+      {
+        "segment_id": "seg_004",
+        "start_time": 18.3,
+        "end_time": 29.8,
+        "text": "The stone is a local gray limestone, quarried at Saint-Martin-de-Vers, 4 kilometers upstream."
+      },
+      {
+        "segment_id": "seg_005",
+        "start_time": 29.8,
+        "end_time": 39.5,
+        "text": "We went back to the same quarry for this work so that every replacement block came out of the same bed as the original."
+      },
+      {
+        "segment_id": "seg_006",
+        "start_time": 39.5,
+        "end_time": 44.62,
+        "text": "The river has taken the bridge three times."
+      },
+      {
+        "segment_id": "seg_007",
+        "start_time": 44.62,
+        "end_time": 51.17,
+        "text": "The flood of 1612 carried away the Eastern parapet."
+      },
+      {
+        "segment_id": "seg_008",
+        "start_time": 51.17,
+        "end_time": 58.55,
+        "text": "In 1875, the Western cutwater was undermined and lost."
+      },
+      {
+        "segment_id": "seg_009",
+        "start_time": 58.55,
+        "end_time": 67.32,
+        "text": "And in October 2019, a hundred year flood opened a crack through the arch ring itself."
+      },
+      {
+        "segment_id": "seg_010",
+        "start_time": 67.32,
+        "end_time": 71.99,
+        "text": "We rebuilt it the way it was built."
+      },
+      {
+        "segment_id": "seg_011",
+        "start_time": 71.99,
+        "end_time": 82.34,
+        "text": "The blocks were dressed by hand with a point chisel and a bush hammer, no power tools on any visible face."
+      },
+      {
+        "segment_id": "seg_012",
+        "start_time": 82.34,
+        "end_time": 94.09,
+        "text": "They were set in a hot mixed lime mortar, six parts sand to one part quicklime, with no cement anywhere in the structure."
+      },
+      {
+        "segment_id": "seg_013",
+        "start_time": 94.09,
+        "end_time": 100.74,
+        "text": "The arch was reset on a timber centering built on site from green oak."
+      },
+      {
+        "segment_id": "seg_014",
+        "start_time": 100.74,
+        "end_time": 114.74,
+        "text": "The work took 19 months. Four masons, one carpenter, and one apprentice who is now a mason."
+      },
+      {
+        "segment_id": "seg_015",
+        "start_time": 114.74,
+        "end_time": 123.51,
+        "text": "The bridge is open again. It is expected to stand another 600 years."
+      }
+    ],
+    "full_text": "The Pont de la Roche-Veyre was completed in 1387. It carries a single segmental arch of 22 meters over the Vère, and it has stood for 639 years. The stone is a local gray limestone, quarried at Saint-Martin-de-Vers, 4 kilometers upstream. We went back to the same quarry for this work so that every replacement block came out of the same bed as the original. The river has taken the bridge three times. The flood of 1612 carried away the Eastern parapet. In 1875, the Western cutwater was undermined and lost. And in October 2019, a hundred year flood opened a crack through the arch ring itself. We rebuilt it the way it was built. The blocks were dressed by hand with a point chisel and a bush hammer, no power tools on any visible face. They were set in a hot mixed lime mortar, six parts sand to one part quicklime, with no cement anywhere in the structure. The arch was reset on a timber centering built on site from green oak. The work took 19 months. Four masons, one carpenter, and one apprentice who is now a mason. The bridge is open again. It is expected to stand another 600 years."
+  }
+}

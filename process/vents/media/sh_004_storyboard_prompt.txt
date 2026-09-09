@@ -1,0 +1,41 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 4 panels arranged in a 2×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 4 = bottom-right.
+
+[STYLE FOUNDATION]
+Clean 2D vector explainer animation with stylized motion graphic overlays. Deep ocean cool palette featuring dark blues, teals, slate grays, and vivid warm accents for geothermal heat and biological structures. Smooth flat graphics with subtle depth, soft lighting gradients, and frame composition weighted high with generous clean lower negative space.
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY. The location across all panels matches the attached location anchor ref EXACTLY (deep_sea_hydrothermal_vent). Palette and lighting key come from [STYLE FOUNDATION] and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 close-up -> P2 detail -> P3 medium -> P4 wide
+
+[PANEL 1]
+SHOT: close-up eye-level
+PLACEMENT: Mineral chimney nozzle filling lower half of frame.
+ACTION: Dense dark mineral clouds expanding outward from chimney opening into cold seawater.
+ENV: Dark basalt chimney structure contrasted against deep dark-blue water.
+
+[PANEL 2]
+SHOT: detail microscopic view
+PLACEMENT: Molecular graphic symbols distributed across central frame.
+ACTION: Dissolved metallic icons combining rapidly into geometric solid mineral crystals.
+ENV: Clean stylized dark microscopic background with glowing metallic vector elements.
+
+[PANEL 3]
+SHOT: medium eye-level
+PLACEMENT: Thermal boundary zone centered horizontally.
+ACTION: Hot red mineral stream encountering cold cyan ambient seawater with subtle boundary gradients.
+ENV: Dark abyssal ocean water showing sharp thermal gradient visualization.
+
+[PANEL 4]
+SHOT: wide eye-level
+PLACEMENT: Chimney column structure rising vertically in central frame.
+ACTION: Dark crystallized mineral particles cascading down onto outer chimney walls, increasing structure height.
+ENV: Mineral chimney spire on dark seafloor surrounded by subtle mineral dust clouds.
+
+[RENDERED TEXT]
+No panel numbers, captions, or watermarks.
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 1 refs (character / prop / location anchors).

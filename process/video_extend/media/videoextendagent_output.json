@@ -1,0 +1,10 @@
+{
+  "content": {
+    "language": "zh",
+    "extension_spec": {
+      "continuation_prompt": "An empty subway carriage in a rainy night, maintaining the exact same 2D hand-drawn anime art style. The camera extremely slowly dollys forward into the aisle. On the dark window, rain streaks slide down dynamically. The overhead warm lights of the train carriage gently sway and flicker, casting moving soft shadows. The overall illumination gradually and subtly dims, gently fading to black towards the end of the clip, evoking a quiet, melancholic atmosphere. No new characters or settings appear.",
+      "target_duration_seconds": 5.0,
+      "motion_description": "Extremely slow camera dolly forward with subtle handheld sway, accompanied by the gentle swaying movement of overhead lights and sliding rain on the window, concluding with a slow fade-out of light."
+    }
+  }
+}
