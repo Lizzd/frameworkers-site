@@ -1,0 +1,56 @@
+{
+  "content": {
+    "language": "zh",
+    "clips": [
+      {
+        "shot_id": "sh_001",
+        "duration_sec": 5.0,
+        "scene_id": "sc_001"
+      },
+      {
+        "shot_id": "sh_002",
+        "duration_sec": 5.0,
+        "scene_id": "sc_002"
+      },
+      {
+        "shot_id": "sh_003",
+        "duration_sec": 5.0,
+        "scene_id": "sc_002"
+      },
+      {
+        "shot_id": "sh_004",
+        "duration_sec": 5.0,
+        "scene_id": "sc_002"
+      }
+    ],
+    "assembly": {
+      "shot_order": [
+        "sh_001",
+        "sh_002",
+        "sh_003",
+        "sh_004"
+      ],
+      "scene_order": [
+        "sc_001",
+        "sc_002"
+      ],
+      "transitions": [
+        {
+          "from_shot_id": "sh_001",
+          "to_shot_id": "sh_002",
+          "transition_type": "cut"
+        },
+        {
+          "from_shot_id": "sh_002",
+          "to_shot_id": "sh_003",
+          "transition_type": "cut"
+        },
+        {
+          "from_shot_id": "sh_003",
+          "to_shot_id": "sh_004",
+          "transition_type": "cut"
+        }
+      ]
+    }
+  }
+}

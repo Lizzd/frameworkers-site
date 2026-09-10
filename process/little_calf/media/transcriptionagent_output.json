@@ -1,0 +1,50 @@
+{
+  "content": {
+    "language": "zh",
+    "segments": [
+      {
+        "segment_id": "seg_001",
+        "start_time": 4.85,
+        "end_time": 6.6,
+        "text": "快点儿，看你身后！"
+      },
+      {
+        "segment_id": "seg_002",
+        "start_time": 13.2,
+        "end_time": 14.8,
+        "text": "啊，蛇！"
+      },
+      {
+        "segment_id": "seg_003",
+        "start_time": 14.8,
+        "end_time": 17.0,
+        "text": "救命啊！"
+      },
+      {
+        "segment_id": "seg_004",
+        "start_time": 34.9,
+        "end_time": 36.35,
+        "text": "这又怎么了？"
+      },
+      {
+        "segment_id": "seg_005",
+        "start_time": 36.8,
+        "end_time": 39.5,
+        "text": "跳小河，撞树上了。"
+      },
+      {
+        "segment_id": "seg_006",
+        "start_time": 40.25,
+        "end_time": 42.8,
+        "text": "那哭的不该是树吗？"
+      },
+      {
+        "segment_id": "seg_007",
+        "start_time": 49.8,
+        "end_time": 52.8,
+        "text": "对了，他妈去哪儿了？"
+      }
+    ],
+    "full_text": "快点儿，看你身后！ 啊，蛇！ 救命啊！ 这又怎么了？ 跳小河，撞树上了。 那哭的不该是树吗？ 对了，他妈去哪儿了？"
+  }
+}

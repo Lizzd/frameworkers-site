@@ -1,0 +1,1022 @@
+{
+ "key": "little_calf",
+ "title": "Run, Little Calf",
+ "genre": "3D · Family Comedy",
+ "cat": "Narrative",
+ "prompt": "A one-minute 3D cartoon comedy, asked for over two turns. Turn one: on a sunlit slope a little orange calf stands daydreaming when a palm-sized red bird dives past yelling 'Quick, look behind you!'; he turns to find a chopstick-thin white snake stood bolt upright and staring back, screams and bolts, tears through the woods, clears the creek in one leap and runs face-first into a tree. Nursing his nose among the falling leaves he wails; his father — a burly orange-brown bull with long curved horns, slow of speech and long past being surprised by his son — ambles over, hears 'I jumped the creek and hit the tree,' looks the now-bare tree up and down and wonders aloud whether the tree shouldn't be the one crying. The bird lands at their hooves, the father asks it where the boy's mother has got to, and father and son freeze mid-glance. Bright, saturated cartoon-CG 3D animation, colloquial Mandarin dialogue, landscape 16:9, native foley throughout, and the brief expressly forbids any lettering on screen. Turn two asks for the opposite: with the cut already rendered, add Chinese subtitles without re-rendering a single shot — so the dialogue already carried in the clips' own audio is transcribed and burned in, and only the composite is rebuilt.",
+ "source": {
+  "type": "workspace",
+  "path": "Runtime/topic45_little_calf/workspace_global_20260909_232602"
+ },
+ "generated_at": "2026-09-10T17:30:51+00:00",
+ "stages": [
+  {
+   "id": "Inputs",
+   "agent": "user",
+   "label": "Inputs",
+   "step": "",
+   "order": 0,
+   "n": 3
+  },
+  {
+   "id": "NarrativeAgent__step_1_ba856508",
+   "agent": "NarrativeAgent",
+   "label": "Narrative",
+   "step": "step_1_ba856508",
+   "order": 1,
+   "n": 1
+  },
+  {
+   "id": "KeyframeSheetAgent__step_2_a286a2b5",
+   "agent": "KeyframeSheetAgent",
+   "label": "KeyframeSheet",
+   "step": "step_2_a286a2b5",
+   "order": 2,
+   "n": 21
+  },
+  {
+   "id": "ShotPromptAgent__step_3_d56b34af",
+   "agent": "ShotPromptAgent",
+   "label": "ShotPrompt",
+   "step": "step_3_d56b34af",
+   "order": 3,
+   "n": 5
+  },
+  {
+   "id": "ClipAgent__step_4_cf97861d",
+   "agent": "ClipAgent",
+   "label": "Clip",
+   "step": "step_4_cf97861d",
+   "order": 4,
+   "n": 6
+  },
+  {
+   "id": "CompositorAgent__step_5_b1f11325",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_5_b1f11325",
+   "order": 5,
+   "n": 2
+  },
+  {
+   "id": "TranscriptionAgent__step_1_e8661d6c",
+   "agent": "TranscriptionAgent",
+   "label": "Transcription",
+   "step": "step_1_e8661d6c",
+   "order": 6,
+   "n": 1
+  },
+  {
+   "id": "CompositorAgent__step_2_41618de4",
+   "agent": "CompositorAgent",
+   "label": "Compositor",
+   "step": "step_2_41618de4",
+   "order": 7,
+   "n": 2
+  }
+ ],
+ "nodes": [
+  {
+   "id": "creative_brief",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260909_232608_383128.json",
+   "bytes": 3010,
+   "caption": "Structured metadata document (JSON) for the user's own typed brief — the instruction describing WHAT TO MAKE. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/little_calf/media/creative_brief.json",
+   "excerpt": "{\"text\": \"# Brief（去片名、去角色名版）\\n\\n一部一分钟的三维动画喜剧短片，画风是明亮饱和的卡通 CG，森林与小河的自然场景。\\n\\n片名固定为《小牛快跑》。主角是小牛，片名和 logline 都必须以小牛为中心。吓跑小牛的是一条小白蛇；小红鸟是会说话的配角，不要出现在片名里。\\n\\n角色（只有两头牛，是父子）：\\n- 小牛（主角，儿子）：一头橙黄色的卡通小牛，个头只到爸爸的腰，两脚站立走路，圆脸、大眼睛、大耳朵、宽鼻头、短短的小角，胆小、好奇、爱大惊小怪。所有角色都是拟人化的卡通动物，不是人类。\\n- 牛爸爸：一头橙棕色的壮年公牛，头顶一对又粗又长的弯角，两脚站立，眉头常皱着，说话慢条斯理，对儿子的闯祸见怪不怪，…"
+  },
+  {
+   "id": "creative_brief_2",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260910_171403_142965.json",
+   "bytes": 411,
+   "caption": "Structured metadata document (JSON) for the user's own typed brief — the instruction describing WHAT TO MAKE. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/little_calf/media/creative_brief_2.json",
+   "excerpt": "{\"text\": \"请给刚生成好的成片《小牛快跑》加上中文字幕。对白已经在各镜头的音轨里，不要重新生成任何镜头或分镜，只需要把对白转写出来、烧录成中文字幕，然后重新输出成片。\"}"
+  },
+  {
+   "id": "creative_brief_3",
+   "stage": "Inputs",
+   "kind": "json",
+   "label": "creative brief",
+   "src_name": "brief_20260910_171831_916862.json",
+   "bytes": 414,
+   "caption": "Structured metadata document (JSON) for the user's own typed brief — the instruction describing WHAT TO MAKE. Payload carries the raw text verbatim. Pipeline entry point — consumed by story / screenplay / narration agents.",
+   "scope": "global",
+   "file": "process/little_calf/media/creative_brief_3.json",
+   "excerpt": "{\"text\": \"刚才那一版成片字幕没有烧上去（转写结果是空的）。请重新对最新拼接好的四镜头成片做一次中文转写，把对白烧成中文字幕，重新输出成片。不要重新生成任何镜头或分镜。\"}"
+  },
+  {
+   "id": "narrativeagent_output",
+   "stage": "NarrativeAgent__step_1_ba856508",
+   "kind": "json",
+   "label": "NarrativeAgent output",
+   "src_name": "step_1_ba856508_narrativeagent_exec_1.json",
+   "bytes": 15392,
+   "caption": "Shot-rich story: 4 shot(s), 4 character(s) — drives keyframe/storyboard/audio.",
+   "scope": "global",
+   "file": "process/little_calf/media/narrativeagent_output.json",
+   "excerpt": "{\"title\": \"小牛快跑\", \"logline\": \"一头胆小又爱大惊小怪的拟人化小牛因脚边的一条细小白蛇吓得狂奔撞树，在得到父亲不按套路的冷幽默回应后，却发现整个家最关键的人不见了。\", \"setting\": \"卡通奇幻森林与溪畔，全拟人化动物世界；阳光明媚的夏日午后，风格致敬经典欧美合家欢 3D 动画传统。\", \"style_anchor\": \"3D 渲染卡通 CG 风格。高饱和度明快色彩，暖金阳光与葱郁翠绿基调，皮克斯/照明娱乐式圆润平滑材质与蓬松毛发质感，明暗对比柔和通透，欢快幽默合家欢调性。\", \"dialogue_language\": \"Mandarin Chinese\", \"subtitle_language\":…"
+  },
+  {
+   "id": "bull_dad_anchor",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "image",
+   "label": "bull dad anchor",
+   "src_name": "step_2_a286a2b5_img_bull_dad_anchor.png",
+   "bytes": 5125057,
+   "caption": "GENERATED internal identity reference card for character bull_dad — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/little_calf/media/bull_dad_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "forest_creek_anchor",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "image",
+   "label": "forest creek anchor",
+   "src_name": "step_2_a286a2b5_img_forest_creek_anchor.png",
+   "bytes": 6740621,
+   "caption": "GENERATED internal identity reference card for location forest_creek — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/little_calf/media/forest_creek_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "little_calf_anchor",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "image",
+   "label": "little calf anchor",
+   "src_name": "step_2_a286a2b5_img_little_calf_anchor.png",
+   "bytes": 5478876,
+   "caption": "GENERATED internal identity reference card for character little_calf — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/little_calf/media/little_calf_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "meadow_slope_anchor",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "image",
+   "label": "meadow slope anchor",
+   "src_name": "step_2_a286a2b5_img_meadow_slope_anchor.png",
+   "bytes": 7258975,
+   "caption": "GENERATED internal identity reference card for location meadow_slope — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/little_calf/media/meadow_slope_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "red_bird_anchor",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "image",
+   "label": "red bird anchor",
+   "src_name": "step_2_a286a2b5_img_red_bird_anchor.png",
+   "bytes": 4806953,
+   "caption": "GENERATED internal identity reference card for character red_bird — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/little_calf/media/red_bird_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "white_snake_anchor",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "image",
+   "label": "white snake anchor",
+   "src_name": "step_2_a286a2b5_img_white_snake_anchor.png",
+   "bytes": 3775540,
+   "caption": "GENERATED internal identity reference card for character white_snake — NOT a video frame; do not send to the video stage.",
+   "scope": "global",
+   "file": "process/little_calf/media/white_snake_anchor.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "bull_dad_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "text",
+   "label": "bull dad anchor prompt",
+   "src_name": "step_2_a286a2b5_img_bull_dad_anchor_prompt.txt",
+   "bytes": 2088,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the character bull_dad anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/little_calf/media/bull_dad_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): 3D cartoon CG animation render style with Pixar and Illumination family-friendly aesthetic.; Vibrant high-saturation color palette featuring warm golden sunlight and lush emerald greens.; Soft and smooth volumetric shading, translucent rim light…"
+  },
+  {
+   "id": "forest_creek_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "text",
+   "label": "forest creek anchor prompt",
+   "src_name": "step_2_a286a2b5_img_forest_creek_anchor_prompt.txt",
+   "bytes": 2209,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location forest_creek anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/little_calf/media/forest_creek_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): 3D cartoon CG animation render style with Pixar and Illumination family-friendly aesthetic.; Vibrant high-saturation color palette featuring warm golden sunlight and lush emerald greens.; Soft and smooth volumetric shading, translucent rim light…"
+  },
+  {
+   "id": "little_calf_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "text",
+   "label": "little calf anchor prompt",
+   "src_name": "step_2_a286a2b5_img_little_calf_anchor_prompt.txt",
+   "bytes": 2139,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the character little_calf anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/little_calf/media/little_calf_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): 3D cartoon CG animation render style with Pixar and Illumination family-friendly aesthetic.; Vibrant high-saturation color palette featuring warm golden sunlight and lush emerald greens.; Soft and smooth volumetric shading, translucent rim light…"
+  },
+  {
+   "id": "meadow_slope_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "text",
+   "label": "meadow slope anchor prompt",
+   "src_name": "step_2_a286a2b5_img_meadow_slope_anchor_prompt.txt",
+   "bytes": 2183,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the location meadow_slope anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/little_calf/media/meadow_slope_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): 3D cartoon CG animation render style with Pixar and Illumination family-friendly aesthetic.; Vibrant high-saturation color palette featuring warm golden sunlight and lush emerald greens.; Soft and smooth volumetric shading, translucent rim light…"
+  },
+  {
+   "id": "red_bird_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "text",
+   "label": "red bird anchor prompt",
+   "src_name": "step_2_a286a2b5_img_red_bird_anchor_prompt.txt",
+   "bytes": 1990,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the character red_bird anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/little_calf/media/red_bird_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): 3D cartoon CG animation render style with Pixar and Illumination family-friendly aesthetic.; Vibrant high-saturation color palette featuring warm golden sunlight and lush emerald greens.; Soft and smooth volumetric shading, translucent rim light…"
+  },
+  {
+   "id": "white_snake_anchor_prompt",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "text",
+   "label": "white snake anchor prompt",
+   "src_name": "step_2_a286a2b5_img_white_snake_anchor_prompt.txt",
+   "bytes": 2046,
+   "caption": "[TEXT PROMPT] The exact image-model prompt used to render the character white_snake anchor card. Dev/debug record of what was sent to gpt-image-2; not consumed downstream.",
+   "scope": "global",
+   "file": "process/little_calf/media/white_snake_anchor_prompt.txt",
+   "excerpt": "Rendered entirely in this visual style / medium (governs the whole image): 3D cartoon CG animation render style with Pixar and Illumination family-friendly aesthetic.; Vibrant high-saturation color palette featuring warm golden sunlight and lush emerald greens.; Soft and smooth volumetric shading, translucent rim light…"
+  },
+  {
+   "id": "keyframesheetagent_output",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "json",
+   "label": "KeyframeSheetAgent output",
+   "src_name": "step_2_a286a2b5_keyframesheetagent_exec_2.json",
+   "bytes": 22953,
+   "caption": "Sheet-model keyframe package: 6 identity anchor card(s) + 4 per-shot storyboard sheet(s). Drives the downstream image-to-video stage.",
+   "scope": "global",
+   "file": "process/little_calf/media/keyframesheetagent_output.json",
+   "excerpt": "{\"language\": \"zh\", \"anchors\": {\"character_anchors\": [{\"entity_id\": \"little_calf\", \"prompt_summary\": \"A cute bipedal anthropomorphic young calf standing upright, roughly waist-height to an adult bull. He has soft warm amber-yellow short fur, an oversized round head with large expressive black glossy eyes, and a broad pi…"
+  },
+  {
+   "id": "sh_001_storyboard",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "image",
+   "label": "sh 001 storyboard",
+   "src_name": "step_2_a286a2b5_img_sh_001_storyboard.png",
+   "bytes": 5744702,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_001 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/little_calf/media/sh_001_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_001_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "text",
+   "label": "sh 001 storyboard prompt",
+   "src_name": "step_2_a286a2b5_img_sh_001_storyboard_prompt.txt",
+   "bytes": 4131,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_001's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/little_calf/media/sh_001_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. [STYLE F…"
+  },
+  {
+   "id": "sh_002_storyboard",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "image",
+   "label": "sh 002 storyboard",
+   "src_name": "step_2_a286a2b5_img_sh_002_storyboard.png",
+   "bytes": 5303399,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_002 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/little_calf/media/sh_002_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_002_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "text",
+   "label": "sh 002 storyboard prompt",
+   "src_name": "step_2_a286a2b5_img_sh_002_storyboard_prompt.txt",
+   "bytes": 5131,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_002's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/little_calf/media/sh_002_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. [STYLE F…"
+  },
+  {
+   "id": "sh_003_storyboard",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "image",
+   "label": "sh 003 storyboard",
+   "src_name": "step_2_a286a2b5_img_sh_003_storyboard.png",
+   "bytes": 5014369,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_003 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/little_calf/media/sh_003_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_003_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "text",
+   "label": "sh 003 storyboard prompt",
+   "src_name": "step_2_a286a2b5_img_sh_003_storyboard_prompt.txt",
+   "bytes": 4641,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_003's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/little_calf/media/sh_003_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. [STYLE F…"
+  },
+  {
+   "id": "sh_004_storyboard",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "image",
+   "label": "sh 004 storyboard",
+   "src_name": "step_2_a286a2b5_img_sh_004_storyboard.png",
+   "bytes": 5506164,
+   "caption": "INTERMEDIATE storyboard sheet for shot sh_004 — the per-shot multi-panel layout reference consumed ONLY by the image-to-video (Clip) stage to render this shot's motion clip. NOT a final visual track and NOT an illustration / slideshow / still-image frame; the compositor never burns it into the video.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/little_calf/media/sh_004_storyboard.jpg",
+   "w": 2752,
+   "h": 1536
+  },
+  {
+   "id": "sh_004_storyboard_prompt",
+   "stage": "KeyframeSheetAgent__step_2_a286a2b5",
+   "kind": "text",
+   "label": "sh 004 storyboard prompt",
+   "src_name": "step_2_a286a2b5_img_sh_004_storyboard_prompt.txt",
+   "bytes": 4556,
+   "caption": "[TEXT PROMPT] The exact image-model prompt (incl. any continuity clause) used to render shot sh_004's storyboard sheet. Dev/debug record of what was sent to gpt-image-2.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/little_calf/media/sh_004_storyboard_prompt.txt",
+   "excerpt": "[ASPECT & GRID] Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel. [STYLE F…"
+  },
+  {
+   "id": "shotpromptagent_output",
+   "stage": "ShotPromptAgent__step_3_d56b34af",
+   "kind": "json",
+   "label": "ShotPromptAgent output",
+   "src_name": "step_3_d56b34af_shotpromptagent_exec_3.json",
+   "bytes": 18682,
+   "caption": "Per-shot video-generation prompt package: 4 Seedance prompt(s) (9-section), one per shot — pairs with the storyboard sheet to drive the image-to-video clip stage.",
+   "scope": "global",
+   "file": "process/little_calf/media/shotpromptagent_output.json",
+   "excerpt": "[{\"shot_id\": \"sh_001\", \"text_prompt\": \"[设定]\\n卡通奇幻动物森林草坡，阳光明媚的夏日午后，全拟人化动物生态，欢快日常与突发惊吓喜剧，普通话对白。\\n\\n[风格]\\n3D 渲染卡通 CG 风格。欢快幽默、充满动作爆发力与惊险反转的合家欢喜剧调性。\\n\\n[参考图]\\n[Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N…"
+  },
+  {
+   "id": "shot_prompt_sh_001",
+   "stage": "ShotPromptAgent__step_3_d56b34af",
+   "kind": "text",
+   "label": "shot prompt sh 001",
+   "src_name": "step_3_d56b34af_shot_prompt_sh_001.txt",
+   "bytes": 4430,
+   "caption": "video-generation text prompt for shot sh_001 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "file": "process/little_calf/media/shot_prompt_sh_001.txt",
+   "excerpt": "[设定] 卡通奇幻动物森林草坡，阳光明媚的夏日午后，全拟人化动物生态，欢快日常与突发惊吓喜剧，普通话对白。 [风格] 3D 渲染卡通 CG 风格。欢快幽默、充满动作爆发力与惊险反转的合家欢喜剧调性。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不…"
+  },
+  {
+   "id": "shot_prompt_sh_002",
+   "stage": "ShotPromptAgent__step_3_d56b34af",
+   "kind": "text",
+   "label": "shot prompt sh 002",
+   "src_name": "step_3_d56b34af_shot_prompt_sh_002.txt",
+   "bytes": 4097,
+   "caption": "video-generation text prompt for shot sh_002 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "file": "process/little_calf/media/shot_prompt_sh_002.txt",
+   "excerpt": "[设定] 卡通奇幻森林与溪畔，全拟人化动物世界；阳光明媚的夏日午后，欧美经典合家欢动画语言氛围。 [风格] 3D 渲染卡通 CG 风格。欢快幽默的合家欢喜剧基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得再现任何编号、文字或网格线。 本 …"
+  },
+  {
+   "id": "shot_prompt_sh_003",
+   "stage": "ShotPromptAgent__step_3_d56b34af",
+   "kind": "text",
+   "label": "shot prompt sh 003",
+   "src_name": "step_3_d56b34af_shot_prompt_sh_003.txt",
+   "bytes": 4255,
+   "caption": "video-generation text prompt for shot sh_003 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "file": "process/little_calf/media/shot_prompt_sh_003.txt",
+   "excerpt": "[设定] 卡通奇幻森林与溪畔的拟人化动物世界，夏日午后阳光环境，合家欢喜剧动画生活对白。 [风格] 3D 渲染卡通 CG 风格。明快幽默的经典合家欢动画叙事基调。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得再现任何编号、文字或网格线。 本 …"
+  },
+  {
+   "id": "shot_prompt_sh_004",
+   "stage": "ShotPromptAgent__step_3_d56b34af",
+   "kind": "text",
+   "label": "shot prompt sh 004",
+   "src_name": "step_3_d56b34af_shot_prompt_sh_004.txt",
+   "bytes": 4327,
+   "caption": "video-generation text prompt for shot sh_004 — paired with the shot's storyboard sheet, consumed by the image-to-video clip stage.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "file": "process/little_calf/media/shot_prompt_sh_004.txt",
+   "excerpt": "[设定] 拟人化动物森林溪畔，欧美合家欢卡通奇幻氛围，中文普通话口语对话环境。 [风格] 3D 渲染卡通 CG 风格。动作与微表情夸张生动，兼具美式三维动画的弹性形变与冷幽默喜剧调性。 [参考图] [Image 1]：本镜头的分镜网格图 —— 5 个分格按 3×2 网格排列，阅读顺序先上排后下排、每排从左到右（第 1 格 = 左上，第 5 格 = 下排中；右下角为纯灰填充格，不是分格）。这张图是全片外观的唯一权威：每格中角色的脸 / 发型 / 服装 / 体型与场景样貌即为标准，全片保持一致；[镜头]/[时间轴] 中的 镜头N 对应第 N 格的内容。每格左上角的白色编号与格间白线仅是分格索引，不是画面内容 —— 视频中不得再现任何编号…"
+  },
+  {
+   "id": "clip_final",
+   "stage": "ClipAgent__step_4_cf97861d",
+   "kind": "video",
+   "label": "clip final",
+   "src_name": "step_4_cf97861d_clip_final.mp4",
+   "bytes": 27054580,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_final] Complete assembled film bytes (4 shot(s) concatenated). The final visual deliverable — consumed by a downstream audio-mix / compositor step's materializer for muxing / subtitle burn-in.",
+   "scope": "global",
+   "w": 854,
+   "h": 480,
+   "dur": 60.32,
+   "poster": "process/little_calf/media/clip_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "clipagent_output",
+   "stage": "ClipAgent__step_4_cf97861d",
+   "kind": "json",
+   "label": "ClipAgent output",
+   "src_name": "step_4_cf97861d_clipagent_exec_4.json",
+   "bytes": 1082,
+   "caption": "[JSON MANIFEST] Clip-assembly plan: 4 per-shot clip plan(s) with duration + transition + scene grouping. Read by a downstream audio-mix / compositor step's LLM.",
+   "scope": "global",
+   "file": "process/little_calf/media/clipagent_output.json",
+   "excerpt": "{\"language\": \"zh\", \"clips\": [{\"shot_id\": \"sh_001\", \"duration_sec\": 5.0, \"scene_id\": \"sc_001\"}, {\"shot_id\": \"sh_002\", \"duration_sec\": 5.0, \"scene_id\": \"sc_002\"}, {\"shot_id\": \"sh_003\", \"duration_sec\": 5.0, \"scene_id\": \"sc_002\"}, {\"shot_id\": \"sh_004\", \"duration_sec\": 5.0, \"scene_id\": \"sc_002\"}], \"assembly\": {\"shot_order\":…"
+  },
+  {
+   "id": "clip_sh_001",
+   "stage": "ClipAgent__step_4_cf97861d",
+   "kind": "video",
+   "label": "clip sh 001",
+   "src_name": "step_4_cf97861d_clip_sh_001.mp4",
+   "bytes": 4894643,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_001] Rendered video clip bytes for shot sh_001 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_001",
+   "shot": "sh_001",
+   "w": 854,
+   "h": 480,
+   "dur": 15.07,
+   "poster": "process/little_calf/media/clip_sh_001_poster.jpg",
+   "file": "process/little_calf/media/clip_sh_001.mp4"
+  },
+  {
+   "id": "clip_sh_002",
+   "stage": "ClipAgent__step_4_cf97861d",
+   "kind": "video",
+   "label": "clip sh 002",
+   "src_name": "step_4_cf97861d_clip_sh_002.mp4",
+   "bytes": 8871431,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_002] Rendered video clip bytes for shot sh_002 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_002",
+   "shot": "sh_002",
+   "w": 854,
+   "h": 480,
+   "dur": 15.07,
+   "poster": "process/little_calf/media/clip_sh_002_poster.jpg",
+   "file": "process/little_calf/media/clip_sh_002.mp4"
+  },
+  {
+   "id": "clip_sh_003",
+   "stage": "ClipAgent__step_4_cf97861d",
+   "kind": "video",
+   "label": "clip sh 003",
+   "src_name": "step_4_cf97861d_clip_sh_003.mp4",
+   "bytes": 6268534,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_003] Rendered video clip bytes for shot sh_003 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_003",
+   "shot": "sh_003",
+   "w": 854,
+   "h": 480,
+   "dur": 15.07,
+   "poster": "process/little_calf/media/clip_sh_003_poster.jpg",
+   "file": "process/little_calf/media/clip_sh_003.mp4"
+  },
+  {
+   "id": "clip_sh_004",
+   "stage": "ClipAgent__step_4_cf97861d",
+   "kind": "video",
+   "label": "clip sh 004",
+   "src_name": "step_4_cf97861d_clip_sh_004.mp4",
+   "bytes": 7109972,
+   "caption": "[BINARY MP4 FILE · mime=video/mp4 · sys_id clip_sh_004] Rendered video clip bytes for shot sh_004 — one segment of the final film, with baked-in native foley + dialogue audio.",
+   "scope": "shot:sh_004",
+   "shot": "sh_004",
+   "w": 854,
+   "h": 480,
+   "dur": 15.07,
+   "poster": "process/little_calf/media/clip_sh_004_poster.jpg",
+   "file": "process/little_calf/media/clip_sh_004.mp4"
+  },
+  {
+   "id": "compositor_final",
+   "stage": "CompositorAgent__step_5_b1f11325",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_5_b1f11325_compositor_final.mp4",
+   "bytes": 7154297,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "w": 854,
+   "h": 480,
+   "dur": 60.32,
+   "poster": "process/little_calf/media/compositor_final_poster.jpg",
+   "preview_only": true
+  },
+  {
+   "id": "compositoragent_output",
+   "stage": "CompositorAgent__step_5_b1f11325",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_5_b1f11325_compositoragent_exec_5.json",
+   "bytes": 652,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/little_calf/media/compositoragent_output.json",
+   "excerpt": "{\"language\": \"zh\", \"plan\": {\"color_grade\": {\"brightness\": 0.02, \"contrast\": 0.05, \"saturation\": 0.05}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"authored_cues\": [], \"card_style\": {\"font_size\": 34, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"pos…"
+  },
+  {
+   "id": "transcriptionagent_output",
+   "stage": "TranscriptionAgent__step_1_e8661d6c",
+   "kind": "json",
+   "label": "TranscriptionAgent output",
+   "src_name": "step_1_e8661d6c_transcriptionagent_exec_1.json",
+   "bytes": 1262,
+   "caption": "Transcript (zh): 7 timestamped segment(s). SRT-shaped subtitle artifact — ready for direct burn-in by a compositor's subtitle track (each segment is one SRT cue with start/end seconds + text). Also usable as the 'source text' input to a translation step when bilingual subtitles are needed.",
+   "scope": "global",
+   "file": "process/little_calf/media/transcriptionagent_output.json",
+   "excerpt": "{\"language\": \"zh\", \"segments\": [{\"segment_id\": \"seg_001\", \"start_time\": 4.85, \"end_time\": 6.6, \"text\": \"快点儿，看你身后！\"}, {\"segment_id\": \"seg_002\", \"start_time\": 13.2, \"end_time\": 14.8, \"text\": \"啊，蛇！\"}, {\"segment_id\": \"seg_003\", \"start_time\": 14.8, \"end_time\": 17.0, \"text\": \"救命啊！\"}, {\"segment_id\": \"seg_004\", \"start_time\": 3…"
+  },
+  {
+   "id": "compositor_final_2",
+   "stage": "CompositorAgent__step_2_41618de4",
+   "kind": "video",
+   "label": "compositor final",
+   "src_name": "step_2_41618de4_compositor_final.mp4",
+   "bytes": 6846790,
+   "caption": "Final delivered video binary (mp4) — the complete composited output with audio mix and (optional) subtitle burn-in. Terminal deliverable of the creative pipeline.",
+   "scope": "global",
+   "file": "videos/little_calf.mp4",
+   "poster": "posters/little_calf.jpg",
+   "final": true,
+   "w": 854,
+   "h": 480,
+   "dur": 60.32
+  },
+  {
+   "id": "compositoragent_output_2",
+   "stage": "CompositorAgent__step_2_41618de4",
+   "kind": "json",
+   "label": "CompositorAgent output",
+   "src_name": "step_2_41618de4_compositoragent_exec_2.json",
+   "bytes": 652,
+   "caption": "Final composited video (1920x1080): audio mix, subtitle burn-in. Ready for delivery.",
+   "scope": "global",
+   "file": "process/little_calf/media/compositoragent_output_2.json",
+   "excerpt": "{\"language\": \"zh\", \"plan\": {\"color_grade\": {\"brightness\": 0.02, \"contrast\": 0.05, \"saturation\": 0.06}, \"subtitle_style\": {\"font_size\": 24, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"burn_in\": true}, \"authored_cues\": [], \"card_style\": {\"font_size\": 34, \"font_color\": \"#FFFFFF\", \"outline_color\": \"#000000\", \"pos…"
+  }
+ ],
+ "edges": [
+  {
+   "from": "narrativeagent_output",
+   "to": "KeyframeSheetAgent__step_2_a286a2b5",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "keyframesheetagent_output",
+   "to": "ShotPromptAgent__step_3_d56b34af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "bull_dad_anchor",
+   "to": "ShotPromptAgent__step_3_d56b34af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "forest_creek_anchor",
+   "to": "ShotPromptAgent__step_3_d56b34af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "little_calf_anchor",
+   "to": "ShotPromptAgent__step_3_d56b34af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "meadow_slope_anchor",
+   "to": "ShotPromptAgent__step_3_d56b34af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "red_bird_anchor",
+   "to": "ShotPromptAgent__step_3_d56b34af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "white_snake_anchor",
+   "to": "ShotPromptAgent__step_3_d56b34af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPromptAgent__step_3_d56b34af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPromptAgent__step_3_d56b34af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPromptAgent__step_3_d56b34af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ShotPromptAgent__step_3_d56b34af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "narrativeagent_output",
+   "to": "ShotPromptAgent__step_3_d56b34af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "ClipAgent__step_4_cf97861d",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "ClipAgent__step_4_cf97861d",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "ClipAgent__step_4_cf97861d",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "ClipAgent__step_4_cf97861d",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "bull_dad_anchor",
+   "to": "ClipAgent__step_4_cf97861d",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "forest_creek_anchor",
+   "to": "ClipAgent__step_4_cf97861d",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "little_calf_anchor",
+   "to": "ClipAgent__step_4_cf97861d",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "meadow_slope_anchor",
+   "to": "ClipAgent__step_4_cf97861d",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "red_bird_anchor",
+   "to": "ClipAgent__step_4_cf97861d",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "white_snake_anchor",
+   "to": "ClipAgent__step_4_cf97861d",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ClipAgent__step_4_cf97861d",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ClipAgent__step_4_cf97861d",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ClipAgent__step_4_cf97861d",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ClipAgent__step_4_cf97861d",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "clip_final",
+   "to": "TranscriptionAgent__step_1_e8661d6c",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_001",
+   "to": "TranscriptionAgent__step_1_e8661d6c",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_002",
+   "to": "TranscriptionAgent__step_1_e8661d6c",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_003",
+   "to": "TranscriptionAgent__step_1_e8661d6c",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_004",
+   "to": "TranscriptionAgent__step_1_e8661d6c",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_final",
+   "to": "CompositorAgent__step_5_b1f11325",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_001",
+   "to": "CompositorAgent__step_5_b1f11325",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_002",
+   "to": "CompositorAgent__step_5_b1f11325",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_003",
+   "to": "CompositorAgent__step_5_b1f11325",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_004",
+   "to": "CompositorAgent__step_5_b1f11325",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_final",
+   "to": "CompositorAgent__step_2_41618de4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_001",
+   "to": "CompositorAgent__step_2_41618de4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_002",
+   "to": "CompositorAgent__step_2_41618de4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_003",
+   "to": "CompositorAgent__step_2_41618de4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_004",
+   "to": "CompositorAgent__step_2_41618de4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "transcriptionagent_output",
+   "to": "CompositorAgent__step_2_41618de4",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief",
+   "to": "NarrativeAgent__step_1_ba856508",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief_2",
+   "to": "NarrativeAgent__step_1_ba856508",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "creative_brief_3",
+   "to": "NarrativeAgent__step_1_ba856508",
+   "type": "step",
+   "inferred": true
+  }
+ ],
+ "final": "compositor_final_2",
+ "notes": [
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
+ ]
+}

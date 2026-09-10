@@ -1,0 +1,47 @@
+[ASPECT & GRID]
+Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel.
+
+[STYLE FOUNDATION]
+VISUAL MEDIUM and aesthetic are dictated entirely by the story's style_anchor (live-action film / 2D anime / illustration / 3D / etc.); do NOT default to photoreal, do NOT impose any medium the story omits. Apply verbatim: 3D 渲染卡通 CG 风格。高饱和度明快色彩，暖金阳光与葱郁翠绿基调，皮克斯/照明娱乐式圆润平滑材质与蓬松毛发质感，明暗对比柔和通透，欢快幽默合家欢调性。
+
+[IDENTITY LOCK]
+All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
+
+[SHOT RHYTHM]
+P1 close-up -> P2 wide -> P3 medium -> P4 medium -> P5 close-up
+
+[PANEL 1]
+SHOT: close-up, eye-level.
+PLACEMENT: Use the FACE section of the little_calf character anchor; little_calf fills the frame from the chest up, seated on the mossy ground, hugging his swollen red snout with both hands visibly connected to his wrists and forearms.
+ACTION: little_calf scrunches his face in tender grief, large glassy teardrops welling in the corners of his wide dark eyes, lips trembling.
+ENV: The forest_creek environment; dark brown tree bark and emerald moss immediately behind his slumped shoulders.
+
+[PANEL 2]
+SHOT: wide, low angle looking up slightly.
+PLACEMENT: Use the FRONT section of both anchors; bull_dad stands tall two paces away from the tree trunk, towering twice as high as little_calf who remains huddled on the root below him.
+ACTION: bull_dad steps out from behind the tree with hands clasped behind his back, looking down with a deadpan, slightly raised single eyebrow; little_calf looks up timidly from the floor.
+ENV: The forest_creek environment, FRONT view; tall trees, filtered sunlight creating bright patches on the mossy forest ground.
+
+[PANEL 3]
+SHOT: medium, eye-level.
+PLACEMENT: little_calf is seated on the left, upper torso visible; bull_dad stands on the right, towering over him from chest up; little_calf reaches an arm diagonally upward pointing toward the tree.
+ACTION: little_calf rubs his forehead horn with his left hand while pointing his right forelimb straight at the half-stripped tree trunk, his lower lip jutting in an aggrieved pout; bull_dad looks down dispassionately.
+ENV: The forest_creek environment; the scarred tree trunk covered in scattered missing leaf patches directly behind little_calf.
+
+[PANEL 4]
+SHOT: medium, low angle looking up at bull_dad.
+PLACEMENT: Use the FRONT section of bull_dad; bull_dad stands centered with shoulders broad, head tilted back toward the canopy, little_calf visible in the lower foreground corner looking up.
+ACTION: bull_dad stares upward at the nearly bare tree branches with an expressionless, calm face, his lower jaw shifting slightly to the side in deadpan observation.
+ENV: The forest_creek environment; the upper canopy of the tree with stripped branches and falling leaves against the golden afternoon sky.
+
+[PANEL 5]
+SHOT: close-up, eye-level.
+PLACEMENT: Use the FACE section of the little_calf character anchor; little_calf is framed tightly from the chest up, his hand frozen mid-rub over his snout, forearm clearly anchored at frame right.
+ACTION: little_calf freezes completely in place, a single tear hanging suspended on his cheek, mouth slightly agape in utter speechless bewilderment.
+ENV: The forest_creek environment; soft-focus textured tree bark behind his head.
+
+[RENDERED TEXT]
+(none for this shot)
+
+[CROSS-SHOT CONTINUITY REFS]
+The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 3 refs (character / prop / location anchors).

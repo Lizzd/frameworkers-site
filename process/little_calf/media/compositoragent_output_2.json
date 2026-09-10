@@ -1,0 +1,30 @@
+{
+  "content": {
+    "language": "zh",
+    "plan": {
+      "color_grade": {
+        "brightness": 0.02,
+        "contrast": 0.05,
+        "saturation": 0.06
+      },
+      "subtitle_style": {
+        "font_size": 24,
+        "font_color": "#FFFFFF",
+        "outline_color": "#000000",
+        "burn_in": true
+      },
+      "authored_cues": [],
+      "card_style": {
+        "font_size": 34,
+        "font_color": "#FFFFFF",
+        "outline_color": "#000000",
+        "position": "top",
+        "margin": 40
+      },
+      "image_overlays": [],
+      "subtitle_language": "",
+      "output_resolution": "1920x1080",
+      "output_fps": 30
+    }
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "content": {
+    "title": "小牛快跑",
+    "logline": "一头胆小又爱大惊小怪的拟人化小牛因脚边的一条细小白蛇吓得狂奔撞树，在得到父亲不按套路的冷幽默回应后，却发现整个家最关键的人不见了。",
+    "setting": "卡通奇幻森林与溪畔，全拟人化动物世界；阳光明媚的夏日午后，风格致敬经典欧美合家欢 3D 动画传统。",
+    "style_anchor": "3D 渲染卡通 CG 风格。高饱和度明快色彩，暖金阳光与葱郁翠绿基调，皮克斯/照明娱乐式圆润平滑材质与蓬松毛发质感，明暗对比柔和通透，欢快幽默合家欢调性。",
+    "dialogue_language": "Mandarin Chinese",
+    "subtitle_language": "",
+    "characters": [
+      {
+        "id": "little_calf",
+        "role": "protagonist",
+        "look_description": "两脚直立行走的拟人化卡通小牛，个头仅达成年牛腰部；暖橙黄色短毛皮，圆滚滚的脑袋与大而水灵的黑眼睛，宽大粉红鼻头，头顶一对短短的圆锥形钝角，身穿一条水蓝色背带短裤。",
+        "voice_description": "男童声，约 7 岁年龄感，清亮尖细，语速急促且音调偏高，带有极易受惊、委屈巴巴的情绪基调，普通话口语。",
+        "on_screen": true,
+        "reference_image_index": null
+      },
+      {
+        "id": "bull_dad",
+        "role": "foil",
+        "look_description": "两脚直立行走的壮年公牛，体型健硕宽厚；深橙棕色短毛皮，头顶生有一对又粗又长、向两侧弯曲的雄伟牛角，两道粗浓眉毛常年微蹙，下巴留有一小撮深褐色胡茬，身穿深棕色皮质护甲式短坎肩。",
+        "voice_description": "成年男低音，约 40 岁年龄感，嗓音沉稳浑厚、富有磁性，语速慢条斯理、不紧不慢，透露出看透一切的冷幽默与心不在焉，普通话口语。",
+        "on_screen": true,
+        "reference_image_index": null
+      },
+      {
+        "id": "white_snake",
+        "role": "bystander",
+        "look_description": "体型仅有筷子般粗细的极细小蛇，通体乳白光洁如玉，两颗乌黑如芝麻粒的小眼睛，下腹部柔软微粉，喜欢将上半身笔直竖立如小竹签。",
+        "voice_description": "",
+        "on_screen": true,
+        "reference_image_index": null
+      },
+      {
+        "id": "red_bird",
+        "role": "ally",
+        "look_description": "仅有巴掌大的卡通红色小鸟，通体亮绯红羽毛，头顶一撮俏皮的羽冠，长而尖的明黄鸟喙，尾羽修长分叉，两只黑色小爪轻盈灵巧。",
+        "voice_description": "女声，青年偏轻快音色，嗓门高亢洪亮，语速极快像连珠炮，充满八卦与操心的热络情绪基调，普通话口语。",
+        "on_screen": true,
+        "reference_image_index": null
+      }
+    ],
+    "props": [],
+    "locations": [
+      {
+        "id": "meadow_slope",
+        "look_description": "阳光灿烂的森林边缘草坡，草地上盛开着点点鹅黄小野花，坡旁立着一块浑圆青灰大巨石，远处连绵起伏着葱郁的卡通针叶林。",
+        "reference_image_index": null
+      },
+      {
+        "id": "forest_creek",
+        "look_description": "茂密幽深的森林内部，光斑透过树冠洒在清澈见底的小河上，河岸两侧排列着粗壮的阔叶大树，岸边生满翠绿苔藓与低矮灌木丛。",
+        "reference_image_index": null
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "sh_001",
+        "duration_s": 15.0,
+        "narrative_purpose": "建立小牛悠闲发呆与被突发小白蛇惊吓的喜剧开场",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.5
+            ],
+            "categories": [
+              "establishing_wide",
+              "lifestyle_use"
+            ],
+            "moment_description": "阳光洒满青绿草坡，little_calf 倚靠在青灰巨石旁，两只大耳朵耷拉着，双眼放空咀嚼着一根青草根发呆。",
+            "dialogue": null,
+            "characters_present": [
+              "little_calf"
+            ]
+          },
+          {
+            "time_range": [
+              3.5,
+              6.5
+            ],
+            "categories": [
+              "dialogue_two_shot",
+              "lifestyle_use"
+            ],
+            "moment_description": "red_bird 展翅从林梢如红色流星般俯冲而下，双翅在半空急停扇动，尖嘴大张冲着巨石旁的 little_calf 急切啼叫。",
+            "dialogue": "red_bird: 快点，看你身后！",
+            "characters_present": [
+              "little_calf",
+              "red_bird"
+            ]
+          },
+          {
+            "time_range": [
+              6.5,
+              9.5
+            ],
+            "categories": [
+              "emotional_close_up",
+              "dialogue_two_shot"
+            ],
+            "moment_description": "little_calf 疑惑地慢吞吞扭转圆脑袋，视线往下垂落，草丛中露出一截白影。",
+            "dialogue": null,
+            "characters_present": [
+              "little_calf"
+            ]
+          },
+          {
+            "time_range": [
+              9.5,
+              12.0
+            ],
+            "categories": [
+              "emotional_close_up",
+              "lifestyle_use"
+            ],
+            "moment_description": "white_snake 从翠绿草丛中笔直立起筷子般细小的乳白色身子，昂着呆萌的小脑袋，无辜地眨巴着芝麻小眼盯住眼前的大牛脸。",
+            "dialogue": null,
+            "characters_present": [
+              "white_snake"
+            ]
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "action_fight",
+              "emotional_close_up"
+            ],
+            "moment_description": "little_calf 双眼瞳孔骤然缩成针尖，四肢离地原地垂直弹跳起半米高，大嘴张成巨大的椭圆形惊恐尖嚎。",
+            "dialogue": "little_calf: 啊，蛇！",
+            "characters_present": [
+              "little_calf",
+              "white_snake"
+            ]
+          }
+        ],
+        "primary_location": "meadow_slope",
+        "notes": null,
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_002",
+        "duration_s": 15.0,
+        "narrative_purpose": "展现小牛惊慌失措的奔逃与乐极生悲的撞树碰撞",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.0
+            ],
+            "categories": [
+              "action_fight",
+              "lifestyle_use"
+            ],
+            "moment_description": "little_calf 落地后撒开双腿疯狂倒腾，扬起大片草屑与泥土向林间逃窜，留在原地的 white_snake 歪了歪脑袋一脸迷茫。",
+            "dialogue": "little_calf: 救命啊！",
+            "characters_present": [
+              "little_calf",
+              "white_snake"
+            ]
+          },
+          {
+            "time_range": [
+              3.0,
+              6.0
+            ],
+            "categories": [
+              "establishing_wide",
+              "lifestyle_use"
+            ],
+            "moment_description": "密集而幽暗的树干间，little_calf 宛如金黄色旋风左冲右突，双臂在身前乱舞，卷起满地旋转落叶。",
+            "dialogue": null,
+            "characters_present": [
+              "little_calf"
+            ]
+          },
+          {
+            "time_range": [
+              6.0,
+              9.0
+            ],
+            "categories": [
+              "action_fight",
+              "lifestyle_use"
+            ],
+            "moment_description": "little_calf 冲刺奔出密林来到湍急小河前，前脚猛力一蹬草岸凌空高高跃起，双眼紧闭越过清亮反光的河面。",
+            "dialogue": null,
+            "characters_present": [
+              "little_calf"
+            ]
+          },
+          {
+            "time_range": [
+              9.0,
+              12.0
+            ],
+            "categories": [
+              "action_fight",
+              "emotional_close_up"
+            ],
+            "moment_description": "对岸一棵苍劲大树赫然出现在落点处，little_calf 的整张圆脸平拍在粗糙树干正中，整棵大树猛烈震颤抖落漫天绿叶。",
+            "dialogue": null,
+            "characters_present": [
+              "little_calf"
+            ]
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "emotional_close_up",
+              "lifestyle_use"
+            ],
+            "moment_description": "little_calf 扁平的脸颊紧贴着树皮缓缓往下滑落，最终一屁股跌坐在布满青苔的粗壮树根上，头顶金星乱晃。",
+            "dialogue": null,
+            "characters_present": [
+              "little_calf"
+            ]
+          }
+        ],
+        "primary_location": "forest_creek",
+        "notes": null,
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_003",
+        "duration_s": 15.0,
+        "narrative_purpose": "牛爸爸登场并以标志性的冷幽默化解小牛的诉苦",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.0
+            ],
+            "categories": [
+              "emotional_close_up",
+              "lifestyle_use"
+            ],
+            "moment_description": "little_calf 抱着红肿发酸的宽鼻头缩在树根下，眼眶里含着大颗泪珠，双脚委屈地在地面来回蹬踩。",
+            "dialogue": "little_calf: 啊，疼……",
+            "characters_present": [
+              "little_calf"
+            ]
+          },
+          {
+            "time_range": [
+              3.0,
+              6.0
+            ],
+            "categories": [
+              "dialogue_two_shot",
+              "lifestyle_use"
+            ],
+            "moment_description": "bull_dad 迈着沉重从容的步子从树影后踱出，两只宽厚手掌背在腰后，居高临下微皱着眉头俯视地上的小牛。",
+            "dialogue": "bull_dad: 这又怎么了？",
+            "characters_present": [
+              "little_calf",
+              "bull_dad"
+            ]
+          },
+          {
+            "time_range": [
+              6.0,
+              9.0
+            ],
+            "categories": [
+              "dialogue_two_shot",
+              "emotional_close_up"
+            ],
+            "moment_description": "little_calf 抽了抽泛红的大鼻头，一手揉着脑门短角，一手委屈巴巴地直指面前掉光半树叶子的大树。",
+            "dialogue": "little_calf: 跳小河，撞树上了。",
+            "characters_present": [
+              "little_calf",
+              "bull_dad"
+            ]
+          },
+          {
+            "time_range": [
+              9.0,
+              12.0
+            ],
+            "categories": [
+              "dialogue_two_shot",
+              "emotional_close_up"
+            ],
+            "moment_description": "bull_dad 缓缓仰起长着硕大弯角的宽脑门，目光落在光秃秃摇晃的树枝上，面无表情地动了动下颌。",
+            "dialogue": "bull_dad: 那哭的不应该是树吗？",
+            "characters_present": [
+              "little_calf",
+              "bull_dad"
+            ]
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "emotional_close_up",
+              "dialogue_two_shot"
+            ],
+            "moment_description": "little_calf 揉鼻子的动作瞬间僵硬在半空，眼角挂着半滴将落未落的眼泪，嘴巴微张，彻底呆若木鸡。",
+            "dialogue": null,
+            "characters_present": [
+              "little_calf",
+              "bull_dad"
+            ]
+          }
+        ],
+        "primary_location": "forest_creek",
+        "notes": null,
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_004",
+        "duration_s": 15.0,
+        "narrative_purpose": "小红鸟汇合，牛爸爸突如其来的随性问话引发尴尬定格笑点",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.0
+            ],
+            "categories": [
+              "dialogue_two_shot",
+              "lifestyle_use"
+            ],
+            "moment_description": "red_bird 拍打着红色双翼自半空滑翔而下，稳稳落在父子俩脚边的一块鹅卵石上，收拢翅膀仰起尖嘴打量二人。",
+            "dialogue": null,
+            "characters_present": [
+              "little_calf",
+              "bull_dad",
+              "red_bird"
+            ]
+          },
+          {
+            "time_range": [
+              3.0,
+              6.0
+            ],
+            "categories": [
+              "dialogue_two_shot",
+              "emotional_close_up"
+            ],
+            "moment_description": "bull_dad 低头注视脚边的小红鸟，一只厚实牛掌若有所思地摩挲着下巴上的胡茬，眼眸亮起一丝恍然。",
+            "dialogue": "bull_dad: 对了，他妈去哪儿了？",
+            "characters_present": [
+              "little_calf",
+              "bull_dad",
+              "red_bird"
+            ]
+          },
+          {
+            "time_range": [
+              6.0,
+              9.0
+            ],
+            "categories": [
+              "dialogue_two_shot",
+              "emotional_close_up"
+            ],
+            "moment_description": "red_bird 脑袋向左侧一歪，两只乌黑眼珠骨碌一转，鸟嘴微微张开，露出一脸完全不知情的茫然神色。",
+            "dialogue": null,
+            "characters_present": [
+              "little_calf",
+              "bull_dad",
+              "red_bird"
+            ]
+          },
+          {
+            "time_range": [
+              9.0,
+              12.0
+            ],
+            "categories": [
+              "dialogue_two_shot",
+              "emotional_close_up"
+            ],
+            "moment_description": "little_calf 忘记了脸上的疼痛，骨碌从地上爬起，左瞧瞧右望望，伸长脖子四处打量空荡荡的树林。",
+            "dialogue": null,
+            "characters_present": [
+              "little_calf",
+              "bull_dad",
+              "red_bird"
+            ]
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "establishing_wide",
+              "dialogue_two_shot"
+            ],
+            "moment_description": "牛父子二人先是极有默契地对视一眼，随即齐刷刷转头垂下目光死死盯住地上的 red_bird，微风吹过落叶，画面完全定格。",
+            "dialogue": null,
+            "characters_present": [
+              "little_calf",
+              "bull_dad",
+              "red_bird"
+            ]
+          }
+        ],
+        "primary_location": "forest_creek",
+        "notes": null,
+        "audit_notes": ""
+      }
+    ]
+  }
+}

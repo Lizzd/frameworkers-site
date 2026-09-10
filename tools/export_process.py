@@ -86,6 +86,7 @@ SOURCES: dict[str, tuple[str, str, bool]] = {
     "orpheus":           ("workspace", "Runtime/orpheus_nanopro_outputs/workspace_global_20260711_124855", True),
     "poem_recital":      ("workspace", "Runtime/topic10_fixed_outputs/workspace_global_20260711_123603", True),
     "tortoise":          ("workspace", "Runtime/storybook_e2e_outputs/workspace_global_20260709_154842", True),
+    "little_calf":       ("workspace", "Runtime/topic45_little_calf/workspace_global_20260909_232602", True),
 }
 
 # Inferred input contracts, used ONLY when no 04_executions.json exists for a workspace.
