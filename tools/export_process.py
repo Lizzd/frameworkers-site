@@ -645,8 +645,30 @@ def main():
         except Exception as e:  # keep going for the batch, report at the end
             import traceback; traceback.print_exc()
             log(f"{key}: FAILED {e}"); bad.append(key)
-    idx = {k: {"nodes": len(json.loads((OUT / k / "graph.json").read_text())["nodes"])} for k in ok}
-    (OUT / "index.json").write_text(json.dumps(idx, indent=1), encoding="utf-8")
+    # MERGE, never replace: this ran as `export_process.py little_calf` and wrote
+    # an index holding that one film, silently dropping the other 26 — every one
+    # of their process pages would have 404'd on the next deploy (caught in
+    # review on 2026-09-11, one command before it went live). A single-film
+    # rebuild must leave every other film's entry alone.
+    idx_path = OUT / "index.json"
+    idx: dict = {}
+    if idx_path.exists():
+        try:
+            idx = json.loads(idx_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            log(f"WARNING: {idx_path} is not valid JSON ({e}); rebuilding from this run only")
+            idx = {}
+    idx.update(
+        {k: {"nodes": len(json.loads((OUT / k / "graph.json").read_text())["nodes"])} for k in ok}
+    )
+    # Drop entries whose pack is gone, so a deleted film does not linger as a
+    # broken link — but only ever by checking the filesystem, never by assuming
+    # this run covered every film.
+    for k in [k for k in idx if not (OUT / k / "graph.json").exists()]:
+        log(f"index: dropping {k} (no process/{k}/graph.json)")
+        idx.pop(k)
+    idx_path.write_text(json.dumps(dict(sorted(idx.items())), indent=1), encoding="utf-8")
+    log(f"index: {len(idx)} film(s)")
     log(f"done: {len(ok)} ok, {len(bad)} failed {bad if bad else ''}")
     return 0 if not bad else 1
 
