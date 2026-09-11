@@ -576,7 +576,13 @@ function initPortfolio(){
 /* -------------------------------------------------------------------- home */
 /* Card click: desktop opens the creation-process canvas, phones open the player
    (the canvas is a pan/zoom board — on a phone the film itself is the better first view). */
-const isPhone = ()=> window.matchMedia("(max-width: 900px)").matches;
+/* A phone is narrow AND touch-first. Width alone misread a desktop browser in a
+   narrow window as a phone, so resizing the window silently swapped the canvas
+   for the player. `pointer: coarse` is the touch test; the `||` keeps the old
+   behaviour on the few engines that do not support the pointer media query. */
+const isPhone = ()=> window.matchMedia("(max-width: 900px)").matches &&
+  (window.matchMedia("(pointer: coarse)").matches ||
+   !window.matchMedia("(pointer: fine)").matches);
 const cardHref = (key)=> isPhone() ? `films.html?play=${key}` : `process.html?film=${key}`;
 function openCard(key){
   if (isPhone()) { if (window.__fwPlay) window.__fwPlay(key); else location.href = cardHref(key); }
