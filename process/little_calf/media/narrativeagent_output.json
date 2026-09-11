@@ -1,32 +1,32 @@
 {
   "content": {
-    "title": "小牛快跑",
-    "logline": "一头胆小又爱大惊小怪的拟人化小牛因脚边的一条细小白蛇吓得狂奔撞树，在得到父亲不按套路的冷幽默回应后，却发现整个家最关键的人不见了。",
-    "setting": "卡通奇幻森林与溪畔，全拟人化动物世界；阳光明媚的夏日午后，风格致敬经典欧美合家欢 3D 动画传统。",
-    "style_anchor": "3D 渲染卡通 CG 风格。高饱和度明快色彩，暖金阳光与葱郁翠绿基调，皮克斯/照明娱乐式圆润平滑材质与蓬松毛发质感，明暗对比柔和通透，欢快幽默合家欢调性。",
-    "dialogue_language": "Mandarin Chinese",
-    "subtitle_language": "",
+    "title": "Run, Little Calf",
+    "logline": "A jumpy little cartoon calf panics over a harmless garden snake and crashes face-first into a tree, only to find his deadpan father far more concerned with where mom wandered off to.",
+    "setting": "An idyllic woodland meadow and creek; anthropomorphic animal comedy tradition; bright afternoon sun with lush grass, babbling water, and ancient mossy trees.",
+    "style_anchor": "Polished stylized 3D CG animation. Saturated daytime palette of warm sunny yellows, leaf greens, rich earth browns, and sky blue reflections. Directional afternoon sunlight with warm golden rim lighting, soft diffuse bounces on grass and moss, and clean shadow shapes. Smooth matte character surfaces with bold geometric silhouettes, oversized expressive features, and simplified stylized anatomy free of realistic fur pores or skin wrinkles.",
+    "dialogue_language": "English",
+    "subtitle_language": "en",
     "characters": [
       {
         "id": "little_calf",
         "role": "protagonist",
-        "look_description": "两脚直立行走的拟人化卡通小牛，个头仅达成年牛腰部；暖橙黄色短毛皮，圆滚滚的脑袋与大而水灵的黑眼睛，宽大粉红鼻头，头顶一对短短的圆锥形钝角，身穿一条水蓝色背带短裤。",
-        "voice_description": "男童声，约 7 岁年龄感，清亮尖细，语速急促且音调偏高，带有极易受惊、委屈巴巴的情绪基调，普通话口语。",
+        "look_description": "Anthropomorphic orange-yellow cartoon calf standing on two legs, reaching only up to his father's beltline; oversized round head, huge expressive glossy black eyes, wide damp muzzle, floppy cream-tipped ears, and two stubby grey horn nubs; wears faded denim dungarees with brass clasps.",
+        "voice_description": "Young boy, high-pitched, squeaky and expressive, rapid breathless cadence, dramatic overreacting comedic tone.",
         "on_screen": true,
         "reference_image_index": null
       },
       {
         "id": "bull_dad",
-        "role": "foil",
-        "look_description": "两脚直立行走的壮年公牛，体型健硕宽厚；深橙棕色短毛皮，头顶生有一对又粗又长、向两侧弯曲的雄伟牛角，两道粗浓眉毛常年微蹙，下巴留有一小撮深褐色胡茬，身穿深棕色皮质护甲式短坎肩。",
-        "voice_description": "成年男低音，约 40 岁年龄感，嗓音沉稳浑厚、富有磁性，语速慢条斯理、不紧不慢，透露出看透一切的冷幽默与心不在焉，普通话口语。",
+        "role": "mentor",
+        "look_description": "Burly anthropomorphic orange-brown bull standing tall on two legs; broad barrel chest, heavy squared jaw with permanently furrowed brow, two long sweeping curved ivory horns with dark tips; wears a weathered brown leather vest over an unbuttoned tan plaid shirt.",
+        "voice_description": "Adult male, deep resonant baritone, dry gravelly texture, slow drawling pace, unflappable deadpan delivery.",
         "on_screen": true,
         "reference_image_index": null
       },
       {
         "id": "white_snake",
-        "role": "bystander",
-        "look_description": "体型仅有筷子般粗细的极细小蛇，通体乳白光洁如玉，两颗乌黑如芝麻粒的小眼睛，下腹部柔软微粉，喜欢将上半身笔直竖立如小竹签。",
+        "role": "foil",
+        "look_description": "Slender, chopstick-thin milky-white cartoon snake with smooth porcelain-like skin, tiny beady black dot eyes, and a soft rounded snout; naturally coils its lower body into a spring to stand stiffly upright like an exclamation mark.",
         "voice_description": "",
         "on_screen": true,
         "reference_image_index": null
@@ -34,8 +34,8 @@
       {
         "id": "red_bird",
         "role": "ally",
-        "look_description": "仅有巴掌大的卡通红色小鸟，通体亮绯红羽毛，头顶一撮俏皮的羽冠，长而尖的明黄鸟喙，尾羽修长分叉，两只黑色小爪轻盈灵巧。",
-        "voice_description": "女声，青年偏轻快音色，嗓门高亢洪亮，语速极快像连珠炮，充满八卦与操心的热络情绪基调，普通话口语。",
+        "look_description": "Palm-sized bright scarlet cartoon songbird with a long yellow dagger beak, round glossy eyes, and twin ribbon-like tail feathers; perched posture with quick twitching head turns.",
+        "voice_description": "Adult female, brisk and chirpy, bright brassy timbre, rapid staccato pace, gossipy busybody tone.",
         "on_screen": true,
         "reference_image_index": null
       }
@@ -43,13 +43,13 @@
     "props": [],
     "locations": [
       {
-        "id": "meadow_slope",
-        "look_description": "阳光灿烂的森林边缘草坡，草地上盛开着点点鹅黄小野花，坡旁立着一块浑圆青灰大巨石，远处连绵起伏着葱郁的卡通针叶林。",
+        "id": "loc_meadow_rock",
+        "look_description": "Sunlit grassy slope bordering dense woodland; dominated by a massive lichen-speckled granite boulder surrounded by yellow dandelions and tall waving clover under a clear azure sky.",
         "reference_image_index": null
       },
       {
-        "id": "forest_creek",
-        "look_description": "茂密幽深的森林内部，光斑透过树冠洒在清澈见底的小河上，河岸两侧排列着粗壮的阔叶大树，岸边生满翠绿苔藓与低矮灌木丛。",
+        "id": "loc_forest_creek",
+        "look_description": "Sun-dappled pine and birch forest bisected by a shallow bubbling pebble creek; on the far mossy bank stands a massive gnarled oak tree with sprawling roots and dense leaf canopy.",
         "reference_image_index": null
       }
     ],
@@ -57,18 +57,18 @@
       {
         "shot_id": "sh_001",
         "duration_s": 15.0,
-        "narrative_purpose": "建立小牛悠闲发呆与被突发小白蛇惊吓的喜剧开场",
+        "narrative_purpose": "Little calf daydreams obliviously until a warning from the red bird reveals a tiny snake, sending him into airborne terror.",
         "panels": [
           {
             "time_range": [
               0.0,
-              3.5
+              3.0
             ],
             "categories": [
               "establishing_wide",
-              "lifestyle_use"
+              "quiet_slice_of_life"
             ],
-            "moment_description": "阳光洒满青绿草坡，little_calf 倚靠在青灰巨石旁，两只大耳朵耷拉着，双眼放空咀嚼着一根青草根发呆。",
+            "moment_description": "Little calf leans against the mossy grey boulder, chewing lazily on a stalk of dandelion with half-closed eyes while his tail swishes slowly against the clover.",
             "dialogue": null,
             "characters_present": [
               "little_calf"
@@ -76,18 +76,102 @@
           },
           {
             "time_range": [
-              3.5,
-              6.5
+              3.0,
+              6.0
             ],
             "categories": [
-              "dialogue_two_shot",
-              "lifestyle_use"
+              "comedic_beat"
             ],
-            "moment_description": "red_bird 展翅从林梢如红色流星般俯冲而下，双翅在半空急停扇动，尖嘴大张冲着巨石旁的 little_calf 急切啼叫。",
-            "dialogue": "red_bird: 快点，看你身后！",
+            "moment_description": "Red bird swoops down from forest branches, wings flapping rapidly as it circles little calf's head in agitated loops.",
+            "dialogue": "red_bird: Quick — look behind you!",
             "characters_present": [
               "little_calf",
               "red_bird"
+            ]
+          },
+          {
+            "time_range": [
+              6.0,
+              9.0
+            ],
+            "categories": [
+              "comedic_beat"
+            ],
+            "moment_description": "Little calf turns his bulky head around toward the clover patch → white snake rises straight up like a white stick, standing vertically on its tail coil to stare unblinkingly into calf's face.",
+            "dialogue": null,
+            "characters_present": [
+              "little_calf",
+              "white_snake",
+              "red_bird"
+            ]
+          },
+          {
+            "time_range": [
+              9.0,
+              12.0
+            ],
+            "categories": [
+              "emotional_close_up",
+              "comedic_beat"
+            ],
+            "moment_description": "Little calf drops his dandelion stalk → eyes swell to saucers, ears stick straight out horizontally, and jaw drops open in shock.",
+            "dialogue": null,
+            "characters_present": [
+              "little_calf"
+            ]
+          },
+          {
+            "time_range": [
+              12.0,
+              15.0
+            ],
+            "categories": [
+              "comedic_beat"
+            ],
+            "moment_description": "Little calf springs straight up into the air with stiff legs, clutching his head with both front hooves as white snake watches below with a mild curious head tilt.",
+            "dialogue": "little_calf: Snake!",
+            "characters_present": [
+              "little_calf",
+              "white_snake"
+            ]
+          }
+        ],
+        "primary_location": "loc_meadow_rock",
+        "notes": null,
+        "audit_notes": ""
+      },
+      {
+        "shot_id": "sh_002",
+        "duration_s": 15.0,
+        "narrative_purpose": "Little calf bolts blindly across the woods, leaps over the creek, and violently tree-plants on the opposite bank.",
+        "panels": [
+          {
+            "time_range": [
+              0.0,
+              3.0
+            ],
+            "categories": [
+              "comedic_beat"
+            ],
+            "moment_description": "Little calf hits the dirt and scrambles forward in a flailing windmill sprint, trailing a cloud of dust while white snake stands upright in the background looking harmless.",
+            "dialogue": "little_calf: Help!",
+            "characters_present": [
+              "little_calf",
+              "white_snake"
+            ]
+          },
+          {
+            "time_range": [
+              3.0,
+              6.5
+            ],
+            "categories": [
+              "comedic_beat"
+            ],
+            "moment_description": "Little calf weaves crazily between slender pine trunks, head thrown back and ears flapping wildly, knocking dead branches aside.",
+            "dialogue": null,
+            "characters_present": [
+              "little_calf"
             ]
           },
           {
@@ -96,10 +180,9 @@
               9.5
             ],
             "categories": [
-              "emotional_close_up",
-              "dialogue_two_shot"
+              "comedic_beat"
             ],
-            "moment_description": "little_calf 疑惑地慢吞吞扭转圆脑袋，视线往下垂落，草丛中露出一截白影。",
+            "moment_description": "Little calf bursts out from the treeline, plants his hooves onto the creek bank, and launches in a sprawling horizontal leap over the sparkling stream.",
             "dialogue": null,
             "characters_present": [
               "little_calf"
@@ -111,97 +194,9 @@
               12.0
             ],
             "categories": [
-              "emotional_close_up",
-              "lifestyle_use"
+              "comedic_beat"
             ],
-            "moment_description": "white_snake 从翠绿草丛中笔直立起筷子般细小的乳白色身子，昂着呆萌的小脑袋，无辜地眨巴着芝麻小眼盯住眼前的大牛脸。",
-            "dialogue": null,
-            "characters_present": [
-              "white_snake"
-            ]
-          },
-          {
-            "time_range": [
-              12.0,
-              15.0
-            ],
-            "categories": [
-              "action_fight",
-              "emotional_close_up"
-            ],
-            "moment_description": "little_calf 双眼瞳孔骤然缩成针尖，四肢离地原地垂直弹跳起半米高，大嘴张成巨大的椭圆形惊恐尖嚎。",
-            "dialogue": "little_calf: 啊，蛇！",
-            "characters_present": [
-              "little_calf",
-              "white_snake"
-            ]
-          }
-        ],
-        "primary_location": "meadow_slope",
-        "notes": null,
-        "audit_notes": ""
-      },
-      {
-        "shot_id": "sh_002",
-        "duration_s": 15.0,
-        "narrative_purpose": "展现小牛惊慌失措的奔逃与乐极生悲的撞树碰撞",
-        "panels": [
-          {
-            "time_range": [
-              0.0,
-              3.0
-            ],
-            "categories": [
-              "action_fight",
-              "lifestyle_use"
-            ],
-            "moment_description": "little_calf 落地后撒开双腿疯狂倒腾，扬起大片草屑与泥土向林间逃窜，留在原地的 white_snake 歪了歪脑袋一脸迷茫。",
-            "dialogue": "little_calf: 救命啊！",
-            "characters_present": [
-              "little_calf",
-              "white_snake"
-            ]
-          },
-          {
-            "time_range": [
-              3.0,
-              6.0
-            ],
-            "categories": [
-              "establishing_wide",
-              "lifestyle_use"
-            ],
-            "moment_description": "密集而幽暗的树干间，little_calf 宛如金黄色旋风左冲右突，双臂在身前乱舞，卷起满地旋转落叶。",
-            "dialogue": null,
-            "characters_present": [
-              "little_calf"
-            ]
-          },
-          {
-            "time_range": [
-              6.0,
-              9.0
-            ],
-            "categories": [
-              "action_fight",
-              "lifestyle_use"
-            ],
-            "moment_description": "little_calf 冲刺奔出密林来到湍急小河前，前脚猛力一蹬草岸凌空高高跃起，双眼紧闭越过清亮反光的河面。",
-            "dialogue": null,
-            "characters_present": [
-              "little_calf"
-            ]
-          },
-          {
-            "time_range": [
-              9.0,
-              12.0
-            ],
-            "categories": [
-              "action_fight",
-              "emotional_close_up"
-            ],
-            "moment_description": "对岸一棵苍劲大树赫然出现在落点处，little_calf 的整张圆脸平拍在粗糙树干正中，整棵大树猛烈震颤抖落漫天绿叶。",
+            "moment_description": "Little calf smacks face-first into the broad trunk of the ancient oak on the far bank; trunk shudders and a shower of green leaves rains down over him.",
             "dialogue": null,
             "characters_present": [
               "little_calf"
@@ -213,24 +208,24 @@
               15.0
             ],
             "categories": [
-              "emotional_close_up",
-              "lifestyle_use"
+              "comedic_beat",
+              "quiet_slice_of_life"
             ],
-            "moment_description": "little_calf 扁平的脸颊紧贴着树皮缓缓往下滑落，最终一屁股跌坐在布满青苔的粗壮树根上，头顶金星乱晃。",
+            "moment_description": "Little calf slides slowly down the rough tree bark in a limp heap, plopping onto his rump across the tangled surface roots with spinning yellow swirls over his horns.",
             "dialogue": null,
             "characters_present": [
               "little_calf"
             ]
           }
         ],
-        "primary_location": "forest_creek",
+        "primary_location": "loc_forest_creek",
         "notes": null,
         "audit_notes": ""
       },
       {
         "shot_id": "sh_003",
         "duration_s": 15.0,
-        "narrative_purpose": "牛爸爸登场并以标志性的冷幽默化解小牛的诉苦",
+        "narrative_purpose": "Bull dad casually ambles over to the groaning calf and delivers a totally unhelpful deadpan philosophical remark.",
         "panels": [
           {
             "time_range": [
@@ -239,10 +234,10 @@
             ],
             "categories": [
               "emotional_close_up",
-              "lifestyle_use"
+              "comedic_beat"
             ],
-            "moment_description": "little_calf 抱着红肿发酸的宽鼻头缩在树根下，眼眶里含着大颗泪珠，双脚委屈地在地面来回蹬踩。",
-            "dialogue": "little_calf: 啊，疼……",
+            "moment_description": "Little calf sits curled over his knees, rubbing his squished red nose with both hooves and whining loudly.",
+            "dialogue": "little_calf: Ow, ow, ow.",
             "characters_present": [
               "little_calf"
             ]
@@ -253,161 +248,153 @@
               6.0
             ],
             "categories": [
-              "dialogue_two_shot",
-              "lifestyle_use"
+              "dialogue_two_shot"
             ],
-            "moment_description": "bull_dad 迈着沉重从容的步子从树影后踱出，两只宽厚手掌背在腰后，居高临下微皱着眉头俯视地上的小牛。",
-            "dialogue": "bull_dad: 这又怎么了？",
+            "moment_description": "Bull dad saunters into frame with heavy, unhurried steps, hands casually tucked into his vest pockets, stopping beside the curled-up calf and glancing down.",
+            "dialogue": "bull_dad: Now what?",
             "characters_present": [
-              "little_calf",
-              "bull_dad"
+              "bull_dad",
+              "little_calf"
             ]
           },
           {
             "time_range": [
               6.0,
-              9.0
+              9.5
             ],
             "categories": [
-              "dialogue_two_shot",
-              "emotional_close_up"
+              "dialogue_two_shot"
             ],
-            "moment_description": "little_calf 抽了抽泛红的大鼻头，一手揉着脑门短角，一手委屈巴巴地直指面前掉光半树叶子的大树。",
-            "dialogue": "little_calf: 跳小河，撞树上了。",
+            "moment_description": "Little calf points dramatically backward at the creek, then pats the rough tree bark beside his head with an exaggerated pout.",
+            "dialogue": "little_calf: I jumped the creek. I hit the tree.",
             "characters_present": [
-              "little_calf",
-              "bull_dad"
+              "bull_dad",
+              "little_calf"
             ]
           },
           {
             "time_range": [
-              9.0,
-              12.0
+              9.5,
+              12.5
             ],
             "categories": [
-              "dialogue_two_shot",
-              "emotional_close_up"
+              "dialogue_two_shot"
             ],
-            "moment_description": "bull_dad 缓缓仰起长着硕大弯角的宽脑门，目光落在光秃秃摇晃的树枝上，面无表情地动了动下颌。",
-            "dialogue": "bull_dad: 那哭的不应该是树吗？",
+            "moment_description": "Bull dad tilts his massive head up to observe the loose leaves still floating down from the battered oak branches, arms remaining folded.",
+            "dialogue": "bull_dad: Then shouldn't the tree be the one crying?",
             "characters_present": [
-              "little_calf",
-              "bull_dad"
+              "bull_dad",
+              "little_calf"
             ]
           },
           {
             "time_range": [
-              12.0,
+              12.5,
               15.0
             ],
             "categories": [
               "emotional_close_up",
-              "dialogue_two_shot"
+              "comedic_beat"
             ],
-            "moment_description": "little_calf 揉鼻子的动作瞬间僵硬在半空，眼角挂着半滴将落未落的眼泪，嘴巴微张，彻底呆若木鸡。",
+            "moment_description": "Little calf freezes with hooves hovering near his snout, staring up at bull dad in slack-jawed, speechless bewilderment.",
             "dialogue": null,
             "characters_present": [
-              "little_calf",
-              "bull_dad"
+              "little_calf"
             ]
           }
         ],
-        "primary_location": "forest_creek",
+        "primary_location": "loc_forest_creek",
         "notes": null,
         "audit_notes": ""
       },
       {
         "shot_id": "sh_004",
         "duration_s": 15.0,
-        "narrative_purpose": "小红鸟汇合，牛爸爸突如其来的随性问话引发尴尬定格笑点",
+        "narrative_purpose": "Red bird arrives, bull dad abruptly inquires about his missing wife, and everyone ends up staring in mutual comic confusion.",
         "panels": [
           {
             "time_range": [
               0.0,
-              3.0
+              3.5
             ],
             "categories": [
-              "dialogue_two_shot",
-              "lifestyle_use"
+              "quiet_slice_of_life"
             ],
-            "moment_description": "red_bird 拍打着红色双翼自半空滑翔而下，稳稳落在父子俩脚边的一块鹅卵石上，收拢翅膀仰起尖嘴打量二人。",
+            "moment_description": "Red bird glides downward and touches down lightly on a protruding oak root right between bull dad's boots and little calf's lap, looking up attentively.",
             "dialogue": null,
             "characters_present": [
-              "little_calf",
               "bull_dad",
+              "little_calf",
               "red_bird"
             ]
           },
           {
             "time_range": [
-              3.0,
-              6.0
+              3.5,
+              7.0
             ],
             "categories": [
-              "dialogue_two_shot",
-              "emotional_close_up"
+              "dialogue_two_shot"
             ],
-            "moment_description": "bull_dad 低头注视脚边的小红鸟，一只厚实牛掌若有所思地摩挲着下巴上的胡茬，眼眸亮起一丝恍然。",
-            "dialogue": "bull_dad: 对了，他妈去哪儿了？",
+            "moment_description": "Bull dad glances down from the tree canopy directly at red bird, scratching his horn thoughtfully with one hoof.",
+            "dialogue": "bull_dad: By the way — where did his mother go?",
             "characters_present": [
-              "little_calf",
               "bull_dad",
+              "little_calf",
               "red_bird"
             ]
           },
           {
             "time_range": [
-              6.0,
-              9.0
+              7.0,
+              10.0
             ],
             "categories": [
-              "dialogue_two_shot",
-              "emotional_close_up"
+              "comedic_beat"
             ],
-            "moment_description": "red_bird 脑袋向左侧一歪，两只乌黑眼珠骨碌一转，鸟嘴微微张开，露出一脸完全不知情的茫然神色。",
+            "moment_description": "Red bird cocks its head ninety degrees to the side, blinking blankly with zero comprehension, tail feathers twitching once.",
             "dialogue": null,
             "characters_present": [
-              "little_calf",
               "bull_dad",
+              "little_calf",
               "red_bird"
             ]
           },
           {
             "time_range": [
-              9.0,
-              12.0
+              10.0,
+              12.5
             ],
             "categories": [
-              "dialogue_two_shot",
-              "emotional_close_up"
+              "comedic_beat"
             ],
-            "moment_description": "little_calf 忘记了脸上的疼痛，骨碌从地上爬起，左瞧瞧右望望，伸长脖子四处打量空荡荡的树林。",
+            "moment_description": "Little calf cranes his neck left, then right, scanning the empty woods with wide questioning eyes as he realizes his mother is nowhere in sight.",
             "dialogue": null,
             "characters_present": [
-              "little_calf",
               "bull_dad",
+              "little_calf",
               "red_bird"
             ]
           },
           {
             "time_range": [
-              12.0,
+              12.5,
               15.0
             ],
             "categories": [
-              "establishing_wide",
-              "dialogue_two_shot"
+              "dialogue_two_shot",
+              "comedic_beat"
             ],
-            "moment_description": "牛父子二人先是极有默契地对视一眼，随即齐刷刷转头垂下目光死死盯住地上的 red_bird，微风吹过落叶，画面完全定格。",
+            "moment_description": "Bull dad and little calf exchange a brief, silent sideways glance, then turn their heads together to stare blankly back down at the clueless red bird; the frame holds completely motionless.",
             "dialogue": null,
             "characters_present": [
-              "little_calf",
               "bull_dad",
+              "little_calf",
               "red_bird"
             ]
           }
         ],
-        "primary_location": "forest_creek",
+        "primary_location": "loc_forest_creek",
         "notes": null,
         "audit_notes": ""
       }

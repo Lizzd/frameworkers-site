@@ -1,11 +1,11 @@
 {
   "content": {
-    "language": "zh",
+    "language": "en",
     "anchors": {
       "character_anchors": [
         {
           "entity_id": "little_calf",
-          "prompt_summary": "A cute bipedal anthropomorphic young calf standing upright, roughly waist-height to an adult bull. He has soft warm amber-yellow short fur, an oversized round head with large expressive black glossy eyes, and a broad pink muzzle. Two short, blunt conical horns sprout from the top of his head between floppy rounded ears. He wears light sky-blue denim overalls with brass buckle straps over his stubby torso.",
+          "prompt_summary": "Anthropomorphic orange-yellow cartoon calf standing on two legs, reaching only waist-high compared to an adult bull. He has an oversized rounded head, massive glossy black expressive eyes, a wide damp pinkish muzzle, floppy cream-tipped bovine ears, and two stubby grey horn nubs. He wears faded denim dungarees with brass buckles over his compact, chubby torso. Smooth stylized matte skin without realistic fur detailing.",
           "views": [
             "FACE",
             "FRONT"
@@ -14,7 +14,7 @@
         },
         {
           "entity_id": "bull_dad",
-          "prompt_summary": "A sturdy, broad-shouldered bipedal adult bull standing tall on two legs. He has rich dark orange-brown short coat fur, thick furrowed brows, and a small patch of dark brown stubble along his jawline. A pair of massive, sweeping horns curves outward and upward proudly from his head. He wears a rugged dark brown leather utility vest over his muscular chest.",
+          "prompt_summary": "Burly anthropomorphic orange-brown bull standing tall on two legs with a massive barrel chest and heavy squared jaw. He has a permanently furrowed brow and two long sweeping curved ivory horns with dark tips atop his broad head. He wears a weathered brown leather vest over an unbuttoned tan plaid shirt with sturdy work trousers. His silhouette is heavy, solid, and upright with calm, unmoving posture.",
           "views": [
             "FACE",
             "FRONT"
@@ -23,7 +23,7 @@
         },
         {
           "entity_id": "white_snake",
-          "prompt_summary": "An ultra-thin, tiny white snake as slender as a chopstick. Its body is smooth, milky-white, and semi-translucent like polished jade, with a soft pale-pink underside. It has two tiny black sesame-seed round eyes on a blunt rounded head. It often perches by holding its upper torso straight upright like a tiny stalk.",
+          "prompt_summary": "Slender, chopstick-thin milky-white cartoon snake with smooth porcelain-like skin. It has tiny beady black dot eyes and a rounded, gentle snout without visible nostrils or scales. Its lower body coils tightly into a spring-like helical base that allows it to stand stiffly upright like a clean exclamation mark.",
           "views": [
             "FACE",
             "FRONT"
@@ -32,7 +32,7 @@
         },
         {
           "entity_id": "red_bird",
-          "prompt_summary": "A palm-sized stylized cartoon songbird covered in vibrant crimson-red plumage. It features a perky pointed feather crest atop its head, a sharp slender bright-yellow beak, and long split tail feathers. Its two small black spindly claws are nimble and compact.",
+          "prompt_summary": "Palm-sized bright scarlet cartoon songbird with a sleek teardrop body and a long pointed yellow dagger beak. It features round glossy black eyes with white ring accents and twin slender ribbon-like tail feathers trailing behind. The plumage is clean, solid red with stylized geometric wing feathers.",
           "views": [
             "FACE",
             "FRONT"
@@ -42,8 +42,8 @@
       ],
       "location_anchors": [
         {
-          "entity_id": "meadow_slope",
-          "prompt_summary": "A rolling green grassy hillside on the sunny perimeter of a fantasy woodland. Dotted throughout the lush grass are clusters of small sunny-yellow wildflowers and a massive, rounded moss-dappled slate-gray boulder. In the background rise gently rolling green hills and whimsical stylized cartoon conifer trees under bright blue afternoon skies.",
+          "entity_id": "loc_meadow_rock",
+          "prompt_summary": "Sunlit grassy slope bordering a dense pine woodland under a clear azure sky. The scene is anchored by a massive lichen-speckled grey granite boulder resting firmly in the soil. Surrounding the rock are lush patches of green clover, flowering yellow dandelions, and tall grass blades catching warm afternoon sun.",
           "views": [
             "FRONT",
             "BACK",
@@ -52,8 +52,8 @@
           "reference_image_uri": ""
         },
         {
-          "entity_id": "forest_creek",
-          "prompt_summary": "A dense enchanting woodland interior traversed by a shallow, crystal-clear bubbling creek. Both banks are lined with towering broadleaf trees with thick mossy roots gripping the moist earth, surrounded by low ferns and lush emerald undergrowth. Dappled afternoon sunlight filters through the leafy canopy creating luminous golden patterns on the rippling water surface.",
+          "entity_id": "loc_forest_creek",
+          "prompt_summary": "Sun-dappled woodland clearing bisected by a shallow bubbling creek with smooth river pebbles and sparkling water. On the far mossy bank stands a massive ancient gnarled oak tree with sprawling surface roots and a thick leafy green canopy. Surrounding trees include slender pines and white birches with soft patches of forest moss on damp earth.",
           "views": [
             "FRONT",
             "BACK",
@@ -67,7 +67,7 @@
     "shot_visuals": {
       "sh_001": {
         "shot_id": "sh_001",
-        "primary_location": "meadow_slope",
+        "primary_location": "loc_meadow_rock",
         "panels": [
           {
             "panel_index": 1,
@@ -85,13 +85,15 @@
           {
             "panel_index": 3,
             "characters_present": [
-              "little_calf"
+              "little_calf",
+              "white_snake",
+              "red_bird"
             ]
           },
           {
             "panel_index": 4,
             "characters_present": [
-              "white_snake"
+              "little_calf"
             ]
           },
           {
@@ -102,11 +104,11 @@
             ]
           }
         ],
-        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nVISUAL MEDIUM and aesthetic are dictated entirely by the story's style_anchor (live-action film / 2D anime / illustration / 3D / etc.); do NOT default to photoreal, do NOT impose any medium the story omits. Apply verbatim: 3D 渲染卡通 CG 风格。高饱和度明快色彩，暖金阳光与葱郁翠绿基调，皮克斯/照明娱乐式圆润平滑材质与蓬松毛发质感，明暗对比柔和通透，欢快幽默合家欢调性。\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 medium -> P3 close-up -> P4 close-up -> P5 medium\n\n[PANEL 1]\nSHOT: wide, eye-level.\nPLACEMENT: Use the FRONT section of the little_calf character anchor; little_calf is reclined casually against the base of the massive gray boulder, back resting against the stone surface and both legs stretched out into the grass, head positioned well below the boulder's upper crest.\nACTION: little_calf lounges with droopy half-closed eyelids and floppy ears, a slender single blade of green grass held loosely between his lips as he gazes into space.\nENV: The meadow_slope environment, FRONT view; warm golden sunlight bathes the grassy hill, with yellow buttercups surrounding the rock and soft pine hills in the distance.\n\n[PANEL 2]\nSHOT: medium, eye-level.\nPLACEMENT: little_calf remains seated against the gray boulder; red_bird hovers in mid-air one arm-length to his left, wings spread wide, positioned level with little_calf's upper ear.\nACTION: red_bird flaps wings frantically in stationary flight, beak wide open aimed directly at little_calf; little_calf turns his head slightly upward with a sleepy blink.\nENV: The meadow_slope environment, FRONT view; the smooth curve of the gray boulder frames little_calf, warm sunny sky in the background.\n\n[PANEL 3]\nSHOT: close-up, high angle looking slightly down.\nPLACEMENT: Use the FACE section of the little_calf character anchor; little_calf fills the frame from the chest up, leaning his head forward toward the lower frame edge.\nACTION: little_calf knits his brows quizzically, round black pupils pointed downward toward the low grass blades at the edge of the frame.\nENV: The meadow_slope environment; out-of-focus emerald blades of grass and tiny yellow flower heads right beneath little_calf's shoulder.\n\n[PANEL 4]\nSHOT: close-up, low ground-level angle.\nPLACEMENT: Use the FRONT section of the white_snake character anchor; white_snake's lower tail is coiled in the dirt among clover stems, with its upper torso extending vertically like a chopstick, height barely reaching four finger-widths above the soil.\nACTION: white_snake stands perfectly erect, tilting its tiny blunt head sideways, blinking its two pin-sized black eyes innocently upward.\nENV: The meadow_slope environment; close macro view of deep green grass blades, mossy dirt, and tiny yellow petals flanking the tiny white snake.\n\n[PANEL 5]\nSHOT: medium, eye-level.\nPLACEMENT: little_calf is airborne half a meter directly above the ground, feet tucked beneath his overall shorts; white_snake remains motionless on the soil directly beneath little_calf's ascending hooves.\nACTION: little_calf leaps straight up in mid-air with limbs flailing wildly, pupils shrunken to tiny points, jaw dropped wide into a huge gaping oval of comic panic.\nENV: The meadow_slope environment; the giant gray boulder sits behind the leaping calf under bright midday sunlight.\n\n[RENDERED TEXT]\n(none for this shot)"
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nPolished stylized 3D CG animation. Saturated daytime palette of warm sunny yellows, leaf greens, rich earth browns, and sky blue reflections. Directional afternoon sunlight with warm golden rim lighting, soft diffuse bounces on grass and moss, and clean shadow shapes. Smooth matte character surfaces with bold geometric silhouettes, oversized expressive features, and simplified stylized anatomy free of realistic fur pores or skin wrinkles.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 medium -> P3 medium -> P4 close-up -> P5 wide\n\n[PANEL 1]\nSHOT: medium, eye-level\nPLACEMENT: use the FRONT section of the little_calf character anchor; calf is seated on the grassy turf with his back leaning flat against the base of the granite boulder, rump touching the dirt.\nACTION: Little calf holds a yellow dandelion stem clamped between his teeth, eyes half-closed in relaxed contentment, hands resting loosely on his denim dungaree knees.\nENV: FRONT view of loc_meadow_rock; massive grey boulder surface fills the upper half behind him, clover and dandelions carpet the foreground under bright afternoon sun.\n\n[PANEL 2]\nSHOT: medium, eye-level\nPLACEMENT: use the FRONT section of the little_calf anchor, still seated against the boulder; use the FRONT section of the red_bird anchor, hovering one arm-length above calf's right ear.\nACTION: Little calf tilts his head up in surprise; red bird flaps its bright scarlet wings vigorously mid-air, beak pointing down at the grass behind the calf.\nENV: FRONT view of loc_meadow_rock; boulder backdrop with dandelions waving slightly beneath warm yellow directional light.\n\n[PANEL 3]\nSHOT: medium, slightly low angle\nPLACEMENT: use the FRONT section of little_calf, twisted around on his knees facing the rock corner; use the FRONT section of white_snake, coiled on a flat dirt patch one step away from calf's snout; use the FRONT section of red_bird fluttering just above them.\nACTION: Little calf stares with round eyes; white snake stands perfectly vertical like a stiff white rod balanced on its coiled tail, looking directly into calf's face.\nENV: FRONT view of loc_meadow_rock; grassy verge where the boulder meets the turf, clear sunlight casting crisp shadows of snake and calf onto the ground.\n\n[PANEL 4]\nSHOT: close-up, eye-level\nPLACEMENT: use the FACE section of the little_calf character anchor; calf's head and upper chest fill the frame, framed against the grey boulder texture.\nACTION: Little calf's mouth hangs wide open with the chewed dandelion dropping free; his huge black eyes are stretched wide into perfect round circles and both ears stand rigidly horizontal.\nENV: FRONT view of loc_meadow_rock; blurred grey granite rock surface directly behind his head, bright sunlight highlighting his wide muzzle.\n\n[PANEL 5]\nSHOT: wide, low angle\nPLACEMENT: use the FRONT section of little_calf, suspended three feet up in mid-air directly above the grass; use the FRONT section of white_snake, grounded on the turf beneath him.\nACTION: Little calf leaps straight upward with stiff straight legs and hooves clutching both sides of his head; below on the grass, white snake remains coiled upright with a slight curious head tilt.\nENV: FRONT view of loc_meadow_rock; full boulder and surrounding dandelion field under open blue sky with the dark forest line visible in the distant background.\n\n[RENDERED TEXT]\n(none for this shot)"
       },
       "sh_002": {
         "shot_id": "sh_002",
-        "primary_location": "forest_creek",
+        "primary_location": "loc_forest_creek",
         "panels": [
           {
             "panel_index": 1,
@@ -140,11 +142,11 @@
             ]
           }
         ],
-        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nVISUAL MEDIUM and aesthetic are dictated entirely by the story's style_anchor (live-action film / 2D anime / illustration / 3D / etc.); do NOT default to photoreal, do NOT impose any medium the story omits. Apply verbatim: 3D 渲染卡通 CG 风格。高饱和度明快色彩，暖金阳光与葱郁翠绿基调，皮克斯/照明娱乐式圆润平滑材质与蓬松毛发质感，明暗对比柔和通透，欢快幽默合家欢调性。\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 wide -> P3 wide -> P4 medium -> P5 medium\n\n[PANEL 1]\nSHOT: medium, low angle.\nPLACEMENT: Use the FRONT section of the little_calf character anchor; little_calf sprints diagonally away from the camera, hooves kicking back two paces into the background; white_snake stands anchored on the grass patch in the extreme foreground corner.\nACTION: little_calf leans heavily forward in a panicked run, kicking up clods of dirt and grass fragments; white_snake tilts its head sideways in still, quiet bewilderment.\nENV: The forest_creek border, FRONT view; lush woodland floor with scattered yellow leaves and dappled sunlight.\n\n[PANEL 2]\nSHOT: wide, eye-level.\nPLACEMENT: little_calf is centered in mid-ground between two towering tree trunks, torso twisted in a dynamic zigzag sprint, scale small relative to the massive tree trunks flanking him.\nACTION: little_calf pumps his legs and flails his stubby arms, a swirling vortex of wind and golden autumn leaves kicking up around his heels as he zigs and zags through the forest.\nENV: The forest_creek environment, FRONT view; dense forest interior with thick vertical tree trunks and shafts of afternoon sun cutting through the leafy green canopy.\n\n[PANEL 3]\nSHOT: wide, low angle looking across water.\nPLACEMENT: little_calf is suspended in mid-flight high above the creek surface, body arched horizontally between the near grassy bank and the opposite bank.\nACTION: little_calf leaps across the water with both eyes squeezed tightly shut, arms stretched forward, ears pinned back against his head in mid-jump.\nENV: The forest_creek environment, OVERHEAD and FRONT view; the sparkling clear water reflects his sky-blue overalls; mossy boulders line both riverbanks.\n\n[PANEL 4]\nSHOT: medium, eye-level.\nPLACEMENT: Use the FRONT section of the little_calf character anchor; little_calf's face is pressed flat against the rough bark of a thick tree trunk dead center, head and body pinned flush to the wood surface.\nACTION: little_calf makes direct impact with the trunk, his round cheeks and wide pink nose squished flat against the bark; the upper tree canopy above him trembles violently, showering green leaves downward.\nENV: The forest_creek environment; a massive gnarly oak tree trunk on the far riverbank, surrounded by floating detached green leaves.\n\n[PANEL 5]\nSHOT: medium, eye-level.\nPLACEMENT: little_calf sits squarely on a thick moss-covered tree root protruding from the base of the trunk, knees splayed, back slumped against the tree base.\nACTION: little_calf sits dazed with his hands resting in his lap, round eyes swirling with cartoon dizziness, while several tiny cartoon golden sparks hover above his head.\nENV: The forest_creek environment; the mossy tree root floor littered with freshly fallen leaves, soft ambient woodland light.\n\n[RENDERED TEXT]\n(none for this shot)"
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nPolished stylized 3D CG animation. Saturated daytime palette of warm sunny yellows, leaf greens, rich earth browns, and sky blue reflections. Directional afternoon sunlight with warm golden rim lighting, soft diffuse bounces on grass and moss, and clean shadow shapes. Smooth matte character surfaces with bold geometric silhouettes, oversized expressive features, and simplified stylized anatomy free of realistic fur pores or skin wrinkles.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 wide -> P2 medium -> P3 wide -> P4 medium -> P5 medium\n\n[PANEL 1]\nSHOT: wide, eye-level\nPLACEMENT: use the FRONT section of little_calf, planted in full sprint on the forest path foreground; use the FRONT section of white_snake, tiny in the deep background on the meadow edge.\nACTION: Little calf sprints forward with limbs churning in a comedic blur, trailing a puffed dirt dust cloud behind him; far behind, white snake stays upright and motionless.\nENV: FRONT view of loc_forest_creek transitioning from meadow fringe to pine trees, warm sunlight streaming through pine branches onto the path.\n\n[PANEL 2]\nSHOT: medium, tracking eye-level\nPLACEMENT: use the FRONT section of little_calf; calf is centered between two slender pine trunks, right foot kicking off the forest needle floor.\nACTION: Little calf weaves sideways in frantic flight, head thrown back and ears streaming behind him, his shoulder brushing a pine bough aside.\nENV: FRONT view of loc_forest_creek; pine and birch tree trunks standing vertical in soft focus with patches of moss on the forest floor.\n\n[PANEL 3]\nSHOT: wide, low angle\nPLACEMENT: use the FRONT section of little_calf, soaring horizontally mid-air across the creek, three feet above the flowing water surface between both mossy banks.\nACTION: Little calf flies horizontally through the air with arms and legs splayed wide in full aerodynamic panic, gaze fixed forward on the opposite shore.\nENV: FRONT view of loc_forest_creek; shallow pebble creek sparkling beneath him, ancient oak tree roots framing the far bank under golden afternoon light.\n\n[PANEL 4]\nSHOT: medium, eye-level\nPLACEMENT: use the FRONT section of little_calf; calf's face and chest are smashed flush against the massive vertical bark surface of the ancient oak tree.\nACTION: Little calf's nose and cheeks flatten comedic-style against the rough tree bark at chest height, legs dangling limp above the mossy root base as green leaves shower down around him.\nENV: FRONT view of loc_forest_creek; broad textured oak tree trunk dominating the right half of frame, loose leaves drifting in the air around the collision point.\n\n[PANEL 5]\nSHOT: medium, eye-level\nPLACEMENT: use the FRONT section of little_calf; calf sits sprawled on his rump nestled directly between two protruding gnarled oak roots on the mossy ground.\nACTION: Little calf sits dazed with his back slumped against the lower trunk, arms draped limply at his sides, head tilted sideways with eyes swirling in mild stupor.\nENV: FRONT view of loc_forest_creek; thick mossy base of the ancient oak tree, scattered freshly fallen oak leaves dusting the roots and ground.\n\n[RENDERED TEXT]\n(none for this shot)"
       },
       "sh_003": {
         "shot_id": "sh_003",
-        "primary_location": "forest_creek",
+        "primary_location": "loc_forest_creek",
         "panels": [
           {
             "panel_index": 1,
@@ -155,88 +157,91 @@
           {
             "panel_index": 2,
             "characters_present": [
-              "little_calf",
-              "bull_dad"
+              "bull_dad",
+              "little_calf"
             ]
           },
           {
             "panel_index": 3,
             "characters_present": [
-              "little_calf",
-              "bull_dad"
+              "bull_dad",
+              "little_calf"
             ]
           },
           {
             "panel_index": 4,
             "characters_present": [
-              "little_calf",
-              "bull_dad"
+              "bull_dad",
+              "little_calf"
             ]
           },
           {
             "panel_index": 5,
             "characters_present": [
-              "little_calf",
-              "bull_dad"
+              "little_calf"
             ]
           }
         ],
-        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nVISUAL MEDIUM and aesthetic are dictated entirely by the story's style_anchor (live-action film / 2D anime / illustration / 3D / etc.); do NOT default to photoreal, do NOT impose any medium the story omits. Apply verbatim: 3D 渲染卡通 CG 风格。高饱和度明快色彩，暖金阳光与葱郁翠绿基调，皮克斯/照明娱乐式圆润平滑材质与蓬松毛发质感，明暗对比柔和通透，欢快幽默合家欢调性。\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 close-up -> P2 wide -> P3 medium -> P4 medium -> P5 close-up\n\n[PANEL 1]\nSHOT: close-up, eye-level.\nPLACEMENT: Use the FACE section of the little_calf character anchor; little_calf fills the frame from the chest up, seated on the mossy ground, hugging his swollen red snout with both hands visibly connected to his wrists and forearms.\nACTION: little_calf scrunches his face in tender grief, large glassy teardrops welling in the corners of his wide dark eyes, lips trembling.\nENV: The forest_creek environment; dark brown tree bark and emerald moss immediately behind his slumped shoulders.\n\n[PANEL 2]\nSHOT: wide, low angle looking up slightly.\nPLACEMENT: Use the FRONT section of both anchors; bull_dad stands tall two paces away from the tree trunk, towering twice as high as little_calf who remains huddled on the root below him.\nACTION: bull_dad steps out from behind the tree with hands clasped behind his back, looking down with a deadpan, slightly raised single eyebrow; little_calf looks up timidly from the floor.\nENV: The forest_creek environment, FRONT view; tall trees, filtered sunlight creating bright patches on the mossy forest ground.\n\n[PANEL 3]\nSHOT: medium, eye-level.\nPLACEMENT: little_calf is seated on the left, upper torso visible; bull_dad stands on the right, towering over him from chest up; little_calf reaches an arm diagonally upward pointing toward the tree.\nACTION: little_calf rubs his forehead horn with his left hand while pointing his right forelimb straight at the half-stripped tree trunk, his lower lip jutting in an aggrieved pout; bull_dad looks down dispassionately.\nENV: The forest_creek environment; the scarred tree trunk covered in scattered missing leaf patches directly behind little_calf.\n\n[PANEL 4]\nSHOT: medium, low angle looking up at bull_dad.\nPLACEMENT: Use the FRONT section of bull_dad; bull_dad stands centered with shoulders broad, head tilted back toward the canopy, little_calf visible in the lower foreground corner looking up.\nACTION: bull_dad stares upward at the nearly bare tree branches with an expressionless, calm face, his lower jaw shifting slightly to the side in deadpan observation.\nENV: The forest_creek environment; the upper canopy of the tree with stripped branches and falling leaves against the golden afternoon sky.\n\n[PANEL 5]\nSHOT: close-up, eye-level.\nPLACEMENT: Use the FACE section of the little_calf character anchor; little_calf is framed tightly from the chest up, his hand frozen mid-rub over his snout, forearm clearly anchored at frame right.\nACTION: little_calf freezes completely in place, a single tear hanging suspended on his cheek, mouth slightly agape in utter speechless bewilderment.\nENV: The forest_creek environment; soft-focus textured tree bark behind his head.\n\n[RENDERED TEXT]\n(none for this shot)"
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nPolished stylized 3D CG animation. Saturated daytime palette of warm sunny yellows, leaf greens, rich earth browns, and sky blue reflections. Directional afternoon sunlight with warm golden rim lighting, soft diffuse bounces on grass and moss, and clean shadow shapes. Smooth matte character surfaces with bold geometric silhouettes, oversized expressive features, and simplified stylized anatomy free of realistic fur pores or skin wrinkles.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 close-up -> P2 medium -> P3 medium -> P4 medium -> P5 close-up\n\n[PANEL 1]\nSHOT: close-up, eye-level\nPLACEMENT: use the FACE section of the little_calf character anchor; calf is curled on the oak root base, knees drawn to chest.\nACTION: Little calf rubs his swollen, slightly squished pinkish snout with both clenched front hooves, eyes tightly shut with teary comedic creases.\nENV: FRONT view of loc_forest_creek; rough textured bark of the oak trunk behind his head, soft moss visible around his bent knees.\n\n[PANEL 2]\nSHOT: medium, eye-level\nPLACEMENT: use the FRONT section of bull_dad, standing tall two steps to the left of the oak tree; use the FRONT section of little_calf, seated on the oak roots below bull dad's waist level.\nACTION: Bull dad stands upright with hooves tucked casually into his vest pockets, gazing dryly down at the whining calf; calf keeps rubbing his nose.\nENV: FRONT view of loc_forest_creek; base of the ancient oak tree and creek bank, dappled forest light filtering through branches overhead.\n\n[PANEL 3]\nSHOT: medium, eye-level\nPLACEMENT: use the FRONT section of bull_dad standing motionless beside the root; use the FRONT section of little_calf seated on the root mound.\nACTION: Little calf raises his right arm pointing past bull dad toward the creek behind them, his left hoof patting the oak trunk beside him with an aggrieved pout.\nENV: FRONT view of loc_forest_creek; oak trunk and shallow creek visible in the background, sunlit green leaves scattered on the turf.\n\n[PANEL 4]\nSHOT: medium, slightly low angle\nPLACEMENT: use the FRONT section of bull_dad, towering over the seated calf with his chest and horns prominent; use the FRONT section of little_calf, small in the lower right corner.\nACTION: Bull dad folds his thick arms across his chest and slowly tilts his head upward toward the oak canopy, watching a few stray leaves flutter down; calf stares up at him.\nENV: FRONT view of loc_forest_creek; oak trunk and spreading canopy branches above against warm afternoon sky.\n\n[PANEL 5]\nSHOT: close-up, slightly high angle\nPLACEMENT: use the FACE section of the little_calf character anchor; calf's face angled steeply upward toward the off-frame bull dad, hooves frozen mid-air near his chin.\nACTION: Little calf freezes with mouth dropped open in complete baffled disbelief, round eyes staring unblinkingly upward.\nENV: FRONT view of loc_forest_creek; rough oak bark background with warm green ambient bounce on calf's orange cheek.\n\n[RENDERED TEXT]\n(none for this shot)"
       },
       "sh_004": {
         "shot_id": "sh_004",
-        "primary_location": "forest_creek",
+        "primary_location": "loc_forest_creek",
         "panels": [
           {
             "panel_index": 1,
             "characters_present": [
-              "little_calf",
               "bull_dad",
+              "little_calf",
               "red_bird"
             ]
           },
           {
             "panel_index": 2,
             "characters_present": [
-              "little_calf",
               "bull_dad",
+              "little_calf",
               "red_bird"
             ]
           },
           {
             "panel_index": 3,
             "characters_present": [
-              "little_calf",
               "bull_dad",
+              "little_calf",
               "red_bird"
             ]
           },
           {
             "panel_index": 4,
             "characters_present": [
-              "little_calf",
               "bull_dad",
+              "little_calf",
               "red_bird"
             ]
           },
           {
             "panel_index": 5,
             "characters_present": [
-              "little_calf",
               "bull_dad",
+              "little_calf",
               "red_bird"
             ]
           }
         ],
-        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nVISUAL MEDIUM and aesthetic are dictated entirely by the story's style_anchor (live-action film / 2D anime / illustration / 3D / etc.); do NOT default to photoreal, do NOT impose any medium the story omits. Apply verbatim: 3D 渲染卡通 CG 风格。高饱和度明快色彩，暖金阳光与葱郁翠绿基调，皮克斯/照明娱乐式圆润平滑材质与蓬松毛发质感，明暗对比柔和通透，欢快幽默合家欢调性。\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 medium -> P3 close-up -> P4 medium -> P5 wide\n\n[PANEL 1]\nSHOT: medium, low angle.\nPLACEMENT: bull_dad stands on the right, little_calf sits on the tree root on the left; red_bird lands on a rounded river pebble between both of their feet, tiny in comparison.\nACTION: red_bird folds its crimson wings neatly against its sides, perking up its crest feathers and tilting its yellow beak upward to look back and forth between father and son.\nENV: The forest_creek environment; creek pebbles, green moss, and the thick oak tree base bathed in afternoon sunlight.\n\n[PANEL 2]\nSHOT: medium, eye-level.\nPLACEMENT: bull_dad is centered from the waist up, bending forward slightly at the hips; his broad right hand, connected to a muscular wrist and forearm, reaches up to scratch the stubble on his chin; red_bird perches below in the corner.\nACTION: bull_dad looks down with narrowed, thoughtful eyes, his brow furrowing as a sudden thought strikes him, mouth closed in contemplation.\nENV: The forest_creek environment; forest undergrowth and tree trunks softly blurred in the background.\n\n[PANEL 3]\nSHOT: close-up, low angle looking up at bird.\nPLACEMENT: Use the FACE section of the red_bird character anchor; red_bird fills the frame, perched firmly atop the gray pebble with both black claws gripping the stone.\nACTION: red_bird cocks its head sharply to the left at a ninety-degree angle, both round black eyes wide, tiny yellow beak parted slightly in utter blank cluelessness.\nENV: The forest_creek environment; shallow crystal creek water softly rippling behind the pebble.\n\n[PANEL 4]\nSHOT: medium, eye-level.\nPLACEMENT: little_calf stands fully upright on both hooves beside the tree trunk, one pace to the left of bull_dad; red_bird remains on the pebble between them.\nACTION: little_calf has completely forgotten his nose injury, craning his neck high and swiveling his round head to scan the empty forest left and right in sudden panic.\nENV: The forest_creek environment, BACK view; empty forest paths between tall tree trunks showing no other figures in sight.\n\n[PANEL 5]\nSHOT: wide, eye-level.\nPLACEMENT: Use the FRONT section of bull_dad and little_calf; bull_dad stands on the right, little_calf stands on the left at half his height, both staring downward; red_bird sits frozen on the pebble centered right between their hooves.\nACTION: bull_dad and little_calf both freeze in an identical deadpan stare, necks bent downward with wide eyes locked onto the motionless red bird; dead leaves drift quietly past them in the stillness.\nENV: The forest_creek environment, FRONT view; the tranquil creek and quiet woodland frozen under soft golden afternoon light.\n\n[RENDERED TEXT]\n(none for this shot)"
+        "storyboard_prompt": "[ASPECT & GRID]\n(grid injected by renderer)\n\n[STYLE FOUNDATION]\nPolished stylized 3D CG animation. Saturated daytime palette of warm sunny yellows, leaf greens, rich earth browns, and sky blue reflections. Directional afternoon sunlight with warm golden rim lighting, soft diffuse bounces on grass and moss, and clean shadow shapes. Smooth matte character surfaces with bold geometric silhouettes, oversized expressive features, and simplified stylized anatomy free of realistic fur pores or skin wrinkles.\n\n[IDENTITY LOCK]\nAll characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.\n\n[SHOT RHYTHM]\nP1 medium -> P2 medium -> P3 close-up -> P4 medium -> P5 medium\n\n[PANEL 1]\nSHOT: medium, eye-level\nPLACEMENT: use the FRONT section of bull_dad, standing firmly on the moss; use the FRONT section of little_calf, sitting on the oak root; use the FRONT section of red_bird, perched on a root midway between bull dad's boot and calf's knee.\nACTION: Red bird lands with wings folding smoothly against its back, looking up alertly; bull dad glances downward and calf turns his head toward the bird.\nENV: FRONT view of loc_forest_creek; mossy root cluster at the base of the massive oak tree, dappled sunlight shimmering across the forest clearing.\n\n[PANEL 2]\nSHOT: medium, eye-level\nPLACEMENT: use the FRONT section of bull_dad, standing one arm-length to the left of the bird; use the FRONT section of red_bird perched on the root; use the FRONT section of little_calf seated on the right.\nACTION: Bull dad raises his right hoof to scratch the base of his curved ivory horn thoughtfully, looking down at red bird with a neutral brow; calf and bird both gaze up at him.\nENV: FRONT view of loc_forest_creek; ancient oak trunk and soft forest floor illuminated by afternoon sunbeams.\n\n[PANEL 3]\nSHOT: close-up, eye-level\nPLACEMENT: use the FACE section of the red_bird character anchor; red bird occupies center frame on the dark wooden root surface; bull dad's brown leather boot toe is visible on the left edge.\nACTION: Red bird tilts its entire head sharply ninety degrees sideways, round eye staring blankly forward with zero comprehension, tail ribbons twitching once.\nENV: FRONT view of loc_forest_creek; dark mossy root wood surface with soft blurred forest greenery behind.\n\n[PANEL 4]\nSHOT: medium, eye-level\nPLACEMENT: use the FRONT section of little_calf, seated on the roots; use the FRONT section of bull_dad standing tall beside him; use the FRONT section of red_bird on the root.\nACTION: Little calf cranes his neck left toward the trees, eyes wide with sudden worry, while bull dad remains still and red bird stays head-tilted.\nENV: FRONT view of loc_forest_creek; the empty, quiet woodland spanning behind them across the creek, sunlight catching pine trunks with no other figures around.\n\n[PANEL 5]\nSHOT: medium, eye-level\nPLACEMENT: use the FRONT section of bull_dad, standing motionless; use the FRONT section of little_calf, sitting beside him; use the FRONT section of red_bird, perched between them on the root.\nACTION: Bull dad and little calf look directly down at red bird with identical flat, deadpan expressions; red bird stares blankly back upward; all three hold completely rigid.\nENV: FRONT view of loc_forest_creek; mossy base of the ancient oak tree and pebble creek background bathed in golden late afternoon sun.\n\n[RENDERED TEXT]\n(none for this shot)"
       }
     },
     "style_notes": [
-      "3D cartoon CG animation render style with Pixar and Illumination family-friendly aesthetic.",
-      "Vibrant high-saturation color palette featuring warm golden sunlight and lush emerald greens.",
-      "Soft and smooth volumetric shading, translucent rim lighting, and plush velvety fur and feather textures.",
-      "Gentle cartoon lighting with clear depth, warm cinematic shadows, and playful lighthearted atmosphere."
+      "Polished stylized 3D CG animation aesthetic.",
+      "Saturated daytime palette dominated by sunny yellows, lush leaf greens, earth browns, and sky blue reflections.",
+      "Directional warm afternoon sunlight with golden rim lighting and soft diffuse ambient bounces.",
+      "Smooth matte character surfaces with bold geometric silhouettes and simplified stylized anatomy."
     ],
-    "must_avoid": []
+    "must_avoid": [
+      "realistic fur pores or skin wrinkles",
+      "photorealistic grit, harsh film grain, or desaturated grim tones",
+      "explicit gore, blood spray, or realistic physical injuries"
+    ]
   }
 }

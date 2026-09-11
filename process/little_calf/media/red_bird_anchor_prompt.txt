@@ -1,5 +1,5 @@
 Rendered entirely in this visual style / medium (governs the whole image):
-3D cartoon CG animation render style with Pixar and Illumination family-friendly aesthetic.; Vibrant high-saturation color palette featuring warm golden sunlight and lush emerald greens.; Soft and smooth volumetric shading, translucent rim lighting, and plush velvety fur and feather textures.; Gentle cartoon lighting with clear depth, warm cinematic shadows, and playful lighthearted atmosphere.
+Polished stylized 3D CG animation aesthetic.; Saturated daytime palette dominated by sunny yellows, lush leaf greens, earth browns, and sky blue reflections.; Directional warm afternoon sunlight with golden rim lighting and soft diffuse ambient bounces.; Smooth matte character surfaces with bold geometric silhouettes and simplified stylized anatomy.
 
 A single-subject character reference card. The single 16:9 widescreen image is composed of TWO equal-width vertical sections, each showing the SAME single subject — same identity, costume, and the SAME visual medium — only framing differing:
 - SECTION 1 (leftmost): FACE — head-and-shoulders close-up, subject facing camera; face fills ~60% of section height, clearly readable.
@@ -13,4 +13,6 @@ Strict rules:
 - Plain seamless backdrop in the medium's natural ground color (e.g. raw paper for ink-wash, neutral gray for photoreal), no scene props, no environmental context.
 - This is a clean reference plate: NO rendered text of any kind — no captions, view labels, watermarks, logos, or lettering anywhere on the card.
 
-Subject: A palm-sized stylized cartoon songbird covered in vibrant crimson-red plumage. It features a perky pointed feather crest atop its head, a sharp slender bright-yellow beak, and long split tail feathers. Its two small black spindly claws are nimble and compact.
+Subject: Palm-sized bright scarlet cartoon songbird with a sleek teardrop body and a long pointed yellow dagger beak. It features round glossy black eyes with white ring accents and twin slender ribbon-like tail feathers trailing behind. The plumage is clean, solid red with stylized geometric wing feathers.
+
+Do NOT use: realistic fur pores or skin wrinkles; photorealistic grit, harsh film grain, or desaturated grim tones; explicit gore, blood spray, or realistic physical injuries.

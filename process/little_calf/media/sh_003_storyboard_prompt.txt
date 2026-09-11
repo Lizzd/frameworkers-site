@@ -2,43 +2,43 @@
 Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel.
 
 [STYLE FOUNDATION]
-VISUAL MEDIUM and aesthetic are dictated entirely by the story's style_anchor (live-action film / 2D anime / illustration / 3D / etc.); do NOT default to photoreal, do NOT impose any medium the story omits. Apply verbatim: 3D 渲染卡通 CG 风格。高饱和度明快色彩，暖金阳光与葱郁翠绿基调，皮克斯/照明娱乐式圆润平滑材质与蓬松毛发质感，明暗对比柔和通透，欢快幽默合家欢调性。
+Polished stylized 3D CG animation. Saturated daytime palette of warm sunny yellows, leaf greens, rich earth browns, and sky blue reflections. Directional afternoon sunlight with warm golden rim lighting, soft diffuse bounces on grass and moss, and clean shadow shapes. Smooth matte character surfaces with bold geometric silhouettes, oversized expressive features, and simplified stylized anatomy free of realistic fur pores or skin wrinkles.
 
 [IDENTITY LOCK]
 All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
 
 [SHOT RHYTHM]
-P1 close-up -> P2 wide -> P3 medium -> P4 medium -> P5 close-up
+P1 close-up -> P2 medium -> P3 medium -> P4 medium -> P5 close-up
 
 [PANEL 1]
-SHOT: close-up, eye-level.
-PLACEMENT: Use the FACE section of the little_calf character anchor; little_calf fills the frame from the chest up, seated on the mossy ground, hugging his swollen red snout with both hands visibly connected to his wrists and forearms.
-ACTION: little_calf scrunches his face in tender grief, large glassy teardrops welling in the corners of his wide dark eyes, lips trembling.
-ENV: The forest_creek environment; dark brown tree bark and emerald moss immediately behind his slumped shoulders.
+SHOT: close-up, eye-level
+PLACEMENT: use the FACE section of the little_calf character anchor; calf is curled on the oak root base, knees drawn to chest.
+ACTION: Little calf rubs his swollen, slightly squished pinkish snout with both clenched front hooves, eyes tightly shut with teary comedic creases.
+ENV: FRONT view of loc_forest_creek; rough textured bark of the oak trunk behind his head, soft moss visible around his bent knees.
 
 [PANEL 2]
-SHOT: wide, low angle looking up slightly.
-PLACEMENT: Use the FRONT section of both anchors; bull_dad stands tall two paces away from the tree trunk, towering twice as high as little_calf who remains huddled on the root below him.
-ACTION: bull_dad steps out from behind the tree with hands clasped behind his back, looking down with a deadpan, slightly raised single eyebrow; little_calf looks up timidly from the floor.
-ENV: The forest_creek environment, FRONT view; tall trees, filtered sunlight creating bright patches on the mossy forest ground.
+SHOT: medium, eye-level
+PLACEMENT: use the FRONT section of bull_dad, standing tall two steps to the left of the oak tree; use the FRONT section of little_calf, seated on the oak roots below bull dad's waist level.
+ACTION: Bull dad stands upright with hooves tucked casually into his vest pockets, gazing dryly down at the whining calf; calf keeps rubbing his nose.
+ENV: FRONT view of loc_forest_creek; base of the ancient oak tree and creek bank, dappled forest light filtering through branches overhead.
 
 [PANEL 3]
-SHOT: medium, eye-level.
-PLACEMENT: little_calf is seated on the left, upper torso visible; bull_dad stands on the right, towering over him from chest up; little_calf reaches an arm diagonally upward pointing toward the tree.
-ACTION: little_calf rubs his forehead horn with his left hand while pointing his right forelimb straight at the half-stripped tree trunk, his lower lip jutting in an aggrieved pout; bull_dad looks down dispassionately.
-ENV: The forest_creek environment; the scarred tree trunk covered in scattered missing leaf patches directly behind little_calf.
+SHOT: medium, eye-level
+PLACEMENT: use the FRONT section of bull_dad standing motionless beside the root; use the FRONT section of little_calf seated on the root mound.
+ACTION: Little calf raises his right arm pointing past bull dad toward the creek behind them, his left hoof patting the oak trunk beside him with an aggrieved pout.
+ENV: FRONT view of loc_forest_creek; oak trunk and shallow creek visible in the background, sunlit green leaves scattered on the turf.
 
 [PANEL 4]
-SHOT: medium, low angle looking up at bull_dad.
-PLACEMENT: Use the FRONT section of bull_dad; bull_dad stands centered with shoulders broad, head tilted back toward the canopy, little_calf visible in the lower foreground corner looking up.
-ACTION: bull_dad stares upward at the nearly bare tree branches with an expressionless, calm face, his lower jaw shifting slightly to the side in deadpan observation.
-ENV: The forest_creek environment; the upper canopy of the tree with stripped branches and falling leaves against the golden afternoon sky.
+SHOT: medium, slightly low angle
+PLACEMENT: use the FRONT section of bull_dad, towering over the seated calf with his chest and horns prominent; use the FRONT section of little_calf, small in the lower right corner.
+ACTION: Bull dad folds his thick arms across his chest and slowly tilts his head upward toward the oak canopy, watching a few stray leaves flutter down; calf stares up at him.
+ENV: FRONT view of loc_forest_creek; oak trunk and spreading canopy branches above against warm afternoon sky.
 
 [PANEL 5]
-SHOT: close-up, eye-level.
-PLACEMENT: Use the FACE section of the little_calf character anchor; little_calf is framed tightly from the chest up, his hand frozen mid-rub over his snout, forearm clearly anchored at frame right.
-ACTION: little_calf freezes completely in place, a single tear hanging suspended on his cheek, mouth slightly agape in utter speechless bewilderment.
-ENV: The forest_creek environment; soft-focus textured tree bark behind his head.
+SHOT: close-up, slightly high angle
+PLACEMENT: use the FACE section of the little_calf character anchor; calf's face angled steeply upward toward the off-frame bull dad, hooves frozen mid-air near his chin.
+ACTION: Little calf freezes with mouth dropped open in complete baffled disbelief, round eyes staring unblinkingly upward.
+ENV: FRONT view of loc_forest_creek; rough oak bark background with warm green ambient bounce on calf's orange cheek.
 
 [RENDERED TEXT]
 (none for this shot)

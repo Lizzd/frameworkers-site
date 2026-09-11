@@ -1,50 +1,56 @@
 {
   "content": {
-    "language": "zh",
+    "language": "en",
     "segments": [
       {
         "segment_id": "seg_001",
-        "start_time": 4.85,
-        "end_time": 6.6,
-        "text": "快点儿，看你身后！"
+        "start_time": 5.42,
+        "end_time": 7.37,
+        "text": "Quick, look behind you!"
       },
       {
         "segment_id": "seg_002",
-        "start_time": 13.2,
-        "end_time": 14.8,
-        "text": "啊，蛇！"
+        "start_time": 13.56,
+        "end_time": 15.65,
+        "text": "Snake!"
       },
       {
         "segment_id": "seg_003",
-        "start_time": 14.8,
-        "end_time": 17.0,
-        "text": "救命啊！"
+        "start_time": 16.32,
+        "end_time": 17.74,
+        "text": "Help!"
       },
       {
         "segment_id": "seg_004",
-        "start_time": 34.9,
-        "end_time": 36.35,
-        "text": "这又怎么了？"
+        "start_time": 30.68,
+        "end_time": 33.77,
+        "text": "Ow! Ow! Ow! Ow!"
       },
       {
         "segment_id": "seg_005",
-        "start_time": 36.8,
-        "end_time": 39.5,
-        "text": "跳小河，撞树上了。"
+        "start_time": 35.53,
+        "end_time": 36.85,
+        "text": "Now what?"
       },
       {
         "segment_id": "seg_006",
-        "start_time": 40.25,
-        "end_time": 42.8,
-        "text": "那哭的不该是树吗？"
+        "start_time": 36.85,
+        "end_time": 39.37,
+        "text": "I jumped the creek! I hit the tree!"
       },
       {
         "segment_id": "seg_007",
-        "start_time": 49.8,
-        "end_time": 52.8,
-        "text": "对了，他妈去哪儿了？"
+        "start_time": 39.37,
+        "end_time": 42.44,
+        "text": "Then shouldn't the tree be the one crying?"
+      },
+      {
+        "segment_id": "seg_008",
+        "start_time": 50.8,
+        "end_time": 53.64,
+        "text": "By the way, where did his mother go?"
       }
     ],
-    "full_text": "快点儿，看你身后！ 啊，蛇！ 救命啊！ 这又怎么了？ 跳小河，撞树上了。 那哭的不该是树吗？ 对了，他妈去哪儿了？"
+    "full_text": "Quick, look behind you! Snake! Help! Ow! Ow! Ow! Ow! Now what? I jumped the creek! I hit the tree! Then shouldn't the tree be the one crying? By the way, where did his mother go?"
   }
 }

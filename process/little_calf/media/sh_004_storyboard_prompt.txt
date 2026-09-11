@@ -2,43 +2,43 @@
 Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel.
 
 [STYLE FOUNDATION]
-VISUAL MEDIUM and aesthetic are dictated entirely by the story's style_anchor (live-action film / 2D anime / illustration / 3D / etc.); do NOT default to photoreal, do NOT impose any medium the story omits. Apply verbatim: 3D 渲染卡通 CG 风格。高饱和度明快色彩，暖金阳光与葱郁翠绿基调，皮克斯/照明娱乐式圆润平滑材质与蓬松毛发质感，明暗对比柔和通透，欢快幽默合家欢调性。
+Polished stylized 3D CG animation. Saturated daytime palette of warm sunny yellows, leaf greens, rich earth browns, and sky blue reflections. Directional afternoon sunlight with warm golden rim lighting, soft diffuse bounces on grass and moss, and clean shadow shapes. Smooth matte character surfaces with bold geometric silhouettes, oversized expressive features, and simplified stylized anatomy free of realistic fur pores or skin wrinkles.
 
 [IDENTITY LOCK]
 All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
 
 [SHOT RHYTHM]
-P1 medium -> P2 medium -> P3 close-up -> P4 medium -> P5 wide
+P1 medium -> P2 medium -> P3 close-up -> P4 medium -> P5 medium
 
 [PANEL 1]
-SHOT: medium, low angle.
-PLACEMENT: bull_dad stands on the right, little_calf sits on the tree root on the left; red_bird lands on a rounded river pebble between both of their feet, tiny in comparison.
-ACTION: red_bird folds its crimson wings neatly against its sides, perking up its crest feathers and tilting its yellow beak upward to look back and forth between father and son.
-ENV: The forest_creek environment; creek pebbles, green moss, and the thick oak tree base bathed in afternoon sunlight.
+SHOT: medium, eye-level
+PLACEMENT: use the FRONT section of bull_dad, standing firmly on the moss; use the FRONT section of little_calf, sitting on the oak root; use the FRONT section of red_bird, perched on a root midway between bull dad's boot and calf's knee.
+ACTION: Red bird lands with wings folding smoothly against its back, looking up alertly; bull dad glances downward and calf turns his head toward the bird.
+ENV: FRONT view of loc_forest_creek; mossy root cluster at the base of the massive oak tree, dappled sunlight shimmering across the forest clearing.
 
 [PANEL 2]
-SHOT: medium, eye-level.
-PLACEMENT: bull_dad is centered from the waist up, bending forward slightly at the hips; his broad right hand, connected to a muscular wrist and forearm, reaches up to scratch the stubble on his chin; red_bird perches below in the corner.
-ACTION: bull_dad looks down with narrowed, thoughtful eyes, his brow furrowing as a sudden thought strikes him, mouth closed in contemplation.
-ENV: The forest_creek environment; forest undergrowth and tree trunks softly blurred in the background.
+SHOT: medium, eye-level
+PLACEMENT: use the FRONT section of bull_dad, standing one arm-length to the left of the bird; use the FRONT section of red_bird perched on the root; use the FRONT section of little_calf seated on the right.
+ACTION: Bull dad raises his right hoof to scratch the base of his curved ivory horn thoughtfully, looking down at red bird with a neutral brow; calf and bird both gaze up at him.
+ENV: FRONT view of loc_forest_creek; ancient oak trunk and soft forest floor illuminated by afternoon sunbeams.
 
 [PANEL 3]
-SHOT: close-up, low angle looking up at bird.
-PLACEMENT: Use the FACE section of the red_bird character anchor; red_bird fills the frame, perched firmly atop the gray pebble with both black claws gripping the stone.
-ACTION: red_bird cocks its head sharply to the left at a ninety-degree angle, both round black eyes wide, tiny yellow beak parted slightly in utter blank cluelessness.
-ENV: The forest_creek environment; shallow crystal creek water softly rippling behind the pebble.
+SHOT: close-up, eye-level
+PLACEMENT: use the FACE section of the red_bird character anchor; red bird occupies center frame on the dark wooden root surface; bull dad's brown leather boot toe is visible on the left edge.
+ACTION: Red bird tilts its entire head sharply ninety degrees sideways, round eye staring blankly forward with zero comprehension, tail ribbons twitching once.
+ENV: FRONT view of loc_forest_creek; dark mossy root wood surface with soft blurred forest greenery behind.
 
 [PANEL 4]
-SHOT: medium, eye-level.
-PLACEMENT: little_calf stands fully upright on both hooves beside the tree trunk, one pace to the left of bull_dad; red_bird remains on the pebble between them.
-ACTION: little_calf has completely forgotten his nose injury, craning his neck high and swiveling his round head to scan the empty forest left and right in sudden panic.
-ENV: The forest_creek environment, BACK view; empty forest paths between tall tree trunks showing no other figures in sight.
+SHOT: medium, eye-level
+PLACEMENT: use the FRONT section of little_calf, seated on the roots; use the FRONT section of bull_dad standing tall beside him; use the FRONT section of red_bird on the root.
+ACTION: Little calf cranes his neck left toward the trees, eyes wide with sudden worry, while bull dad remains still and red bird stays head-tilted.
+ENV: FRONT view of loc_forest_creek; the empty, quiet woodland spanning behind them across the creek, sunlight catching pine trunks with no other figures around.
 
 [PANEL 5]
-SHOT: wide, eye-level.
-PLACEMENT: Use the FRONT section of bull_dad and little_calf; bull_dad stands on the right, little_calf stands on the left at half his height, both staring downward; red_bird sits frozen on the pebble centered right between their hooves.
-ACTION: bull_dad and little_calf both freeze in an identical deadpan stare, necks bent downward with wide eyes locked onto the motionless red bird; dead leaves drift quietly past them in the stillness.
-ENV: The forest_creek environment, FRONT view; the tranquil creek and quiet woodland frozen under soft golden afternoon light.
+SHOT: medium, eye-level
+PLACEMENT: use the FRONT section of bull_dad, standing motionless; use the FRONT section of little_calf, sitting beside him; use the FRONT section of red_bird, perched between them on the root.
+ACTION: Bull dad and little calf look directly down at red bird with identical flat, deadpan expressions; red bird stares blankly back upward; all three hold completely rigid.
+ENV: FRONT view of loc_forest_creek; mossy base of the ancient oak tree and pebble creek background bathed in golden late afternoon sun.
 
 [RENDERED TEXT]
 (none for this shot)

@@ -2,49 +2,46 @@
 Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel.
 
 [STYLE FOUNDATION]
-VISUAL MEDIUM and aesthetic are dictated entirely by the story's style_anchor (live-action film / 2D anime / illustration / 3D / etc.); do NOT default to photoreal, do NOT impose any medium the story omits. Apply verbatim: 3D 渲染卡通 CG 风格。高饱和度明快色彩，暖金阳光与葱郁翠绿基调，皮克斯/照明娱乐式圆润平滑材质与蓬松毛发质感，明暗对比柔和通透，欢快幽默合家欢调性。
+Polished stylized 3D CG animation. Saturated daytime palette of warm sunny yellows, leaf greens, rich earth browns, and sky blue reflections. Directional afternoon sunlight with warm golden rim lighting, soft diffuse bounces on grass and moss, and clean shadow shapes. Smooth matte character surfaces with bold geometric silhouettes, oversized expressive features, and simplified stylized anatomy free of realistic fur pores or skin wrinkles.
 
 [IDENTITY LOCK]
 All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
 
 [SHOT RHYTHM]
-P1 medium -> P2 wide -> P3 wide -> P4 medium -> P5 medium
+P1 wide -> P2 medium -> P3 wide -> P4 medium -> P5 medium
 
 [PANEL 1]
-SHOT: medium, low angle.
-PLACEMENT: Use the FRONT section of the little_calf character anchor; little_calf sprints diagonally away from the camera, hooves kicking back two paces into the background; white_snake stands anchored on the grass patch in the extreme foreground corner.
-ACTION: little_calf leans heavily forward in a panicked run, kicking up clods of dirt and grass fragments; white_snake tilts its head sideways in still, quiet bewilderment.
-ENV: The forest_creek border, FRONT view; lush woodland floor with scattered yellow leaves and dappled sunlight.
+SHOT: wide, eye-level
+PLACEMENT: use the FRONT section of little_calf, planted in full sprint on the forest path foreground; use the FRONT section of white_snake, tiny in the deep background on the meadow edge.
+ACTION: Little calf sprints forward with limbs churning in a comedic blur, trailing a puffed dirt dust cloud behind him; far behind, white snake stays upright and motionless.
+ENV: FRONT view of loc_forest_creek transitioning from meadow fringe to pine trees, warm sunlight streaming through pine branches onto the path.
 
 [PANEL 2]
-SHOT: wide, eye-level.
-PLACEMENT: little_calf is centered in mid-ground between two towering tree trunks, torso twisted in a dynamic zigzag sprint, scale small relative to the massive tree trunks flanking him.
-ACTION: little_calf pumps his legs and flails his stubby arms, a swirling vortex of wind and golden autumn leaves kicking up around his heels as he zigs and zags through the forest.
-ENV: The forest_creek environment, FRONT view; dense forest interior with thick vertical tree trunks and shafts of afternoon sun cutting through the leafy green canopy.
+SHOT: medium, tracking eye-level
+PLACEMENT: use the FRONT section of little_calf; calf is centered between two slender pine trunks, right foot kicking off the forest needle floor.
+ACTION: Little calf weaves sideways in frantic flight, head thrown back and ears streaming behind him, his shoulder brushing a pine bough aside.
+ENV: FRONT view of loc_forest_creek; pine and birch tree trunks standing vertical in soft focus with patches of moss on the forest floor.
 
 [PANEL 3]
-SHOT: wide, low angle looking across water.
-PLACEMENT: little_calf is suspended in mid-flight high above the creek surface, body arched horizontally between the near grassy bank and the opposite bank.
-ACTION: little_calf leaps across the water with both eyes squeezed tightly shut, arms stretched forward, ears pinned back against his head in mid-jump.
-ENV: The forest_creek environment, OVERHEAD and FRONT view; the sparkling clear water reflects his sky-blue overalls; mossy boulders line both riverbanks.
+SHOT: wide, low angle
+PLACEMENT: use the FRONT section of little_calf, soaring horizontally mid-air across the creek, three feet above the flowing water surface between both mossy banks.
+ACTION: Little calf flies horizontally through the air with arms and legs splayed wide in full aerodynamic panic, gaze fixed forward on the opposite shore.
+ENV: FRONT view of loc_forest_creek; shallow pebble creek sparkling beneath him, ancient oak tree roots framing the far bank under golden afternoon light.
 
 [PANEL 4]
-SHOT: medium, eye-level.
-PLACEMENT: Use the FRONT section of the little_calf character anchor; little_calf's face is pressed flat against the rough bark of a thick tree trunk dead center, head and body pinned flush to the wood surface.
-ACTION: little_calf makes direct impact with the trunk, his round cheeks and wide pink nose squished flat against the bark; the upper tree canopy above him trembles violently, showering green leaves downward.
-ENV: The forest_creek environment; a massive gnarly oak tree trunk on the far riverbank, surrounded by floating detached green leaves.
+SHOT: medium, eye-level
+PLACEMENT: use the FRONT section of little_calf; calf's face and chest are smashed flush against the massive vertical bark surface of the ancient oak tree.
+ACTION: Little calf's nose and cheeks flatten comedic-style against the rough tree bark at chest height, legs dangling limp above the mossy root base as green leaves shower down around him.
+ENV: FRONT view of loc_forest_creek; broad textured oak tree trunk dominating the right half of frame, loose leaves drifting in the air around the collision point.
 
 [PANEL 5]
-SHOT: medium, eye-level.
-PLACEMENT: little_calf sits squarely on a thick moss-covered tree root protruding from the base of the trunk, knees splayed, back slumped against the tree base.
-ACTION: little_calf sits dazed with his hands resting in his lap, round eyes swirling with cartoon dizziness, while several tiny cartoon golden sparks hover above his head.
-ENV: The forest_creek environment; the mossy tree root floor littered with freshly fallen leaves, soft ambient woodland light.
+SHOT: medium, eye-level
+PLACEMENT: use the FRONT section of little_calf; calf sits sprawled on his rump nestled directly between two protruding gnarled oak roots on the mossy ground.
+ACTION: Little calf sits dazed with his back slumped against the lower trunk, arms draped limply at his sides, head tilted sideways with eyes swirling in mild stupor.
+ENV: FRONT view of loc_forest_creek; thick mossy base of the ancient oak tree, scattered freshly fallen oak leaves dusting the roots and ground.
 
 [RENDERED TEXT]
 (none for this shot)
-
-[IDENTITY LOCK — REPAIR NOTE]
-In EVERY panel little_calf must wear the SAME light-blue denim overalls with the small carrot patch on the chest, exactly as in reference image 1 (the little_calf anchor). Never draw the calf bare / without the overalls. Fur must be the same warm orange-yellow as reference image 1 — not paler, not more yellow. The overalls must stay on while running, jumping the creek, hitting the tree and sitting dazed.
 
 [CROSS-SHOT CONTINUITY REFS]
 The LAST 1 reference image(s) in this i2i call are the film's palette/lighting SEED storyboard(s) from an earlier shot (NOT identity anchors). DO NOT copy any panel content, character pose, or specific composition from them. Their ONLY purpose is to keep THIS shot's color palette, color temperature, lighting key direction and intensity, atmospheric density / particle level, and overall world tonality CONSISTENT with the rest of the film — so the final cut flows smoothly. Identity (character / location) is still locked exclusively by the FIRST 3 refs (character / prop / location anchors).

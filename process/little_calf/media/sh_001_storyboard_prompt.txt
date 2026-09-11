@@ -2,43 +2,43 @@
 Widescreen 16:9 landscape, 5 panels arranged in a 3×2 grid, equal panel size, 2px white border between panels. Reading order: top row left-to-right, then next row left-to-right. Panel 1 = top-left; panel 5 = bottom-middle. The sixth (bottom-right) cell is solid neutral gray — it is NOT a panel.
 
 [STYLE FOUNDATION]
-VISUAL MEDIUM and aesthetic are dictated entirely by the story's style_anchor (live-action film / 2D anime / illustration / 3D / etc.); do NOT default to photoreal, do NOT impose any medium the story omits. Apply verbatim: 3D 渲染卡通 CG 风格。高饱和度明快色彩，暖金阳光与葱郁翠绿基调，皮克斯/照明娱乐式圆润平滑材质与蓬松毛发质感，明暗对比柔和通透，欢快幽默合家欢调性。
+Polished stylized 3D CG animation. Saturated daytime palette of warm sunny yellows, leaf greens, rich earth browns, and sky blue reflections. Directional afternoon sunlight with warm golden rim lighting, soft diffuse bounces on grass and moss, and clean shadow shapes. Smooth matte character surfaces with bold geometric silhouettes, oversized expressive features, and simplified stylized anatomy free of realistic fur pores or skin wrinkles.
 
 [IDENTITY LOCK]
 All characters across all panels MUST match the attached character anchor refs EXACTLY (face / age / build / hair / costume / accessories). The location across all panels matches the attached location anchor ref EXACTLY (architecture / materials / time-of-day / atmosphere). Palette and lighting key come from [STYLE FOUNDATION] (there is NO style reference image) and apply uniformly across all panels.
 
 [SHOT RHYTHM]
-P1 wide -> P2 medium -> P3 close-up -> P4 close-up -> P5 medium
+P1 medium -> P2 medium -> P3 medium -> P4 close-up -> P5 wide
 
 [PANEL 1]
-SHOT: wide, eye-level.
-PLACEMENT: Use the FRONT section of the little_calf character anchor; little_calf is reclined casually against the base of the massive gray boulder, back resting against the stone surface and both legs stretched out into the grass, head positioned well below the boulder's upper crest.
-ACTION: little_calf lounges with droopy half-closed eyelids and floppy ears, a slender single blade of green grass held loosely between his lips as he gazes into space.
-ENV: The meadow_slope environment, FRONT view; warm golden sunlight bathes the grassy hill, with yellow buttercups surrounding the rock and soft pine hills in the distance.
+SHOT: medium, eye-level
+PLACEMENT: use the FRONT section of the little_calf character anchor; calf is seated on the grassy turf with his back leaning flat against the base of the granite boulder, rump touching the dirt.
+ACTION: Little calf holds a yellow dandelion stem clamped between his teeth, eyes half-closed in relaxed contentment, hands resting loosely on his denim dungaree knees.
+ENV: FRONT view of loc_meadow_rock; massive grey boulder surface fills the upper half behind him, clover and dandelions carpet the foreground under bright afternoon sun.
 
 [PANEL 2]
-SHOT: medium, eye-level.
-PLACEMENT: little_calf remains seated against the gray boulder; red_bird hovers in mid-air one arm-length to his left, wings spread wide, positioned level with little_calf's upper ear.
-ACTION: red_bird flaps wings frantically in stationary flight, beak wide open aimed directly at little_calf; little_calf turns his head slightly upward with a sleepy blink.
-ENV: The meadow_slope environment, FRONT view; the smooth curve of the gray boulder frames little_calf, warm sunny sky in the background.
+SHOT: medium, eye-level
+PLACEMENT: use the FRONT section of the little_calf anchor, still seated against the boulder; use the FRONT section of the red_bird anchor, hovering one arm-length above calf's right ear.
+ACTION: Little calf tilts his head up in surprise; red bird flaps its bright scarlet wings vigorously mid-air, beak pointing down at the grass behind the calf.
+ENV: FRONT view of loc_meadow_rock; boulder backdrop with dandelions waving slightly beneath warm yellow directional light.
 
 [PANEL 3]
-SHOT: close-up, high angle looking slightly down.
-PLACEMENT: Use the FACE section of the little_calf character anchor; little_calf fills the frame from the chest up, leaning his head forward toward the lower frame edge.
-ACTION: little_calf knits his brows quizzically, round black pupils pointed downward toward the low grass blades at the edge of the frame.
-ENV: The meadow_slope environment; out-of-focus emerald blades of grass and tiny yellow flower heads right beneath little_calf's shoulder.
+SHOT: medium, slightly low angle
+PLACEMENT: use the FRONT section of little_calf, twisted around on his knees facing the rock corner; use the FRONT section of white_snake, coiled on a flat dirt patch one step away from calf's snout; use the FRONT section of red_bird fluttering just above them.
+ACTION: Little calf stares with round eyes; white snake stands perfectly vertical like a stiff white rod balanced on its coiled tail, looking directly into calf's face.
+ENV: FRONT view of loc_meadow_rock; grassy verge where the boulder meets the turf, clear sunlight casting crisp shadows of snake and calf onto the ground.
 
 [PANEL 4]
-SHOT: close-up, low ground-level angle.
-PLACEMENT: Use the FRONT section of the white_snake character anchor; white_snake's lower tail is coiled in the dirt among clover stems, with its upper torso extending vertically like a chopstick, height barely reaching four finger-widths above the soil.
-ACTION: white_snake stands perfectly erect, tilting its tiny blunt head sideways, blinking its two pin-sized black eyes innocently upward.
-ENV: The meadow_slope environment; close macro view of deep green grass blades, mossy dirt, and tiny yellow petals flanking the tiny white snake.
+SHOT: close-up, eye-level
+PLACEMENT: use the FACE section of the little_calf character anchor; calf's head and upper chest fill the frame, framed against the grey boulder texture.
+ACTION: Little calf's mouth hangs wide open with the chewed dandelion dropping free; his huge black eyes are stretched wide into perfect round circles and both ears stand rigidly horizontal.
+ENV: FRONT view of loc_meadow_rock; blurred grey granite rock surface directly behind his head, bright sunlight highlighting his wide muzzle.
 
 [PANEL 5]
-SHOT: medium, eye-level.
-PLACEMENT: little_calf is airborne half a meter directly above the ground, feet tucked beneath his overall shorts; white_snake remains motionless on the soil directly beneath little_calf's ascending hooves.
-ACTION: little_calf leaps straight up in mid-air with limbs flailing wildly, pupils shrunken to tiny points, jaw dropped wide into a huge gaping oval of comic panic.
-ENV: The meadow_slope environment; the giant gray boulder sits behind the leaping calf under bright midday sunlight.
+SHOT: wide, low angle
+PLACEMENT: use the FRONT section of little_calf, suspended three feet up in mid-air directly above the grass; use the FRONT section of white_snake, grounded on the turf beneath him.
+ACTION: Little calf leaps straight upward with stiff straight legs and hooves clutching both sides of his head; below on the grass, white snake remains coiled upright with a slight curious head tilt.
+ENV: FRONT view of loc_meadow_rock; full boulder and surrounding dandelion field under open blue sky with the dark forest line visible in the distant background.
 
 [RENDERED TEXT]
 (none for this shot)

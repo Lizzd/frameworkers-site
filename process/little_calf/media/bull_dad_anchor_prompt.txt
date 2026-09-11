@@ -1,5 +1,5 @@
 Rendered entirely in this visual style / medium (governs the whole image):
-3D cartoon CG animation render style with Pixar and Illumination family-friendly aesthetic.; Vibrant high-saturation color palette featuring warm golden sunlight and lush emerald greens.; Soft and smooth volumetric shading, translucent rim lighting, and plush velvety fur and feather textures.; Gentle cartoon lighting with clear depth, warm cinematic shadows, and playful lighthearted atmosphere.
+Polished stylized 3D CG animation aesthetic.; Saturated daytime palette dominated by sunny yellows, lush leaf greens, earth browns, and sky blue reflections.; Directional warm afternoon sunlight with golden rim lighting and soft diffuse ambient bounces.; Smooth matte character surfaces with bold geometric silhouettes and simplified stylized anatomy.
 
 A single-subject character reference card. The single 16:9 widescreen image is composed of TWO equal-width vertical sections, each showing the SAME single subject — same identity, costume, and the SAME visual medium — only framing differing:
 - SECTION 1 (leftmost): FACE — head-and-shoulders close-up, subject facing camera; face fills ~60% of section height, clearly readable.
@@ -13,4 +13,6 @@ Strict rules:
 - Plain seamless backdrop in the medium's natural ground color (e.g. raw paper for ink-wash, neutral gray for photoreal), no scene props, no environmental context.
 - This is a clean reference plate: NO rendered text of any kind — no captions, view labels, watermarks, logos, or lettering anywhere on the card.
 
-Subject: A sturdy, broad-shouldered bipedal adult bull standing tall on two legs. He has rich dark orange-brown short coat fur, thick furrowed brows, and a small patch of dark brown stubble along his jawline. A pair of massive, sweeping horns curves outward and upward proudly from his head. He wears a rugged dark brown leather utility vest over his muscular chest.
+Subject: Burly anthropomorphic orange-brown bull standing tall on two legs with a massive barrel chest and heavy squared jaw. He has a permanently furrowed brow and two long sweeping curved ivory horns with dark tips atop his broad head. He wears a weathered brown leather vest over an unbuttoned tan plaid shirt with sturdy work trousers. His silhouette is heavy, solid, and upright with calm, unmoving posture.
+
+Do NOT use: realistic fur pores or skin wrinkles; photorealistic grit, harsh film grain, or desaturated grim tones; explicit gore, blood spray, or realistic physical injuries.

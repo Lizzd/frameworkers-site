@@ -1,6 +1,6 @@
 {
   "content": {
-    "language": "zh",
+    "language": "en",
     "plan": {
       "color_grade": {
         "brightness": 0.02,
@@ -22,7 +22,7 @@
         "margin": 40
       },
       "image_overlays": [],
-      "subtitle_language": "",
+      "subtitle_language": "en",
       "output_resolution": "1920x1080",
       "output_fps": 30
     }
