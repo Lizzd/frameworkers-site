@@ -413,9 +413,15 @@ def load_global_memory(ws: Path) -> list[dict]:
     return json.loads(txt[i:j])
 
 
-def load_executions(ws: Path) -> list[dict]:
-    """All execution records from sibling run_*/resume_* dumps that belong to this workspace."""
+def load_executions(ws: Path) -> tuple[list[dict], bool]:
+    """All execution records from sibling run_*/resume_*/replay_* dumps that belong to this workspace.
+
+    Returns (records, replayed): ``replayed`` is True when the records come from a ``replay_*`` dump
+    written by ``scripts/replay_input_resolution.py`` (the Assistant's InputResolver re-run over the
+    archived Workspace) rather than from the original run's execution log.
+    """
     execs: list[dict] = []
+    replayed = False
     for f in sorted(ws.parent.glob("*/04_executions.json")):
         try:
             d = json.loads(f.read_text(encoding="utf-8"))
@@ -426,7 +432,8 @@ def load_executions(ws: Path) -> list[dict]:
                 paths = json.dumps(e.get("inputs") or {})
                 if ws.name in paths:
                     execs.append(e)
-    return execs
+                    replayed = replayed or f.parent.name.startswith("replay")
+    return execs, replayed
 
 
 def build_workspace(g: Graph):
@@ -457,7 +464,7 @@ def build_workspace(g: Graph):
     g.sort_nodes()
 
     # 2. edges
-    execs = load_executions(ws)
+    execs, replayed = load_executions(ws)
     if execs:
         seen_stage_pairs: set[tuple[str, str]] = set()
         for e in execs:
@@ -477,7 +484,9 @@ def build_workspace(g: Graph):
                         seen_stage_pairs.add((src_stage, sid))
         for a, b in seen_stage_pairs:
             g.shot_edges(a, b, False)
-        g.notes.append("Connections are the actual inputs each agent step resolved at run time.")
+        g.notes.append("Connections are the inputs the Assistant's InputResolver selected for each step when it was "
+                       "replayed over this archived Workspace." if replayed else
+                       "Connections are the actual inputs each agent step resolved at run time.")
     else:
         stage_by_agent = [(s["agent"], s["id"]) for s in g.stages]
         for consumer, wants in INFERRED_INPUTS:
