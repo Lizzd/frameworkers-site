@@ -188,7 +188,15 @@
     const arr = document.createElement("div"); arr.className = "rail-arrow"; arr.style.cssText = `left:${x - GAP - 10}px;top:${railY[r] + RAIL_H / 2 - 5}px`; nodesEl.appendChild(arr);
     y = bottom + ROW_GAP;
   });
-  const maxBottom = y - ROW_GAP, worldH = maxBottom + 12 + LEGEND_H + M;
+  const maxBottom = y - ROW_GAP;
+  const lg = document.createElement("div"); lg.className = "legend"; lg.style.cssText = `left:${M}px;top:${maxBottom + 12}px;width:${worldW - 2 * M}px`;
+  const kinds = [...new Set(g.nodes.map(n => n.kind))];
+  lg.innerHTML = kinds.map(k => `<span class="lg"><i style="background:${KCOL[k]}"></i>${k}</span>`).join("") +
+    `<span class="lg edge"><i></i>input resolved for the step it enters, colored by the producing step</span>` +
+    (HI ? `<span class="lg hi"><i></i>lineage of ${esc(HI)}</span>` : "") +
+    `<span class="note">${g.nodes.length} artifacts · ${realEdges.length} resolved inputs · header: input label ← producing step</span>`;
+  nodesEl.appendChild(lg);
+  const worldH = maxBottom + 12 + lg.offsetHeight + M;
   world.style.width = worldW + "px"; world.style.height = worldH + "px";
   edgesEl.setAttribute("width", worldW); edgesEl.setAttribute("height", worldH); edgesEl.style.width = worldW + "px"; edgesEl.style.height = worldH + "px";
   for (const el of nodesEl.querySelectorAll(".rail")) if (parseInt(el.style.width) < worldW - 2 * M - 10) el.style.width = (worldW - 2 * M - 10) + "px";
@@ -252,15 +260,6 @@
     // the cut's own resolved edge(s) into later steps, re-drawn on top in the lineage color
     for (const p of [...edgesEl.querySelectorAll("path:not(.hi)")]) { /* no-op: trunks keep their step color */ }
   }
-
-  // ---- legend -------------------------------------------------------------------------
-  const lg = document.createElement("div"); lg.className = "legend"; lg.style.cssText = `left:${M}px;top:${maxBottom + 12}px`;
-  const kinds = [...new Set(g.nodes.map(n => n.kind))];
-  lg.innerHTML = kinds.map(k => `<span class="lg"><i style="background:${KCOL[k]}"></i>${k}</span>`).join("") +
-    `<span class="lg edge"><i></i>input resolved for the step it enters, colored by the producing step</span>` +
-    (HI ? `<span class="lg hi"><i></i>lineage of ${esc(HI)}</span>` : "") +
-    `<span class="note">${g.nodes.length} artifacts · ${realEdges.length} resolved inputs · header: input label ← producing step</span>`;
-  nodesEl.appendChild(lg);
 
   await Promise.all([...document.images].map(im => im.complete ? null : new Promise(r => { im.onload = im.onerror = r; })));
   for (const im of [...document.images]) {   // embed thumbnails at 3x display size, not the full derivative

@@ -62,7 +62,7 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:v
 .card .c-media .dur{position:absolute;right:5px;bottom:5px;font-family:var(--mono);font-size:9px;padding:1px 4px;border-radius:3px;background:rgba(20,24,34,.8);color:#fff}
 
 /* legend */
-.legend{position:absolute;display:flex;gap:14px;align-items:center;font-size:10.5px;color:var(--muted);white-space:nowrap}
+.legend{position:absolute;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center;font-size:10.5px;color:var(--muted);white-space:nowrap;box-sizing:border-box}
 .legend .lg{display:inline-flex;align-items:center;gap:5px}
 .legend .lg i{width:8px;height:8px;border-radius:50%;display:inline-block}
 .legend .lg.edge i{width:16px;height:0;border-top:1.6px solid var(--edge);border-radius:0}
