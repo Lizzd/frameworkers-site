@@ -20,6 +20,12 @@
   const stageById = new Map(stages.map(s => [s.id, s]));
   const stageIdx = new Map(stages.map((s, i) => [s.id, i]));
   const colorOf = sid => sid === "Inputs" ? IN_COLOR : PALETTE[(stageIdx.get(sid) - 1 + PALETTE.length) % PALETTE.length];
+  {
+    const last = stages[stages.length - 1].id;
+    const site = g.nodes.find(n => n.id === "final_film" && n.stage === last);
+    const own = g.nodes.find(n => n.stage === last && n.kind === "video" && n.id !== "final_film");
+    if (site && own) { g.nodes = g.nodes.filter(n => n !== site); own.final = true; own.preview_only = false; g.edges = g.edges.filter(e => e.from !== site.id && e.to !== site.id); }
+  }
   const nodeById = new Map(g.nodes.map(n => [n.id, n]));
   const shots = [...new Set(g.nodes.filter(n => n.shot).map(n => n.shot))].sort();
   const HI = Q.get("shot") === "none" ? null : (Q.get("shot") || (shots.length > 1 ? shots[0] : null));
@@ -148,14 +154,14 @@
           ${n.final ? `<span class="pill">final film</span>` : n.preview_only ? `<span class="pill cut">assembled cut</span>` : ""}${n.dur ? `<span class="dur">${fmtDur(n.dur)}</span>` : ""}</div>`;
       } else if (n.kind === "audio") {
         if (n.dur) meta.push(fmtDur(n.dur)); if (n.bytes) meta.push(fmtKB(n.bytes));
-        inner += `<div class="c-wave"></div>`;
+        inner += `<div class="c-wave">${n.dur ? `<span class="dur">${fmtDur(n.dur)}</span>` : ""}</div>`;
       } else {
         meta.push(n.kind); if (n.bytes) meta.push(fmtKB(n.bytes));
         inner += `<div class="c-doc">${esc(n.caption || n.excerpt || "")}</div>`;
       }
       const label = n.final ? "final film" : n.preview_only ? "assembled cut" : /agent output$/i.test(n.label) ? "output"
                   : n.label.replace(/^shot prompt /, "prompt ").replace(/^aud /, "");
-      inner += `<div class="c-body compact"><div class="c-label"><span class="dot"></span><span class="t">${esc(label)}</span>${n.kind === "audio" && n.dur ? `<span class="m">${fmtDur(n.dur)}</span>` : ""}</div></div>`;
+      inner += `<div class="c-body compact"><div class="c-label"><span class="dot"></span><span class="t">${esc(label)}</span></div></div>`;
     }
     el.innerHTML = inner; return el;
   }

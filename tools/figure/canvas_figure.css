@@ -68,14 +68,14 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:v
 .legend .lg.edge i{width:16px;height:0;border-top:1.6px solid var(--edge);border-radius:0}
 .legend .lg.hi i{width:16px;height:0;border-top:2.6px solid var(--hi);border-radius:0}
 .legend .note{color:var(--faint)}
-.col-head .ch-in{font-family:var(--mono);font-size:10.5px;line-height:1.3;color:var(--ink);margin-top:3px;border-top:1px dashed var(--head-line);padding-top:3px;display:block;overflow-wrap:break-word}
+.col-head .ch-in{font-family:var(--mono);font-size:10.5px;line-height:1.3;color:var(--ink);margin-top:3px;border-top:1px dashed var(--head-line);padding-top:3px;display:block;overflow-wrap:normal;word-break:keep-all}
 .col-head .ch-in .sep{color:var(--faint);margin:0 4px}
-.col-head .ch-in .tok{overflow-wrap:break-word}
+.col-head .ch-in .tok{overflow-wrap:normal;word-break:keep-all}
 .col-head .ch-in .src{color:var(--muted)}
 .card .c-doc{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;height:auto;max-height:15px;padding-top:5px}
 
 .card .c-media.hi{outline:2.2px solid var(--hi);outline-offset:-2px}
-.card .c-wave{height:34px;margin:8px 9px 0;border-radius:6px;background:
+.card .c-wave{position:relative;height:34px;margin:8px 9px 0;border-radius:6px;background:
   repeating-linear-gradient(90deg,var(--k-audio) 0 2px,transparent 2px 5px);opacity:.55;
   -webkit-mask:linear-gradient(180deg,transparent 0,#000 30%,#000 70%,transparent 100%);mask:linear-gradient(180deg,transparent 0,#000 30%,#000 70%,transparent 100%)}
 
@@ -83,3 +83,4 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:v
 .card .c-body.compact .c-label{font-size:10.5px}
 .card .c-body.compact .c-label .t{flex:1 1 auto}
 .card .c-body.compact .c-label .m{margin-left:auto;font-family:var(--mono);font-size:9.5px;font-weight:400;color:var(--faint);white-space:nowrap;padding-left:6px}
+.card .c-wave .dur{position:absolute;right:4px;bottom:3px;font-family:var(--mono);font-size:9px;padding:1px 4px;border-radius:3px;background:rgba(20,24,34,.8);color:#fff;opacity:1}
