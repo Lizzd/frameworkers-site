@@ -355,11 +355,19 @@ class Graph:
         self.nodes.sort(key=lambda n: (stage_order.get(n["stage"], 99), 1 if n.get("shot") else 0,
                                        n.get("shot", ""), korder.get(n["kind"], 9), n["label"]))
 
-    def edge(self, frm: str, to: str, etype: str, inferred: bool = False):
+    def edge(self, frm: str, to: str, etype: str, inferred: bool = False, label: str | None = None):
+        """One connection; `label` is the consumer's InputLabel this artifact was resolved under
+        (only known for real executions), kept as a list because one artifact can fill several labels."""
         key = (frm, to)
-        if any((e["from"], e["to"]) == key for e in self.edges):
-            return
-        self.edges.append({"from": frm, "to": to, "type": etype, "inferred": inferred})
+        for e in self.edges:
+            if (e["from"], e["to"]) == key:
+                if label and label not in e.setdefault("labels", []):
+                    e["labels"].append(label)
+                return
+        e = {"from": frm, "to": to, "type": etype, "inferred": inferred}
+        if label:
+            e["labels"] = [label]
+        self.edges.append(e)
 
     def shot_edges(self, from_stage: str, to_stage: str, inferred: bool):
         """node→node edges between two stages for assets that carry the same shot id."""
@@ -464,7 +472,7 @@ def build_workspace(g: Graph):
                         continue
                     nid = g._by_basename.get(Path(p).name)
                     if nid:
-                        g.edge(nid, sid, "step", False)
+                        g.edge(nid, sid, "step", False, label=_label)
                         src_stage = next(n["stage"] for n in g.nodes if n["id"] == nid)
                         seen_stage_pairs.add((src_stage, sid))
         for a, b in seen_stage_pairs:

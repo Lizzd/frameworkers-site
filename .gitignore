@@ -1,1 +1,4 @@
 .DS_Store
+# paper-figure renderer outputs (regenerate with tools/figure/render.js)
+tools/figure/canvas_*.pdf
+tools/figure/canvas_*.png
