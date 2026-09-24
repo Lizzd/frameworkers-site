@@ -94,7 +94,7 @@ def main():
     out = Image.new("RGB", (W, lab_h + pa.height + pad + lab_h + pb.height), "white"); d = ImageDraw.Draw(out)
     d.text((10, 4), "(a) Main benchmark — S-Agent, UniVA, Ours (character / prop / scene subclasses)", fill="black", font=f_panel)
     out.paste(pa, (0, lab_h)); y = lab_h + pa.height + pad
-    d.text((10, y + 4), "(b) Story-level benchmark — MovieAgent, Anim-Director, Ours (one story per subclass; four evenly spaced frames per 48 s film)", fill="black", font=f_panel)
+    d.text((10, y + 4), "(b) Story-level benchmark — MovieAgent, Anim-Director, Ours (one story per subclass, 4 frames per 48 s film)", fill="black", font=f_panel)
     out.paste(pb, (0, y + lab_h))
     out.save(a.out, "PDF", resolution=300.0, quality=88); out.save(str(Path(a.out).with_suffix(".png")))
     print(a.out, out.size, f"{Path(a.out).stat().st_size/1e6:.1f} MB", "grid:", m)
