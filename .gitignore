@@ -2,3 +2,5 @@
 # paper-figure renderer outputs (regenerate with tools/figure/render.js)
 tools/figure/canvas_*.pdf
 tools/figure/canvas_*.png
+tools/figure/qualitative_both.pdf
+tools/figure/qualitative_both.png
