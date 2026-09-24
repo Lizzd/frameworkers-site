@@ -4,3 +4,5 @@ tools/figure/canvas_*.pdf
 tools/figure/canvas_*.png
 tools/figure/qualitative_both.pdf
 tools/figure/qualitative_both.png
+tools/figure/Inter-var.ttf
+__pycache__/

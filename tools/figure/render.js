@@ -5,7 +5,7 @@ const http = require("http"), fs = require("fs"), path = require("path");
 const { chromium } = require("playwright");
 const SITE = path.resolve(__dirname, "..", "..");
 const [film = "martin", shot = "", out = path.join(__dirname, `canvas_${film}.pdf`)] = process.argv.slice(2);
-const MIME = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".mp4": "video/mp4", ".svg": "image/svg+xml" };
+const MIME = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".mp4": "video/mp4", ".svg": "image/svg+xml", ".ttf": "font/ttf" };
 const srv = http.createServer((req, res) => {
   const p = path.join(SITE, decodeURIComponent(req.url.split("?")[0]));
   if (!p.startsWith(SITE) || !fs.existsSync(p) || fs.statSync(p).isDirectory()) { res.writeHead(404); return res.end(); }
