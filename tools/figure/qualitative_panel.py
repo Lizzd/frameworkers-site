@@ -9,7 +9,7 @@ spaced frames per 48-second film (centre-cropped to the 4:3 frames (a) uses), an
     python tools/figure/qualitative_panel.py [--cases TS63 AU05 AU08] [--out qualitative_both.pdf]
 """
 from __future__ import annotations
-import argparse, subprocess, tempfile
+import argparse, re, subprocess, tempfile
 from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
@@ -17,7 +17,12 @@ from PIL import Image, ImageDraw, ImageFont
 FW = Path.home() / "FrameWorkers"
 BENCH = FW / "comparisons/story_bench"
 VIS_PDF = FW / "overleaf/iclr2027/figs/vis.pdf"
-FONT = "/usr/share/fonts/dejavu/DejaVuSans.ttf"; FONT_B = "/usr/share/fonts/dejavu/DejaVuSans-Bold.ttf"
+INTER = "/scratch/zhendong_li/tools/fonts/Inter[opsz,wght].ttf"
+def inter(size, weight="Regular"):
+    f = ImageFont.truetype(INTER, size)
+    try: f.set_variation_by_name(weight)
+    except Exception: pass
+    return f
 W = 3000; FR = [0.12, 0.37, 0.62, 0.87]
 SYSTEMS = [("MovieAgent", lambda c: BENCH / f"movieagent/{c}_real/gemini_ROICtrl_HunyuanVideo_I2V/video/final_video.mp4"),
            ("Anim-Director", lambda c: BENCH / f"anim_director/{c}_real/code/result/video/0/0.mp4"),
@@ -26,14 +31,13 @@ SYSTEMS = [("MovieAgent", lambda c: BENCH / f"movieagent/{c}_real/gemini_ROICtrl
 SUBCLASS = ["Character Consistency", "Prop Consistency", "Scene Consistency"]
 # drift boxes, fractional coords in the ORIGINAL 16:9 frame: (case, system, frame index 0-3) -> [(x0,y0,x1,y1), ...]
 BOXES = {
-    # character: the protagonist (a bluebird) is replaced by a fox / a rabbit / a brown bird
-    ("TS63", "MovieAgent", 0): [(0.28, 0.22, 0.56, 0.90)], ("TS63", "MovieAgent", 2): [(0.50, 0.18, 0.86, 0.90)],
-    ("TS63", "Anim-Director", 2): [(0.40, 0.12, 0.62, 0.86)],
-    # prop: the birthday cake is redrawn from shot to shot
-    ("AU05", "MovieAgent", 0): [(0.33, 0.28, 0.62, 0.72)], ("AU05", "MovieAgent", 2): [(0.34, 0.12, 0.66, 0.86)],
-    ("AU05", "Anim-Director", 0): [(0.27, 0.10, 0.56, 0.80)], ("AU05", "Anim-Director", 2): [(0.40, 0.28, 0.62, 0.62)],
-    ("AU05", "Anim-Director", 3): [(0.60, 0.30, 0.82, 0.62)],
-    # scene (AU08): no boxes, as in (a) — the whole frame changes room and style
+    # character (TS63): the protagonist, a bluebird, is drawn as a fox / a rabbit-and-fox pair / a brown bird before it appears
+    ("TS63", "MovieAgent", 0): [(0.28, 0.22, 0.56, 0.90)], ("TS63", "MovieAgent", 2): [(0.50, 0.18, 0.86, 0.90)], ("TS63", "MovieAgent", 3): [(0.55, 0.15, 0.86, 0.72)],
+    ("TS63", "Anim-Director", 1): [(0.42, 0.18, 0.72, 0.75)], ("TS63", "Anim-Director", 2): [(0.40, 0.12, 0.62, 0.86)],
+    # prop (AU04): the engineer's helmet / visor changes design between shots
+    ("AU04", "MovieAgent", 0): [(0.36, 0.08, 0.66, 0.56)], ("AU04", "MovieAgent", 2): [(0.38, 0.08, 0.72, 0.62)],
+    ("AU04", "Anim-Director", 0): [(0.30, 0.28, 0.68, 0.48)], ("AU04", "Anim-Director", 3): [(0.05, 0.05, 0.42, 0.86)],
+    # scene (TS199): no boxes, as in (a) — the whole setting changes
 }
 
 def runs(mask, minlen):
@@ -63,23 +67,31 @@ def frame(p, t, w, h, tmp):
     return Image.open(dst).convert("RGB")
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--cases", nargs="+", default=["TS63", "AU05", "AU08"]); ap.add_argument("--out", default=str(Path(__file__).parent / "qualitative_both.pdf"))
+    ap = argparse.ArgumentParser(); ap.add_argument("--cases", nargs="+", default=["TS63", "AU04", "TS199"]); ap.add_argument("--out", default=str(Path(__file__).parent / "qualitative_both.pdf"))
     a = ap.parse_args(); tmp = Path(tempfile.mkdtemp(prefix="qpanel_"))
     subprocess.run(["pdftoppm", "-png", "-r", "300", "-scale-to-x", str(W), "-scale-to-y", "-1", str(VIS_PDF), str(tmp / "a")], check=True)
     pa = Image.open(next(tmp.glob("a*.png"))).convert("RGB")
     m = measure(pa); rows_h = m["y1"] - m["y0"]; fh = (rows_h - 2 * 2) // 3; groups = m["groups"]
-    t0, t1 = m["title"]; f_title = ImageFont.truetype(FONT, t1 - t0 - 2); f_label = ImageFont.truetype(FONT, 34); f_panel = ImageFont.truetype(FONT_B, 44)
+    t0, t1 = m["title"]; f_title = inter(46); f_label = inter(46); f_panel = inter(44, "SemiBold")
+    cap_top = d0 = None
     # (b) on the same grid
     pb = Image.new("RGB", (W, m["y1"]), "white"); d = ImageDraw.Draw(pb)
     for gi, c in enumerate(a.cases[:len(groups)]):
         gx0, gx1 = groups[gi]; fw = (gx1 - gx0 - 3 * 2) // 4
-        t = SUBCLASS[gi] if gi < len(SUBCLASS) else c; tw = d.textlength(t, font=f_title); d.text(((gx0 + gx1 - tw) / 2, t0 - 4), t, fill="black", font=f_title)
+        t = SUBCLASS[gi] if gi < len(SUBCLASS) else c; bb = d.textbbox((0, 0), t, font=f_title)
+        d.text(((gx0 + gx1 - (bb[2] - bb[0])) / 2 - bb[0], t0 - bb[1]), t, fill="black", font=f_title)   # visible top of the text at (a)'s title top
         for ri, (name, pf) in enumerate(SYSTEMS):
             p = pf(c); D = dur(p); y = m["y0"] + ri * (fh + 2)
-            if gi == 0:  # row label, left of the first group like (a); wrap at the hyphen if it would run into the frames
-                lines = [name] if d.textlength(name, font=f_label) <= groups[0][0] - 10 else name.replace("-", "-\n").split("\n")
-                ly = y + fh / 2 - 20 * len(lines)
-                for li, ln in enumerate(lines): d.text((4, ly + li * 40), ln, fill="black", font=f_label)
+            if gi == 0:  # row label like (a): Inter 46, right-aligned at x=180, cap height centred on the row; long names wrap
+                RIGHT = 180
+                lines = [name] if d.textlength(name, font=f_label) <= RIGHT - 2 else (name.replace("-", "-\n") if "-" in name else re.sub(r"([a-z])([A-Z])", r"\1\n\2", name)).split("\n")
+                fl = f_label; sz = 46
+                while any(d.textlength(ln, font=fl) > RIGHT - 2 for ln in lines) and sz > 40: sz -= 1; fl = inter(sz)
+                capH = d.textbbox((0, 0), "H", font=fl)[3] - d.textbbox((0, 0), "H", font=fl)[1]; lh = capH + 14
+                top = y + fh / 2 - (len(lines) * lh - 14) / 2
+                for li, ln in enumerate(lines):
+                    bb = d.textbbox((0, 0), ln, font=fl)
+                    d.text((RIGHT - (bb[2] - bb[0]) - bb[0], top + li * lh - bb[1]), ln, fill="black", font=fl)
             for k, fr in enumerate(FR):
                 im = frame(p, D * fr, fw, fh, tmp); x = gx0 + k * (fw + 2)
                 crop_w = fh * 16 / 9 / (fw / fh) if False else None
