@@ -8,7 +8,7 @@
   "type": "workspace",
   "path": "Runtime/topic45_little_calf_en/workspace_global_20260911_130430"
  },
- "generated_at": "2026-09-11T13:34:48+00:00",
+ "generated_at": "2026-09-24T05:30:51+00:00",
  "stages": [
   {
    "id": "Inputs",
@@ -560,362 +560,374 @@
  ],
  "edges": [
   {
+   "from": "creative_brief",
+   "to": "NarrativeAgent__step_1_d438b52b",
+   "type": "step",
+   "inferred": false,
+   "labels": [
+    "creative_brief"
+   ]
+  },
+  {
    "from": "narrativeagent_output",
    "to": "KeyframeSheetAgent__step_2_f47977e1",
    "type": "step",
-   "inferred": true
+   "inferred": false,
+   "labels": [
+    "story"
+   ]
+  },
+  {
+   "from": "narrativeagent_output",
+   "to": "ShotPromptAgent__step_3_07d70bf3",
+   "type": "step",
+   "inferred": false,
+   "labels": [
+    "story"
+   ]
   },
   {
    "from": "keyframesheetagent_output",
    "to": "ShotPromptAgent__step_3_07d70bf3",
    "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "sh_001_storyboard",
-   "to": "shot_prompt_sh_001",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "sh_001_storyboard_prompt",
-   "to": "shot_prompt_sh_001",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "sh_002_storyboard",
-   "to": "shot_prompt_sh_002",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "sh_002_storyboard_prompt",
-   "to": "shot_prompt_sh_002",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "sh_003_storyboard",
-   "to": "shot_prompt_sh_003",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "sh_003_storyboard_prompt",
-   "to": "shot_prompt_sh_003",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "sh_004_storyboard",
-   "to": "shot_prompt_sh_004",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "sh_004_storyboard_prompt",
-   "to": "shot_prompt_sh_004",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "bull_dad_anchor",
-   "to": "ShotPromptAgent__step_3_07d70bf3",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "little_calf_anchor",
-   "to": "ShotPromptAgent__step_3_07d70bf3",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "loc_forest_creek_anchor",
-   "to": "ShotPromptAgent__step_3_07d70bf3",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "loc_meadow_rock_anchor",
-   "to": "ShotPromptAgent__step_3_07d70bf3",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "red_bird_anchor",
-   "to": "ShotPromptAgent__step_3_07d70bf3",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "white_snake_anchor",
-   "to": "ShotPromptAgent__step_3_07d70bf3",
-   "type": "step",
-   "inferred": true
+   "inferred": false,
+   "labels": [
+    "keyframes"
+   ]
   },
   {
    "from": "sh_001_storyboard",
    "to": "ShotPromptAgent__step_3_07d70bf3",
    "type": "step",
-   "inferred": true
+   "inferred": false,
+   "labels": [
+    "storyboard_sheets"
+   ]
   },
   {
    "from": "sh_002_storyboard",
    "to": "ShotPromptAgent__step_3_07d70bf3",
    "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "sh_003_storyboard",
-   "to": "ShotPromptAgent__step_3_07d70bf3",
-   "type": "step",
-   "inferred": true
+   "inferred": false,
+   "labels": [
+    "storyboard_sheets"
+   ]
   },
   {
    "from": "sh_004_storyboard",
    "to": "ShotPromptAgent__step_3_07d70bf3",
    "type": "step",
-   "inferred": true
+   "inferred": false,
+   "labels": [
+    "storyboard_sheets"
+   ]
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPromptAgent__step_3_07d70bf3",
+   "type": "step",
+   "inferred": false,
+   "labels": [
+    "storyboard_sheets"
+   ]
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "ClipAgent__step_4_10e67cb0",
+   "type": "step",
+   "inferred": false,
+   "labels": [
+    "shot_prompts"
+   ]
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "ClipAgent__step_4_10e67cb0",
+   "type": "step",
+   "inferred": false,
+   "labels": [
+    "shot_prompts"
+   ]
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "ClipAgent__step_4_10e67cb0",
+   "type": "step",
+   "inferred": false,
+   "labels": [
+    "shot_prompts"
+   ]
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "ClipAgent__step_4_10e67cb0",
+   "type": "step",
+   "inferred": false,
+   "labels": [
+    "shot_prompts"
+   ]
+  },
+  {
+   "from": "keyframesheetagent_output",
+   "to": "ClipAgent__step_4_10e67cb0",
+   "type": "step",
+   "inferred": false,
+   "labels": [
+    "keyframes"
+   ]
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ClipAgent__step_4_10e67cb0",
+   "type": "step",
+   "inferred": false,
+   "labels": [
+    "storyboard_sheets"
+   ]
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ClipAgent__step_4_10e67cb0",
+   "type": "step",
+   "inferred": false,
+   "labels": [
+    "storyboard_sheets"
+   ]
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ClipAgent__step_4_10e67cb0",
+   "type": "step",
+   "inferred": false,
+   "labels": [
+    "storyboard_sheets"
+   ]
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ClipAgent__step_4_10e67cb0",
+   "type": "step",
+   "inferred": false,
+   "labels": [
+    "storyboard_sheets"
+   ]
+  },
+  {
+   "from": "clip_final",
+   "to": "TranscriptionAgent__step_5_53c57470",
+   "type": "step",
+   "inferred": false,
+   "labels": [
+    "source_media"
+   ]
   },
   {
    "from": "narrativeagent_output",
-   "to": "ShotPromptAgent__step_3_07d70bf3",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "shot_prompt_sh_001",
-   "to": "ClipAgent__step_4_10e67cb0",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "shot_prompt_sh_002",
-   "to": "ClipAgent__step_4_10e67cb0",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "shot_prompt_sh_003",
-   "to": "ClipAgent__step_4_10e67cb0",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "shot_prompt_sh_004",
-   "to": "ClipAgent__step_4_10e67cb0",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "shot_prompt_sh_001",
-   "to": "clip_sh_001",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "shot_prompt_sh_002",
-   "to": "clip_sh_002",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "shot_prompt_sh_003",
-   "to": "clip_sh_003",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "shot_prompt_sh_004",
-   "to": "clip_sh_004",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "bull_dad_anchor",
-   "to": "ClipAgent__step_4_10e67cb0",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "little_calf_anchor",
-   "to": "ClipAgent__step_4_10e67cb0",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "loc_forest_creek_anchor",
-   "to": "ClipAgent__step_4_10e67cb0",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "loc_meadow_rock_anchor",
-   "to": "ClipAgent__step_4_10e67cb0",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "red_bird_anchor",
-   "to": "ClipAgent__step_4_10e67cb0",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "white_snake_anchor",
-   "to": "ClipAgent__step_4_10e67cb0",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "sh_001_storyboard",
-   "to": "ClipAgent__step_4_10e67cb0",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "sh_002_storyboard",
-   "to": "ClipAgent__step_4_10e67cb0",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "sh_003_storyboard",
-   "to": "ClipAgent__step_4_10e67cb0",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "sh_004_storyboard",
-   "to": "ClipAgent__step_4_10e67cb0",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "sh_001_storyboard",
-   "to": "clip_sh_001",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "sh_001_storyboard_prompt",
-   "to": "clip_sh_001",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "sh_002_storyboard",
-   "to": "clip_sh_002",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "sh_002_storyboard_prompt",
-   "to": "clip_sh_002",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "sh_003_storyboard",
-   "to": "clip_sh_003",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "sh_003_storyboard_prompt",
-   "to": "clip_sh_003",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "sh_004_storyboard",
-   "to": "clip_sh_004",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "sh_004_storyboard_prompt",
-   "to": "clip_sh_004",
-   "type": "shot",
-   "inferred": true
-  },
-  {
-   "from": "clip_final",
    "to": "TranscriptionAgent__step_5_53c57470",
    "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "clip_sh_001",
-   "to": "TranscriptionAgent__step_5_53c57470",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "clip_sh_002",
-   "to": "TranscriptionAgent__step_5_53c57470",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "clip_sh_003",
-   "to": "TranscriptionAgent__step_5_53c57470",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "clip_sh_004",
-   "to": "TranscriptionAgent__step_5_53c57470",
-   "type": "step",
-   "inferred": true
+   "inferred": false,
+   "labels": [
+    "story"
+   ]
   },
   {
    "from": "clip_final",
    "to": "CompositorAgent__step_6_acbd675a",
    "type": "step",
-   "inferred": true
+   "inferred": false,
+   "labels": [
+    "video_file"
+   ]
   },
   {
-   "from": "clip_sh_001",
+   "from": "clipagent_output",
    "to": "CompositorAgent__step_6_acbd675a",
    "type": "step",
-   "inferred": true
+   "inferred": false,
+   "labels": [
+    "video_package"
+   ]
   },
   {
-   "from": "clip_sh_002",
+   "from": "narrativeagent_output",
    "to": "CompositorAgent__step_6_acbd675a",
    "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "clip_sh_003",
-   "to": "CompositorAgent__step_6_acbd675a",
-   "type": "step",
-   "inferred": true
-  },
-  {
-   "from": "clip_sh_004",
-   "to": "CompositorAgent__step_6_acbd675a",
-   "type": "step",
-   "inferred": true
+   "inferred": false,
+   "labels": [
+    "narrative_plan"
+   ]
   },
   {
    "from": "transcriptionagent_output",
    "to": "CompositorAgent__step_6_acbd675a",
    "type": "step",
-   "inferred": true
+   "inferred": false,
+   "labels": [
+    "subtitle_tracks"
+   ]
   },
   {
-   "from": "creative_brief",
-   "to": "NarrativeAgent__step_1_d438b52b",
-   "type": "step",
-   "inferred": true
+   "from": "shot_prompt_sh_001",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": false
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": false
   }
  ],
  "final": "compositor_final",
  "notes": [
-  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
- ]
+  "Connections are the inputs the Assistant's InputResolver selected for each step when it was replayed over this archived Workspace."
+ ],
+ "plan": {
+  "source": "replay",
+  "model": "gemini-flash-latest",
+  "steps": [
+   {
+    "agent_id": "NarrativeAgent",
+    "intent": "Create a shot-rich comedic story plan for 'Run, Little Calf' featuring the father-son bull dynamic, the little white snake encounter, and the English dialogue."
+   },
+   {
+    "agent_id": "KeyframeSheetAgent",
+    "intent": "Generate character identity anchor cards for the calf, bull father, white snake, and red bird, along with per-shot multi-panel storyboard sheets in bright cartoon CG style."
+   },
+   {
+    "agent_id": "ShotPromptAgent",
+    "intent": "Author per-shot video generation prompts pairing each shot with its storyboard sheet, specifying English dialogue, foley, and strict no-text constraints."
+   },
+   {
+    "agent_id": "ClipAgent",
+    "intent": "Render each shot with baked lip-synced English dialogue and comedic foley, assembling the clips into a seamless 16:9 animated short."
+   },
+   {
+    "agent_id": "TranscriptionAgent",
+    "intent": "Transcribe the assembled short film's spoken dialogue using the story plan as ground truth to produce timed English subtitle segments."
+   },
+   {
+    "agent_id": "CompositorAgent",
+    "intent": "Mux the assembled video and burn in the post-production English subtitles to produce the final deliverable."
+   }
+  ],
+  "executed_chain": [
+   "NarrativeAgent",
+   "KeyframeSheetAgent",
+   "ShotPromptAgent",
+   "ClipAgent",
+   "TranscriptionAgent",
+   "CompositorAgent"
+  ],
+  "chain_match": true
+ }
 }

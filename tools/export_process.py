@@ -283,6 +283,7 @@ class Graph:
         self._by_basename: dict[str, str] = {}
         self.final_md5 = md5(SITE / demo["src"])
         self.final_node: str | None = None
+        self.plan: dict | None = None
 
     # -- primitives
     def stage(self, sid: str, agent: str, label: str, step: str = "") -> dict:
@@ -400,6 +401,8 @@ class Graph:
             "stages": self.stages, "nodes": self.nodes, "edges": self.edges,
             "final": self.final_node, "notes": self.notes,
         }
+        if self.plan:
+            g["plan"] = self.plan
         (self.out / "graph.json").write_text(json.dumps(g, ensure_ascii=False, indent=1), encoding="utf-8")
         total = sum(f.stat().st_size for f in (self.out / "media").glob("*"))
         log(f"  {self.key}: {len(self.stages)} stages, {len(self.nodes)} nodes, {len(self.edges)} edges, "
@@ -463,7 +466,28 @@ def build_workspace(g: Graph):
                    label=label, thumb_only=big)
     g.sort_nodes()
 
-    # 2. edges
+    # 2. plan (Director side): the run's 03_plan_summary.json when it recorded intents, else a replayed 02_plan.json
+    plan = None
+    for f in sorted(ws.parent.glob("*/03_plan_summary.json")):
+        try:
+            rows = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if isinstance(rows, list) and rows and all(r.get("agent_id") and r.get("intent") for r in rows) and \
+           (f.parent / "04_executions.json").exists() and ws.name in (f.parent / "04_executions.json").read_text(encoding="utf-8"):
+            plan = {"source": "run", "steps": [{"agent_id": r["agent_id"], "intent": r["intent"]} for r in rows]}
+    if plan is None:
+        for f in sorted(ws.parent.glob("replay_*/02_plan.json")):
+            try:
+                d = json.loads(f.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            if d.get("plan"):
+                plan = {"source": "replay", "model": d.get("model", ""), "steps": d["plan"],
+                        "executed_chain": d.get("executed_chain", []), "chain_match": bool(d.get("chain_match"))}
+    g.plan = plan
+
+    # 3. edges
     execs, replayed = load_executions(ws)
     if execs:
         seen_stage_pairs: set[tuple[str, str]] = set()
