@@ -76,19 +76,18 @@
     return [s.id, hasGrid ? W.kfs : hasMedia ? W.media : W.text];
   }));
 
-  // ---- resolved inputs → groups, manifest -----------------------------------------------------
+  // ---- resolved inputs → one connection per (producing step → consuming step) ----------------------
   const realEdges = g.edges.filter(e => e.type === "step" && !e.inferred);
-  const groups = new Map();
+  const pairs = new Map();
   for (const e of realEdges) {
-    const n = nodeById.get(e.from); if (!n || !stageById.has(e.to)) continue;
-    const c = cardOfNode.get(n.id); if (!c) continue;
-    const key = `${c.id}→${e.to}`;
-    if (!groups.has(key)) groups.set(key, { card: c, src: n.stage, to: e.to, adjacent: stageIdx.get(e.to) - stageIdx.get(n.stage) === 1, nodes: [] });
-    groups.get(key).nodes.push(n);
+    const n = nodeById.get(e.from); if (!n || !stageById.has(e.to) || n.stage === e.to) continue;
+    const key = `${n.stage}→${e.to}`;
+    if (!pairs.has(key)) pairs.set(key, { src: n.stage, to: e.to, n: 0 });
+    pairs.get(key).n++;
   }
-  const laneSrcs = [...new Set([...groups.values()].filter(gr => !gr.adjacent && stageById.has(gr.src) && (gr.src !== "Inputs" || g.nodes.some(n => n.stage === "Inputs" && ["image", "video", "audio"].includes(n.kind)))).map(gr => gr.src))].sort((a, b) => stageIdx.get(a) - stageIdx.get(b));
-  const lanes = new Map(laneSrcs.map((sid, i) => [sid, i]));
-  const bandH = Math.max(BAND_MIN, laneSrcs.length * LANE + 10);
+  const ARC_STEP = 13, ARC_BASE = 12;
+  const maxSpan = Math.max(1, ...[...pairs.values()].map(p => Math.abs(stageIdx.get(p.to) - stageIdx.get(p.src))));
+  const bandH = ARC_BASE + ARC_STEP * maxSpan + 10;
   const stepNo = sid => (sid === "Inputs" ? "in" : String(stageById.get(sid).order));
   const manifest = new Map();
   for (const e of realEdges) {
@@ -108,6 +107,9 @@
   const inputsHasMedia = g.nodes.some(n => n.stage === "Inputs" && ["image", "video", "audio"].includes(n.kind));
   const cols = stages.filter(s => s.id !== "Inputs" || inputsHasMedia);
   const shown = new Set(cols.map(s => s.id));
+  const colIdx = new Map(cols.map((s, i) => [s.id, i]));
+  const drawn = [...pairs.values()].filter(p => shown.has(p.src) && shown.has(p.to))
+    .sort((a, b) => (Math.abs(colIdx.get(b.to) - colIdx.get(b.src)) - Math.abs(colIdx.get(a.to) - colIdx.get(a.src))) || (colIdx.get(a.src) - colIdx.get(b.src)));
   const worldW = cols.reduce((a, s) => a + stageW.get(s.id), 0) + (cols.length - 1) * GAP + 2 * M;
 
   // ---- 1. Director panel ---------------------------------------------------------------------
@@ -189,9 +191,9 @@
   const kinds = [...new Set(g.nodes.map(n => n.kind))];
   const lg = div("legend", `left:${M}px;top:${bottom + 10}px;width:${worldW - 2 * M}px`,
     kinds.map(k => `<span class="lg"><i style="background:${KCOL[k]}"></i>${k}</span>`).join("") +
-    `<span class="lg edge"><i></i>input resolved for the step it enters, colored by the producing step</span>` +
+    `<span class="lg edge"><i></i>step feeds step (an input the Assistant resolved), colored by the producing step, dot at the consumer</span>` +
     (HI ? `<span class="lg hi"><i></i>lineage of ${esc(HI)}</span>` : "") +
-    `<span class="note">${g.nodes.length} artifacts · ${realEdges.length} resolved inputs${g.notes && /replay/i.test(g.notes.join(" ")) ? " · connections from replaying the Assistant's resolver over the archived Workspace" : ""}</span>`);
+    `<span class="note">${g.nodes.length} artifacts · ${realEdges.length} resolved inputs · ${drawn.length} step-to-step connections${g.notes && /replay/i.test(g.notes.join(" ")) ? " · connections from replaying the Assistant's resolver over the archived Workspace" : ""}</span>`);
   const worldH = bottom + 10 + lg.offsetHeight + M;
   world.style.width = worldW + "px"; world.style.height = worldH + "px";
   edgesEl.setAttribute("width", worldW); edgesEl.setAttribute("height", worldH); edgesEl.style.width = worldW + "px"; edgesEl.style.height = worldH + "px";
@@ -211,17 +213,16 @@
     }
     const e = pts[pts.length - 1]; return d + ` L${e.x},${e.y}`;
   }
-  const leftArr = new Map(), topArr = new Map(), exitSlots = new Map();
-  const arriveLeft = sid => { const h = headPos.get(sid), k = leftArr.get(sid) || 0; leftArr.set(sid, k + 1); return { x: h.x, y: h.y + 8 + k * 7 }; };
-  const arriveTop = sid => { const h = headPos.get(sid), k = topArr.get(sid) || 0; topArr.set(sid, k + 1); return { x: h.x + 10 + Math.min(k * 10, h.w - 20), y: h.y }; };
-  const exitOf = card => { const p = pos.get(card.id); return { x: p.x + p.w, y: p.y + Math.min(p.h / 2, 20) }; };
-  const gapX = card => { const p = pos.get(card.id), k = exitSlots.get(p.x) || 0; exitSlots.set(p.x, k + 1); return p.x + p.w + 3 + (k % 2) * 4; };
-  const ordered = [...groups.values()].filter(gr => shown.has(gr.src) && shown.has(gr.to)).sort((a, b) => (a.adjacent - b.adjacent) || (stageIdx.get(a.src) - stageIdx.get(b.src)));
-  for (const gr of ordered) {
-    const color = colorOf(gr.src), a = exitOf(gr.card);
-    if (gr.adjacent) { path(bez(a, arriveLeft(gr.to)), color); continue; }
-    const ly = bandTop + 5 + lanes.get(gr.src) * LANE, x1 = gapX(gr.card), b = arriveTop(gr.to);
-    path(ortho([a, { x: x1, y: a.y }, { x: x1, y: ly }, { x: b.x, y: ly }, b]), color);
+  const outN = new Map(), inN = new Map();
+  for (const p of drawn) {
+    const hs = headPos.get(p.src), ht = headPos.get(p.to);
+    const span = Math.abs(colIdx.get(p.to) - colIdx.get(p.src)), h = ARC_BASE + ARC_STEP * span;
+    const ko = outN.get(p.src) || 0; outN.set(p.src, ko + 1);
+    const ki = inN.get(p.to) || 0; inN.set(p.to, ki + 1);
+    const sx = hs.x + hs.w - 12 - ko * 9, tx = ht.x + 12 + ki * 9, y0 = hs.y;
+    const color = colorOf(p.src);
+    path(`M${sx},${y0} C${sx},${y0 - h} ${tx},${y0 - h} ${tx},${y0}`, color);
+    const dot = document.createElementNS(NS, "circle"); dot.setAttribute("cx", tx); dot.setAttribute("cy", y0); dot.setAttribute("r", 2.6); dot.style.fill = color; edgesEl.appendChild(dot);
   }
   if (HI) {
     const elOf = id => nodesEl.querySelector(`[data-node="${id}"]`) || (cardOfNode.get(id) && pos.get(cardOfNode.get(id).id) && pos.get(cardOfNode.get(id).id).el);
