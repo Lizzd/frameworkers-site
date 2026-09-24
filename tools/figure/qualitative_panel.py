@@ -41,13 +41,24 @@ COLUMNS = [
     # scene: the little bird's tree — green forest / autumn forest (MovieAgent); meadow / cracked desert / dusk field / pale field (Anim-Director)
     ("TS63", {"MovieAgent": [2, 18, 34, 42], "Anim-Director": [6, 22, 30, 42], "Ours": [2, 14, 30, 42]}),
 ]
-# red boxes, fractional coords in the ORIGINAL 16:9 frame, keyed by (case, system, timestamp)
+# red boxes in DISPLAYED-frame coordinates: fractions (x0, y0, x1, y1) of the 4:3 centre crop exactly as it appears
+# in the figure (use tools/figure/boxgrid-style gridded crops to read them off), keyed by (case, system, timestamp)
+BOX_RGB, BOX_W = (255, 0, 0), 4          # measured from panel (a): pure red, 3-4 px strokes at 3000 px width
 BOXES = {
-    ("TS32", "MovieAgent", 2): [(0.30, 0.20, 0.56, 0.97)], ("TS32", "MovieAgent", 10): [(0.06, 0.08, 0.62, 0.97)], ("TS32", "MovieAgent", 42): [(0.24, 0.08, 0.68, 0.97)],
-    ("TS32", "Anim-Director", 2): [(0.10, 0.22, 0.46, 0.97)], ("TS32", "Anim-Director", 10): [(0.36, 0.12, 0.64, 0.97)],
-    ("TS32", "Anim-Director", 26): [(0.49, 0.30, 0.71, 0.95)], ("TS32", "Anim-Director", 34): [(0.60, 0.18, 0.86, 0.97)],
-    ("TS170", "MovieAgent", 8): [(0.28, 0.58, 0.64, 0.95)], ("TS170", "MovieAgent", 26): [(0.04, 0.10, 0.42, 0.98)],
-    ("TS170", "Anim-Director", 14): [(0.27, 0.60, 0.53, 0.92)], ("TS170", "Anim-Director", 18): [(0.28, 0.32, 0.72, 0.78)], ("TS170", "Anim-Director", 26): [(0.35, 0.45, 0.72, 0.80)],
+    # character — Sofia
+    ("TS32", "MovieAgent", 2):     [(0.08, 0.17, 0.48, 0.91)],   # a boy on a stool
+    ("TS32", "MovieAgent", 10):    [(0.04, 0.02, 0.53, 0.81)],   # a girl at the same window (head)
+    ("TS32", "MovieAgent", 42):    [(0.24, 0.13, 0.71, 0.99)],   # a curly-haired boy
+    ("TS32", "Anim-Director", 2):  [(0.14, 0.27, 0.48, 0.95)],   # a girl on a beanbag
+    ("TS32", "Anim-Director", 10): [(0.19, 0.17, 0.57, 0.99)],   # a grown woman
+    ("TS32", "Anim-Director", 26): [(0.43, 0.42, 0.68, 0.95)],   # a girl again
+    ("TS32", "Anim-Director", 34): [(0.54, 0.24, 0.99, 0.97)],   # a grown woman again
+    # prop — the cutting task: MovieAgent draws with desk stationery instead; Anim-Director's scissors change
+    ("TS170", "MovieAgent", 8):    [(0.11, 0.66, 0.935, 0.98)],  # pencils, sketchbook, markers on the desk
+    ("TS170", "MovieAgent", 36):   [(0.01, 0.69, 0.99, 0.99)],   # paints, palettes, brushes on the desk
+    ("TS170", "Anim-Director", 14): [(0.29, 0.645, 0.53, 0.765)], # small scissors
+    ("TS170", "Anim-Director", 18): [(0.37, 0.38, 0.69, 0.76)],  # giant two-handed scissors
+    ("TS170", "Anim-Director", 26): [(0.33, 0.55, 0.67, 0.84)],  # scissors again
 }
 
 def runs(mask, minlen):
@@ -95,12 +106,10 @@ def main():
                 top = y + fh / 2 - (len(lines) * lh - 14) / 2
                 for li, ln in enumerate(lines):
                     b2 = d.textbbox((0, 0), ln, font=fl); d.text((RIGHT - (b2[2] - b2[0]) - b2[0], top + li * lh - b2[1]), ln, fill="black", font=fl)
-            keep = (fw / fh) / (16 / 9); off = (1 - keep) / 2   # centre crop 16:9 → (a)'s aspect
             for k, t in enumerate(picks[name]):
                 im = frame(VIDEO[name](case), t, fw, fh, tmp); dd = ImageDraw.Draw(im)
                 for (x0, y0, x1, y1) in BOXES.get((case, name, t), []):
-                    cx0 = max(0.0, (x0 - off) / keep); cx1 = min(1.0, (x1 - off) / keep)
-                    dd.rectangle([cx0 * fw, y0 * fh, cx1 * fw - 1, y1 * fh - 1], outline=(230, 0, 0), width=5)
+                    dd.rectangle([round(x0 * fw), round(y0 * fh), round(x1 * fw) - 1, round(y1 * fh) - 1], outline=BOX_RGB, width=BOX_W)
                 pb.paste(im, (gx0 + k * (fw + 2), y))
     lab_h = 56; pad = 26
     out = Image.new("RGB", (W, lab_h + pa.height + pad + lab_h + pb.height), "white"); d = ImageDraw.Draw(out)
