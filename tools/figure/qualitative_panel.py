@@ -22,16 +22,18 @@ W = 3000; FR = [0.12, 0.37, 0.62, 0.87]
 SYSTEMS = [("MovieAgent", lambda c: BENCH / f"movieagent/{c}_real/gemini_ROICtrl_HunyuanVideo_I2V/video/final_video.mp4"),
            ("Anim-Director", lambda c: BENCH / f"anim_director/{c}_real/code/result/video/0/0.mp4"),
            ("Ours", lambda c: BENCH / f"frameworkers/{c}/{c}_fw_veo.mp4")]
-TITLES = {"TS63": "Story: a little bird and a squirrel", "AU05": "Story: baker Pip and the birthday cake",
-          "AU08": "Story: Mira, the museum night guard", "TS32": "Story: Sofia and the visitor", "AU06": "Story: the lighthouse keeper"}
+# (b) mirrors (a): one story per subclass, same three column titles
+SUBCLASS = ["Character Consistency", "Prop Consistency", "Scene Consistency"]
 # drift boxes, fractional coords in the ORIGINAL 16:9 frame: (case, system, frame index 0-3) -> [(x0,y0,x1,y1), ...]
 BOXES = {
+    # character: the protagonist (a bluebird) is replaced by a fox / a rabbit / a brown bird
     ("TS63", "MovieAgent", 0): [(0.28, 0.22, 0.56, 0.90)], ("TS63", "MovieAgent", 2): [(0.50, 0.18, 0.86, 0.90)],
     ("TS63", "Anim-Director", 2): [(0.40, 0.12, 0.62, 0.86)],
-    ("AU05", "MovieAgent", 1): [(0.25, 0.08, 0.76, 0.97)], ("AU05", "MovieAgent", 3): [(0.05, 0.18, 0.46, 0.97)],
-    ("AU05", "Anim-Director", 2): [(0.30, 0.14, 0.73, 0.36)], ("AU05", "Anim-Director", 3): [(0.05, 0.04, 0.40, 0.99)],
-    ("AU08", "MovieAgent", 1): [(0.33, 0.08, 0.78, 0.97)], ("AU08", "MovieAgent", 3): [(0.04, 0.08, 0.36, 0.72)],
-    ("AU08", "Anim-Director", 2): [(0.10, 0.12, 0.42, 0.99)], ("AU08", "Anim-Director", 3): [(0.05, 0.05, 0.52, 0.90)],
+    # prop: the birthday cake is redrawn from shot to shot
+    ("AU05", "MovieAgent", 0): [(0.33, 0.28, 0.62, 0.72)], ("AU05", "MovieAgent", 2): [(0.34, 0.12, 0.66, 0.86)],
+    ("AU05", "Anim-Director", 0): [(0.27, 0.10, 0.56, 0.80)], ("AU05", "Anim-Director", 2): [(0.40, 0.28, 0.62, 0.62)],
+    ("AU05", "Anim-Director", 3): [(0.60, 0.30, 0.82, 0.62)],
+    # scene (AU08): no boxes, as in (a) — the whole frame changes room and style
 }
 
 def runs(mask, minlen):
@@ -71,7 +73,7 @@ def main():
     pb = Image.new("RGB", (W, m["y1"]), "white"); d = ImageDraw.Draw(pb)
     for gi, c in enumerate(a.cases[:len(groups)]):
         gx0, gx1 = groups[gi]; fw = (gx1 - gx0 - 3 * 2) // 4
-        t = TITLES.get(c, c); tw = d.textlength(t, font=f_title); d.text(((gx0 + gx1 - tw) / 2, t0 - 4), t, fill="black", font=f_title)
+        t = SUBCLASS[gi] if gi < len(SUBCLASS) else c; tw = d.textlength(t, font=f_title); d.text(((gx0 + gx1 - tw) / 2, t0 - 4), t, fill="black", font=f_title)
         for ri, (name, pf) in enumerate(SYSTEMS):
             p = pf(c); D = dur(p); y = m["y0"] + ri * (fh + 2)
             if gi == 0:  # row label, left of the first group like (a); wrap at the hyphen if it would run into the frames
@@ -92,7 +94,7 @@ def main():
     out = Image.new("RGB", (W, lab_h + pa.height + pad + lab_h + pb.height), "white"); d = ImageDraw.Draw(out)
     d.text((10, 4), "(a) Main benchmark — S-Agent, UniVA, Ours (character / prop / scene subclasses)", fill="black", font=f_panel)
     out.paste(pa, (0, lab_h)); y = lab_h + pa.height + pad
-    d.text((10, y + 4), "(b) Story-level benchmark — MovieAgent, Anim-Director, Ours (four evenly spaced frames per 48 s film)", fill="black", font=f_panel)
+    d.text((10, y + 4), "(b) Story-level benchmark — MovieAgent, Anim-Director, Ours (one story per subclass; four evenly spaced frames per 48 s film)", fill="black", font=f_panel)
     out.paste(pb, (0, y + lab_h))
     out.save(a.out, "PDF", resolution=300.0, quality=88); out.save(str(Path(a.out).with_suffix(".png")))
     print(a.out, out.size, f"{Path(a.out).stat().st_size/1e6:.1f} MB", "grid:", m)
