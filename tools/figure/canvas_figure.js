@@ -1,21 +1,20 @@
-/* Print figure of process/<film>/graph.json — v3.
-   Top: the Director side (user brief → Director → its PlanSteps with intents, plus the inputs each step
-   actually resolved). Bottom: one column per PlanStep with the artifacts it produced (media as
-   thumbnails, text/JSON as chips) and the resolved-input curves, colored by producing step.
-   ?shot=sh_00N highlights that shot's lineage (?shot=none disables). Single-row layout. */
+/* Print figure of process/<film>/graph.json — v4 ("one row per PlanStep").
+   Top: user brief → Director. Then one row per PlanStep: the Director's intent (+ the input labels the
+   Assistant resolved) on the left, every artifact the step persisted on the right (media as thumbnails,
+   text/JSON as chips). Step-to-step connections are arcs in the left margin, colored by the producing step.
+   ?shot=sh_00N outlines that shot's storyboard/clip in red (?shot=none disables). */
 (async function () {
   const Q = new URLSearchParams(location.search);
   const film = Q.get("film") || "little_calf";
   const g = await (await fetch(`/process/${film}/graph.json`, { cache: "no-cache" })).json();
 
-  const M = 12, GAP = 10, HEAD_GAP = 8, CARD_GAP = 6, LANE = 7, BAND_MIN = 18, SECTION_GAP = 14;
-  const W = { text: 108, kfs: 232, media: 148 };
+  const M = 12, SECTION_GAP = 10;
   const PALETTE = ["#2563eb", "#0891b2", "#16a34a", "#7c3aed", "#ea580c", "#4f46e5", "#0d9488", "#b45309", "#9333ea", "#475569", "#65a30d", "#0369a1"];
-  const IN_COLOR = "#c98a2e", HI_COLOR = "#e11d48";
+  const IN_COLOR = "#c98a2e";
   const KCOL = { image: "#3b7ddd", video: "#8b5cf6", audio: "#10b981", text: "#d98a0b", json: "#db2777" };
+  const WORLD_W = +(Q.get("w")) || 900;
 
-  // the exporter may attach the site's published mp4 next to the run's own compositor output: keep the run's
-  {
+  {  // keep the run's own compositor output as the final film when the exporter also attached the published mp4
     const last = [...g.stages].sort((a, b) => a.order - b.order).slice(-1)[0].id;
     const site = g.nodes.find(n => n.id === "final_film" && n.stage === last);
     const own = g.nodes.find(n => n.stage === last && n.kind === "video" && n.id !== "final_film");
@@ -31,10 +30,10 @@
   const HI = Q.get("shot") === "none" ? null : (Q.get("shot") || (shots.length > 1 ? shots[Math.min(1, shots.length - 1)] : null));
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const fmtDur = d => { d = Math.round(d); return `${Math.floor(d / 60)}:${String(d % 60).padStart(2, "0")}`; };
-  const fmtKB = b => b >= 1e6 ? `${(b / 1e6).toFixed(1)} MB` : `${Math.max(1, Math.round(b / 1024))} KB`;
   const short = s => esc(s.replace(/Agent$/, ""));
+  const camel = s => s.replace(/([a-z])([A-Z])/g, "$1<wbr>$2");
 
-  // ---- roles → cards ---------------------------------------------------------------------
+  // ---- roles → artifact groups per step -----------------------------------------------------------
   function role(n) {
     if (n.final) return "final";
     if (n.preview_only) return "cut";
@@ -49,45 +48,25 @@
   const MEDIA = new Set(["ref", "anchor", "storyboard", "frame", "clip", "cut", "video", "final"]);
   const TITLES = { anchor: "identity anchors", storyboard: "storyboard sheets", ref: "reference images", frame: "keyframes", clip: "shot clips",
                    prompt: "image prompts", shotprompt: "shot prompts", audio: "audio tracks", json: "JSON outputs", text: "text files" };
-  const ORDER = ["ref", "anchor", "storyboard", "frame", "final", "cut", "clip", "video", "audio", "text", "prompt", "shotprompt", "json", "other"];
-  const gridCols = n => (n <= 3 ? n : n === 4 ? 2 : n <= 6 ? 3 : n === 9 ? 3 : 4);
-  const cardOfNode = new Map(), stageCards = new Map();
-  for (const s of stages) {
+  const ORDER = ["ref", "storyboard", "anchor", "frame", "final", "cut", "clip", "video", "audio", "text", "prompt", "shotprompt", "json", "other"];
+  const CELL_W = { storyboard: 118, frame: 118, ref: 96, anchor: 78, clip: 78, cut: 118, final: 200, video: 118 };
+  const groupsOf = sid => {
     const by = new Map();
-    for (const n of g.nodes.filter(n => n.stage === s.id)) { const r = role(n); if (!by.has(r)) by.set(r, []); by.get(r).push(n); }
-    const cards = [];
-    for (const r of ORDER) {
-      const ns = by.get(r); if (!ns) continue;
-      if (MEDIA.has(r)) {
-        if (ns.length >= 2 && r !== "final" && r !== "cut") cards.push({ type: "grid", role: r, nodes: ns, id: `grp__${s.id}__${r}` });
-        else for (const n of ns) cards.push({ type: "media", role: r, nodes: [n], id: n.id });
-      } else if (r === "audio") {
-        for (const n of ns) cards.push({ type: "audio", role: r, nodes: [n], id: n.id });
-      } else if (ns.length >= 2 && r !== "json") {
-        cards.push({ type: "chip", role: r, nodes: ns, id: `grp__${s.id}__${r}` });
-      } else for (const n of ns) cards.push({ type: "chip", role: r, nodes: [n], id: n.id });
-    }
-    for (const c of cards) for (const n of c.nodes) cardOfNode.set(n.id, c);
-    stageCards.set(s.id, cards);
-  }
-  const stageW = new Map(stages.map(s => {
-    const cs = stageCards.get(s.id);
-    const hasGrid = cs.some(c => c.type === "grid" && c.nodes.length >= 6), hasMedia = cs.some(c => c.type === "grid" || c.type === "media");
-    return [s.id, hasGrid ? W.kfs : hasMedia ? W.media : W.text];
-  }));
+    for (const n of g.nodes.filter(n => n.stage === sid)) { const r = role(n); if (!by.has(r)) by.set(r, []); by.get(r).push(n); }
+    return ORDER.filter(r => by.has(r)).map(r => ({ role: r, nodes: by.get(r) }));
+  };
 
-  // ---- resolved inputs → one connection per (producing step → consuming step) ----------------------
+  // ---- connections: one arc per (producing step → consuming step) ----------------------------------------
   const realEdges = g.edges.filter(e => e.type === "step" && !e.inferred);
   const pairs = new Map();
   for (const e of realEdges) {
-    const n = nodeById.get(e.from); if (!n || !stageById.has(e.to) || n.stage === e.to) continue;
-    const key = `${n.stage}→${e.to}`;
-    if (!pairs.has(key)) pairs.set(key, { src: n.stage, to: e.to, n: 0 });
-    pairs.get(key).n++;
+    const n = nodeById.get(e.from); if (!n || !stageById.has(e.to) || n.stage === e.to || n.stage === "Inputs") continue;
+    const key = `${n.stage}→${e.to}`; if (!pairs.has(key)) pairs.set(key, { src: n.stage, to: e.to });
   }
-  const ARC_STEP = 13, ARC_BASE = 12;
-  const maxSpan = Math.max(1, ...[...pairs.values()].map(p => Math.abs(stageIdx.get(p.to) - stageIdx.get(p.src))));
-  const bandH = ARC_BASE + ARC_STEP * maxSpan + 10;
+  const rowIdx = new Map(steps.map((s, i) => [s.id, i]));
+  const spanOf = p => Math.abs(rowIdx.get(p.to) - rowIdx.get(p.src));
+  const maxSpan = Math.max(1, ...[...pairs.values()].map(spanOf));
+  const ARC_BASE = 7, ARC_STEP = 7, ARC_W = ARC_BASE + ARC_STEP * maxSpan + 14;
   const stepNo = sid => (sid === "Inputs" ? "in" : String(stageById.get(sid).order));
   const manifest = new Map();
   for (const e of realEdges) {
@@ -96,155 +75,86 @@
     for (const l of e.labels) { const r = m.get(l) || { n: 0, from: new Set() }; r.n++; r.from.add(stepNo(n.stage)); m.set(l, r); }
   }
   const manifestHtml = sid => { const m = manifest.get(sid); if (!m) return ""; return [...m.entries()].map(([l, r]) =>
-    `<span class="tok">${esc(l).replace(/_/g, "_<wbr>")}${r.n > 1 ? "×" + r.n : ""}<span class="src">←${[...r.from].map(x => x === "in" ? "in" : x).join(",")}</span></span>`).join(' <span class="sep">·</span> '); };
+    `<span class="tok">${esc(l).replace(/_/g, "_<wbr>")}${r.n > 1 ? "×" + r.n : ""}<span class="src">←${[...r.from].join(",")}</span></span>`).join(' <span class="sep">·</span> '); };
 
-  // ---- DOM helpers ---------------------------------------------------------------------------
+  // ---- DOM ------------------------------------------------------------------------------------------
   const nodesEl = document.getElementById("nodes"), edgesEl = document.getElementById("edges"), world = document.getElementById("world");
   const div = (cls, css, html) => { const el = document.createElement("div"); el.className = cls; if (css) el.style.cssText = css; if (html != null) el.innerHTML = html; nodesEl.appendChild(el); return el; };
-  const badge = (sid, extra = "") => `<span class="badge${extra}" style="background:${colorOf(sid)}">${sid === "Inputs" ? "in" : stageById.get(sid).order}</span>`;
+  const badge = sid => `<span class="badge" style="background:${colorOf(sid)}">${sid === "Inputs" ? "in" : stageById.get(sid).order}</span>`;
+  const worldW = WORLD_W;
 
-  // ---- world width from the canvas columns ----------------------------------------------------
-  const inputsHasMedia = g.nodes.some(n => n.stage === "Inputs" && ["image", "video", "audio"].includes(n.kind));
-  const cols = stages.filter(s => s.id !== "Inputs" || inputsHasMedia);
-  const shown = new Set(cols.map(s => s.id));
-  const colIdx = new Map(cols.map((s, i) => [s.id, i]));
-  const drawn = [...pairs.values()].filter(p => shown.has(p.src) && shown.has(p.to))
-    .sort((a, b) => (Math.abs(colIdx.get(b.to) - colIdx.get(b.src)) - Math.abs(colIdx.get(a.to) - colIdx.get(a.src))) || (colIdx.get(a.src) - colIdx.get(b.src)));
-  const worldW = cols.reduce((a, s) => a + stageW.get(s.id), 0) + (cols.length - 1) * GAP + 2 * M;
-
-  // ---- 1. Director panel ---------------------------------------------------------------------
+  // 1. brief → Director
   let y = M;
-  const briefW = 300, dirX = M + briefW + 26, dirW = worldW - dirX - M;
+  const briefW = 290, dirX = M + briefW + 24, dirW = worldW - dirX - M;
+  const plan = g.plan || { steps: steps.map(s => ({ agent_id: s.agent, intent: "" })) };
+  const intentOf = new Map(plan.steps.map((st, i) => [steps[i] ? steps[i].id : `#${i}`, st.intent || ""]));
   const brief = div("panel brief", `left:${M}px;top:${y}px;width:${briefW}px`,
     `<div class="p-title">${badge("Inputs")} User brief</div><div class="p-text">${esc(g.prompt || "")}</div>`);
-  const plan = g.plan || { steps: steps.map(s => ({ agent_id: s.agent, intent: "" })) };
-  const catalogNote = plan.source === "replay" ? `re-planned from the same brief with the Director's core prompt (${esc(plan.model || "")}); ${plan.chain_match ? "identical to the executed chain" : "differs from the executed chain"}` : "as recorded during the run";
+  const planNote = plan.source === "replay" ? `Plan re-derived from the same brief with the Director's core prompt (${esc(plan.model || "")}); ${plan.chain_match ? "identical to the executed chain" : "differs from the executed chain"}.` : "Plan as recorded during the run.";
   const director = div("panel director", `left:${dirX}px;top:${y}px;width:${dirW}px`,
     `<div class="p-title"><span class="badge dir">D</span> Director</div>
-     <div class="p-text">Reads the brief and the catalog of sub-agent descriptors, then plans the whole pipeline up front as <b>${plan.steps.length} PlanSteps</b> on the Plan Stack${plan.chain_match ? " (one layer; no replan was needed)" : ""}. The Assistant executes them in order; each column below is one step.</div>
-     <div class="p-note">Plan ${catalogNote}.</div>`);
-  const arrow = div("p-arrow", `left:${M + briefW + 6}px;top:${y + 22}px`, "→");
-  y += Math.max(brief.offsetHeight, director.offsetHeight) + 8;
-  // plan table
-  const rowsHtml = plan.steps.map((st, i) => {
-    const s = steps[i]; const sid = s ? s.id : null;
-    return `<div class="prow"><div class="pc-badge">${sid ? badge(sid) : `<span class="badge" style="background:#999">${i + 1}</span>`}</div>
-      <div class="pc-agent">${short(st.agent_id).replace(/([a-z])([A-Z])/g, "$1<wbr>$2")}</div>
-      <div class="pc-intent">${esc(st.intent || "")}</div>
-      <div class="pc-in">${sid ? manifestHtml(sid) : ""}</div></div>`;
-  }).join("");
-  const table = div("plan", `left:${M}px;top:${y}px;width:${worldW - 2 * M}px`,
-    `<div class="prow head"><div class="pc-badge">#</div><div class="pc-agent">PlanStep → sub-agent</div><div class="pc-intent">Director's intent for the step</div><div class="pc-in">resolved inputs (label ← step)</div></div>${rowsHtml}`);
-  y += table.offsetHeight + SECTION_GAP;
+     <div class="p-text">Reads the brief and the sub-agent catalog, then plans the whole pipeline up front: <b>${steps.length} PlanSteps</b> on the Plan Stack${plan.chain_match ? " (one layer, no replan)" : ""}. The Assistant executes them in order; one row per step below.</div>
+     <div class="p-note">${planNote}</div>`);
+  div("p-arrow", `left:${M + briefW + 6}px;top:${y + 22}px`, "→");
+  y += Math.max(brief.offsetHeight, director.offsetHeight) + SECTION_GAP;
 
-  // ---- 2. canvas: one column per stage -----------------------------------------------------------
-  const railY = y; y += 16;
-  const bandTop = y; const headY = bandTop + bandH;
-  const pos = new Map(), headPos = new Map();
-  let x = M, bottom = headY;
-  const mediaAspect = ns => { const r = ns.map(n => (n.w && n.h) ? n.w / n.h : 16 / 9).sort((a, b) => a - b); const med = r[Math.floor(r.length / 2)]; return med >= 1.45 ? "16 / 9" : med >= 1.1 ? "4 / 3" : "1 / 1"; };
-  for (const s of cols) {
-    const w = stageW.get(s.id), isIn = s.id === "Inputs";
-    const h = div(`col-head${isIn ? " is-inputs" : ""}${stageCards.get(s.id).some(c => c.role === "final") ? " is-final" : ""}`,
-      `left:${x}px;top:${headY}px;width:${w}px;border-top-color:${colorOf(s.id)}`,
-      `${badge(s.id)}<span class="ch-agent">${isIn ? "User inputs" : short(s.agent).replace(/([a-z])([A-Z])/g, "$1<wbr>$2")}</span>`);
-    headPos.set(s.id, { x, y: headY, w, h: h.offsetHeight, el: h });
-    let cy = headY + h.offsetHeight + HEAD_GAP;
-    for (const c of stageCards.get(s.id)) {
-      let el;
-      if (c.type === "grid") {
-        const n0 = c.nodes[0], gc = gridCols(c.nodes.length), asp = mediaAspect(c.nodes);
-        el = div(`card k-${n0.kind}`, `left:${x}px;top:${cy}px;width:${w}px`,
-          `<div class="c-grid" style="grid-template-columns:repeat(${gc},1fr)">` + c.nodes.map(n =>
-            `<div class="cell${n.shot && n.shot === HI ? " hi" : ""}" data-node="${esc(n.id)}" style="aspect-ratio:${asp}"><img src="/${esc(n.kind === "video" ? (n.poster || "") : n.file)}" alt="">${n.shot ? `<span class="tag">${esc(n.shot)}</span>` : ""}</div>`).join("") +
-          `</div><div class="c-label"><span class="dot"></span>${c.nodes.length} ${TITLES[c.role] || c.role}</div>`);
-      } else if (c.type === "media") {
-        const n = c.nodes[0];
-        el = div(`card k-${n.kind}${n.final ? " is-final" : ""}`, `left:${x}px;top:${cy}px;width:${w}px`,
-          `<div class="c-media${n.shot && n.shot === HI ? " hi" : ""}" data-node="${esc(n.id)}" style="aspect-ratio:16 / 9"><img src="/${esc(n.kind === "video" ? (n.poster || "") : n.file)}" alt="">
-             ${n.final ? `<span class="pill">final film</span>` : n.preview_only ? `<span class="pill cut">assembled cut</span>` : ""}${n.dur ? `<span class="dur">${fmtDur(n.dur)}</span>` : ""}</div>
-           <div class="c-label"><span class="dot"></span>${esc(n.final ? "final film" : n.preview_only ? "assembled cut" : n.label)}</div>`);
-      } else if (c.type === "audio") {
-        const n = c.nodes[0];
-        el = div(`card k-audio`, `left:${x}px;top:${cy}px;width:${w}px`,
-          `<div class="c-wave" data-node="${esc(n.id)}">${n.dur ? `<span class="dur">${fmtDur(n.dur)}</span>` : ""}</div><div class="c-label"><span class="dot"></span>${esc(n.label.replace(/^aud /, ""))}</div>`);
-      } else { // chip
-        const n0 = c.nodes[0]; let label, meta = "";
-        if (c.nodes.length > 1) label = `${c.nodes.length} ${TITLES[c.role] || c.role}`;
-        else if (/agent output$/i.test(n0.label)) { label = n0.kind === "json" ? "output JSON" : n0.label; meta = n0.bytes ? fmtKB(n0.bytes) : ""; }
-        else { label = n0.label.replace(/^shot prompt /, "prompt "); meta = n0.bytes ? fmtKB(n0.bytes) : ""; }
-        el = div(`chip k-${n0.kind}`, `left:${x}px;top:${cy}px;width:${w}px`,
-          `<span class="dot"></span><span class="t">${esc(label)}</span>`);
-        if (c.nodes.length === 1) el.dataset.node = n0.id;
-      }
-      el.dataset.card = c.id;
-      pos.set(c.id, { x, y: cy, w, h: el.offsetHeight, el }); cy += el.offsetHeight + CARD_GAP;
+  // 2. one row per PlanStep
+  const uploads = g.nodes.filter(n => n.stage === "Inputs" && ["image", "video", "audio"].includes(n.kind));
+  const tableX = M + ARC_W, tableW = worldW - tableX - M;
+  const artW = tableW - 22 - 300 - 3 * 8 - 20;   // badge + plan column + gaps + padding → width left for artifacts
+  const groupHtml = (gr) => {
+    const r = gr.role, ns = gr.nodes;
+    if (MEDIA.has(r)) {
+      const per = CELL_W[r] || 100, n = ns.length;
+      const cols = n <= 6 ? n : Math.max(1, Math.min(n, Math.floor((artW + 4) / (per + 4))));
+      const w = Math.min(artW, cols * per + (cols - 1) * 4 + 6);
+      const hi = n0 => n0.shot && n0.shot === HI ? " hi" : "";
+      return `<div class="ag" style="width:${w}px"><div class="ag-grid" style="grid-template-columns:repeat(${cols},1fr)">` +
+        ns.map(n0 => `<div class="cell${hi(n0)}" style="aspect-ratio:16 / 9"><img src="/${esc(n0.kind === "video" ? (n0.poster || "") : n0.file)}" alt="">` +
+          `${n0.shot ? `<span class="tag">${esc(n0.shot)}</span>` : ""}${n0.final ? `<span class="pill">final film</span>` : n0.preview_only ? `<span class="pill cut">assembled cut</span>` : ""}${n0.dur ? `<span class="dur">${fmtDur(n0.dur)}</span>` : ""}</div>`).join("") +
+        `</div><div class="ag-label"><span class="dot" style="background:${KCOL[ns[0].kind]}"></span>${n === 1 ? esc(ns[0].final ? "final film" : ns[0].preview_only ? "assembled cut" : ns[0].label) : `${n} ${TITLES[r] || r}`}</div></div>`;
     }
-    bottom = Math.max(bottom, cy - CARD_GAP); x += w + GAP;
-  }
-  // rail between plan and canvas
-  div("rail", `left:${M}px;width:${worldW - 2 * M - 10}px;top:${railY + 8}px`);
-  div("rail-cap", `left:${M + 8}px;top:${railY + 1}px`, "Assistant executes the Plan Stack in order · one column per PlanStep · every artifact it persisted");
-  div("rail-arrow", `left:${worldW - M - 10}px;top:${railY + 3}px`);
+    if (r === "audio") return ns.map(n0 => `<div class="ag audio" style="width:150px"><div class="c-wave">${n0.dur ? `<span class="dur">${fmtDur(n0.dur)}</span>` : ""}</div><div class="ag-label"><span class="dot" style="background:${KCOL.audio}"></span>${esc(n0.label.replace(/^aud /, ""))}</div></div>`).join("");
+    const label = ns.length > 1 ? `${ns.length} ${TITLES[r] || r}` : /agent output$/i.test(ns[0].label) ? (ns[0].kind === "json" ? "output JSON" : ns[0].label) : ns[0].label.replace(/^shot prompt /, "prompt ");
+    return `<span class="chip"><span class="dot" style="background:${KCOL[ns[0].kind]}"></span>${esc(label)}</span>`;
+  };
+  const rows = steps.map(s => {
+    const grs = groupsOf(s.id), textOnly = grs.every(gr => !MEDIA.has(gr.role) && gr.role !== "audio");
+    const planHtml = `<div class="sc-agent">${camel(short(s.agent))}</div><div class="sc-intent">${esc(intentOf.get(s.id) || "")}${textOnly ? " " + grs.map(groupHtml).join(" ") : ""}</div>${manifest.get(s.id) ? `<div class="sc-in">${manifestHtml(s.id)}</div>` : ""}`;
+    return `<div class="srow${textOnly ? " textonly" : ""}" data-stage="${esc(s.id)}">
+      <div class="sc-badge">${badge(s.id)}</div>
+      <div class="sc-plan">${planHtml}</div>${textOnly ? "" : `<div class="sc-art">${grs.map(groupHtml).join("")}</div>`}</div>`;
+  }).join("");
+  const uploadsRow = uploads.length ? `<div class="srow inputs"><div class="sc-badge">${badge("Inputs")}</div><div class="sc-plan"><div class="sc-agent">User uploads</div><div class="sc-intent">Files attached to the brief, registered in the Workspace before planning.</div></div><div class="sc-art">${groupsOf("Inputs").filter(gr => MEDIA.has(gr.role) || gr.role === "audio").map(groupHtml).join("")}</div></div>` : "";
+  const table = div("steps", `left:${tableX}px;top:${y}px;width:${tableW}px`,
+    `<div class="srow head"><div class="sc-badge">#</div><div class="sc-plan">PlanStep · Director's intent · <span class="mono">resolved inputs (label ← producing step)</span></div><div class="sc-art">Artifacts the Assistant persisted to the Workspace</div></div>${uploadsRow}${rows}`);
+  y += table.offsetHeight;
 
-  // ---- 3. legend + world size -------------------------------------------------------------------
+  // 3. legend, world size
   const kinds = [...new Set(g.nodes.map(n => n.kind))];
-  const lg = div("legend", `left:${M}px;top:${bottom + 10}px;width:${worldW - 2 * M}px`,
+  const lg = div("legend", `left:${M}px;top:${y + 8}px;width:${worldW - 2 * M}px`,
     kinds.map(k => `<span class="lg"><i style="background:${KCOL[k]}"></i>${k}</span>`).join("") +
-    `<span class="lg edge"><i></i>step feeds step (an input the Assistant resolved), colored by the producing step, dot at the consumer</span>` +
-    (HI ? `<span class="lg hi"><i></i>lineage of ${esc(HI)}</span>` : "") +
-    `<span class="note">${g.nodes.length} artifacts · ${realEdges.length} resolved inputs · ${drawn.length} step-to-step connections${g.notes && /replay/i.test(g.notes.join(" ")) ? " · connections from replaying the Assistant's resolver over the archived Workspace" : ""}</span>`);
-  const worldH = bottom + 10 + lg.offsetHeight + M;
+    `<span class="lg edge"><i></i>arc = the later step consumed an artifact of the earlier one (resolved by the Assistant), colored by the producing step, dot at the consumer</span>` +
+    (HI ? `<span class="lg hibox"><i></i>shot ${esc(HI)} through the pipeline</span>` : "") +
+    `<span class="note">${g.nodes.length} artifacts · ${realEdges.length} resolved inputs · ${pairs.size} step-to-step connections${g.notes && /replay/i.test(g.notes.join(" ")) ? " · connections from replaying the Assistant's resolver over the archived Workspace" : ""}</span>`);
+  const worldH = y + 8 + lg.offsetHeight + M;
   world.style.width = worldW + "px"; world.style.height = worldH + "px";
   edgesEl.setAttribute("width", worldW); edgesEl.setAttribute("height", worldH); edgesEl.style.width = worldW + "px"; edgesEl.style.height = worldH + "px";
 
-  // ---- 4. edges --------------------------------------------------------------------------------
+  // 4. arcs in the left margin
   const NS = "http://www.w3.org/2000/svg";
   const rectOf = el => { const r = el.getBoundingClientRect(), w = world.getBoundingClientRect(); return { x: r.left - w.left, y: r.top - w.top, w: r.width, h: r.height }; };
-  const path = (d, color, cls) => { const p = document.createElementNS(NS, "path"); p.setAttribute("d", d); if (cls) p.setAttribute("class", cls); else p.style.stroke = color; edgesEl.appendChild(p); return p; };
-  const bez = (a, b) => { const dx = Math.max(20, Math.abs(b.x - a.x) * 0.5); return `M${a.x},${a.y} C${a.x + dx},${a.y} ${b.x - dx},${b.y} ${b.x},${b.y}`; };
-  function ortho(pts, r = 5) {
-    let d = `M${pts[0].x},${pts[0].y}`;
-    for (let i = 1; i < pts.length - 1; i++) {
-      const p0 = pts[i - 1], p1 = pts[i], p2 = pts[i + 1];
-      const v1 = { x: Math.sign(p1.x - p0.x), y: Math.sign(p1.y - p0.y) }, v2 = { x: Math.sign(p2.x - p1.x), y: Math.sign(p2.y - p1.y) };
-      const rr = Math.min(r, Math.hypot(p1.x - p0.x, p1.y - p0.y) / 2, Math.hypot(p2.x - p1.x, p2.y - p1.y) / 2);
-      d += ` L${p1.x - v1.x * rr},${p1.y - v1.y * rr} Q${p1.x},${p1.y} ${p1.x + v2.x * rr},${p1.y + v2.y * rr}`;
-    }
-    const e = pts[pts.length - 1]; return d + ` L${e.x},${e.y}`;
-  }
-  const outN = new Map(), inN = new Map();
-  for (const p of drawn) {
-    const hs = headPos.get(p.src), ht = headPos.get(p.to);
-    const span = Math.abs(colIdx.get(p.to) - colIdx.get(p.src)), h = ARC_BASE + ARC_STEP * span;
-    const ko = outN.get(p.src) || 0; outN.set(p.src, ko + 1);
-    const ki = inN.get(p.to) || 0; inN.set(p.to, ki + 1);
-    const sx = hs.x + hs.w - 12 - ko * 9, tx = ht.x + 12 + ki * 9, y0 = hs.y;
-    const color = colorOf(p.src);
-    path(`M${sx},${y0} C${sx},${y0 - h} ${tx},${y0 - h} ${tx},${y0}`, color);
-    const dot = document.createElementNS(NS, "circle"); dot.setAttribute("cx", tx); dot.setAttribute("cy", y0); dot.setAttribute("r", 2.6); dot.style.fill = color; edgesEl.appendChild(dot);
-  }
-  if (HI) {
-    const elOf = id => nodesEl.querySelector(`[data-node="${id}"]`) || (cardOfNode.get(id) && pos.get(cardOfNode.get(id).id) && pos.get(cardOfNode.get(id).id).el);
-    const out = el => { const r = rectOf(el); return { x: r.x + r.w, y: r.y + r.h / 2 }; };
-    const inn = el => { const r = rectOf(el); return { x: r.x, y: r.y + r.h / 2 }; };
-    const seen = new Set();
-    for (const e of g.edges.filter(e => e.type === "shot" && nodeById.get(e.from)?.shot === HI && nodeById.get(e.to)?.shot === HI)) {
-      const cf = cardOfNode.get(e.from), ct = cardOfNode.get(e.to); if (!cf || !ct || cf === ct) continue;
-      if (cf.role === "prompt" || ct.role === "prompt") continue;                       // image-prompt text is not part of the visual lineage
-      if (Math.abs(stageIdx.get(nodeById.get(e.to).stage) - stageIdx.get(nodeById.get(e.from).stage)) !== 1) continue; // adjacent columns only
-      const k = `${cf.id}→${ct.id}`; if (seen.has(k)) continue; seen.add(k);
-      const A = elOf(e.from), B = elOf(e.to);
-      if (A && B) { const a = out(A), b = inn(B), gx = (a.x + b.x) / 2; path(ortho([a, { x: gx, y: a.y }, { x: gx, y: b.y }, b], 4), HI_COLOR, "hi"); }
-    }
-    const clip = g.nodes.find(n => n.shot === HI && n.kind === "video"), cut = g.nodes.find(n => n.preview_only);
-    if (clip && cut && pos.get(cut.id) && cardOfNode.get(clip.id) !== cardOfNode.get(cut.id)) {
-      const a = out(elOf(clip.id)), pc = pos.get(cut.id), b = { x: pc.x + pc.w, y: pc.y + pc.h / 2 };
-      path(`M${a.x},${a.y} C${a.x + 18},${a.y} ${b.x + 18},${b.y} ${b.x},${b.y}`, HI_COLOR, "hi");
-    }
+  const badgeY = new Map([...table.querySelectorAll(".srow[data-stage]")].map(r => { const b = rectOf(r.querySelector(".badge")); return [r.dataset.stage, b.y + b.h / 2]; }));
+  const x0 = tableX - 4;
+  const sorted = [...pairs.values()].sort((a, b) => spanOf(b) - spanOf(a));
+  for (const p of sorted) {
+    const y1 = badgeY.get(p.src), y2 = badgeY.get(p.to); if (y1 == null || y2 == null) continue;
+    const h = ARC_BASE + ARC_STEP * spanOf(p), color = colorOf(p.src);
+    const path = document.createElementNS(NS, "path"); path.setAttribute("d", `M${x0},${y1} C${x0 - h},${y1} ${x0 - h},${y2} ${x0},${y2}`); path.style.stroke = color; edgesEl.appendChild(path);
+    const dot = document.createElementNS(NS, "circle"); dot.setAttribute("cx", x0); dot.setAttribute("cy", y2); dot.setAttribute("r", 2.6); dot.style.fill = color; edgesEl.appendChild(dot);
   }
 
-  // ---- 5. thumbnails at 3x display size, then ready ------------------------------------------------
+  // 5. thumbnails at 3x display size, then ready
   await Promise.all([...document.images].map(im => im.complete ? null : new Promise(r => { im.onload = im.onerror = r; })));
   for (const im of [...document.images]) {
     if (!im.naturalWidth) continue;
