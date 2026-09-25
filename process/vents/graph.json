@@ -8,7 +8,7 @@
   "type": "workspace",
   "path": "Runtime/topic16_vents/workspace_global_20260803_120643"
  },
- "generated_at": "2026-09-23T20:33:15+00:00",
+ "generated_at": "2026-09-09T15:56:41+00:00",
  "stages": [
   {
    "id": "Inputs",
@@ -900,809 +900,704 @@
  ],
  "edges": [
   {
-   "from": "fig_temp_depth",
-   "to": "IntakeImageAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "raw_image_upload"
-   ]
-  },
-  {
    "from": "fig_food_web",
    "to": "IntakeImageAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "raw_image_upload"
-   ]
-  },
-  {
-   "from": "intakeimageagent_output",
-   "to": "BriefEnricherAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "image_descriptions"
-   ]
+   "inferred": true
   },
   {
    "from": "fig_temp_depth",
-   "to": "BriefEnricherAgent__step_1_5648c3af",
+   "to": "IntakeImageAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "image_files"
-   ]
-  },
-  {
-   "from": "fig_food_web",
-   "to": "BriefEnricherAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "image_files"
-   ]
+   "inferred": true
   },
   {
    "from": "creative_brief",
    "to": "BriefEnricherAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "raw_brief"
-   ]
+   "inferred": true
+  },
+  {
+   "from": "intakeimageagent_output",
+   "to": "BriefEnricherAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
   },
   {
    "from": "briefenricheragent_output",
-   "to": "ExplainerAgent__step_1_5648c3af",
+   "to": "KeyframeSheetAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "creative_brief"
-   ]
+   "inferred": true
   },
   {
    "from": "explaineragent_output",
    "to": "KeyframeSheetAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "story"
-   ]
-  },
-  {
-   "from": "fig_temp_depth",
-   "to": "KeyframeSheetAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "prop_reference"
-   ]
+   "inferred": true
   },
   {
    "from": "fig_food_web",
    "to": "KeyframeSheetAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "prop_reference"
-   ]
+   "inferred": true
   },
   {
-   "from": "sh_001_storyboard",
-   "to": "ShotPromptAgent__step_1_5648c3af",
+   "from": "fig_temp_depth",
+   "to": "KeyframeSheetAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
-  },
-  {
-   "from": "sh_009_storyboard",
-   "to": "ShotPromptAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
-  },
-  {
-   "from": "sh_008_storyboard",
-   "to": "ShotPromptAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
-  },
-  {
-   "from": "sh_002_storyboard",
-   "to": "ShotPromptAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
-  },
-  {
-   "from": "sh_004_storyboard",
-   "to": "ShotPromptAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
-  },
-  {
-   "from": "sh_007_storyboard",
-   "to": "ShotPromptAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
-  },
-  {
-   "from": "sh_003_storyboard",
-   "to": "ShotPromptAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
-  },
-  {
-   "from": "sh_005_storyboard",
-   "to": "ShotPromptAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
-  },
-  {
-   "from": "sh_006_storyboard",
-   "to": "ShotPromptAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
-  },
-  {
-   "from": "explaineragent_output",
-   "to": "ShotPromptAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "story"
-   ]
+   "inferred": true
   },
   {
    "from": "keyframesheetagent_output",
    "to": "ShotPromptAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "keyframes"
-   ]
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "shot_prompt_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "shot_prompt_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "shot_prompt_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "shot_prompt_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard_prompt",
+   "to": "shot_prompt_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "shot_prompt_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard_prompt",
+   "to": "shot_prompt_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard",
+   "to": "shot_prompt_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard_prompt",
+   "to": "shot_prompt_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard",
+   "to": "shot_prompt_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard_prompt",
+   "to": "shot_prompt_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard",
+   "to": "shot_prompt_sh_009",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard_prompt",
+   "to": "shot_prompt_sh_009",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "deep_sea_hydrothermal_vent_anchor",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "food_web_diagram_anchor",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "temp_depth_graph_anchor",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "explaineragent_output",
+   "to": "ShotPromptAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
   },
   {
    "from": "shot_prompt_sh_001",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_prompts"
-   ]
+   "inferred": true
   },
   {
    "from": "shot_prompt_sh_002",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_prompts"
-   ]
+   "inferred": true
   },
   {
    "from": "shot_prompt_sh_003",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_prompts"
-   ]
+   "inferred": true
   },
   {
    "from": "shot_prompt_sh_004",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_prompts"
-   ]
+   "inferred": true
   },
   {
    "from": "shot_prompt_sh_005",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_prompts"
-   ]
+   "inferred": true
   },
   {
    "from": "shot_prompt_sh_006",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_prompts"
-   ]
+   "inferred": true
   },
   {
    "from": "shot_prompt_sh_007",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_prompts"
-   ]
+   "inferred": true
   },
   {
    "from": "shot_prompt_sh_008",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_prompts"
-   ]
+   "inferred": true
   },
   {
    "from": "shot_prompt_sh_009",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_prompts"
-   ]
+   "inferred": true
   },
   {
-   "from": "keyframesheetagent_output",
+   "from": "shot_prompt_sh_001",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_002",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_003",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_004",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_005",
+   "to": "clip_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_006",
+   "to": "clip_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_007",
+   "to": "clip_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_008",
+   "to": "clip_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_009",
+   "to": "clip_sh_009",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "deep_sea_hydrothermal_vent_anchor",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "keyframes"
-   ]
+   "inferred": true
+  },
+  {
+   "from": "food_web_diagram_anchor",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "temp_depth_graph_anchor",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
   },
   {
    "from": "sh_001_storyboard",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
-  },
-  {
-   "from": "sh_009_storyboard",
-   "to": "ClipAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
-  },
-  {
-   "from": "sh_008_storyboard",
-   "to": "ClipAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
+   "inferred": true
   },
   {
    "from": "sh_002_storyboard",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
-  },
-  {
-   "from": "sh_004_storyboard",
-   "to": "ClipAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
-  },
-  {
-   "from": "sh_007_storyboard",
-   "to": "ClipAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
+   "inferred": true
   },
   {
    "from": "sh_003_storyboard",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
   },
   {
    "from": "sh_005_storyboard",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
+   "inferred": true
   },
   {
    "from": "sh_006_storyboard",
    "to": "ClipAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard",
+   "to": "ClipAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_002_storyboard_prompt",
+   "to": "clip_sh_002",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_003_storyboard_prompt",
+   "to": "clip_sh_003",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_004_storyboard_prompt",
+   "to": "clip_sh_004",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard",
+   "to": "clip_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_005_storyboard_prompt",
+   "to": "clip_sh_005",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard",
+   "to": "clip_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_006_storyboard_prompt",
+   "to": "clip_sh_006",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard",
+   "to": "clip_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_007_storyboard_prompt",
+   "to": "clip_sh_007",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard",
+   "to": "clip_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_008_storyboard_prompt",
+   "to": "clip_sh_008",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard",
+   "to": "clip_sh_009",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_009_storyboard_prompt",
+   "to": "clip_sh_009",
+   "type": "shot",
+   "inferred": true
   },
   {
    "from": "explaineragent_output",
    "to": "VoiceoverAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "story"
-   ]
-  },
-  {
-   "from": "clip_sh_001",
-   "to": "VoiceoverAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_clips"
-   ]
-  },
-  {
-   "from": "clip_sh_002",
-   "to": "VoiceoverAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_clips"
-   ]
-  },
-  {
-   "from": "clip_sh_003",
-   "to": "VoiceoverAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_clips"
-   ]
-  },
-  {
-   "from": "clip_sh_004",
-   "to": "VoiceoverAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_clips"
-   ]
-  },
-  {
-   "from": "clip_sh_005",
-   "to": "VoiceoverAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_clips"
-   ]
-  },
-  {
-   "from": "clip_sh_006",
-   "to": "VoiceoverAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_clips"
-   ]
-  },
-  {
-   "from": "clip_sh_007",
-   "to": "VoiceoverAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_clips"
-   ]
-  },
-  {
-   "from": "clip_sh_008",
-   "to": "VoiceoverAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_clips"
-   ]
-  },
-  {
-   "from": "clip_sh_009",
-   "to": "VoiceoverAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_clips"
-   ]
-  },
-  {
-   "from": "clip_final",
-   "to": "AudioMixAgent__step_1_5648c3af",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "video_file"
-   ]
+   "inferred": true
   },
   {
    "from": "aud_voiceover_full",
    "to": "AudioMixAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "narrator_audio"
-   ]
+   "inferred": true
   },
   {
-   "from": "clipagent_output",
+   "from": "clip_final",
    "to": "AudioMixAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "video_package"
-   ]
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_001",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_002",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_003",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_004",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_005",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_006",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_007",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_008",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_009",
+   "to": "AudioMixAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
   },
   {
    "from": "clip_final",
    "to": "CompositorAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "video_file"
-   ]
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_001",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_002",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_003",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_004",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_005",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_006",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_007",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_008",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "clip_sh_009",
+   "to": "CompositorAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
   },
   {
    "from": "aud_final",
    "to": "CompositorAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "audio_file"
-   ]
+   "inferred": true
   },
   {
-   "from": "audiomixagent_output",
+   "from": "fig_food_web",
    "to": "CompositorAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "audio_package"
-   ]
+   "inferred": true
   },
   {
-   "from": "voiceover_srt",
+   "from": "fig_temp_depth",
    "to": "CompositorAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "subtitle_tracks"
-   ]
+   "inferred": true
   },
   {
-   "from": "explaineragent_output",
-   "to": "CompositorAgent__step_1_5648c3af",
+   "from": "briefenricheragent_output",
+   "to": "ExplainerAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "narrative_plan"
-   ]
+   "inferred": true
   },
   {
-   "from": "clipagent_output",
-   "to": "CompositorAgent__step_1_5648c3af",
+   "from": "creative_brief",
+   "to": "ExplainerAgent__step_1_5648c3af",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "video_package"
-   ]
+   "inferred": true
   },
   {
-   "from": "shot_prompt_sh_001",
-   "to": "clip_sh_001",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "shot_prompt_sh_002",
-   "to": "clip_sh_002",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "shot_prompt_sh_003",
-   "to": "clip_sh_003",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "shot_prompt_sh_004",
-   "to": "clip_sh_004",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "shot_prompt_sh_005",
-   "to": "clip_sh_005",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "shot_prompt_sh_006",
-   "to": "clip_sh_006",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "shot_prompt_sh_007",
-   "to": "clip_sh_007",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "shot_prompt_sh_008",
-   "to": "clip_sh_008",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "shot_prompt_sh_009",
-   "to": "clip_sh_009",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_001_storyboard",
-   "to": "clip_sh_001",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_001_storyboard_prompt",
-   "to": "clip_sh_001",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_002_storyboard",
-   "to": "clip_sh_002",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_002_storyboard_prompt",
-   "to": "clip_sh_002",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_003_storyboard",
-   "to": "clip_sh_003",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_003_storyboard_prompt",
-   "to": "clip_sh_003",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_004_storyboard",
-   "to": "clip_sh_004",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_004_storyboard_prompt",
-   "to": "clip_sh_004",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_005_storyboard",
-   "to": "clip_sh_005",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_005_storyboard_prompt",
-   "to": "clip_sh_005",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_006_storyboard",
-   "to": "clip_sh_006",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_006_storyboard_prompt",
-   "to": "clip_sh_006",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_007_storyboard",
-   "to": "clip_sh_007",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_007_storyboard_prompt",
-   "to": "clip_sh_007",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_008_storyboard",
-   "to": "clip_sh_008",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_008_storyboard_prompt",
-   "to": "clip_sh_008",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_009_storyboard",
-   "to": "clip_sh_009",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_009_storyboard_prompt",
-   "to": "clip_sh_009",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_001_storyboard",
-   "to": "shot_prompt_sh_001",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_001_storyboard_prompt",
-   "to": "shot_prompt_sh_001",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_002_storyboard",
-   "to": "shot_prompt_sh_002",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_002_storyboard_prompt",
-   "to": "shot_prompt_sh_002",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_003_storyboard",
-   "to": "shot_prompt_sh_003",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_003_storyboard_prompt",
-   "to": "shot_prompt_sh_003",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_004_storyboard",
-   "to": "shot_prompt_sh_004",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_004_storyboard_prompt",
-   "to": "shot_prompt_sh_004",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_005_storyboard",
-   "to": "shot_prompt_sh_005",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_005_storyboard_prompt",
-   "to": "shot_prompt_sh_005",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_006_storyboard",
-   "to": "shot_prompt_sh_006",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_006_storyboard_prompt",
-   "to": "shot_prompt_sh_006",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_007_storyboard",
-   "to": "shot_prompt_sh_007",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_007_storyboard_prompt",
-   "to": "shot_prompt_sh_007",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_008_storyboard",
-   "to": "shot_prompt_sh_008",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_008_storyboard_prompt",
-   "to": "shot_prompt_sh_008",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_009_storyboard",
-   "to": "shot_prompt_sh_009",
-   "type": "shot",
-   "inferred": false
-  },
-  {
-   "from": "sh_009_storyboard_prompt",
-   "to": "shot_prompt_sh_009",
-   "type": "shot",
-   "inferred": false
+   "from": "intakeimageagent_output",
+   "to": "ExplainerAgent__step_1_5648c3af",
+   "type": "step",
+   "inferred": true
   }
  ],
  "final": "final_film",
  "notes": [
-  "Connections are the inputs the Assistant's InputResolver selected for each step when it was replayed over this archived Workspace."
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
  ]
 }

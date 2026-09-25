@@ -283,7 +283,6 @@ class Graph:
         self._by_basename: dict[str, str] = {}
         self.final_md5 = md5(SITE / demo["src"])
         self.final_node: str | None = None
-        self.plan: dict | None = None
 
     # -- primitives
     def stage(self, sid: str, agent: str, label: str, step: str = "") -> dict:
@@ -356,19 +355,11 @@ class Graph:
         self.nodes.sort(key=lambda n: (stage_order.get(n["stage"], 99), 1 if n.get("shot") else 0,
                                        n.get("shot", ""), korder.get(n["kind"], 9), n["label"]))
 
-    def edge(self, frm: str, to: str, etype: str, inferred: bool = False, label: str | None = None):
-        """One connection; `label` is the consumer's InputLabel this artifact was resolved under
-        (only known for real executions), kept as a list because one artifact can fill several labels."""
+    def edge(self, frm: str, to: str, etype: str, inferred: bool = False):
         key = (frm, to)
-        for e in self.edges:
-            if (e["from"], e["to"]) == key:
-                if label and label not in e.setdefault("labels", []):
-                    e["labels"].append(label)
-                return
-        e = {"from": frm, "to": to, "type": etype, "inferred": inferred}
-        if label:
-            e["labels"] = [label]
-        self.edges.append(e)
+        if any((e["from"], e["to"]) == key for e in self.edges):
+            return
+        self.edges.append({"from": frm, "to": to, "type": etype, "inferred": inferred})
 
     def shot_edges(self, from_stage: str, to_stage: str, inferred: bool):
         """node→node edges between two stages for assets that carry the same shot id."""
@@ -401,8 +392,6 @@ class Graph:
             "stages": self.stages, "nodes": self.nodes, "edges": self.edges,
             "final": self.final_node, "notes": self.notes,
         }
-        if self.plan:
-            g["plan"] = self.plan
         (self.out / "graph.json").write_text(json.dumps(g, ensure_ascii=False, indent=1), encoding="utf-8")
         total = sum(f.stat().st_size for f in (self.out / "media").glob("*"))
         log(f"  {self.key}: {len(self.stages)} stages, {len(self.nodes)} nodes, {len(self.edges)} edges, "
@@ -416,15 +405,9 @@ def load_global_memory(ws: Path) -> list[dict]:
     return json.loads(txt[i:j])
 
 
-def load_executions(ws: Path) -> tuple[list[dict], bool]:
-    """All execution records from sibling run_*/resume_*/replay_* dumps that belong to this workspace.
-
-    Returns (records, replayed): ``replayed`` is True when the records come from a ``replay_*`` dump
-    written by ``scripts/replay_input_resolution.py`` (the Assistant's InputResolver re-run over the
-    archived Workspace) rather than from the original run's execution log.
-    """
+def load_executions(ws: Path) -> list[dict]:
+    """All execution records from sibling run_*/resume_* dumps that belong to this workspace."""
     execs: list[dict] = []
-    replayed = False
     for f in sorted(ws.parent.glob("*/04_executions.json")):
         try:
             d = json.loads(f.read_text(encoding="utf-8"))
@@ -435,8 +418,7 @@ def load_executions(ws: Path) -> tuple[list[dict], bool]:
                 paths = json.dumps(e.get("inputs") or {})
                 if ws.name in paths:
                     execs.append(e)
-                    replayed = replayed or f.parent.name.startswith("replay")
-    return execs, replayed
+    return execs
 
 
 def build_workspace(g: Graph):
@@ -466,29 +448,8 @@ def build_workspace(g: Graph):
                    label=label, thumb_only=big)
     g.sort_nodes()
 
-    # 2. plan (Director side): the run's 03_plan_summary.json when it recorded intents, else a replayed 02_plan.json
-    plan = None
-    for f in sorted(ws.parent.glob("*/03_plan_summary.json")):
-        try:
-            rows = json.loads(f.read_text(encoding="utf-8"))
-        except Exception:
-            continue
-        if isinstance(rows, list) and rows and all(r.get("agent_id") and r.get("intent") for r in rows) and \
-           (f.parent / "04_executions.json").exists() and ws.name in (f.parent / "04_executions.json").read_text(encoding="utf-8"):
-            plan = {"source": "run", "steps": [{"agent_id": r["agent_id"], "intent": r["intent"]} for r in rows]}
-    if plan is None:
-        for f in sorted(ws.parent.glob("replay_*/02_plan.json")):
-            try:
-                d = json.loads(f.read_text(encoding="utf-8"))
-            except Exception:
-                continue
-            if d.get("plan"):
-                plan = {"source": "replay", "model": d.get("model", ""), "steps": d["plan"],
-                        "executed_chain": d.get("executed_chain", []), "chain_match": bool(d.get("chain_match"))}
-    g.plan = plan
-
-    # 3. edges
-    execs, replayed = load_executions(ws)
+    # 2. edges
+    execs = load_executions(ws)
     if execs:
         seen_stage_pairs: set[tuple[str, str]] = set()
         for e in execs:
@@ -503,14 +464,12 @@ def build_workspace(g: Graph):
                         continue
                     nid = g._by_basename.get(Path(p).name)
                     if nid:
-                        g.edge(nid, sid, "step", False, label=_label)
+                        g.edge(nid, sid, "step", False)
                         src_stage = next(n["stage"] for n in g.nodes if n["id"] == nid)
                         seen_stage_pairs.add((src_stage, sid))
         for a, b in seen_stage_pairs:
             g.shot_edges(a, b, False)
-        g.notes.append("Connections are the inputs the Assistant's InputResolver selected for each step when it was "
-                       "replayed over this archived Workspace." if replayed else
-                       "Connections are the actual inputs each agent step resolved at run time.")
+        g.notes.append("Connections are the actual inputs each agent step resolved at run time.")
     else:
         stage_by_agent = [(s["agent"], s["id"]) for s in g.stages]
         for consumer, wants in INFERRED_INPUTS:

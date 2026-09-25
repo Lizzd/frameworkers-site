@@ -8,7 +8,7 @@
   "type": "workspace",
   "path": "Runtime/topic24_kurve_ad/workspace_global_20260721_103757"
  },
- "generated_at": "2026-09-23T12:23:50+00:00",
+ "generated_at": "2026-09-09T15:56:43+00:00",
  "stages": [
   {
    "id": "Inputs",
@@ -468,332 +468,257 @@
    "from": "kurve_front",
    "to": "IntakeImageAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "raw_image_upload"
-   ]
-  },
-  {
-   "from": "kurve_side",
-   "to": "IntakeImageAgent__step_1_17d908f9",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "raw_image_upload"
-   ]
-  },
-  {
-   "from": "kurve_pour_closeup",
-   "to": "IntakeImageAgent__step_1_17d908f9",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "raw_image_upload"
-   ]
+   "inferred": true
   },
   {
    "from": "kurve_logo",
    "to": "IntakeImageAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "raw_image_upload"
-   ]
+   "inferred": true
+  },
+  {
+   "from": "kurve_pour_closeup",
+   "to": "IntakeImageAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "kurve_side",
+   "to": "IntakeImageAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
   },
   {
    "from": "creative_brief",
    "to": "BriefEnricherAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "raw_brief"
-   ]
+   "inferred": true
   },
   {
    "from": "intakeimageagent_output",
    "to": "BriefEnricherAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "image_descriptions"
-   ]
-  },
-  {
-   "from": "kurve_front",
-   "to": "BriefEnricherAgent__step_1_17d908f9",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "image_files"
-   ]
-  },
-  {
-   "from": "kurve_side",
-   "to": "BriefEnricherAgent__step_1_17d908f9",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "image_files"
-   ]
-  },
-  {
-   "from": "kurve_pour_closeup",
-   "to": "BriefEnricherAgent__step_1_17d908f9",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "image_files"
-   ]
-  },
-  {
-   "from": "kurve_logo",
-   "to": "BriefEnricherAgent__step_1_17d908f9",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "image_files"
-   ]
+   "inferred": true
   },
   {
    "from": "briefenricheragent_output",
-   "to": "AdvertisementAgent__step_1_17d908f9",
+   "to": "KeyframeSheetAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "creative_brief"
-   ]
+   "inferred": true
   },
   {
    "from": "advertisementagent_output",
    "to": "KeyframeSheetAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "story"
-   ]
+   "inferred": true
   },
   {
    "from": "kurve_front",
    "to": "KeyframeSheetAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "prop_reference"
-   ]
-  },
-  {
-   "from": "kurve_side",
-   "to": "KeyframeSheetAgent__step_1_17d908f9",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "prop_reference"
-   ]
-  },
-  {
-   "from": "kurve_pour_closeup",
-   "to": "KeyframeSheetAgent__step_1_17d908f9",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "prop_reference"
-   ]
+   "inferred": true
   },
   {
    "from": "kurve_logo",
    "to": "KeyframeSheetAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "style_reference"
-   ]
+   "inferred": true
   },
   {
-   "from": "advertisementagent_output",
-   "to": "ShotPromptAgent__step_1_17d908f9",
+   "from": "kurve_pour_closeup",
+   "to": "KeyframeSheetAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "story"
-   ]
+   "inferred": true
+  },
+  {
+   "from": "kurve_side",
+   "to": "KeyframeSheetAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
   },
   {
    "from": "keyframesheetagent_output",
    "to": "ShotPromptAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "keyframes"
-   ]
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "shot_prompt_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "loc_warm_kitchen_studio_anchor",
+   "to": "ShotPromptAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "prop_kurve_logo_anchor",
+   "to": "ShotPromptAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "prop_kurve_machine_anchor",
+   "to": "ShotPromptAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
   },
   {
    "from": "sh_001_storyboard",
    "to": "ShotPromptAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
+   "inferred": true
+  },
+  {
+   "from": "advertisementagent_output",
+   "to": "ShotPromptAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
   },
   {
    "from": "shot_prompt_sh_001",
    "to": "ClipAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_prompts"
-   ]
+   "inferred": true
+  },
+  {
+   "from": "shot_prompt_sh_001",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "loc_warm_kitchen_studio_anchor",
+   "to": "ClipAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "prop_kurve_logo_anchor",
+   "to": "ClipAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "prop_kurve_machine_anchor",
+   "to": "ClipAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
   },
   {
    "from": "sh_001_storyboard",
    "to": "ClipAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "storyboard_sheets"
-   ]
+   "inferred": true
   },
   {
-   "from": "keyframesheetagent_output",
-   "to": "ClipAgent__step_1_17d908f9",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "keyframes"
-   ]
+   "from": "sh_001_storyboard",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
+  },
+  {
+   "from": "sh_001_storyboard_prompt",
+   "to": "clip_sh_001",
+   "type": "shot",
+   "inferred": true
   },
   {
    "from": "advertisementagent_output",
    "to": "VoiceoverAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "story"
-   ]
-  },
-  {
-   "from": "clip_sh_001",
-   "to": "VoiceoverAgent__step_1_17d908f9",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "shot_clips"
-   ]
-  },
-  {
-   "from": "clipagent_output",
-   "to": "AudioMixAgent__step_1_17d908f9",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "video_package"
-   ]
-  },
-  {
-   "from": "clip_final",
-   "to": "AudioMixAgent__step_1_17d908f9",
-   "type": "step",
-   "inferred": false,
-   "labels": [
-    "video_file"
-   ]
+   "inferred": true
   },
   {
    "from": "aud_voiceover_full",
    "to": "AudioMixAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "narrator_audio"
-   ]
+   "inferred": true
   },
   {
-   "from": "advertisementagent_output",
-   "to": "CompositorAgent__step_1_17d908f9",
+   "from": "clip_final",
+   "to": "AudioMixAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "narrative_plan"
-   ]
+   "inferred": true
   },
   {
-   "from": "clipagent_output",
-   "to": "CompositorAgent__step_1_17d908f9",
+   "from": "clip_sh_001",
+   "to": "AudioMixAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "video_package"
-   ]
+   "inferred": true
   },
   {
    "from": "clip_final",
    "to": "CompositorAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "video_file"
-   ]
+   "inferred": true
   },
   {
-   "from": "audiomixagent_output",
+   "from": "clip_sh_001",
    "to": "CompositorAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "audio_package"
-   ]
+   "inferred": true
   },
   {
    "from": "aud_final",
    "to": "CompositorAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "audio_file"
-   ]
+   "inferred": true
   },
   {
-   "from": "voiceover_srt",
+   "from": "kurve_front",
    "to": "CompositorAgent__step_1_17d908f9",
    "type": "step",
-   "inferred": false,
-   "labels": [
-    "subtitle_tracks"
-   ]
+   "inferred": true
   },
   {
-   "from": "sh_001_storyboard",
-   "to": "clip_sh_001",
-   "type": "shot",
-   "inferred": false
+   "from": "kurve_logo",
+   "to": "CompositorAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
   },
   {
-   "from": "sh_001_storyboard_prompt",
-   "to": "clip_sh_001",
-   "type": "shot",
-   "inferred": false
+   "from": "kurve_pour_closeup",
+   "to": "CompositorAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
   },
   {
-   "from": "shot_prompt_sh_001",
-   "to": "clip_sh_001",
-   "type": "shot",
-   "inferred": false
+   "from": "kurve_side",
+   "to": "CompositorAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
   },
   {
-   "from": "sh_001_storyboard",
-   "to": "shot_prompt_sh_001",
-   "type": "shot",
-   "inferred": false
+   "from": "briefenricheragent_output",
+   "to": "AdvertisementAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
   },
   {
-   "from": "sh_001_storyboard_prompt",
-   "to": "shot_prompt_sh_001",
-   "type": "shot",
-   "inferred": false
+   "from": "creative_brief",
+   "to": "AdvertisementAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
+  },
+  {
+   "from": "intakeimageagent_output",
+   "to": "AdvertisementAgent__step_1_17d908f9",
+   "type": "step",
+   "inferred": true
   }
  ],
  "final": "compositor_final",
  "notes": [
-  "Connections are the inputs the Assistant's InputResolver selected for each step when it was replayed over this archived Workspace."
+  "No execution log was archived for this run: connections are inferred from each agent's declared input contract (dashed)."
  ]
 }
