@@ -21,7 +21,9 @@ srv.listen(0, "127.0.0.1", async () => {
   const { w, h } = await page.evaluate(() => window.__READY);
   await page.setViewportSize({ width: Math.ceil(w), height: Math.ceil(h) });
   await page.waitForTimeout(300);
-  await page.pdf({ path: out, width: `${Math.ceil(w)}px`, height: `${Math.ceil(h)}px`, printBackground: true, pageRanges: "1", margin: { top: 0, right: 0, bottom: 0, left: 0 } });
+  // page height gets a few px of slack: at exactly the content height, sub-pixel print layout can push the last
+  // row onto page 2, which pageRanges:"1" then silently drops (happened 2026-09-25: the final row vanished)
+  await page.pdf({ path: out, width: `${Math.ceil(w)}px`, height: `${Math.ceil(h) + 4}px`, printBackground: true, pageRanges: "1", margin: { top: 0, right: 0, bottom: 0, left: 0 } });
   await page.screenshot({ path: out.replace(/\.pdf$/, ".png"), fullPage: true });
   console.log(JSON.stringify({ out, w, h, errors: errs }));
   await browser.close(); srv.close();
