@@ -185,9 +185,7 @@
     html += `</div>`;
   }
   html += `</div></div>`;
-  html += `<div class="legend">
-    <span class="lg">${badge(steps[0].id, " sm")} ← producing step</span><span class="lg">each step also stores a JSON record</span>${HI ? `<span class="lg"><i class="hibox"></i>shot ${esc(HI)} through story, storyboard, prompt, clip and subtitles</span>` : ""}
-    </div>`;   // the replay provenance is stated in the paper caption
+  // no legend: the input notation is explained in the Assistant subtitle, the red trace in the paper caption
   nodesEl.innerHTML = html;
 
   // brief: clamp to the Plan Thinking card's height
