@@ -80,7 +80,9 @@ html,body{margin:0;padding:0;background:#fff;color:var(--ink);font-family:var(--
 .cues .tc{flex:none;width:26px;color:var(--faint);font-variant-numeric:tabular-nums}
 .cues .cue.hi .tc{color:var(--hi)}
 /* legend */
-.legend{display:flex;flex-wrap:wrap;gap:3px 14px;align-items:center;margin-top:8px;font-size:10.5px;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:center;margin-top:9px;font-size:13px;color:#374151}
 .legend .lg{display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
-.legend .hibox{display:inline-block;width:12px;height:9px;border:2px solid var(--hi);border-radius:2px}
-.legend .note{color:var(--faint)}
+.legend .hibox{display:inline-block;width:16px;height:12px;border:2.5px solid var(--hi);border-radius:2px}
+.legend .note{color:#6b7280}
+.legend .lg svg{width:16px;height:16px}
+.legend .badge.sm{width:16px;height:16px;font-size:10px}
