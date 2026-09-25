@@ -182,12 +182,12 @@
   let html = `<div class="band dir" id="band-dir">
       <div class="band-title"><b>Director</b><span>reads the brief and the sub-agent catalog, then plans the whole pipeline up front</span></div>
       <div class="dir-top"><div class="card brief" id="brief"><h4>User brief</h4><p id="brief-p">${esc(g.prompt || "")}</p></div>
-        <div class="card plan" id="plan"><span class="tab">Plan Thinking</span><h4>${plan.steps.length} PlanSteps</h4>${planRows}</div></div>
-      <div class="stack"><span class="vlabel">Plan Stack</span>${pills}</div>
+        <div class="card plan" id="plan"><span class="tab">Plan Thinking</span><h4>${plan.steps.length} tasks</h4>${planRows}</div></div>
+      <div class="stack"><span class="vlabel">Task Stack</span>${pills}</div>
     </div>
     <div class="gap-v"></div>
     <div class="band as" id="band-as">
-      <div class="band-title"><b>Assistant</b><span>runs each PlanStep: resolves its inputs from the Workspace (<i>in</i>: label ← producing step), runs the sub-agent, persists the artifacts</span></div>
+      <div class="band-title"><b>Assistant</b><span>runs each task: resolves its inputs from the Workspace (<i>in</i>: label ← producing task), runs the sub-agent, persists the artifacts</span></div>
       <div class="rows" id="rows">`;
   // pair a text-only step with the media step that follows it
   const mods = steps.map(s => ({ s, textOnly: isTextOnly(s.id) }));
