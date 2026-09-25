@@ -187,7 +187,7 @@
   html += `</div></div>`;
   const kinds = [...new Set(g.nodes.map(n => n.kind))].filter(k => ICON[k]);
   html += `<div class="legend">${kinds.map(k => `<span class="lg">${ICON[k]}${k === "json" ? "JSON" : k}</span>`).join("")}
-    <span class="lg">${badge(steps[0].id, " sm")} ← producing step</span><span class="lg">every step also persists a JSON record of its output</span>${HI ? `<span class="lg"><i class="hibox"></i>shot ${esc(HI)} through story, storyboard, prompt, clip and subtitles</span>` : ""}
+    <span class="lg">${badge(steps[0].id, " sm")} ← producing step</span><span class="lg">each step also stores a JSON record</span>${HI ? `<span class="lg"><i class="hibox"></i>shot ${esc(HI)} through story, storyboard, prompt, clip and subtitles</span>` : ""}
     </div>`;   // the replay provenance is stated in the paper caption
   nodesEl.innerHTML = html;
 
