@@ -1,4 +1,4 @@
-// node tools/figure/render.js <film> [shot] [out.pdf]
+// node tools/figure/render.js <film> [shot] [out.pdf]   (FIG_NAMES=paper20 shows the paper's 20-agent names)
 // Serves the site root, opens tools/figure/canvas_figure.html, prints the laid-out world to a PDF
 // (vector text, embedded thumbnails) plus a PNG preview next to it.
 const http = require("http"), fs = require("fs"), path = require("path");
@@ -16,7 +16,7 @@ srv.listen(0, "127.0.0.1", async () => {
   const browser = await chromium.launch({ args: ["--no-sandbox"] });
   const page = await browser.newPage({ viewport: { width: 1600, height: 900 }, deviceScaleFactor: 1 });
   const errs = []; page.on("pageerror", e => errs.push(e.message)); page.on("console", m => { if (m.type() === "error") errs.push(m.text()); });
-  await page.goto(`http://127.0.0.1:${port}/tools/figure/canvas_figure.html?film=${film}${shot ? `&shot=${shot}` : ""}`, { waitUntil: "networkidle" });
+  await page.goto(`http://127.0.0.1:${port}/tools/figure/canvas_figure.html?film=${film}${shot ? `&shot=${shot}` : ""}${process.env.FIG_NAMES ? `&names=${process.env.FIG_NAMES}` : ""}`, { waitUntil: "networkidle" });
   await page.waitForFunction(() => window.__READY, null, { timeout: 30000 });
   const { w, h } = await page.evaluate(() => window.__READY);
   await page.setViewportSize({ width: Math.ceil(w), height: Math.ceil(h) });

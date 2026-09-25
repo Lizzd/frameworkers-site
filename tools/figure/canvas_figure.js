@@ -17,6 +17,9 @@
   const fmtDur = d => { d = Math.round(d); return `${Math.floor(d / 60)}:${String(d % 60).padStart(2, "0")}`; };
   const camel = s => s.replace(/([a-z])([A-Z])/g, "$1<wbr>$2");
   const short = a => String(a).replace(/Agent$/, "");
+  // ?names=paper20: display each agent under its counterpart in the paper's 20-agent inventory (display only; logic below keeps the real ids)
+  const PAPER20 = { NarrativeAgent: "StoryAgent", KeyframeSheetAgent: "KeyFrameAgent", ShotPromptAgent: "ScreenplayAgent", ClipAgent: "VideoAgent" };
+  const disp = a => (Q.get("names") === "paper20" && PAPER20[a]) || a;
   const ICON = {
     image: `<svg viewBox="0 0 16 16"><rect x="1.5" y="2.5" width="13" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="5.5" cy="6" r="1.3" fill="currentColor"/><path d="M2.5 12.5l3.8-4 2.6 2.6 1.8-1.8 2.8 3.2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>`,
     video: `<svg viewBox="0 0 16 16"><rect x="1.5" y="3" width="13" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 5.8v4.4l3.8-2.2z" fill="currentColor"/></svg>`,
@@ -157,8 +160,8 @@
   world.style.width = WORLD_W + "px";
   const plan = g.plan || { steps: steps.map(s => ({ agent_id: s.agent, intent: "" })) };
   const planRows = plan.steps.map((st, i) => { const sid = steps[i] ? steps[i].id : null; const c = sid ? colorOf(sid) : "#6b7280";
-    return `<div class="entry"><span class="k">"agent_id":</span> <span class="a" style="color:${c}">"${esc(st.agent_id)}"</span>, <span class="k">"intent":</span> "${esc(st.intent)}"</div>`; }).join("");
-  const pills = steps.map((s, i) => `${i ? '<span class="arr">→</span>' : ""}<span class="pill" style="background:${mix(colorOf(s.id), .14)};border-color:${mix(colorOf(s.id), .6)}">${badge(s.id)}${esc(short(s.agent))}</span>`).join("");
+    return `<div class="entry"><span class="k">"agent_id":</span> <span class="a" style="color:${c}">"${esc(disp(st.agent_id))}"</span>, <span class="k">"intent":</span> "${esc(st.intent)}"</div>`; }).join("");
+  const pills = steps.map((s, i) => `${i ? '<span class="arr">→</span>' : ""}<span class="pill" style="background:${mix(colorOf(s.id), .14)};border-color:${mix(colorOf(s.id), .6)}">${badge(s.id)}${esc(short(disp(s.agent)))}</span>`).join("");
   let html = `<div class="band dir" id="band-dir">
       <div class="band-title"><b>Director</b><span>reads the brief and the sub-agent catalog, then plans the whole pipeline up front</span></div>
       <div class="dir-top"><div class="card brief" id="brief"><h4>User brief</h4><p id="brief-p">${esc(g.prompt || "")}</p></div>
@@ -179,7 +182,7 @@
       const body = m.textOnly ? await textBody(s) : await mediaBody(s);
       const ins = manifestHtml(s.id);
       html += `<div class="mod ${cls}" data-stage="${esc(s.id)}" style="background:${mix(c, .075)};border-color:${mix(c, .6)}">
-        <div class="mod-h" style="background:${mix(c, .17)}">${badge(s.id)}<span>${camel(short(s.agent))} Agent</span></div>
+        <div class="mod-h" style="background:${mix(c, .17)}">${badge(s.id)}<span>${camel(short(disp(s.agent)))} Agent</span></div>
         ${ins ? `<div class="mod-in"><span class="lab">in</span>${ins}</div>` : ""}<div class="mod-b">${body}</div></div>`;
     }
     html += `</div>`;
