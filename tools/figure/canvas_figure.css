@@ -60,7 +60,9 @@ html,body{margin:0;padding:0;background:#fff;color:var(--ink);font-family:var(--
 .th .pill{position:absolute;left:4px;top:4px;font-size:9px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:2px 6px;border-radius:999px;background:#15803d;color:#fff}
 .final{display:flex;gap:10px;align-items:flex-start}
 .final .th.big{flex:0 0 262px}
-.final .facts{font-size:11px;line-height:1.5;color:#374151;display:flex;flex-direction:column;gap:1px;min-width:0}
+.final .facts{flex:1 1 auto;min-width:0;align-self:stretch;display:flex;flex-direction:column}
+.final .facts .fk{margin-top:auto;padding-top:4px}
+.sbp{margin-top:auto}
 .chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto;padding-top:2px}
 .chip{display:inline-flex;align-items:center;gap:4px;height:20px;padding:0 7px;border-radius:5px;background:#fff;border:1px solid var(--line);font-size:10.5px;font-weight:600;white-space:nowrap;color:#374151}
 .chip svg,.lg svg{width:12px;height:12px;flex:none;color:#6b7280}

@@ -141,15 +141,32 @@
     if (fin) {
       const comp = g.nodes.find(n => n.stage === s.id && n.kind === "json");
       const cj = comp ? await getJSON(comp.file) : null, p = (cj && cj.plan) || {};
-      const facts = [];
-      if (p.output_resolution) facts.push(`${esc(p.output_resolution.replace("x", "×"))}${p.output_fps ? ` · ${p.output_fps} fps` : ""}`);
-      if (p.subtitle_style && p.subtitle_style.burn_in) facts.push(`${p.subtitle_language === "en" ? "English s" : "S"}ubtitles burned in`);
-      if (p.color_grade) facts.push("colour grade " + Object.entries(p.color_grade).filter(([, v]) => v).map(([k, v]) => `${k} ${v > 0 ? "+" : ""}${v}`).join(", "));
+      const facts = [], ss = p.subtitle_style || {};
+      if (p.output_resolution) facts.push(`<b>Output</b> ${esc(p.output_resolution.replace("x", "×"))}${p.output_fps ? ` · ${p.output_fps} fps` : ""}`);
+      if (ss.burn_in) facts.push(`<b>Subtitles</b> ${p.subtitle_language === "en" ? "English, " : ""}burned in${ss.font_size ? `; ${ss.font_size}&nbsp;px` : ""}${/^#f{6}$/i.test(ss.font_color || "") ? " white" : ""}${/^#0{6}$/.test(ss.outline_color || "") ? " with black outline" : ""}`);
+      if (p.color_grade) facts.push("<b>Colour grade</b> " + Object.entries(p.color_grade).filter(([, v]) => v).map(([k, v]) => `${k} ${v > 0 ? "+" : ""}${v}`).join(", "));
+      if (shotRange) { // where the traced shot lands in the film, and its first subtitle cue
+        const ts = steps.find(x => /Transcription/.test(x.agent)), tj = ts && g.nodes.find(n => n.stage === ts.id && n.kind === "json");
+        const segs = ((tj && await getJSON(tj.file)) || {}).segments || [], cue = segs.find(x => x.start_time >= shotRange[0] && x.start_time < shotRange[1]);
+        facts.push(`<div class="fk"><span class="ex-k">${esc(HI)}</span> at ${fmtDur(shotRange[0])}–${fmtDur(shotRange[1])}${cue && ss.burn_in ? `, cue “${esc(cue.text)}” burned in at ${fmtDur(cue.start_time)}` : ""}</div>`);
+      }
       html += `<div class="final"><div class="th big${fin.shot === HI ? " hi" : ""}"><img src="/${esc(fin.poster || "")}" alt=""><span class="pill">final film</span>${fin.dur ? `<span class="dur">${fmtDur(fin.dur)}</span>` : ""}</div>
-        <div class="facts">${facts.map(f => `<div>${f}</div>`).join("")}</div></div>`;
+        ${facts.length ? `<div class="ex facts"><div class="ex-src2">${ICON.json}compositor plan JSON</div>${facts.map(f => f.startsWith("<div") ? f : `<div>${f}</div>`).join("")}</div>` : ""}</div>`;
     }
     const cut = (by.get("cut") || [])[0]; if (cut) chips.push(chip("video", `assembled cut${cut.dur ? " · " + fmtDur(cut.dur) : ""}`));
-    const pr = by.get("prompt"); if (pr) chips.push(chip("text", `${pr.length} image prompts`));
+    const pr = by.get("prompt");
+    const sb = (pr || []).find(n => n.shot && n.shot === HI && /storyboard/i.test(n.label));
+    if (sb) { // the traced shot's storyboard prompt, abridged (same form as the shot-prompt excerpt)
+      const txt = await getText(sb.file), sec = {}; let cur = null;
+      for (const line of txt.split("\n")) { const m = line.match(/^\[(.+?)\]\s*$/); if (m) { cur = m[1]; sec[cur] = []; } else if (cur && line.trim()) sec[cur].push(line.trim()); }
+      const grid = ((sec["ASPECT & GRID"] || [])[0] || "").match(/(\d+) panels arranged in a (\d+\s*×\s*\d+) grid/);
+      const rhythm = ((sec["SHOT RHYTHM"] || [])[0] || "").split(/\s*->\s*/).map(x => x.replace(/^P\d+\s+/, "")).filter(Boolean);
+      const lines = [
+        (grid || rhythm.length) && `${grid ? `<b>Grid</b> ${grid[1]} panels, ${grid[2].replace(/\s/g, "")}` : ""}${grid && rhythm.length ? " · " : ""}${rhythm.length ? `<b>Rhythm</b> ${esc(rhythm.join(" → "))}` : ""}`,
+        sec["IDENTITY LOCK"] && `<b>Identity lock</b> characters and location match the anchor refs`,
+      ].filter(Boolean);
+      html += `<div class="ex hi sbp"><div class="ex-k">${esc(sb.shot)} storyboard prompt (1 of ${pr.length} image prompts) · ${Object.keys(sec).length} sections, abridged</div>${lines.map(l => `<div>${l}</div>`).join("")}</div>`;
+    } else if (pr) chips.push(chip("text", `${pr.length} image prompts`));
     for (const a of by.get("audio") || []) chips.push(chip("audio", a.label));
     if (chips.length) html += `<div class="chips">${chips.join("")}</div>`;
     return html;
